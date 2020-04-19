@@ -1,2 +1,2 @@
 # thenewobjective.github.io
-The New Objective Website
+The New Objective website
