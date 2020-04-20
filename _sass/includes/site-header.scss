@@ -1,0 +1,23 @@
+.site-header {
+    /* Presentation */
+    background: #222931;
+    box-shadow: 2px 0 5px 0px rgba(0,0,0,0.5);
+
+    /* layout */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.site-header_profile {
+    /* Presentation */
+    border-radius: 50%;
+    max-width: 60%;
+
+    /* Layout */
+    margin: 1em 0;
+}
+
+@import "site-nav"

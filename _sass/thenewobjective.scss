@@ -1,0 +1,26 @@
+body, html {
+	background-color: #000;
+	color: #ccc;
+	font-family: "Noto Sans","Lucida Grande","Lucida Sans","Segoe UI",sans-serif;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+body {
+	/* layout */
+    display: grid;
+    grid-template-columns: fit-content(12em) 1fr;
+    grid-template-rows: 1fr fit-content(4em);
+}
+
+@import
+	"includes/site-header",
+	"includes/site-content",
+	"includes/site-footer",
+	"includes/post",
+	"includes/feather-icon"
+;
