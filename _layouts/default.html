@@ -2,6 +2,7 @@
 <html lang="en-US" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }} | {{ page.title }}</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
@@ -13,7 +14,17 @@
   <body>
     {%- include site-header.html -%}
     <main class="site-content">
+      <header class="site-content_header">
+        <h1>
+          <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#{{ page.icon }}"/>
+        </svg>
+          {{ page.title }}
+        </h1>
+      </header>
+      <section class="site-content_body">
         {{ content }}
+      </section>
     </main>
     {%- include site-footer.html -%}
   </body>

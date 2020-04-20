@@ -2,38 +2,16 @@
     <img class="site-header_profile" src="/images/profile/top-hat-justice.jpg" alt="Profile image">
     <nav class="site-nav">
         <ul class="site-nav_links">
-            <li class="site-nav_item">
-                <a class="site-nav_link" href="/">
+            {% for item in site.data.navigation.items %}
+            <li class="site-nav_item" {% if item.url == page.url %}data-active{% endif %}>
+                <a class="site-nav_link" href="{{ item.url }}">
                     <svg class="feather-icon">
-                        <use xlink:href="/images/icons/feather-sprite.svg#home"/>
+                        <use xlink:href="/images/icons/feather-sprite.svg#{{ item.icon }}"/>
                     </svg>
-                    <span>Home</span>
+                    <span>{{ item.title }}</span>
                 </a>
             </li>
-            <li class="site-nav_item">
-                <a class="site-nav_link" href="/resume">
-                    <svg class="feather-icon">
-                        <use xlink:href="/images/icons/feather-sprite.svg#briefcase"/>
-                    </svg>
-                    <span>Resume</span>
-                </a>
-            </li>
-            <li class="site-nav_item">
-                <a class="site-nav_link" href="/publications">
-                    <svg class="feather-icon">
-                        <use xlink:href="/images/icons/feather-sprite.svg#book"/>
-                    </svg>
-                    <span>Publications</span>
-                </a>
-            </li>
-            <li class="site-nav_item">
-                <a class="site-nav_link" href="/about">
-                    <svg class="feather-icon">
-                        <use xlink:href="/images/icons/feather-sprite.svg#help-circle"/>
-                    </svg>
-                    <span>About</span>
-                </a>
-            </li>
+            {% endfor %}
         </ul>
     </nav>
 </header>

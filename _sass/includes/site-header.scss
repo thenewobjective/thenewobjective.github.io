@@ -1,6 +1,6 @@
 .site-header {
     /* Presentation */
-    background: #222931;
+    background: var(--site-header-bg);
     box-shadow: 2px 0 5px 0px rgba(0,0,0,0.5);
 
     /* layout */
@@ -9,6 +9,7 @@
     flex-direction: column;
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
+    z-index: 1;
 }
 
 .site-header_profile {

@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Resume
-permalink: /resume/
+permalink: /resume
+icon: briefcase
 ---
-
-# Resume
 
 Resume...

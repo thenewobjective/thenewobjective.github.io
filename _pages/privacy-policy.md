@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Privacy Policy
-permalink: /privacy-policy/
+permalink: /privacy-policy
+icon: lock
 ---
 
-# Privacy Policy
+## Plain English
 
-Privacy Policy...
+This is my personal site, and I don’t care who you are specifically unless you comment on something.

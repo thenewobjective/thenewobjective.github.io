@@ -1,8 +1,9 @@
 ---
 layout: default
-title: "Home"
+title: "The New Objective"
+icon: home
 ---
 
-# Hello World
+## Hello World
 
-A Brave New World.
+Ars longa, vita brevis.

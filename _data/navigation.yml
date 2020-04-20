@@ -1,0 +1,17 @@
+items:
+
+- title: Home
+  icon: home
+  url: /
+
+- title: Resume
+  icon: briefcase
+  url: /resume
+
+- title: Publications
+  icon: book
+  url: /publications
+
+- title: About
+  icon: help-circle
+  url: /about

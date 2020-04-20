@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Publications
-permalink: /publications/
+permalink: /publications
+icon: book
 ---
-
-# Publications
 
 Publications...

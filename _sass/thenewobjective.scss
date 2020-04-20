@@ -1,3 +1,8 @@
+:root {
+	--link-color: #61A5E4;
+	--site-header-bg: #222931;
+}
+
 body, html {
 	background-color: #000;
 	color: #ccc;
@@ -14,7 +19,14 @@ body {
 	/* layout */
     display: grid;
     grid-template-columns: fit-content(12em) 1fr;
-    grid-template-rows: 1fr fit-content(4em);
+	grid-template-rows: 1fr fit-content(4em);
+	
+	/* Presentation */
+	font-size: 14pt;
+}
+
+a {
+    color: var(--link-color);
 }
 
 @import
@@ -22,5 +34,6 @@ body {
 	"includes/site-content",
 	"includes/site-footer",
 	"includes/post",
-	"includes/feather-icon"
+	"includes/feather-icon",
+	"pages/about-me"
 ;
