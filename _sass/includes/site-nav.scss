@@ -30,9 +30,9 @@
 
     /* Presentation */
     border-top: 1px solid rgba(255,255,255, 0.1);
-    border-bottom: 1px solid rgba(0,0,0, 0.2);
+    border-bottom: 1px solid var(--shadow-color);
     border-right: 0.25em solid var(--site-header-bg);
-    text-shadow: 0 -1px 0px rgba(0,0,0,0.7);
+    text-shadow: 0 -1px 0px var(--shadow-color);
 }
 
 .site-nav_item:hover {

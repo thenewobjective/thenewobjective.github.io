@@ -8,5 +8,7 @@
     align-items: center;
 
     /* Presentation */
-    box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.3);
+    background-color: var(--content-bg);
+    box-shadow: 0 -1px 3px 0 var(--shadow-color);
+    z-index: 1;
 }
