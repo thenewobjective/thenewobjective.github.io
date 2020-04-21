@@ -32,9 +32,13 @@
 .site-header_brave {
     margin-top: 2em;
     width: 85%;
+
+    @media only screen and (max-width: 1279px) {
+		width: 80%;
+	}
 }
 
-.site-header_brave > img {
+.site-header_brave img {
     width: 100%;
 }
 

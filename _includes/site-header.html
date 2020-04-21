@@ -2,6 +2,10 @@
     <img class="site-header_profile" src="/images/profile/top-hat-justice.jpg" alt="Profile image">
     {%- include site-nav.html -%}
     <a class="site-header_brave" href="https://brave.com/the327" target="_blank">
-        <img src="/media-library/brave-banner.png" alt="Be Brave">
+        <picture>
+            <source srcset="media-library/brave/brave-lion.png"
+                    media="(max-width: 1279px)">
+            <img src="media-library/brave/brave-banner.png" title="Be brave" alt="Be brave" />
+        </picture>
     </a>
 </header>
