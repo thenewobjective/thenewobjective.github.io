@@ -1,0 +1,26 @@
+.gallery-dialog {
+    background-color: var(--site-header-bg);
+    color: var(--font-color);
+    line-height: 2;
+    max-width: 8in;
+    max-height: 90%;
+    overflow: auto;
+    padding: 2em;
+}
+.gallery-dialog::backdrop {
+    background-color: rgba(0,0,0,0.8);
+}
+.gallery-dialog img {
+    margin-bottom: 1em;
+    max-width: 100%;
+}
+
+.gallery-dialog > form {}
+
+.gallery-dialog-cancel {
+    border: 1px solid black;
+    font-weight: bold;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}

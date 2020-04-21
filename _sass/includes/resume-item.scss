@@ -1,0 +1,31 @@
+.resume-item {
+    display: flex;
+    flex-direction: row;
+    margin: 2em 0;
+}
+
+.resume-item img {
+    margin-right: 1em;
+    width: 175px;
+}
+
+details .resume-item img {
+    height: min-content;
+}
+
+.resume-item_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-item_title {
+
+}
+
+.resume-item_time {
+
+}
+
+.resume-item_desc {
+
+}

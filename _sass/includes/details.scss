@@ -1,0 +1,14 @@
+details {
+    border-bottom: 2px solid var(--shadow-color)
+}
+
+details > summary {
+	background: var(--site-header-bg);
+	box-shadow: 4px 5px 5px 0px var(--shadow-color);
+	cursor: pointer;
+	padding-left: 1em;
+}
+
+details + details {
+	margin-top: 2em;
+}

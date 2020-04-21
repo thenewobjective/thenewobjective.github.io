@@ -10,22 +10,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico" >
     <link rel="manifest" href="/images/icons/site.webmanifest">
+    <script type="module" src="/scripts/main.js" defer></script>
   </head>
   <body>
     {%- include site-header.html -%}
-    <main class="site-content">
-      <header class="site-content_header">
-        <h1>
-          <svg class="feather-icon">
-            <use xlink:href="/images/icons/feather-sprite.svg#{{ page.icon }}"/>
-        </svg>
-          {{ page.title }}
-        </h1>
-      </header>
-      <section class="site-content_body">
-        {{ content }}
-      </section>
-    </main>
+    {%- include site-content.html -%}
     {%- include site-footer.html -%}
   </body>
 </html>

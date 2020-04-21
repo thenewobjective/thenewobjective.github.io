@@ -21,4 +21,13 @@
     margin: 1em 0;
 }
 
+.site-header_brave {
+    margin-top: 2em;
+    width: 85%;
+}
+
+.site-header_brave > img {
+    width: 100%;
+}
+
 @import "site-nav"
