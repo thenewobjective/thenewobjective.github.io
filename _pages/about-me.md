@@ -3,7 +3,7 @@ layout: default
 title: About
 permalink: /about
 icon: help-circle
-nav_order: 5
+nav_order: 6
 ---
 
 ## About me
