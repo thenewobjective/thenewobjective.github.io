@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+nav_title: About
 permalink: /about
 icon: help-circle
 nav_order: 6

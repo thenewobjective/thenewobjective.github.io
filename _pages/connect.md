@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Connect
+nav_title: Connect
 permalink: /connect
 icon: share-2
 nav_order: 5

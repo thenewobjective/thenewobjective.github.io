@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Home"
+title: "The New Objective"
+nav_title: "Home"
 icon: home
 nav_order: 0
 ---

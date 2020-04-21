@@ -2,12 +2,12 @@
     <ul class="site-nav_links">
         {% assign nav_pages = site.html_pages | where_exp: 'item', 'item.nav_order > -1' | sort: 'nav_order' %}
         {% for item in nav_pages %}
-        <li class="site-nav_item" {% if item.url == page.url %}data-active{% endif %} title="{{ item.title }}">
+        <li class="site-nav_item" {% if item.url == page.url %}data-active{% endif %} title="{{ item.nav_title }}">
             <a class="site-nav_link" href="{{ item.url }}">
                 <svg class="feather-icon">
                     <use xlink:href="/images/icons/feather-sprite.svg#{{ item.icon }}"/>
                 </svg>
-                <span>{{ item.title }}</span>
+                <span>{{ item.nav_title }}</span>
             </a>
         </li>
         {% endfor %}

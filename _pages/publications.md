@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Publications
+nav_title: Publications
 permalink: /publications
 icon: book
 nav_order: 2
