@@ -65,3 +65,14 @@
 .site-nav_link > .feather-icon {
     margin-right: 1em;
 }
+
+@media only screen and (min-width: 1280px) {
+    .site-nav_link > span {
+        display: inline;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .site-nav_link > span {
+        display: none;
+    }
+}

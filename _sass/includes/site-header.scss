@@ -9,7 +9,15 @@
     flex-direction: column;
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
+    overflow: auto;
     z-index: 2;
+
+    @media only screen and (min-width: 1280px) {
+		width: 12em;
+	}
+	@media only screen and (max-width: 1279px) {
+		width: 4em;
+	}
 }
 
 .site-header_profile {
