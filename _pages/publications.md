@@ -3,6 +3,7 @@ layout: default
 title: Publications
 permalink: /publications
 icon: book
+nav_order: 2
 ---
 
 ## Managing the Evolution of Software Product Lines (2012)

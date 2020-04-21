@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "The New Objective"
+title: "Home"
 icon: home
+nav_order: 0
 ---
 
 ## Ars longa, vita brevis

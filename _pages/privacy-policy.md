@@ -3,6 +3,7 @@ layout: default
 title: Privacy Policy
 permalink: /privacy-policy
 icon: lock
+nav_order: -1
 ---
 
 ## Plain English

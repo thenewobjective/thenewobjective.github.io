@@ -3,6 +3,7 @@ layout: default
 title: Resume
 permalink: /resume
 icon: briefcase
+nav_order: 1
 ---
 
 * TOC
