@@ -40,9 +40,10 @@ a {
 }
 
 blockquote {
-	background: var(--site-header-bg);
+    background: var(--site-header-bg);
+    border-left: 0.5em solid var(--link-color);
     padding: 0.5em 1em;
-    margin: 0 1em;
+    margin: 1em;
 }
 cite {
 	display: block;
