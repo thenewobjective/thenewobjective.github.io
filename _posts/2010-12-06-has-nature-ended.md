@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Has Nature Ended?"
-date:   2020-04-06 12:00:00 -0600
+date:   2010-12-06 12:00:00 -0600
 category: Humanity vs Nature
 ---
 
