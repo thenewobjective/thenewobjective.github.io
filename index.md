@@ -8,7 +8,8 @@ nav_order: 0
 
 ## Ars longa, vita brevis
 
-{% for category in site.categories %}
+{% assign sorted_categories = site.categories | sort %}
+{% for category in sorted_categories %}
 <details>
     <summary>{{ category[0] }} ({{ category[1].size }})</summary>
     <ul>
