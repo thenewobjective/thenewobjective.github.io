@@ -54,8 +54,18 @@ hr {
 	border-radius: 100%;
 }
 
+figure {
+	background-color: var(--site-header-bg);
+	padding: 1em;
+	text-align: center;
+}
+
 figure img { 
 	max-width: 100%;
+}
+
+figcaption {
+	font-size: small;
 }
 
 @import
