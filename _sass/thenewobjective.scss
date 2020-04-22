@@ -39,6 +39,16 @@ a {
     color: var(--link-color);
 }
 
+blockquote {
+	background: var(--site-header-bg);
+    padding: 0.5em 1em;
+    margin: 0 1em;
+}
+cite {
+	display: block;
+	text-align: right;
+}
+
 hr {
 	border-color: #000 transparent #555;
 	border-radius: 100%;
