@@ -5,3 +5,19 @@
     font-style: italic;
     padding-top: 1em;
 }
+
+.post > table {
+	border: 1px solid var(--font-color);
+	border-collapse: collapse;
+	margin: 1em 0;
+}
+
+.post > table th,
+.post > table td {
+	border: 1px solid var(--font-color);
+	padding: 0.5em 1em;
+}
+
+.post > table thead {
+	background: var(--site-header-bg);
+}
