@@ -25,4 +25,9 @@
     position: absolute;
     right: 1em;
     top: 1em;
+    font-size: inherit;
+}
+
+.gallery-dialog figcaption {
+    font-size: inherit;   
 }

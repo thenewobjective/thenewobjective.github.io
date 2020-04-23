@@ -14,7 +14,9 @@ I followed these steps in February of 2019. There was no user interface availabl
 
 Note that this will only work for a limited number of TLDs. According to [Microsoft documentation](https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain#buy-the-domain){:target="_blank"}:
 
-<img src="/media-library/azure/azure-domain-transfer-tld-restriction.png" alt="Azure domain transfer TLD restriction">
+<figure>
+  <img src="/media-library/azure/azure-domain-transfer-tld-restriction.png" alt="Azure domain transfer TLD restriction">
+</figure>
 
 In this post I am only going to show the steps I used to transfer a domain without an associated mail server, database, or any other resource tied to it. This was a simple flat file website used as a placeholder for future work. If you have a more complicated site with dependencies then use this guide as a supplement for other guides. I offer no guarantee that these steps will work for you as the interfaces and APIs will change.
 
@@ -35,7 +37,9 @@ The SSL guide for Azure is relatively straightforward. You can see this and othe
 
 Step 1: Navigate to the Namecheap dashboard
 
-<img src="/media-library/azure/namecheap-dashboard.png" alt="Namecheap Dashboard">
+<figure>
+  <img src="/media-library/azure/namecheap-dashboard.png" alt="Namecheap Dashboard">
+</figure>
 
 Click the **“Manage”** button next to the domain you want to transfer
 
@@ -43,19 +47,27 @@ Step 2: Unlock Domain and obtain Auth Code
 
 Under the “Transfer Out” section you’ll see a link to **“UNLOCK”** the domain. After unlocking, click the **“AUTH CODE”** button.
 
-<img src="/media-library/azure/namecheap-transfer-out.png" alt="Namecheap Transfer Out">
+<figure>
+  <img src="/media-library/azure/namecheap-transfer-out.png" alt="Namecheap Transfer Out">
+</figure>
 
 This will open a popup. Fill in the feedback.
 
-<img src="/media-library/azure/namecheap-feedback.png" alt="Namecheap Feedback">
+<figure>
+  <img src="/media-library/azure/namecheap-feedback.png" alt="Namecheap Feedback">
+</figure>
 
 You’ll then see a confirmation on where it emailed the code.
 
-<img src="/media-library/azure/namecheap-authcode-email.png" alt="Namecheap Authcode Email">
+<figure>
+  <img src="/media-library/azure/namecheap-authcode-email.png" alt="Namecheap Authcode Email">
+</figure>
 
 Check your inbox. You’ll see a confirmation email:
 
-<img src="/media-library/azure/namecheap-authcode-inbox.png" alt="Namecheap Authcode Inbox">
+<figure>
+  <img src="/media-library/azure/namecheap-authcode-inbox.png" alt="Namecheap Authcode Inbox">
+</figure>
 
 Remember this authcode.
 
@@ -63,21 +75,29 @@ Remember this authcode.
 
 Microsoft does not document how to do this. I suspected it was possible though because 2 years earlier (Aug 2017) I saw a [short video](https://channel9.msdn.com/Shows/Azure-Friday/App-Service-Domains){:target="_blank"} on Channel9 that said this was a planned feature. After browsing around the Azure portal for a couple hours there was nothing to be seen. There are a few posts around the internet about using a few varieties of powershell scripts, but they don’t seem to work (bitrot?). Azure has a REST API though that will do the trick. Go to the [Domains – Create Or Update](https://docs.microsoft.com/en-us/rest/api/appservice/domains/createorupdate){:target="_blank"} page, and click “Try It”
 
-<img src="/media-library/azure/azure-rest-api-tryit.png" alt="Azure REST Try It">
+<figure>
+  <img src="/media-library/azure/azure-rest-api-tryit.png" alt="Azure REST Try It">
+</figure>
 
 You may be prompted to sign-in to your Azure account. Fill in the mandatory fields. The “api-version” field already has a default value defined:
 
-<img src="/media-library/azure/azure-rest-domain-transfer-info.png" alt="Azure REST domain transfer info">
+<figure>
+  <img src="/media-library/azure/azure-rest-domain-transfer-info.png" alt="Azure REST domain transfer info">
+</figure>
 
 In the JSON object add your information, the auth code from the earlier email, and consent information.
 
-<img src="/media-library/azure/azure-rest-domain-transfer-body.png" alt="Azure REST domain transfer body">
+<figure>
+  <img src="/media-library/azure/azure-rest-domain-transfer-body.png" alt="Azure REST domain transfer body">
+</figure>
 
 Remember, this is JSON, so if your auth code has a character such as ‘\’ in it you’ll have to escape it: ‘\\’
 
 You can generate a timestamp in your browser console or scratchpad for use in the **“agreedAt”** field
 
-<img src="/media-library/azure/azure-rest-domain-transfer-date.png" alt="Azure REST domain transfer date">
+<figure>
+  <img src="/media-library/azure/azure-rest-domain-transfer-date.png" alt="Azure REST domain transfer date">
+</figure>
 
 The “agreedBy” field is the Client IP address according to the docs. You can obtain this in a number of ways. Such as <https://duckduckgo.com/?q=what+is+my+ip&t=hk&ia=answer>
 
@@ -90,11 +110,15 @@ The “agreementKeys” were left as the default values. After a [little digging
 
 Hit the run button and you should get a 202 message:
 
-<img src="/media-library/azure/azure-rest-api-domain-transfer-run-ok.png" alt="Azure REST API Domain Transfer Run Ok">
+<figure>
+  <img src="/media-library/azure/azure-rest-api-domain-transfer-run-ok.png" alt="Azure REST API Domain Transfer Run Ok">
+</figure>
 
 You might also get an error like I did:
 
-<img src="/media-library/azure/azure-rest-api-domain-transfer-run-fail.png" alt="Azure REST API Domain Transfer Run Fail">
+<figure>
+  <img src="/media-library/azure/azure-rest-api-domain-transfer-run-fail.png" alt="Azure REST API Domain Transfer Run Fail">
+</figure>
 
 ```json
 {
@@ -114,37 +138,57 @@ You might also get an error like I did:
 
 This is how I resolved that:
 
-<img src="/media-library/azure/azure-resource-providers.png" alt="Azure Resource Providers">
+<figure>
+  <img src="/media-library/azure/azure-resource-providers.png" alt="Azure Resource Providers">
+</figure>
 
-<img src="/media-library/azure/microsoft-domain-registration-1.png" alt="Microsoft Domain Registration">
+<figure>
+  <img src="/media-library/azure/microsoft-domain-registration-1.png" alt="Microsoft Domain Registration">
+</figure>
 
-<img src="/media-library/azure/microsoft-domain-registration-2.png" alt="Microsoft Domain Registration">
+<figure>
+  <img src="/media-library/azure/microsoft-domain-registration-2.png" alt="Microsoft Domain Registration">
+</figure>
 
 Then try to run the API command again:
 
-<img src="/media-library/azure/azure-rest-api-domain-transfer-run-ok.png" alt="Azure REST API Domain Transfer Run Ok">
+<figure>
+  <img src="/media-library/azure/azure-rest-api-domain-transfer-run-ok.png" alt="Azure REST API Domain Transfer Run Ok">
+</figure>
 
 Navigate to the Azure Resource Group and you should see a new entry
 
-<img src="/media-library/azure/arg-new-domain.png" alt="Azure new domain">
+<figure>
+  <img src="/media-library/azure/arg-new-domain.png" alt="Azure new domain">
+</figure>
 
 Open the resource and you’ll see a “Pending” message at the top:
 
-<img src="/media-library/azure/arg-new-domain-details.png" alt="Azure new domain details">
+<figure>
+  <img src="/media-library/azure/arg-new-domain-details.png" alt="Azure new domain details">
+</figure>
 
 Now you play the waiting game. I only had to wait an hour or so, but I wouldn’t be surprised if this takes longer. Namecheap sent the following email:
 
-<img src="/media-library/azure/namecheap-confirm.png" alt="Namecheap confirmation details">
+<figure>
+  <img src="/media-library/azure/namecheap-confirm.png" alt="Namecheap confirmation details">
+</figure>
 
 Now this email is **Bullshit**. I waited a week and nothing happened. You have to **click the link** to CANCEL the transfer. See the comment from Namecheap support:
 
-<img src="/media-library/azure/namecheap-confirm-support.jpg" alt="Namecheap confirm support">
+<figure>
+  <img src="/media-library/azure/namecheap-confirm-support.jpg" alt="Namecheap confirm support">
+</figure>
 
-<img src="/media-library/azure/namecheap-azure-domain-transfer-request.png" alt="Namecheap Azure Domain Transfer Request">
+<figure>
+  <img src="/media-library/azure/namecheap-azure-domain-transfer-request.png" alt="Namecheap Azure Domain Transfer Request">
+</figure>
 
 After clicking Approve, go back to Azure and wait. This could take awhile. I only had to wait an hour or so, but according to the message it could take days…
 
-<img src="/media-library/azure/azure-app-service-domain-registered.png" alt="Azure App Service Domain Registered">
+<figure>
+  <img src="/media-library/azure/azure-app-service-domain-registered.png" alt="Azure App Service Domain Registered">
+</figure>
 
 ## Post-Transfer
 

@@ -16,7 +16,7 @@ class GalleryItem extends Component {
         let figure = this.el.cloneNode(true)
         figure.classList.remove('gallery-item')
 
-        this.dialog = new GalleryDialog({ content: figure.innerHTML })
+        this.dialog = new GalleryDialog({ content: figure.outerHTML })
     }
     onclick(e) {
         this.dialog.showModal()
