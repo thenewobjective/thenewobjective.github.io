@@ -14,7 +14,7 @@ nav_order: 0
     <summary>{{ category[0] }} ({{ category[1].size }})</summary>
     <ul>
         {% for post in category[1] %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href='{{ post.url }}'>{{ post.title }}</a></li>
         {% endfor %}
     </ul>
 </details>
