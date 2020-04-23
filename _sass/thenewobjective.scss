@@ -69,6 +69,20 @@ figcaption {
 	font-size: small;
 }
 
+table {
+	border: 1px solid var(--font-color);
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid var(--font-color);
+	padding: 0.5em 1em;
+}
+
+thead {
+	background: var(--site-header-bg);
+}
+
 @import
 	"includes/site-header",
 	"includes/details",
