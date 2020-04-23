@@ -23,3 +23,5 @@ Duty, order, and formalism are the lenses I see the world through.
 This is my personal website. It contains a variety of content without a common theme,
 though primarily it functions as a form of [self-authoring](https://youtu.be/qa9u5t3C0AI){:target="_blank"},
 as a journal of musings on a variety of topics, and a nexus for my activities across the web.
+
+The site is powered by [Jekyll](https://jekyllrb.com/){:target="_blank"} with a custom theme and hosted by [GitHub](https://github.com/thenewobjective/thenewobjective.github.io){:target="_blank"}.
