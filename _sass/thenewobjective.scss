@@ -50,6 +50,11 @@ cite {
 	text-align: right;
 }
 
+code {
+	font-size: 10pt;
+	white-space: pre;
+}
+
 hr {
 	border-color: #000 transparent #555;
 	border-radius: 100%;
@@ -72,6 +77,7 @@ figcaption {
 table {
 	border: 1px solid var(--font-color);
 	border-collapse: collapse;
+	margin: 1em 0;
 }
 
 th, td {
