@@ -1,4 +1,5 @@
 .resume-item {
+    align-items: start;
     display: flex;
     flex-direction: row;
     margin: 2em 0;
@@ -6,26 +7,10 @@
 
 .resume-item img {
     margin-right: 1em;
-    width: 15vmin;
-}
-
-details .resume-item img {
-    height: min-content;
+    max-width: 15vmin;
 }
 
 .resume-item_content {
     display: flex;
     flex-direction: column;
-}
-
-.resume-item_title {
-
-}
-
-.resume-item_time {
-
-}
-
-.resume-item_desc {
-
 }

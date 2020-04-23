@@ -34,6 +34,10 @@ body {
 
 	/* Presentation */
 	font-size: 2vmin;
+
+	@media only screen and (min-width: 1280px) {
+        font-size: 12pt;
+    }
 }
 
 a {
@@ -73,6 +77,11 @@ figure img {
 
 figcaption {
 	font-size: small;
+}
+
+ul {
+	margin: 0;
+	padding: 0 0 0 2em;
 }
 
 @import
