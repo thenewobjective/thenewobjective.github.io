@@ -7,14 +7,19 @@ icon: aperture
 nav_order: 3
 ---
 
-## CSS
-
 <section class="demo-gallery">
     <figure>
         <a href="/demos/css-bubbles.html">
             <img src="/media-library/demos/cssBubbles.jpg" alt="CSS Bubbles">
         </a>
         <figcaption>Animated CSS Bubbles</figcaption>
+    </figure>
+
+    <figure>
+        <a href="/demos/coin-flip.html">
+            <img src="/media-library/demos/coin-flip.png" alt="Coin Flip">
+        </a>
+        <figcaption>CSS Coin Flip</figcaption>
     </figure>
 
 <!--
@@ -31,15 +36,7 @@ nav_order: 3
         </a>
         <figcaption>CSS Cube</figcaption>
     </figure>
--->
-</section>
 
-## &lt;canvas&gt; 2D
-
-Coming Soon
-
-<!--
-<section class="demo-gallery">
     <figure>
         <a href="#">
             <img src="/media-library/demos/LSystem.png" alt="Lindenmayer Systems">
@@ -60,5 +57,5 @@ Coming Soon
         </a>
         <figcaption>Circle Collisions</figcaption>
     </figure>
-</section>
 -->
+</section>
