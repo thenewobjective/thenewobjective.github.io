@@ -29,6 +29,13 @@ nav_order: 3
         <figcaption>Spinner Bubbles</figcaption>
     </figure>
 
+    <figure>
+        <a href="/demos/disk-collisions.html">
+            <img src="/media-library/demos/collision-disks.jpg" alt="Disk Collisions">
+        </a>
+        <figcaption>Disk Collisions</figcaption>
+    </figure>
+
 <!--
     <figure>
         <a href="#">
@@ -56,13 +63,6 @@ nav_order: 3
             <img src="/media-library/demos/waterEffect.jpg" alt="Water Effect">
         </a>
         <figcaption>Water Effect</figcaption>
-    </figure>
-
-    <figure>
-        <a href="#">
-            <img src="/media-library/demos/collisionCircles.jpg" alt="Circle Collisions">
-        </a>
-        <figcaption>Circle Collisions</figcaption>
     </figure>
 -->
 </section>
