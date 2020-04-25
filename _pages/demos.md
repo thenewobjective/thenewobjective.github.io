@@ -22,6 +22,13 @@ nav_order: 3
         <figcaption>CSS Coin Flip</figcaption>
     </figure>
 
+    <figure>
+        <a href="/demos/spinner-bubbles.html">
+            <img src="/media-library/demos/spinner-bubbles.png" alt="Spinner Bubbles">
+        </a>
+        <figcaption>Spinner Bubbles</figcaption>
+    </figure>
+
 <!--
     <figure>
         <a href="#">
