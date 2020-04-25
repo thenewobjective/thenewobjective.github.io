@@ -109,14 +109,13 @@ class Bubble {
         this.el.style.left = `${centerX + perspective * this.x}px`;
         this.el.style.width = `${perspective * 31}px`;
         this.el.style.height = `${perspective * 31}px`;
-        this.el.zIndex = this.z;
+        // translate zIndex to remin above canvas
+        this.el.style.zIndex = `${Math.round(this.z) + 100}`;
 
-        // TODO: needs adjustment. no visible effect
-        const r4 = 4 / this.radius
-        const pixelRadius = Math.max(0, this.z * r4)
-
+        const pixelRadius = Math.round(Math.max(0, this.z * this.radius) / 512)
+        
         if(pixelRadius > 1) {
-            this.el.style.filter = `blur(${pixelRadius})`
+            this.el.style.filter = `blur(${pixelRadius}px)`
         } else {
             this.el.style.filter = `blur(0)`
         }
