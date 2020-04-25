@@ -1,0 +1,21 @@
+.site-content_body {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1279px) {
+    .site-content_body {
+        height: calc(100% - 3em);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .site-content_body {
+        height: calc(100% - 6em);
+    }
+}
+
+.demo {
+    overflow: hidden;
+}
