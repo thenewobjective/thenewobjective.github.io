@@ -4,6 +4,7 @@ icon: file-text
 title:  "Overview of prefix vs postfix notations + evaluation schemes"
 date:   2010-10-04 12:00:00 -0600
 category: Types and Programming Languages
+commentThreadId: 12
 ---
 
 *Yahoo decided to [kill Yahoo Groups](https://twitter.com/textfiles/status/1184461099237814273){:target="_blank"}.

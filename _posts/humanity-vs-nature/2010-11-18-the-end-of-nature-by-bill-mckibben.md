@@ -4,6 +4,7 @@ icon: file-text
 title:  "The End of Nature by Bill McKibben"
 date:   2010-11-18 12:00:00 -0600
 category: Humanity vs Nature
+commentThreadId: 31
 ---
 
 [The End of Nature](http://billmckibben.com/end-of-nature.html){:target="_blank"} is a personal dialogue from Bill McKibben on his distaste with the growing population of people on the planet and the impact they have on the world outside human societies. Perhaps more importantly, in his mind, the impact it has on his own mental welfare on how he believes nature should be. His belief is that mankind is different and separate from nature, and therefore any influence they have perverts it and makes it tainted. He extrapolates this view of a tainted nature to the whole of the globe, the view that the entire planet is perverted by our existence and influence. He even laments his own humanity (perhaps inevitably), and engages in a guilt ridden trek through the woods in a futile attempt to gain absolution for driving his car, for burning a dilapidated barn, and other activities. Bill McKibben’s point of view seems to be that mankind can do no good (as our very presence is an unpleasant experience for him).

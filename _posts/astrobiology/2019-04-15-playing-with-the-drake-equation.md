@@ -4,6 +4,7 @@ icon: file-text
 title:  "Playing with the Drake Equation"
 date:   2020-04-15 12:00:00 -0600
 category: Astrobiology
+commentThreadId: 27
 ---
 
 Thinking about the existence of extraterrestrials is always fun. One way to be self-indulgent is with the [Drake Equation](https://seti.org/drake-equation-index){:target="_blank"}.

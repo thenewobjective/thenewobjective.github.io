@@ -4,6 +4,7 @@ icon: file-text
 title:  "The Broken Line"
 date:   2019-04-15 12:00:00 -0600
 category: War and Peace
+commentThreadId: 7
 ---
 
 For centuries authors who have experienced war first-hand have often attempted to capture some essence of it in their writings. While these writings can express aspects of conflict in beautiful prose or in horrifying detail, some underlying message or meaning is often lost. What this missing essence is can be hard to articulate but at the same time can be easily recognized by the appropriate audience. The reason for this broken line of communication goes hand in hand with the nature of the message itself, the sender, and the receiver.

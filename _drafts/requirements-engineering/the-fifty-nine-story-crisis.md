@@ -4,6 +4,7 @@ icon: file-text
 title:  "The Fifty-Nine-Story Crisis"
 date:   2020-04-23 12:00:00 -0600
 category: Requirements Engineering
+commentThreadId: NaN
 ---
 
  William J. Lemessurier fulfilled his commitment to Standard of Care in the case of The Fifty-Nine-Story Crisis.  He demonstrated competence and concern in pursuing the correction of a potentially fatal design flaw in the Citicorp headquarters tower. This pursuit and concern can be seen by following the timeline of events after 1977 when the engineering student Diane Hartley initially raised the issue. 

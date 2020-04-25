@@ -4,6 +4,7 @@ icon: file-text
 title:  "The Future of Nature"
 date:   2010-12-01 12:00:00 -0600
 category: Humanity vs Nature
+commentThreadId: 30
 ---
 
 In order to predict the future of nature, or more accurately, humanity’s future relationship with nature, it would

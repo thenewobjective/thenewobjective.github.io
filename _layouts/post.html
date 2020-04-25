@@ -3,8 +3,10 @@ layout: default
 ---
 <article class="post">
     <header>
-        <a href="/about">Michael L. Haufe</a>&nbsp;&middot;&nbsp;<time>{{ page.date | date: "%B %-d, %Y" }}</time>
+        <a href="/about" rel="author">Michael L. Haufe</a>&nbsp;&middot;&nbsp;<time>{{ page.date | date: "%B %-d, %Y" }}</time>
     </header>
     <hr>
     {{ content }}
 </article>
+<hr>
+{%- include comments/comments.html -%}

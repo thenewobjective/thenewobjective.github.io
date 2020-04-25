@@ -4,6 +4,7 @@ icon: file-text
 title:  "Watching “Free” Will"
 date:   2019-06-02 12:00:00 -0600
 category: Mindscape
+commentThreadId: 24
 ---
 
 I had an interesting dream which reminded me of the weak hold we have on the concept of free will. There was nothing particularly significant in the dream itself in regards to artifacts and symbols. What was exceptional in this case was that I was controlling my “body” in a third person perspective and yet looking through the eyes like a suit.

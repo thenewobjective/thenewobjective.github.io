@@ -4,6 +4,7 @@ icon: file-text
 title:  "A Criticism of Web Components"
 date:   2019-03-18 12:00:00 -0600
 category: Web Development
+commentThreadId: 1
 ---
 
 *This is a repost of my (now deleted) comment on [SitePen](https://www.sitepen.com/blog/2018/07/06/web-components-in-2018/){:target="_blank"}. I’ve added some additions and references. A similar comment of mine was removed from the [Mozilla blog](https://hacks.mozilla.org/2018/11/the-power-of-web-components){:target="_blank"}.*
@@ -45,8 +46,8 @@ and so on.
 
 It sucks to say the least to have to re-invent something like `<button />` [from scratch](https://codepen.io/mlhaufe/pen/yxBEdx){:target="_blank"} instead of a more specific element such as `HTMLButtonElement` but the current standard requires that you extend the base `HTMLElement`
 
-- <https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-customized-builtin-example>
-- <https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-autonomous-drawbacks>
+* <https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-customized-builtin-example>
+* <https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-autonomous-drawbacks>
 
 Even IF you COULD extend a more specific element directly, not all elements have a class to extend, like `<footer />`. So you have to use the hacky property in registration, extends:
 
@@ -54,8 +55,8 @@ Even IF you COULD extend a more specific element directly, not all elements have
 
 The built-in tags were never designed to be extended, and if you tried you will probably break [Liskov’s Substitution Principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle){:target="_blank"} now or later. For example, if you could extend HTMLInputElement your new element has to support all of the current `type="…"` options, properties, and methods. When the standard changes and they add a new property or method, your subtype will be inconsistent with it and by definition NOT be an instance of `HTMLInputElement`. As a result of this, there is now a large set of guidelines published for you to deal with. A hallmark of poor design:
 
-- <https://w3ctag.github.io/webcomponents-design-guidelines/>
-- <https://github.com/webcomponents/gold-standard/wiki>
+* <https://w3ctag.github.io/webcomponents-design-guidelines/>
+* <https://github.com/webcomponents/gold-standard/wiki>
 
 ## JavaScript required
 

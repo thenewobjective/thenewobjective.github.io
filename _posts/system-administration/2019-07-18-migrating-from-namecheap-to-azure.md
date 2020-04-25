@@ -4,6 +4,7 @@ icon: file-text
 title:  "Migrating from Namecheap to Azure"
 date:   2019-07-18 12:00:00 -0600
 category: System Administration
+commentThreadId: 14
 ---
 
 I’ve spent a number of years hosting my websites on Namecheap. Their prices were very reasonable and the customer support was excellent. Over time though I’ve been doing increasingly ambitious projects on Azure, as well as working to divorce myself from all things Google. Early this year (2019) I finally decided to consolidate all of my web properties on the Microsoft stack. Spending hours with Customer support trying to identify mystery DNS servers, ever changing hosting servers, multiple cpanels, and a half dozen other minor nuisances finally became too much. “Just give me direct server access, I’ll do it myself”. Below you can see the steps I took to transfer some of my domains to Azure.

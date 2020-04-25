@@ -4,6 +4,7 @@ icon: file-text
 title:  "The Effectiveness of Digital Music Recording"
 date:   2010-07-18 12:00:00 -0600
 category: Music
+commentThreadId: 19
 ---
 
 *The following is a derivative of a paper written in 2010 for [the late](https://shepherdexpress.com/music/on-music/update-memorial-service-dr.-martin-jack-rosenblum-planned-thursday/){:target="_blank"} Dr. Martin Rosenblum, who was kind enough to request a copy of this for his library. It has been updated for presentation on the web.*

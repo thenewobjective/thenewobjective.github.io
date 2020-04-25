@@ -1,4 +1,13 @@
+/**
+ * @typedef {Object} ComponentOptions
+ * @property {HTMLElement} el
+ * @property {Object} handlers
+ */
+
 class Component {
+    /**
+     * @param {ComponentOptions} options 
+     */
     constructor(options) {
         Object.assign(this, {
             el: options.el,

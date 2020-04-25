@@ -4,6 +4,7 @@ icon: file-text
 title:  "The Great Maze of jQuery"
 date:   2019-04-18 12:00:00 -0600
 category: Web Development
+commentThreadId: 2
 ---
 
 *David Mark ([@Cinsoft](https://twitter.com/Cinsoft){:target="_blank"}, [Github](https://github.com/david-mark){:target="_blank"}, [comp.lang.javascript](https://groups.google.com/forum/#!profile/comp.lang.javascript/APn2wQdow28xcHDrDggfWTU5hXOy7oRk11vZM0N4N-idI7HJycIOyoXWIDEZoK6_MEPc2ywEyeeK){target="_blank"}) is a notorious web developer from a different age. He is abrasive and effective. The following is a reposting of [my response](https://gist.github.com/mlhaufe/a7d7469db14b3b006e6cdf15e5669d80){:target="_blank"} to a request for comments on yet another jQuery architectural problem. It has been slightly edited for blog form.*

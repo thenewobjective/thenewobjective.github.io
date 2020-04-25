@@ -4,6 +4,7 @@ icon: file-text
 title:  "Has Nature Ended?"
 date:   2010-12-06 12:00:00 -0600
 category: Humanity vs Nature
+commentThreadId: 29
 ---
 
 The question, “Has Nature ended?” can be as difficult to define as the answer is to be given. Humanity’s interpretation

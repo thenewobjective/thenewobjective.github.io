@@ -4,6 +4,7 @@ icon: file-text
 title:  "Rediscovering the Self"
 date:   2019-06-02 12:00:00 -0600
 category: Mindscape
+commentThreadId: 22
 ---
 
 For about a year or so I have been delving into the works of Carl Jung. I first read about him when I was 16 years old but wasn’t quite sure of what I was reading at the time. Sadly I had only access to indirect works and quotes but nothing direct. Concepts like [The Collective Unconscious](https://en.wikipedia.org/wiki/Collective_unconscious){:target="_blank"} (as it was described to me then) seemed too much like religious thinking and magic, and at that time in my life I was strongly Atheist. Ironically I was also reading everything I could by Nietzsche, which reinforced much of where my mind was at the time.

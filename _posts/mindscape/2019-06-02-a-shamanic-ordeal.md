@@ -4,6 +4,7 @@ icon: file-text
 title:  "A Shamanic Ordeal"
 date:   2019-06-02 12:00:00 -0600
 category: Mindscape
+commentThreadId: 21
 ---
 
 [Previously](/mindscape/2019/06/02/rediscovering-the-self.html) I’ve written on my awkward journeys into the unconscious. Recently I had a vivid dream/vision which I can’t explain in any other way than being a partial Shamanistic Ordeal. The dream began in no way special, but at some point it turned and became the most significant one I can remember:

@@ -4,6 +4,7 @@ icon: file-text
 title:  "Dynamic Programming for Great Justice"
 date:   2013-01-13 12:00:00 -0600
 category: Types and Programming Languages
+commentThreadId: 13
 ---
 
 Proper Tail Calls are [slated](http://wiki.ecmascript.org/doku.php?id=harmony:proper_tail_calls){:target="_blank"} for ES6 and are long overdue. Some of the most elegant solutions to the problems we face in designing algorithms are recursive ones. As a result of this addition, we can expect to see far more code bases utilizing this feature of the language. I suspect though that a significant number of these new designs are going to fall into the trap of creating code that is not only significantly slower than their imperative counterparts, but will potentially cripple the memory of the hardware it is running on. So before you start using recursion [For Great Justice](https://en.wikipedia.org/wiki/For_Great_Justice){:target="_blank"}, there is a methodology that should be understood.

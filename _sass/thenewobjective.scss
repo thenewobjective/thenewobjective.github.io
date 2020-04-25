@@ -2,7 +2,7 @@
 :root {
 	--font-color: #ccc;
 	--link-color: #61A5E4;
-	--site-header-bg: #222931;
+	--site-dark-bg: #222931;
 	--content-bg: #2D3742;
 	--shadow-color: rgba(0, 0, 0, 0.4);
 }
@@ -41,11 +41,16 @@ body {
 }
 
 a {
-    color: var(--link-color);
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: underline;
 }
 
 blockquote {
-    background: var(--site-header-bg);
+    background: var(--site-dark-bg);
     border-left: 0.5em solid var(--link-color);
     padding: 0.5em 1em;
     margin: 1em;
@@ -66,7 +71,7 @@ hr {
 }
 
 figure {
-	background-color: var(--site-header-bg);
+	background-color: var(--site-dark-bg);
 	padding: 1em;
 	text-align: center;
 }
@@ -96,6 +101,7 @@ ul {
 	"includes/gallery-dialog",
 	"includes/youtube",
 	"includes/codepen",
+	"includes/comments",
 	"pages/about-me",
 	"obsidian"
 ;

@@ -4,6 +4,7 @@ icon: file-text
 title:  "Leaky Abstractions Are Just Bad Abstractions"
 date:   2019-01-15 12:00:00 -0600
 category: Requirements Engineering
+commentThreadId: 17
 ---
 
 ## Introduction

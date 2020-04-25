@@ -4,6 +4,7 @@ icon: file-text
 title:  "The Necessity of National Language"
 date:   2019-04-16 12:00:00 -0600
 category: Social Issues
+commentThreadId: 16
 ---
 
 The United States can be recognized by its political borders, a commonly shared culture, and a distinct language. The borders of the nation are clearly recognized and enforced. The aspects that define the shared culture/outlook of the nation are recognized and enforced to a degree by their codification in the legal system of the nation. Some of these aspects include age of consent, rules concerning drug use, the concept of legal adulthood, severity of punishments for particular social taboos and what is defined to be social deviancy. The national language on the other hand is something that has remained de-facto instead of de-jure. It would be in the best interest of the country to codify this aspect as well.

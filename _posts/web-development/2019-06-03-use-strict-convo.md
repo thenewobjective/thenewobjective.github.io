@@ -4,6 +4,7 @@ icon: file-text
 title:  "“use strict” convo"
 date:   2019-06-03 12:00:00 -0600
 category: Web Development
+commentThreadId: 4
 ---
 
 *Below is a reposting of a twitter conversation on the topic of “use strict”. Given the ephemeral nature of twitter, I think it’s important to keep a copy of my participation before the context is lost. The thread has been edited slightly for presentation and hateful spammer participants have been removed.*

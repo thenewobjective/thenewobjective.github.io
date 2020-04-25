@@ -4,6 +4,7 @@ icon: file-text
 title:  "Letters of Support"
 date:   2019-08-15 12:00:00 -0600
 category: USMC
+commentThreadId: 10
 ---
 
 I was deployed to Fallujah Iraq during "[Operation Iraqi Freedom](https://en.wikipedia.org/wiki/Iraq_War#2003.3A_Invasion){:target="_blank"}". During that time I received a large number of letters of support from people across the country. Recently I came to the conclusion that these letters, while addressed to me, were not for me specifically but for me as a representative of an [archetype](https://stevenpressfield.com/2011/05/the-warrior-archetype/){:target="_blank"}. I am sharing these in the hope that it provides some perspective, history, and inspiration if you decide to send a letter of support of your own to another service member currently deployed around the world. It would be appreciated, especially around the holidays.
