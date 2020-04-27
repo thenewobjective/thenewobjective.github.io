@@ -17,5 +17,5 @@ nav_order: 2
 ## Versioned Lexical Search (2014)
 
 - [Senior Thesis](/media-library/publications/Versioned-Lexical-Search.pdf)
-- [Source Code](https://dev.azure.com/thenewobjective/_git/Versioned%20Lexical%20Search)
+- [Source Code](https://github.com/thenewobjective/versioned-lexical-search)
 - [Presentation Poster for a separate standalone application](/media-library/publications/LexicalSearchPoster.pdf)
