@@ -13,7 +13,7 @@ nav_order: 0
 <details>
     <summary>{{ category[0] }} ({{ category[1].size }})</summary>
     <ul>
-        {% for post in category[1] %}
+        {% for post in category[1] reversed %}
         <li><a href='{{ post.url }}'>{{ post.title }}</a></li>
         {% endfor %}
     </ul>
