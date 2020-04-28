@@ -35,6 +35,15 @@ nav_order: 4
 %}
 
 {% include resume-item.html
+  image="about:blank"
+  alt=""
+  title="Versioned Lexical Search Interface"
+  time="2012"
+  desc="Standalone GUI prototype of Versioned Lexical Search for searching a repository across its version history<br>
+  <a href='https://github.com/thenewobjective/versioned-lexical-search-interface' target='_blank'>View on GitHub</a>"
+%}
+
+{% include resume-item.html
    image="about:blank"
    alt=""
    title="SIMple Machine Simulator"
