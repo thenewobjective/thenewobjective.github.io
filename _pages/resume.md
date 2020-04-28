@@ -646,9 +646,7 @@ I’m primarily interested in the study and application of Programming Language 
     <ul>
         <li>Contract position on behalf of Zeon Solutions</li>
         <li>Migration of a Legacy IBM Domino application to Google App Maker (Alpha)</li>
-        <li>Integration with pre-release version of Chromecast
-            <ul><li>Further details under NDAs from Google, Brady and Zeon. </li></ul>
-        </li>
+        <li>Integration with pre-release version of Chromecast</li>
     </ul>
 </details>
 
