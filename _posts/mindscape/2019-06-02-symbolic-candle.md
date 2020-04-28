@@ -4,6 +4,7 @@ icon: file-text
 title:  "Symbolic Candle"
 date:   2019-06-02 12:00:00 -0600
 category: Mindscape
+permalink: /mindscape/symbolic-candle
 commentThreadId: 23
 ---
 

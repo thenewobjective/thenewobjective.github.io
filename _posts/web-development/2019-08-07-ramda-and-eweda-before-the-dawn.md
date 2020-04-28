@@ -4,6 +4,7 @@ icon: file-text
 title:  "Ramda and Eweda before the dawn"
 date:   2019-04-15 12:00:00 -0600
 category: Web Development
+permalink: /web-development/ramda-and-eweda-before-the-dawn
 commentThreadId: 5
 ---
 

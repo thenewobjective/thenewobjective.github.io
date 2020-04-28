@@ -4,6 +4,7 @@ icon: file-text
 title:  "Appearance in the Houston Chronicle"
 date:   2019-09-12 12:00:00 -0600
 category: Uncategorized
+permalink: /uncategorized/appearance-in-the-houston-chronicle
 commentThreadId: 11
 ---
 

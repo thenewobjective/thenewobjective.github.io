@@ -4,6 +4,7 @@ icon: file-text
 title:  "Watching “Free” Will"
 date:   2019-06-02 12:00:00 -0600
 category: Mindscape
+permalink: /mindscape/watching-free-will
 commentThreadId: 24
 ---
 

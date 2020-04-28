@@ -4,6 +4,7 @@ icon: file-text
 title:  "CSS Grid With Detail View"
 date:   2019-06-03 12:00:00 -0600
 category: Web Development
+permalink: /web-development/css-grid-with-detail-view
 commentThreadId: 3
 ---
 

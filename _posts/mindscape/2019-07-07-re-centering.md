@@ -4,6 +4,7 @@ icon: file-text
 title:  "Re-centering"
 date:   2019-07-07 12:00:00 -0600
 category: Mindscape
+permalink: /mindscape/re-centering
 commentThreadId: 25
 ---
 

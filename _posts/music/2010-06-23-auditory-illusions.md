@@ -4,6 +4,7 @@ icon: file-text
 title:  "Auditory Illusions"
 date:   2010-06-23 12:00:00 -0600
 category: Music
+permalink: /music/auditory-illusions
 commentThreadId: 18
 ---
 

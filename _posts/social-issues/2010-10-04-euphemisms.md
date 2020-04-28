@@ -4,6 +4,7 @@ icon: file-text
 title:  "Euphemisms"
 date:   2010-10-04 12:00:00 -0600
 category: Social Issues
+permalink: /social-issues/euphemisms
 commentThreadId: 15
 ---
 

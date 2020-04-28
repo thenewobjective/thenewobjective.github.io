@@ -56,7 +56,7 @@ class Comments extends Component {
         this.comments = []
         let id = Number(this.el.dataset.commentThreadId)
     
-        if(Number.isNaN(id))
+        if(Number.isNaN(id) || id <= 0)
             return;
 
         fetch(`https://api.github.com/repos/thenewobjective/thenewobjective.github.io/issues/${id}/comments`, {

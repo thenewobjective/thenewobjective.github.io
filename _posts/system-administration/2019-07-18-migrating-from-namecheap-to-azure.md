@@ -4,6 +4,7 @@ icon: file-text
 title:  "Migrating from Namecheap to Azure"
 date:   2019-07-18 12:00:00 -0600
 category: System Administration
+permalink: /system-administration/migrating-from-namecheap-to-azure
 commentThreadId: 14
 ---
 

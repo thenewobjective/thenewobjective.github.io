@@ -4,6 +4,7 @@ icon: file-text
 title:  "Picher and Cardin"
 date:   2020-04-13 12:00:00 -0600
 category: Humanity vs Nature
+permalink: /humanity-vs-nature/picher-and-cardin
 commentThreadId: 28
 ---
 

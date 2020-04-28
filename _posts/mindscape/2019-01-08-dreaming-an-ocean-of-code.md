@@ -4,6 +4,7 @@ icon: file-text
 title:  "Dreaming an Ocean of Code"
 date:   2019-01-08 12:00:00 -0600
 category: Mindscape
+permalink: /mindscape/dreaming-an-ocean-of-code
 commentThreadId: 20
 ---
 

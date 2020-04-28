@@ -4,6 +4,7 @@ icon: file-text
 title:  "The Effectiveness of Digital Music Recording"
 date:   2010-07-18 12:00:00 -0600
 category: Music
+permalink: /music/the-effectiveness-of-digital-music-recording
 commentThreadId: 19
 ---
 

@@ -4,6 +4,7 @@ icon: file-text
 title:  "Playing with the Drake Equation"
 date:   2020-04-15 12:00:00 -0600
 category: Astrobiology
+permalink: /astrobiology/playing-with-the-drake-equation/
 commentThreadId: 27
 ---
 

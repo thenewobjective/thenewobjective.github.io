@@ -4,6 +4,7 @@ icon: file-text
 title:  "The End of Nature by Bill McKibben"
 date:   2010-11-18 12:00:00 -0600
 category: Humanity vs Nature
+permalink: /humanity-vs-nature/the-end-of-nature-by-bill-mckibben
 commentThreadId: 31
 ---
 

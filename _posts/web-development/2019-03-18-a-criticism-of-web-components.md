@@ -4,6 +4,7 @@ icon: file-text
 title:  "A Criticism of Web Components"
 date:   2019-03-18 12:00:00 -0600
 category: Web Development
+permalink: /web-development/a-criticism-of-web-components
 commentThreadId: 1
 ---
 

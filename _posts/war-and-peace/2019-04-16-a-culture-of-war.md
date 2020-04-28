@@ -4,6 +4,7 @@ icon: file-text
 title:  "A Culture of War"
 date:   2019-04-16 12:00:00 -0600
 category: War and Peace
+permalink: /war-and-peace/a-culture-of-war
 commentThreadId: 8
 ---
 
