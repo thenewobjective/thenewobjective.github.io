@@ -1,3 +1,5 @@
+{% if page.commentThreadId != -1 %}
+
 <section class="comments" data-comment-thread-id="{{ page.commentThreadId }}">
     <header>
         <h2 id="comments">Comments</h2>
@@ -9,3 +11,5 @@
         <p>You can create, reply to, and manage comments on <a href="https://github.com/thenewobjective/thenewobjective.github.io/issues/{{ page.commentThreadId }}" rel="noopener external" target="_blank">GitHub</a></p>
     </footer>
 </section>
+
+{% endif %}
