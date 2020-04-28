@@ -20,6 +20,15 @@ nav_order: 4
 {% include resume-item.html
   image="about:blank"
   alt=""
+  title="Lapis"
+  time="2020"
+  desc="The Lapis programming languagek<br>
+  <a href='https://lapis-lang.org' target='_blank'>Lapis Lang</a>"
+%}
+
+{% include resume-item.html
+  image="about:blank"
+  alt=""
   title="Derivative Parse"
   time="2020"
   desc="A language parser based on Matt Might's work<br>
