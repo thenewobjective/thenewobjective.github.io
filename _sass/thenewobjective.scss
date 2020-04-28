@@ -60,11 +60,6 @@ cite {
 	text-align: right;
 }
 
-code {
-	font-size: 10pt;
-	white-space: pre;
-}
-
 hr {
 	border-color: #000 transparent #555;
 	border-radius: 100%;
@@ -89,6 +84,10 @@ ul {
 	padding: 0 0 0 2em;
 }
 
+.highlight pre {
+	padding: 1em;
+}
+
 @import
 	"includes/site-header",
 	"includes/details",
@@ -104,6 +103,6 @@ ul {
 	"includes/comments",
 	"includes/software-rendering",
 	"pages/about-me",
-	"pages/demos",
-	"obsidian"
+	"monokai",
+	"pages/demos"
 ;
