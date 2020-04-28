@@ -1,0 +1,34 @@
+---
+layout: post
+---
+<nav class="software-rendering-nav">
+    {% if page.previous.category == "Software Rendering" and page.previous.title %}
+        <a href="{{page.previous.permalink}}">Prev: {{ page.previous.title }}</a>
+    {% else %}
+        <a href="#"></a>
+    {% endif %}
+
+    {% if page.next.category == "Software Rendering" and page.next.title %}
+        <a href="{{page.next.permalink}}">Next: {{ page.next.title }}</a>
+    {% else %}
+        <a href="#"></a>
+    {% endif %}
+</nav>
+<hr>
+
+{{ content }}
+
+<hr>
+<nav class="software-rendering-nav">
+    {% if page.previous.category == "Software Rendering" and page.previous.title %}
+        <a href="{{page.previous.permalink}}">Prev: {{ page.previous.title }}</a>
+    {% else %}
+        <a href="#"></a>
+    {% endif %}
+
+    {% if page.next.category == "Software Rendering" and page.next.title %}
+        <a href="{{page.next.permalink}}">Next: {{ page.next.title }}</a>
+    {% else %}
+        <a href="#"></a>
+    {% endif %}
+</nav>
