@@ -5,6 +5,8 @@ title:  "Call of Duty"
 date:   2019-04-15 12:00:00 -0600
 category: War and Peace
 permalink: /war-and-peace/call-of-duty
+redirect_from:
+    - /call-of-duty/
 commentThreadId: 6
 ---
 

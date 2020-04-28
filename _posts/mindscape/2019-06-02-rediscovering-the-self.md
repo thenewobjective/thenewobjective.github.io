@@ -5,6 +5,8 @@ title:  "Rediscovering the Self"
 date:   2019-06-02 12:00:00 -0600
 category: Mindscape
 permalink: /mindscape/rediscovering-the-self
+redirect_from:
+    - /rediscovering-the-self/
 commentThreadId: 22
 ---
 

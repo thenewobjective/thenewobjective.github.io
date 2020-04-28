@@ -5,6 +5,8 @@ title:  "The Necessity of National Language"
 date:   2019-04-16 12:00:00 -0600
 category: Social Issues
 permalink: /social-issues/the-necessity-of-national-language
+redirect_from:
+    - /the-necessity-of-national-language/
 commentThreadId: 16
 ---
 

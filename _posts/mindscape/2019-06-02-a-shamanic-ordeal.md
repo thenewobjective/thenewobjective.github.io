@@ -5,6 +5,8 @@ title:  "A Shamanic Ordeal"
 date:   2019-06-02 12:00:00 -0600
 category: Mindscape
 permalink: /mindscape/a-shamanic-ordeal
+redirect_from:
+    - /a-shamanic-ordeal/
 commentThreadId: 21
 ---
 

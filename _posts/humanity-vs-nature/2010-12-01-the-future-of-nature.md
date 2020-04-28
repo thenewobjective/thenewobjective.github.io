@@ -5,6 +5,8 @@ title:  "The Future of Nature"
 date:   2010-12-01 12:00:00 -0600
 category: Humanity vs Nature
 permalink: /humanity-vs-nature/the-future-of-nature
+redirect_from:
+    - /the-future-of-nature/
 commentThreadId: 30
 ---
 

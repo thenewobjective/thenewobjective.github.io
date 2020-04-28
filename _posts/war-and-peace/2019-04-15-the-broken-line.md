@@ -5,6 +5,8 @@ title:  "The Broken Line"
 date:   2019-04-15 12:00:00 -0600
 category: War and Peace
 permalink: /war-and-peace/the-broken-line
+redirect_from:
+    - /the-broken-line/
 commentThreadId: 7
 ---
 

@@ -5,6 +5,8 @@ title:  "The Idea of Nature"
 date:   2010-11-27 12:00:00 -0600
 category: Humanity vs Nature
 permalink: /humanity-vs-nature/the-idea-of-nature
+redirect_from:
+    - /the-idea-of-nature/
 commentThreadId: 32
 ---
 

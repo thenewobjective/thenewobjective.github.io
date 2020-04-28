@@ -5,6 +5,8 @@ title:  "Has Nature Ended?"
 date:   2010-12-06 12:00:00 -0600
 category: Humanity vs Nature
 permalink: /humanity-vs-nature/has-nature-ended
+redirect_from:
+    - /has-nature-ended/
 commentThreadId: 29
 ---
 

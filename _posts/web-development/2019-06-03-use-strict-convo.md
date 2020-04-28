@@ -5,6 +5,8 @@ title:  "“use strict” convo"
 date:   2019-06-03 12:00:00 -0600
 category: Web Development
 permalink: /web-development/use-strict-convo
+redirect_from:
+    - /use-strict-convo/
 commentThreadId: 4
 ---
 

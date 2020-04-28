@@ -5,6 +5,8 @@ title:  "Brkic’s Stillness"
 date:   2019-04-16 12:00:00 -0600
 category: War and Peace
 permalink: /war-and-peace/brkics-stillness
+redirect_from:
+    - /brkics-stillness/
 commentThreadId: 9
 ---
 

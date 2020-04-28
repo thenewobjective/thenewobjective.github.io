@@ -5,6 +5,8 @@ title:  "Dynamic Programming for Great Justice"
 date:   2013-01-13 12:00:00 -0600
 category: Types and Programming Languages
 permalink: /types-and-programming-languages/dynamic-programming-for-great-justice
+redirect_from:
+    - /dynamic-programming-for-great-justice/
 commentThreadId: 13
 ---
 

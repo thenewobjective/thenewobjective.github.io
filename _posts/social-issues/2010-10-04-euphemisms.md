@@ -5,6 +5,8 @@ title:  "Euphemisms"
 date:   2010-10-04 12:00:00 -0600
 category: Social Issues
 permalink: /social-issues/euphemisms
+redirect_from:
+    - /euphemisms/
 commentThreadId: 15
 ---
 

@@ -5,6 +5,8 @@ title:  "Overview of prefix vs postfix notations + evaluation schemes"
 date:   2010-10-04 12:00:00 -0600
 category: Types and Programming Languages
 permalink: /types-and-programming-languages/overview-of-prefix-vs-postfix-notations-evaluation-schemes
+redirect_from:
+    - /overview-of-prefix-vs-postfix-notations-evaluation-schemes/
 commentThreadId: 12
 ---
 
