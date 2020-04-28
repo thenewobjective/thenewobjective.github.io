@@ -51,3 +51,5 @@ nav_order: 4
    desc="Simple machine simulator for teaching entry level computer science students<br>
    <a href='https://github.com/thenewobjective/sim-machine' target='_blank'>View on GitHub</a>"
 %}
+
+Projects completed related to my employment are viewable on the [Resume](/resume) page.
