@@ -1,6 +1,4 @@
-details {
-    border-bottom: 2px solid var(--shadow-color)
-}
+details {}
 
 details > summary {
 	background: var(--site-dark-bg);
@@ -11,4 +9,9 @@ details > summary {
 
 details + details {
 	margin-top: 2em;
+}
+
+details > ul,
+details > ol {
+	margin: 1em 0;
 }
