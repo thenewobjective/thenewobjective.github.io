@@ -7,6 +7,26 @@ icon: briefcase
 nav_order: 4
 ---
 
+<!--
+{% include resume-item.html
+  image="about:blank"
+  alt=""
+  title="Programming Language Wiki"
+  time="2020"
+  desc="A collection of programming languages<br>
+  <a href='https://mlhaufe.github.io/pl-wiki/' target='_blank'>https://mlhaufe.github.io/pl-wiki/</a>"
+%}
+
+{% include resume-item.html
+  image="about:blank"
+  alt=""
+  title="Derivative Parse"
+  time="2020"
+  desc="A language parser based on Matt Might's work<br>
+  <a href='#' target='_blank'></a>"
+%}
+-->
+
 {% include resume-item.html
   image="about:blank"
   alt=""
