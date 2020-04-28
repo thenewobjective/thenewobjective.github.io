@@ -11,11 +11,31 @@ commentThreadId: -1
 Last time we rendered random noise to our canvas, now we'll add some more control over plotting points.
 Before we continue let's refactor to separate our specific noise example from what we might consider basic functionality:
 
-<script src="https://gist.github.com/mlhaufe/497ccec681b170aedbb6905b488be2e9.js?file=1.js"></script>
+```js
+class Canvas {
+    ...
+    render() {
+        this.#frontBuffer.putImageData(this.#backBuffer, 0, 0);
+        requestAnimationFrame(() => this.render())
+    }
+    ...
+}
+
+class NoiseExample extends Canvas {
+    render() {
+        this.fillNoise()
+        super.render()
+    }
+}
+```
 
 So now we can re-introduce the noise example from before:
 
-<script src="https://gist.github.com/mlhaufe/497ccec681b170aedbb6905b488be2e9.js?file=2.js"></script>
+```js
+let example5 = new NoiseExample({ height: 360, width: 640 })
+example5.appendTo(document.getElementById('example-5'))
+example5.start()
+```
 
 <script type="module" src="/scripts/software-rendering/example-5.js"></script>
 
@@ -61,7 +81,7 @@ bytes * (width * y + x) + component
 In this case `bytes = 4` for RGBA, `width = 640`, and `height = 360`. The component is the offset for the particular color channel.
 So to access the colors at `x = 240`, `y = 12`:
 
-```text
+```js
 let r = data[bytes * (width * y + x)  + 0],
     g = data[bytes * (width * y + x)  + 1],
     b = data[bytes * (width * y + x)  + 2],
@@ -70,12 +90,40 @@ let r = data[bytes * (width * y + x)  + 0],
 
 Time to define our `plot` function:
 
-<script src="https://gist.github.com/mlhaufe/497ccec681b170aedbb6905b488be2e9.js?file=3.js"></script>
+```js
+class Canvas {
+    ...
+    plot(x, y, r, g, b, a) {
+        let bytes = 4,
+            i = bytes * (this.#canvas.width * y + x),
+            data = this.#backBuffer.data;
+        data[i + 0] = r
+        data[i + 1] = g
+        data[i + 2] = b
+        data[i + 3] = a
+    }
+    ...
+}
+```
 
 Web developers will probably think it feels awkward and noisy to have to pass in the RGBA components separately `.plot(120,4,255,0,0,255)`, so we'll
 update the method to support hex colors: `.plot(120,4,0xFF0000FF)` which is convenient as we can name them `.plot(120,4,RED)`:
 
-<script src="https://gist.github.com/mlhaufe/497ccec681b170aedbb6905b488be2e9.js?file=4.js"></script>
+```js
+class Canvas {
+    ...
+    plot(x, y, c) {
+        let bytes = 4,
+            i = bytes * (this.#canvas.width * y + x),
+            data = this.#backBuffer.data;
+        data[i + 0] = (c >>> 24);
+        data[i + 1] = (c << 8 >>> 24);
+        data[i + 2] = (c << 16 >>> 24);
+        data[i + 3] = (c << 24 >>> 24);
+    }
+    ...
+}
+```
 
 Passing in a single number for a color requires some work to get the individual components out again, so above you can see
 this being done with [bitwise shifting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators){:target="_blank"}.
@@ -125,11 +173,67 @@ Now we don't want to attempt to draw pixels outside of the canvas nor do we want
 to try and draw pixels at a fractional position such as `plot(-1, 18.5, BLUE)`. Let's
 update the method to handle these cases:
 
-<script src="https://gist.github.com/mlhaufe/497ccec681b170aedbb6905b488be2e9.js?file=5.js"></script>
+```js
+class Canvas {
+    ...
+    plot(x, y, c) {
+        let {width, height} = this.#canvas;
+
+        if(x < 0 || y < 0 || x >= width || y >= height)
+            return;
+
+        let xf = Math.floor(x),
+            yf = Math.floor(y),
+            bytes = 4,
+            i = bytes * (width * yf + xf),
+            data = this.#backBuffer.data;
+
+        data[i + 0] = (c >>> 24);
+        data[i + 1] = (c << 8 >>> 24);
+        data[i + 2] = (c << 16 >>> 24);
+        data[i + 3] = (c << 24 >>> 24);
+    }
+    ...
+}
+```
 
 Let's plot some pixels now:
 
-<script src="https://gist.github.com/mlhaufe/497ccec681b170aedbb6905b488be2e9.js?file=6.js"></script>
+```js
+class Canvas {
+    ...
+    get height() {
+        return this.#canvas.height
+    }
+
+    get width() {
+        return this.#canvas.width
+    }
+    ...
+}
+
+class PlottingExample extends Canvas {
+    randomInt(min, max) {
+        let minRound = Math.ceil(min),
+            maxRound = Math.floor(max);
+        return Math.floor(Math.random() * (maxRound - minRound)) + minRound;
+    }
+
+    render() {
+        let color = this.randomInt(0x00000000, 0xFFFFFFFF)
+        let x = this.randomInt(0,this.width - 1)
+        let y = this.randomInt(0, this.height - 1)
+
+        this.plot(x, y, color)
+
+        super.render()
+    }
+}
+
+let example6 = new PlottingExample({ height: 360, width: 640 })
+example6.appendTo(document.getElementById('example-6'))
+example6.start()
+```
 
 <figure id='example-6'>
     <figcaption>example-6</figcaption>
@@ -141,4 +245,67 @@ You'll notice that this example required access to the canvas size which is reas
 the property was exposed as a read-only accessor on the base class. Here's our final `Canvas`
 class for this chapter:
 
-<script src="https://gist.github.com/mlhaufe/497ccec681b170aedbb6905b488be2e9.js?file=7.js"></script>
+```js
+class Canvas {
+    #canvas
+    #frontBuffer
+    #backBuffer
+
+    constructor({height, width}) {
+        this.#canvas = document.createElement('canvas')  
+        this.#frontBuffer = this.#canvas.getContext('2d')
+        this.#backBuffer = this.#frontBuffer.createImageData(width, height);
+
+        Object.assign(this.#canvas, {height, width})
+        Object.assign(this.#canvas.style, { border: '1px solid #ccc' })
+    }
+
+    get height() {
+        return this.#canvas.height
+    }
+
+    get width() {
+        return this.#canvas.width
+    }
+
+    fillNoise() {
+        let data = this.#backBuffer.data
+        for(let i = 0; i < data.length; i++) {
+            // 0 - 255
+            let randomInt = Math.floor(Math.random() * (255 + 1));
+            data[i] = randomInt
+        }
+    }
+
+    render() {
+        this.#frontBuffer.putImageData(this.#backBuffer, 0, 0);
+        requestAnimationFrame(() => this.render())
+    }
+
+    start() {
+        requestAnimationFrame(() => this.render())
+    }
+
+    appendTo(element) {
+        element.appendChild(this.#canvas)
+    }
+
+    plot(x, y, c) {
+        let {width, height} = this.#canvas;
+
+        if(x < 0 || y < 0 || x >= width || y >= height)
+            return;
+
+        let xf = Math.floor(x),
+            yf = Math.floor(y),
+            bytes = 4,
+            i = bytes * (width * yf + xf),
+            data = this.#backBuffer.data;
+
+        data[i + 0] = (c >>> 24);
+        data[i + 1] = (c << 8 >>> 24);
+        data[i + 2] = (c << 16 >>> 24);
+        data[i + 3] = (c << 24 >>> 24);
+    }
+}
+```
