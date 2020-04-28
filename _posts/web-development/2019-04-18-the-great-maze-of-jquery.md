@@ -4,9 +4,9 @@ icon: file-text
 title:  "The Great Maze of jQuery"
 date:   2019-04-18 12:00:00 -0600
 category: Web Development
-permalink: /web-development/great-maze-of-jquery
+permalink: /web-development/the-great-maze-of-jquery
 redirect_from:
-    - /great-maze-of-jquery/
+    - /the-great-maze-of-jquery/
 commentThreadId: 2
 ---
 
