@@ -3,6 +3,8 @@ layout: default
 title: Privacy Policy
 nav_title: Privacy Policy
 permalink: /privacy-policy
+redirect_from:
+    - /privacy-policy/
 icon: lock
 nav_order: -1
 ---

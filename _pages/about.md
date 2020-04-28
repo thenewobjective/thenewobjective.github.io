@@ -3,6 +3,9 @@ layout: default
 title: About
 nav_title: About
 permalink: /about
+redirect_from:
+    - /about/
+    - /about-me/
 icon: help-circle
 nav_order: 6
 ---

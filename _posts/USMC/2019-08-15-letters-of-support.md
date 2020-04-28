@@ -5,6 +5,8 @@ title:  "Letters of Support"
 date:   2019-08-15 12:00:00 -0600
 category: USMC
 permalink: /usmc/letters-of-support
+redirect_from:
+    - /letters-of-support/
 commentThreadId: 10
 ---
 
