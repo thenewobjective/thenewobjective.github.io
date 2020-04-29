@@ -41,7 +41,13 @@ If you have a custom input element the surrounding `<form>` ignores your compone
 
 Alternatively you have to dynamically [hack](https://stackoverflow.com/questions/38623176/how-can-i-create-a-web-component-that-acts-like-a-form-element/38667839){:target="_blank"} your custom element to inject, update, and remove a hidden input field for every relevant value just so the container will get the right value. This won’t cover other issues such as the other DOM properties which ignore your components:
 
-<script src="https://gist.github.com/mlhaufe/2a75c9d83326942d904f65b9054abe31.js?file=example-1.js"></script>
+```js
+HTMLFormElement.elements
+HTMLFormElement.length
+HTMLFormElement.autocomplete
+
+new FormData(form)
+```
 
 and so on.
 
@@ -54,7 +60,9 @@ It sucks to say the least to have to re-invent something like `<button />` [from
 
 Even IF you COULD extend a more specific element directly, not all elements have a class to extend, like `<footer />`. So you have to use the hacky property in registration, extends:
 
-<script src="https://gist.github.com/mlhaufe/2a75c9d83326942d904f65b9054abe31.js?file=example-2.js"></script>
+```js
+customElements.define('custom-footer', CustomFooter, {extends: 'footer'});
+```
 
 The built-in tags were never designed to be extended, and if you tried you will probably break [Liskov’s Substitution Principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle){:target="_blank"} now or later. For example, if you could extend HTMLInputElement your new element has to support all of the current `type="…"` options, properties, and methods. When the standard changes and they add a new property or method, your subtype will be inconsistent with it and by definition NOT be an instance of `HTMLInputElement`. As a result of this, there is now a large set of guidelines published for you to deal with. A hallmark of poor design:
 
@@ -71,21 +79,44 @@ In the age of [ServiceWorkers](https://developer.mozilla.org/en-US/docs/Web/API/
 
 WebComponents, like other HTML elements, are compositional by nesting:
 
-<script src="https://gist.github.com/mlhaufe/2a75c9d83326942d904f65b9054abe31.js?file=example-3.html"></script>
+```html
+<my-foo>
+    <my-bar></my-bar>
+</my-foo>
+```
 
 Are your fallbacks compositional?
 
-<script src="https://gist.github.com/mlhaufe/2a75c9d83326942d904f65b9054abe31.js?file=example-4.html"></script>
+```html
+<my-foo>
+    <div class="my-foo-fallback"></div>
+    <my-bar>
+        <div class="my-bar-fallback"></div>
+    </my-bar>
+</my-foo>
+```
 
 Is that right? Maybe more so like this?
 
-<script src="https://gist.github.com/mlhaufe/2a75c9d83326942d904f65b9054abe31.js?file=example-5.html"></script>
+```html
+<my-foo>
+    <div class="my-foo-fallback">
+        <my-bar>
+            <div class="my-bar-fallback"></div>
+        </my-bar>
+    </div>
+</my-foo>
+```
 
 That doesn’t seem right either… And this is with only TWO contrived tags.
 
 Now, you might say that is why the `is=""` attribute exists:
 
-<script src="https://gist.github.com/mlhaufe/2a75c9d83326942d904f65b9054abe31.js?file=example-6.html"></script>
+```html
+<div is="my-foo">
+    <div is="my-bar"></div>
+</div>
+```
 
 Looks good at first for something trivial, but this is a [hack](https://wiki.whatwg.org/wiki/Custom_Elements#Subclassing_existing_elements){:target="_blank"} and once you add in the Shadow DOM you’re back in the same situation.
 
