@@ -242,8 +242,52 @@ example6.start()
 <script type="module" src="/scripts/software-rendering/example-6.js"></script>
 
 You'll notice that this example required access to the canvas size which is reasonable, so
-the property was exposed as a read-only accessor on the base class. Here's our final `Canvas`
-class for this chapter:
+the property was exposed as a read-only accessor on the base class. A remaining issue though is that
+the new point is added without the old one being removed which results in a slow filling of the canvas.
+So we'll provide a means to clear the back buffer by replacing it with a new empty one:
+
+```js
+class Canvas {
+    ...
+    clear() {
+        this.#backBuffer = this.#frontBuffer.createImageData(width, height);
+    }
+    ...
+}
+```
+
+And our plotting example becoming:
+
+```js
+class PlottingExample extends Canvas {
+    ...
+    render() {
+        this.clear()
+        let color = this.randomInt(0x00000000, 0xFFFFFFFF)
+        let x = this.randomInt(0,this.width - 1)
+        let y = this.randomInt(0, this.height - 1)
+
+        this.plot(x, y, color)
+
+        super.render()
+    }
+}
+```
+
+At first this may seem like overkill: we could instead try to plot a transparent pixel at the old
+position before plotting the new one, but recall the math involved to find the pixel representation
+in the array. When we begin to plot more points you'll notice how this "unplotting" approach would
+not scale. Let's see the results:
+
+<figure id='example-7'>
+    <figcaption>example-7</figcaption>
+</figure>
+
+<script type="module" src="/scripts/software-rendering/example-7.js"></script>
+
+---
+
+Here's our final `Canvas` class for this chapter:
 
 ```js
 class Canvas {
@@ -254,7 +298,7 @@ class Canvas {
     constructor({height, width}) {
         this.#canvas = document.createElement('canvas')  
         this.#frontBuffer = this.#canvas.getContext('2d')
-        this.#backBuffer = this.#frontBuffer.createImageData(width, height);
+        this.#backBuffer = new ImageData(width, height)
 
         Object.assign(this.#canvas, {height, width})
         Object.assign(this.#canvas.style, { border: '1px solid #ccc' })
@@ -280,6 +324,10 @@ class Canvas {
     render() {
         this.#frontBuffer.putImageData(this.#backBuffer, 0, 0);
         requestAnimationFrame(() => this.render())
+    }
+
+    clear() {
+        this.#backBuffer = new ImageData(this.width, this.height)
     }
 
     start() {

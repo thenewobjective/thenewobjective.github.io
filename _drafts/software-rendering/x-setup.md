@@ -24,13 +24,13 @@ class Canvas {
       Object.assign(this.#canvas.style, { border: '1px solid #ccc' })
     }
 
-    appendTo(element) {
+    appendTo({element}) {
       element.appendChild(this.#canvas)
     }
 }
 
 let example1 = new Canvas({ height: 360, width: 640 })
-example1.appendTo(document.getElementById('example-1'))
+example1.appendTo({element: document.getElementById('example-1')})
 ```
 
 The private property `#canvas` holds the actual HTML element, and the `appendTo` method will be used to attach it the document.
@@ -62,6 +62,29 @@ Now that's more like it:
 
 <script type="module" src="/scripts/software-rendering/example-2.js"></script>
 
+We won't describe how to 
+
+{% comment %}
+<!--
+Finally we'll need a means to update the canvas. To accomplish this we'll create a `render` method
+that accepts ImageData as an argument:
+
+```js
+class Canvas {
+    ...
+    render(imageData) {
+        
+    }
+    ...
+}
+```
+
+TODO: ...
+
+---
+---
+---
+
 With our canvas ready to receive data it's now time to introduce the concept of _double-buffering_. A double buffer
 consists of a _front buffer_ and a _back buffer_. The front buffer is the image that the user will see, and the back buffer is
 where the image is constructed. After the back buffer is done, it replaces the front buffer and is then ready for the next update.
@@ -69,18 +92,18 @@ The speed at which this occurs is called the framerate. If we don't use double-b
 we would see a number of strange artifacts as the image is being updated such as flickering or parts of the old image that haven't been
 replaced yet.
 
-Let's rename the `#ctx` variable to `#frontBuffer` to better represent its purpose. We'll also create a `#backBuffer`:
+The front-buffer is encapsulated by the drawing context `#ctx`. We just need to create our `#backBuffer`:
 
 ```js
 class Canvas {
     #canvas
-    #frontBuffer
+    #ctx
     #backBuffer
 
     constructor({height, width}) {
       this.#canvas = document.createElement('canvas')  
-      this.#frontBuffer = this.#canvas.getContext('2d')
-      this.#backBuffer = this.#frontBuffer.createImageData(width, height);
+      this.#ctx = this.#canvas.getContext('2d')
+      this.#backBuffer = new ImageData(width, height);
 
       Object.assign(this.#canvas, {height, width})
       Object.assign(this.#canvas.style, { border: '1px solid #ccc' })
@@ -89,10 +112,10 @@ class Canvas {
 }
 ```
 
-The `.createImageData(width, height)` method creates an ImageData object of the specified dimensions. It contains
-a one-dimensional array that represents pixels in <abbr title="Red Green Blue Alpha">RGBA</abbr> order,
-with integer values between 0 and 255. That's 24 bits for color
-and 8 bits for the alpha channel. This color depth is referred to as [True Color](https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit)){:target="_blank"}.
+The `#backBuffer` contains a one-dimensional array that represents pixels in
+<abbr title="Red Green Blue Alpha">RGBA</abbr> order, with integer values
+between 0 and 255. That's 24 bits for color and 8 bits for the alpha channel.
+This color depth is referred to as [True Color](https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit)){:target="_blank"}.
 The initial value of the array is zero filled which represents transparent black.
 
 ```text
@@ -103,6 +126,12 @@ The initial value of the array is zero filled which represents transparent black
 Our example canvas is 640x360 in size so the size of each buffer is width x height x 4 bytes = 921,600 bytes.
 1,843,200 bytes for both buffers. With smaller dimensions you can see that the memory requirements would drop
 significantly.
+
+
+
+---
+---
+---
 
 So let's fill the backbuffer with some random data and write it to the front buffer:
 
@@ -212,3 +241,5 @@ class Canvas {
 ```
 
 In the [next chapter](/software-rendering/plotting-points) we'll start plotting and moving points.
+-->
+{% endcomment %}

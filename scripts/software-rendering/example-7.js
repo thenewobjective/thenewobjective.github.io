@@ -6,7 +6,7 @@ class Canvas {
     constructor({height, width}) {
         this.#canvas = document.createElement('canvas')  
         this.#ctx = this.#canvas.getContext('2d')
-        this.#backBuffer = new ImageData(width, height);
+        this.#backBuffer = new ImageData(width, height)
         
         Object.assign(this.#canvas, {height, width})
         Object.assign(this.#canvas.style, { border: '1px solid #ccc' })
@@ -32,6 +32,10 @@ class Canvas {
     render() {
         this.#ctx.putImageData(this.#backBuffer, 0, 0);
         requestAnimationFrame(() => this.render())
+    }
+
+    clear() {
+        this.#backBuffer = new ImageData(this.width, this.height)
     }
 
     start() {
@@ -61,7 +65,7 @@ class Canvas {
     }
 }
 
-class PlottingExample extends Canvas {
+class PlottingExample2 extends Canvas {
     randomInt(min, max) {
         let minRound = Math.ceil(min),
             maxRound = Math.floor(max);
@@ -69,6 +73,7 @@ class PlottingExample extends Canvas {
     }
 
     render() {
+        this.clear()
         let color = this.randomInt(0x00000000, 0xFFFFFFFF)
         let x = this.randomInt(0,this.width - 1)
         let y = this.randomInt(0, this.height - 1)
@@ -79,8 +84,8 @@ class PlottingExample extends Canvas {
     }
 }
 
-let example6 = new PlottingExample({ height: 360, width: 640 })
-example6.appendTo(document.getElementById('example-6'))
-example6.start()
+let example7 = new PlottingExample2({ height: 360, width: 640 })
+example7.appendTo(document.getElementById('example-7'))
+example7.start()
 
 export {Canvas, PlottingExample}

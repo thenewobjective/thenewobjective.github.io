@@ -1,12 +1,12 @@
 class Canvas {
     #canvas
-    #frontBuffer
+    #ctx
     #backBuffer
 
     constructor({height, width}) {
         this.#canvas = document.createElement('canvas')  
-        this.#frontBuffer = this.#canvas.getContext('2d')
-        this.#backBuffer = this.#frontBuffer.createImageData(width, height);
+        this.#ctx = this.#canvas.getContext('2d')
+        this.#backBuffer = new ImageData(width, height);
         
         Object.assign(this.#canvas, {height, width})
         Object.assign(this.#canvas.style, { border: '1px solid #ccc' })
@@ -22,7 +22,7 @@ class Canvas {
     }
 
     render(){
-        this.#frontBuffer.putImageData(this.#backBuffer, 0, 0);
+        this.#ctx.putImageData(this.#backBuffer, 0, 0);
         requestAnimationFrame(() => this.render())
     }
 
