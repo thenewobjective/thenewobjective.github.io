@@ -15,11 +15,11 @@ Proper Tail Calls are [slated](http://wiki.ecmascript.org/doku.php?id=harmony:pr
 The name of this methodology is called “Dynamic Programming”. Don’t let the word “Dynamic” fool you into thinking it has any direct relationship to do with dynamic languages though, it does not. Instead of giving a textbook (and potentially esoteric) definition upfront, I’ll demonstrate an evolution of an algorithm from how you might see it today (in imperative style) to an optimum recursive form utilizing this methodology. The example we’ll be using is the algorithm to calculate the nth Fibonacci number:
 
 ```js
-function fib(n){
+function fib(n) {
     if(n < 2)
         return n;
     var f0 = 0, f1 = 1, f;
-    for(var i = 1; i < n; i++){
+    for(var i = 1; i < n; i++) {
         f = f0 + f1;
         f0 = f1;
         f1 = f;
@@ -28,7 +28,7 @@ function fib(n){
 }
 ```
 
-As you may probably agree,  the above is a relatively straightforward, idiomatic example of a JavaScript algorithm. It is also quite efficient in its execution: O(n) time, O(1) space. For a simple definition like Fibonacci though, it would be nice if we could rewrite this code so that in a quick glance we could understand it as well as be confident that their are “obviously no errors”, vs there being “no obvious errors”:
+As you may probably agree,  the above is a relatively straightforward, idiomatic example of a JavaScript algorithm. It is also quite efficient in its execution: *O(n)* time, *O(1)* space. For a simple definition like Fibonacci though, it would be nice if we could rewrite this code so that in a quick glance we could understand it as well as be confident that their are “obviously no errors”, vs there being “no obvious errors”:
 
 ```js
 function fib(n) {
@@ -36,13 +36,13 @@ function fib(n) {
 }
 ```
 
-Short, clean, and seems obviously correct from a glance… but happens to be naively inefficient as well a good example of a pitfall for the inexperienced.  The beauty of this fragment of code is only skin deep as you can see from its call tree ( f = fib for brevity ):
+Short, clean, and seems obviously correct from a glance… but happens to be naively inefficient as well; a good example of a pitfall for the inexperienced.  The beauty of this fragment of code is only skin deep as you can see from its call tree ( `f = fib` for brevity ):
 
 <figure>
     <img src="/media-library/dynamic-programming/fibCallTree.png" alt="Fibonacci call tree">
 </figure>
 
-This algorithm requires an exponential amount of time and space to produce a result (specifically, [O(φ)](https://en.wikipedia.org/wiki/Golden_ratio){:target="_blank"} which is in O(n<sup>2</sup>) ). The reason, as can be seen from the above tree, is that a significant amount of duplicate work is being done. fib(4) is being calculated twice, fib(3) calculated three times, and so on. Choose a large enough input and you can be quite confident that your machine will fall over. For a more discrete example, here is a graph of the execution time on my current machine (Windows 7, 4 GB RAM, Dual core 2.40 GHz, Firefox 18). Note that I ran out of memory beyond fib(37):
+This algorithm requires an exponential amount of time and space to produce a result (specifically, [*O(φ)*](https://en.wikipedia.org/wiki/Golden_ratio){:target="_blank"} which is in *O(n<sup>2</sup>)* ). The reason, as can be seen from the above tree, is that a significant amount of duplicate work is being done. fib(4) is being calculated twice, fib(3) calculated three times, and so on. Choose a large enough input and you can be quite confident that your machine will fall over. For a more discrete example, here is a graph of the execution time on my current machine (Windows 7, 4 GB RAM, Dual core 2.40 GHz, Firefox 18). Note that I ran out of memory beyond fib(37):
 
 <figure>
     <img src="/media-library/dynamic-programming/recFibvsTime.png" alt="Recursive Fib vs time">
@@ -61,21 +61,21 @@ function fib(n){
 fib.memo = [];
 ```
 
-Admittedly not quite as clear as the previous version, but arguable still cleaner than the first version.  When looking for fib(n):  check to see if it is in the memo,  if it is return it, otherwise calculate the value and store it in the memo before returning it. Here is our new call tree ( m[n] = fib.memo[n] ):
+Admittedly not quite as clear as the previous version, but arguable still cleaner than the first version.  When looking for fib(n): check to see if it is in the memo,  if it is return it, otherwise calculate the value and store it in the memo before returning it. Here is our new call tree ( `m[n] = fib.memo[n]` ):
 
 <figure>
     <img src="/media-library/dynamic-programming/fibCallTreeMemo.png" alt="Fib call tree memoization">
 </figure>
 
-So our exponential recursive algorithm is now a linear recursive algorithm: O(n) time (still have to calculate each value of fib(n) once), and O(n) space (we’re storing each value of fib(n) ). I would present a graph of the new algorithm, but it would be quite boring as I was able to calculate fib(1476) in as little as 3 ms, larger values are beyond the range of JavaScript’s number system. On subsequent calls, since the memo is already built, our running time will be O(1) (the time to simply look up the value).
+So our exponential recursive algorithm is now a linear recursive algorithm: *O(n)* time (still have to calculate each value of fib(n) once), and *O(n)* space (we’re storing each value of fib(n) ). I would present a graph of the new algorithm, but it would be quite boring as I was able to calculate fib(1476) in as little as 3 ms, larger values are beyond the range of JavaScript’s number system. On subsequent calls, since the memo is already built, our running time will be *O(1)* (the time to simply look up the value).
 
 ## Tabulation
 
-Quick summary:  The original code took  O(n)/O(1) time/space. Our new code takes O(n)/O(n) time/space on the first run, and O(1)/O(n) time/space on subsequent runs while remaining cleaner.  It would be nice though if we could avoid having to keep that memo around, as well as achieving a space/time complexity similar to the original. Thus, it is time to present the second approach of Dynamic Programming: “Bottom Up” aka. tabulation (sometimes also referred to as iteration but not often enough to claim it as an official synonym). Now straight to the example:
+Quick summary:  The original code took *O(n)/O(1)* time/space. Our new code takes *O(n)/O(n)* time/space on the first run, and *O(1)/O(n)* time/space on subsequent runs while remaining cleaner.  It would be nice though if we could avoid having to keep that memo around, as well as achieving a space/time complexity similar to the original. Thus, it is time to present the second approach of Dynamic Programming: “Bottom Up” aka. tabulation (sometimes also referred to as iteration but not often enough to claim it as an official synonym). Now straight to the example:
 
 ```js
-function fib(n){
-    function f(n0,n1,step){
+function fib(n) {
+    function f(n0,n1,step) {
         return step == n ? n1 : f(n1, n0 + n1, step + 1);
     }
     return f(0,1,1);
@@ -88,7 +88,7 @@ The main difference here is that instead of starting at the end of the sequence 
     <img src="/media-library/dynamic-programming/fib-tabulation.gif" alt="Fibonacci Tabulation">
 </figure>
 
-Admittedly, the clarity of the algorithm is not much better than the original. This is no doubt due to the necessity of having to name the intermediate values in the calculation in both versions. Sometimes finding a proper name is one of the hardest things to do.  But anyway, how does this version stack up now that we’ve eliminated the memo?  Like the original we are now at O(n)/O(1) time/space. So have we gained anything through all of this beyond parity in complexity? Lets take a look at the original and the current implementation side by side:
+Admittedly, the clarity of the algorithm is not much better than the original. This is no doubt due to the necessity of having to name the intermediate values in the calculation in both versions. Sometimes finding a proper name is one of the hardest things to do.  But anyway, how does this version stack up now that we’ve eliminated the memo?  Like the original we are now at *O(n)/O(1)* time/space. So have we gained anything through all of this beyond parity in complexity? Lets take a look at the original and the current implementation side by side:
 
 <table>
 <tr>
@@ -98,7 +98,7 @@ function fib(n){
     if(n < 2)
         return n;
     var f0 = 0, f1 = 1, f;
-    for(var i = 1; i < n; i++){
+    for(var i = 1; i < n; i++) {
         f = f0 + f1;
         f0 = f1;
         f1 = f;
@@ -110,14 +110,14 @@ function fib(n){
 <td>
 {% highlight js %}
 function fib(n){
-    function f(n0, n1, step){
+    function f(n0, n1, step) {
         return step == n ? n1 : f(n1, n0 + n1, step + 1)
     }
     return f(0,1,1)
 }
 {% endhighlight %}
 </td>
-<tr>
+</tr>
 </table>
 
 You can judge for yourself. Personally I enjoy that fact that the low level constructs of  assignment and looping are no longer explicit.
