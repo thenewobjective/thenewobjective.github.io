@@ -394,7 +394,7 @@ I’m primarily interested in the study and application of Programming Language 
             <img src="/media-library/resume/projects/chw-org.png" alt="Childrens Hospital">
             <figcaption>
                 Children's Hospital<br>
-                This project was an upgrade from Siecore 6.x to Sitecore 8.x
+                This project was an upgrade from Sitecore 6.x to Sitecore 8.x
             </figcaption>
         </figure>
         <figure class="gallery-item">
@@ -417,7 +417,7 @@ I’m primarily interested in the study and application of Programming Language 
             <img src="/media-library/resume/projects/lom-website.png" alt="Layer One Media website">
             <figcaption>
                 Layer One Media website<br>
-                Sitecore 8.x. Architecture, Requirements Engineering, Infrasructure support, Full Stack development, and team management.
+                Sitecore 8.x. Architecture, Requirements Engineering, Infrastructure support, Full Stack development, and team management.
             </figcaption>
         </figure>
         <figure class="gallery-item">
@@ -431,7 +431,8 @@ I’m primarily interested in the study and application of Programming Language 
             <img src="/media-library/resume/projects/nidec.png" alt="Nidec">
             <figcaption>
                 Nidec<br>
-                Sitecore site. My role here was infrastructure support and guidance to the development team.
+                Sitecore 8.x site. My role here was infrastructure support and guidance to the development team.
+                This project had a unique infrastructure challenge relating to the the management of multisites and a shoestring budget.
             </figcaption>
         </figure>
         <figure class="gallery-item">
