@@ -7,3 +7,4 @@
 	• https://www.quirksmode.org/blog/archives/2019/03/algorithms_in_c.html
 	• https://www.quirksmode.org/blog/archives/2019/03/if_statements_a.html
 https://www.quirksmode.org/blog/archives/2019/03/scope_in_css.html
+- https://gbracha.blogspot.com/2006/12/foozle-wars.html
