@@ -42,7 +42,7 @@ nav_order: 4
   title="Decorator Contracts"
   time="2019"
   desc="Code Contracts for ECMAScript and TypeScript classes.<br>
-  <a href='https://dev.azure.com/thenewobjective/decorator-contracts' target='_blank'>View on Azure Devops</a>"
+  <a href='https://github.com/final-hill/decorator-contracts' target='_blank'>View on GitHub</a>"
 %}
 
 {% include resume-item.html
