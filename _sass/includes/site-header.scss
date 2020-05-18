@@ -6,44 +6,76 @@
     /* layout */
     align-items: center;
     display: flex;
-    flex-direction: column;
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 2;
-    overflow-x: hidden;
-    overflow-y: auto;
     z-index: 2;
 
-    @media only screen and (min-width: 1280px) {
-		width: 12em;
-	}
-	@media only screen and (max-width: 1279px) {
+    @media only screen and (max-width: 420px) {
+        flex-direction: row;
+        grid-column: 1;
+        grid-row: 1;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+	@media only screen and (min-width: 420px) and (max-width: 1279px) {
+        flex-direction: column;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+        overflow-x: hidden;
+        overflow-y: auto;
 		width: 4em;
+    }
+    @media only screen and (min-width: 1280px) {
+        flex-direction: column;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+        overflow-x: hidden;
+        overflow-y: auto;
+		width: 12em;
 	}
 }
 
 .site-header_profile {
-    /* Presentation */
     border-radius: 50%;
-    max-width: 60%;
 
-    /* Layout */
-    margin: 1em 0;
+    @media only screen and (max-width: 420px) {
+        margin: 0 1em;
+        max-height: 80%;
+    }
+	@media only screen and (min-width: 420px) and (max-width: 1279px) {
+        margin: 1em 0;
+        max-width: 60%;
+    }
+    @media only screen and (min-width: 1280px) {
+        margin: 1em 0;
+        max-width: 60%;
+	}
 }
 
 .site-header_brave {
-    margin-top: 2em;
-    width: 85%;
     text-align: center;
 
-    @media only screen and (max-width: 1279px) {
-		width: 80%;
+    @media only screen and (max-width: 420px) {
+        height: 80%;
+        padding: 0.5em 1em 0 1em;
+    }
+	@media only screen and (min-width: 420px) and (max-width: 1279px) {
+        margin-top: 2em;
+        width: 80%;
+    }
+    @media only screen and (min-width: 1280px) {
+        margin-top: 2em;
+        width: 85%;
 	}
 }
 
 .site-header_brave img {
-    width: 100%;
-    @media only screen and (max-width: 1279px) {
-		width: 80%;
+    @media only screen and (max-width: 420px) {
+        height: 80%;
+    }
+	@media only screen and (min-width: 420px) and (max-width: 1279px) {
+        width: 80%;
+    }
+    @media only screen and (min-width: 1280px) {
+        width: 100%;
 	}
 }
 

@@ -20,19 +20,18 @@ body, html {
 }
 
 body {
-	/* layout */
     display: grid;
-
-	@media only screen and (min-width: 1280px) {
-		grid-template-columns: fit-content(12em) 1fr;
-		grid-template-rows: 1fr fit-content(4em);
-	}
-	@media only screen and (max-width: 1279px) {
-		grid-template-columns: fit-content(12em) 1fr;
-		grid-template-rows: 1fr fit-content(4em);
-	}
-
 	font-size: calc(1em + 0.5vw);
+
+	@media only screen and (min-width: 420px) {
+		grid-template-columns: fit-content(12em) 1fr;
+		grid-template-rows: 1fr fit-content(4em);
+	}
+
+	@media only screen and (max-width: 420px) {
+		grid-template-columns: 1fr;
+		grid-template-rows: 3em 1fr 3em;
+	}
 }
 
 a {

@@ -1,15 +1,25 @@
 .site-footer {
-    /* layout */
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 1;
-    display: flex;
-    height: 3em;
-    padding-left: 2em;
     align-items: center;
-
-    /* Presentation */
     background-color: var(--content-bg);
     box-shadow: 0 -1px 3px 0 var(--shadow-color);
+    display: flex;
     font-size: smaller;
+    justify-content: center;
+    padding: 0 1em;
     z-index: 1;
+
+    @media only screen and (max-width: 420px) {
+        grid-column: 1;
+        grid-row: 3 / span 1;
+    }
+	@media only screen and (min-width: 420px) and (max-width: 1279px) {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+        height: 3em;
+    }
+    @media only screen and (min-width: 1280px) {
+        grid-column: 2 / span 2;
+        grid-row: 2 / span 1;
+        height: 3em;
+	}
 }
