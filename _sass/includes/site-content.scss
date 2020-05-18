@@ -3,7 +3,7 @@
     background-color: var(--content-bg);
 
     /* layout */
-    height: calc(100% - 3em);
+    height: calc(100% - 2.5em);
     grid-column: 2 / span 2;
     grid-row: 1 / span 2;
     overflow: auto;
@@ -13,28 +13,17 @@
     text-shadow: 0 3px 0.1em var(--shadow-color);
 }
 
-.site-content h1 {
-    font-size: 3vw;
 
-    @media only screen and (min-width: 1280px) {
-        font-size: 32pt;
-    }
+.site-content h1 {
+    font-size: calc(1.6rem + 0.5vw);
 }
 
 .site-content h2 {
-    font-size: 2.5vw;
-
-    @media only screen and (min-width: 1280px) {
-        font-size: 24pt;
-    }
+    font-size: calc(1.4rem + 0.5vw);
 }
 
 .site-content h3 {
-    font-size: 2.3vw;
-
-    @media only screen and (min-width: 1280px) {
-        font-size: 16pt;
-    }
+    font-size: calc(1.2rem + 0.5vw);
 }
 
 .site-content_header {
@@ -42,24 +31,18 @@
     overflow: hidden;
     padding-left: 2em;
     position: relative;
-
-    @media only screen and (max-width: 1279px) {
-        height: 3em;
-    }
-    @media only screen and (min-width: 1280px) {
-        height: 6em;
-    }
-
+    height: 4em;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .site-content_header h1 {
     margin: 0;
 }
 
-.site-content_header .feather-icon {
+.site-content_header h1 .feather-icon {
     height: 0.8em;
     width: 0.8em;
 }
@@ -73,6 +56,6 @@
 
 .rss {
     color: orange;
-    position: absolute;
-    right: 1em;
+    margin-right: 1em;
+    font-size: calc(1.6rem + 0.5vw);
 }
