@@ -613,7 +613,7 @@ I’m primarily interested in the study and application of Programming Language 
                 the branching of the core assets project, we are able to support independent development of core assets and products and change
                 propagation between them.
                 <br><br>
-                <a href="/media-library/publications/SPLE.pptx" target="_blank">Download Powerpoint</a>
+                <a href="/media-library/publications/SPLE.pdf" target="_blank">Download Powerpoint</a>
             </figcaption>
         </figure>
     </article>

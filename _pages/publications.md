@@ -9,9 +9,9 @@ nav_order: 2
 
 ## Managing the Evolution of Software Product Lines (2012)
 
-- [Presentation Poster](/media-library/publications/SPLE-Poster.pptx)
-- [PowerPoint Presentation](/media-library/publications/SPLE.pptx)
-- [Poster Description](/media-library/publications/SPLE-poster-description.docx)
+- [Presentation Poster](/media-library/publications/SPLE-Poster.pdf)
+- [PowerPoint Presentation](/media-library/publications/SPLE.pdf)
+- [Poster Description](/media-library/publications/SPLE-poster-description.pdf)
 - This work was in support of the [PhD Dissertation](https://dc.uwm.edu/etd/14/) of [Dr. Cheng Thao](https://www.csp.edu/faculty/cheng-thao/)
 
 ## Versioned Lexical Search (2014)
