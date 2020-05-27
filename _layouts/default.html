@@ -8,6 +8,8 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     {% if page.featuredImage %}
     <meta property="og:image" content="{{ site.url }}{{ page.featuredImage }}">
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}/images/icons/android-chrome-512x512.png">
     {% endif %}
     <title>{{ site.title }} | {{ page.title }}</title>
     <link rel="stylesheet" href="/css/main.css">
