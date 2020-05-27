@@ -3,6 +3,8 @@ layout: default
 title: Resume
 nav_title: Resume
 permalink: /resume
+redirect_from:
+    - /resume/
 icon: briefcase
 nav_order: 1
 ---
