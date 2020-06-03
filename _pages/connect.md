@@ -19,7 +19,8 @@ On this page you can see a curated list of some of my activities around the web 
 
 ## Social Coding
 
-- [Github](https://github.com/mlhaufe){:target="_blank"}
+- [GitHub - mlhaufe](https://github.com/mlhaufe){:target="_blank"}
+- [GitHub - Final Hill](https://github.com/final-hill){:target="_blank"}
 - [CodePen](https://codepen.io/mlhaufe){:target="_blank"}
 
 ## Blogs and Forums
