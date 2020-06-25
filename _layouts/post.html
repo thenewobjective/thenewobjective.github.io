@@ -9,7 +9,7 @@ layout: default
         &nbsp;&middot;&nbsp;
         <time>{{ page.date | date: "%B %-d, %Y" }}</time>
         &nbsp;&middot;&nbsp;
-        <a href="/{{ page.categories[0] | slugify }}" rel="archives">{{ page.categories[0] }}</a>
+        <a href="/{{ page.categories[0] | slugify }}" rel="archives">{{ page.categories[0] | replace: ' ', '&nbsp;' }}</a>
     </header>
     <hr>
     {% endif %}
