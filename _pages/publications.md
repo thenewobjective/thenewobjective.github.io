@@ -3,6 +3,8 @@ layout: default
 title: Publications
 nav_title: Publications
 permalink: /publications
+redirect_from:
+    - /resume/sple/
 icon: book
 nav_order: 2
 ---
