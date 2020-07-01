@@ -211,7 +211,7 @@ I’m primarily interested in the study and application of Programming Language 
 {% include resume-item.html
   image="/media-library/resume/chalo.png"
   alt="Chalo icon"
-  title="Contractor/Consultant"
+  title="Principal Software Engineer"
   time="November 2018 – March 2020"
   desc="<a href='https://www.chalo.tech/' target='_blank'>Chalo, LLC</a>"
 %}
