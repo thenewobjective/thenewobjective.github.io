@@ -35,7 +35,7 @@ include: ['_pages']
 
 highlighter: rouge
 
-permalink: /:title/
+permalink: /:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.
