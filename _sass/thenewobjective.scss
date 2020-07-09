@@ -110,7 +110,7 @@ ul {
 	padding: 1em;
 }
 
-p > code {
+p > code, li > code {
 	color: darkorange;
 }
 
@@ -124,10 +124,10 @@ p > code {
 	"includes/resume-item",
 	"includes/gallery",
 	"includes/gallery-dialog",
+	"includes/category-nav",
 	"includes/youtube",
 	"includes/codepen",
 	"includes/comments",
-	"includes/software-rendering",
 	"pages/about-me",
 	"alt-obsidian",
 	"pages/demos"
