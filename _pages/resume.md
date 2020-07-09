@@ -2,9 +2,7 @@
 layout: default
 title: Resume
 nav_title: Resume
-permalink: /resume
-redirect_from:
-    - /resume/
+permalink: /resume/
 icon: briefcase
 nav_order: 1
 ---
@@ -821,9 +819,9 @@ I’m primarily interested in the study and application of Programming Language 
 
 <details>
     <summary>Details</summary>
-    <img src="/media-library/resume/sergeant-usmc.png" style="display:block;margin: 1em auto;max-width:25%" alt="Sergeant Rank">
-    <img src="/media-library/resume/usmc-rack.png" style="display:block;margin: 1em auto;max-width:50%" alt="USMC Rack">
-    <img src="/media-library/resume/MC-RIFLE-EXP-2.gif" style="display:block;margin: 1em auto;max-width:20%" alt="USMC Rifle Expert - 2nd award">
+    <img src="/media-library/resume/sergeant-usmc.png" class="resume_rank" alt="Sergeant Rank">
+    <img src="/media-library/resume/usmc-rack.png" class="resume_rack" alt="USMC Rack">
+    <img src="/media-library/resume/MC-RIFLE-EXP-2.gif" class="resume_rifle" alt="USMC Rifle Expert - 2nd award">
     <p>
         Before being Honorably Discharged I was employed by the USMC as a Supply Administration Clerk, and later a Supply Administration Chief of Sergeant rank. My responsibilities included the submission & receipt of requisitions/purchases, and subsequent record keeping. I also performed proper disposal procedures of sensitive equipment and materials. I’ve been responsible for managing periodic inventories of multi-million dollar materials. The Product Information Management system (PIM) primarily utilized was referred to as: ATLASS/SASSY (Asset Tracking Logistics and Supply System/Supported Activities Supply System). O*NET mapping
     </p>

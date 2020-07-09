@@ -8,8 +8,6 @@ permalink: /web-development/not-svelte-but-gros
 commentThreadId: 36
 ---
 
-<span style="font-size: larger; font-weight: bold">Contents</span>
-
 * TOC
 {:toc}
 
@@ -123,7 +121,7 @@ the framework also provides conditional statements and await block:
 {:then response}
   <p>The response is {response}</p>
 {:catch error}
-  <p style="color: red">{error.message}</p>
+  <p class="warn">{error.message}</p>
 {/await}
 ```
 

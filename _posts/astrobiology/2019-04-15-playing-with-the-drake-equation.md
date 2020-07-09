@@ -74,6 +74,6 @@ A giant meteor, a black plague, a nuclear war, or some other giant eraser can wi
 
 Fill in the blanks and turn the crank and I get an undoubtedly overestimation of:
 
-<span style="color:red">__840 Communicating Civilizations in the galaxy__</span>
+<span class="warn">__840 Communicating Civilizations in the galaxy__</span>
 
 Given the 200,000 light year diameter of the Milky Way, no wonder it seems so empty… If we are distributed evenly across the galaxy, there would be nearly 250 light years between each of us.

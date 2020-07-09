@@ -22,7 +22,7 @@ With knowledge of the practical limits of a musician’s performance and knowled
 
 Digital recording works fundamentally by sampling the changes in air pressure (amplitude) over a given period of time (frequency) at a high rate, translating these variables into a set of numbers which are then stored in an electronic or other format onto a medium such as a disc or an electronic device. The higher the rate of sampling and the greater the range of amplitudes recorded, the more accurate the representation becomes.
 
-<figure style="max-width: 40%;margin: auto;">
+<figure>
     <img src="/media-library/music/sine-wave-sampling.png">
     <figcaption>Sine Wave</figcaption>
 </figure>
