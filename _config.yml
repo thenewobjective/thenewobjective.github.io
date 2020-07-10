@@ -31,11 +31,19 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - rouge
+  - jekyll-sitemap
 include: ['_pages']
 
 highlighter: rouge
 
 permalink: /:title
+
+defaults:
+  -
+    scope:
+      path: yandex_137655b885053393.html
+    values:
+      sitemap: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
