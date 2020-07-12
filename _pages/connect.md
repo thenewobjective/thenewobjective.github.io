@@ -16,6 +16,8 @@ On this page you can see a curated list of some of my activities around the web 
 - [Instagram](https://www.instagram.com/mlhaufe/){:target="_blank"}
 - [StackExchange](https://stackexchange.com/users/877266/mlhaufe){:target="_blank"}
 - [Twitch](https://www.twitch.tv/graphreduction){:target="_blank"}
+- [Parler](https://parler.com/profile/mlhaufe){:target="_blank"}
+- [Mastodon](https://mastodon.social/@mlhaufe){:target="_blank}
 
 ## Social Coding
 
