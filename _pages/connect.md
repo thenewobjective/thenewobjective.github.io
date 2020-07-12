@@ -37,4 +37,3 @@ On this page you can see a curated list of some of my activities around the web 
 - Primary: [tno@thenewobjective.com](mailto:tno@thenewobjective.com){:target="_blank"}
 - Secondary: [michael.haufe@outlook.com](mailto:michael.haufe@outlook.com){:target="_blank"}
 - Consulting: [michael.haufe@chalo.tech](mailto:michael.haufe@chalo.tech){:target="_blank"}
-- Health/Nutrition: [michael.haufe@shouhealth.com](mailto:michael.haufe@shouhealth.com){:target="_blank"}
