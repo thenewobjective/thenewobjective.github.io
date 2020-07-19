@@ -128,7 +128,7 @@ He's most famous for his discovery of the structure of [Benzene](https://en.wiki
 ## Other Candidates
 
 If you are aware of other dream or visionary discoveries like those above I'd like to see them. There are others I considered adding
-but the details about the inspirations are murky or the impact of the revelation didn't meet an arbitrary theshold I had.For example:
+but the details about the inspirations are murky or the impact of the revelation didn't meet an arbitrary theshold I had. For example:
 
 [Grigori Perelman](https://en.wikipedia.org/wiki/Grigori_Perelman){:target="_blank"}
 proved the [Poincaré conjecture](https://en.wikipedia.org/wiki/Poincar%C3%A9_conjecture){:target="_blank"} and consumes mushrooms.
@@ -142,12 +142,12 @@ about Agassiz's Fish on the [following page](http://www.worlddreambank.org/A/AGA
 I made a conscious choice to not include religious related dreams and visions. That topic is too broad for one post and the stories too deep.
 
 A visionary correspondence I personally find profound but does not fit the categorization of this post is about the
-[Yggdrasil](https://en.wikipedia.org/wiki/Yggdrasil){:target="_blank"} which you probably know about. Were you also aware that the same
+[Yggdrasil](https://en.wikipedia.org/wiki/Yggdrasil){:target="_blank"} which you may know of. Were you also aware that the same
 [imagery](https://web.archive.org/web/20200701093246/https://jordanbpeterson.com/wp-content/uploads/2018/04/Biblical-13-37.jpeg){:target="_blank"} was
 drawn by Peruvian Shamans? It even includes the [world encompassing serpent](https://en.wikipedia.org/wiki/Ouroboros#The_%22world_serpent%22_in_mythology){:target="_blank"}.
-I first came across this in one of Jordan Peterson's [lectures](https://youtu.be/iEZVWWk6qHg?t=4475){:target="_blank"}. This is a clue to the idea of the world tree
-not being invented simply as a story but discovered through some means. If that's the case, then perhaps some of the lost texts of mythology could be
-rederived?
+I first came across this in one of Jordan Peterson's [lectures](https://youtu.be/iEZVWWk6qHg?t=4475){:target="_blank"}. This is a clue that the idea of was 
+not invented but discovered through some means. If that's the case then perhaps some of the lost texts of mythology could be
+rederived. There is alot of [speculation](https://norse-mythology.org/cosmology/the-nine-worlds/){:target="_blank"} based on archaeology which is scant.
 
 ## Notes
 
