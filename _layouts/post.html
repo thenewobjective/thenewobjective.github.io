@@ -16,7 +16,7 @@ layout: default
     {% endif %}
     {%- include category-nav.html -%}
     <hr>
-    {{ content }}
+    {% include anchor_headings.html html=content anchorBody="#" beforeHeading=true %}
     <hr>
     {%- include category-nav.html -%}
 </article>
