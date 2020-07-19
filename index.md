@@ -10,9 +10,10 @@ nav_order: 0
 
 {% assign sorted_categories = site.categories | sort %}
 {% for category in sorted_categories %}
-<details>
     {% comment %} minus 1 to exclude index post {% endcomment %}
     {% assign category_size = category[1].size | minus: 1 %}
+    {% if category_size > 0 %}
+<details>
         <summary>{{ category[0] }}&nbsp;({{ category_size }})</summary>
         <ul>
             {% for post in category[1] reversed %}
@@ -22,4 +23,5 @@ nav_order: 0
             {% endfor %}
         </ul>
 </details>
+    {% endif %}
 {% endfor %}
