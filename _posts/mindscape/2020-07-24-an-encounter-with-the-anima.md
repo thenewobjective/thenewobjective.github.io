@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "An Encounter With The Anima"
-date:   2020-07-24 01:00:00 -0600
+date:   2020-07-24 03:00:00 -0600
 category: Mindscape
 permalink: /mindscape/an-encounter-with-the-anima
 commentThreadId: 40
