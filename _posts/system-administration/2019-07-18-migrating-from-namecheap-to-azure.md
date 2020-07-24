@@ -10,6 +10,9 @@ redirect_from:
 commentThreadId: 14
 ---
 
+* TOC
+{:toc}
+
 I’ve spent a number of years hosting my websites on Namecheap. Their prices were very reasonable and the customer support was excellent. Over time though I’ve been doing increasingly ambitious projects on Azure, as well as working to divorce myself from all things Google. Early this year (2019) I finally decided to consolidate all of my web properties on the Microsoft stack. Spending hours with Customer support trying to identify mystery DNS servers, ever changing hosting servers, multiple cpanels, and a half dozen other minor nuisances finally became too much. “Just give me direct server access, I’ll do it myself”. Below you can see the steps I took to transfer some of my domains to Azure.
 
 ## Caveats
@@ -95,7 +98,7 @@ In the JSON object add your information, the auth code from the earlier email, a
   <img src="/media-library/azure/azure-rest-domain-transfer-body.png" alt="Azure REST domain transfer body">
 </figure>
 
-Remember, this is JSON, so if your auth code has a character such as ‘\’ in it you’ll have to escape it: ‘\\’
+Remember, this is JSON, so if your auth code has a character such as `\` in it you’ll have to escape it: `\\`
 
 You can generate a timestamp in your browser console or scratchpad for use in the **“agreedAt”** field
 
