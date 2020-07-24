@@ -464,30 +464,17 @@ I’m primarily interested in the study and application of Programming Language 
   image="/media-library/resume/perficient-icon.png"
   alt="Perficient icon"
   title="Assoc. Technical Consultant"
-  time="January 2015 – February 2015"
+  time="April 2013 – February 2015"
   desc="Perficient"
 %}
 
 <details>
     <summary>Details</summary>
     <ul>
+        <li>Acqui-hire from Zeon Solutions</li>
         <li>.NET development utilizing C#</li>
         <li>Development/Implementation of an Insite data adapter</li>
         <li>Foxpro data migration and manipulation </li>
-    </ul>
-</details>
-
-{% include resume-item.html
-  image="/media-library/resume/zeon-icon.png"
-  alt="Zeon icon"
-  title="Software Engineering Intern"
-  time="April 2013 – December 2014"
-  desc="Zeon SOlutions"
-%}
-
-<details>
-    <summary>Details</summary>
-    <ul>
         <li>Design, implementation, and deployment of Content Managed Web Applications using .NET (C#) and the Sitecore CMS platform (including Active Directory Integration)</li>
         <li>Designing Information Architecture for Web Applications</li>
         <li>Collaboration with Developers to define and implement Best Practices, Coding Standards/Conventions and Design Methodologies</li>
@@ -500,6 +487,8 @@ I’m primarily interested in the study and application of Programming Language 
         <li>Solution Architect and Tech-Lead roles as required</li>
         <li>Informatica PIM Configuration</li>
         <li>Technical representative at University Job Fairs</li>
+        <li>Migration of a Legacy IBM Domino application to Google App Maker (Alpha)</li>
+        <li>Dashboard creation with pre-release version of Chromecast</li>
     </ul>
 </details>
 
@@ -631,23 +620,6 @@ I’m primarily interested in the study and application of Programming Language 
             This project enables intelligent (language aware) searching across a code repository through a RESTful interface with integration into an Eclipse IDE.
             Details: <a href="/media-library/publications/Versioned-Lexical-Search.pdf" target="_blank">Versioned-Lexical-Search.pdf</a>
         </li>
-    </ul>
-</details>
-
-{% include resume-item.html
-  image="/media-library/resume/brady-icon.jpg"
-  alt="Brady icon"
-  title="Contractor – Software Engineer"
-  time="December 2013 – February 2014"
-  desc="Brady Corporation"
-%}
-
-<details>
-    <summary>Details</summary>
-    <ul>
-        <li>Contract position on behalf of Zeon Solutions</li>
-        <li>Migration of a Legacy IBM Domino application to Google App Maker (Alpha)</li>
-        <li>Integration with pre-release version of Chromecast</li>
     </ul>
 </details>
 
