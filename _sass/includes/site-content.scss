@@ -2,7 +2,8 @@
     background-color: var(--content-bg);
     overflow: auto;
     word-break: break-word;
-    min-height: 100vh;
+    /* Can't use 100vh due to safari and chrome's mobile system menu. It overlaps content */
+    min-height: 100%; 
 
     @media only screen and (max-width: 420px) {
         width: 100vw;
