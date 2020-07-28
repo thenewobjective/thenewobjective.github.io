@@ -36,23 +36,18 @@ body, html {
 	}
 	::-webkit-scrollbar-track {
 		border-radius: 10px;
-		background-color: var(--site-dark-bg) ;
+		background-color: var(--site-dark-bg);
 	}
 }
 
 body {
-    display: grid;
+	display: flex;
+	flex-direction: row;
 	font-size: calc(1em + 0.5vw);
 
-	@media only screen and (min-width: 420px) {
-		grid-template-columns: fit-content(12em) 1fr;
-		grid-template-rows: 1fr fit-content(4em);
-	}
-
 	@media only screen and (max-width: 420px) {
-		grid-template-columns: 1fr;
-		grid-template-rows: 3em 1fr 3em;
-	}
+        overflow-x: auto;
+    }
 }
 
 a {

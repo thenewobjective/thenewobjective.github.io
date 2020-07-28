@@ -1,5 +1,10 @@
 <main class="site-content">
     <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"/>
+        </svg>          
+      </a>
       <h1>
         <svg class="feather-icon">
           <use xlink:href="/images/icons/feather-sprite.svg#{{ page.icon }}"/>
@@ -13,4 +18,5 @@
     <section class="site-content_body">
       {{ content }}
     </section>
+    {%- include site-footer.html -%}
 </main>

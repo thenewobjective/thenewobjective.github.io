@@ -1,22 +1,19 @@
 .site-content {
     background-color: var(--content-bg);
-
     overflow: auto;
+    word-break: break-word;
+    min-height: 100vh;
 
     @media only screen and (max-width: 420px) {
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
+        width: 100vw;
     }
-	@media only screen and (min-width: 420px) and (max-width: 1279px) {
-        grid-column: 2 / span 2;
-        grid-row: 1 / span 2;
-        height: calc(100% - 2.5em);
+
+    @media only screen and (min-width: 421px) and (max-width: 1279px) {
+        width: calc(100vw - 4em);
     }
     @media only screen and (min-width: 1280px) {
-        grid-column: 2 / span 2;
-        grid-row: 1 / span 2;
-        height: calc(100% - 2.5em);
-	}
+        width: calc(100vw - 12em);
+    }
 }
 
 .site-content h1, .site-content h2, .site-content h3 {
@@ -47,6 +44,19 @@
     justify-content: space-between;
 }
 
+.site-content_header-menubutton {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    display: none;
+    font-size: x-large;
+    vertical-align: middle;
+
+    @media only screen and (max-width: 420px) {
+        display: inline-block;
+    }
+}
+
 .site-content_header h1 {
     margin: 0;
 }
@@ -54,6 +64,12 @@
 .site-content_header h1 .feather-icon {
     height: 0.8em;
     width: 0.8em;
+}
+
+.site-content_header h1 > .feather-icon {
+    @media only screen and (max-width: 420px) {
+        display: none;
+    }
 }
 
 .site-content_body {
