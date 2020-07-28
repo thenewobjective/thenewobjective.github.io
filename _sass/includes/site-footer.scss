@@ -2,7 +2,8 @@
     background-color: var(--content-bg);
     box-shadow: 0 -1px 3px 0 var(--shadow-color);
     font-size: smaller;
-    /* Using large bottom padding due to safari and chrome's mobile system menu. It overlaps content */
-    padding: 1em 1em 20em 1em;
+    /* Using large size due to safari and chrome's mobile system menu. It overlaps content */
+    min-height: 10em;
+    padding: 1em;
     text-align: center;
 }
