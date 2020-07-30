@@ -21,3 +21,13 @@
 .post > table thead {
 	background: var(--site-dark-bg);
 }
+
+.post #markdown-toc {
+	background-color: var(--site-dark-bg);
+}
+
+// Adding 'Contents' headline to the TOC
+.post #markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+}
