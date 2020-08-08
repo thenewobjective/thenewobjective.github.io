@@ -12,3 +12,11 @@ etc.
 
 In mathematics
 - "Let's be honest about mathematics" Eric Weinstein, https://www.youtube.com/watch?v=iilIiV8jZDE
+
+
+"Odd" has an odd number of letters.
+"Even" has an even number of letters.
+"Prime" has a prime number of letters.
+https://twitter.com/type2error/status/1284414047895654401
+
+"twelve plus one" has the same number of letters as "eleven plus two"

@@ -1,1 +1,6 @@
-https://www.quirksmode.org/blog/archives/2017/12/native_form_val.html
+- https://www.quirksmode.org/blog/archives/2017/12/native_form_val.html
+- https://macwright.com/2020/05/10/spa-fatigue.html
+- https://twitter.com/mlhaufe/status/1184451788122009600
+- https://twitter.com/mlhaufe/status/951324436438966277
+- https://twitter.com/mlhaufe/status/1190671000951803905
+- https://twitter.com/mlhaufe/status/824088890269171712
