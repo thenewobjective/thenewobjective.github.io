@@ -1,0 +1,7 @@
+- [The Periodic Table](https://en.wikipedia.org/wiki/Periodic_table#Mendeleev's_table)
+- Natural Selection
+- general relativity
+- church-turing thesis
+- curry-howard correspondance
+- calculus
+- etc.

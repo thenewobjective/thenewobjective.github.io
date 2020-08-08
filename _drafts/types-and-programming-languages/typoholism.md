@@ -1,0 +1,2 @@
+- https://www.johndcook.com/blog/2014/06/19/weak-static-type-systems/
+- http://lambda-the-ultimate.org/user/776/track

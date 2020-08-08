@@ -9,3 +9,6 @@ In programming languages this presents itself as well.
 		Monad vs FlatMap
 		Schonfinkelization vs currying
 etc.
+
+In mathematics
+- "Let's be honest about mathematics" Eric Weinstein, https://www.youtube.com/watch?v=iilIiV8jZDE

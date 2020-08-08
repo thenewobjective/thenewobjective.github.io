@@ -1,10 +1,10 @@
 ---
-layout: software-rendering
+layout: post
 icon: file-text
-category: Software Rendering
-title:  "1 - Simple Shapes"
-date:   2020-04-29 00:00:00 -0600
-permalink: /software-rendering/simple-shapes
+category: Graphics Programming
+title:  "- Simple Shapes"
+date:   2030-04-29 02:00:00 -0600
+permalink: /graphics-programming/simple-shapes
 commentThreadId: -1
 ---
 
@@ -19,21 +19,21 @@ Simply a name. Now we'll introduce a few variants:
 
 ```js
 class Square extends Shape {
-    constructor(size) {
+    constructor({size}) {
         super()
         this.size = size
     }
 }
 
 class Circle extends Shape {
-    constructor(radius) {
+    constructor({radius}) {
         super()
         this.radius = radius
     }
 }
 
 class RightTriangle extends Shape {
-    constructor(base, height) {
+    constructor({base, height}) {
         this.base = base
         this.height = height
     }
@@ -63,7 +63,7 @@ class RightTriangle extends Shape {
 }
 ```
 
-Finally, we'll wrap them up in a module `shapes` and move on to the next chapter:
+Finally, we'll wrap them up in a module `shapes` and move on:
 
 ```js
 class Shape {}
@@ -74,7 +74,7 @@ class Circle extends Shape { ... }
 
 class RightTriangle extends Shape { ... }
 
-export {Shape, Square, Circle, RightTriangle }
+export {Shape, Square, Circle, RightTriangle}
 ```
 
-You can download the module <a href="/scripts/software-rendering/shapes.js">here</a>.
+You can download the module <a href="/scripts/graphics-programming/shapes.js">here</a>.

@@ -1,7 +1,7 @@
 class Shape {}
 
 class Square extends Shape {
-    constructor(size) {
+    constructor({size}) {
         super()
         this.size = size
     }
@@ -10,7 +10,7 @@ class Square extends Shape {
 }
 
 class Circle extends Shape {
-    constructor(radius) {
+    constructor({radius}) {
         super()
         this.radius = radius
     }
@@ -19,7 +19,7 @@ class Circle extends Shape {
 }
 
 class RightTriangle extends Shape {
-    constructor(base, height) {
+    constructor({base, height}) {
         this.base = base
         this.height = height
     }

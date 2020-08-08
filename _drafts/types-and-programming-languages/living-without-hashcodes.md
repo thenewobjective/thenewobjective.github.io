@@ -1,0 +1,2 @@
+- https://esdiscuss.org/topic/object-id-hash-etc
+- haskell also avoids. Trie's for example

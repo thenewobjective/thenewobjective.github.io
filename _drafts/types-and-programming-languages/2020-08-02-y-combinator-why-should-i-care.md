@@ -1,10 +1,10 @@
 ---
 layout: post
 icon: file-text
-title:  "Combinators: Why Should I Care"
+title:  "Y-Combinator: Why Should I Care"
 date:   2020-08-02 12:00:00 -0600
 category: Types and Programming Languages
-permalink: /types-and-programming-languages/combinators-why-should-i-care
+permalink: /types-and-programming-languages/y-combinator-why-should-i-care
 commentThreadId: -1
 ---
 
@@ -377,17 +377,48 @@ To recap, what we've accomplished so far is:
 
 So what? Is this just a party trick to just do recursion in disguise? What does this provide us that plain old recursion couldn't?
 
-<!-- 
-it's a third way
-1. loops
-2. recursion
-3. term rewriting
-    From our `fact` example above, the first argument `fact` is not a reference to itself.
--->
+What we've discovered here is a third way to perform repetitive work. You know of looping, recursion, and now with `fix` there is
+rewriting. So to add to L. Peter Deutsch's quote:
 
 > If recursion is divine then 'fix' is [entelechy](https://en.wikipedia.org/wiki/Potentiality_and_actuality#entelechy){:target="_blank"}
 
 ## Practical Examples
+
+Given that we have looping and recursion, what's the gain here with `fix`? 
+
+In the recursion section above, you saw that the translation of `fact` from an imperative form to a recursive
+form improved clarity significantly. Translation from a recursive definition to a fixed-point definition can also
+provide benefits. Let's take a look at the recursive `fib` definition:
+
+```js
+let fib = n =>
+    n < 2 ? n : fib(n - 1) + fib(n - 2);
+```
+
+While the definition is clear, it's also naively inefficient requiring an exponential amount of time and space to produce a result.
+
+<figure>
+    <img src="/media-library/dynamic-programming/fibCallTree.png" alt="Fibonacci call tree">
+    <figcaption>Fibonacci Call Tree</figcaption>
+</figure>
+
+This situation can be improved through memoization; saving the result of previous calls:
+
+```js
+let memo = []
+let fib = n =>
+    n < 2 ? n : memo[n] || (memo[n] = fib(n - 1) + fib(n - 2))
+```
+
+Our new call tree is now:
+
+<figure>
+    <img src="/media-library/dynamic-programming/fibCallTreeMemo.png" alt="Fibonacci memoized call tree">
+    <figcaption>Fibonacci Memoized Call Tree</figcaption>
+</figure>
+
+But for what we've gained in efficiency we've lost in readability. We've now complected the calculation of a fibonacci
+number with the effort of memoizing and looking up a prior result. Here's an opportunity for `fix`. We can 
 
 ## Further Reading
 
