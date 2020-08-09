@@ -363,6 +363,140 @@ fib(12)<br>
 
 Success!
 
+## A More Practical Implementation
+
+That definition of `fix` though is a bit enigmatic to read at first glance though
+even after going through the steps to derive it. You'd also be right to question
+its efficiency. Can we improve our definition even more? The answer is yes but at
+the expense of it no longer being a combinator and instead being a recursive
+definition.
+
+Here's what we have:
+
+```js
+let fix = f =>
+    (u => f(n => u(u)(n)))
+    (u => f(n => u(u)(n)))
+```
+
+Let's begin with a [beta-reduction](https://wiki.haskell.org/Beta_reduction){:target="_blank"}
+of the self application to see if another pattern emerges:
+
+```js
+let fix = f =>
+    f(n =>
+        (u => f(n => u(u)(n)))
+        (u => f(n => u(u)(n)))
+        (n)
+    )
+```
+
+Repeat:
+
+```js
+let fix = f =>
+    f(n =>
+        f(n =>
+            (u => f(n => u(u)(n)))
+            (u => f(n => u(u)(n)))
+            (n)
+        )(n)
+    )
+```
+
+Once more:
+
+```js
+let fix = f =>
+    f(n =>
+        f(n =>
+            f(n =>
+                (u => f(n => u(u)(n)))
+                (u => f(n => u(u)(n)))
+                (n)
+            )(n)
+        )(n)
+    )
+```
+
+Notice the pattern emerging? It looks suspiciously similar to the
+very outer function, except that the outer `fix` if missing the `n`
+parameter. Let's add that parameter and apply it the top level `f`
+call to match the nested ones:
+
+```js
+let fix = f => n =>
+    f(n =>
+        f(n =>
+            f(n =>
+                (u => f(n => u(u)(n)))
+                (u => f(n => u(u)(n)))
+                (n)
+            )(n)
+        )(n)
+    )(n)
+```
+
+With this change let's do a sanity check:
+
+```js
+let fact = fix(fact =>
+    n => n < 2 ? 1 : n * fact(n - 1)
+)
+```
+
+<code>
+fact(7)<br>
+&rarr;5040
+</code>
+
+So far so good. Now with our pattern clear, we'll replace the
+innermost self-application with `fix(f)`
+
+```js
+let fix = f => n =>
+    f(n =>
+        f(n =>
+            f(fix(f))(n)
+        )(n)
+    )(n)
+```
+
+Repeat:
+
+```js
+let fix = f => n =>
+    f(n =>
+        f(fix(f))(n)
+    )(n)
+```
+
+Once more:
+
+```js
+let fix = f => n =>
+    f(fix(f))(n)
+```
+
+Final sanity check:
+
+<code>
+fact(7)<br>
+&rarr;5040
+</code>
+
+Compare our new definition with the original:
+
+```js
+let fix = f =>
+    (u => f(n => u(u)(n)))
+    (u => f(n => u(u)(n)))
+```
+
+While the new one is no longer a combinator, from a practical
+point of view as a implementor the recursive form is
+probably preferable.
+
 ## More Than Divine
 
 To recap, what we've accomplished so far is:
