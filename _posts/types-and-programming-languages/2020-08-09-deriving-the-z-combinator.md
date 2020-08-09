@@ -1,23 +1,20 @@
 ---
 layout: post
 icon: file-text
-title:  "Y-Combinator: Why Should I Care"
-date:   2020-08-02 12:00:00 -0600
+title:  "Deriving the Z-Combinator"
+date:   2020-08-09 00:00:00 -0600
 category: Types and Programming Languages
-permalink: /types-and-programming-languages/y-combinator-why-should-i-care
+permalink: /types-and-programming-languages/deriving-the-z-combinator
 commentThreadId: -1
 ---
 
 * TOC
 {:toc}
 
-By now you've probably heard of the Y-Combinator, Z-Combinator, and others but you've
-probably not seen a reason to practically care. There are tutorials aplenty deriving
-some of these, with varying quality, but you'd be hard pressed to find one giving
-use cases justifying it in your own code without some accompanying lengthy
-comment explaining it to get it past code review. Let's see if I can do better.
-Not only will I derive a fixed-point combinator from a recursive function but I will
-also provide practical use-cases for it.
+By now you've probably heard of the Y-Combinator and its cousin the Z-Combinator but you
+may not have seen a derivation of it that made sense. There are tutorials and examples
+aplenty but they seem to skip steps or leave out some accompanying explanation leaving
+the reader with a sense of something missing. Let's see if I can do better.
 
 ## Fixed-points and Combinators
 
@@ -28,7 +25,7 @@ same argument. A simple example:
 &lambda;x. x * x
 </code>
 
-What value would be the fixed-point of this function? Zero would work:
+What value would be the fixed-point of this function? `0` would work:
 
 <code>
 (&lambda;x. x * x) 0<br>
@@ -42,7 +39,7 @@ A function doesn't have to have a single fixed-point either. Let's take the foll
 &lambda;x. |x|
 </code>
 
-The absolute value (`|x|`) will return the input when it's positive. Therefore every non-negative number
+The absolute value (`|x|`) will return the input when it's non-negative. Therefore every non-negative number
 is its fixed-point.
 
 The fixed-points of functions aren't restricted to numbers and strings of course. They can be other functions.
@@ -366,7 +363,7 @@ fib(12)<br>
 
 Success!
 
-## So What
+## More Than Divine
 
 To recap, what we've accomplished so far is:
 
@@ -375,50 +372,14 @@ To recap, what we've accomplished so far is:
 3. Introduced recursion
 4. Converted a recursive function into a fixed-pont combinator and derived a generic way to define others.
 
-So what? Is this just a party trick to just do recursion in disguise? What does this provide us that plain old recursion couldn't?
+So what? Is this just a party trick to just do recursion in disguise?
 
 What we've discovered here is a third way to perform repetitive work. You know of looping, recursion, and now with `fix` there is
 rewriting. So to add to L. Peter Deutsch's quote:
 
 > If recursion is divine then 'fix' is [entelechy](https://en.wikipedia.org/wiki/Potentiality_and_actuality#entelechy){:target="_blank"}
 
-## Practical Examples
-
-Given that we have looping and recursion, what's the gain here with `fix`? 
-
-In the recursion section above, you saw that the translation of `fact` from an imperative form to a recursive
-form improved clarity significantly. Translation from a recursive definition to a fixed-point definition can also
-provide benefits. Let's take a look at the recursive `fib` definition:
-
-```js
-let fib = n =>
-    n < 2 ? n : fib(n - 1) + fib(n - 2);
-```
-
-While the definition is clear, it's also naively inefficient requiring an exponential amount of time and space to produce a result.
-
-<figure>
-    <img src="/media-library/dynamic-programming/fibCallTree.png" alt="Fibonacci call tree">
-    <figcaption>Fibonacci Call Tree</figcaption>
-</figure>
-
-This situation can be improved through memoization; saving the result of previous calls:
-
-```js
-let memo = []
-let fib = n =>
-    n < 2 ? n : memo[n] || (memo[n] = fib(n - 1) + fib(n - 2))
-```
-
-Our new call tree is now:
-
-<figure>
-    <img src="/media-library/dynamic-programming/fibCallTreeMemo.png" alt="Fibonacci memoized call tree">
-    <figcaption>Fibonacci Memoized Call Tree</figcaption>
-</figure>
-
-But for what we've gained in efficiency we've lost in readability. We've now complected the calculation of a fibonacci
-number with the effort of memoizing and looking up a prior result. Here's an opportunity for `fix`. We can 
+Now go forth with your newfound knowledge and impress your fellow mortals.
 
 ## Further Reading
 
@@ -426,6 +387,8 @@ number with the effort of memoizing and looking up a prior result. Here's an opp
 * [To Mock a Mockingbird](https://www.amazon.com/Mock-Mockingbird-Raymond-Smullyan/dp/0192801422){:target="_blank"} by [Raymond Smullyan](https://en.wikipedia.org/wiki/Raymond_Smullyan){:target="_blank"}
 * [To Dissect a Mockingbird](http://dkeenan.com/Lambda/){:target="_blank"}
 * [Fixed-point combinators in lambda calculus](https://en.wikipedia.org/wiki/Fixed-point_combinator#Fixed-point_combinators_in_lambda_calculus){:target="_blank"}
+* [Y in Practical Programs](https://web.archive.org/web/20040105195718/http://www.scms.rgu.ac.uk/staff/bjm/doc/fics2001.pdf){:target="_blank"}
+* [Oleg's generic fix wrapper](http://lambda-the-ultimate.org/classic/message5463.html#5466){:target="_blank"}
 
 ## Notes and References
 
