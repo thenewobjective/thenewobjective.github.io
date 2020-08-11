@@ -1,2 +1,3 @@
 - https://www.youtube.com/watch?v=m3Nn-cqYdbM
 - https://www.youtube.com/watch?v=2JNXx8VdbAE
+- https://www.quora.com/As-a-software-developer-engineer-what-technologies-do-you-feel-are-a-waste-of-time-learning-Why/answer/Fred-Mitchell-5
