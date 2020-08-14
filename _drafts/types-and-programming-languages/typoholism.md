@@ -1,2 +1,4 @@
 - https://www.johndcook.com/blog/2014/06/19/weak-static-type-systems/
 - http://lambda-the-ultimate.org/user/776/track
+- https://twitter.com/mlhaufe/status/1090241848474587138
+- https://twitter.com/mlhaufe/status/1261399961486241792

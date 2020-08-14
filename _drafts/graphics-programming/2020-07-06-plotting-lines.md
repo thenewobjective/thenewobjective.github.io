@@ -10,7 +10,7 @@ commentThreadId: -1
 
 The next natural step from plotting points is plotting lines. With the practically infinite
 variety of lines to draw, one would think we'd have to come up with a number of algorithms to
-draw them all. Luckily, we can just use one. The technique we'll use to draw all of these line
+draw them all. Luckily we can just use one. The technique we'll use to draw all of these line
 varieties is the [Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve){:target='_blank'}.
 
 Bézier curves are smooth paths that are defined by "control points". You can think of
