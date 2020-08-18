@@ -13,3 +13,5 @@ Our stats nerd found a weak correlation between points & time for stories estima
 
 5, 8, 13, 20, 40, 100? Statistically indistinguishable.
 """
+
+https://twitter.com/TotherAlistair/status/1294663110196891648
