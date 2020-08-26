@@ -3,9 +3,9 @@ layout: post
 icon: file-text
 category: Graphics Programming
 title:  "1 - The Canvas"
-date:   2020-04-29 01:00:00 -0600
+date:   2020-08-25 18:45:00 -0600
 permalink: /graphics-programming/the-canvas
-commentThreadId: -1
+commentThreadId: 45
 ---
 
 There are multiple ways to render things to a webpage. We're going to choose the `<canvas>`

@@ -1,6 +1,7 @@
-import Gallery from './Gallery.js'
+import Figure from './Figure.js'
 import Comments from './Comments.js'
 import {qsa, qs} from './query.js'
 
-let galleries = qsa('.gallery').map(item => new Gallery({ el:item })),
-    comments = new Comments({el: qs('.comments')})
+let comments = new Comments({el: qs('.comments')}),
+    figures = qsa('figure')
+        .map(figure => new Figure({ el: figure }))

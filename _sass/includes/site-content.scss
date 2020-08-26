@@ -80,6 +80,14 @@
     position: relative;
 }
 
+/* external links */
+.site-content_body a[href^="http"]::after {
+    content: '\2197';
+    color: var(--font-color);
+    font-size: small;
+    vertical-align: super;
+}
+
 .rss {
     color: orange;
     font-size: calc(1.6rem + 0.5vw);

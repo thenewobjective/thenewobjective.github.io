@@ -1,4 +1,4 @@
-.gallery-dialog {
+.dialog {
     background-color: var(--site-dark-bg);
     color: var(--font-color);
     line-height: 2;
@@ -9,17 +9,17 @@
     top: 0;
     bottom: 0;
 }
-.gallery-dialog::backdrop {
+.dialog::backdrop {
     background-color: rgba(0,0,0,0.8);
 }
-.gallery-dialog img {
+.dialog img {
     margin-bottom: 1em;
     max-width: 100%;
 }
 
-.gallery-dialog > form {}
+.dialog > form {}
 
-.gallery-dialog-cancel {
+.dialog-cancel {
     border: 1px solid black;
     font-weight: bold;
     position: absolute;
@@ -28,6 +28,22 @@
     font-size: inherit;
 }
 
-.gallery-dialog figcaption {
+.dialog figure {
+    margin: 0;
+}
+
+.dialog figure img {
+    cursor: auto;
+}
+
+.dialog figcaption {
     font-size: inherit;   
+}
+
+/* external links */
+.dialog a[href^="http"]::after {
+    content: '\2197';
+    color: var(--font-color);
+    font-size: small;
+    vertical-align: super;
 }

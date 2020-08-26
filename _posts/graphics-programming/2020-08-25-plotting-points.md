@@ -3,9 +3,9 @@ layout: post
 icon: file-text
 category: Graphics Programming
 title:  "2 - Plotting Points"
-date:   2020-04-29 03:00:00 -0600
+date:   2020-08-25 18:50:00 -0600
 permalink: /graphics-programming/plotting-points
-commentThreadId: -1
+commentThreadId: 46
 ---
 
 With our canvas prepared we need a representation that can be rendered to it.

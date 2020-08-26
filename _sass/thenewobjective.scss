@@ -82,6 +82,7 @@ figure {
 }
 
 figure img { 
+	cursor: pointer;
 	max-width: 100%;
 }
 
@@ -122,7 +123,7 @@ p > code, li > code {
 	"includes/feather-icon",
 	"includes/resume-item",
 	"includes/gallery",
-	"includes/gallery-dialog",
+	"includes/dialog",
 	"includes/category-nav",
 	"includes/youtube",
 	"includes/codepen",
