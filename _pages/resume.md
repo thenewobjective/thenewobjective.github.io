@@ -188,25 +188,6 @@ I’m primarily interested in the study and application of Programming Language 
 ## Employment
 
 {% include resume-item.html
-  image="/media-library/resume/shou.png"
-  alt="ShoU Health icon"
-  title="Co-Founder, CISO, Head of DevSecOps"
-  time="January 2018 – Present"
-  desc="<a href='https://www.shouhealth.com/' target='_blank'>ShoU Health</a>"
-%}
-
-<details>
-    <summary>Details</summary>
-    <ul>
-        <li>Systems Architecture</li>
-        <li>HIPAA Compliance</li>
-        <li>Progressive Web Apps (PWA) + Mobile</li>
-        <li>Full Stack (Node.js, TypeScript, C#, Babel, Azure)</li>
-        <li>Machine Learning </li>
-    </ul>
-</details>
-
-{% include resume-item.html
   image="/media-library/resume/chalo.png"
   alt="Chalo icon"
   title="Principal Software Engineer"
@@ -294,6 +275,25 @@ I’m primarily interested in the study and application of Programming Language 
         <li>Umbraco configuration</li>
       </ul>"
     %}
+</details>
+
+{% include resume-item.html
+  image="/media-library/resume/shou.png"
+  alt="ShoU Health icon"
+  title="Co-Founder, CISO, Head of DevSecOps"
+  time="January 2018 – July 2020"
+  desc="<a href='https://www.shouhealth.com/' target='_blank'>ShoU Health</a>"
+%}
+
+<details>
+    <summary>Details</summary>
+    <ul>
+        <li>Systems Architecture</li>
+        <li>HIPAA Compliance</li>
+        <li>Progressive Web Apps (PWA) + Mobile</li>
+        <li>Full Stack (Node.js, TypeScript, C#, Babel, Azure)</li>
+        <li>Machine Learning </li>
+    </ul>
 </details>
 
 {% include resume-item.html
