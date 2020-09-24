@@ -39,6 +39,15 @@ nav_order: 4
 {% include resume-item.html
   image="about:blank"
   alt=""
+  title="Standing Echo"
+  time="2020"
+  desc="Web based Media Player.<br>
+  <a href='https://github.com/symbolic-dreams/standing-echo' target='_blank'>View on GitHub</a>"
+%}
+
+{% include resume-item.html
+  image="about:blank"
+  alt=""
   title="Decorator Contracts"
   time="2019"
   desc="Code Contracts for ECMAScript and TypeScript classes.<br>
