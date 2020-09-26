@@ -171,4 +171,5 @@ While I have hopes for this standard, I’ve been burned too often to suggest it
 
 ## Additional Reading
 
-[Adam Silver](https://adamsilver.io/){:target="_blank"} has written an [article](https://adamsilver.io/articles/the-problem-with-web-components/){:target="_blank"} based on this one and others that provides another perspective.
+* [Adam Silver](https://adamsilver.io/){:target="_blank"} has written an [article](https://adamsilver.io/articles/the-problem-with-web-components/){:target="_blank"} based on this one and others that provides another perspective.
+* [Lea Verou](https://lea.verou.me/){:target="_blank"}'s [article](https://lea.verou.me/2020/09/the-failed-promise-of-web-components/){:target="_blank"} covers some usability issues and has a call to action.
