@@ -9,6 +9,7 @@
   - Windows 10
     - https://www.forbes.com/sites/gordonkelly/2020/03/26/microsoft-windows-10-warning-crashes-boot-problems-no-internet-wifi-upgrade-windows-10-free/#6dc9823a4846
   - Tesla
+    - https://www.zerohedge.com/technology/tesla-systems-reportedly-suffer-complete-network-outage
   - Browsers
     - Firefox ESR
   - Myspace
@@ -16,7 +17,8 @@
   - Google
     - https://www.computerworld.com/article/3442676/chrome-os-upgrade-standard.amp.html
     - https://mobile.twitter.com/ericlaw/status/1225814104201474050
-
+  - 911
+    - https://www.zerohedge.com/technology/911-system-goes-down-across-country-was-test
 - Devops as a methodology
   - publishing multiple changes in a day
   - "The best testing is on production"
