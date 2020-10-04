@@ -1,0 +1,4 @@
+- Object Oriented
+- Feature Oriented
+- Language Oriented
+  - <https://gumroad.com/l/lop-in-racket-cultural-anthro>

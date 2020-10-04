@@ -1,1 +1,4 @@
-langsec
+- http://langsec.org/
+- https://en.wikipedia.org/wiki/Language-based_security
+- http://www.pl-enthusiast.net/2018/08/13/security-programming-languages-issue/
+- https://twitter.com/LogicPractice/status/1249737879376531458

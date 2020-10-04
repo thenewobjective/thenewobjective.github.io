@@ -219,4 +219,41 @@ Vacuous proof
     </figcaption>
 </figure>
 
+========
+What is more "real"? Phenomenon, or the abstraction explaining it?
+Is a geometric circle more "real" than circular objects in the world?
+Is the number 7 more "real" than 7 items on your desk?
+
+Noumenon vs Phenomenon
+	https://en.wikipedia.org/wiki/Phenomenon
+	https://en.wikipedia.org/wiki/Noumenon
+	
+	
+The word "real" is the problem?
+
+========
+Are Archetypes as true as numbers?
+https://youtu.be/f-wWBGo6a2w?t=2289
+
+
+=========
+
+empirical/procedural knowledge
+
+	follow these steps and you'll get this result.
+	fill in the blank and turn the crank
+		you'll get what you want but not know why.
+			iow, no theory just motions
+
+=========
+Penn Jilette
+
+Science is predictive not necessarily explanatory.
+
+Pseudo-science is predicting the past:
+	You heard the dog bark and then you knew your mom died across the world,
+	but you didn't know at the time the dog barked.
+
+Richard Feynman
+https://www.informationphilosopher.com/solutions/scientists/feynman/past_and_future.html
 -->

@@ -107,3 +107,17 @@ Society seems to reward mediocrity
 
 A Must-Have Perspective for Veterans: Understand Others
 https://www.youtube.com/watch?v=HZlhIE-5MYc
+
+
+- Tact for negotiation
+- Remove ego
+- When to be forceful?
+
+---
+Arrogance of Genius
+
+You can do all of the right things and still fail.
+
+Recall the poem:
+
+I took my power in my hands and went against the world twas not quite as David had but I was twice as bold. The stone I cast but it was I who fell instead, was Goliath too large or I too small? 
