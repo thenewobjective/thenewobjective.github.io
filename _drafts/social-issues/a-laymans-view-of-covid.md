@@ -21,18 +21,30 @@ as I see it. Note that I am not an expert in any field directly relevant to the 
 
 ## Where did it come from
 
+## How it spreads
+
+- <https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html>
+
 ## Do masks work
 
 Not for what you think it does.
 - <https://twitter.com/gummibear737/status/1315021745506660356>
 - <https://twitter.com/boriquagato/status/1316011001066778624>
+- <https://twitter.com/boriquagato/status/1317203873954779137>
+- <https://twitter.com/boriquagato/status/1317188082358169600>
+- <https://twitter.com/Dierenbach/status/1317849186121977858>
+- <https://twitter.com/AlexBerenson/status/1317875526997102594>
+- <https://twitter.com/boriquagato/status/1317915599310376961>
 
 ## Will supplements provide protection
 
-## Can a person be reinfected twice
+- <https://twitter.com/gummibear737/status/1316427529792696320>
+
+## Can a person be reinfected
 
 - <https://twitter.com/gummibear737/status/1313137235546566656>
 - <https://twitter.com/boriquagato/status/1316031729035964417>
+- <https://twitter.com/Daniilgor/status/1316501414793838592>
 
 ## Can you spread the disease if you're asymptomatic
 
@@ -49,6 +61,9 @@ Not for what you think it does.
 - <https://twitter.com/zerohedge/status/1315652194281152512>
 - <https://twitter.com/zerohedge/status/1315633168247132164>
 - <https://twitter.com/boriquagato/status/1316057586819620864>
+- <https://twitter.com/boriquagato/status/1316369696724316160>
+- <https://twitter.com/gummibear737/status/1316423780495917059>
+- <https://www.zerohedge.com/medical/who-europe-director-says-governments-should-stop-enforcing-lockdowns>
 
 ## Herd immunity
 
@@ -59,6 +74,8 @@ Not for what you think it does.
 ## Casedemic
 
 - <https://twitter.com/boriquagato/status/1315366367902695424>
+- <https://twitter.com/KSTaxEconomist/status/1316394273315729411>
+- <https://twitter.com/ClareCraigPath/status/1317009458325786624>
 
 ## Is Hydroxychloroquine effective
 
@@ -83,3 +100,14 @@ used early.
 - <https://twitter.com/boriquagato/status/1316135154352562177>
 
 ## Further Reading
+
+- <https://twitter.com/dockaurG/status/1316018426070986755>
+- <https://twitter.com/boriquagato/status/1316762826636234754>
+- <https://twitter.com/gummibear737/status/1316742493287915520>
+- <https://twitter.com/zerohedge/status/1317165925368582144>
+- <https://twitter.com/gummibear737/status/1317223302180593664>
+- <https://twitter.com/gummibear737/status/1317223344186576899>
+- <https://twitter.com/gummibear737/status/1317223331658170369>
+- <https://twitter.com/boriquagato/status/1317443577673322497>
+- <https://twitter.com/gummibear737/status/1317829332740472832>
+- <https://twitter.com/gummibear737/status/1317950332870266882>
