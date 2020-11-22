@@ -1,0 +1,3 @@
+- https://math.stackexchange.com/questions/1210458/what-is-the-difference-between-boolean-logic-and-propositional-logic#1210498
+- https://cs.stackexchange.com/questions/45357/boolean-algebraic-expression-vs-propositional-logic-expression
+- https://twitter.com/mlhaufe/status/1328006667049512960
