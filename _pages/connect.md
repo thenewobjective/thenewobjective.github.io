@@ -21,6 +21,7 @@ On this page you can see a curated list of some of my activities around the web 
 
 ## Social Coding
 
+- [GitHub - gists](https://gist.github.com/mlhaufe/public){:target="_blank"}
 - [GitHub - mlhaufe](https://github.com/mlhaufe){:target="_blank"}
 - [Github - thenewobjective](https://github.com/thenewobjective){:target="_blank"}
 - [Github - Symbolic Dreams](https://github.com/symbolic-dreams){:target="_blank"}
