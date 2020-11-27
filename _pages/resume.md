@@ -188,10 +188,26 @@ I’m primarily interested in the study and application of Programming Language 
 ## Employment
 
 {% include resume-item.html
+  image="/media-library/resume/centare.jpg"
+  alt="Centare"
+  title="Senior Consultant"
+  time="November 2020 - Present"
+  desc="<a href='https://www.centare.com/' target='_blank'>Centare</a>"
+%}
+
+<details>
+    <summary>Details</summary>
+    <ul>
+        <li>Azure Solution Architecture</li>
+        <li>Data Engineering</li>
+    </ul>
+</details>
+
+{% include resume-item.html
   image="/media-library/resume/chalo.png"
   alt="Chalo icon"
   title="Principal Software Engineer"
-  time="November 2018 – Present"
+  time="November 2018 – October 2020"
   desc="<a href='https://www.chalo.tech/' target='_blank'>Chalo, LLC</a>"
 %}
 
