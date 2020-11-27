@@ -111,3 +111,12 @@ used early.
 - <https://twitter.com/boriquagato/status/1317443577673322497>
 - <https://twitter.com/gummibear737/status/1317829332740472832>
 - <https://twitter.com/gummibear737/status/1317950332870266882>
+- <https://www.acpjournals.org/doi/10.7326/M20-6817>
+- <https://twitter.com/boriquagato/status/1328686067168505857>
+- <https://twitter.com/AdamRutherford/status/1327901972419276800>
+- <https://twitter.com/s_kirton/status/1327559617988218880>
+- <https://twitter.com/boriquagato/status/1327625928822960129>
+- <https://twitter.com/Kevin_McKernan/status/1327280853064552450>
+- <https://twitter.com/boriquagato/status/1327272369728204800>
+- <https://twitter.com/boriquagato/status/1327237316923035659>
+- <https://twitter.com/boriquagato/status/1320060492321296384>
