@@ -113,3 +113,5 @@ if agile is so great why is our software so bad?
 
 Scrum
 	estimated effort vs actual effort and point value
+
+https://www.zerohedge.com/technology/boeing-737-crashes-caused-few-lines-missing-code
