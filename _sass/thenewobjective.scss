@@ -114,6 +114,14 @@ p > code, li > code {
 	color: red;
 }
 
+input {
+	background-color: var(--site-dark-bg);
+    font-size: inherit;
+    padding: 0.5em;
+    border: 1px inset var(--shadow-color);
+    color: var(--font-color);
+}
+
 @import
 	"includes/site-header",
 	"includes/details",
@@ -128,6 +136,7 @@ p > code, li > code {
 	"includes/youtube",
 	"includes/codepen",
 	"includes/comments",
+	"includes/search",
 	"pages/about-me",
 	"alt-obsidian",
 	"pages/demos"

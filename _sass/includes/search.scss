@@ -1,0 +1,13 @@
+.search {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0 0 0;
+}
+
+.search button {
+    background-color: var(--site-dark-bg);
+    border: 1px outset var(--shadow-color);
+    font-size: inherit;
+    padding: 0.5em;
+}
