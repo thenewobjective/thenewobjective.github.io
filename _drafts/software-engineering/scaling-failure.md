@@ -35,3 +35,5 @@
   you don't know why a current result exists, just that the current shape is the result of being battered
   over a geological period of time.
 - Invasive species out-compete due to a novel means of beating.
+
+- https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
