@@ -47,3 +47,6 @@ Notes
    ╰────────────────────────────────────────────────────────────────╯
 
 http://www.haskellforall.com/2019/05/release-early-and-often.html
+https://gist.github.com/jashkenas/cbd2b088e20279ae2c8e
+https://en.wikipedia.org/wiki/Version_control
+	semantics control?
