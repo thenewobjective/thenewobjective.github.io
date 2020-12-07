@@ -62,10 +62,10 @@ In this case `bytes = 4` for RGBA and we'll use the following dimensions as an e
 The component is the offset for the particular color channel. So to access the colors at a particular `(x,y)`:
 
 ```js
-let r = data[bytes * (width * y + x)  + 0],
-    g = data[bytes * (width * y + x)  + 1],
-    b = data[bytes * (width * y + x)  + 2],
-    a = data[bytes * (width * y + x)  + 3]
+const r = data[bytes * (width * y + x)  + 0],
+      g = data[bytes * (width * y + x)  + 1],
+      b = data[bytes * (width * y + x)  + 2],
+      a = data[bytes * (width * y + x)  + 3]
 ```
 
 Time to define our `plot` function. Since plotting is not specific to a shape we'll define it on the base class:
@@ -75,9 +75,9 @@ Time to define our `plot` function. Since plotting is not specific to a shape we
 class Graphic {
     ...
     plot(x, y, r, g, b, a) {
-        let bytes = 4,
-            {data, width, height} = this.#imageData,
-            i = bytes * (width * y + x);
+        const bytes = 4,
+              {data, width, height} = this.#imageData,
+              i = bytes * (width * y + x);
         data[i + 0] = r
         data[i + 1] = g
         data[i + 2] = b
@@ -96,9 +96,9 @@ continue to use named parameters `.plot({x:120, y:4, c:RED})`:
 class Graphic {
     ...
     plot({x, y, c}) {
-        let bytes = 4,
-            {data, width, height} = this.#imageData,
-            i = bytes * (width * y + x);
+        const bytes = 4,
+              {data, width, height} = this.#imageData,
+              i = bytes * (width * y + x);
         data[i + 0] = (c >>> 24);
         data[i + 1] = (c << 8 >>> 24);
         data[i + 2] = (c << 16 >>> 24);
@@ -167,15 +167,15 @@ update the method to handle these cases:
 class Graphic {
     ...
     plot({x, y, c}) {
-        let {width, height, data} = this.#imageData;
+        const {width, height, data} = this.#imageData;
 
         if(x < 0 || y < 0 || x >= width || y >= height)
             return;
 
-        let xf = Math.floor(x),
-            yf = Math.floor(y),
-            bytes = 4,
-            i = bytes * (width * yf + xf);
+        const xf = Math.floor(x),
+              yf = Math.floor(y),
+              bytes = 4,
+              i = bytes * (width * yf + xf);
 
         data[i + 0] = (c >>> 24);
         data[i + 1] = (c << 8 >>> 24);
@@ -192,15 +192,15 @@ With our new plotting ability we can start putting it to use:
 // Noise.js
 import Graphic from './Graphic.js'
 
-let randomInt = (max) => Math.floor(Math.random() * Math.floor(max));
-
 class Noise extends Graphic {
+    #randomInt = (max) => Math.floor(Math.random() * Math.floor(max));
+
     constructor({width, height}) {
         super({width, height})
 
         for(let x = 0; x < width; x++) {
             for(let y = 0; y < height; y++) {
-                let color = randomInt(0xFFFFFFFF)
+                const color = this.#randomInt(0xFFFFFFFF)
                 this.plot({x,y,c: color})
             }
         }
@@ -217,9 +217,9 @@ Implementing noise is straightforward enough. Iterate over every pixel, generate
 import Canvas from './Canvas.js'
 import Noise from './Noise.js'
 
-let noise = new Noise({width: 640, height: 480})
+const noise = new Noise({width: 640, height: 480})
 
-let canvas = new Canvas({width: 640, height: 480})
+const canvas = new Canvas({width: 640, height: 480})
 canvas.appendTo({element: document.getElementById('noise-example')})
 canvas.draw({imageData: noise.imageData, top: 0, left: 0})
 ```
