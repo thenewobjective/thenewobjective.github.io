@@ -19,6 +19,8 @@
     - https://mobile.twitter.com/ericlaw/status/1225814104201474050
   - 911
     - https://www.zerohedge.com/technology/911-system-goes-down-across-country-was-test
+  - SolarWinds
+    - https://duckduckgo.com/?kh=1&q=SolarWinds&sites=www.schneier.com&ia=web
 - Devops as a methodology
   - publishing multiple changes in a day
   - "The best testing is on production"
