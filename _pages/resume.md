@@ -428,7 +428,7 @@ I’m primarily interested in the study and application of Programming Language 
             <figcaption>
                 Children's Hospital Intranet<br>
                 This Sitecore project was a redesign of the existing intranet and a hub for migrating legacy pages.
-                THe unique features of this project were Single Sign On support and a bookmarking system for users.
+                The unique features of this project were Single Sign On support and a bookmarking system for users.
             </figcaption>
         </figure>
         <figure class="gallery-item">
