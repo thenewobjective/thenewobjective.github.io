@@ -37,6 +37,6 @@ On this page you can see a curated list of some of my activities around the web 
 
 ## Email
 
-- Primary: [tno@thenewobjective.com](mailto:tno@thenewobjective.com){:target="_blank"}
-- Secondary: [michael.haufe@outlook.com](mailto:michael.haufe@outlook.com){:target="_blank"}
-- Consulting: [michael.haufe@chalo.tech](mailto:michael.haufe@chalo.tech){:target="_blank"}
+- Personal Primary: [tno@thenewobjective.com](mailto:tno@thenewobjective.com){:target="_blank"}
+- Personal Secondary: [michael.haufe@outlook.com](mailto:michael.haufe@outlook.com){:target="_blank"}
+- Business: [michael.haufe@final-hill.com](mailto:michael.haufe@final-hill.com){:target="_blank"}
