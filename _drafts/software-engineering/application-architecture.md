@@ -1,0 +1,1 @@
+- <https://stackoverflow.com/questions/8086750/is-this-a-correct-implementation-of-mvc-in-actionscript-3>
