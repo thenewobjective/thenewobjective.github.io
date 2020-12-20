@@ -200,6 +200,16 @@ I’m primarily interested in the study and application of Programming Language 
     <ul>
         <li>Azure Solution Architecture</li>
         <li>Data Engineering</li>
+        <li>Content Management Systems</li>
+        <li>Digital Transformation</li>
+    </ul>
+</details>
+
+<details>
+    <summary>Clients</summary>
+    <ul>
+        <li>Marquette Energy Analytics</li>
+        <li>Direct Supply</li>
     </ul>
 </details>
 
