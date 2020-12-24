@@ -36,6 +36,11 @@ Not for what you think it does.
 * <https://twitter.com/Dierenbach/status/1317849186121977858>
 * <https://twitter.com/AlexBerenson/status/1317875526997102594>
 * <https://twitter.com/boriquagato/status/1317915599310376961>
+* <https://twitter.com/gummibear737/status/1339679017897746433>
+* <https://twitter.com/boriquagato/status/1273737005361315840>
+* <https://twitter.com/Kevin_McKernan/status/1320033814131986433>
+* <https://twitter.com/boriquagato/status/1338838390058479617>
+* <https://twitter.com/BrendanEich/status/1339367981084672000>
 
 ## Will supplements provide protection
 
@@ -65,6 +70,10 @@ Not for what you think it does.
 * <https://twitter.com/boriquagato/status/1316369696724316160>
 * <https://twitter.com/gummibear737/status/1316423780495917059>
 * <https://www.zerohedge.com/medical/who-europe-director-says-governments-should-stop-enforcing-lockdowns>
+* <https://twitter.com/rubiconcapital_/status/1330597052234002434>
+* <https://twitter.com/MarkChangizi/status/1294285483426697218>
+* <https://twitter.com/boriquagato/status/1339233953325178884>
+* <https://twitter.com/boriquagato/status/1342171437990256641>
 
 ## Herd immunity
 
@@ -77,6 +86,16 @@ Not for what you think it does.
 * <https://twitter.com/boriquagato/status/1315366367902695424>
 * <https://twitter.com/KSTaxEconomist/status/1316394273315729411>
 * <https://twitter.com/ClareCraigPath/status/1317009458325786624>
+* <https://twitter.com/boriquagato/status/1340300019094724608>
+* <https://twitter.com/rubiconcapital_/status/1340722772281077761>
+* <https://twitter.com/boriquagato/status/1335580172758683650>
+* <https://twitter.com/zerohedge/status/1335611210415415298>
+* <https://twitter.com/boriquagato/status/1339552065656381443>
+
+## Propaganda
+
+* [Asymptomatic to Presymptomatic](https://twitter.com/BrendanEich/status/1340722551459172353)
+* <https://www.zerohedge.com/political/who-deletes-naturally-acquired-immunity-its-website>
 
 ## Is Hydroxychloroquine effective
 
@@ -91,14 +110,23 @@ used early.
 
 * <https://twitter.com/boriquagato/status/1313113007342452738>
 
-## Can Fauci be trusted on this
+## Can Fauci be trusted
+
+No.
 
 * <https://twitter.com/boriquagato/status/1315382097071177729>
 * <https://twitter.com/gummibear737/status/1315365796181356550>
+* <https://dailycaller.com/2020/12/24/anthony-fauci-coronavirus-covid-19-vaccine-herd-immunity/>
 
 ## Hospital Capacity
 
 * <https://twitter.com/boriquagato/status/1316135154352562177>
+
+## Vaccine Safety
+
+* <https://twitter.com/boriquagato/status/1335570781292654592>
+* <https://twitter.com/gummibear737/status/1336786692833992705>
+* <https://twitter.com/BretWeinstein/status/1337827650211991554>
 
 ## Further Reading
 
