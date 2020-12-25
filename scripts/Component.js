@@ -6,6 +6,11 @@
 
 class Component {
     /**
+     * @type {HTMLElement}
+     */
+    el
+
+    /**
      * @param {ComponentOptions} options 
      */
     constructor(options) {

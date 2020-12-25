@@ -38,6 +38,9 @@ import Comment from './Comment.js';
   */
 
 class Comments extends Component {
+    /**
+     * @type {GitComment[]}
+     */
     comments = []
 
     constructor(options) {
@@ -77,7 +80,7 @@ class Comments extends Component {
                  * @type {GitComment[]}
                  */
                 let comments = json
-                this.comments = json.map(item => {
+                this.comments = comments.map(item => {
                     let comment = new Comment({
                         authorName: item.user.login,
                         authorUrl: item.user.html_url,
