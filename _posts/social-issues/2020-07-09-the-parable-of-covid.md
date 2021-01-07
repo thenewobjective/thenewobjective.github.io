@@ -19,3 +19,7 @@ the politician exclaimed: "Surely, you lie, it was those bars and restaurants!"
 
 Immediately afterward, the politician went out and closed a great many of
 bars and restaurants to avenge the infection of his son.
+
+## Further Reading
+
+- [The Parable of the Leopard](https://www.google.com/books/edition/_/rK4mDAAAQBAJ?hl=en&gbpv=1&bsq=%22In%20the%20Ethiopian%20highlands%22)
