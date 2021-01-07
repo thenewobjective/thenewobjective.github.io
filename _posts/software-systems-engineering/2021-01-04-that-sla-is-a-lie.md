@@ -122,7 +122,7 @@ a 99.9% SLA for all features):
 `99.9% * 99.9% * 99.9% * 99.9% * 99.9% * 99.9% = 99.4%`
 
 So while the advertised promise was 9h of downtime the reality is over 52 hours of downtime annually.
-Add more 3rd party dependencies and you'll the downtime increase.
+Add more 3rd party dependencies and you'll see the downtime increase.
 
 Now this isn't limited to Cloud CMS offerings of course, you can apply the same rules to other cloud offerings.
 If those offerings claim an SLA level but offload core functionality to a 3rd party it's not an honest agreement.
