@@ -91,6 +91,7 @@ Not for what you think it does.
 * <https://twitter.com/boriquagato/status/1335580172758683650>
 * <https://twitter.com/zerohedge/status/1335611210415415298>
 * <https://twitter.com/boriquagato/status/1339552065656381443>
+* <https://www.zerohedge.com/covid-19/fda-admits-pcr-tests-give-false-results-prepares-ground-biden-virus-rescue-miracle>
 
 ## Propaganda
 
