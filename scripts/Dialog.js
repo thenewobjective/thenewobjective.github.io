@@ -10,6 +10,7 @@ class Dialog extends Component {
             ${options.content}
         </form>`
         document.body.appendChild(this.el)
+        dialogPolyfill.registerDialog(this.el)
     }
 
     onclick(e) {

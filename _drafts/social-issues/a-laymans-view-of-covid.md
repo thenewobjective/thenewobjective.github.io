@@ -99,6 +99,7 @@ No
 * <https://web.archive.org/web/20201227210257/https://twitter.com/boriquagato/status/1343301300306362368>
 * <https://www.zerohedge.com/covid-19/fda-admits-pcr-tests-give-false-results-prepares-ground-biden-virus-rescue-miracle>
 * <https://twitter.com/Kevin_McKernan/status/1348742268245712898>
+* <https://www.zerohedge.com/covid-19/fda-admits-pcr-tests-give-false-results-prepares-ground-biden-virus-rescue-miracle>
 
 ## Propaganda
 

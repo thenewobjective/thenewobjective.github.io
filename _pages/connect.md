@@ -16,7 +16,8 @@ On this page you can see a curated list of some of my activities around the web 
 - [Instagram](https://www.instagram.com/mlhaufe/){:target="_blank"}
 - [StackExchange](https://stackexchange.com/users/877266/mlhaufe){:target="_blank"}
 - [Twitch](https://www.twitch.tv/graphreduction){:target="_blank"}
-- [Parler](https://parler.com/profile/mlhaufe){:target="_blank"}
+- ~~[Parler](https://parler.com/profile/mlhaufe){:target="_blank"}~~
+- [Gab](https://gab.com/mlhaufe){:target="_blank"}
 - [Mastodon](https://mastodon.social/@mlhaufe){:target="_blank}
 
 ## Social Coding
@@ -30,10 +31,11 @@ On this page you can see a curated list of some of my activities around the web 
 
 ## Blogs and Forums
 
-- [Ajaxian](https://web.archive.org/web/2010*/http://ajaxian.com){:target="_blank"}
+- ~~[TNO @ Ajaxian](https://web.archive.org/web/2010*/http://ajaxian.com){:target="_blank"}~~
 - [Lambda the Ultimate](http://lambda-the-ultimate.org/user/11294){:target="_blank"}
 - [es-discuss](https://duckduckgo.com/?q=site%3Ahttps%3A%2F%2Fmail.mozilla.org%2Fpipermail%2Fes-discuss%2F+%22haufe%22&ia=web){:target="_blank"}
 - [comp.lang.javascript](https://groups.google.com/forum/#!profile/comp.lang.javascript/APn2wQcPhe6bXLYSEeInt3DFNlM2lVeCSbafIcLGTPfXAu2xAgdQDprUQ80e5MDjtzNkoQmiVu1r){:target="_blank"}
+- ~~[TNO @ VisualBasicScript.com](https://web.archive.org/web/20120920072515/http://www.visualbasicscript.com/){:target="_blank"}~~
 
 ## Email
 
