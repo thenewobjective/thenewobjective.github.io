@@ -41,6 +41,7 @@ Not for what you think it does.
 * <https://twitter.com/Kevin_McKernan/status/1320033814131986433>
 * <https://twitter.com/boriquagato/status/1338838390058479617>
 * <https://twitter.com/BrendanEich/status/1339367981084672000>
+* <https://web.archive.org/web/20210104231143/https://twitter.com/boriquagato/status/1346232824542580736>
 
 ## Will supplements provide protection
 
@@ -55,12 +56,15 @@ Not for what you think it does.
 ## Can you spread the disease if you're asymptomatic
 
 * <https://twitter.com/tlowdon/status/1314433379467587585>
+* <https://www.zerohedge.com/geopolitical/new-study-suggests-asymptomatic-covid-patients-arent-driver-transmission>
 
 ## Are children immune
 
 ## Why the six-foot rule
 
 ## Are lockdowns the right strategy
+
+No
 
 * <https://twitter.com/boriquagato/status/1314635924635111424>
 * <https://twitter.com/boriquagato/status/1315669937269202944>
@@ -74,6 +78,7 @@ Not for what you think it does.
 * <https://twitter.com/MarkChangizi/status/1294285483426697218>
 * <https://twitter.com/boriquagato/status/1339233953325178884>
 * <https://twitter.com/boriquagato/status/1342171437990256641>
+* <https://twitter.com/zerohedge/status/1349052724915171328>
 
 ## Herd immunity
 
@@ -91,6 +96,9 @@ Not for what you think it does.
 * <https://twitter.com/boriquagato/status/1335580172758683650>
 * <https://twitter.com/zerohedge/status/1335611210415415298>
 * <https://twitter.com/boriquagato/status/1339552065656381443>
+* <https://web.archive.org/web/20201227210257/https://twitter.com/boriquagato/status/1343301300306362368>
+* <https://www.zerohedge.com/covid-19/fda-admits-pcr-tests-give-false-results-prepares-ground-biden-virus-rescue-miracle>
+* <https://twitter.com/Kevin_McKernan/status/1348742268245712898>
 
 ## Propaganda
 
@@ -117,16 +125,28 @@ No.
 * <https://twitter.com/boriquagato/status/1315382097071177729>
 * <https://twitter.com/gummibear737/status/1315365796181356550>
 * <https://dailycaller.com/2020/12/24/anthony-fauci-coronavirus-covid-19-vaccine-herd-immunity/>
+* <https://twitter.com/gummibear737/status/1317829332740472832>
+
+## Can Professor Neil Ferguson be trusted?
+
+* <https://twitter.com/gummibear737/status/1306605767630491650>
 
 ## Hospital Capacity
 
 * <https://twitter.com/boriquagato/status/1316135154352562177>
+* <https://web.archive.org/web/20201228152416/https://twitter.com/boriquagato/status/1343577116730740736>
 
 ## Vaccine Safety
 
 * <https://twitter.com/boriquagato/status/1335570781292654592>
 * <https://twitter.com/gummibear737/status/1336786692833992705>
 * <https://twitter.com/BretWeinstein/status/1337827650211991554>
+* <https://nypost.com/2020/12/25/moderna-covid-vaccine-has-caused-side-effects-for-those-with-cosmetic-facial-fillers/>
+
+## Vaccine Effectiveness
+
+* <https://www.zerohedge.com/covid-19/er-nurse-tests-positive-covid-8-days-after-being-vaccinated>
+* <https://twitter.com/zerohedge/status/1349757318263664643>
 
 ## Further Reading
 
@@ -150,3 +170,5 @@ No.
 * <https://twitter.com/boriquagato/status/1327237316923035659>
 * <https://twitter.com/boriquagato/status/1320060492321296384>
 * <https://twitter.com/boriquagato/status/1332373568978554880>
+* <https://web.archive.org/web/20201228140742/https://twitter.com/lyne_ian/status/1343557021967126529>
+* <https://twitter.com/DailyCaller/status/1349780218110685186>
