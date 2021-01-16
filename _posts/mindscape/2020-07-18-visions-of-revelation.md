@@ -22,9 +22,18 @@ that I thought to be most profound.
 
 René Descartes contributed significantly to the development of The Scientific Method with his opus:
 ["Discourse on the Method"](https://en.wikipedia.org/wiki/Discourse_on_the_Method){:target="_blank"}.
-This work was inspired through a vision and dreams while he was a mercenary.[^1] [^2] Take note of the book of knowledge
+This work was inspired through a [vision and dreams](https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes#Visions){:target="_blank"} while he was a mercenary. Take note of the book of knowledge
 that appears and disappears. This is a common theme in dreams and visions. Another interesting part
 is the phrase: being "Possessed by a Genius".
+
+> The vision was preceded by a state of intense concentration and agitation. Descartes overheated mind caught fire and provided answers to tremendous problems that had been taxing him for weeks. He was possessed by a Genius, and the answers were revealed in a dazzling, unendurable light. Later, in a state of exhaustion, he went to bed and dreamed three dreams that had been predicted by this Genius.
+>
+> In the first dream he was revolved by a whirlwind and terrified by phantoms. He experienced a constant feeling of falling. He imagined he would be presented with a melon that came from a far-off land. The wind abated and he woke up. His second dream was one of thunderclaps and sparks flying around his room. In the third dream, all was quiet and contemplative. An anthology of poetry lay on the table. He opened it at random and read the verse of Ausonius, <em>"Quod vitae sectabor iter"</em> (What path shall I take in life?). A stranger appeared and quoted him the verse <em>"Est et non"</em> (Yes and no). Descartes wanted to show him where in the anthology it could be found, but the book disappeared and reappeared. He told the man he would show him a better verse beginning <em>"Quod vitae sectabor iter."</em> At this point the man, the book, and the whole dream dissolved.
+>
+> [...]
+>
+> What was the idea that Descartes saw in a burning flash? He tells us that his third dream pointed to no less than the unification and the illumination of the whole of science, even the whole of knowledge, by one and the same method: the method of reason.
+> <cite><a href="https://web.archive.org/web/20200101114041/https://physics.weber.edu/carroll/honors/descarte.htm" target="_blank">from Descartes' Dream, by Phillip J. Davis and Reuben Hirsh</a></cite>
 
 ## The Discovery of Runes in Germanic Mythology
 
@@ -94,7 +103,7 @@ Was it electrical? Chemical? Otto discovered the mechanism via a dream:
 > to the laboratory, and performed a simple experiment on a frog heart according to the nocturnal design.”
 > <cite>Otto Loewi</cite>
 
-As a result of his experiment he earned the Nobel Prize in 1936. [^3]
+As a result of his experiment he earned the Nobel Prize in 1936. [^1]
 
 ## The Structure of Benzene
 
@@ -139,20 +148,16 @@ of a fossilized fish and didn't want to risk exposing more and possibly damaging
 While an interesting story, it didn't quite make the list as a major enough discovery <abbr title="In My Opinion">IMO</abbr>. You may disagree. You can read more
 about Agassiz's Fish on the [following page](http://www.worlddreambank.org/A/AGASFISH.HTM){:target="_blank"}.
 
-I made a conscious choice to not include religious related dreams and visions. That topic is too broad for one post and the stories too deep.
+I made a conscious choice to not include religious related dreams and visions. I may revisit this decision in the future.
 
 A visionary correspondence I personally find profound but does not fit the categorization of this post is about the
 [Yggdrasil](https://en.wikipedia.org/wiki/Yggdrasil){:target="_blank"} which you may know of. Were you also aware that the same
 [imagery](https://web.archive.org/web/20200701093246/https://jordanbpeterson.com/wp-content/uploads/2018/04/Biblical-13-37.jpeg){:target="_blank"} was
 drawn by Peruvian Shamans? It even includes the [world encompassing serpent](https://en.wikipedia.org/wiki/Ouroboros#The_%22world_serpent%22_in_mythology){:target="_blank"}.
-I first came across this in one of Jordan Peterson's [lectures](https://youtu.be/iEZVWWk6qHg?t=4475){:target="_blank"}. This is a clue that the idea of was 
+I first came across this in one of Jordan Peterson's [lectures](https://youtu.be/iEZVWWk6qHg?t=4475){:target="_blank"}. This is a clue that the idea of was
 not invented but discovered through some means. If that's the case then perhaps some of the lost texts of mythology could be
-rederived. There is alot of [speculation](https://norse-mythology.org/cosmology/the-nine-worlds/){:target="_blank"} based on archaeology which is scant.
+re-derived. There is alot of [speculation](https://norse-mythology.org/cosmology/the-nine-worlds/){:target="_blank"} based on archaeology which is scant.
 
 ## Notes
 
-[^1]: <https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes#Visions>
-
-[^2]: <https://web.archive.org/web/20200101114041/https://physics.weber.edu/carroll/honors/descarte.htm>
-
-[^3]: [Otto Loewi (1873–1961): Dreamer and Nobel laureate](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4291908/){:target="_blank"}
+[^1]: [Otto Loewi (1873–1961): Dreamer and Nobel laureate](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4291908/){:target="_blank"}
