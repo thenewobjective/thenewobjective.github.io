@@ -1,10 +1,10 @@
 ---
 layout: post
 icon: file-text
-title:  "The Limits of OOP and FP"
+title:  "The Expressive Limits of FP and OOP"
 date:   2021-01-16 00:00:00 -0600
 category: Types and Programming Languages
-permalink: /types-and-programming-languages/the-limits-of-oop-and-fp
+permalink: /types-and-programming-languages/the-expressive-limits-of-fp-and-oop
 commentThreadId: 42
 ---
 
@@ -13,11 +13,11 @@ commentThreadId: 42
 
 ## Introduction
 
-At the time of this writing Object-Oriented Programming (OOP) Remains the [most popular](https://www.tiobe.com/tiobe-index/){:target="_blank"} paradigm. Following closely behind are number of functional programming languages. This state of affairs should not be surprising as both approaches have delivered us from a quagmire of spaghetti code and near insurmountable engineering challenges. As our Ambitions grow though it becomes increasingly clear that neither object-oriented nor functional languages are the way forward. Both paradigms have a respective limitation of expressiveness that limit our ability to reach the next level of {scalability?}.
-
-## The software crisis
-
-{A limited history on how we got here} 
+At the time of this writing Object-Oriented Programming (OOP) remains the [most popular](https://www.tiobe.com/tiobe-index/){:target="_blank"} paradigm.
+Following closely behind are number of functional programming languages. This state of affairs should not be surprising as both approaches have delivered
+us from a [quagmire](https://en.wikipedia.org/wiki/Software_crisis){:target="_blank"} of [spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code){:target="_blank"}
+and near insurmountable engineering problems of the time. As our ambitions have grown and our projects more sophisticated, the limits of these
+two paradigms become increasingly apparent. Surprisingly these limitations continue to be uncommon knowledge among these languages' practitioners.
 
 ## The Promise of Object-Oriented Programming
 
@@ -28,6 +28,8 @@ At the time of this writing Object-Oriented Programming (OOP) Remains the [most 
 {TODO}
 
 ## The Promise of Functional Programming
+
+The Functional paradigm focuses on ...
 
 {TODO}
 
@@ -42,6 +44,40 @@ At the time of this writing Object-Oriented Programming (OOP) Remains the [most 
 ## What Lies Beyond
 
 {TODO}
+
+## Further Reading
+
+* [Objects Have Not Failed](https://www.dreamsongs.com/ObjectsHaveNotFailedNarr.html){:target="_blank"}
+* [Objects Have Failed](https://www.dreamsongs.com/ObjectsHaveFailedNarrative.html){:target="_blank"}
+* [Why Functional Programming Matters](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf){:target="_blank"}
+
+## Notes
+
+* https://www.ibm.com/developerworks/java/library/j-clojure-protocols/index.html?ca=drs-
+* https://www.slideshare.net/rlaemmel/the-expression-problem-as-part-of-the-the-ptt-lecture
+* https://duckduckgo.com/?q=%22The+Expression+Problem%22+in+prolog&t=brave&ia=web
+* https://duckduckgo.com/?q=%22The+Expression+Problem%22+in+SQL&t=brave&ia=web
+* https://jfdm.github.io/post/2019-12-04-Razor.html
+* https://medium.com/javascript-scene/abstract-data-types-and-the-software-crisis-671ea7fc72e7
+* https://en.wikipedia.org/wiki/Software_crisis
+* https://en.wikipedia.org/wiki/Object-oriented_programming
+* Show the trade-off table
+  * How does that change if visitor pattern is used?
+    * Design Patterns are bug reports against your language
+* "closures are a poor man's objects" --Christian Queinnec 
+* "objects are a poor man's closures" --Norman Adams 
+* Objects and closures are equivalent
+* "Objects are state data with attached behavior; Closures are behaviors with attached state data" -- Peter Norvig
+* "A closure is an object that supports exactly one method: ‘apply’" --Guy Steele 
+* "A closure is an object with a single method, an object is a closure with multiple methods. -- Erik Meijer "
+* Closure: 
+  * A lexical environment 
+  * Free variables in that environment 
+
+ 
+
+https://secure.wikimedia.org/wikipedia/en/wiki/Closure_%28computer_science%29 
+
 
 =====================================
 ======================================
@@ -99,11 +135,7 @@ function Add(left: ExpType, right: ExpType): AddType {
 let expSeven: ExpType = Add(Lit(4), Add(Lit(2), Lit(1)))
 ```
 
-## Further Reading
 
-* [Objects Have Not Failed](https://www.dreamsongs.com/ObjectsHaveNotFailedNarr.html){:target="_blank"}
-* [Objects Have Failed](https://www.dreamsongs.com/ObjectsHaveFailedNarrative.html){:target="_blank"}
-* [Why Functional Programming Matters](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf){:target="_blank"}
 
 
 

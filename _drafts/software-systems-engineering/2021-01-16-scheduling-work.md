@@ -10,5 +10,6 @@ commentThreadId: -1
 
 ## Notes
 
-can priorities be derived from a topological sort?
-An earlier item can't have a lower priority than a later
+- can priorities be derived from a topological sort?
+  - An earlier item can't have a lower priority than a later
+- <https://twitter.com/newsyc250/status/1351062610268086272>

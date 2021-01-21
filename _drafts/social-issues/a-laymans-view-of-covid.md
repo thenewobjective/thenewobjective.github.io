@@ -79,6 +79,7 @@ No
 * <https://twitter.com/boriquagato/status/1339233953325178884>
 * <https://twitter.com/boriquagato/status/1342171437990256641>
 * <https://twitter.com/zerohedge/status/1349052724915171328>
+* <https://twitter.com/zerohedge/status/1350201249245917190>
 
 ## Herd immunity
 
@@ -173,3 +174,20 @@ No.
 * <https://twitter.com/boriquagato/status/1332373568978554880>
 * <https://web.archive.org/web/20201228140742/https://twitter.com/lyne_ian/status/1343557021967126529>
 * <https://twitter.com/DailyCaller/status/1349780218110685186>
+* <https://twitter.com/jengleruk/status/1349779896705445889>
+* <https://twitter.com/DailyCaller/status/1351899801999335429>
+* <https://twitter.com/gummibear737/status/1351654708549709830>
+* <https://twitter.com/zerohedge/status/1350144620706082818>
+* <https://twitter.com/RandPaul/status/1350201902932369412>
+* <https://twitter.com/Kevin_McKernan/status/1348730638040518656>
+* <https://dailycaller.com/2021/01/14/public-health-england-study-covid-19-infection-protects-vaccine/>
+* <https://www.zerohedge.com/covid-19/california-halts-vaccinations-moderna-batch-linked-unusually-high-number-adverse-reactions>
+* <https://twitter.com/DailyCaller/status/1343708382541262848>
+* <https://www.zerohedge.com/covid-19/its-long-past-time-cdc-clean-covid-19-death-counts>
+* <https://twitter.com/BretWeinstein/status/1351081199486328833>
+* <https://web.archive.org/web/20201228185128/https://twitter.com/boriquagato/status/1343627919327809536>
+* <https://web.archive.org/web/20201228180455/https://twitter.com/boriquagato/status/1343618367911985153>
+* <https://web.archive.org/web/20201222184136/https://twitter.com/boriquagato/status/1341453806404476928>
+* <https://web.archive.org/web/20201228190014/https://twitter.com/boriquagato/status/1343618361960194048>
+* <https://web.archive.org/web/20201228184621/https://twitter.com/boriquagato/status/1343618368876675078>
+* <https://twitter.com/EricRWeinstein/status/1339996694084087808>
