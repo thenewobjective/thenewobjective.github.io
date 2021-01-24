@@ -8,9 +8,11 @@ permalink: /social-issues/a-laymans-view-of-covid-19
 commentThreadId: -1
 ---
 
-*With the deluge of information, both fact and fiction, surrounding the pandemic I've
-decided to consolidate and distill what is consistent with the reality of the situation
-as I see it. Note that I am not an expert in any field directly relevant to the topic.*
+*With the deluge of information both fact and fiction as well as the active censorship of
+people and ideas surrounding the pandemic I've decided to consolidate and distill what
+seem consistent with the reality of the situation as I see it. Note that I am not an
+expert in any field directly relevant to the topic. This is a living document I am
+using as a personal reference. Perhaps you'll find it informative as well.*
 
 * TOC
 {:toc}
@@ -19,7 +21,12 @@ as I see it. Note that I am not an expert in any field directly relevant to the 
 
 ## What is COVID-19
 
-## Where did it come from
+## Did it Leak From A Lab?
+
+* <https://twitter.com/BretWeinstein/status/1351081199486328833>
+* <https://dailycaller.com/2021/01/18/peter-daszak-lancet-statment-protect-chinese-scientists/>
+
+## How Dangerous is it
 
 ## How it spreads
 
@@ -27,7 +34,9 @@ as I see it. Note that I am not an expert in any field directly relevant to the 
 
 ## Do masks work
 
-Not for what you think it does.
+This topic is the most politicized and one where seemingly everyone has a "common-sense" opinion.
+
+The short answer is "yes" masks work but not for what you think they do.
 
 * <https://twitter.com/gummibear737/status/1315021745506660356>
 * <https://twitter.com/boriquagato/status/1316011001066778624>
@@ -42,6 +51,7 @@ Not for what you think it does.
 * <https://twitter.com/boriquagato/status/1338838390058479617>
 * <https://twitter.com/BrendanEich/status/1339367981084672000>
 * <https://web.archive.org/web/20210104231143/https://twitter.com/boriquagato/status/1346232824542580736>
+* <https://twitter.com/EricRWeinstein/status/1339996694084087808>
 
 ## Will supplements provide protection
 
@@ -58,14 +68,13 @@ Not for what you think it does.
 * <https://twitter.com/tlowdon/status/1314433379467587585>
 * <https://www.zerohedge.com/geopolitical/new-study-suggests-asymptomatic-covid-patients-arent-driver-transmission>
 
-## Are children immune
-
 ## Why the six-foot rule
 
-## Are lockdowns the right strategy
+## Are Lockdowns The Right Strategy
 
 No
 
+* <https://www.zerohedge.com/covid-19/what-they-said-about-lockdowns-2020>
 * <https://twitter.com/boriquagato/status/1314635924635111424>
 * <https://twitter.com/boriquagato/status/1315669937269202944>
 * <https://twitter.com/zerohedge/status/1315652194281152512>
@@ -80,6 +89,8 @@ No
 * <https://twitter.com/boriquagato/status/1342171437990256641>
 * <https://twitter.com/zerohedge/status/1349052724915171328>
 * <https://twitter.com/zerohedge/status/1350201249245917190>
+* <https://web.archive.org/web/20201015153244/https://twitter.com/boriquagato/status/1316762826636234754>
+* <https://www.zerohedge.com/markets/stanford-peer-reviewed-study-did-not-find-evidence-lockdowns-were-effective-stopping-covid>
 
 ## Herd immunity
 
@@ -89,6 +100,9 @@ No
 
 ## Casedemic
 
+* <https://www.zerohedge.com/covid-19/fda-admits-pcr-tests-give-false-results-prepares-ground-biden-virus-rescue-miracle>
+* <https://www.breitbart.com/science/2021/01/22/w-h-o-modifies-virus-testing-criteria-on-biden-inauguration-day-may-result-in-fewer-positives/>
+* <https://twitter.com/NickHudsonCT/status/1351765358949109760>
 * <https://twitter.com/boriquagato/status/1315366367902695424>
 * <https://twitter.com/KSTaxEconomist/status/1316394273315729411>
 * <https://twitter.com/ClareCraigPath/status/1317009458325786624>
@@ -101,11 +115,14 @@ No
 * <https://www.zerohedge.com/covid-19/fda-admits-pcr-tests-give-false-results-prepares-ground-biden-virus-rescue-miracle>
 * <https://twitter.com/Kevin_McKernan/status/1348742268245712898>
 * <https://www.zerohedge.com/covid-19/fda-admits-pcr-tests-give-false-results-prepares-ground-biden-virus-rescue-miracle>
+* <https://www.zerohedge.com/covid-19/its-long-past-time-cdc-clean-covid-19-death-counts>
+* <https://www.breitbart.com/science/2021/01/22/w-h-o-modifies-virus-testing-criteria-on-biden-inauguration-day-may-result-in-fewer-positives/>
 
 ## Propaganda
 
 * [Asymptomatic to Presymptomatic](https://twitter.com/BrendanEich/status/1340722551459172353)
 * <https://www.zerohedge.com/political/who-deletes-naturally-acquired-immunity-its-website>
+* <https://www.zerohedge.com/political/perfect-stormnot-our-doing-fauci-led-biden-team-suddenly-stunned-virus-surge-created>
 
 ## Is Hydroxychloroquine effective
 
@@ -116,11 +133,36 @@ used early.
 
 ## Why is/was HCQ info censored
 
+## Why Did I Lose my Sense of Smell?
+
+Some researchers claim that the virus attacks the olfactory nerves:
+
+<https://pubmed.ncbi.nlm.nih.gov/32556089/>
+
+Others disagree and claim that it's the olfactory support cells that are attacked:
+
+<https://hms.harvard.edu/news/how-covid-19-causes-loss-smell>
+
+The latter article claims that "...olfactory sensory neurons do not express the gene that
+encodes the ACE2 receptor protein, which SARS-CoV-2 uses to enter human cells."
+
+This is consistent with the following study:
+
+> "We show that the cell surface protein ACE2 and the protease TMPRSS2 are expressed in
+> sustentacular cells of the olfactory epithelium but not, or much less, in most olfactory receptor neurons."
+> <cite><a href="https://pubmed.ncbi.nlm.nih.gov/32379417/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/32379417/</a></cite>
+
+Omega-3 supplementation may help prevent this problem or aid in recovery:
+
+<https://academic.oup.com/neurosurgery/article-abstract/87/2/E91/5707684?redirectedFrom=PDF>
+
+## Are children immune
+
 ## Is it okay for schools to open
 
 * <https://twitter.com/boriquagato/status/1313113007342452738>
 
-## Can Fauci be trusted
+## Can Fauci Be Trusted on This Topic
 
 No.
 
@@ -128,6 +170,21 @@ No.
 * <https://twitter.com/gummibear737/status/1315365796181356550>
 * <https://dailycaller.com/2020/12/24/anthony-fauci-coronavirus-covid-19-vaccine-herd-immunity/>
 * <https://twitter.com/gummibear737/status/1317829332740472832>
+
+## Can the WHO Be Trusted on This Topic?
+
+Personally I do not.
+
+I first became suspicious of the WHO after the following interview with one of their officials:
+
+* <https://www.youtube.com/watch?v=UlCYFh8U2xM>
+
+This seemed to show a significant amount of bias towards China. Given China's desire to maintain a certain
+public opinion in regards to the cause, the spread, and handling of the pandemic it would not be surprising
+that a certain level of pressure is being made on the organization.
+
+* <https://archive.is/NzH6X>
+* <https://web.archive.org/web/20201228184621/https://twitter.com/boriquagato/status/1343618368876675078>
 
 ## Can Professor Neil Ferguson be trusted?
 
@@ -144,18 +201,18 @@ No.
 * <https://twitter.com/gummibear737/status/1336786692833992705>
 * <https://twitter.com/BretWeinstein/status/1337827650211991554>
 * <https://nypost.com/2020/12/25/moderna-covid-vaccine-has-caused-side-effects-for-those-with-cosmetic-facial-fillers/>
+* <https://www.zerohedge.com/covid-19/california-halts-vaccinations-moderna-batch-linked-unusually-high-number-adverse-reactions>
+* <https://twitter.com/gummibear737/status/1316742493287915520>
 
 ## Vaccine Effectiveness
 
 * <https://www.zerohedge.com/covid-19/er-nurse-tests-positive-covid-8-days-after-being-vaccinated>
+* <https://twitter.com/zerohedge/status/1317165925368582144>
 * <https://twitter.com/zerohedge/status/1349757318263664643>
+* Vaccine won't prevent spread?
 
 ## Further Reading
 
-* <https://twitter.com/dockaurG/status/1316018426070986755>
-* <https://twitter.com/boriquagato/status/1316762826636234754>
-* <https://twitter.com/gummibear737/status/1316742493287915520>
-* <https://twitter.com/zerohedge/status/1317165925368582144>
 * <https://twitter.com/gummibear737/status/1317223302180593664>
 * <https://twitter.com/gummibear737/status/1317223344186576899>
 * <https://twitter.com/gummibear737/status/1317223331658170369>
@@ -181,13 +238,11 @@ No.
 * <https://twitter.com/RandPaul/status/1350201902932369412>
 * <https://twitter.com/Kevin_McKernan/status/1348730638040518656>
 * <https://dailycaller.com/2021/01/14/public-health-england-study-covid-19-infection-protects-vaccine/>
-* <https://www.zerohedge.com/covid-19/california-halts-vaccinations-moderna-batch-linked-unusually-high-number-adverse-reactions>
 * <https://twitter.com/DailyCaller/status/1343708382541262848>
-* <https://www.zerohedge.com/covid-19/its-long-past-time-cdc-clean-covid-19-death-counts>
-* <https://twitter.com/BretWeinstein/status/1351081199486328833>
 * <https://web.archive.org/web/20201228185128/https://twitter.com/boriquagato/status/1343627919327809536>
 * <https://web.archive.org/web/20201228180455/https://twitter.com/boriquagato/status/1343618367911985153>
 * <https://web.archive.org/web/20201222184136/https://twitter.com/boriquagato/status/1341453806404476928>
 * <https://web.archive.org/web/20201228190014/https://twitter.com/boriquagato/status/1343618361960194048>
-* <https://web.archive.org/web/20201228184621/https://twitter.com/boriquagato/status/1343618368876675078>
-* <https://twitter.com/EricRWeinstein/status/1339996694084087808>
+* <https://www.zerohedge.com/covid-19/it-was-all-lie-biden-linked-who-adviser-says-covid-19-likely-leaked-wuhan-lab>
+
+* <https://web.archive.org/web/20201201123740/https://threadreaderapp.com/thread/1332858118682849282.html>
