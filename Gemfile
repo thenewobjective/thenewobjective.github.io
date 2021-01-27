@@ -10,6 +10,8 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.0.0"
 # <https://github.com/jekyll/jekyll-redirect-from>
 gem 'jekyll-redirect-from'
+# <https://keith-mifsud.me/projects/jekyll-target-blank>
+gem 'jekyll-target-blank'
 # <https://mycyberuniverse.com/syntax-highlighting-jekyll.html>
 gem 'rouge'
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
