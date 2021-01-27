@@ -30,9 +30,9 @@ commentThreadId: 40
 > <cite><a href="https://en.wikipedia.org/wiki/Invictus" target="_blank">Invictus</a> - By <a href="https://en.wikipedia.org/wiki/William_Ernest_Henley" target="_blank">William Ernest Henley</a></cite>
 
 For many men, myself included, the above poem is inspirational and reflective of who we are and/or who we want to be. Such a persona though is insufficient.
-According to [Carl Jung](https://en.wikipedia.org/wiki/Carl_Jung){:target="_blank"} men and women are a duality, not just with one another but within themselves.
-The feminine aspect of men being [Anima](https://en.wikipedia.org/wiki/Anima_and_animus){:target="_blank"},
-and the masculine aspect of women being [Animus](https://en.wikipedia.org/wiki/Anima_and_animus){:target="_blank"}. Symbolically this may be best represented by
+According to [Carl Jung](https://en.wikipedia.org/wiki/Carl_Jung) men and women are a duality, not just with one another but within themselves.
+The feminine aspect of men being [Anima](https://en.wikipedia.org/wiki/Anima_and_animus),
+and the masculine aspect of women being [Animus](https://en.wikipedia.org/wiki/Anima_and_animus). Symbolically this may be best represented by
 the yin-yang symbol:
 
 <figure>
@@ -41,7 +41,7 @@ the yin-yang symbol:
 </figure>
 
 Proper recognition and integration of these aspects is necessary and the failure to do so leads do
-[dysfunction](https://www.youtube.com/watch?v=exqL4C2u7HA){:target="_blank"} in our behavior and lives.
+[dysfunction](https://www.youtube.com/watch?v=exqL4C2u7HA) in our behavior and lives.
 
 I believe my Anima gave me a hard warning last night via a dream:
 

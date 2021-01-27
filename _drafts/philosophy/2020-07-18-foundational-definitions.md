@@ -24,7 +24,7 @@ conclusions.
 
 A **Fact** is an object that is independent of our perceptions but has been obtained by us through some means.
 Before this object is obtained it is referred to as phenomena: the thing in itself. If it's an object that is
-impossible for us to obtain it is referred to as [noumena](https://en.wikipedia.org/wiki/Noumenon){:target="_blank"}:
+impossible for us to obtain it is referred to as [noumena](https://en.wikipedia.org/wiki/Noumenon):
 unknowable. An example of a phenomena is gravity. An example of noumenon I can't provide. It's an unknown unknown.
 
 ## Reality
@@ -99,7 +99,7 @@ Vacuous proof
 <!--
 ## Further Reading
 
-* [Kant’s Transcendental Idealism. Phenomena and noumena](https://plato.stanford.edu/entries/kant-transcendental-idealism/#PhenNoum){:target="_blank"}
+* [Kant’s Transcendental Idealism. Phenomena and noumena](https://plato.stanford.edu/entries/kant-transcendental-idealism/#PhenNoum)
 * [Wittgenstein on Language](https://web.archive.org/web/20180822072114/http://guywilliamsjr.com/index.php/category/philosophy-of-language/){:target='_blank'}
 * [Language game (philosophy)](https://en.wikipedia.org/wiki/Language_game_(philosophy)){:target='_blank'}
 * Correspondence Theory of Truth  (!!!)

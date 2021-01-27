@@ -13,10 +13,10 @@ commentThreadId: 42
 
 ## Introduction
 
-At the time of this writing Object-Oriented Programming (OOP) remains the [most popular](https://www.tiobe.com/tiobe-index/){:target="_blank"} paradigm.
+At the time of this writing Object-Oriented Programming (OOP) remains the [most popular](https://www.tiobe.com/tiobe-index/) paradigm.
 Following closely behind are number of functional programming languages. This state of affairs should not be surprising as both approaches have delivered
-us from a [quagmire](https://en.wikipedia.org/wiki/Software_crisis){:target="_blank"} of
-[spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code){:target="_blank"} and near insurmountable engineering problems of the time. As our
+us from a [quagmire](https://en.wikipedia.org/wiki/Software_crisis) of
+[spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code) and near insurmountable engineering problems of the time. As our
 ambitions have grown and our projects more sophisticated the limits of these two paradigms become increasingly apparent. Surprisingly these limitations
 continue to be uncommon knowledge among these languages' practitioners.
 
@@ -78,9 +78,9 @@ let expSeven: ExpType = Add(Lit(4), Add(Lit(2), Lit(1)))
 
 ## Further Reading
 
-* [Objects Have Not Failed](https://www.dreamsongs.com/ObjectsHaveNotFailedNarr.html){:target="_blank"}
-* [Objects Have Failed](https://www.dreamsongs.com/ObjectsHaveFailedNarrative.html){:target="_blank"}
-* [Why Functional Programming Matters](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf){:target="_blank"}
+* [Objects Have Not Failed](https://www.dreamsongs.com/ObjectsHaveNotFailedNarr.html)
+* [Objects Have Failed](https://www.dreamsongs.com/ObjectsHaveFailedNarrative.html)
+* [Why Functional Programming Matters](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf)
 
 ## Notes
 

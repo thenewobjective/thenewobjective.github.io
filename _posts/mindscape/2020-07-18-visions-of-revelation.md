@@ -12,7 +12,7 @@ commentThreadId: 38
 {:toc}
 
 Dreams have been known to be a powerful source of knowledge and understanding when we can interpret them
-properly. In antiquity they were even used for [predicting the future](https://en.wikipedia.org/wiki/Oneiromancy){:target="_blank"}.
+properly. In antiquity they were even used for [predicting the future](https://en.wikipedia.org/wiki/Oneiromancy).
 This though is generally seen as superstitious nonsense by the modern scientific community. Regardless of the truth of this matter
 there are non-predictive dreams (visions) that have also impacted humanity in greatly transformative ways.
 In fact some of the legs of science itself have roots in visions and dreams. Here I've collected a non-exhaustive list of the ones
@@ -21,8 +21,8 @@ that I thought to be most profound.
 ## The Scientific Method
 
 René Descartes contributed significantly to the development of The Scientific Method with his opus:
-["Discourse on the Method"](https://en.wikipedia.org/wiki/Discourse_on_the_Method){:target="_blank"}.
-This work was inspired through a [vision and dreams](https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes#Visions){:target="_blank"} while he was a mercenary. Take note of the book of knowledge
+["Discourse on the Method"](https://en.wikipedia.org/wiki/Discourse_on_the_Method).
+This work was inspired through a [vision and dreams](https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes#Visions) while he was a mercenary. Take note of the book of knowledge
 that appears and disappears. This is a common theme in dreams and visions. Another interesting part
 is the phrase: being "Possessed by a Genius".
 
@@ -37,7 +37,7 @@ is the phrase: being "Possessed by a Genius".
 
 ## The Discovery of Runes in Germanic Mythology
 
-[Odin](https://norse-mythology.org/tales/odins-discovery-of-the-runes/){:target="_blank"} was known for his wisdom and
+[Odin](https://norse-mythology.org/tales/odins-discovery-of-the-runes/) was known for his wisdom and
 sacrificed much for it including one of his eyes. In another story he discovered Runes which are a combination of
 letters and symbolic representations of larger esoteric ideas. Through nine days of self-inflicted torture they were
 revealed:
@@ -70,7 +70,7 @@ Following the ordeal:
 ## The Theory of Evolution
 
 Alongside Charles Darwin, Alfred Russel Wallace co-discovered Natural Selection. In Wallace's case he came to the revelation during a 
-[Malarial Fever Dream](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4918116/#Sec2title){:target="_blank"}:
+[Malarial Fever Dream](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4918116/#Sec2title):
 
 > According to his recollections, he was lying in bed one day [...] suffering from a "rather severe" attack of malaria.
 > Never far from his mind, even in such trying moments, was the main impetus for traveling to the ends of the earth,
@@ -82,8 +82,8 @@ by Slotten, Ross A. <a href="https://archive.org/details/hereticindarwins00ross/
 
 ## The Periodic Table
 
-The [periodic table of elements](https://en.wikipedia.org/wiki/Periodic_table){:target="_blank"} was discovered by
-[Dmitri Mendeleev](https://en.wikipedia.org/wiki/Dmitri_Mendeleev){:target="_blank"} and organized into it's current form via a dream:
+The [periodic table of elements](https://en.wikipedia.org/wiki/Periodic_table) was discovered by
+[Dmitri Mendeleev](https://en.wikipedia.org/wiki/Dmitri_Mendeleev) and organized into it's current form via a dream:
 
 > “I saw in a dream a table where all the elements fell into place as required. Awakening, I immediately wrote it down on a piece of paper.”
 > <cite>Dmitri Mendeleev</cite>
@@ -92,7 +92,7 @@ The [periodic table of elements](https://en.wikipedia.org/wiki/Periodic_table){:
 
 ## The Mechanism of Nerve Signals
 
-Before [Otto Loewi](https://en.wikipedia.org/wiki/Otto_Loewi){:target="_blank"} it was not known how nerves transmitted signals.
+Before [Otto Loewi](https://en.wikipedia.org/wiki/Otto_Loewi) it was not known how nerves transmitted signals.
 Was it electrical? Chemical? Otto discovered the mechanism via a dream:
 
 > “The night before Easter Sunday of [1920] I awoke, turned on the light and jotted down a few notes on a tiny
@@ -107,8 +107,8 @@ As a result of his experiment he earned the Nobel Prize in 1936. [^1]
 
 ## The Structure of Benzene
 
-[August Kekulé](https://en.wikipedia.org/wiki/August_Kekul%C3%A9){:target="_blank"} was an Organic Chemist in the 1800s.
-He's most famous for his discovery of the structure of [Benzene](https://en.wikipedia.org/wiki/Benzene){:target="_blank"}.
+[August Kekulé](https://en.wikipedia.org/wiki/August_Kekul%C3%A9) was an Organic Chemist in the 1800s.
+He's most famous for his discovery of the structure of [Benzene](https://en.wikipedia.org/wiki/Benzene).
 
 > During my residence in Ghent in Belgium, I lived in an elegant
 > bachelor apartment on the main street. However, my study was
@@ -139,25 +139,25 @@ He's most famous for his discovery of the structure of [Benzene](https://en.wiki
 If you are aware of other dream or visionary discoveries like those above I'd like to see them. There are others I considered adding
 but the details about the inspirations are murky or the impact of the revelation didn't meet an arbitrary theshold I had. For example:
 
-[Grigori Perelman](https://en.wikipedia.org/wiki/Grigori_Perelman){:target="_blank"}
-proved the [Poincaré conjecture](https://en.wikipedia.org/wiki/Poincar%C3%A9_conjecture){:target="_blank"} and consumes mushrooms.
+[Grigori Perelman](https://en.wikipedia.org/wiki/Grigori_Perelman)
+proved the [Poincaré conjecture](https://en.wikipedia.org/wiki/Poincar%C3%A9_conjecture) and consumes mushrooms.
 Did he dance on the edges of the waking world to aid his efforts?
 
-The naturalist [Louis Agassiz](https://en.wikipedia.org/wiki/Louis_Agassiz){:target="_blank"} had a difficulty determining the morphology
+The naturalist [Louis Agassiz](https://en.wikipedia.org/wiki/Louis_Agassiz) had a difficulty determining the morphology
 of a fossilized fish and didn't want to risk exposing more and possibly damaging it. Through a number of dreams the form became clear.
 While an interesting story, it didn't quite make the list as a major enough discovery <abbr title="In My Opinion">IMO</abbr>. You may disagree. You can read more
-about Agassiz's Fish on the [following page](http://www.worlddreambank.org/A/AGASFISH.HTM){:target="_blank"}.
+about Agassiz's Fish on the [following page](http://www.worlddreambank.org/A/AGASFISH.HTM).
 
 I made a conscious choice to not include religious related dreams and visions. I may revisit this decision in the future.
 
 A visionary correspondence I personally find profound but does not fit the categorization of this post is about the
-[Yggdrasil](https://en.wikipedia.org/wiki/Yggdrasil){:target="_blank"} which you may know of. Were you also aware that the same
-[imagery](https://web.archive.org/web/20200701093246/https://jordanbpeterson.com/wp-content/uploads/2018/04/Biblical-13-37.jpeg){:target="_blank"} was
-drawn by Peruvian Shamans? It even includes the [world encompassing serpent](https://en.wikipedia.org/wiki/Ouroboros#The_%22world_serpent%22_in_mythology){:target="_blank"}.
-I first came across this in one of Jordan Peterson's [lectures](https://youtu.be/iEZVWWk6qHg?t=4475){:target="_blank"}. This is a clue that the idea of was
+[Yggdrasil](https://en.wikipedia.org/wiki/Yggdrasil) which you may know of. Were you also aware that the same
+[imagery](https://web.archive.org/web/20200701093246/https://jordanbpeterson.com/wp-content/uploads/2018/04/Biblical-13-37.jpeg) was
+drawn by Peruvian Shamans? It even includes the [world encompassing serpent](https://en.wikipedia.org/wiki/Ouroboros#The_%22world_serpent%22_in_mythology).
+I first came across this in one of Jordan Peterson's [lectures](https://youtu.be/iEZVWWk6qHg?t=4475). This is a clue that the idea of was
 not invented but discovered through some means. If that's the case then perhaps some of the lost texts of mythology could be
-re-derived. There is alot of [speculation](https://norse-mythology.org/cosmology/the-nine-worlds/){:target="_blank"} based on archaeology which is scant.
+re-derived. There is alot of [speculation](https://norse-mythology.org/cosmology/the-nine-worlds/) based on archaeology which is scant.
 
 ## Notes
 
-[^1]: [Otto Loewi (1873–1961): Dreamer and Nobel laureate](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4291908/){:target="_blank"}
+[^1]: [Otto Loewi (1873–1961): Dreamer and Nobel laureate](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4291908/)

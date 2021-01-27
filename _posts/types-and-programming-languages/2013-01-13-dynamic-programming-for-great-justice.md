@@ -10,7 +10,7 @@ redirect_from:
 commentThreadId: 13
 ---
 
-Proper Tail Calls are [slated](http://wiki.ecmascript.org/doku.php?id=harmony:proper_tail_calls){:target="_blank"} for ES6 and are long overdue. Some of the most elegant solutions to the problems we face in designing algorithms are recursive ones. As a result of this addition, we can expect to see far more code bases utilizing this feature of the language. I suspect though that a significant number of these new designs are going to fall into the trap of creating code that is not only significantly slower than their imperative counterparts, but will potentially cripple the memory of the hardware it is running on. So before you start using recursion [For Great Justice](https://en.wikipedia.org/wiki/For_Great_Justice){:target="_blank"}, there is a methodology that should be understood.
+Proper Tail Calls are [slated](http://wiki.ecmascript.org/doku.php?id=harmony:proper_tail_calls) for ES6 and are long overdue. Some of the most elegant solutions to the problems we face in designing algorithms are recursive ones. As a result of this addition, we can expect to see far more code bases utilizing this feature of the language. I suspect though that a significant number of these new designs are going to fall into the trap of creating code that is not only significantly slower than their imperative counterparts, but will potentially cripple the memory of the hardware it is running on. So before you start using recursion [For Great Justice](https://en.wikipedia.org/wiki/For_Great_Justice), there is a methodology that should be understood.
 
 The name of this methodology is called “Dynamic Programming”. Don’t let the word “Dynamic” fool you into thinking it has any direct relationship to do with dynamic languages though, it does not. Instead of giving a textbook (and potentially esoteric) definition upfront, I’ll demonstrate an evolution of an algorithm from how you might see it today (in imperative style) to an optimum recursive form utilizing this methodology. The example we’ll be using is the algorithm to calculate the nth Fibonacci number:
 
@@ -42,13 +42,13 @@ Short, clean, and seems obviously correct from a glance… but happens to be nai
     <img src="/media-library/dynamic-programming/fibCallTree.png" alt="Fibonacci call tree">
 </figure>
 
-This algorithm requires an exponential amount of time and space to produce a result (specifically, [*O(φ)*](https://en.wikipedia.org/wiki/Golden_ratio){:target="_blank"} which is in *O(n<sup>2</sup>)* ). The reason, as can be seen from the above tree, is that a significant amount of duplicate work is being done. fib(4) is being calculated twice, fib(3) calculated three times, and so on. Choose a large enough input and you can be quite confident that your machine will fall over. For a more discrete example, here is a graph of the execution time on my current machine (Windows 7, 4 GB RAM, Dual core 2.40 GHz, Firefox 18). Note that I ran out of memory beyond fib(37):
+This algorithm requires an exponential amount of time and space to produce a result (specifically, [*O(φ)*](https://en.wikipedia.org/wiki/Golden_ratio) which is in *O(n<sup>2</sup>)* ). The reason, as can be seen from the above tree, is that a significant amount of duplicate work is being done. fib(4) is being calculated twice, fib(3) calculated three times, and so on. Choose a large enough input and you can be quite confident that your machine will fall over. For a more discrete example, here is a graph of the execution time on my current machine (Windows 7, 4 GB RAM, Dual core 2.40 GHz, Firefox 18). Note that I ran out of memory beyond fib(37):
 
 <figure>
     <img src="/media-library/dynamic-programming/recFibvsTime.png" alt="Recursive Fib vs time">
 </figure>
 
-The machine/environment used to execute the code is not particularly important. A more powerful machine will simply shift the curve to the right, and a weaker machine will shift it to the left. The shape of the curve remains the same. To quote [Carl Sagan](https://en.wikipedia.org/wiki/Carl_Sagan){:target="_blank"}: <q cite="https://en.wikipedia.org/wiki/Carl_Sagan">“Never underestimate the power of an exponential“.</q>
+The machine/environment used to execute the code is not particularly important. A more powerful machine will simply shift the curve to the right, and a weaker machine will shift it to the left. The shape of the curve remains the same. To quote [Carl Sagan](https://en.wikipedia.org/wiki/Carl_Sagan): <q cite="https://en.wikipedia.org/wiki/Carl_Sagan">“Never underestimate the power of an exponential“.</q>
 
 ## Memoization
 

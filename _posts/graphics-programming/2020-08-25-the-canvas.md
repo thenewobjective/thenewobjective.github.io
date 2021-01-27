@@ -48,7 +48,7 @@ class Canvas {
 The drawing context requires an [ImageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData){:target='_blank'} object and
 a position therefore our `draw` method must accept the same. The `ImageData` object contains a one-dimensional array that represents
 pixels in <abbr title="Red Green Blue Alpha">RGBA</abbr> order with integer values between 0 and 255. That's 24 bits for color plus
-8 bits for the alpha channel. This color depth is referred to as [True Color](https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit)){:target="_blank"}.
+8 bits for the alpha channel. This color depth is referred to as [True Color](https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit)).
 The initial value of the array is zero filled which represents transparent black.
 
 ```text

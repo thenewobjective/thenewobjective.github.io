@@ -17,9 +17,9 @@ I’ve spent a number of years hosting my websites on Namecheap. Their prices we
 
 ## Caveats
 
-I followed these steps in February of 2019. There was no user interface available nor documentation on how to do it. A user interface is in the works and by the time you read this post it may already exist. Do look for it before trying to follow in my footsteps. This is a [Dark Art](https://en.wiktionary.org/wiki/black_art#English){:target="_blank"}.
+I followed these steps in February of 2019. There was no user interface available nor documentation on how to do it. A user interface is in the works and by the time you read this post it may already exist. Do look for it before trying to follow in my footsteps. This is a [Dark Art](https://en.wiktionary.org/wiki/black_art#English).
 
-Note that this will only work for a limited number of TLDs. According to [Microsoft documentation](https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain#buy-the-domain){:target="_blank"}:
+Note that this will only work for a limited number of TLDs. According to [Microsoft documentation](https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain#buy-the-domain):
 
 <figure>
   <img src="/media-library/azure/azure-domain-transfer-tld-restriction.png" alt="Azure domain transfer TLD restriction">
@@ -80,7 +80,7 @@ Remember this authcode.
 
 ## Transferring into Azure
 
-Microsoft does not document how to do this. I suspected it was possible though because 2 years earlier (Aug 2017) I saw a [short video](https://channel9.msdn.com/Shows/Azure-Friday/App-Service-Domains){:target="_blank"} on Channel9 that said this was a planned feature. After browsing around the Azure portal for a couple hours there was nothing to be seen. There are a few posts around the internet about using a few varieties of powershell scripts, but they don’t seem to work (bitrot?). Azure has a REST API though that will do the trick. Go to the [Domains – Create Or Update](https://docs.microsoft.com/en-us/rest/api/appservice/domains/createorupdate){:target="_blank"} page, and click “Try It”
+Microsoft does not document how to do this. I suspected it was possible though because 2 years earlier (Aug 2017) I saw a [short video](https://channel9.msdn.com/Shows/Azure-Friday/App-Service-Domains) on Channel9 that said this was a planned feature. After browsing around the Azure portal for a couple hours there was nothing to be seen. There are a few posts around the internet about using a few varieties of powershell scripts, but they don’t seem to work (bitrot?). Azure has a REST API though that will do the trick. Go to the [Domains – Create Or Update](https://docs.microsoft.com/en-us/rest/api/appservice/domains/createorupdate) page, and click “Try It”
 
 <figure>
   <img src="/media-library/azure/azure-rest-api-tryit.png" alt="Azure REST Try It">
@@ -108,7 +108,7 @@ You can generate a timestamp in your browser console or scratchpad for use in th
 
 The “agreedBy” field is the Client IP address according to the docs. You can obtain this in a number of ways. Such as <https://duckduckgo.com/?q=what+is+my+ip&t=hk&ia=answer>
 
-The “agreementKeys” were left as the default values. After a [little digging](https://docs.microsoft.com/en-us/rest/api/appservice/topleveldomains/listagreements#tldlegalagreement){:target="_blank"} they stand for the following. I can’t find a link for the proper DNTA one at the moment. It might be the [GoDaddy one](https://www.godaddy.com/legal/agreements/domain-name-transfer-agreement){:target="_blank"} as Azure has a partnership with them. Let me know if you know the proper link and I’ll update this page:
+The “agreementKeys” were left as the default values. After a [little digging](https://docs.microsoft.com/en-us/rest/api/appservice/topleveldomains/listagreements#tldlegalagreement) they stand for the following. I can’t find a link for the proper DNTA one at the moment. It might be the [GoDaddy one](https://www.godaddy.com/legal/agreements/domain-name-transfer-agreement) as Azure has a partnership with them. Let me know if you know the proper link and I’ll update this page:
 
 | Name | Definition                     |
 |------|--------------------------------|

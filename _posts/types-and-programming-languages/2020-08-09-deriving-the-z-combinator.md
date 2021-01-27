@@ -71,8 +71,8 @@ let fact = n => {
 }
 ```
 
-While the code is clear it's [imperative](https://en.wikipedia.org/wiki/Imperative_programming){:target="_blank"} and [procedural](https://en.wikipedia.org/wiki/Procedural_programming){:target="_blank"}.
-It's preferable to be [declarative](https://en.wikipedia.org/wiki/Declarative_programming){:target="_blank"}. We want to describe *what* we want to compute instead of the low-level[^2]
+While the code is clear it's [imperative](https://en.wikipedia.org/wiki/Imperative_programming) and [procedural](https://en.wikipedia.org/wiki/Procedural_programming).
+It's preferable to be [declarative](https://en.wikipedia.org/wiki/Declarative_programming). We want to describe *what* we want to compute instead of the low-level[^2]
 details of *how* we compute it. Such code can be translated into recursive form:
 
 ```js
@@ -128,7 +128,7 @@ fact(fact,7)<br>
 </code>
 
 A bit inconvenient though and low-level[^2]. Let's see if we can extract the essence
-of what's going on and abstract this threading. We'll begin with [currying](https://en.wikipedia.org/wiki/Currying){:target="_blank"} the function:
+of what's going on and abstract this threading. We'll begin with [currying](https://en.wikipedia.org/wiki/Currying) the function:
 
 ```js
 let fact = self =>
@@ -324,7 +324,7 @@ let fact = setup(
 )
 ```
 
-Well, how about that? We've just discovered the [Z-Combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator#Strict_fixed-point_combinator){:target="_blank"}
+Well, how about that? We've just discovered the [Z-Combinator](https://en.wikipedia.org/wiki/Fixed-point_combinator#Strict_fixed-point_combinator)
 which is the Y-Combinator in a call-by-value language (like JavaScript). Let's rename `setup` to reflect our discovery:
 
 ```js
@@ -379,7 +379,7 @@ let fix = f =>
     (u => f(n => u(u)(n)))
 ```
 
-Let's begin with a [beta-reduction](https://wiki.haskell.org/Beta_reduction){:target="_blank"}
+Let's begin with a [beta-reduction](https://wiki.haskell.org/Beta_reduction)
 of the self application to see if another pattern emerges:
 
 ```js
@@ -511,22 +511,22 @@ So what? Is this just a party trick to just do recursion in disguise?
 What we've discovered here is a third way to perform repetitive work. You know of looping, recursion, and now with `fix` there is
 rewriting. So to add to L. Peter Deutsch's quote:
 
-> If recursion is divine then 'fix' is [entelechy](https://en.wikipedia.org/wiki/Potentiality_and_actuality#entelechy){:target="_blank"}
+> If recursion is divine then 'fix' is [entelechy](https://en.wikipedia.org/wiki/Potentiality_and_actuality#entelechy)
 
 Now go forth with your newfound knowledge and impress your fellow mortals.
 
 ## Further Reading
 
-* [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus){:target="_blank"}
-* [To Mock a Mockingbird](https://www.amazon.com/Mock-Mockingbird-Raymond-Smullyan/dp/0192801422){:target="_blank"} by [Raymond Smullyan](https://en.wikipedia.org/wiki/Raymond_Smullyan){:target="_blank"}
-* [To Dissect a Mockingbird](http://dkeenan.com/Lambda/){:target="_blank"}
-* [Fixed-point combinators in lambda calculus](https://en.wikipedia.org/wiki/Fixed-point_combinator#Fixed-point_combinators_in_lambda_calculus){:target="_blank"}
-* [Y in Practical Programs](https://web.archive.org/web/20040105195718/http://www.scms.rgu.ac.uk/staff/bjm/doc/fics2001.pdf){:target="_blank"}
-* [Oleg's generic fix wrapper](http://lambda-the-ultimate.org/classic/message5463.html#5466){:target="_blank"}
+* [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus)
+* [To Mock a Mockingbird](https://www.amazon.com/Mock-Mockingbird-Raymond-Smullyan/dp/0192801422) by [Raymond Smullyan](https://en.wikipedia.org/wiki/Raymond_Smullyan)
+* [To Dissect a Mockingbird](http://dkeenan.com/Lambda/)
+* [Fixed-point combinators in lambda calculus](https://en.wikipedia.org/wiki/Fixed-point_combinator#Fixed-point_combinators_in_lambda_calculus)
+* [Y in Practical Programs](https://web.archive.org/web/20040105195718/http://www.scms.rgu.ac.uk/staff/bjm/doc/fics2001.pdf)
+* [Oleg's generic fix wrapper](http://lambda-the-ultimate.org/classic/message5463.html#5466)
 
 ## Notes and References
 
-[^1]: Belinfante J. G. F. (1987) [S/K/ID: Combinators in Forth.](http://soton.mpeforth.com/flag/jfar/vol4/no4/article6.pdf){:target="_blank"} § The Fixed Point Theorem. p. 565
+[^1]: Belinfante J. G. F. (1987) [S/K/ID: Combinators in Forth.](http://soton.mpeforth.com/flag/jfar/vol4/no4/article6.pdf) § The Fixed Point Theorem. p. 565
 [^2]: "A programming language is low level when its programs require attention to the irrelevant." - Alan Perlis
 [^3]: If *e* is an expression and *x* is a variable, then <code>&lambda;x. e</code> is an abstraction.
-[^4]: A double entendre. See [True Name](https://en.wikipedia.org/wiki/True_name){:target="_blank"} as well as [Gerald Sussman's](https://en.wikipedia.org/wiki/Gerald_Jay_Sussman){:target="_blank"} use of the term in [SICP](https://youtu.be/V_7mmwpgJHU?t=775){:target="_blank"}.
+[^4]: A double entendre. See [True Name](https://en.wikipedia.org/wiki/True_name) as well as [Gerald Sussman's](https://en.wikipedia.org/wiki/Gerald_Jay_Sussman) use of the term in [SICP](https://youtu.be/V_7mmwpgJHU?t=775).

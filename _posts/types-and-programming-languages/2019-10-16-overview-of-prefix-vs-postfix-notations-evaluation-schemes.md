@@ -10,8 +10,8 @@ redirect_from:
 commentThreadId: 12
 ---
 
-*Yahoo decided to [kill Yahoo Groups](https://twitter.com/textfiles/status/1184461099237814273){:target="_blank"}.
-Below is a rescue of a [conversation](https://groups.yahoo.com/neo/groups/concatenative/conversations/topics/4997){:target="_blank"} I was involved in. With luck the Web Archive can rescue the rest. Quotes have been formatted for presentation.*
+*Yahoo decided to [kill Yahoo Groups](https://twitter.com/textfiles/status/1184461099237814273).
+Below is a rescue of a [conversation](https://groups.yahoo.com/neo/groups/concatenative/conversations/topics/4997) I was involved in. With luck the Web Archive can rescue the rest. Quotes have been formatted for presentation.*
 
 ---
 <blockquote>

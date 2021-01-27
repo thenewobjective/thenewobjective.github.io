@@ -31,7 +31,7 @@ Determining the points of this curve can be accomplished by divide and conquer b
 
 Given the control points a point in between can be determined for each pair. This process can then be repeated until
 a single point is determined. This point will be a point of the Bézier curve itself. This process for obtaining points
-of the curve is called [de Casteljau's algorithm](https://en.wikipedia.org/wiki/De_Casteljau's_algorithm){:target="_blank"}. Before
+of the curve is called [de Casteljau's algorithm](https://en.wikipedia.org/wiki/De_Casteljau's_algorithm). Before
 getting to the algorithm though we'll want some utility functions first:
 
 ---

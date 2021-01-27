@@ -12,13 +12,13 @@ commentThreadId: 17
 
 ## Introduction
 
-In 2002 Joel Spolsky [argued](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/) that **“All non-trivial abstractions, to some degree, are leaky”**.  As a result, there have been numerous programmers who have used this as an excuse to throw away numerous abstractions in favor of lower-level alternatives. The original argument though is a [straw man](https://en.wikipedia.org/wiki/Straw_man){:target="_blank"} and the perpetuation of it is actively harmful to the industry.
+In 2002 Joel Spolsky [argued](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/) that **“All non-trivial abstractions, to some degree, are leaky”**.  As a result, there have been numerous programmers who have used this as an excuse to throw away numerous abstractions in favor of lower-level alternatives. The original argument though is a [straw man](https://en.wikipedia.org/wiki/Straw_man) and the perpetuation of it is actively harmful to the industry.
 
 ## The Straw Men Cometh
 
 Joel’s examples and the numerous other examples I’ve seen subsequently by proponents all fall into the same categorical error, namely: ascribing an expectation or requirement on an abstraction or model that was never there to begin with. To counter some of the specific claims:
 
-1. TCP never specified that it would guarantee successful delivery of all data in all situations, nor did it guarantee a speed for delivery. It is very clear in what it means with the terms “reliable” as well as the rules about when and how a 0. connection will timeout and be closed: <https://tools.ietf.org/html/std7#section-2.6> . Oversimplifying this by assuming guaranteed transmission and speed is simply incorrect. Recall [L Peter Deutsch's](https://en.wikipedia.org/wiki/L._Peter_Deutsch){:target="_blank"} [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing){:target="_blank"}:
+1. TCP never specified that it would guarantee successful delivery of all data in all situations, nor did it guarantee a speed for delivery. It is very clear in what it means with the terms “reliable” as well as the rules about when and how a 0. connection will timeout and be closed: <https://tools.ietf.org/html/std7#section-2.6> . Oversimplifying this by assuming guaranteed transmission and speed is simply incorrect. Recall [L Peter Deutsch's](https://en.wikipedia.org/wiki/L._Peter_Deutsch) [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing):
     * The network is reliable;
     * Latency is zero;
     * Bandwidth is infinite;

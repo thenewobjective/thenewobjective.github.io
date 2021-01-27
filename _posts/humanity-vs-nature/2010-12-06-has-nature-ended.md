@@ -13,10 +13,10 @@ commentThreadId: 29
 The question, “Has Nature ended?” can be as difficult to define as the answer is to be given. Humanity’s interpretation
 of what Nature is and what it represents has changed over the centuries. Through our social evolution “Nature” has
 taken on a multitude of meanings including locations, states of existence and even as one or more deities.
-Thus, in order to give a proper answer besides “[Mu](http://theramshuddle.com/topic/mu-unask-the-question/){:target="_blank"}”
+Thus, in order to give a proper answer besides “[Mu](http://theramshuddle.com/topic/mu-unask-the-question/)”
 it is necessary to take an instance of each definition and ask the question in the proper context.
 
-*The End of Nature* is a [book](http://billmckibben.com/end-of-nature.html){:target="_blank"} written by Bill McKibben in 1989.
+*The End of Nature* is a [book](http://billmckibben.com/end-of-nature.html) written by Bill McKibben in 1989.
 I’ve reviewed this [book](/the-end-of-nature-by-bill-mckibben/) before, and while I’m not particularly keen on going over it again,
 McKibben seems to me to be an excellent representative of the viewpoint. In this work he expresses his distaste with the growing
 human population on the planet and the impact they have on his feeling of Nature:
@@ -76,15 +76,15 @@ Domestication has created many new species and these species enjoy a greater suc
 they would in the wild. Some in fact would most definitely become extinct without human intervention. For example, the
 bulldog has a high likelihood of becoming extinct in a single generation without human intervention. Due to breeding for
 larger skull sizes, the female bulldog is generally incapable of giving live birth to bulldog pups. A caesarean
-birth is almost always [required](http://www.bulldoginformation.com/caesarean-section.html){:target="_blank"}. In contrast,
+birth is almost always [required](http://www.bulldoginformation.com/caesarean-section.html). In contrast,
 pollution and expanding human environments alter and/or destroy existing locations which other organisms (including
 existing human communities) need to survive. This forces animals into extinction like the
 [Dodo bird](http://davidreilly.com/dodo/background.html), or it forces them to evolve like the
-[Peppered Moth](https://en.wikipedia.org/wiki/Peppered_moth_evolution){:target="_blank"}. Either way it is clear that
+[Peppered Moth](https://en.wikipedia.org/wiki/Peppered_moth_evolution). Either way it is clear that
 Nature has changed due to human influence, for better or worse.
 
 For better or for worse? If the influence is for worse, than Nature may very well be on its way towards an end even if it has not
-happened yet. Rachel Carson’s influential 1962 book *[Silent Spring](https://www.amazon.com/Silent-Spring-Rachel-Carson/dp/0618249060){:target="_blank"}*
+happened yet. Rachel Carson’s influential 1962 book *[Silent Spring](https://www.amazon.com/Silent-Spring-Rachel-Carson/dp/0618249060)*
 gives a grim insight into some of the results of maintaining civilization’s artificial environment. The main point of relevance
 to the topic is that in the struggle to maintain man-made environments, irreparable harm may result in the short term to ourselves
 and our own environment (centuries on an evolutionary scale). Because people change and develop their surroundings so fast, it
@@ -98,7 +98,7 @@ While in the physical sense Nature may very well be on a path to its end, religi
 Animism, or an anthropomorphic view of a Mother Nature, or some Earth Goddess as an idea, fought its battle for the human heart and
 mind long ago. During the growth period of monotheistic religions (Christianity, Judaism, Islam), Nature worship was viewed as paganism
 and its practitioners ostracized. A deistic view of Nature was transformed into a more mechanistic view of the world, subject to the
-commands of the new Deity and subsumed in its processes ([Williams](https://www.amazon.com/Problems-Materialism-Culture-Selected-Classics/dp/1859841139){:target="_blank"} 37).
+commands of the new Deity and subsumed in its processes ([Williams](https://www.amazon.com/Problems-Materialism-Culture-Selected-Classics/dp/1859841139) 37).
 Recently there have been some attempts at a revival of Nature related worship (Wicca and Gaia Theory), these are considered fringe beliefs by most societies.
 
 Has Nature ended? As a religion it most assuredly could be said to be. Popular, modern belief systems seem quite divorced from

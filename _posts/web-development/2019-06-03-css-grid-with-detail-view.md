@@ -20,7 +20,7 @@ You can see an example of real world usage on a colleague’s website:
 
 <a href="https://grahammueller.com/pages/projects.html" target="_blank"><img src="/media-library/web-development/graham-mueller.png" alt="Graham Mueller's website"></a>
 
-As well as an [answer](https://stackoverflow.com/a/30245615){:target="_blank"} that subsumes a StackOverflow problem
+As well as an [answer](https://stackoverflow.com/a/30245615) that subsumes a StackOverflow problem
 
 The original application was for a prototype version of a product configurator for the Inpro Corporation:
 

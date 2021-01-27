@@ -16,6 +16,6 @@ There was also a short period where I had left that “body” completely to eng
 
 It seemed that I had no real choice; I couldn’t act any other way. It was as if I was trapped as myself, and simply watching events unfold. A lump of matter-in-motion where I plugged-in to watch and push the controls which happened to be in perfect sync with what the body was planning to do anyway…
 
-I’m reminded of the Ancient Egyptian concept of [multiple souls](https://en.wikipedia.org/wiki/Ancient_Egyptian_conception_of_the_soul){:target="_blank"}. Obligatory cultural reference:
+I’m reminded of the Ancient Egyptian concept of [multiple souls](https://en.wikipedia.org/wiki/Ancient_Egyptian_conception_of_the_soul). Obligatory cultural reference:
 
 {% include youtube.html id="jhBSum8GILY" %}

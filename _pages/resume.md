@@ -14,7 +14,7 @@ nav_order: 1
 
 ## Overview
 
-USMC War veteran, Co-Founder and CISO of a Health & Nutrition related [startup](https://www.shouhealth.com/){:target="_blank"}.
+USMC War veteran, Co-Founder and CISO of a Health & Nutrition related [startup](https://www.shouhealth.com/).
 Systems Engineer with a formal education in Computer Science and nearly 20 years of experience in the software industry.
 
 I’m primarily interested in the study and application of Programming Language Theory to systems in a variety of industries and fields.

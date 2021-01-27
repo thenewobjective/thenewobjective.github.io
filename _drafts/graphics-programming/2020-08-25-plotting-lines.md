@@ -11,7 +11,7 @@ commentThreadId: 47
 The next natural step from plotting points is plotting lines. With the practically infinite
 variety of lines to draw one would think we'd have to come up with a number of algorithms to
 draw them all. Luckily we can just use one. The technique we'll use to draw all of these lines
-is the [Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve){:target='_blank'}.
+is the [Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve).
 
 Bézier curves are smooth paths that are defined by "control points". You can think of
 them like weights on a string. By manipulating those points you change the shape of the curve:
@@ -32,9 +32,9 @@ B<sub>P<sub>0</sub>P<sub>1</sub>...P<sub><em>n</em></sub></sub>(<em>t</em>) = (1
 Where `t` is the `t`ime along the curve from 0 - 1. <code>P<sub>0</sub>&nbsp;-&nbsp;P<sub>n</sub></code> are the control points.
 The result is a point on the curve at the given `t`.
 
-What's basically being done is a set of [Linear Interpolations](https://en.wikipedia.org/wiki/Linear_interpolation){:target='_blank'}
+What's basically being done is a set of [Linear Interpolations](https://en.wikipedia.org/wiki/Linear_interpolation)
 of the control points. In plain english to interpolate is to pass through some given points. To interpolate linearly is to pass through given points with a straight line.
-[Mike "Pomax" Kamermans](https://twitter.com/TheRealPomax){:target='_blank'} has an excellent image showing how this works:
+[Mike "Pomax" Kamermans](https://twitter.com/TheRealPomax) has an excellent image showing how this works:
 
 <figure>
     <img src='/media-library/graphics-programming/bezier-lerp.png' alt='Deriving Bézier curve with Linear Interpolation'>
@@ -98,7 +98,7 @@ const bezier = (t, ctrlPts) =>
 ```
 
 You'd be right to raise concerns about the efficiency of the `bezier` function but we're going to ignore
-these for now in the name of clarity. As [Knuth](https://en.wikipedia.org/wiki/Donald_Knuth){:target="_blank"} has said:
+these for now in the name of clarity. As [Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) has said:
 <em>"Premature optimization is the root of all evil"</em>.
 
 With our functions in hand it's time to integrate them into the Graphic class:
@@ -148,6 +148,6 @@ https://github.com/hrldcpr/Bezier.hs/blob/master/Bezier.hs
 
 ## Additional Reading
 
-* [https://jeremykun.com/2013/05/11/bezier-curves-and-picasso/](https://jeremykun.com/2013/05/11/bezier-curves-and-picasso/){:target='_blank'}
-* [https://pomax.github.io/bezierinfo/](https://pomax.github.io/bezierinfo/){:target='_blank'}
-* [https://en.wikipedia.org/wiki/B%C3%A9zier_curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve){:target='_blank'}
+* [https://jeremykun.com/2013/05/11/bezier-curves-and-picasso/](https://jeremykun.com/2013/05/11/bezier-curves-and-picasso/)
+* [https://pomax.github.io/bezierinfo/](https://pomax.github.io/bezierinfo/)
+* [https://en.wikipedia.org/wiki/B%C3%A9zier_curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)

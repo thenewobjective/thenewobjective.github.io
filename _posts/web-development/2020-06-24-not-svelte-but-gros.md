@@ -13,15 +13,15 @@ commentThreadId: 36
 
 ## Introduction
 
-Recently I was asked to review [Svelte](https://svelte.dev/){:target="_blank"}.
+Recently I was asked to review [Svelte](https://svelte.dev/).
 My usual response to these requests is that "it's better than nothing" but that's
-just [damning with faint praise](https://en.wikipedia.org/wiki/Damning_with_faint_praise){:target="_blank"}.
+just [damning with faint praise](https://en.wikipedia.org/wiki/Damning_with_faint_praise).
 I'm not a fan of most web frameworks and I've seen my share since 1997. Sadly Svelte I also find
 disappointing.
 
 Svelte seems to
 [sell itself](https://svelte.dev/blog/svelte-3-rethinking-reactivity){:target="_blank} as not being
-[React](https://reactjs.org/){:target="_blank"} which is not a high bar but that's another story.
+[React](https://reactjs.org/) which is not a high bar but that's another story.
 The efficiency of it's output leaved much to be desired. The "Hello World" example is 41 lines of code excluding the 7 imports:
 
 <figure>
@@ -71,7 +71,7 @@ This abused JavaScript is meant to execute the labeled statement when the refere
 the semantics are definitely not JavaScript and the authors should not [gloss over this](https://svelte.dev/tutorial/reactive-declarations){:target="_blank}
 as valid.
 
-In addition to abusing syntax to support "reactivity" the framework relies on syntactic assignment to trigger it. The [official examples](https://svelte.dev/tutorial/updating-arrays-and-objects){:target="_blank"}
+In addition to abusing syntax to support "reactivity" the framework relies on syntactic assignment to trigger it. The [official examples](https://svelte.dev/tutorial/updating-arrays-and-objects)
 show how terribly broken this feature is:
 
 ```js
@@ -150,20 +150,20 @@ The event modifiers could be done in the handler itself, so I don't understand t
 
 This just promotes duplicating logic and mixing it with the "markup". If I had a list of elements with the same handler then adding a modifier on each element is not an improvement.
 
-Speaking of an over-complicated [event model](https://svelte.dev/tutorial/event-forwarding){:target="_blank"}:
+Speaking of an over-complicated [event model](https://svelte.dev/tutorial/event-forwarding):
 
 > "Unlike DOM events, component events don't bubble. If you want to listen to
 > an event on some deeply nested component, the intermediate components must forward the event."
 
-Svelte is using what is called the [Chain of Responsibility pattern](https://refactoring.guru/design-patterns/chain-of-responsibility){:target="_blank"} to process events.
+Svelte is using what is called the [Chain of Responsibility pattern](https://refactoring.guru/design-patterns/chain-of-responsibility) to process events.
  This has been known to be a bad idea since the late 90s When Java abandoned it. This approach requires either:
 
 1. Every intermediate component has to explicitly forward the event (as mentioned in the quote)
 2. A particular container component has to define a switch-statement or if-else to filter and
-   handle the child events when there are many types. (as shown in the [example](https://svelte.dev/tutorial/event-forwarding){:target="_blank"} with `dispatch()` if more events were defined)
+   handle the child events when there are many types. (as shown in the [example](https://svelte.dev/tutorial/event-forwarding) with `dispatch()` if more events were defined)
 
 The [Delegation Event Model](https://www.developer.com/java/data/understanding-and-using-the-java-delegation-event-model.html) as used
-in the DOM is superior and should have been kept instead. A true [reactive](https://en.wikipedia.org/wiki/Reactive_programming){:target="_blank"} approach would also have been better.
+in the DOM is superior and should have been kept instead. A true [reactive](https://en.wikipedia.org/wiki/Reactive_programming) approach would also have been better.
 
 ## Forms
 
@@ -172,11 +172,11 @@ in the DOM is superior and should have been kept instead. A true [reactive](http
 >
 > With bind:value, Svelte takes care of it for you
 
-That is just wrong. `<input>` elements [support](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement){:target="_blank"}:
+That is just wrong. `<input>` elements [support](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement):
 
 `value`, `valueAsDate`, `valueAsNumber`
 
-Initially I thought this was just outdated information but Svelte was [released](https://svelte.dev/blog/frameworks-without-the-framework){:target="_blank"} in November of 2016
+Initially I thought this was just outdated information but Svelte was [released](https://svelte.dev/blog/frameworks-without-the-framework) in November of 2016
 and these input properties have been in browsers for [at least 8 years](https://bugzilla.mozilla.org/show_bug.cgi?id=769370).
 
 Svelte also provides a grouping syntax for checkboxes and radio buttons:
@@ -190,13 +190,13 @@ Svelte also provides a grouping syntax for checkboxes and radio buttons:
 {/each}
 ```
 
-The "name" attribute [already does this](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/checkbox#Handling_multiple_checkboxes){:target="_blank"}
+The "name" attribute [already does this](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/checkbox#Handling_multiple_checkboxes)
 but due to how binding and events work it's no surprise that this feature was reinvented.
 
 ## Context API
 
-Due to the terrible event model described above an additional feature was added in Svelte to work around it called the [Context API](https://svelte.dev/tutorial/context-api){:target="_blank"}.
-Strangely the authors don't recognize the problem and treat this as a [feature](https://svelte.dev/tutorial/context-api){:target="_blank"}:
+Due to the terrible event model described above an additional feature was added in Svelte to work around it called the [Context API](https://svelte.dev/tutorial/context-api).
+Strangely the authors don't recognize the problem and treat this as a [feature](https://svelte.dev/tutorial/context-api):
 
 > The context API provides a mechanism for components to 'talk' to each other
 > without passing around data and functions as props, or dispatching lots of events.
@@ -228,20 +228,20 @@ and GUI hierarchy in order to cross-communicate to other components. Perhaps if 
 
 On one hand I do like the fact that CSS can be avoided in favor of JavaScript directly,
 on the other hand the approach leaves much to be desired. The style property of the
-element is manipulated directly instead of using the [CSSOM](https://css-tricks.com/an-introduction-and-guide-to-the-css-object-model-cssom/#the-cssstylesheet-interface){:target="_blank"}.
+element is manipulated directly instead of using the [CSSOM](https://css-tricks.com/an-introduction-and-guide-to-the-css-object-model-cssom/#the-cssstylesheet-interface).
 You can imagine how this would scale poorly with more ambitious styling.
 
 ## Components
 
 Regarding components, I'll just reference the criticism I've already given:
 
-[A Criticism of Web Components](https://thenewobjective.com/web-development/a-criticism-of-web-components){:target="_blank"}
+[A Criticism of Web Components](https://thenewobjective.com/web-development/a-criticism-of-web-components)
 
 ## Conclusion
 
 Don't choose a framework for the sake of it. Beware of hype and contrived examples. Learn the fundamentals before seeking abstractions.
-There is a difference between [simple and easy](https://youtu.be/rI8tNMsozo0?t=48){:target="_blank"}, and don't be afraid to roll-your-own
+There is a difference between [simple and easy](https://youtu.be/rI8tNMsozo0?t=48), and don't be afraid to roll-your-own
 based on a sound foundation:
 
 * <http://vanilla-js.com/>
-* [MVC in ~100 lines](https://gist.github.com/mlhaufe/c841b2269b0099c3c52648717f9551cc){:target="_blank"}
+* [MVC in ~100 lines](https://gist.github.com/mlhaufe/c841b2269b0099c3c52648717f9551cc)

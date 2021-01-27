@@ -13,7 +13,7 @@ This is my personal site, and I don’t care who you are specifically unless you
 
 ## Comments
 
-Comments are managed by GitHub and loaded programmatically for display. You can view their privacy policy [on their website](https://help.github.com/en/github/site-policy/github-privacy-statement){:target="_blank"}.
+Comments are managed by GitHub and loaded programmatically for display. You can view their privacy policy [on their website](https://help.github.com/en/github/site-policy/github-privacy-statement).
 
 ## Cookies
 

@@ -24,7 +24,7 @@ Nutritionism is a popular trend in the western world, especially in the United S
 of one the most significant current relationships people have with food and through it, nature. Nutritionism is
 the belief that the foods people eat should be defined and evaluated only by their individual ingredients and
 quantities, not by their particular combination let alone what particular food item contains them.
-[Michael Pollan](https://michaelpollan.com/books/in-defense-of-food/){:target="_blank"} believes that nutritionism
+[Michael Pollan](https://michaelpollan.com/books/in-defense-of-food/) believes that nutritionism
 is a pseudo-religion that requires a priest-like class of experts to interpret and disseminate knowledge about the
 foods society chooses to eat. But unlike the traditional priests of religion who seek to gain understanding through
 a perspective and interpretation of what they study, food scientists often wear blinders in order to become experts
@@ -33,7 +33,7 @@ one another and enveloped by esoteric terminology that often does not provide wi
 With this ignorance and/or misunderstanding, the layperson then ventures forth with the best intentions but oftentimes
 on the wrong path to their well-being. The human knowledge of food has become too vast for a human mind to hold while
 giving it any meaning. Facts replace wisdom and knowledge usurps understanding. For instance, the average American knows
-that [HFCS](https://en.wikipedia.org/wiki/High-fructose_corn_syrup){:target="_blank"} is bad but at the same time can’t
+that [HFCS](https://en.wikipedia.org/wiki/High-fructose_corn_syrup) is bad but at the same time can’t
 find out how to eat a healthy diet that results in weight-loss. Hence the current trend of so-called healthy eating but
 at the same time increasing rates of obesity and weight related health conditions. This is also coupled with the
 commoditization of food. Unlike in times past, food is very easy to come by and little effort is spent to obtain or prepare it.
@@ -54,7 +54,7 @@ yield or increasing the size of livestock. The side-effects of this process, bot
 
 The side-effects of food production aren’t always irrelevant though to the common man, especially when the unexpected side-effects
 get out of control and cause significant harm. In the desire to increase crop-yield, science has developed numerous chemical fertilizers
-which almost miraculously increase food yield beyond what [Malthus](https://en.wikipedia.org/wiki/Thomas_Robert_Malthus){:target="_blank"}
+which almost miraculously increase food yield beyond what [Malthus](https://en.wikipedia.org/wiki/Thomas_Robert_Malthus)
 could have believed. But as a side-effect, the fertilizers contaminate local water supplies which lead to negative health effects and/or
 negatively impact water sources which impact the fish stocks and other life in the aquatic environment. When this side-effect or another
 arises from food production, a scientific or legal solution is developed to correct the specific problem. Though while the symptom is
@@ -98,7 +98,7 @@ For example, it is unheard of for a Jewish or Catholic practitioner on a strict 
 There is also little evidence of any particular species of animal becoming extinct as a direct result of the teachings of one of these specific
 religions. It is not being argued that current eating practices be replaced outright by an existing religious tradition, nor that related. beliefs
 beyond the respective food traditions be adopted, but rather that numerous existing traditions can provide an instance of
-[Chesterton’s Fence](https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence){:target="_blank"} from which one can evolve. If these are
+[Chesterton’s Fence](https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence) from which one can evolve. If these are
 tempered with the knowledge obtained through the scientific discoveries of nutritionists and dietitians, it could reduce the migration tax of existing
 diets, and more readily adopted by western society as they would already be familiar to most and not consist of foods alien to the palette.
 

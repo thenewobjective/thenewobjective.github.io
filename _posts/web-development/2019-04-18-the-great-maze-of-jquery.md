@@ -10,7 +10,7 @@ redirect_from:
 commentThreadId: 2
 ---
 
-*David Mark ([@Cinsoft](https://twitter.com/Cinsoft){:target="_blank"}, [Github](https://github.com/david-mark){:target="_blank"}, [comp.lang.javascript](https://groups.google.com/forum/#!profile/comp.lang.javascript/APn2wQdow28xcHDrDggfWTU5hXOy7oRk11vZM0N4N-idI7HJycIOyoXWIDEZoK6_MEPc2ywEyeeK){:target="_blank"}) is a notorious web developer from a different age. He is abrasive and effective. The following is a reposting of [my response](https://gist.github.com/mlhaufe/a7d7469db14b3b006e6cdf15e5669d80){:target="_blank"} to a request for comments on yet another jQuery architectural problem. It has been slightly edited for blog form.*
+*David Mark ([@Cinsoft](https://twitter.com/Cinsoft), [Github](https://github.com/david-mark), [comp.lang.javascript](https://groups.google.com/forum/#!profile/comp.lang.javascript/APn2wQdow28xcHDrDggfWTU5hXOy7oRk11vZM0N4N-idI7HJycIOyoXWIDEZoK6_MEPc2ywEyeeK)) is a notorious web developer from a different age. He is abrasive and effective. The following is a reposting of [my response](https://gist.github.com/mlhaufe/a7d7469db14b3b006e6cdf15e5669d80) to a request for comments on yet another jQuery architectural problem. It has been slightly edited for blog form.*
 
 ## Faking Ad-Hoc Polymorphism
 
@@ -213,7 +213,7 @@ So now the challenge is, how to provide the author with the usability of a singl
 
 ## Multiple Paradigm Pain
 
-JavaScript is a multi-paradigm language. It supports: [Functional](https://en.wikipedia.org/wiki/Functional_programming){:target="_blank"}, [Procedural](https://en.wikipedia.org/wiki/Procedural_programming){:target="_blank"}, [Object Oriented](https://en.wikipedia.org/wiki/Object-oriented_programming){:target="_blank"} ([Prototypical](https://en.wikipedia.org/wiki/Prototype-based_programming){:taret="_blank"}), [Imperative](https://en.wikipedia.org/wiki/Imperative_programming){:target="_blank"}, and others. Not all of these paradigms are compatible with each other and choosing to use the wrong combination leads to cognitive dissonance and impedance mismatch.
+JavaScript is a multi-paradigm language. It supports: [Functional](https://en.wikipedia.org/wiki/Functional_programming), [Procedural](https://en.wikipedia.org/wiki/Procedural_programming), [Object Oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) ([Prototypical](https://en.wikipedia.org/wiki/Prototype-based_programming){:taret="_blank"}), [Imperative](https://en.wikipedia.org/wiki/Imperative_programming), and others. Not all of these paradigms are compatible with each other and choosing to use the wrong combination leads to cognitive dissonance and impedance mismatch.
 
 jQuery in particular utilizes all of these in places which require extra code to make up for the dissonance, or causes one to overlook other problems as it can distract from higher level issues. The issue you pointed to is one example of this with all of the code duplication made invisible due to helper methods (the function is duplicated with the only difference being the name of the type)
 

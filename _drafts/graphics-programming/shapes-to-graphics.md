@@ -82,8 +82,8 @@ y x -------------------------->
 v  R B G A R B G A ... R B G A
 ```
 
-Mathematically this is referred to as [Matricization](https://en.wikipedia.org/wiki/Tensor_reshaping#Matricization){:target="_blank"}
-in [Row-Major order](https://en.wikipedia.org/wiki/Row-_and_column-major_order){:target="_blank"}. In other words you read left to right,
+Mathematically this is referred to as [Matricization](https://en.wikipedia.org/wiki/Tensor_reshaping#Matricization)
+in [Row-Major order](https://en.wikipedia.org/wiki/Row-_and_column-major_order). In other words you read left to right,
 from top to bottom. With this you can work out the following formula to find a desired x/y position:
 
 ```text
@@ -144,7 +144,7 @@ class Graphic {
 ```
 
 Passing in a single number for a color requires some work to get the individual components out again, so above you can see
-this being done with [bitwise shifting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators){:target="_blank"}.
+this being done with [bitwise shifting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators).
 
 How this works is that the binary representation of the color is left shifted to remove any previous channels and then right shifted to remove subsequent color channels
 leaving the desired result. The following may help to visualize how the green channel `0x99` is obtained from the color `0xFF99AACC` :
@@ -285,7 +285,7 @@ Determining the points of this curve can be accomplished by divide and conquer b
 
 Given the control points a point in between can be determined for each pair. This process can then be repeated until a single point is determined.
 This point will be a point of the Bézier curve itself. This process for obtaining points of the curve is called
-[de Casteljau's algorithm](https://en.wikipedia.org/wiki/De_Casteljau's_algorithm){:target="_blank"}.
+[de Casteljau's algorithm](https://en.wikipedia.org/wiki/De_Casteljau's_algorithm).
 
 ```js
 let bezierPoints = (points, t) =>
