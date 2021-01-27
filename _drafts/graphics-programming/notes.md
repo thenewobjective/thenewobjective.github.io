@@ -34,7 +34,11 @@ a single point is determined. This point will be a point of the Bézier curve it
 of the curve is called [de Casteljau's algorithm](https://en.wikipedia.org/wiki/De_Casteljau's_algorithm){:target="_blank"}. Before
 getting to the algorithm though we'll want some utility functions first:
 
+---
 
+> Octrees also suffer from the 'near miss' problem. Which is important because your shader
+> will only be as fast as the slowest branch. A ray can deep dive into many nodes and end up hitting nothing
+> -gavanw
 ---
 * <https://twitter.com/ciaccodavide/status/964407412634472448>
 * <https://twitter.com/pcwalton/status/1299884289010495490>

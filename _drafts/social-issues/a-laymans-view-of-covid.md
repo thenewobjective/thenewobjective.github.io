@@ -123,6 +123,7 @@ No
 * [Asymptomatic to Presymptomatic](https://twitter.com/BrendanEich/status/1340722551459172353)
 * <https://www.zerohedge.com/political/who-deletes-naturally-acquired-immunity-its-website>
 * <https://www.zerohedge.com/political/perfect-stormnot-our-doing-fauci-led-biden-team-suddenly-stunned-virus-surge-created>
+* <https://dailycaller.com/2021/01/24/california-hiding-key-coronavirus-data-gavin-newsom-mislead-public/>
 
 ## Is Hydroxychloroquine effective
 
@@ -209,7 +210,11 @@ that a certain level of pressure is being made on the organization.
 * <https://www.zerohedge.com/covid-19/er-nurse-tests-positive-covid-8-days-after-being-vaccinated>
 * <https://twitter.com/zerohedge/status/1317165925368582144>
 * <https://twitter.com/zerohedge/status/1349757318263664643>
+* <https://twitter.com/gummibear737/status/1353806874282516480>
+* <https://www.zerohedge.com/covid-19/moderna-jab-not-effective-against-mutant-south-african-covid-strain>
 * Vaccine won't prevent spread?
+
+## Ventilators
 
 ## Further Reading
 
