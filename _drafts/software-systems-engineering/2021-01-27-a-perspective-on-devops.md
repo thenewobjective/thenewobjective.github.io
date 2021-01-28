@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "A Perspective On DevOps"
-date:   2021-01-24 12:00:00 -0600
+date:   2021-01-27 12:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/a-perspective-on-devops
 commentThreadId: -1
@@ -17,18 +17,71 @@ commentThreadId: -1
 While on the face of it the implied meaning seems obvious: unifying Software Development and Operations, in practice explanations
 seem to fall into a number of categories when describing it: Some take the top-down approach of combining traditional
 Development and Operations departments and simply calling it the "DevOps" department; Others[^1] focus on a set of bottom-up practices
-and tools and refer to that aggregate as "DevOps"; and some refer to it as a methodology or even a culture or some vaguely defined
+and tools and refer to that aggregate as "DevOps"; and some refer to it as a methodology, a culture, or some vaguely defined
 extension of the Agile movement. The goal of this article is to connect these disparate perspectives by taking an orthogonal
 point-of-view to derive a more appropriate definition.
 
-## The Inverse of Conway's Law {TODO}
+## Converse Conway's Law
 
-You may have heard of Conway's Law. 
+To approach a new definition we should change our perspective to thinking in terms of systems. You may have heard of
+[Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law):
 
-## References and Further Reading
+> Any organization that designs a system (defined broadly) will produce a design
+> whose structure is a copy of the organization's communication structure.
+> <cite><a href="https://en.wikipedia.org/wiki/Melvin_Conway" target="_blank">Melvin E. Conway</a></cite>
+
+Perhaps even its variant:
+
+> The structure of any system designed by an organization is isomorphic to the structure of the organization.
+> <cite><a href="https://en.wikipedia.org/wiki/Edward_Yourdon" target="_blank">Yourdon, Edward</a>; <a href="https://en.wikipedia.org/wiki/Larry_Constantine" target="_blank">Constantine, Larry L.</a></cite>
+
+If an organization is reflected in the system it creates then we should consider that the converse might also be true.
+In other words the system you're using can pressure your organization to adapt as that might be easier than
+changing the system itself. This tendency has been noticed others:
+
+> But Systems and people are related in another, subtler way. A <em>selective process</em> goes on,
+> whereby Systems attract and keep those people whose attributes are such as to adapt them to life
+> in that System.
+> <cite><a href="https://en.wikipedia.org/wiki/Systemantics" target="_blank">Gall, John. Systemantics</a>. Chapter 10</cite>
+
+Thus you can conclude that the organization is part of The System and with that knowledge we can begin to evaluate how
+"DevOps" has come into being. Not so much as a choice, but as a consequence of an evolving system.
+
+## The Methodology of The Mainframe {TODO}
+
+From the 1960s to the early 1970s computer programming was primarily accomplished via punched-cards[^2]. The methodology
+was very much constrained by how these cards were processed. The development workflow was basically:
+
+
+
+
+
+{TODO}
+
+## References
 
 [^1]: Mike Loukides. [What is DevOps?](http://radar.oreilly.com/2012/06/what-is-devops.html). June 7, 2012
+[^2]: [Computer Programming in the punched card era](https://en.wikipedia.org/wiki/Computer_programming_in_the_punched_card_era)
+
+## Additional Information
+
+* [Punch Card Programming - Computerphile](https://www.youtube.com/watch?t=545&v=KG2M4ttzBnY)
+* [Mainframes and the Unix Revolution - Computerphile](https://www.youtube.com/watch?v=-rPPqm44xLs)
+
+<!--
+===========================================
+===========================================
+
+http://www.columbia.edu/cu/computinghistory/fisk.pdf
+http://museum.ipsj.or.jp/en/computer/device/paper/words.html
+https://github.com/jasonbellamy/jekyll-mermaid/issues
+https://mermaid-js.github.io/mermaid/#/
+
+
 [^2]: Floris Erich. [DevOps is Simply Interaction Between Development and Operations](https://www.researchgate.net/publication/330477403_DevOps_is_Simply_Interaction_Between_Development_and_Operations_First_International_Workshop_DEVOPS_2018_Chateau_de_Villebrumier_France_March_5-6_2018_Revised_Selected_Papers). January 2019
+
+
+## Further Reading
 
 ## Notes
 
@@ -40,10 +93,6 @@ You may have heard of Conway's Law.
 
 
 ALM Team
-
-<!--
-===========================================
-===========================================
 
 ## Levels of Organization {TODO}
 
