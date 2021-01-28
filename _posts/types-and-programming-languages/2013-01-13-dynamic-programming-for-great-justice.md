@@ -39,7 +39,85 @@ function fib(n) {
 Short, clean, and seems obviously correct from a glance… but happens to be naively inefficient as well; a good example of a pitfall for the inexperienced.  The beauty of this fragment of code is only skin deep as you can see from its call tree ( `f = fib` for brevity ):
 
 <figure>
-    <img src="/media-library/dynamic-programming/fibCallTree.png" alt="Fibonacci call tree">
+  <div class="mermaid">
+  graph TD
+      T["f(6)"]
+      L["f(5)"]
+      LL["f(4)"]
+      LLL["f(3)"]
+      LLLL["f(2)"]
+      LLLLL["f(1)"]
+      LLLLLL[1]
+      LLLLR["f(0)"]
+      LLLLRL[0]
+      LLLR["f(1)"]
+      LLLRL[1]
+      LLR["f(2)"]
+      LLRL["f(1)"]
+      LLRLL[1]
+      LLRR["f(0)"]
+      LLRRL[0]
+      LR["f(3)"]
+      LRL["f(2)"]
+      LRLL["f(1)"]
+      LRLLL[1]
+      LRLR["f(0)"]
+      LRLRL[0]
+      LRR["f(1)"]
+      LRRL[1]
+      R["f(4)"]
+      RL["f(3)"]
+      RLL["f(2)"]
+      RLLL["f(1)"]
+      RLLLL[1]
+      RLLR["f(0)"]
+      RLLRL[0]
+      RLR["f(1)"]
+      RLRL[1]
+      RR["f(2)"]
+      RRL["f(1)"]
+      RRLL[1]
+      RRR["f(0)"]
+      RRRL[0]
+      T --- L
+      L --- LL
+      LL --- LLL
+      LLL --- LLLL
+      LLLL --- LLLLL
+      LLLLL --- LLLLLL
+      LLLL --- LLLLR
+      LLLLR --- LLLLRL
+      LLL --- LLLR
+      LLLR --- LLLRL
+      LL --- LLR
+      LLR --- LLRL
+      LLRL --- LLRLL
+      LLR --- LLRR
+      LLRR --- LLRRL
+      L --- LR
+      LR --- LRL
+      LRL --- LRLL
+      LRLL --- LRLLL
+      LRL --- LRLR
+      LRLR --- LRLRL
+      LR --- LRR
+      LRR --- LRRL
+      T --- R
+      R --- RL
+      RL --- RLL
+      RLL --- RLLL
+      RLLL --- RLLLL
+      RLL --- RLLR
+      RLLR --- RLLRL
+      RL --- RLR
+      RLR --- RLRL
+      R --- RR
+      RR --- RRL
+      RRL --- RRLL
+      RR --- RRR
+      RRR --- RRRL
+  </div>
+  <figcaption>Fibonacci call tree</figcaption>
 </figure>
 
 This algorithm requires an exponential amount of time and space to produce a result (specifically, [*O(φ)*](https://en.wikipedia.org/wiki/Golden_ratio) which is in *O(n<sup>2</sup>)* ). The reason, as can be seen from the above tree, is that a significant amount of duplicate work is being done. fib(4) is being calculated twice, fib(3) calculated three times, and so on. Choose a large enough input and you can be quite confident that your machine will fall over. For a more discrete example, here is a graph of the execution time on my current machine (Windows 7, 4 GB RAM, Dual core 2.40 GHz, Firefox 18). Note that I ran out of memory beyond fib(37):
@@ -64,7 +142,37 @@ fib.memo = [];
 Admittedly not quite as clear as the previous version, but arguable still cleaner than the first version.  When looking for fib(n): check to see if it is in the memo,  if it is return it, otherwise calculate the value and store it in the memo before returning it. Here is our new call tree ( `m[n] = fib.memo[n]` ):
 
 <figure>
-    <img src="/media-library/dynamic-programming/fibCallTreeMemo.png" alt="Fib call tree memoization">
+  <div class="mermaid">
+  graph TD
+      T["f(6)"]
+      L["f(5)"]
+      LL["f(4)"]
+      LLL["f(3)"]
+      LLLL["f(2)"]
+      LLLLL["f(1)"]
+      LLLLLL[1]
+      LLLLR["f(0)"]
+      LLLLRL[0]
+      LLLR["f(1)"]
+      LLLRL[1]
+      LLR["m[2]=1"]
+      LR["m[3]=2"]
+      R["m[4]=3"]
+      T --- L
+      L --- LL
+      LL --- LLL
+      LLL --- LLLL
+      LLLL --- LLLLL
+      LLLLL --- LLLLLL
+      LLLL --- LLLLR
+      LLLLR --- LLLLRL
+      LLL --- LLLR
+      LLLR --- LLLRL
+      LL --- LLR
+      L --- LR
+      T --- R
+  </div>
+  <figcaption>Fibonacci call tree memoization</figcaption>
 </figure>
 
 So our exponential recursive algorithm is now a linear recursive algorithm: *O(n)* time (still have to calculate each value of fib(n) once), and *O(n)* space (we’re storing each value of fib(n) ). I would present a graph of the new algorithm, but it would be quite boring as I was able to calculate fib(1476) in as little as 3 ms, larger values are beyond the range of JavaScript’s number system. On subsequent calls, since the memo is already built, our running time will be *O(1)* (the time to simply look up the value).

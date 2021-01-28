@@ -5,7 +5,7 @@
     <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="referrer" content="no-referrer, strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' ; connect-src 'self' https://api.github.com ; frame-src 'self' https://www.youtube.com https://codepen.io ; img-src 'self' https://avatars0.githubusercontent.com">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' ; frame-src 'self' https://www.youtube.com https://codepen.io ; img-src 'self' https://avatars0.githubusercontent.com">
     <meta http-equiv="X-Frame-Options" content="deny">
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
@@ -33,6 +33,7 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &raquo; Feed" href="/feed.xml" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     <script src="/scripts/dialog-polyfill.js" defer></script>
+    <script src="/scripts/mermaid.min.js" defer></script>
     <script type="module" src="/scripts/main.js" defer></script>
   </head>
   <body>

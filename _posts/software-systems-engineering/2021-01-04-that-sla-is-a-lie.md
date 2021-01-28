@@ -52,7 +52,11 @@ Let's take as a contrived example a simplistic website consisting of an applicat
 on your favorite cloud provider:
 
 <figure>
-  <img src="/media-library/software-systems-engineering/sla-1.png" alt="Simple Website Architecture">
+  <div class="mermaid">
+  graph LR
+      A[[Web Server<br>99.9%]] --> B[(DB Server<br>99.99%)]
+  </div>
+  <figcaption>Simple Website Architecture</figcaption>
 </figure>
 
 The SLA for each component is defined clearly as 99.9% for the Web Server and 99.99% for the Database Server respectively. What is the SLA for the entirety? Given that both are required for the website to function, the
@@ -67,7 +71,20 @@ seem a trivial difference but for more complicated architectures you can see how
 For a more realistic example let's say I have a self-hosted CMS solution with a couple load balanced delivery servers:
 
 <figure>
-  <img src="/media-library/software-systems-engineering/sla-2.png" alt="Scaled Website Architecture">
+  <div class="mermaid">
+  graph LR
+      LB[Load Balancer<br>99.99%]
+      CD1[[Content Delivery<br>99.9%]]
+      CD2[[Content Delivery<br>99.9%]]
+      DB[(Database<br>99.99%)]
+      CM[[Content Management<br>99.9%]]
+      LB-->CD1
+      LB-->CD2
+      CD1-->DB
+      CD2-->DB
+      CM-->DB
+  </div>
+  <figcaption>Simple Website Architecture</figcaption>
 </figure>
 
 So if the load balancer or the database stop working the entire website fails. If only one of the delivery servers
@@ -77,7 +94,15 @@ but changes would not be possible during the outage. What is the SLA for all fun
 Before the entirety can be computed we have to understand how to evaluate this portion:
 
 <figure>
-  <img src="/media-library/software-systems-engineering/sla-3.png" alt="Load Balancer">
+  <div class="mermaid">
+  graph LR
+      LB[Load Balancer<br>99.99%]
+      CD1[[Content Delivery<br>99.9%]]
+      CD2[[Content Delivery<br>99.9%]]
+      LB-->CD1
+      LB-->CD2
+  </div>
+  <figcaption>Load Balancer</figcaption>
 </figure>
 
 As mentioned if one of the two delivery servers fail the website is still available so the SLA is expected to be higher
@@ -88,7 +113,22 @@ with the fallback server being an option. What are the odds of both delivery ser
 Which is an SLA of 99.9999%
 
 <figure>
-  <img src="/media-library/software-systems-engineering/sla-4.png" alt="Load Balancer">
+  <div class="mermaid">
+  graph LR
+      LB[Load Balancer<br>99.99%]
+      subgraph CD [99.9999%]
+      CD1[[Content Delivery<br>99.9%]]
+      CD2[[Content Delivery<br>99.9%]]
+      end
+      DB[(Database<br>99.99%)]
+      CM[[Content Management<br>99.9%]]
+      LB-->CD1
+      LB-->CD2
+      CD1-->DB
+      CD2-->DB
+      CM-->DB
+  </div>
+  <figcaption>Total SLA</figcaption>
 </figure>
 
 Now we can calculate the composition of our dependencies:

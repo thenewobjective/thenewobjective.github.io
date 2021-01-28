@@ -6,11 +6,11 @@ class Figure extends Component {
     constructor(options) {
         super(options)
         const img = qs('img', this.el)
-        img.addEventListener('click', this)
-
-        let figure = this.el.cloneNode(true)
-
-        this.dialog = new Dialog({ content: figure.outerHTML })
+        if(img) {
+            img.addEventListener('click', this)
+            let figure = this.el.cloneNode(true)
+            this.dialog = new Dialog({ content: figure.outerHTML })
+        }
     }
     onclick(e) {
         this.dialog.showModal()
