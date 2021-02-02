@@ -16,7 +16,7 @@ properly. In antiquity they were even used for [predicting the future](https://e
 This though is generally seen as superstitious nonsense by the modern scientific community. Regardless of the truth of this matter
 there are non-predictive dreams (visions) that have also impacted humanity in greatly transformative ways.
 In fact some of the legs of science itself have roots in visions and dreams. Here I've collected a non-exhaustive list of the ones
-that I thought to be most profound.
+that I thought were notable.
 
 ## The Scientific Method
 
@@ -134,10 +134,32 @@ He's most famous for his discovery of the structure of [Benzene](https://en.wiki
     <figcaption>Credit: <a href="https://commons.wikimedia.org/w/index.php?curid=29661966" target="_blank">Haltopub</a>. CC BY-SA 3.0</figcaption>
 </figure>
 
+## The Sewing Machine
+
+[Elias Howe](https://en.wikipedia.org/wiki/Elias_Howe) inventions the sewing machine was finalized after many failures
+thanks to a dream:
+
+> In continuing to imitate the motions of his wife's all too busy needle, Howe made the needles
+> of his early failures with a hole in the middle of the shank. His brain was busy with the invention
+> day and night and even when he slept. One night he dreamed, so the story goes, that he was captured
+> by a tribe of savages who took him a prisoner before their king.
+>
+> "Elias Howe," roared the monarch, "I command you on pain of death to finish this machine at once."
+>
+> Cold sweat poured down his brow, his hands shook with fear, his knees quaked. Try as he would,
+> the inventor could not get the missing figure in the problem over which he had worked so long.
+> All this was so real to him that he cried aloud. In the vision he saw himself surrounded by
+> dark-skinned and painted warriors, who formed a hollow square about him and led him to the
+> place of execution. Suddenly he noticed that near the heads of the spears which his guards carried,
+> there were eye-shaped holes! He had solved the secret! What he needed was a needle with an eye near the point!
+> He awoke from his dream, sprang out of bed, and at once made a whittled model of the eye-pointed needle,
+> with which he brought his experi- ments to a successful close.
+> <cite><a href="https://archive.org/details/popularhistoryof02kaem/page/384/mode/2up" target="_blank">A Popular History of American Invention. (Waldemar Kaempffert, ed.) Vol II, NewyYork Scribner's Sons, 1924, pg. 385.</a></cite>
+
 ## Other Candidates
 
 If you are aware of other dream or visionary discoveries like those above I'd like to see them. There are others I considered adding
-but the details about the inspirations are murky or the impact of the revelation didn't meet an arbitrary theshold I had. For example:
+but the details about the inspirations are murky or the impact of the revelation didn't meet an arbitrary threshold I had. For example:
 
 [Grigori Perelman](https://en.wikipedia.org/wiki/Grigori_Perelman)
 proved the [Poincaré conjecture](https://en.wikipedia.org/wiki/Poincar%C3%A9_conjecture) and consumes mushrooms.
@@ -148,7 +170,15 @@ of a fossilized fish and didn't want to risk exposing more and possibly damaging
 While an interesting story, it didn't quite make the list as a major enough discovery <abbr title="In My Opinion">IMO</abbr>. You may disagree. You can read more
 about Agassiz's Fish on the [following page](http://www.worlddreambank.org/A/AGASFISH.HTM).
 
-I made a conscious choice to not include religious related dreams and visions. I may revisit this decision in the future.
+I made a conscious choice to not include religious related dreams/visions/revelations due to debate over their status being dream-inspired or not.
+I may revisit this decision in the future. Some examples being:
+
+* [The Temptation of Christ](https://en.wikipedia.org/wiki/Temptation_of_Christ)
+* [The Burning Bush](https://en.wikipedia.org/wiki/Burning_bush) 
+* [The Ten Commandments](https://en.wikipedia.org/wiki/Ten_Commandments#Biblical_narrative)
+* Native American [Vision Quests](https://en.wikipedia.org/wiki/Vision_quest)
+
+A key point to keep in mind that the "dreams" do not require sleeping. A common theme you'll notice is high stress and fasting to trigger the visions.
 
 A visionary correspondence I personally find profound but does not fit the categorization of this post is about the
 [Yggdrasil](https://en.wikipedia.org/wiki/Yggdrasil) which you may know of. Were you also aware that the same
