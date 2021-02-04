@@ -22,3 +22,7 @@ https://twitter.com/type2error/status/1284414047895654401
 "twelve plus one" has the same number of letters as "eleven plus two"
 
 - https://www.johndcook.com/blog/2016/03/31/an-alphamagic-square/
+
+
+The sum of an infinite series being -1/12
+	https://www.youtube.com/c/Mathologer/search?query=-%201%2F12

@@ -25,6 +25,8 @@ using as a personal reference. Perhaps you'll find it informative as well.*
 
 * <https://twitter.com/BretWeinstein/status/1351081199486328833>
 * <https://dailycaller.com/2021/01/18/peter-daszak-lancet-statment-protect-chinese-scientists/>
+* <https://twitter.com/HeatherEHeying/status/1355999105483304962>
+* <https://nymag.com/intelligencer/article/coronavirus-lab-escape-theory.html>
 
 ## How Dangerous is it
 
@@ -250,5 +252,8 @@ that a certain level of pressure is being made on the organization.
 * <https://web.archive.org/web/20201222184136/https://twitter.com/boriquagato/status/1341453806404476928>
 * <https://web.archive.org/web/20201228190014/https://twitter.com/boriquagato/status/1343618361960194048>
 * <https://www.zerohedge.com/covid-19/it-was-all-lie-biden-linked-who-adviser-says-covid-19-likely-leaked-wuhan-lab>
-
 * <https://web.archive.org/web/20201201123740/https://threadreaderapp.com/thread/1332858118682849282.html>
+
+Gain of Function Research
+* <https://twitter.com/HeatherEHeying/status/1355998786426789891>
+* <https://twitter.com/HeatherEHeying/status/1355998834350911488>
