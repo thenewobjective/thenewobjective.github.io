@@ -49,3 +49,5 @@ A really big problem it would solve is I wouldn't have to write:
 .item:nth-child(1) { animation-name: a1 }
 .item:nth-child(2) { animation-name: a2 }
 """
+
+https://twitter.com/lzsthw/status/1355974096174141448

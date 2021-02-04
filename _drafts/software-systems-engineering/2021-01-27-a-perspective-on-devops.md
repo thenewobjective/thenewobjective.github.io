@@ -53,7 +53,7 @@ From the 1960s to the early 1970s computer programming was primarily accomplishe
 was very much constrained by how these cards were processed. The development workflow was basically:
 
 <div class="mermaid">
-graph TD;
+graph LR;
     A-->C;
     B-->D;
     C-->D;
