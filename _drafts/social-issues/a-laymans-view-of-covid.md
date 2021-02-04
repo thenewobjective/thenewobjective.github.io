@@ -213,6 +213,7 @@ that a certain level of pressure is being made on the organization.
 * <https://twitter.com/gummibear737/status/1353806874282516480>
 * <https://www.zerohedge.com/covid-19/moderna-jab-not-effective-against-mutant-south-african-covid-strain>
 * Vaccine won't prevent spread?
+* <https://www.zerohedge.com/covid-19/it-just-doesnt-work-expected-macron-questions-covid-vaccine-credibility-eu-approves>
 
 ## Ventilators
 
