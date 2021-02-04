@@ -37,6 +37,7 @@ We can repeat this for other common SLA offerings:
 | SLA Percentage | Downtime per year | Downtime per month | Downtime per week     | Downtime per day     |
 |----------------|-------------------|--------------------|-----------------------|----------------------|
 | 99             | 3d 15h 39m 36s    | 7h 18m 18s         | 1h 49m 35s            | 14m 24s              |
+| 99.5           | 1d 19h 49m 48s    | 3h 39m 9s          | 54m 47s               |  7m 12s              |
 | 99.9           | 9h 00             | 45m                | 11m 15s               | 1m 29s               |
 | 99.95          | 4h 22m 58.8s      | 21m 55s            | 5m 29s                | 43s                  |
 | 99.99          | 52m 35.8s         |  4m 23s            | 1m 6s                 | 8.6s                 |
