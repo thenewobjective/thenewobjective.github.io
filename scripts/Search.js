@@ -16,7 +16,10 @@ export default class Search extends Component {
 
     onsubmit(e){
         e.preventDefault()
-        let query = this.el.q.value.trim()
+        let query = this.el.q.value.trim(),
+            newUrl = new URL(document.location.href)
+        newUrl.searchParams.set('q', query)
+        history.pushState({},'', newUrl.toString())
         this.search(query)
         return false;
     }
