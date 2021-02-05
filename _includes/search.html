@@ -1,5 +1,8 @@
-<form class='search' method="GET" action="https://duckduckgo.com/" target="search_results">
-    <input name="q" type="hidden">
-    <input type="search" placeholder="Search">
-    <button type="submit">&#128270;</button>
+<form class='search'>
+    <input type="search" id="q" placeholder="Search">
+    <button type="submit" id="btnSubmit">&#128270;</button>
 </form>
+<hr>
+<ul id='results'></ul>
+
+<script type="module" src="/scripts/Search.js" defer></script>
