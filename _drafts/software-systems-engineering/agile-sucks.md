@@ -117,3 +117,4 @@ Scrum
 https://www.zerohedge.com/technology/boeing-737-crashes-caused-few-lines-missing-code
 http://beza1e1.tuxen.de/waterfall.html
 http://beza1e1.tuxen.de/cost_of_agile.html
+https://www.linkedin.com/pulse/scrum-communism-nemanja-marin%C4%8Di%C4%87/

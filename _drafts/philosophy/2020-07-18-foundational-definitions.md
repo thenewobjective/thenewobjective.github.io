@@ -256,4 +256,17 @@ Pseudo-science is predicting the past:
 
 Richard Feynman
 https://www.informationphilosopher.com/solutions/scientists/feynman/past_and_future.html
+
+
+
+"""
+My lab's attempt to relate a subjective reality (anxiety) to an objective reality (entropy): Psychological entropy: A framework for understanding uncertainty-related anxiety: 
+https://www.researchgate.net/publication/221752816_Psychological_Entropy_A_Framework_for_Understanding_Uncertainty-Related_Anxiety
+"""
+
+https://en.wikipedia.org/wiki/Phenomenology_(psychology)
+https://en.wikipedia.org/wiki/Carl_Rogers
+https://en.wikipedia.org/wiki/Neurophenomenology
+https://en.wikipedia.org/wiki/Philosophy_of_mind
+https://en.wikipedia.org/wiki/Idealism
 -->

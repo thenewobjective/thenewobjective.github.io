@@ -30,6 +30,7 @@ using as a personal reference. Perhaps you'll find it informative as well.*
 * <https://www.zerohedge.com/covid-19/it-was-all-lie-biden-linked-who-adviser-says-covid-19-likely-leaked-wuhan-lab>
 * <https://twitter.com/gummibear737/status/1351654708549709830>
 * <https://twitter.com/DailyCaller/status/1351899801999335429>
+* <https://www.zerohedge.com/covid-19/who-team-tightly-controlled-ccp-during-covid-19-origins-investigation>
 
 ## (TODO) How Dangerous is it
 
@@ -63,6 +64,7 @@ In general they seem to do more harm than good for the general population.
 * <https://web.archive.org/web/20210104231143/https://twitter.com/boriquagato/status/1346232824542580736>
 * <https://twitter.com/EricRWeinstein/status/1339996694084087808>
 * <https://www.medrxiv.org/content/10.1101/2020.10.21.20208728v2.full.pdf>
+* <https://dailycaller.com/2021/01/25/dr-fauci-two-masks-better-than-one/>
 
 ## (TODO) Will supplements provide protection
 
@@ -74,6 +76,7 @@ In general they seem to do more harm than good for the general population.
 * <https://twitter.com/boriquagato/status/1316031729035964417>
 * <https://twitter.com/Daniilgor/status/1316501414793838592>
 * <https://dailycaller.com/2021/01/14/public-health-england-study-covid-19-infection-protects-vaccine/>
+* <https://twitter.com/gummibear737/status/1356381000587206657>
 
 ## (TODO) Can you spread the disease if you're asymptomatic
 
@@ -108,6 +111,7 @@ No
 ## (TODO) Herd immunity
 
 * <https://twitter.com/boriquagato/status/1315659683915595781>
+* <https://gab.com/boriquagato/posts/105640978647511894>
 
 ## (TODO) Sweden vs New Zealand
 
@@ -241,6 +245,8 @@ that a certain level of pressure is being made on the organization.
 * <https://www.zerohedge.com/covid-19/moderna-jab-not-effective-against-mutant-south-african-covid-strain>
 * Vaccine won't prevent spread?
 * <https://www.zerohedge.com/covid-19/it-just-doesnt-work-expected-macron-questions-covid-vaccine-credibility-eu-approves>
+* <https://twitter.com/zerohedge/status/1354899690559578115>
+* <https://dailycaller.com/2021/01/29/johnson-johnsons-coronavirus-vaccine-72-effective/>
 
 ## (TODO) Ventilators
 
@@ -257,8 +263,20 @@ https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/statu
 * <https://web.archive.org/web/20201228180455/https://twitter.com/boriquagato/status/1343618367911985153>
 * <https://web.archive.org/web/20201222184136/https://twitter.com/boriquagato/status/1341453806404476928>
 * <https://web.archive.org/web/20201228190014/https://twitter.com/boriquagato/status/1343618361960194048>
+* <https://twitter.com/AndrewKerrNC/status/1354810149878153225>
+* <https://gab.com/boriquagato/posts/105594369350174321>
+* <https://gab.com/boriquagato/posts/105594084846716834>
+* <https://www.zerohedge.com/covid-19/eu-cant-keep-orders-astrazeneca-jab-some-members-turn-russia-china>
+* <https://twitter.com/Ayjchan/status/1354580984990199811>
+* <https://www.zerohedge.com/covid-19/medical-tyranny-cdc-announces-all-travelers-must-wear-two-masks-threatens-arrest>
+* <https://www.zerohedge.com/covid-19/week-after-saying-wear-two-masks-fauci-says-it-wont-make-difference>
+* <https://dailycaller.com/2021/02/01/china-who-world-health-organization-transparency-cover-up/>
+* <http://fullmeasure.news/news/cover-story/cdc-investigation>
+* <https://www.zerohedge.com/covid-19/israel-cases-rise-despite-lockdown-vaccinations-japan-extends-state-emergency-live-updates>
+* <https://www.zerohedge.com/covid-19/astrazeneca-lied-patients-about-dosing-mistake-during-trial>
 
 Gain of Function Research
 
 * <https://twitter.com/HeatherEHeying/status/1355998786426789891>
 * <https://twitter.com/HeatherEHeying/status/1355998834350911488>
+* <https://twitter.com/Ayjchan/status/1355679382178844672>

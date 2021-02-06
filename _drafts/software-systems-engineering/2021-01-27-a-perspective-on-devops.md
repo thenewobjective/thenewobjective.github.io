@@ -206,4 +206,13 @@ DevOps as a culture is insufficient
     think of conway's law and the reverse conway's law.
     A change of organization leading to a change in implementation.
   Can there be a culture with 1 person?
+
+
+https://www.youtube.com/watch?v=-rPPqm44xLs
+https://en.wikipedia.org/wiki/Mainframe_computer
+https://en.wikipedia.org/wiki/Computer_programming_in_the_punched_card_era
+http://radar.oreilly.com/2012/06/what-is-devops.html
+https://standards.ieee.org/project/2675.html
+https://runnable.com/blog/conway-s-law-in-reverse-how-app-architecture-influences-org-structure
+https://devops.com/the-origins-of-devops-whats-in-a-name/
 -->
