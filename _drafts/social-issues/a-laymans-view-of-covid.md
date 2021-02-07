@@ -12,7 +12,8 @@ commentThreadId: -1
 people and ideas surrounding the pandemic I've decided to consolidate and distill what
 seem consistent with the reality of the situation as I see it. Note that I am not an
 expert in any field directly relevant to the topic. This is a living document I am
-using as a personal reference. Perhaps you'll find it informative as well.*
+using as a personal reference. Perhaps you'll find it informative as well.
+Comments and corrections welcome.*
 
 * TOC
 {:toc}
@@ -20,6 +21,10 @@ using as a personal reference. Perhaps you'll find it informative as well.*
 ---
 
 ## (TODO) What is COVID-19
+
+### Variants
+
+Wikipedia has a [page describing](https://en.wikipedia.org/wiki/Variants_of_SARS-CoV-2) the variants of the virus
 
 ## (TODO) Did it Leak From A Lab?
 
@@ -31,30 +36,145 @@ using as a personal reference. Perhaps you'll find it informative as well.*
 * <https://twitter.com/gummibear737/status/1351654708549709830>
 * <https://twitter.com/DailyCaller/status/1351899801999335429>
 * <https://www.zerohedge.com/covid-19/who-team-tightly-controlled-ccp-during-covid-19-origins-investigation>
+* <https://twitter.com/gummibear737/status/1357073823041007617>
 
 ## (TODO) How Dangerous is it
 
+There is a [study](https://rep.bioscientifica.com/view/journals/rep/aop/rep-20-0382/rep-20-0382.xml)
+claiming that male fertility can be impacted in the short-term (60 days).
+
 ## (TODO) How it spreads
 
+There have been a number of news reports of viral spread in meat packing plants. 
+
+The cold stale air seems to allow the virus to spread farther and survive longer
+according to a [German study](https://www.bloomberg.com/news/articles/2020-07-23/virus-can-jump-26-feet-at-cold-meat-plants-filled-with-stale-air). There are
+a disproportionate number of dark-skinned employees at these plants who are known
+to be at [higher risk](#vitamin-d).
+
+
+A German
+study was performed showing that <em>"... aerosolized coronavirus can hang in the air
+for at least 30 minutes and travel up to 14 feet."</em> and <em>"...at around 37C (98F),
+it can survive for two to three days on glass, fabric, metal, plastic or paper."
+
 * <https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html>
+* <https://web.archive.org/web/20200724073915/https://www.zerohedge.com/political/coronavirus-traveled-nearly-30-feet-german-slaughterhouse-where-1500-employees-contracted>
 
 ## (TODO) Do masks work
 
 This topic is the most politicized and one where seemingly everyone has a "common-sense" opinion.
 
-In general they seem to do more harm than good for the general population.
+I prefer to follow the advice of Computer Scientist Frank Atanassow:
 
+> "There is a big difference between something being true, knowing that it
+> is true, and knowing that you know it is true. We might say something is
+> true if it is a theorem; we know that it's true if we know it is a theorem
+> and there exists a proof; and we know that we know it's true if we can
+> exhibit a proof that we understand.
+>
+> If the first were the same as the last, then there would be no need for
+> science or mathematics or objectively verifiable methods of argument.
+> Furthermore, we would not be having this discussion in the first place,
+> since truth would be self-evident, and so we could not possibly disagree."
+>
+> <cite><a href="http://lambda-the-ultimate.org/node/175#comment-1333" target="_blank">http://lambda-the-ultimate.org/node/175#comment-1333</a></cite>
+
+In the field of Epidemiology where I am not qualified I must settle for simpler
+tools to form a conclusion; namely by seeking consistency and identifying contradictions.
+Consistency is truth and contradiction is falsity.
+
+My conclusion is that in general they seem to do more harm than good.
+
+The following is an aggregate of numerous studies (including a Randomized Control Trial)
+showing little to no evidence for the effectiveness of cloth face masks:
+
+* <https://swprs.org/face-masks-evidence/>
+
+### Surgical masks
+
+[According to the FDA](https://www.fda.gov/medical-devices/personal-protective-equipment-infection-control/n95-respirators-surgical-masks-and-face-masks#s2):
+
+> While a surgical mask may be effective in blocking splashes and large-particle droplets,
+> a face mask, by design, does not filter or block very small particles in the air that
+> may be transmitted by coughs, sneezes, or certain medical procedures. Surgical masks
+> also do not provide complete protection from germs and other contaminants because of
+> the loose fit between the surface of the mask and your face.
+
+### Do masks reduce O2 or increase CO2
+
+#### N95 Masks
+
+According to [this study](http://rc.rcjournal.com/content/55/5/569) they might:
+
+> The FFR dead-space oxygen and carbon dioxide levels did not meet the
+> Occupational Safety and Health Administration's ambient workplace standards.
+> [...]
+> In healthy healthcare workers, FFR did not impose any important physiological
+> burden during 1 hour of use, at realistic clinical work rates, but the FFR
+> dead-space carbon dioxide and oxygen levels were significantly above and
+> below, respectively, the ambient workplace standards, and elevated P<sub>CO<sub>2</sub></sub>
+> is a possibility. Exhalation valve did not significantly ameliorate the 
+> FFR's P<sub>CO<sub>2</sub></sub> impact.
+
+
+#### Cloth Masks
+
+People wear a variety of cloth masks with a large range of effectiveness.
+Lately there is a fad of wearing two or three masks simultaneously.
+Thicker masks would increase breathing difficulty.
+
+Personal anecdote: I noticed that when I starting wearing a mask there were a few times
+where I became light headed and nearly passed-out. I noticed later that I was
+changing the way that I was breathing through the mask unconsciously. After changing
+my breathing patterns this was no longer an issue.
+
+### Hygiene
+
+If the masks are not disposed after use or effectively washed they can increase
+the odds of infection by many pathogens beyond COVID-19. Some examples:
+
+<figure>
+    <img src="/media-library/social-issues/covid/mask-fuzzies.png" alt="Mask Fuzzies">
+    <figcaption>
+        Credit: <a href="https://twitter.com/Kevin_McKernan/status/1327280853064552450" target="_blank">@Kevin_McKernan</a>
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="/media-library/social-issues/covid/mask-fuzzies-2.png" alt="Mask Fuzzies">
+    <figcaption>
+        Credit: <a href="https://twitter.com/s_kirton/status/1327559617988218880" target="_blank">@s_kirton</a>
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="/media-library/social-issues/covid/mask-staph.png" alt="Mask Staph Infection">
+    <figcaption>
+        Credit: <a href="https://twitter.com/brianhopkinsmd/status/1327726053335257089" target="_blank">@brianhopkinsmd</a>
+    </figcaption>
+</figure>
+
+Interestingly a [research paper](https://pubmed.ncbi.nlm.nih.gov/18710327/) that includes [Fauci](#can-fauci-be-trusted)
+as a co-author concludes that: <em>"The majority of deaths in the 1918-1919 influenza pandemic
+likely resulted directly from secondary bacterial pneumonia caused by common upper
+respiratory-tract bacteria."</em>
+
+While masks are not mentioned in the study, I can't help but wonder if this is a risk that
+should be considered in our current pandemic. Has any study evaluated this for COVID-19?
+
+### TODO: Notes
+
+* <https://www.livescience.com/face-masks-eye-protection-covid-19-prevention.html>
+* <https://pubmed.ncbi.nlm.nih.gov/32512240/>
+* <https://dailycaller.com/2021/02/05/cdc-director-too-early-tell-bidens-mask-mandates-delivering-results/>
 * <https://twitter.com/gummibear737/status/1317950332870266882>
 * <https://web.archive.org/web/20201024175748/https://twitter.com/boriquagato/status/1320060492321296384>
 * <https://www.acpjournals.org/doi/10.7326/M20-6817>
-* <https://twitter.com/s_kirton/status/1327559617988218880>
-* <https://twitter.com/Kevin_McKernan/status/1327280853064552450>
-* <https://twitter.com/gummibear737/status/1315021745506660356>
 * <https://twitter.com/boriquagato/status/1316011001066778624>
 * <https://twitter.com/boriquagato/status/1317203873954779137>
 * <https://twitter.com/boriquagato/status/1317188082358169600>
 * <https://twitter.com/Dierenbach/status/1317849186121977858>
-* <https://twitter.com/AlexBerenson/status/1317875526997102594>
 * <https://twitter.com/boriquagato/status/1317915599310376961>
 * <https://twitter.com/gummibear737/status/1339679017897746433>
 * <https://twitter.com/boriquagato/status/1273737005361315840>
@@ -64,9 +184,34 @@ In general they seem to do more harm than good for the general population.
 * <https://web.archive.org/web/20210104231143/https://twitter.com/boriquagato/status/1346232824542580736>
 * <https://twitter.com/EricRWeinstein/status/1339996694084087808>
 * <https://www.medrxiv.org/content/10.1101/2020.10.21.20208728v2.full.pdf>
-* <https://dailycaller.com/2021/01/25/dr-fauci-two-masks-better-than-one/>
 
-## (TODO) Will supplements provide protection
+## Will supplements provide protection
+
+Don't rely on supplements to replace a vaccine. Supplementation
+would be wise to provide added protection by supporting your
+immune system and general health.
+
+### Vitamin C (TODO)
+
+### Vitamin D
+
+The evidence seems to suggest that Vitamin D is one of the most significant
+hormones that can reduce mortality and improve outcomes of infection:
+
+<https://www.foundmyfitness.com/episodes/vitamin-d-covid-19>
+
+This is consistent with the statistics showing that darker-skinned
+people are at higher risk of negative outcomes:
+
+> "African Americans have 24.6 times higher vitamin D deficiency and 3·7 times higher vitamin D insufficiency than Caucasians"
+
+Reminder: your body synthesizes Vitamin-D in the skin when exposed to sunlight (UVB radiation)
+
+### Omega-3 (TODO)
+
+### Zinc (TODO)
+
+### Notes
 
 * <https://twitter.com/gummibear737/status/1316427529792696320>
 
@@ -87,8 +232,12 @@ In general they seem to do more harm than good for the general population.
 
 ## (TODO) Are Lockdowns The Right Strategy
 
-No
+No.
 
+Vitamin D is [known to be effective](#vitamin-d) in reducing negative outcomes of COVID.
+Your skin synthesizes this in the skin from sunlight.
+
+* <https://dailycaller.com/2021/02/04/emergency-room-visits-covid-19-coronavirus-opioid-overdoses-suicide-mental-health-lockdowns/>
 * <https://dailycaller.com/2021/02/03/nations-largest-cities-30-increase-homicides-2020/>
 * <https://www.zerohedge.com/covid-19/what-they-said-about-lockdowns-2020>
 * <https://twitter.com/boriquagato/status/1314635924635111424>
@@ -146,7 +295,6 @@ No
 
 * [Asymptomatic to Presymptomatic](https://twitter.com/BrendanEich/status/1340722551459172353)
 * <https://www.zerohedge.com/political/who-deletes-naturally-acquired-immunity-its-website>
-* <https://www.zerohedge.com/political/perfect-stormnot-our-doing-fauci-led-biden-team-suddenly-stunned-virus-surge-created>
 * <https://dailycaller.com/2021/01/24/california-hiding-key-coronavirus-data-gavin-newsom-mislead-public/>
 
 ## (TODO) Is Hydroxychloroquine effective
@@ -191,62 +339,176 @@ Omega-3 supplementation may help prevent this problem or aid in recovery:
 ## (TODO) Cuomo
 
 https://web.archive.org/web/20201017123340/https://twitter.com/boriquagato/status/1317443577673322497
-## (TODO) Can Fauci Be Trusted on This Topic
 
-No.
+## Can Fauci Be Trusted
 
+No. He has openly admitted to lying to the public for political
+purposes. Even if he says things that are true one shouldn't
+have to spend the effort separating out fact from lie. 
+
+[Fauci Admits He Lied Because ‘Country Wasn’t Ready’ To Hear The Truth](https://dailycaller.com/2020/12/24/anthony-fauci-coronavirus-covid-19-vaccine-herd-immunity/
+
+> “If you are a healthy young person, there is no reason if you want
+> to go on a cruise ship, go on a cruise ship.”
+> <cite><a href="https://www.forbes.com/sites/douggollan/2020/03/09/fauci-says-cruising-is-ok-if-you-are-healthy/?sh=655a28c2d4de" target="_blank">Anthony Fauci, Director of NIAID. March 2020</a></cite>
+
+There are no doubt more examples and an excellent deep dive has been done by
+[@gummibear737](https://web.archive.org/web/20201101134126/https://threadreaderapp.com/thread/1315365796181356550.html).
+I'm concerned about the implied relationship with the [Moderna vaccine](#moderna) that seemed rushed.
+
+//////////////
+* Jimmy Dore clips
 * <https://twitter.com/gummibear737/status/1317829332740472832>
-* <https://twitter.com/boriquagato/status/1315382097071177729>
-* <https://twitter.com/gummibear737/status/1315365796181356550>
-* <https://dailycaller.com/2020/12/24/anthony-fauci-coronavirus-covid-19-vaccine-herd-immunity/>
-* <https://twitter.com/gummibear737/status/1317829332740472832>
 
-## (TODO) Can the WHO Be Trusted on This Topic?
+There are no doubt additional examples, but this is enough for me. 
+
+## (TODO) Can Professor Neil Ferguson be trusted?
+
+* <https://twitter.com/gummibear737/status/1306605767630491650>
+* <https://www.cato.org/blog/did-mitigation-save-two-million-lives>
+
+
+## (TODO) Can the WHO Be Trusted
 
 Personally I do not.
 
 I first became suspicious of the WHO after the following interview with one of their officials:
 
-* <https://www.youtube.com/watch?v=UlCYFh8U2xM>
+{% include youtube.html id="UlCYFh8U2xM" %}
 
-This seemed to show a significant amount of bias towards China. Given China's desire to maintain a certain
-public opinion in regards to the cause, the spread, and handling of the pandemic it would not be surprising
-that a certain level of pressure is being made on the organization.
+This seemed to show a significant amount of bias towards China.
 
-* <https://archive.is/NzH6X>
-* <https://web.archive.org/web/20201228184621/https://twitter.com/boriquagato/status/1343618368876675078>
-* <https://twitter.com/DailyCaller/status/1349780218110685186>
+I also came across an [opinion piece](https://archive.is/NzH6X) describing their past political behavior.
 
-## (TODO) Can Professor Neil Ferguson be trusted?
+There are contradictions in their messaging as well:
 
-* <https://twitter.com/gummibear737/status/1306605767630491650>
+> Preliminary investigations conducted by the Chinese authorities have found no
+> clear evidence of human-to-human transmission of the novel #coronavirus 
+> (2019-nCoV) identified in #Wuhan, #China.
+> <cite><a href="https://twitter.com/WHO/status/1217043229427761152" target="_blank">Twitter @WHO: Jan 14, 2020</a></cite>
+
+With the above in mind note that [YouTube says](https://www.lifesitenews.com/news/youtube-ceo-well-delete-anything-that-contradicts-word-health-organization-on-covid-19)
+they will delete anything that contradicts the WHO.
+
+## Can the CDC be trusted
+
+As much as I hate to admit it, the CDC is also politicized and its claims
+require scrutiny.
+
+Their health claims and guidance have changed drastically since the pandemic started.
+
+In March of 2020 the CDC [advised against](https://web.archive.org/web/20200328174347/https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fprepare%2Fprevention.html)
+wearing a mask if you are not symptomatic. Now they say they are mandatory, unless it's an N95 mask.
+
+[According to the FDA](https://www.fda.gov/medical-devices/personal-protective-equipment-infection-control/n95-respirators-surgical-masks-and-face-masks):
+
+> The Centers for Disease Control and Prevention (CDC) does not recommend
+> that the general public wear N95 respirators to protect themselves from
+> respiratory diseases, including coronavirus (COVID-19). Those are critical
+> supplies that must continue to be reserved for health care workers and
+> other medical first responders, as recommended by current CDC guidance.
 
 ## (TODO) Hospital Capacity
 
 * <https://twitter.com/boriquagato/status/1316135154352562177>
 * <https://web.archive.org/web/20201228152416/https://twitter.com/boriquagato/status/1343577116730740736>
 
-## (TODO) Vaccine Safety
+## Vaccine Safety and Effectiveness
 
+There are multiple vaccines. Safety and effectiveness has to be judged for each.
+
+In regards to effectiveness for the multi-dose varieties it should not be surprising to hear
+[reports](https://www.zerohedge.com/covid-19/er-nurse-tests-positive-covid-8-days-after-being-vaccinated)
+of COVID infection after receiving only a single dose or [reports](https://www.msn.com/en-us/news/us/new-york-congressman-who-got-vaccine-diagnosed-with-covid/ar-BB1cKMAV)
+of infection immediately after the second dose.
+
+According to [Paul Stoffels](https://en.wikipedia.org/wiki/Paul_Stoffels):
+
+> "a one-shot vaccine is considered by the World Health Organization to be the best option in pandemic settings, enhancing access, distribution and compliance."
+
+Sounds reasonable but WHO comments have to be heavily [scrutinized](#can-the-who-be-trusted).
+
+### AstraZeneca
+
+This is an [adenovirus-based vaccine](https://www.news-medical.net/health/What-are-Adenovirus-Based-Vaccines.aspx).
+
+According to their [Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3777268),
+it is 100% effective in reducing symptoms of COVID-19 enough that hospitalization can be avoided.
+They also claim 76% protection after the first dose. Two doses are required and they can not be
+given close together or it would be less effective.
+
+There are [multiple](https://web.archive.org/web/20201216135047if_/https://www.zerohedge.com/geopolitical/astrazeneca-vaccine-only-62-effective-impact-elderly-unclear-more-data-needed)
+[claims](https://www.zerohedge.com/covid-19/it-just-doesnt-work-expected-macron-questions-covid-vaccine-credibility-eu-approves)
+that this effectiveness is exaggerated and possibly ineffective for those over
+the age of 65.
+
+### Johnson & Johnson - Janssen
+
+The company [claims](https://www.jnj.com/johnson-johnson-announces-single-shot-janssen-covid-19-vaccine-candidate-met-primary-endpoints-in-interim-analysis-of-its-phase-3-ensemble-trial) 66% overall effectiveness at
+preventing moderate to severe symptoms with a single dose.
+It is reportedly only 57% effective against the South African mutation.
+
+This is disappointing information.
+
+### Pfizer
+
+The Pfizer vaccine is an mRNA vaccine.
+
+According to [this publication](https://www.nejm.org/doi/full/10.1056/NEJMoa2034577?query=RP) the efficacy
+of the vaccine is 52% with one dose and 95% with two doses.
+
+The Israeli's [claim](https://news.yahoo.com/israel-warning-single-dose-pfizer-124313138.html) that this is
+exaggerated and that the first dose is only 33% effective.
+
+Congressman Espaillat [tested positive](https://www.msn.com/en-us/news/us/new-york-congressman-who-got-vaccine-diagnosed-with-covid/ar-BB1cKMAV) after receiving
+both doses of this vaccine. Depending on [how that test was performed](#casedemic) this may
+just be a false positive as he claims to have experienced no symptoms.
+Though with the Israeli's reported effectiveness reduction it is something to consider.
+
+### Moderna
+
+This is an mRNA vaccine that requires two doses.
+
+The company [claims](https://investors.modernatx.com/news-releases/news-release-details/moderna-covid-19-vaccine-retains-neutralizing-activity-against) effectiveness against the
+UK variant but is six-times less effective against the South African variant.
+
+The vaccine is approved for those age 18 and older.
+
+[Side effects have been reported for those with cosmetic facial fillers](https://nypost.com/2020/12/25/moderna-covid-vaccine-has-caused-side-effects-for-those-with-cosmetic-facial-fillers)
+
+> “Your immune system which causes inflammation is revved up when you get a vaccine, that’s how it’s supposed to work,”
+> said Dr. Shirley Chi, who noted the side effects were easily treated by medical personnel.
+
+Other allergic reactions are possible according to the company news release.
+
+[California halted injections of Moderna Covid vaccine batch due to ‘higher-than-usual number of adverse events’](https://www.rt.com/usa/512825-moderna-california-vaccine-adverse-reactions/)
+
+Interestingly the [FDA report](https://www.fda.gov/media/144434/download) doesn't seem to mention
+which variant of COVID it is effective against and claims 94.5% efficacy in preventing infection
+after the 2nd dose. This also mentions severe adverse reactions in 0.2% to 9.7% of participants
+after the second dose. This seems rushed.
+
+It might be worth reviewing the section on Fauci [above](#can-fauci-be-trusted)
+
+### Novavax
+
+The company [claims](https://ir.novavax.com/news-releases/news-release-details/novavax-covid-19-vaccine-demonstrates-893-efficacy-uk-phase-3) 89.3% efficacy
+against the UK variant of the virus and 49.4% against the South African variant.
+
+Note that the South African variant has been [reported](https://nypost.com/2021/01/28/south-african-covid-19-strain-found-in-us/) in the United States. 
+
+### (TODO) Notes
+
+* <https://dcswampwatch.org/gilead-disputes-who-data-confirming-covid-19-drug-remdesivir-is-a-flop/>
+* <https://twitter.com/gummibear737/status/1353806874282516480>
 * <https://twitter.com/boriquagato/status/1335570781292654592>
 * <https://twitter.com/gummibear737/status/1336786692833992705>
 * <https://twitter.com/BretWeinstein/status/1337827650211991554>
-* <https://nypost.com/2020/12/25/moderna-covid-vaccine-has-caused-side-effects-for-those-with-cosmetic-facial-fillers/>
-* <https://www.zerohedge.com/covid-19/california-halts-vaccinations-moderna-batch-linked-unusually-high-number-adverse-reactions>
 * <https://twitter.com/gummibear737/status/1316742493287915520>
-* <https://twitter.com/DailyCaller/status/1343708382541262848>
 
-## (TODO) Vaccine Effectiveness
+### (TODO) Can you still spread the virus after vaccination
 
-* <https://www.zerohedge.com/covid-19/er-nurse-tests-positive-covid-8-days-after-being-vaccinated>
-* <https://twitter.com/zerohedge/status/1317165925368582144>
-* <https://twitter.com/zerohedge/status/1349757318263664643>
-* <https://twitter.com/gummibear737/status/1353806874282516480>
-* <https://www.zerohedge.com/covid-19/moderna-jab-not-effective-against-mutant-south-african-covid-strain>
-* Vaccine won't prevent spread?
-* <https://www.zerohedge.com/covid-19/it-just-doesnt-work-expected-macron-questions-covid-vaccine-credibility-eu-approves>
-* <https://twitter.com/zerohedge/status/1354899690559578115>
-* <https://dailycaller.com/2021/01/29/johnson-johnsons-coronavirus-vaccine-72-effective/>
+* <https://dailycaller.com/2020/12/28/world-health-organization-chief-scientist-soumya-swaminathan-coronavirus-vaccine-transmissibility-efficacy-skeptic/>
 
 ## (TODO) Ventilators
 
@@ -274,6 +536,29 @@ https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/statu
 * <http://fullmeasure.news/news/cover-story/cdc-investigation>
 * <https://www.zerohedge.com/covid-19/israel-cases-rise-despite-lockdown-vaccinations-japan-extends-state-emergency-live-updates>
 * <https://www.zerohedge.com/covid-19/astrazeneca-lied-patients-about-dosing-mistake-during-trial>
+* <https://www.psychnewsdaily.com/new-study-covid-19-has-led-to-a-53-decrease-in-heart-surgery-in-the-us/>
+* <https://gab.com/boriquagato>
+* <https://www.theblaze.com/news/report-reveals-why-world-health-organization-is-running-interference-for-communist-china-on-coronavirus>
+* <https://web.archive.org/web/20201228184621/https://twitter.com/boriquagato/status/1343618368876675078>
+* <https://web.archive.org/web/20200712074606/https://twitter.com/boriquagato/status/1280990976694083585>
+* <https://web.archive.org/web/20200928150325/https://twitter.com/boriquagato/status/1310595825865756673>
+* <https://web.archive.org/web/20200928150305/https://twitter.com/boriquagato/status/1310595828042653697>
+* <https://duckduckgo.com/?q=%22Description+of+studies+included+in+the+review+of+face+masks%22+&t=brave&ia=web>
+* <https://duckduckgo.com/?q=World+Health+Organization+%22review+of+face+masks%22+2019&t=brave&ia=web>
+* <https://www.pnas.org/content/118/4/e2014564118>
+* <https://www.usatoday.com/story/news/factcheck/2020/05/30/fact-check-wearing-face-mask-not-cause-hypoxia-hypercapnia/5260106002/>
+* <https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fprevent-getting-sick%2Fcloth-face-cover-faq.html>
+* <https://twitter.com/AlexBerenson/status/1317875526997102594>
+* <https://news.sky.com/story/coronavirus-which-face-covering-works-best-scientists-test-14-and-find-one-actually-increases-risk-of-infection-12046715>
+* <https://www.nature.com/articles/d41586-020-02801-8>
+* <https://www.businessinsider.com/sweden-shifts-away-no-lockdown-strategy-amid-growing-case-numbers-2020-10>
+* <https://aapsonline.org/mask-facts/>
+* <https://covidplanningtools.com/the-pros-and-cons-of-mask-usage/>
+* <https://web.archive.org/web/20200724073915/https://www.zerohedge.com/political/coronavirus-traveled-nearly-30-feet-german-slaughterhouse-where-1500-employees-contracted>
+* <https://web.archive.org/web/20200724073915/https://www.zerohedge.com/political/coronavirus-traveled-nearly-30-feet-german-slaughterhouse-where-1500-employees-contracted>
+* <https://www.bloomberg.com/news/articles/2021-02-06/putin-s-once-scorned-vaccine-is-now-a-favorite-in-pandemic-fight>
+* <https://web.archive.org/web/20201011194103/https://twitter.com/gummibear737/status/1315376802265792512>
+* <https://twitter.com/gummibear737/status/1317829332740472832>
 
 Gain of Function Research
 
