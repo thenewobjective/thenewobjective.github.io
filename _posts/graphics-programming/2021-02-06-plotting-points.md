@@ -3,7 +3,7 @@ layout: post
 icon: file-text
 category: Graphics Programming
 title:  "2 - Plotting Points"
-date:   2020-08-25 18:50:00 -0600
+date:   2021-02-06 23:00:00 -0600
 permalink: /graphics-programming/plotting-points
 commentThreadId: 46
 ---
@@ -26,7 +26,7 @@ class Graphic {
         this.#imageData = new ImageData(width, height)
     }
 
-    get imageData(){ return this.#imageData; }
+    get imageData() { return this.#imageData; }
 }
 ```
 
@@ -68,15 +68,16 @@ const r = data[bytes * (width * y + x)  + 0],
       a = data[bytes * (width * y + x)  + 3]
 ```
 
+Notice that `height` is not necessary for this computation due to our choosing Row-Major order.
+
 Time to define our `plot` function. Since plotting is not specific to a shape we'll define it on the base class:
 
 ```js
-// Graphic.js
 class Graphic {
     ...
     plot(x, y, r, g, b, a) {
         const bytes = 4,
-              {data, width, height} = this.#imageData,
+              {data, width} = this.#imageData,
               i = bytes * (width * y + x);
         data[i + 0] = r
         data[i + 1] = g
@@ -89,20 +90,19 @@ class Graphic {
 
 You'd probably think it feels awkward and noisy to have to pass in the RGBA components separately as in `.plot(120,4,255,0,0,255)`, so we'll
 update the method to support hex colors: `.plot(120,4,0xFF0000FF)`, which is convenient as we can name them `.plot(120,4,RED)`. Let's stay consistent and
-continue to use named parameters `.plot({x:120, y:4, c:RED})`:
+continue to use named parameters `.plot({x:120, y:4, color:RED})`:
 
 ```js
-// Graphic.js
 class Graphic {
     ...
-    plot({x, y, c}) {
+    plot({x, y, color}) {
         const bytes = 4,
-              {data, width, height} = this.#imageData,
+              {data, width} = this.#imageData,
               i = bytes * (width * y + x);
-        data[i + 0] = (c >>> 24);
-        data[i + 1] = (c << 8 >>> 24);
-        data[i + 2] = (c << 16 >>> 24);
-        data[i + 3] = (c << 24 >>> 24);
+        data[i + 0] = (color >>> 24);
+        data[i + 1] = (color << 8 >>> 24);
+        data[i + 2] = (color << 16 >>> 24);
+        data[i + 3] = (color << 24 >>> 24);
     }
     ...
 }
@@ -159,15 +159,14 @@ Bin: | 00000000 00000000 00000000 10011001 |
 Which leaves us with: `0x99`
 
 Now we don't want to attempt to draw pixels outside of the boundaries nor do we want
-to try and draw pixels at a fractional position such as `plot({x:-1, y:18.5, c:BLUE})`. Let's
+to try and draw pixels at a fractional position such as `plot({x:-1, y:18.5, color:BLUE})`. Let's
 update the method to handle these cases:
 
 ```js
-// Graphic.js
 class Graphic {
     ...
-    plot({x, y, c}) {
-        const {width, height, data} = this.#imageData;
+    plot({x, y, color}) {
+        const {data, height, width} = this.#imageData;
 
         if(x < 0 || y < 0 || x >= width || y >= height)
             return;
@@ -177,31 +176,30 @@ class Graphic {
               bytes = 4,
               i = bytes * (width * yf + xf);
 
-        data[i + 0] = (c >>> 24);
-        data[i + 1] = (c << 8 >>> 24);
-        data[i + 2] = (c << 16 >>> 24);
-        data[i + 3] = (c << 24 >>> 24);
+        data[i + 0] = (color >>> 24);
+        data[i + 1] = (color << 8 >>> 24);
+        data[i + 2] = (color << 16 >>> 24);
+        data[i + 3] = (color << 24 >>> 24);
     }
     ...
 }
 ```
 
-With our new plotting ability we can start putting it to use:
+With our new plotting ability we can start putting it to use. We'll generate
+some noise:
 
 ```js
-// Noise.js
 import Graphic from './Graphic.js'
 
 class Noise extends Graphic {
-    #randomInt = (max) => Math.floor(Math.random() * Math.floor(max));
+    randomColor() { return Math.floor(Math.random() * 0xFFFFFFFF) }
 
     constructor({width, height}) {
         super({width, height})
 
         for(let x = 0; x < width; x++) {
             for(let y = 0; y < height; y++) {
-                const color = this.#randomInt(0xFFFFFFFF)
-                this.plot({x,y,c: color})
+                this.plot({x, y, color: this.randomColor()})
             }
         }
     }
@@ -212,15 +210,20 @@ export default Noise
 
 Implementing noise is straightforward enough. Iterate over every pixel, generate a random color, then plot it.
 
+Next, we'll display our noise graphic:
+
 ```js
-// noise-example.js
 import Canvas from './Canvas.js'
 import Noise from './Noise.js'
 
-const noise = new Noise({width: 640, height: 480})
+const noise = new Noise({height: 480, width: 640})
 
-const canvas = new Canvas({width: 640, height: 480})
-canvas.appendTo({element: document.getElementById('noise-example')})
+const canvas = new Canvas({
+    container: document.getElementById('noise-example'),
+    height: 480,
+    width: 640
+})
+
 canvas.draw({imageData: noise.imageData, top: 0, left: 0})
 ```
 
@@ -228,7 +231,6 @@ As a client having to pass in `noise.imageData` to the `draw` method is a bit re
 to accept the graphic directly:
 
 ```js
-// Canvas.js
 class Canvas {
     ...
     draw({graphic, top, left}) {
@@ -237,10 +239,9 @@ class Canvas {
 }
 ```
 
-And the corresponding example:
+And update the corresponding example:
 
 ```js
-// noise-example.js
 ...
 canvas.draw({graphic: noise, top: 0, left: 0})
 ```
@@ -248,7 +249,9 @@ canvas.draw({graphic: noise, top: 0, left: 0})
 <figure id="noise-example">
     <figcaption>Generating Noise</figcaption>
 </figure>
-<script type="module" src="/scripts/graphics-programming/noise-example.js"></script>
+<script type="module" src="/scripts/graphics-programming/lesson2/noise-example.js"></script>
 
 You might have been surprised at how much effort went into putting a pixel on the screen but this is fundamental
 to our future work and now it's done. Time to move on.
+
+[Source code for this lesson](/scripts/graphics-programming/lesson2).

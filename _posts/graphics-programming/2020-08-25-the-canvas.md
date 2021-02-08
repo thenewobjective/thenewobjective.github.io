@@ -19,20 +19,17 @@ class Canvas {
     #canvas = document.createElement('canvas')
     #ctx = this.#canvas.getContext('2d',{alpha: false})
   
-    constructor({height, width}) {
+    constructor({container, height, width}) {
       Object.assign(this.#canvas, {height, width})
-    }
-
-    appendTo({element}) {
-      element.appendChild(this.#canvas)
+      container.appendChild(this.#canvas)
     }
 }
 ```
 
-The private property `#canvas` holds the actual HTML element, and the `appendTo` method will be used to attach it the document.
-The `constructor` accepts a `height` and a `width` for defining the initial size. The `#ctx` property references the drawing
-api of the canvas. The canvas is transparent by default. To prevent any confusion about what is on the canvas and what is behind
-it we make it opaque with the `{alpha: false}` option.
+The private property `#canvas` holds the actual HTML element.
+The `constructor` accepts a `height` and a `width` for defining the initial size and a `container`
+for the html element that will contain the canvas . The `#ctx` property references the drawing
+api of the canvas. The canvas is transparent by default. To prevent any confusion about what is on the canvas and what is behind it we make it opaque with the `{alpha: false}` option.
 
 We want to keep this class simple so we'll limit the ability to draw on it by providing a single method called `draw`:
 
@@ -68,3 +65,5 @@ a couple reasons:
   Ex: `repo.find({name: 'bob', age: 12, weight: 140, zip: 53202})`
 
 This style of named parameters will be used in all future examples.
+
+[Source code for this lesson](/scripts/graphics-programming/lesson1).
