@@ -133,3 +133,5 @@ https://www.linkedin.com/pulse/scrum-communism-nemanja-marin%C4%8Di%C4%87/
 	
 	-------
 	WHat happens if a Product owner is not available for a meeting? What happens?
+
+Agile Scaling?
