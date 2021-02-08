@@ -118,3 +118,18 @@ https://www.zerohedge.com/technology/boeing-737-crashes-caused-few-lines-missing
 http://beza1e1.tuxen.de/waterfall.html
 http://beza1e1.tuxen.de/cost_of_agile.html
 https://www.linkedin.com/pulse/scrum-communism-nemanja-marin%C4%8Di%C4%87/
+
+
+	Jocko <https://www.youtube.com/watch?v=zrlpv1HkKjM> @40:00
+	
+	"What is wrong with you that each one of your teams needs to talk to you every single day?"
+	"That's crazy to me. THat's not decentralized command"
+	"You aren't giving people the right direction"
+	"They're not hearing what you're saying"
+	"They don't have guidelines"
+	"You haven't given them the trust"
+	etc.
+	There are a number of reasons why it's happening, but it shouldn't be
+	
+	-------
+	WHat happens if a Product owner is not available for a meeting? What happens?
