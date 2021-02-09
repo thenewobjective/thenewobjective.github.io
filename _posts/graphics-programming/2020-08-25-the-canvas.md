@@ -17,7 +17,7 @@ the element and hide the dirty details:
 ```js
 class Canvas {
     #canvas = document.createElement('canvas')
-    #ctx = this.#canvas.getContext('2d',{alpha: false})
+    #ctx = this.#canvas.getContext('2d')
   
     constructor({container, height, width}) {
       Object.assign(this.#canvas, {height, width})
@@ -29,7 +29,7 @@ class Canvas {
 The private property `#canvas` holds the actual HTML element.
 The `constructor` accepts a `height` and a `width` for defining the initial size and a `container`
 for the html element that will contain the canvas . The `#ctx` property references the drawing
-api of the canvas. The canvas is transparent by default. To prevent any confusion about what is on the canvas and what is behind it we make it opaque with the `{alpha: false}` option.
+api of the canvas. The canvas is transparent by default.
 
 We want to keep this class simple so we'll limit the ability to draw on it by providing a single method called `draw`:
 
