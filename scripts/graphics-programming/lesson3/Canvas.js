@@ -1,9 +1,8 @@
 class Canvas {
     #canvas = document.createElement('canvas')
-    #ctx = this.#canvas.getContext('2d',{alpha: false})
+    #ctx = this.#canvas.getContext('2d')
   
     constructor({container, height, width}) {
-      this.#canvas.style.backgroundColor = 'black'
       Object.assign(this.#canvas, {height, width})
       container.appendChild(this.#canvas)
     }
