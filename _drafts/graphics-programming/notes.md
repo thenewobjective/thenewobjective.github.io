@@ -19,6 +19,7 @@
 - <https://github.com/jacobcpeters/Unit-Bezier>
 - <https://github.com/WebKit/webkit/blob/89c28d471fae35f1788a0f857067896a10af8974/Source/WebCore/platform/graphics/UnitBezier.h#L62>
 - <https://sf2platinum.wordpress.com/2020/10/15/row-scrolling-for-parallax-effects/>
+- <https://en.wikipedia.org/wiki/Ordered_dithering>
 
 ---
 
