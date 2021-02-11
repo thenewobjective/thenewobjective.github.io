@@ -559,6 +559,28 @@ https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/statu
 * <https://www.bloomberg.com/news/articles/2021-02-06/putin-s-once-scorned-vaccine-is-now-a-favorite-in-pandemic-fight>
 * <https://web.archive.org/web/20201011194103/https://twitter.com/gummibear737/status/1315376802265792512>
 * <https://twitter.com/gummibear737/status/1317829332740472832>
+* <https://twitter.com/gerdosi/status/1358726785433796609>
+* <https://www.zerohedge.com/geopolitical/russias-sputnik-v-covid-vaccine-surprise-global-hit>
+* <https://www.zerohedge.com/covid-19/cdc-and-tsa-form-federal-mask-police-and-enforcement-officer-discretion>
+* <https://dailycaller.com/2021/02/05/cdc-director-too-early-tell-bidens-mask-mandates-delivering-results/>
+* <https://twitter.com/Kevin_McKernan/status/1358413173179764738>
+* <https://www.zerohedge.com/covid-19/wake-call-astrazeneca-jab-fails-prevent-south-africa-strain>
+* <https://www.zerohedge.com/covid-19/south-africa-halts-vaccine-rollout-astrazeneca-jab-ineffective-combating-mutant-covid>
+* <https://www.zerohedge.com/markets/who-concludes-coronavirus-came-animal-not-wuhan-lab>
+* <https://twitter.com/gummibear737/status/1359618993875791877>
+* <https://twitter.com/gummibear737/status/1359615231291441153>
+* <https://dailycaller.com/2021/02/10/peter-daszak-us-intelligence-coronavirus-origins/>
+* <https://dailycaller.com/2021/02/10/two-masks-better-fighting-against-covid-19-cdc-study/>
+* <https://dailycaller.com/2021/02/10/safety-concerns-americans-hesitant-receive-coronavirus-vaccine/>
+* <https://twitter.com/gummibear737/status/1358863171155619847>
+* <https://twitter.com/MonicaGandhi9/status/1356818441064206337>
+* <https://twitter.com/Covid19Crusher/status/1358750382558765056>
+* <https://twitter.com/MLevitt_NP2013/status/1358832898703433728>
+* <https://dailycaller.com/2021/02/07/astrazeneca-oxford-university-coronavirus-vaccine-variant-strain/>
+* <https://twitter.com/shycollie/status/1358414434520154115>
+* <https://twitter.com/ClownBasket/status/1355628586619830272>
+* <https://twitter.com/gummibear737/status/1355623293437566976>
+
 
 Gain of Function Research
 
