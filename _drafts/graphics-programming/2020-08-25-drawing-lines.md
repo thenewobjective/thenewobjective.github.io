@@ -123,7 +123,7 @@ const lerp = ({a, b, t}) => (1 - t) * a + t * b,
 class Graphic {
   ...
     plotBezier({ctrlPts, color}) {
-        const step = 0.1;
+        const step = 0.01;
         for(let t = 0; t < 1; t += step) {
             const [x,y] = bezier({ctrlPts, t})
             this.plot({x, y, color})
@@ -176,6 +176,22 @@ canvas.draw({graphic: bezierExample1, top: 0, left: 0})
 
 <figure id="example-1"></figure>
 <script type="module" src="/scripts/graphics-programming/lesson3/example-1.js"></script>
+
+With the spaces between the pixels we can see pretty clearly how the "line" is drawn.
+To make this look moreso like a line we can reduce the step size:
+
+```js
+class Graphic {
+  ...
+    plotBezier({ctrlPts, color}) {
+        const step = 0.001;
+        ...
+    }
+}
+```
+
+<figure id="example-2"></figure>
+<script type="module" src="/scripts/graphics-programming/lesson3/example-2.js"></script>
 
 <!--
 https://codepen.io/mlhaufe/pen/MWaZoqp?editors=1010
