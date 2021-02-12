@@ -583,6 +583,12 @@ https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/statu
 * <https://twitter.com/benmagelsen/status/1359908346912886784>
 * <https://twitter.com/gummibear737/status/1360014374296051717>
 * <https://thepointsguy.com/news/cathay-pacific-adds-mask-exemption-for-premium-passengers/>
+* <https://dailycaller.com/2021/02/11/astrazenecas-coronavirus-variant-vaccines-six-months/>
+* <https://www.zerohedge.com/covid-19/global-cases-top-107mm-who-warns-about-covid-mutations-live-updates>
+* <https://dailycaller.com/2021/02/11/cdc-covid-coronavirus-fully-vaccinated-people-update-quarantine-guidelines/>
+* <https://twitter.com/gummibear737/status/1350127399543910403>
+* <https://twitter.com/DailyCaller/status/1359158869562437640>
+* <https://twitter.com/BretWeinstein/status/1359198621686661121>
 
 Gain of Function Research
 
