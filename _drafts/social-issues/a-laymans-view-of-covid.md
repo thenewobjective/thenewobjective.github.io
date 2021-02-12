@@ -580,7 +580,9 @@ https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/statu
 * <https://twitter.com/shycollie/status/1358414434520154115>
 * <https://twitter.com/ClownBasket/status/1355628586619830272>
 * <https://twitter.com/gummibear737/status/1355623293437566976>
-
+* <https://twitter.com/benmagelsen/status/1359908346912886784>
+* <https://twitter.com/gummibear737/status/1360014374296051717>
+* <https://thepointsguy.com/news/cathay-pacific-adds-mask-exemption-for-premium-passengers/>
 
 Gain of Function Research
 
