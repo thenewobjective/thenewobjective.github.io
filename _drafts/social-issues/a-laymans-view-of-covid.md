@@ -589,6 +589,21 @@ https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/statu
 * <https://twitter.com/gummibear737/status/1350127399543910403>
 * <https://twitter.com/DailyCaller/status/1359158869562437640>
 * <https://twitter.com/BretWeinstein/status/1359198621686661121>
+* <https://dailycaller.com/2021/02/15/cdc-director-rochelle-walensky-opening-schools-position/>
+* <https://www.zerohedge.com/covid-19/fauci-stumps-stimulus-after-cdc-changes-school-reopening-guidelines-appease-lobbyists>
+* <https://twitter.com/EricRWeinstein/status/1361297278057607175>
+* <https://dailycaller.com/2021/01/28/andrew-cuomo-nursing-home-deaths-coronavirus/>
+* <https://dailycaller.com/2021/02/12/world-health-organization-investigation-covid-19-coronavirus-origin-lab-leak-theory/>
+* <https://dailycaller.com/2021/02/12/biden-administration-cdc-director-rochelle-walensky-bus-teachers-return-school-coronavirus-vaccine/>
+* <https://dailycaller.com/2021/02/11/tedros-who-lab-leak-theory-remains-open/>
+* <https://twitter.com/Kevin_McKernan/status/1360273304209281024>
+* <https://www.zerohedge.com/covid-19/who-reveals-china-refused-access-raw-data-earliest-covid-cases>
+* <https://zenodo.org/record/4512260#.YB4ynXQzYjc>
+* <https://childrenshealthdefense.org/webinar/the-covid-vaccine-on-trial-if-you-only-knew-watch-now/>
+* <https://www.nationalreview.com/2021/02/on-reopening-the-schools-joe-biden-is-ignoring-the-science/amp/>
+* <https://c19ivermectin.com/>
+* <https://www.youtube.com/watch?v=PRa6t_e7dgI&feature=youtu.be>
+* <https://dailycaller.com/2021/02/16/who-china-likely-misrepresented-time-of-initial-coronavirus-outbreak/>
 
 Gain of Function Research
 
