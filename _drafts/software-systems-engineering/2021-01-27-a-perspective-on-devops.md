@@ -215,4 +215,6 @@ http://radar.oreilly.com/2012/06/what-is-devops.html
 https://standards.ieee.org/project/2675.html
 https://runnable.com/blog/conway-s-law-in-reverse-how-app-architecture-influences-org-structure
 https://devops.com/the-origins-of-devops-whats-in-a-name/
+
+https://www.devops-research.com/research.html
 -->
