@@ -256,6 +256,7 @@ Your skin synthesizes this in the skin from sunlight.
 * <https://twitter.com/zerohedge/status/1350201249245917190>
 * <https://web.archive.org/web/20201015153244/https://twitter.com/boriquagato/status/1316762826636234754>
 * <https://www.zerohedge.com/markets/stanford-peer-reviewed-study-did-not-find-evidence-lockdowns-were-effective-stopping-covid>
+* <https://twitter.com/FatEmperor/status/1364547567619608580>
 
 ## (TODO) Herd immunity
 
@@ -340,7 +341,7 @@ Omega-3 supplementation may help prevent this problem or aid in recovery:
 
 https://web.archive.org/web/20201017123340/https://twitter.com/boriquagato/status/1317443577673322497
 
-## Can Fauci Be Trusted
+## Can Fauci Be Trusted (TODO)
 
 No. He has openly admitted to lying to the public for political
 purposes. Even if he says things that are true one shouldn't
@@ -359,8 +360,9 @@ I'm concerned about the implied relationship with the [Moderna vaccine](#moderna
 //////////////
 * Jimmy Dore clips
 * <https://twitter.com/gummibear737/status/1317829332740472832>
+* <https://twitter.com/gummibear737/status/1363636424709464067>
 
-There are no doubt additional examples, but this is enough for me. 
+There are no doubt additional examples, but this is enough for me.
 
 ## (TODO) Can Professor Neil Ferguson be trusted?
 
@@ -604,9 +606,22 @@ https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/statu
 * <https://c19ivermectin.com/>
 * <https://www.youtube.com/watch?v=PRa6t_e7dgI&feature=youtu.be>
 * <https://dailycaller.com/2021/02/16/who-china-likely-misrepresented-time-of-initial-coronavirus-outbreak/>
+* <https://banned.video/watch?id=60259a0fd7e6630024f38b8a>
+* <https://twitter.com/sanchak74/status/1358078540143493123>
 
 Gain of Function Research
 
 * <https://twitter.com/HeatherEHeying/status/1355998786426789891>
 * <https://twitter.com/HeatherEHeying/status/1355998834350911488>
 * <https://twitter.com/Ayjchan/status/1355679382178844672>
+* <https://duckduckgo.com/?q=doctor+died+after+taking+vaccine&t=brave&ia=web>
+* <https://twitter.com/MartyMakary/status/1363599195077279745>
+* <https://www.zerohedge.com/markets/just-pfizer-vaccine-found-be-99-effective-preventing-death-japan-discovers-new-covid>
+* <https://twitter.com/foundmyfitness/status/1363262308332396544>
+* <https://twitter.com/GentleMutt/status/1362934556421095426>
+* <https://twitter.com/zerohedge/status/1363159377407000576>
+* <https://twitter.com/Ayjchan/status/1358553053599854592>
+* https://twitter.com/Kevin_McKernan/status/1364316857759653891
+
+* https://twitter.com/letsthinkdeeply/status/1364920759819390977
+* https://www.zerohedge.com/markets/israeli-scientists-discover-all-natural-covid-treatment

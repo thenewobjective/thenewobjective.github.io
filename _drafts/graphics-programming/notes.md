@@ -45,3 +45,12 @@ getting to the algorithm though we'll want some utility functions first:
 * <https://twitter.com/pcwalton/status/1299884289010495490>
 * <https://twitter.com/icaroleles1/status/1299789424193138688>
 - <https://twitter.com/JJcoolkl/status/1296085259243720705>
+* <https://web.archive.org/web/20110408024242/http://designfestival.com/the-cicada-principle-and-why-it-matters-to-web-designers/>
+* <https://news.ycombinator.com/item?id=2419347>
+* <https://ronvalstar.nl/creating-tileable-noise-maps>
+* <https://twitter.com/BretWeinstein/status/1360040670228934656>
+* <https://www.timesofisrael.com/hmo-sees-only-544-covid-infections-among-523000-fully-vaccinated-israelis/>
+* <https://twitter.com/PerpetualValue/status/1361601758305390596>
+* <https://gab.com/boriquagato/posts/105777513369610588>
+* <https://gab.com/CharmingBarbie/posts/105776877353427431>
+* <https://gab.com/boriquagato/posts/105776718161162997>
