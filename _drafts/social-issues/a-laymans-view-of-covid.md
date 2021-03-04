@@ -693,3 +693,5 @@ https://twitter.com/DailyCaller/status/1367533647046320132
 https://twitter.com/andrewbostom/status/1367481752231567362
 
 https://twitter.com/gummibear737/status/1367476126986227714
+
+https://twitter.com/foundmyfitness/status/1367183008537567232
