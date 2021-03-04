@@ -626,3 +626,70 @@ Gain of Function Research
 * https://twitter.com/letsthinkdeeply/status/1364920759819390977
 * https://www.zerohedge.com/markets/israeli-scientists-discover-all-natural-covid-treatment
 * https://twitter.com/JudicialWatch/status/1366434136123146241
+
+Vaccine
+
+https://www.dcclothesline.com/2021/02/24/immunologist-warns-pfizer-and-moderna-coronavirus-vaccines-may-cause-neurodegenerative-disorders-such-as-alzheimers/
+https://scivisionpub.com/pdfs/covid19-rna-based-vaccines-and-the-risk-of-prion-disease-1503.pdf
+
+https://yournews.com/2020/12/05/1953285/doctors-raise-alarm-over-covid-vaccine-linked-to-infertility/
+https://www.cbsnews.com/video/false-links-between-covid-vaccine-and-infertility-raise-alarm-among-women/
+https://en.wikipedia.org/wiki/Wolfgang_Wodarg
+https://www.lifesitenews.com/news/former-pfizer-vp-no-need-for-vaccines-the-pandemic-is-effectively-over
+
+Hank Aaron vaccine death?
+
+Nurses don;t wear masks around sick people...
+
+
+https://vaccinedeaths.com/2021-02-22-who-green-lights-mrna-vaccine-experimentation-pregnant-women-babies.html
+
+https://geopolitic.org/2021/02/20/newsweek-fact-check-claims-india-vaccine-ban-mostly-false-while-admitting-de-facto-ban/
+
+https://twitter.com/jordanbpeterson/status/1364621648935215104
+
+https://twitter.com/zerohedge/status/1364598610290180102
+
+https://twitter.com/Kevin_McKernan/status/1364581119082045441
+
+https://twitter.com/Kevin_McKernan/status/1364999764987711494
+
+WHO Quotes:
+
+"we in the World Health Organization do not
+advocate lockdowns as the primary means of control
+of this virus. The only time we believe a lockdown is
+justified is to buy you time to reorganize, regroup,
+rebalance you resources, protect your health
+workers who are exhausted, but by and large, we'd
+rather not do it."
+
+"Locdowns just have one consequence that you
+musr never every belittle, and that is making poor
+people an awful lot poorer.
+Look what's happened to smallholder farmers all
+over the world. Look what's happening to poverty
+levels, It seems that we may well have a doubling of
+world poverty by next year.
+We may well have at least a doubling of child
+malnutrition."
+
+https://www.zerohedge.com/medical/fda-panel-unanimously-endorses-jj-covid-vaccine
+
+https://twitter.com/andrewbostom/status/1365413678506520583
+
+https://dailycaller.com/2021/02/26/one-dose-pfizer-vaccine-may-be-enough-studies/
+
+https://www.zerohedge.com/markets/johnson-johnson-single-shot-vaccine-efficacy-remains-under-public-scrutiny
+
+https://www.zerohedge.com/covid-19/how-does-jj-vaccine-compare-other-covid-vaccines-4-questions-answered
+
+https://twitter.com/gummibear737/status/1367119908878884866
+
+https://twitter.com/DanCrenshawTX/status/1367160396025593859
+
+https://twitter.com/DailyCaller/status/1367533647046320132
+
+https://twitter.com/andrewbostom/status/1367481752231567362
+
+https://twitter.com/gummibear737/status/1367476126986227714
