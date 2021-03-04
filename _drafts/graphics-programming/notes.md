@@ -41,7 +41,10 @@ getting to the algorithm though we'll want some utility functions first:
 > will only be as fast as the slowest branch. A ray can deep dive into many nodes and end up hitting nothing
 > -gavanw
 ---
-* <https://twitter.com/ciaccodavide/status/964407412634472448>
-* <https://twitter.com/pcwalton/status/1299884289010495490>
-* <https://twitter.com/icaroleles1/status/1299789424193138688>
+
+- <https://twitter.com/ciaccodavide/status/964407412634472448>
+- <https://twitter.com/pcwalton/status/1299884289010495490>
+- <https://twitter.com/icaroleles1/status/1299789424193138688>
 - <https://twitter.com/JJcoolkl/status/1296085259243720705>
+- <https://bartwronski.com/2021/02/28/computing-gradients-on-grids-forward-central-and-diagonal-differences/>
+- <https://jbaker.graphics/resources/voraldo_paper/Voraldo.pdf>
