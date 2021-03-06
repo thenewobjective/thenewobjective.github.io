@@ -626,3 +626,5 @@ Gain of Function Research
 * https://twitter.com/letsthinkdeeply/status/1364920759819390977
 * https://www.zerohedge.com/markets/israeli-scientists-discover-all-natural-covid-treatment
 * https://twitter.com/JudicialWatch/status/1366434136123146241
+* https://twitter.com/GirardotMarc/status/1367942426581741568
+* https://twitter.com/Daoyu15/status/1368015656969404416
