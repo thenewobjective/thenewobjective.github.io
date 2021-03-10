@@ -699,3 +699,11 @@ https://twitter.com/gummibear737/status/1367476126986227714
 https://twitter.com/foundmyfitness/status/1367183008537567232
 
 https://twitter.com/Kevin_McKernan/status/1369489100181487617
+
+https://twitter.com/gummibear737/status/1364152165116354562
+
+https://twitter.com/ClownBasket/status/1357884968840617985
+
+https://twitter.com/dogsboro/status/1357947744351092741
+
+https://www.usatoday.com/story/opinion/2021/03/09/cdc-school-opening-covid-rules-guidance-column/4628552001/
