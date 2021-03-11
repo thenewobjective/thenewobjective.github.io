@@ -25,3 +25,10 @@ Now try with a zero in the denominator:
 How is this rule consistent with PEMDAS?
 
 etc.
+
+60 / 5(7-5) = 24
+
+    Following PEMDAS
+        60 / 5(2) = 
+        60 / 10 =
+        6

@@ -703,3 +703,22 @@ https://twitter.com/Kevin_McKernan/status/1368579623408242690
 https://twitter.com/Heachy_1979/status/1368114789952729088
 
 https://twitter.com/jhnhellstrom/status/1368585541462208519
+https://twitter.com/foundmyfitness/status/1367183008537567232
+
+https://twitter.com/Kevin_McKernan/status/1369489100181487617
+
+https://twitter.com/gummibear737/status/1364152165116354562
+
+https://twitter.com/ClownBasket/status/1357884968840617985
+
+https://twitter.com/dogsboro/status/1357947744351092741
+
+https://www.usatoday.com/story/opinion/2021/03/09/cdc-school-opening-covid-rules-guidance-column/4628552001/
+
+https://twitter.com/zerohedge/status/1369708540441591810
+
+https://www.zerohedge.com/covid-19/4th-wave-new-covid-cases-plateau-despite-surge-vaccinations-nyc-reopens-high-schools
+https://twitter.com/TocRadio/status/1368957607373910022
+https://twitter.com/Covid19Crusher/status/1368927602476482569
+
+https://dailycaller.com/2021/03/05/detroit-mayor-mike-duggan-johnson-vaccine-covid-19-coronavirus/
