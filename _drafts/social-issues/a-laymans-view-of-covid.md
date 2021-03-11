@@ -715,3 +715,9 @@ https://twitter.com/TocRadio/status/1368957607373910022
 https://twitter.com/Covid19Crusher/status/1368927602476482569
 
 https://dailycaller.com/2021/03/05/detroit-mayor-mike-duggan-johnson-vaccine-covid-19-coronavirus/
+
+https://twitter.com/erichhartmann/status/1370035530335977473
+
+https://twitter.com/gummibear737/status/1315720594521026562
+
+https://twitter.com/MartyMakary/status/1369796811234349071
