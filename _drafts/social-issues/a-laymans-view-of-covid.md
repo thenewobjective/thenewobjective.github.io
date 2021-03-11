@@ -696,6 +696,13 @@ https://twitter.com/andrewbostom/status/1367481752231567362
 
 https://twitter.com/gummibear737/status/1367476126986227714
 
+https://twitter.com/wesbury/status/1367881664739819521
+
+https://twitter.com/Kevin_McKernan/status/1368579623408242690
+
+https://twitter.com/Heachy_1979/status/1368114789952729088
+
+https://twitter.com/jhnhellstrom/status/1368585541462208519
 https://twitter.com/foundmyfitness/status/1367183008537567232
 
 https://twitter.com/Kevin_McKernan/status/1369489100181487617
