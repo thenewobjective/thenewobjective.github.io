@@ -173,3 +173,4 @@ While I have hopes for this standard, I’ve been burned too often to suggest it
 
 * [Adam Silver](https://adamsilver.io/) has written an [article](https://adamsilver.io/articles/the-problem-with-web-components/) based on this one and others that provides another perspective.
 * [Lea Verou](https://lea.verou.me/)'s [article](https://lea.verou.me/2020/09/the-failed-promise-of-web-components/) covers some usability issues and has a call to action.
+* [Anna Monus](https://blog.logrocket.com/what-happened-to-web-components/) asks: [What happened to web components?](https://blog.logrocket.com/what-happened-to-web-components/)

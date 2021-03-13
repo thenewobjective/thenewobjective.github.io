@@ -730,3 +730,8 @@ https://lbry.tv/@shortXXvids:e/CA-43-Reiner---getting-life-insurance-:e
 https://twitter.com/Kevin_McKernan/status/1370745145298141186
 
 https://twitter.com/therealarod1984/status/1370405167582085123
+https://twitter.com/erichhartmann/status/1370035530335977473
+
+https://twitter.com/gummibear737/status/1315720594521026562
+
+https://twitter.com/MartyMakary/status/1369796811234349071
