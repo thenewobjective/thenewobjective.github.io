@@ -1,0 +1,31 @@
+.spinner-bubbles {
+    position: relative;
+}
+
+.spinner-bubble {
+    background-image: url('/media-library/demos/spinball.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: block;
+    position: absolute;
+}
+
+.spinner-bubbles-canvas {
+    background-color: black;
+    border: 1px solid #ccc;
+
+    width: 640px;
+    height: 480px;
+    margin: 1em auto;
+    position: relative;
+}
+
+.spinner-bubbles-form {
+    margin: auto;
+    width: 640px;
+}
+
+.spinner-bubbles-form label {
+    display: block;
+}
