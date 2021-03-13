@@ -722,3 +722,11 @@ https://twitter.com/TocRadio/status/1368957607373910022
 https://twitter.com/Covid19Crusher/status/1368927602476482569
 
 https://dailycaller.com/2021/03/05/detroit-mayor-mike-duggan-johnson-vaccine-covid-19-coronavirus/
+
+https://twitter.com/Bobby_Network/status/1370491780299362306
+
+https://lbry.tv/@shortXXvids:e/CA-43-Reiner---getting-life-insurance-:e
+
+https://twitter.com/Kevin_McKernan/status/1370745145298141186
+
+https://twitter.com/therealarod1984/status/1370405167582085123
