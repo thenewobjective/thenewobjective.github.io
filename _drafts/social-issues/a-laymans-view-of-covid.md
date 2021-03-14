@@ -43,6 +43,8 @@ Wikipedia has a [page describing](https://en.wikipedia.org/wiki/Variants_of_SARS
 There is a [study](https://rep.bioscientifica.com/view/journals/rep/aop/rep-20-0382/rep-20-0382.xml)
 claiming that male fertility can be impacted in the short-term (60 days).
 
+* https://dailycaller.com/2021/03/08/cdc-study-covid-hospitalizations-overweight-obesity/
+
 ## (TODO) How it spreads
 
 There have been a number of news reports of viral spread in meat packing plants. 
@@ -61,7 +63,7 @@ it can survive for two to three days on glass, fabric, metal, plastic or paper."
 * <https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html>
 * <https://web.archive.org/web/20200724073915/https://www.zerohedge.com/political/coronavirus-traveled-nearly-30-feet-german-slaughterhouse-where-1500-employees-contracted>
 
-## (TODO) Do masks work
+## Do masks work
 
 This topic is the most politicized and one where seemingly everyone has a "common-sense" opinion.
 
@@ -91,6 +93,15 @@ showing little to no evidence for the effectiveness of cloth face masks:
 
 * <https://swprs.org/face-masks-evidence/>
 
+February 06, 2020
+
+In a systemic review [published](https://wwwnc.cdc.gov/eid/article/26/5/19-0994_article) on the CDC website
+it was determined that there was "...no significant reduction in influenza transmission with the use of face masks".
+
+This isn't new information either. The same conclusion was reached in 1920:
+
+[AN EXPERIMENTAL STUDY OF THE EFFICACY OF GAUZE FACE MASKS](https://ajph.aphapublications.org/doi/pdf/10.2105/AJPH.10.1.34)
+
 ### Surgical masks
 
 [According to the FDA](https://www.fda.gov/medical-devices/personal-protective-equipment-infection-control/n95-respirators-surgical-masks-and-face-masks#s2):
@@ -117,7 +128,6 @@ According to [this study](http://rc.rcjournal.com/content/55/5/569) they might:
 > is a possibility. Exhalation valve did not significantly ameliorate the 
 > FFR's P<sub>CO<sub>2</sub></sub> impact.
 
-
 #### Cloth Masks
 
 People wear a variety of cloth masks with a large range of effectiveness.
@@ -129,31 +139,44 @@ where I became light headed and nearly passed-out. I noticed later that I was
 changing the way that I was breathing through the mask unconsciously. After changing
 my breathing patterns this was no longer an issue.
 
+### Double Masking
+
+March 5, 2021
+
+* [Japan Supercomputer Finds Double-Masking Doesn't Work](https://japantoday.com/category/national/japan-supercomputer-shows-doubling-masks-offers-little-help-preventing-viral-spread)
+
+[@chadroyvermont](https://www.tiktok.com/@chadroyvermont) has some interesting demonstration
+videos of the effectiveness of different masks in preventing moisture from escaping during respiration.
+TikTok seems to be censoring these intermittently so an indirect reference is [here](https://web.archive.org/web/20210312012105/https://gab.com/a/posts/105874172288493521)  
+
 ### Hygiene
 
 If the masks are not disposed after use or effectively washed they can increase
 the odds of infection by many pathogens beyond COVID-19. Some examples:
 
-<figure>
-    <img src="/media-library/social-issues/covid/mask-fuzzies.png" alt="Mask Fuzzies">
-    <figcaption>
-        Credit: <a href="https://twitter.com/Kevin_McKernan/status/1327280853064552450" target="_blank">@Kevin_McKernan</a>
-    </figcaption>
-</figure>
+<article class="gallery">
+    <figure class='gallery-item'>
+        <img src="/media-library/social-issues/covid/mask-fuzzies.png" alt="Mask Fuzzies">
+        <figcaption>
+            Credit: <a href="https://twitter.com/Kevin_McKernan/status/1327280853064552450" target="_blank">@Kevin_McKernan</a>
+        </figcaption>
+    </figure>
 
-<figure>
-    <img src="/media-library/social-issues/covid/mask-fuzzies-2.png" alt="Mask Fuzzies">
-    <figcaption>
-        Credit: <a href="https://twitter.com/s_kirton/status/1327559617988218880" target="_blank">@s_kirton</a>
-    </figcaption>
-</figure>
+    <figure class='gallery-item'>
+        <img src="/media-library/social-issues/covid/mask-fuzzies-2.png" alt="Mask Fuzzies">
+        <figcaption>
+            Credit: <a href="https://twitter.com/s_kirton/status/1327559617988218880" target="_blank">@s_kirton</a>
+        </figcaption>
+    </figure>
 
-<figure>
-    <img src="/media-library/social-issues/covid/mask-staph.png" alt="Mask Staph Infection">
-    <figcaption>
-        Credit: <a href="https://twitter.com/brianhopkinsmd/status/1327726053335257089" target="_blank">@brianhopkinsmd</a>
-    </figcaption>
-</figure>
+    <figure class='gallery-item'>
+        <img src="/media-library/social-issues/covid/mask-staph.png" alt="Mask Staph Infection">
+        <figcaption>
+            Credit: <a href="https://twitter.com/brianhopkinsmd/status/1327726053335257089" target="_blank">@brianhopkinsmd</a>
+        </figcaption>
+    </figure>
+</article>
+
 
 Interestingly a [research paper](https://pubmed.ncbi.nlm.nih.gov/18710327/) that includes [Fauci](#can-fauci-be-trusted)
 as a co-author concludes that: <em>"The majority of deaths in the 1918-1919 influenza pandemic
@@ -222,7 +245,7 @@ Reminder: your body synthesizes Vitamin-D in the skin when exposed to sunlight (
 * <https://twitter.com/Daniilgor/status/1316501414793838592>
 * <https://dailycaller.com/2021/01/14/public-health-england-study-covid-19-infection-protects-vaccine/>
 * <https://twitter.com/gummibear737/status/1356381000587206657>
-
+* <https://dailycaller.com/2021/02/26/one-dose-pfizer-vaccine-may-be-enough-studies/>
 ## (TODO) Can you spread the disease if you're asymptomatic
 
 * <https://twitter.com/tlowdon/status/1314433379467587585>
@@ -236,6 +259,10 @@ No.
 
 Vitamin D is [known to be effective](#vitamin-d) in reducing negative outcomes of COVID.
 Your skin synthesizes this in the skin from sunlight.
+
+March 5, 2021
+
+["A recent mathematical model has suggested that staying at home did not play a dominant role in reducing COVID-19 transmission."](https://www.nature.com/articles/s41598-021-84092-1)
 
 * <https://dailycaller.com/2021/02/04/emergency-room-visits-covid-19-coronavirus-opioid-overdoses-suicide-mental-health-lockdowns/>
 * <https://dailycaller.com/2021/02/03/nations-largest-cities-30-increase-homicides-2020/>
@@ -345,9 +372,9 @@ https://web.archive.org/web/20201017123340/https://twitter.com/boriquagato/statu
 
 No. He has openly admitted to lying to the public for political
 purposes. Even if he says things that are true one shouldn't
-have to spend the effort separating out fact from lie. 
+have to spend the effort separating out fact from lie.
 
-[Fauci Admits He Lied Because ‘Country Wasn’t Ready’ To Hear The Truth](https://dailycaller.com/2020/12/24/anthony-fauci-coronavirus-covid-19-vaccine-herd-immunity/
+[Fauci Admits He Lied Because ‘Country Wasn’t Ready’ To Hear The Truth](https://dailycaller.com/2020/12/24/anthony-fauci-coronavirus-covid-19-vaccine-herd-immunity/)
 
 > “If you are a healthy young person, there is no reason if you want
 > to go on a cruise ship, go on a cruise ship.”
@@ -369,8 +396,7 @@ There are no doubt additional examples, but this is enough for me.
 * <https://twitter.com/gummibear737/status/1306605767630491650>
 * <https://www.cato.org/blog/did-mitigation-save-two-million-lives>
 
-
-## (TODO) Can the WHO Be Trusted
+## Can the WHO Be Trusted
 
 Personally I do not.
 
@@ -424,6 +450,13 @@ In regards to effectiveness for the multi-dose varieties it should not be surpri
 of COVID infection after receiving only a single dose or [reports](https://www.msn.com/en-us/news/us/new-york-congressman-who-got-vaccine-diagnosed-with-covid/ar-BB1cKMAV)
 of infection immediately after the second dose.
 
+Assuming you [trust the CDC](#can-the-cdc-be-trusted), note that they have a system of [reporting adverse reactions](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/adverse-events.html).
+
+March 8, 2021:
+
+There was a [outbreak](https://www.cbc.ca/news/canada/british-columbia/with-vaccinations-about-to-roll-out-b-c-health-officials-provide-update-on-covid-19-1.5941508)
+reported in a British Columbia care home where 82% of residents were already vaccinated.
+
 According to [Paul Stoffels](https://en.wikipedia.org/wiki/Paul_Stoffels):
 
 > "a one-shot vaccine is considered by the World Health Organization to be the best option in pandemic settings, enhancing access, distribution and compliance."
@@ -439,33 +472,66 @@ it is 100% effective in reducing symptoms of COVID-19 enough that hospitalizatio
 They also claim 76% protection after the first dose. Two doses are required and they can not be
 given close together or it would be less effective.
 
+December 8, 2020
+
 There are [multiple](https://web.archive.org/web/20201216135047if_/https://www.zerohedge.com/geopolitical/astrazeneca-vaccine-only-62-effective-impact-elderly-unclear-more-data-needed)
 [claims](https://www.zerohedge.com/covid-19/it-just-doesnt-work-expected-macron-questions-covid-vaccine-credibility-eu-approves)
 that this effectiveness is exaggerated and possibly ineffective for those over
 the age of 65.
 
+February 7, 2011
+
+It has been [reported](https://web.archive.org/web/20210207134547if_/https://www.zerohedge.com/covid-19/wake-call-astrazeneca-jab-fails-prevent-south-africa-strain) that this vaccine is less effective against the 
+South African strain.
+
+March 11, 2021
+
+[7 European Nations Halt AstraZeneca Jabs On Reports Of "Serious" Blood Clots](https://www.zerohedge.com/markets/astrazeneca-slides-denmark-suspends-vaccinations-blood-clot-fears)
+
 ### Johnson & Johnson - Janssen
 
-The company [claims](https://www.jnj.com/johnson-johnson-announces-single-shot-janssen-covid-19-vaccine-candidate-met-primary-endpoints-in-interim-analysis-of-its-phase-3-ensemble-trial) 66% overall effectiveness at
-preventing moderate to severe symptoms with a single dose.
-It is reportedly only 57% effective against the South African mutation.
+February 27, 2021
 
-This is disappointing information.
+The efficacy is [reportedly](https://www.zerohedge.com/markets/fda-clears-jnj-covid-19-shot-use-us-giving-americans-3rd-vaccine-choicee) 72% in the USA.
+68% in Brazil, and 64% against the South African mutation.
+
+March 4, 2021
+
+According to the [CDC](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html) this vaccine has 66.3% efficacy at preventing moderate to severe symptoms with a single dose.
+
+This is NOT an mRNA vaccine.
 
 ### Pfizer
 
 The Pfizer vaccine is an mRNA vaccine.
 
+Dec. 31, 2020
+
 According to [this publication](https://www.nejm.org/doi/full/10.1056/NEJMoa2034577?query=RP) the efficacy
 of the vaccine is 52% with one dose and 95% with two doses.
 
-The Israeli's [claim](https://news.yahoo.com/israel-warning-single-dose-pfizer-124313138.html) that this is
-exaggerated and that the first dose is only 33% effective.
+January 14, 2021
 
 Congressman Espaillat [tested positive](https://www.msn.com/en-us/news/us/new-york-congressman-who-got-vaccine-diagnosed-with-covid/ar-BB1cKMAV) after receiving
 both doses of this vaccine. Depending on [how that test was performed](#casedemic) this may
 just be a false positive as he claims to have experienced no symptoms.
-Though with the Israeli's reported effectiveness reduction it is something to consider.
+
+January 20, 2021
+
+The Israeli's [claim](https://news.yahoo.com/israel-warning-single-dose-pfizer-124313138.html) that this is
+exaggerated and that the first dose is only 33% effective.
+
+February 3, 2021
+
+India has [banned](https://geopolitic.org/2021/02/20/newsweek-fact-check-claims-india-vaccine-ban-mostly-false-while-admitting-de-facto-ban/) (at least temporarily) the use of this vaccine due to concerns over the side-effects.
+
+February 18, 2021
+
+It is [reported](https://dailycaller.com/2021/02/18/pfizer-moderna-vaccines-less-protection-south-african-coronavirus-variant/) that this vaccine is significantly less effective against the South African variant of COVID
+
+March 9, 2021
+
+The vaccine [appears](https://dailycaller.com/2021/03/09/pfizer-vaccine-effective-brazilian-coronavirus-variant/) to have similar efficacy against the Brazilian variant.
 
 ### Moderna
 
@@ -490,6 +556,14 @@ which variant of COVID it is effective against and claims 94.5% efficacy in prev
 after the 2nd dose. This also mentions severe adverse reactions in 0.2% to 9.7% of participants
 after the second dose. This seems rushed.
 
+February 18, 2021
+
+It is [reported](https://dailycaller.com/2021/02/18/pfizer-moderna-vaccines-less-protection-south-african-coronavirus-variant/) that this vaccine is significantly less effective against the South African variant of COVID
+
+March 10, 2021
+
+Kassidi Kurill [died shortly after](https://www.banthis.tv/watch?id=604978db9a97873a2b68a897) her 2nd does of this vaccine. Results of the autopsy have [not been released](https://nypost.com/2021/03/12/medical-examiner-kassidi-kurills-death-likely-wasnt-caused-by-vaccine/).
+
 It might be worth reviewing the section on Fauci [above](#can-fauci-be-trusted)
 
 ### Novavax
@@ -497,7 +571,7 @@ It might be worth reviewing the section on Fauci [above](#can-fauci-be-trusted)
 The company [claims](https://ir.novavax.com/news-releases/news-release-details/novavax-covid-19-vaccine-demonstrates-893-efficacy-uk-phase-3) 89.3% efficacy
 against the UK variant of the virus and 49.4% against the South African variant.
 
-Note that the South African variant has been [reported](https://nypost.com/2021/01/28/south-african-covid-19-strain-found-in-us/) in the United States. 
+Note that the South African variant has been [reported](https://nypost.com/2021/01/28/south-african-covid-19-strain-found-in-us/) in the United States.
 
 ### (TODO) Notes
 
@@ -549,14 +623,11 @@ https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/statu
 * <https://duckduckgo.com/?q=World+Health+Organization+%22review+of+face+masks%22+2019&t=brave&ia=web>
 * <https://www.pnas.org/content/118/4/e2014564118>
 * <https://www.usatoday.com/story/news/factcheck/2020/05/30/fact-check-wearing-face-mask-not-cause-hypoxia-hypercapnia/5260106002/>
-* <https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fprevent-getting-sick%2Fcloth-face-cover-faq.html>
 * <https://twitter.com/AlexBerenson/status/1317875526997102594>
-* <https://news.sky.com/story/coronavirus-which-face-covering-works-best-scientists-test-14-and-find-one-actually-increases-risk-of-infection-12046715>
 * <https://www.nature.com/articles/d41586-020-02801-8>
 * <https://www.businessinsider.com/sweden-shifts-away-no-lockdown-strategy-amid-growing-case-numbers-2020-10>
 * <https://aapsonline.org/mask-facts/>
 * <https://covidplanningtools.com/the-pros-and-cons-of-mask-usage/>
-* <https://web.archive.org/web/20200724073915/https://www.zerohedge.com/political/coronavirus-traveled-nearly-30-feet-german-slaughterhouse-where-1500-employees-contracted>
 * <https://web.archive.org/web/20200724073915/https://www.zerohedge.com/political/coronavirus-traveled-nearly-30-feet-german-slaughterhouse-where-1500-employees-contracted>
 * <https://www.bloomberg.com/news/articles/2021-02-06/putin-s-once-scorned-vaccine-is-now-a-favorite-in-pandemic-fight>
 * <https://web.archive.org/web/20201011194103/https://twitter.com/gummibear737/status/1315376802265792512>
@@ -566,7 +637,6 @@ https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/statu
 * <https://www.zerohedge.com/covid-19/cdc-and-tsa-form-federal-mask-police-and-enforcement-officer-discretion>
 * <https://dailycaller.com/2021/02/05/cdc-director-too-early-tell-bidens-mask-mandates-delivering-results/>
 * <https://twitter.com/Kevin_McKernan/status/1358413173179764738>
-* <https://www.zerohedge.com/covid-19/wake-call-astrazeneca-jab-fails-prevent-south-africa-strain>
 * <https://www.zerohedge.com/covid-19/south-africa-halts-vaccine-rollout-astrazeneca-jab-ineffective-combating-mutant-covid>
 * <https://www.zerohedge.com/markets/who-concludes-coronavirus-came-animal-not-wuhan-lab>
 * <https://twitter.com/gummibear737/status/1359618993875791877>
@@ -629,26 +699,15 @@ Gain of Function Research
 * https://twitter.com/GirardotMarc/status/1367942426581741568
 * https://twitter.com/Daoyu15/status/1368015656969404416
 
-Vaccine
-
-https://www.dcclothesline.com/2021/02/24/immunologist-warns-pfizer-and-moderna-coronavirus-vaccines-may-cause-neurodegenerative-disorders-such-as-alzheimers/
-https://scivisionpub.com/pdfs/covid19-rna-based-vaccines-and-the-risk-of-prion-disease-1503.pdf
-
 https://yournews.com/2020/12/05/1953285/doctors-raise-alarm-over-covid-vaccine-linked-to-infertility/
 https://www.cbsnews.com/video/false-links-between-covid-vaccine-and-infertility-raise-alarm-among-women/
+
 https://en.wikipedia.org/wiki/Wolfgang_Wodarg
 https://www.lifesitenews.com/news/former-pfizer-vp-no-need-for-vaccines-the-pandemic-is-effectively-over
 
 Hank Aaron vaccine death?
 
-Nurses don;t wear masks around sick people...
-
-
 https://vaccinedeaths.com/2021-02-22-who-green-lights-mrna-vaccine-experimentation-pregnant-women-babies.html
-
-https://geopolitic.org/2021/02/20/newsweek-fact-check-claims-india-vaccine-ban-mostly-false-while-admitting-de-facto-ban/
-
-https://twitter.com/jordanbpeterson/status/1364621648935215104
 
 https://twitter.com/zerohedge/status/1364598610290180102
 
@@ -676,23 +735,13 @@ world poverty by next year.
 We may well have at least a doubling of child
 malnutrition."
 
-https://www.zerohedge.com/medical/fda-panel-unanimously-endorses-jj-covid-vaccine
-
 https://twitter.com/andrewbostom/status/1365413678506520583
-
-https://dailycaller.com/2021/02/26/one-dose-pfizer-vaccine-may-be-enough-studies/
-
-https://www.zerohedge.com/markets/johnson-johnson-single-shot-vaccine-efficacy-remains-under-public-scrutiny
-
-https://www.zerohedge.com/covid-19/how-does-jj-vaccine-compare-other-covid-vaccines-4-questions-answered
 
 https://twitter.com/gummibear737/status/1367119908878884866
 
 https://twitter.com/DanCrenshawTX/status/1367160396025593859
 
 https://twitter.com/DailyCaller/status/1367533647046320132
-
-https://twitter.com/andrewbostom/status/1367481752231567362
 
 https://twitter.com/gummibear737/status/1367476126986227714
 
@@ -721,17 +770,22 @@ https://www.zerohedge.com/covid-19/4th-wave-new-covid-cases-plateau-despite-surg
 https://twitter.com/TocRadio/status/1368957607373910022
 https://twitter.com/Covid19Crusher/status/1368927602476482569
 
-https://dailycaller.com/2021/03/05/detroit-mayor-mike-duggan-johnson-vaccine-covid-19-coronavirus/
-
 https://twitter.com/Bobby_Network/status/1370491780299362306
-
-https://lbry.tv/@shortXXvids:e/CA-43-Reiner---getting-life-insurance-:e
 
 https://twitter.com/Kevin_McKernan/status/1370745145298141186
 
 https://twitter.com/therealarod1984/status/1370405167582085123
+
 https://twitter.com/erichhartmann/status/1370035530335977473
 
 https://twitter.com/gummibear737/status/1315720594521026562
 
 https://twitter.com/MartyMakary/status/1369796811234349071
+
+https://twitter.com/Kevin_McKernan/status/1366082809119576066
+
+https://twitter.com/DailyCaller/status/1367681217085181956
+
+https://twitter.com/ianmSC/status/1369403833634422789
+
+https://twitter.com/gummibear737/status/1369788812101042176
