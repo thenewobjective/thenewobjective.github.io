@@ -814,3 +814,9 @@ https://twitter.com/DailyCaller/status/1367681217085181956
 https://twitter.com/ianmSC/status/1369403833634422789
 
 https://twitter.com/gummibear737/status/1369788812101042176
+
+https://twitter.com/kerpen/status/1371118336730394626
+
+https://twitter.com/justask66054535/status/1370552048454828037
+
+https://twitter.com/robinmonottibot/status/1371114977310965761
