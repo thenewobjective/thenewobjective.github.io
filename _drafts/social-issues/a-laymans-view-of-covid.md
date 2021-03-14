@@ -258,15 +258,42 @@ Reminder: your body synthesizes Vitamin-D in the skin when exposed to sunlight (
 No.
 
 Vitamin D is [known to be effective](#vitamin-d) in reducing negative outcomes of COVID.
-Your skin synthesizes this in the skin from sunlight.
+Your skin synthesizes this in the skin from sunlight. Remaining stuck indoors is not helpful.
+
+October 15, 2020
+
+[WHO Europe Director Says Governments Should Stop Enforcing Lockdowns](https://web.archive.org/web/20201017094750/https://www.zerohedge.com/medical/who-europe-director-says-governments-should-stop-enforcing-lockdowns)
+
+January 14, 2021
+
+The follow is a [summary](https://web.archive.org/web/20210114181437if_/https://www.zerohedge.com/covid-19/what-they-said-about-lockdowns-2020) of lockdown opinions by nearly a dozen health entities before 2020.
+They all doubt or reject the lockdown strategy.
+
+January 17, 2021
+
+According to a [peer-reviewed paper](https://web.archive.org/web/20210117123610if_/https://www.zerohedge.com/markets/stanford-peer-reviewed-study-did-not-find-evidence-lockdowns-were-effective-stopping-covid) from Stanford
+lockdowns had no significant impact on preventing the spread of COVID, and may have had the opposite
+effect due to increasing human proximity.
+
+February 3, 2021
+
+[Nation’s Largest Cities Suffered 30% Increase In Homicides In 2020, Report Finds](https://dailycaller.com/2021/02/03/nations-largest-cities-30-increase-homicides-2020/)
+
+February 4, 2021
+
+[Study: ER Visits For Suicide Attempts, Overdoses, Violence And Neglect Rose During COVID-19 Lockdowns](https://dailycaller.com/2021/02/04/emergency-room-visits-covid-19-coronavirus-opioid-overdoses-suicide-mental-health-lockdowns/)
 
 March 5, 2021
 
 ["A recent mathematical model has suggested that staying at home did not play a dominant role in reducing COVID-19 transmission."](https://www.nature.com/articles/s41598-021-84092-1)
 
-* <https://dailycaller.com/2021/02/04/emergency-room-visits-covid-19-coronavirus-opioid-overdoses-suicide-mental-health-lockdowns/>
-* <https://dailycaller.com/2021/02/03/nations-largest-cities-30-increase-homicides-2020/>
-* <https://www.zerohedge.com/covid-19/what-they-said-about-lockdowns-2020>
+March 11, 2021
+
+A UNICEF report was [released](https://www.unicef.org/press-releases/across-virtually-every-key-measure-childhood-progress-has-gone-backward-unicef-says) showing that
+the lockdowns have been devastating for children.
+
+TODO:
+
 * <https://twitter.com/boriquagato/status/1314635924635111424>
 * <https://twitter.com/boriquagato/status/1315669937269202944>
 * <https://twitter.com/zerohedge/status/1315652194281152512>
@@ -274,7 +301,6 @@ March 5, 2021
 * <https://twitter.com/boriquagato/status/1316057586819620864>
 * <https://twitter.com/boriquagato/status/1316369696724316160>
 * <https://twitter.com/gummibear737/status/1316423780495917059>
-* <https://www.zerohedge.com/medical/who-europe-director-says-governments-should-stop-enforcing-lockdowns>
 * <https://twitter.com/rubiconcapital_/status/1330597052234002434>
 * <https://twitter.com/MarkChangizi/status/1294285483426697218>
 * <https://twitter.com/boriquagato/status/1339233953325178884>
@@ -282,15 +308,14 @@ March 5, 2021
 * <https://twitter.com/zerohedge/status/1349052724915171328>
 * <https://twitter.com/zerohedge/status/1350201249245917190>
 * <https://web.archive.org/web/20201015153244/https://twitter.com/boriquagato/status/1316762826636234754>
-* <https://www.zerohedge.com/markets/stanford-peer-reviewed-study-did-not-find-evidence-lockdowns-were-effective-stopping-covid>
 * <https://twitter.com/FatEmperor/status/1364547567619608580>
+
+### (TODO) Sweden vs New Zealand
 
 ## (TODO) Herd immunity
 
 * <https://twitter.com/boriquagato/status/1315659683915595781>
 * <https://gab.com/boriquagato/posts/105640978647511894>
-
-## (TODO) Sweden vs New Zealand
 
 ## (TODO) Casedemic
 
@@ -334,7 +359,7 @@ used early.
 
 ## (TODO) Why is/was HCQ info censored
 
-## (TODO) Why Did I Lose my Sense of Smell?
+## Why Did I Lose my Sense of Smell?
 
 Some researchers claim that the virus attacks the olfactory nerves:
 
