@@ -820,3 +820,7 @@ https://twitter.com/kerpen/status/1371118336730394626
 https://twitter.com/justask66054535/status/1370552048454828037
 
 https://twitter.com/robinmonottibot/status/1371114977310965761
+
+https://twitter.com/Kevin_McKernan/status/1373381125247279118
+
+https://twitter.com/MonaRahalkar/status/1372759588156542978
