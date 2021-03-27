@@ -865,3 +865,7 @@ https://twitter.com/gummibear737/status/1374348283724857346
 https://twitter.com/TedPetrou/status/1375112823731281923
 
 https://twitter.com/aginnt/status/1374764344987295756
+
+https://twitter.com/jhnhellstrom/status/1375447651005632514
+
+https://twitter.com/MLevitt_NP2013/status/1375809429501841412
