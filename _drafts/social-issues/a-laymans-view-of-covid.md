@@ -821,6 +821,25 @@ https://twitter.com/justask66054535/status/1370552048454828037
 
 https://twitter.com/robinmonottibot/status/1371114977310965761
 
+https://www.zerohedge.com/covid-19/astrazenecas-european-nightmare-worsening-ireland-netherlands-latest-ban-jabs
+
+https://dailycaller.com/2021/03/15/ecohealth-stevens-amendment-complaint-wuhan-lab/
+
+https://www.zerohedge.com/covid-19/vaccine-supply-woes-johnson-johnson-jab-may-require-more-1-dose-be-effective
+
+https://twitter.com/goddeketal/status/1362049396997820416
+
+https://twitter.com/DailyCaller/status/1362424195284631556
+
+https://dailycaller.com/2021/02/19/biden-joe-anthony-fauci-coronavirus-vaccines-fda-children-rollout/
+
+https://twitter.com/Kevin_McKernan/status/1375579791072636928
+
+https://twitter.com/Kevin_McKernan/status/1375503635103297539
+
+https://www.zerohedge.com/markets/former-cdc-director-says-covid-19-escaped-wuhan-lab
+
+https://dailycaller.com/2021/03/26/who-report-covid-origins-delayed-china-review/
 https://twitter.com/Kevin_McKernan/status/1373381125247279118
 
 https://twitter.com/MonaRahalkar/status/1372759588156542978
