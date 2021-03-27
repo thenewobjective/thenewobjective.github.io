@@ -840,3 +840,24 @@ https://twitter.com/Kevin_McKernan/status/1375503635103297539
 https://www.zerohedge.com/markets/former-cdc-director-says-covid-19-escaped-wuhan-lab
 
 https://dailycaller.com/2021/03/26/who-report-covid-origins-delayed-china-review/
+https://twitter.com/Kevin_McKernan/status/1373381125247279118
+
+https://twitter.com/MonaRahalkar/status/1372759588156542978
+
+https://twitter.com/richardursomd/status/1373693965728374785
+
+https://twitter.com/VPrasadMDMPH/status/1373315783032401926
+
+https://twitter.com/kerpen/status/1366129838432653319
+
+https://twitter.com/francton/status/1365895180415430657
+
+https://twitter.com/Ayjchan/status/1363655386356670465
+
+https://dailycaller.com/2021/03/23/shi-zhengli-denies-chinese-military-wuhan-lab/
+
+https://twitter.com/andrewbostom/status/1374342898163068931
+
+https://twitter.com/justin_hart/status/1315415431113367553
+
+https://twitter.com/gummibear737/status/1374348283724857346
