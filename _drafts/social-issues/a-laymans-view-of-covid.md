@@ -842,3 +842,7 @@ https://twitter.com/andrewbostom/status/1374342898163068931
 https://twitter.com/justin_hart/status/1315415431113367553
 
 https://twitter.com/gummibear737/status/1374348283724857346
+
+https://twitter.com/TedPetrou/status/1375112823731281923
+
+https://twitter.com/aginnt/status/1374764344987295756
