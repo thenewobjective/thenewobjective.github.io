@@ -861,3 +861,9 @@ https://twitter.com/andrewbostom/status/1374342898163068931
 https://twitter.com/justin_hart/status/1315415431113367553
 
 https://twitter.com/gummibear737/status/1374348283724857346
+
+https://www.reuters.com/article/us-health-coronavirus-europe-mortality-idUSKBN2BG1R9
+
+https://www.zerohedge.com/covid-19/ccps-useful-idiots-us-rep-slams-who-covid-origin-whitewash-report
+
+https://dailycaller.com/2021/03/29/china-world-health-organization-coronavirus-lab-leak-theory/
