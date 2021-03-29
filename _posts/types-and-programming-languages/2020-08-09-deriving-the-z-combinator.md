@@ -420,7 +420,7 @@ let fix = f =>
 ```
 
 Notice the pattern emerging? It looks suspiciously similar to the
-very outer function, except that the outer `fix` if missing the `n`
+very outer function, except that the outer `fix` is missing the `n`
 parameter. Let's add that parameter and apply it the top level `f`
 call to match the nested ones:
 

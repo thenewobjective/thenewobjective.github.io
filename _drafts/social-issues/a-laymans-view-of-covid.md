@@ -867,3 +867,6 @@ https://www.reuters.com/article/us-health-coronavirus-europe-mortality-idUSKBN2B
 https://www.zerohedge.com/covid-19/ccps-useful-idiots-us-rep-slams-who-covid-origin-whitewash-report
 
 https://dailycaller.com/2021/03/29/china-world-health-organization-coronavirus-lab-leak-theory/
+https://twitter.com/TedPetrou/status/1375112823731281923
+
+https://twitter.com/aginnt/status/1374764344987295756
