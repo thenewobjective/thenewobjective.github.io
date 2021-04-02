@@ -895,3 +895,13 @@ https://twitter.com/gummibear737/status/1306605767630491650
 https://dailycaller.com/2021/03/29/germany-astrazeneca-coronavirus-vaccine-blood-clot-cases/
 
 https://www.bbc.com/news/uk-56556806
+
+https://dailycaller.com/2021/04/01/reasons-skeptical-who-report-china-covid-coronavirus-pandemic-world-health-organization/
+
+https://dailycaller.com/2021/04/01/cdc-walks-back-comments-directer-rochelle-walensky-suggesting-vaccinated-people-infected-transmit-coronavirus/
+
+https://twitter.com/aginnt/status/1377690803913555968
+
+https://www.zerohedge.com/markets/texas-covid-cases-drop-record-low-after-mask-mandate-lifted-restaurants-back-pre-crisis
+
+https://tomwoods.com/ep-1865-the-twenty-five-minute-case-against-the-on-2020-and-2021-insanity/
