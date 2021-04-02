@@ -1,22 +1,8 @@
 ---
-# Jekyll Processing
-# <https://en.wikipedia.org/wiki/Most_common_words_in_English>
-stop_words:
-  - the
-  - be
-  - to
-  - of
-  - and
-  - a
-  - in
-  - that
-  - have
-  - i
-  - it
-  - for
-  - not
-  - on
-  - with
+# // Jekyll Processing
+# // <https://en.wikipedia.org/wiki/Most_common_words_in_English>
+# // stemming could be done, but won't be as it's overkill for this blog
+stop_words: ['the','be','to','of','and','a','in','that','have','i','it','for','not','on','with']
 exclude_urls:
   - '/demos/coin-flip.html'
   - '/demos/css-bubbles.html'
@@ -34,8 +20,11 @@ exclude_urls:
 {% assign empty_array = "" | split: ',' %}
 
 class Index extends Map {
-    upsert(token, url) {
-        this.set(token,(this.get(token) ?? []).concat(url))
+    upsert(token, title, url) {
+      if(!this.has(token))
+        this.set(token,[{title,url}])
+      else 
+        this.set(token, this.get(token).concat({title,url}))
     }
 }
 
@@ -54,14 +43,13 @@ url = '{{p.url}}'
       {% assign content_tokens = content_tokens | uniq %}
       {% for t in content_tokens %}
          {% unless page.stop_words contains t %}
-i.upsert('{{t}}',url)
-         {%comment%} group_by {% endcomment%}
+i.upsert('{{t}}', "{{ p.title }}", url)
+         {%comment%} group_by {%endcomment%}
           {% endunless %}
       {% endfor %}
     {% endunless %}
   {% endunless %}
   {% endunless %}
 {% endfor %}
-{%comment%} stemming could be done, but won't be as it's overkill {% endcomment%}
 
 export default i
