@@ -25,7 +25,7 @@
             "label": "build-serve drafts",
             "type": "shell",
             "group": "build",
-            "command": "bundle exec jekyll serve --drafts"
+            "command": "bundle exec jekyll serve --drafts --watch"
         }
     ]
 }
