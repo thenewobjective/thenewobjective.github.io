@@ -34,7 +34,8 @@ On this page you can see a curated list of some of my activities around the web 
 - ~~[TNO @ Ajaxian](https://web.archive.org/web/2010*/http://ajaxian.com)~~
 - [comp.lang.javascript](https://groups.google.com/forum/#!profile/comp.lang.javascript/APn2wQcPhe6bXLYSEeInt3DFNlM2lVeCSbafIcLGTPfXAu2xAgdQDprUQ80e5MDjtzNkoQmiVu1r)
 - Discord - Voxel Quest (Private)
-- [es-discuss](https://duckduckgo.com/?q=site%3Ahttps%3A%2F%2Fmail.mozilla.org%2Fpipermail%2Fes-discuss%2F+%22haufe%22&ia=web)
+- ~~[es-discuss](https://duckduckgo.com/?q=site%3Ahttps%3A%2F%2Fmail.mozilla.org%2Fpipermail%2Fes-discuss%2F+%22haufe%22&ia=web)~~
+- [es.discourse.group](https://es.discourse.group/)
 - [Lambda the Ultimate](http://lambda-the-ultimate.org/user/11294)
 - ~~[TNO @ VisualBasicScript.com](https://web.archive.org/web/20120920072515/http://www.visualbasicscript.com/)~~
 

@@ -27,16 +27,22 @@ export default class Search extends Component {
     search(query) {
         let normalized = query.toLowerCase().replace(/[^\d\w\s]+/g,"").replace(/\s+/g,' '),
             tokens = normalized.split(' '),
-            urls = tokens.flatMap(t => index.get(t) ?? null),
+            results = tokens.flatMap(token => index.get(token)).filter(result => result != undefined),
             ul = this.results
         ul.innerHTML = ""
-        urls.map(url => {
-            let li = document.createElement('li'),
-                a = li.appendChild(document.createElement('a'))
-            a.href=url
-            a.textContent = url
-            return li
-        }).forEach(li => ul.appendChild(li));
+        if(results.length > 0) {
+            results.map(({title,url}) => {
+                let li = document.createElement('li'),
+                    a = li.appendChild(document.createElement('a'))
+                a.href=url
+                a.textContent = title
+                return li
+            }).forEach(li => ul.appendChild(li));
+        } else {
+            let li = document.createElement('li')
+            li.textContent = 'No Results'
+            ul.appendChild(li)
+        }
     }
 }
 

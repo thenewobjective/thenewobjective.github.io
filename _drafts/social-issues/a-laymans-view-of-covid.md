@@ -862,6 +862,12 @@ https://twitter.com/justin_hart/status/1315415431113367553
 
 https://twitter.com/gummibear737/status/1374348283724857346
 
+https://www.reuters.com/article/us-health-coronavirus-europe-mortality-idUSKBN2BG1R9
+
+https://www.zerohedge.com/covid-19/ccps-useful-idiots-us-rep-slams-who-covid-origin-whitewash-report
+
+https://dailycaller.com/2021/03/29/china-world-health-organization-coronavirus-lab-leak-theory/
+
 https://twitter.com/TedPetrou/status/1375112823731281923
 
 https://twitter.com/aginnt/status/1374764344987295756
@@ -869,3 +875,36 @@ https://twitter.com/aginnt/status/1374764344987295756
 https://twitter.com/jhnhellstrom/status/1375447651005632514
 
 https://twitter.com/MLevitt_NP2013/status/1375809429501841412
+https://dailycaller.com/2021/03/26/coronavirus-robert-redfield-wuhan-institute-of-virology/
+
+https://www.zerohedge.com/covid-19/astrazeneca-re-releases-covid-jab-trial-data-after-rebuke-us-regulator
+
+https://dailycaller.com/2021/03/19/cdc-school-guidance-change-3-feet/
+
+https://twitter.com/Kevin_McKernan/status/1375067077543878656
+
+https://twitter.com/FatEmperor/status/1375467566152491009
+
+https://twitter.com/DailyCaller/status/1375070096125739008
+
+https://www.zerohedge.com/covid-19/new-cdc-guidelines-permit-students-sit-closer-together-so-long-masks-remain
+
+https://www.zerohedge.com/covid-19/covid-cases-are-spiking-dozen-states-high-vaccination-rates
+
+https://www.zerohedge.com/covid-19/florida-california-took-opposite-approaches-covid-virtuallly-same-result
+
+https://twitter.com/gummibear737/status/1306605767630491650
+
+https://dailycaller.com/2021/03/29/germany-astrazeneca-coronavirus-vaccine-blood-clot-cases/
+
+https://www.bbc.com/news/uk-56556806
+
+https://dailycaller.com/2021/04/01/reasons-skeptical-who-report-china-covid-coronavirus-pandemic-world-health-organization/
+
+https://dailycaller.com/2021/04/01/cdc-walks-back-comments-directer-rochelle-walensky-suggesting-vaccinated-people-infected-transmit-coronavirus/
+
+https://twitter.com/aginnt/status/1377690803913555968
+
+https://www.zerohedge.com/markets/texas-covid-cases-drop-record-low-after-mask-mandate-lifted-restaurants-back-pre-crisis
+
+https://tomwoods.com/ep-1865-the-twenty-five-minute-case-against-the-on-2020-and-2021-insanity/
