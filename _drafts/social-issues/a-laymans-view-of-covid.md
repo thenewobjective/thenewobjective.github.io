@@ -11,23 +11,31 @@ commentThreadId: -1
 *With the deluge of information both fact and fiction as well as the active censorship of
 people and ideas surrounding the pandemic I've decided to consolidate and distill what
 seem consistent with the reality of the situation as I see it. Note that I am not an
-expert in any field directly relevant to the topic. This is a living document I am
+expert in any field directly relevant to the topic. **This is a living document** I am
 using as a personal reference. Perhaps you'll find it informative as well.
 Comments and corrections welcome.*
 
-* TOC
-{:toc}
-
 ---
 
-## (TODO) What is COVID-19
+<details>
+<summary markdown="1">
+### What is COVID-19
+</summary>
+<section markdown="1">
 
-### Variants
+#### Variants
 
 Wikipedia has a [page describing](https://en.wikipedia.org/wiki/Variants_of_SARS-CoV-2) the variants of the virus
 
-## (TODO) Did it Leak From A Lab?
+</section>
+</details>
 
+<details>
+<summary markdown="1">
+### Where did it come from
+</summary>
+<!--
+<section markdown="1">
 * <https://twitter.com/BretWeinstein/status/1351081199486328833>
 * <https://dailycaller.com/2021/01/18/peter-daszak-lancet-statment-protect-chinese-scientists/>
 * <https://twitter.com/HeatherEHeying/status/1355999105483304962>
@@ -37,34 +45,57 @@ Wikipedia has a [page describing](https://en.wikipedia.org/wiki/Variants_of_SARS
 * <https://twitter.com/DailyCaller/status/1351899801999335429>
 * <https://www.zerohedge.com/covid-19/who-team-tightly-controlled-ccp-during-covid-19-origins-investigation>
 * <https://twitter.com/gummibear737/status/1357073823041007617>
+</section>
+-->
+</details>
 
-## (TODO) How Dangerous is it
+<details>
+<summary markdown="1">
+### How Dangerous is it
+</summary>
+<section markdown="1">
+
+March 2021
 
 There is a [study](https://rep.bioscientifica.com/view/journals/rep/aop/rep-20-0382/rep-20-0382.xml)
 claiming that male fertility can be impacted in the short-term (60 days).
 
-* https://dailycaller.com/2021/03/08/cdc-study-covid-hospitalizations-overweight-obesity/
+March 8, 2021
 
-## (TODO) How it spreads
+[CDC Study Finds 78% Of COVID-19 Hospitalizations Were People Overweight Or Obese](https://dailycaller.com/2021/03/08/cdc-study-covid-hospitalizations-overweight-obesity/)
 
-There have been a number of news reports of viral spread in meat packing plants. 
+</section>
+</details>
+
+<details>
+<summary markdown="1">
+### How it spreads (WIP)
+</summary>
+<section markdown="1">
+
+There have been a number of news reports of viral spread in meat packing plants.
+
+July 23, 2020
 
 The cold stale air seems to allow the virus to spread farther and survive longer
-according to a [German study](https://www.bloomberg.com/news/articles/2020-07-23/virus-can-jump-26-feet-at-cold-meat-plants-filled-with-stale-air). There are
-a disproportionate number of dark-skinned employees at these plants who are known
+according to a [German study](https://www.bloomberg.com/news/articles/2020-07-23/virus-can-jump-26-feet-at-cold-meat-plants-filled-with-stale-air). There are a
+disproportionate number of dark-skinned employees at these plants who are known
 to be at [higher risk](#vitamin-d).
 
-
-A German
-study was performed showing that <em>"... aerosolized coronavirus can hang in the air
+A German study was performed showing that <em>"... aerosolized coronavirus can hang in the air
 for at least 30 minutes and travel up to 14 feet."</em> and <em>"...at around 37C (98F),
 it can survive for two to three days on glass, fabric, metal, plastic or paper."
 
 * <https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html>
 * <https://web.archive.org/web/20200724073915/https://www.zerohedge.com/political/coronavirus-traveled-nearly-30-feet-german-slaughterhouse-where-1500-employees-contracted>
+</section>
+</details>
 
-## Do masks work
-
+<details>
+<summary markdown="1">
+### Do masks work
+</summary>
+<section markdown="1">
 This topic is the most politicized and one where seemingly everyone has a "common-sense" opinion.
 
 I prefer to follow the advice of Computer Scientist Frank Atanassow:
@@ -102,7 +133,7 @@ This isn't new information either. The same conclusion was reached in 1920:
 
 [AN EXPERIMENTAL STUDY OF THE EFFICACY OF GAUZE FACE MASKS](https://ajph.aphapublications.org/doi/pdf/10.2105/AJPH.10.1.34)
 
-### Surgical masks
+#### Surgical masks
 
 [According to the FDA](https://www.fda.gov/medical-devices/personal-protective-equipment-infection-control/n95-respirators-surgical-masks-and-face-masks#s2):
 
@@ -112,9 +143,9 @@ This isn't new information either. The same conclusion was reached in 1920:
 > also do not provide complete protection from germs and other contaminants because of
 > the loose fit between the surface of the mask and your face.
 
-### Do masks reduce O2 or increase CO2
+#### Do masks reduce O2 or increase CO2
 
-#### N95 Masks
+##### N95 Masks
 
 According to [this study](http://rc.rcjournal.com/content/55/5/569) they might:
 
@@ -128,7 +159,7 @@ According to [this study](http://rc.rcjournal.com/content/55/5/569) they might:
 > is a possibility. Exhalation valve did not significantly ameliorate the 
 > FFR's P<sub>CO<sub>2</sub></sub> impact.
 
-#### Cloth Masks
+##### Cloth Masks
 
 People wear a variety of cloth masks with a large range of effectiveness.
 Lately there is a fad of wearing two or three masks simultaneously.
@@ -139,7 +170,7 @@ where I became light headed and nearly passed-out. I noticed later that I was
 changing the way that I was breathing through the mask unconsciously. After changing
 my breathing patterns this was no longer an issue.
 
-### Double Masking
+#### Double Masking
 
 March 5, 2021
 
@@ -149,7 +180,7 @@ March 5, 2021
 videos of the effectiveness of different masks in preventing moisture from escaping during respiration.
 TikTok seems to be censoring these intermittently so an indirect reference is [here](https://web.archive.org/web/20210312012105/https://gab.com/a/posts/105874172288493521)  
 
-### Hygiene
+#### Hygiene
 
 If the masks are not disposed after use or effectively washed they can increase
 the odds of infection by many pathogens beyond COVID-19. Some examples:
@@ -177,7 +208,6 @@ the odds of infection by many pathogens beyond COVID-19. Some examples:
     </figure>
 </article>
 
-
 Interestingly a [research paper](https://pubmed.ncbi.nlm.nih.gov/18710327/) that includes [Fauci](#can-fauci-be-trusted)
 as a co-author concludes that: <em>"The majority of deaths in the 1918-1919 influenza pandemic
 likely resulted directly from secondary bacterial pneumonia caused by common upper
@@ -186,7 +216,7 @@ respiratory-tract bacteria."</em>
 While masks are not mentioned in the study, I can't help but wonder if this is a risk that
 should be considered in our current pandemic. Has any study evaluated this for COVID-19?
 
-### TODO: Notes
+#### TODO: Notes
 
 * <https://www.livescience.com/face-masks-eye-protection-covid-19-prevention.html>
 * <https://pubmed.ncbi.nlm.nih.gov/32512240/>
@@ -208,15 +238,21 @@ should be considered in our current pandemic. Has any study evaluated this for C
 * <https://twitter.com/EricRWeinstein/status/1339996694084087808>
 * <https://www.medrxiv.org/content/10.1101/2020.10.21.20208728v2.full.pdf>
 
-## Will supplements provide protection
+</section>
+</summary>
 
+<details>
+<summary markdown="1">
+### Will supplements provide protection
+</summary>
+<section markdown="1">
 Don't rely on supplements to replace a vaccine. Supplementation
 would be wise to provide added protection by supporting your
 immune system and general health.
 
-### Vitamin C (TODO)
+#### Vitamin C (TODO)
 
-### Vitamin D
+#### Vitamin D
 
 The evidence seems to suggest that Vitamin D is one of the most significant
 hormones that can reduce mortality and improve outcomes of infection:
@@ -230,14 +266,19 @@ people are at higher risk of negative outcomes:
 
 Reminder: your body synthesizes Vitamin-D in the skin when exposed to sunlight (UVB radiation)
 
-### Omega-3 (TODO)
+#### Omega-3 (TODO)
 
-### Zinc (TODO)
+#### Zinc (TODO)
 
-### Notes
+#### Notes
 
 * <https://twitter.com/gummibear737/status/1316427529792696320>
 
+</section>
+</summary>
+
+<details>
+<summary >
 ## (TODO) Can a person be reinfected
 
 * <https://twitter.com/gummibear737/status/1313137235546566656>
@@ -872,6 +913,9 @@ https://twitter.com/TedPetrou/status/1375112823731281923
 
 https://twitter.com/aginnt/status/1374764344987295756
 
+https://twitter.com/jhnhellstrom/status/1375447651005632514
+
+https://twitter.com/MLevitt_NP2013/status/1375809429501841412
 https://dailycaller.com/2021/03/26/coronavirus-robert-redfield-wuhan-institute-of-virology/
 
 https://www.zerohedge.com/covid-19/astrazeneca-re-releases-covid-jab-trial-data-after-rebuke-us-regulator
@@ -907,3 +951,106 @@ https://www.zerohedge.com/markets/texas-covid-cases-drop-record-low-after-mask-m
 https://tomwoods.com/ep-1865-the-twenty-five-minute-case-against-the-on-2020-and-2021-insanity/
 
 https://ourworldindata.org/coronavirus/country/sweden
+https://twitter.com/RandPaul/status/1377318712630448142
+
+https://www.zerohedge.com/covid-19/pfizer-says-covid-jab-100-effective-children-aged-12-15
+
+https://www.zerohedge.com/covid-19/reaction-covid-19-vaccine-caused-mans-skin-peel-doctors
+
+https://twitter.com/BGeorgist/status/1377036911538278409
+
+https://twitter.com/DailyCaller/status/1376918259811901441
+
+https://twitter.com/GirardotMarc/status/1376817921545146369
+
+https://www.zerohedge.com/covid-19/berlin-halts-astrazeneca-jab-germany-investigates-study-shows-link-deadly-blood-clots
+
+https://dailycaller.com/2021/03/30/cdc-rochelle-walensky-covid-doom-vaccines/
+
+https://twitter.com/gummibear737/status/1377038435714760704
+
+https://twitter.com/venivici27/status/1376919028049002496
+
+https://twitter.com/Kevin_McKernan/status/1376935167542099969
+
+https://twitter.com/FatEmperor/status/1375942132284940293
+
+https://twitter.com/denisrancourt/status/1373729683905392643
+
+https://twitter.com/DailyCaller/status/1374036737303969793
+
+https://www.zerohedge.com/markets/american-health-regulators-slam-astrazeneca-releasing-incomplete-trial-data
+
+https://dailycaller.com/2021/03/23/astrazeneca-vaccine-data-outdated-incomplete/
+
+https://www.aier.org/article/the-many-variants-of-faucis-mutating-covid-advice/
+
+https://twitter.com/Covid19Crusher/status/1373248759258361866
+
+https://twitter.com/federicolois/status/1374333911711514625
+
+https://twitter.com/gummibear737/status/1374355186261635072
+
+https://dailycaller.com/2021/03/23/astrazeneca-coronavirus-vaccine-national-institutes-of-health/
+
+https://fee.org/articles/child-suicide-is-becoming-an-international-epidemic-amid-restricted-pandemic-life-doctors-warn/
+
+https://dailycaller.com/2021/03/25/natural-immunity-coronavirus-vaccine-experts-weigh-in/
+
+https://dailycaller.com/2021/03/25/covid-19-coronavirus-reinfection-vaccine-vaccination-natural-immunity-science/
+
+https://dailycaller.com/2021/03/26/anthony-fauci-joe-biden-herd-immunity-covid-19-coronavirus/
+
+https://twitter.com/andrewbostom/status/1375423279175974914
+
+https://twitter.com/gummibear737/status/1375591013717307395
+
+https://www.zerohedge.com/covid-19/no-surge-covid-two-weeks-after-mask-mandate-lifted-texas
+
+https://mobile.twitter.com/kevin_mckernan/status/1375579791072636928
+
+https://www.zerohedge.com/markets/negative-covid-tests-sale-are-flooding-dark-web
+
+https://gab.com/boriquagato/posts/105992181416327895
+
+https://twitter.com/Kevin_McKernan/status/1377962575225311240
+
+https://www.zerohedge.com/geopolitical/uk-reports-25-new-cases-rare-blood-clots-linked-astrazeneca-jab
+
+https://twitter.com/KJTorrance/status/1377802157097951247
+
+https://dailycaller.com/2021/04/02/walensky-fauci-psaki-covid-messaging-vaccines/
+
+https://twitter.com/BrendanEich/status/1378219866201616393
+
+https://gab.com/realdrstella/posts/105890510850899232
+
+https://dailycaller.com/2021/03/18/world-health-organization-wuhan-china-control/
+
+https://twitter.com/DailyCaller/status/1373027753788850178
+
+https://www.zerohedge.com/covid-19/german-researchers-link-astrazeneca-jab-rare-blood-clots
+
+https://twitter.com/Kevin_McKernan/status/1373439609091330049
+
+https://twitter.com/Kevin_McKernan/status/1373641700736962567
+
+https://twitter.com/democracywall1/status/1372930318253092872
+
+https://twitter.com/RandPaul/status/1373632678528958465
+
+https://twitter.com/Kevin_McKernan/status/1373659936429903872
+
+https://dailycaller.com/2021/03/18/covid-19-reinfect-old-people-vaccinated-study/
+
+https://twitter.com/dcexaminer/status/1372589804240596992
+
+https://twitter.com/peaceeeee2020/status/1372586791987974146
+
+https://www.zerohedge.com/covid-19/top-eu-regulator-shares-results-astrazeneca-jab-safety-review-after-blood-clot-claims
+
+https://twitter.com/DailyCaller/status/1372582815074816001
+
+https://twitter.com/gummibear737/status/1372645703139393543
+
+https://threadreaderapp.com/thread/1377301521579266049.html

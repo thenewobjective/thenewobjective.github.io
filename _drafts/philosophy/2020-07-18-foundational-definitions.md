@@ -173,10 +173,9 @@ Vacuous proof
 * Real numbers are not physical relationship with noumena?
   * What of fantasy? Imaginative?
   * What of contradictive thoughts and theories?
+* "Science doesn't really care about your beliefs. And no amount of belief makes something a fact" --Feynman
 * <https://en.wikipedia.org/wiki/I_Am_that_I_Am>
   * Not an evasion IMO. Moreso like Ashildr:
-
-* "Science doesn't really care about your beliefs. And no amount of belief makes something a fact" --Feynman
 
 > Me: You mean… you haven’t come for me?
 > The Doctor: No, it was just a coincidence. Oh Ashildr, I’m sorry.

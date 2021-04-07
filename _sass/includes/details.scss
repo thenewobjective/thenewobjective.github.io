@@ -7,6 +7,11 @@ details > summary {
 	padding-left: 1em;
 }
 
+details > summary > h3 {
+	display: inline-block;
+	margin: 0;
+}
+
 details + details {
 	margin-top: 2em;
 }
