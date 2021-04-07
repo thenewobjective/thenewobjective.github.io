@@ -905,3 +905,5 @@ https://twitter.com/aginnt/status/1377690803913555968
 https://www.zerohedge.com/markets/texas-covid-cases-drop-record-low-after-mask-mandate-lifted-restaurants-back-pre-crisis
 
 https://tomwoods.com/ep-1865-the-twenty-five-minute-case-against-the-on-2020-and-2021-insanity/
+
+https://ourworldindata.org/coronavirus/country/sweden
