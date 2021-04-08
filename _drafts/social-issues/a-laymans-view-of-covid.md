@@ -69,7 +69,7 @@ March 8, 2021
 
 <details>
 <summary markdown="1">
-### How it spreads (WIP)
+### How it spreads
 </summary>
 <section markdown="1">
 
@@ -82,12 +82,14 @@ according to a [German study](https://www.bloomberg.com/news/articles/2020-07-23
 disproportionate number of dark-skinned employees at these plants who are known
 to be at [higher risk](#vitamin-d).
 
+<!--
 A German study was performed showing that <em>"... aerosolized coronavirus can hang in the air
 for at least 30 minutes and travel up to 14 feet."</em> and <em>"...at around 37C (98F),
 it can survive for two to three days on glass, fabric, metal, plastic or paper."
 
 * <https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html>
 * <https://web.archive.org/web/20200724073915/https://www.zerohedge.com/political/coronavirus-traveled-nearly-30-feet-german-slaughterhouse-where-1500-employees-contracted>
+-->
 </section>
 </details>
 
@@ -216,6 +218,7 @@ respiratory-tract bacteria."</em>
 While masks are not mentioned in the study, I can't help but wonder if this is a risk that
 should be considered in our current pandemic. Has any study evaluated this for COVID-19?
 
+<!--
 #### TODO: Notes
 
 * <https://www.livescience.com/face-masks-eye-protection-covid-19-prevention.html>
@@ -237,9 +240,10 @@ should be considered in our current pandemic. Has any study evaluated this for C
 * <https://web.archive.org/web/20210104231143/https://twitter.com/boriquagato/status/1346232824542580736>
 * <https://twitter.com/EricRWeinstein/status/1339996694084087808>
 * <https://www.medrxiv.org/content/10.1101/2020.10.21.20208728v2.full.pdf>
+-->
 
 </section>
-</summary>
+</details>
 
 <details>
 <summary markdown="1">
@@ -275,27 +279,49 @@ Reminder: your body synthesizes Vitamin-D in the skin when exposed to sunlight (
 * <https://twitter.com/gummibear737/status/1316427529792696320>
 
 </section>
-</summary>
+</details>
 
 <details>
-<summary >
-## (TODO) Can a person be reinfected
-
+<summary markdown="1">
+### Can you be reinfected
+</summary>
+<section markdown="1">
+<!--
 * <https://twitter.com/gummibear737/status/1313137235546566656>
 * <https://twitter.com/boriquagato/status/1316031729035964417>
 * <https://twitter.com/Daniilgor/status/1316501414793838592>
 * <https://dailycaller.com/2021/01/14/public-health-england-study-covid-19-infection-protects-vaccine/>
 * <https://twitter.com/gummibear737/status/1356381000587206657>
 * <https://dailycaller.com/2021/02/26/one-dose-pfizer-vaccine-may-be-enough-studies/>
-## (TODO) Can you spread the disease if you're asymptomatic
+-->
+</section>
+</details>
 
+<details>
+<summary markdown="1">
+### Can you spread the virus if you have no symptoms
+</summary>
+<section markdown="1">
+<!--
 * <https://twitter.com/tlowdon/status/1314433379467587585>
 * <https://www.zerohedge.com/geopolitical/new-study-suggests-asymptomatic-covid-patients-arent-driver-transmission>
+-->
+</section>
+</details>
 
-## (TODO) Why the six-foot rule
+<details>
+<summary markdown="1">
+### Why the six-foot rule
+</summary>
+<section markdown="1">
+</section>
+</details>
 
-## (TODO) Are Lockdowns The Right Strategy
-
+<details>
+<summary markdown="1">
+### Are Lockdowns The Right Strategy
+</summary>
+<section markdown="1">
 No.
 
 Vitamin D is [known to be effective](#vitamin-d) in reducing negative outcomes of COVID.
@@ -333,6 +359,7 @@ March 11, 2021
 A UNICEF report was [released](https://www.unicef.org/press-releases/across-virtually-every-key-measure-childhood-progress-has-gone-backward-unicef-says) showing that
 the lockdowns have been devastating for children.
 
+<!--
 TODO:
 
 * <https://twitter.com/boriquagato/status/1314635924635111424>
@@ -350,16 +377,44 @@ TODO:
 * <https://twitter.com/zerohedge/status/1350201249245917190>
 * <https://web.archive.org/web/20201015153244/https://twitter.com/boriquagato/status/1316762826636234754>
 * <https://twitter.com/FatEmperor/status/1364547567619608580>
+-->
+</section>
+</details>
 
-### (TODO) Sweden vs New Zealand
+<details>
+<summary markdown="1">
+### Sweden
+</summary>
+<section markdown="1">
+</section>
+</details>
 
-## (TODO) Herd immunity
+<details>
+<summary markdown="1">
+### Sweden vs New Zealand
+</summary>
+<section markdown="1">
+<!-- -->
+</section>
+</details>
 
+<details>
+<summary markdown="1">
+### Herd immunity
+</summary>
+<!--
 * <https://twitter.com/boriquagato/status/1315659683915595781>
 * <https://gab.com/boriquagato/posts/105640978647511894>
+-->
+</section>
+</details>
 
-## (TODO) Casedemic
-
+<details>
+<summary markdown="1">
+### Casedemic
+</summary>
+<section markdown="1">
+<!--
 * <https://web.archive.org/web/20201113131145/https://twitter.com/boriquagato/status/1327237316923035659>
 * <https://web.archive.org/web/20201201123740/https://threadreaderapp.com/thread/1332858118682849282.html>
 * <https://twitter.com/Kevin_McKernan/status/1348730638040518656>
@@ -384,24 +439,44 @@ TODO:
 * <https://www.zerohedge.com/covid-19/fda-admits-pcr-tests-give-false-results-prepares-ground-biden-virus-rescue-miracle>
 * <https://www.zerohedge.com/covid-19/its-long-past-time-cdc-clean-covid-19-death-counts>
 * <https://www.breitbart.com/science/2021/01/22/w-h-o-modifies-virus-testing-criteria-on-biden-inauguration-day-may-result-in-fewer-positives/>
+-->
+</section>
+</details>
 
-## (TODO) Propaganda
-
+<details>
+<summary markdown="1">
+### Propaganda
+</summary>
+<section markdown="1">
+<!--
 * [Asymptomatic to Presymptomatic](https://twitter.com/BrendanEich/status/1340722551459172353)
 * <https://www.zerohedge.com/political/who-deletes-naturally-acquired-immunity-its-website>
 * <https://dailycaller.com/2021/01/24/california-hiding-key-coronavirus-data-gavin-newsom-mislead-public/>
+-->
+</section>
+</details>
 
-## (TODO) Is Hydroxychloroquine effective
-
+<details>
+<summary markdown="1">
+### Hydroxychloroquine (HCQ)
+</summary>
+<section markdown="1">
 Yes, Hydroxychloroquine (HCQ) is probably effective as a treatment for COVID-19 when
 used early.
 
 * <https://www.sciencedirect.com/science/article/pii/S2052297520301281>
 
-## (TODO) Why is/was HCQ info censored
+<!--
+### Why is/was HCQ info censored
+-->
+</section>
+</details>
 
-## Why Did I Lose my Sense of Smell?
-
+<details>
+<summary markdown="1">
+### Why Did I Lose my Sense of Smell?
+</summary>
+<section markdown="1">
 Some researchers claim that the virus attacks the olfactory nerves:
 
 <https://pubmed.ncbi.nlm.nih.gov/32556089/>
@@ -422,19 +497,45 @@ This is consistent with the following study:
 Omega-3 supplementation may help prevent this problem or aid in recovery:
 
 <https://academic.oup.com/neurosurgery/article-abstract/87/2/E91/5707684?redirectedFrom=PDF>
+</section>
+</details>
 
-## (TODO) Are children immune
+<details>
+<summary markdown="1">
+### Are children immune
+</summary>
+<section markdown="1">
+</section>
+</details>
 
-## (TODO) Is it okay for schools to open
-
+<details>
+<summary markdown="1">
+### Is it okay for schools to open
+</summary>
+<section markdown="1">
+<!--
 * <https://twitter.com/boriquagato/status/1313113007342452738>
 * <https://twitter.com/RandPaul/status/1350201902932369412>
+-->
+</section>
+</details>
 
-## (TODO) Cuomo
-
+<details>
+<summary markdown="1">
+### Andrew Cuomo
+</summary>
+<section markdown="1">
+<!--
 https://web.archive.org/web/20201017123340/https://twitter.com/boriquagato/status/1317443577673322497
+-->
+</section>
+</details>
 
-## Can Fauci Be Trusted (TODO)
+<details>
+<summary markdown="1">
+### Anthony Fauci
+</summary>
+<section markdown="1">
 
 No. He has openly admitted to lying to the public for political
 purposes. Even if he says things that are true one shouldn't
@@ -450,21 +551,34 @@ There are no doubt more examples and an excellent deep dive has been done by
 [@gummibear737](https://web.archive.org/web/20201101134126/https://threadreaderapp.com/thread/1315365796181356550.html).
 I'm concerned about the implied relationship with the [Moderna vaccine](#moderna) that seemed rushed.
 
-//////////////
+<!--
 * Jimmy Dore clips
 * <https://twitter.com/gummibear737/status/1317829332740472832>
 * <https://twitter.com/gummibear737/status/1363636424709464067>
 
 There are no doubt additional examples, but this is enough for me.
+-->
+</section>
+</details>
 
-## (TODO) Can Professor Neil Ferguson be trusted?
-
+<details>
+<summary markdown="1">
+### Neil Ferguson
+</summary>
+<section markdown="1">
+<!--
 * <https://twitter.com/gummibear737/status/1306605767630491650>
 * <https://www.cato.org/blog/did-mitigation-save-two-million-lives>
+-->
+</section>
+</details>
 
-## Can the WHO Be Trusted
-
-Personally I do not.
+<details>
+<summary markdown="1">
+### The WHO
+</summary>
+<section markdown="1">
+Personally I do not trust what they say on the topic of COVID.
 
 I first became suspicious of the WHO after the following interview with one of their officials:
 
@@ -483,9 +597,14 @@ There are contradictions in their messaging as well:
 
 With the above in mind note that [YouTube says](https://www.lifesitenews.com/news/youtube-ceo-well-delete-anything-that-contradicts-word-health-organization-on-covid-19)
 they will delete anything that contradicts the WHO.
+</section>
+</details>
 
-## Can the CDC be trusted
-
+<details>
+<summary markdown="1">
+### The CDC
+</summary>
+<section markdown="1">
 As much as I hate to admit it, the CDC is also politicized and its claims
 require scrutiny.
 
@@ -501,14 +620,27 @@ wearing a mask if you are not symptomatic. Now they say they are mandatory, unle
 > respiratory diseases, including coronavirus (COVID-19). Those are critical
 > supplies that must continue to be reserved for health care workers and
 > other medical first responders, as recommended by current CDC guidance.
+</section>
+</details>
 
-## (TODO) Hospital Capacity
+<details>
+<summary markdown="1">
+### Hospital Capacity
+</summary>
+<section markdown="1">
 
+<!--
 * <https://twitter.com/boriquagato/status/1316135154352562177>
 * <https://web.archive.org/web/20201228152416/https://twitter.com/boriquagato/status/1343577116730740736>
+-->
+</section>
+</details>
 
-## Vaccine Safety and Effectiveness
-
+<details>
+<summary markdown="1">
+### Vaccine Safety and Effectiveness
+</summary>
+<section markdown="1">
 There are multiple vaccines. Safety and effectiveness has to be judged for each.
 
 In regards to effectiveness for the multi-dose varieties it should not be surprising to hear
@@ -529,7 +661,7 @@ According to [Paul Stoffels](https://en.wikipedia.org/wiki/Paul_Stoffels):
 
 Sounds reasonable but WHO comments have to be heavily [scrutinized](#can-the-who-be-trusted).
 
-### AstraZeneca
+#### AstraZeneca
 
 This is an [adenovirus-based vaccine](https://www.news-medical.net/health/What-are-Adenovirus-Based-Vaccines.aspx).
 
@@ -554,7 +686,7 @@ March 11, 2021
 
 [7 European Nations Halt AstraZeneca Jabs On Reports Of "Serious" Blood Clots](https://www.zerohedge.com/markets/astrazeneca-slides-denmark-suspends-vaccinations-blood-clot-fears)
 
-### Johnson & Johnson - Janssen
+#### Johnson & Johnson - Janssen
 
 February 27, 2021
 
@@ -567,7 +699,7 @@ According to the [CDC](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/differ
 
 This is NOT an mRNA vaccine.
 
-### Pfizer
+#### Pfizer
 
 The Pfizer vaccine is an mRNA vaccine.
 
@@ -599,7 +731,7 @@ March 9, 2021
 
 The vaccine [appears](https://dailycaller.com/2021/03/09/pfizer-vaccine-effective-brazilian-coronavirus-variant/) to have similar efficacy against the Brazilian variant.
 
-### Moderna
+#### Moderna
 
 This is an mRNA vaccine that requires two doses.
 
@@ -632,13 +764,13 @@ Kassidi Kurill [died shortly after](https://www.banthis.tv/watch?id=604978db9a97
 
 It might be worth reviewing the section on Fauci [above](#can-fauci-be-trusted)
 
-### Novavax
+#### Novavax
 
 The company [claims](https://ir.novavax.com/news-releases/news-release-details/novavax-covid-19-vaccine-demonstrates-893-efficacy-uk-phase-3) 89.3% efficacy
 against the UK variant of the virus and 49.4% against the South African variant.
 
 Note that the South African variant has been [reported](https://nypost.com/2021/01/28/south-african-covid-19-strain-found-in-us/) in the United States.
-
+<!--
 ### (TODO) Notes
 
 * <https://dcswampwatch.org/gilead-disputes-who-data-confirming-covid-19-drug-remdesivir-is-a-flop/>
@@ -647,16 +779,32 @@ Note that the South African variant has been [reported](https://nypost.com/2021/
 * <https://twitter.com/gummibear737/status/1336786692833992705>
 * <https://twitter.com/BretWeinstein/status/1337827650211991554>
 * <https://twitter.com/gummibear737/status/1316742493287915520>
+-->
+</section>
+</details>
 
-### (TODO) Can you still spread the virus after vaccination
+<details>
+<summary markdown="1">
+### Can you still spread the virus after vaccination
+</summary>
+<section markdown="1">
+<!-- * <https://dailycaller.com/2020/12/28/world-health-organization-chief-scientist-soumya-swaminathan-coronavirus-vaccine-transmissibility-efficacy-skeptic/> -->
+</section>
+</details>
 
-* <https://dailycaller.com/2020/12/28/world-health-organization-chief-scientist-soumya-swaminathan-coronavirus-vaccine-transmissibility-efficacy-skeptic/>
+<details>
+<summary markdown="1">
+### Ventilators
+</summary>
+<section markdown="1">
+<!-- https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/status/1327625928822960129 -->
+</section>
+</details>
 
-## (TODO) Ventilators
-
-https://web.archive.org/web/20201114145507/https://twitter.com/boriquagato/status/1327625928822960129
-
+<!--
 ## (TODO) Further Reading
+
+See the OneDrive covid folder
 
 * <https://twitter.com/gummibear737/status/1317223302180593664>
 * <https://twitter.com/gummibear737/status/1317223344186576899>
@@ -1058,3 +1206,7 @@ https://threadreaderapp.com/thread/1377301521579266049.html
 https://web.archive.org/web/20210228145946if_/https://www.zerohedge.com/covid-19/us-sees-lowest-flu-season-record-during-covid-pandemic
 
 https://dailycaller.com/2021/04/07/scientists-highlight-errors-in-who-origins-report/
+
+https://twitter.com/Kevin_McKernan/status/1379399005763960835
+
+-->

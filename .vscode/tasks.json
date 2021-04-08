@@ -25,7 +25,8 @@
             "label": "build-serve drafts",
             "type": "shell",
             "group": "build",
-            "command": "bundle exec jekyll serve --drafts --watch"
+            "command": "bundle exec jekyll serve --drafts --watch",
+            "problemMatcher": []
         }
     ]
 }
