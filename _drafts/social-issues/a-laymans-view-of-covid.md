@@ -1054,3 +1054,7 @@ https://twitter.com/DailyCaller/status/1372582815074816001
 https://twitter.com/gummibear737/status/1372645703139393543
 
 https://threadreaderapp.com/thread/1377301521579266049.html
+
+https://web.archive.org/web/20210228145946if_/https://www.zerohedge.com/covid-19/us-sees-lowest-flu-season-record-during-covid-pandemic
+
+https://dailycaller.com/2021/04/07/scientists-highlight-errors-in-who-origins-report/
