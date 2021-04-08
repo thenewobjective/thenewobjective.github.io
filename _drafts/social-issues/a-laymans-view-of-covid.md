@@ -950,6 +950,7 @@ https://www.zerohedge.com/markets/texas-covid-cases-drop-record-low-after-mask-m
 
 https://tomwoods.com/ep-1865-the-twenty-five-minute-case-against-the-on-2020-and-2021-insanity/
 
+https://ourworldindata.org/coronavirus/country/sweden
 https://twitter.com/RandPaul/status/1377318712630448142
 
 https://www.zerohedge.com/covid-19/pfizer-says-covid-jab-100-effective-children-aged-12-15
