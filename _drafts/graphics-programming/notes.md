@@ -61,3 +61,7 @@ getting to the algorithm though we'll want some utility functions first:
 - <https://gab.com/boriquagato/posts/105777513369610588>
 - <https://gab.com/CharmingBarbie/posts/105776877353427431>
 - <https://gab.com/boriquagato/posts/105776718161162997>
+
+color keys
+
+- <https://twitter.com/migueldeicaza/status/1379493005116243976>
