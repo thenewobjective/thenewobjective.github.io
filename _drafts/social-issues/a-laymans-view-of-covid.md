@@ -806,6 +806,11 @@ Note that the South African variant has been [reported](https://nypost.com/2021/
 
 See the OneDrive covid folder
 
+vaccine efficacy: https://youtu.be/K3odScka55A
+https://blogs.sciencemag.org/pipeline/archives/2021/01/21/mrna-vaccines-what-happens
+https://link.springer.com/chapter/10.1007/82_2020_217
+https://www.nature.com/articles/nrd.2017.243
+
 * <https://twitter.com/gummibear737/status/1317223302180593664>
 * <https://twitter.com/gummibear737/status/1317223344186576899>
 * <https://twitter.com/gummibear737/status/1317223331658170369>
