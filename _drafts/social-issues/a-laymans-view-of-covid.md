@@ -686,6 +686,10 @@ March 11, 2021
 
 [7 European Nations Halt AstraZeneca Jabs On Reports Of "Serious" Blood Clots](https://www.zerohedge.com/markets/astrazeneca-slides-denmark-suspends-vaccinations-blood-clot-fears)
 
+April 03, 2021
+
+[Netherlands temporarily halts AstraZeneca COVID vaccinations](https://www.msn.com/en-us/news/world/netherlands-temporarily-halts-astrazeneca-covid-vaccinations/ar-BB1fgn1E) due to blood clot fears.
+
 #### Johnson & Johnson - Janssen
 
 February 27, 2021
