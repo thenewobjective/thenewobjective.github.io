@@ -1218,4 +1218,9 @@ https://dailycaller.com/2021/04/07/scientists-highlight-errors-in-who-origins-re
 
 https://twitter.com/Kevin_McKernan/status/1379399005763960835
 
+https://www.infowars.com/posts/shock-video-cops-force-vaccinate-special-needs-girls-in-statewide-operation-homebound-program/
+
+https://twitter.com/Kevin_McKernan/status/1381444020501688320
+
+https://news.ycombinator.com/item?id=22737456
 -->
