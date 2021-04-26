@@ -64,6 +64,10 @@ March 8, 2021
 
 [CDC Study Finds 78% Of COVID-19 Hospitalizations Were People Overweight Or Obese](https://dailycaller.com/2021/03/08/cdc-study-covid-hospitalizations-overweight-obesity/)
 
+April 6, 2021
+
+[A third of COVID survivors suffer neurological or mental disorders](https://www.reuters.com/article/us-health-coronavirus-brain/a-third-of-covid-survivors-suffer-neurological-or-mental-disorders-study-idUSKBN2BT2ZI)
+
 </section>
 </details>
 
@@ -648,7 +652,9 @@ In regards to effectiveness for the multi-dose varieties it should not be surpri
 of COVID infection after receiving only a single dose or [reports](https://www.msn.com/en-us/news/us/new-york-congressman-who-got-vaccine-diagnosed-with-covid/ar-BB1cKMAV)
 of infection immediately after the second dose.
 
-Assuming you [trust the CDC](#can-the-cdc-be-trusted), note that they have a system of [reporting adverse reactions](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/adverse-events.html).
+Assuming you [trust the CDC](#can-the-cdc-be-trusted), note that they have a system of [reporting adverse reactions](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/adverse-events.html) referred to as [VAERS](https://vaers.hhs.gov/).
+
+Note that these vaccines have been authorized for emergency use. Also note that they have been granted legal immunity for any side-effects they may cause.
 
 March 8, 2021:
 
@@ -686,6 +692,23 @@ March 11, 2021
 
 [7 European Nations Halt AstraZeneca Jabs On Reports Of "Serious" Blood Clots](https://www.zerohedge.com/markets/astrazeneca-slides-denmark-suspends-vaccinations-blood-clot-fears)
 
+<!-- 
+https://www.zerohedge.com/covid-19/german-researchers-link-astrazeneca-jab-rare-blood-clots
+
+https://www.zerohedge.com/covid-19/top-eu-regulator-shares-results-astrazeneca-jab-safety-review-after-blood-clot-claims
+
+https://www.zerohedge.com/geopolitical/uk-reports-25-new-cases-rare-blood-clots-linked-astrazeneca-jab
+
+https://www.zerohedge.com/covid-19/berlin-halts-astrazeneca-jab-germany-investigates-study-shows-link-deadly-blood-clots
+
+https://www.zerohedge.com/markets/american-health-regulators-slam-astrazeneca-releasing-incomplete-trial-data
+
+https://dailycaller.com/2021/03/23/astrazeneca-vaccine-data-outdated-incomplete/
+
+https://dailycaller.com/2021/03/23/astrazeneca-coronavirus-vaccine-national-institutes-of-health/
+
+-->
+
 #### Johnson & Johnson - Janssen
 
 February 27, 2021
@@ -698,6 +721,14 @@ March 4, 2021
 According to the [CDC](https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html) this vaccine has 66.3% efficacy at preventing moderate to severe symptoms with a single dose.
 
 This is NOT an mRNA vaccine.
+
+April 8, 2021
+
+[Second vaccine site paused after adverse reactions to Johnson & Johnson shots](https://nypost.com/2021/04/08/second-vaccine-site-paused-after-adverse-reactions-to-johnson-johnson-shots/)
+
+April 13, 2021
+
+[FDA recommends pausing use of J&J vaccine due to rare side effect](https://www.youtube.com/watch?v=j_cmQeEyTMQ)
 
 #### Pfizer
 
@@ -1106,8 +1137,6 @@ https://tomwoods.com/ep-1865-the-twenty-five-minute-case-against-the-on-2020-and
 https://ourworldindata.org/coronavirus/country/sweden
 https://twitter.com/RandPaul/status/1377318712630448142
 
-https://www.zerohedge.com/covid-19/pfizer-says-covid-jab-100-effective-children-aged-12-15
-
 https://www.zerohedge.com/covid-19/reaction-covid-19-vaccine-caused-mans-skin-peel-doctors
 
 https://twitter.com/BGeorgist/status/1377036911538278409
@@ -1115,8 +1144,6 @@ https://twitter.com/BGeorgist/status/1377036911538278409
 https://twitter.com/DailyCaller/status/1376918259811901441
 
 https://twitter.com/GirardotMarc/status/1376817921545146369
-
-https://www.zerohedge.com/covid-19/berlin-halts-astrazeneca-jab-germany-investigates-study-shows-link-deadly-blood-clots
 
 https://dailycaller.com/2021/03/30/cdc-rochelle-walensky-covid-doom-vaccines/
 
@@ -1132,10 +1159,6 @@ https://twitter.com/denisrancourt/status/1373729683905392643
 
 https://twitter.com/DailyCaller/status/1374036737303969793
 
-https://www.zerohedge.com/markets/american-health-regulators-slam-astrazeneca-releasing-incomplete-trial-data
-
-https://dailycaller.com/2021/03/23/astrazeneca-vaccine-data-outdated-incomplete/
-
 https://www.aier.org/article/the-many-variants-of-faucis-mutating-covid-advice/
 
 https://twitter.com/Covid19Crusher/status/1373248759258361866
@@ -1143,8 +1166,6 @@ https://twitter.com/Covid19Crusher/status/1373248759258361866
 https://twitter.com/federicolois/status/1374333911711514625
 
 https://twitter.com/gummibear737/status/1374355186261635072
-
-https://dailycaller.com/2021/03/23/astrazeneca-coronavirus-vaccine-national-institutes-of-health/
 
 https://fee.org/articles/child-suicide-is-becoming-an-international-epidemic-amid-restricted-pandemic-life-doctors-warn/
 
@@ -1168,8 +1189,6 @@ https://gab.com/boriquagato/posts/105992181416327895
 
 https://twitter.com/Kevin_McKernan/status/1377962575225311240
 
-https://www.zerohedge.com/geopolitical/uk-reports-25-new-cases-rare-blood-clots-linked-astrazeneca-jab
-
 https://twitter.com/KJTorrance/status/1377802157097951247
 
 https://dailycaller.com/2021/04/02/walensky-fauci-psaki-covid-messaging-vaccines/
@@ -1181,8 +1200,6 @@ https://gab.com/realdrstella/posts/105890510850899232
 https://dailycaller.com/2021/03/18/world-health-organization-wuhan-china-control/
 
 https://twitter.com/DailyCaller/status/1373027753788850178
-
-https://www.zerohedge.com/covid-19/german-researchers-link-astrazeneca-jab-rare-blood-clots
 
 https://twitter.com/Kevin_McKernan/status/1373439609091330049
 
@@ -1200,8 +1217,6 @@ https://twitter.com/dcexaminer/status/1372589804240596992
 
 https://twitter.com/peaceeeee2020/status/1372586791987974146
 
-https://www.zerohedge.com/covid-19/top-eu-regulator-shares-results-astrazeneca-jab-safety-review-after-blood-clot-claims
-
 https://twitter.com/DailyCaller/status/1372582815074816001
 
 https://twitter.com/gummibear737/status/1372645703139393543
@@ -1213,5 +1228,39 @@ https://web.archive.org/web/20210228145946if_/https://www.zerohedge.com/covid-19
 https://dailycaller.com/2021/04/07/scientists-highlight-errors-in-who-origins-report/
 
 https://twitter.com/Kevin_McKernan/status/1379399005763960835
+
+https://www.sciencemag.org/news/2021/04/hard-choices-emerge-link-between-astrazeneca-vaccine-and-rare-clotting-disorder-becomes
+
+https://www.cnbc.com/2020/12/16/covid-vaccine-side-effects-compensation-lawsuit.html
+
+https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/viralvector.html
+
+https://www.cdc.gov/vaccines/covid-19/hcp/viral-vector-vaccine-basics.html#:~:text=In%20the%20development%20of%20viral,stage%20COVID%2D19%20vaccine%20trials
+
+https://www.stamfordhealth.org/healthflash-blog/infectious-disease/johnson--johnson-covid-19-vaccine/
+
+https://dailycaller.com/2021/04/20/coronavirus-vaccine-linked-to-herpes-zoster-patients-autoimmune-rheumatic-disease/
+
+https://dailycaller.com/2021/04/20/covid-19-coronavirus-chile-china-sinovac-coronavac/
+
+https://www.zerohedge.com/covid-19/family-italian-woman-whose-death-linked-astrazeneca-jab-launches-legal-action
+
+https://dailycaller.com/2021/04/15/covid-19-coronavirus-vaccine-study-blood-clots-johnson-astrazeneca/
+
+https://www.zerohedge.com/political/trump-blames-fdas-love-pfizer-biden-admin-decision-halt-jj-jabs
+
+https://twitter.com/FiloSottile/status/1381983883567239172
+
+https://twitter.com/US_FDA/status/1381925612743499778
+
+https://banned.video/watch?id=606f28b15ee3b310e61c58f6
+
+https://twitter.com/MartinKulldorff/status/1380361654781755395
+
+https://twitter.com/Kevin_McKernan/status/1380383731198918656
+
+Social credit delusion
+https://twitter.com/BrendanEich/status/1385100127405105152
+https://www.nytimes3xbfgragh.onion/2021/04/20/style/pfizer-or-moderna.html
 
 -->
