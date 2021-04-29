@@ -1314,4 +1314,14 @@ https://twitter.com/Kevin_McKernan/status/1380200100249620484
 
 https://www.youtube.com/watch?v=MdF__rbPVAg
 
+https://twitter.com/DailyCaller/status/1387101711869825027
+
+https://boriquagato.substack.com/p/cdc-vaccine-guidance-was-never-supposed/comments#comment-1839187
+
+https://twitter.com/gummibear737/status/1386769349021687814
+
+https://twitter.com/gummibear737/status/1386806315721371649
+
+https://twitter.com/DailyCaller/status/1386809849825083394
+
 -->
