@@ -1382,4 +1382,17 @@ https://twitter.com/Kevin_McKernan/status/1387420845530824707
 https://twitter.com/Salon/status/1386637199593152518
 
 https://twitter.com/BrendanEich/status/1387920395404144642
+
+https://twitter.com/BrendanEich/status/1338383671007404032
+
+https://twitter.com/andrewbostom/status/1331649627725180931
+
+https://twitter.com/DailyCaller/status/1353751319312527360
+
+https://twitter.com/BrendanEich/status/1339327324785819648
+
+https://twitter.com/ferrisjabr/status/1326590392825860096
+
+https://twitter.com/ntldr2020/status/1357826516709748738
+
 -->
