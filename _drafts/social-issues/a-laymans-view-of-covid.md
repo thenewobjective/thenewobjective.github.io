@@ -1364,4 +1364,12 @@ https://www.youtube.com/watch?v=MdF__rbPVAg
 https://www.zerohedge.com/covid-19/indian-vaccinemakers-jack-prices-outbreak-worsens-1st-covid-triple-mutant-identified
 
 https://web.archive.org/web/20210426133205/https://twitter.com/goddeketal/status/1386602114772779011
+
+https://thefederalist.com/2021/04/26/media-hungry-health-advisers-now-support-the-same-masking-policies-that-scott-atlas-was-ousted-for-promoting/
+
+https://twitter.com/Kevin_McKernan/status/1387420845530824707
+
+https://twitter.com/Salon/status/1386637199593152518
+
+https://twitter.com/BrendanEich/status/1387920395404144642
 -->
