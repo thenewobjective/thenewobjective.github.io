@@ -1,8 +1,19 @@
-.category-nav {}
-
 .category-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 1em;
+    margin: 0.5em 1em;
+}
+
+.category-nav_prev {
+    word-break: keep-all;
+}
+
+.category-nav_title {
+    margin: 0 0.8em;
+    text-align: center;
+}
+
+.category-nav_next {
+    word-break: keep-all;
 }
