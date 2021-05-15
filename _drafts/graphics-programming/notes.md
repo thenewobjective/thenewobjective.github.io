@@ -65,3 +65,7 @@ getting to the algorithm though we'll want some utility functions first:
 color keys
 
 - <https://twitter.com/migueldeicaza/status/1379493005116243976>
+
+https://avikdas.com/2020/09/08/rendering-curves-in-3d.html
+
+https://github.com/jagregory/abrash-black-book

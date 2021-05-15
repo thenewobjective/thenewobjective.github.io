@@ -1,6 +1,7 @@
 import Component from './Component.js'
 import index from './search_index.js'
 
+// https://artem.krylysov.com/blog/2020/07/28/lets-build-a-full-text-search-engine/
 export default class Search extends Component {
     constructor(options) {
         super(options)
