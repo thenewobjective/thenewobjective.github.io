@@ -37,11 +37,15 @@
     overflow: hidden;
     padding: 0 1em;
     position: relative;
-    height: 4em;
+    min-height: 4em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.site-content_header time {
+    font-style: italic;
 }
 
 .site-content_header-menubutton {
@@ -59,7 +63,7 @@
 }
 
 .site-content_header h1 {
-    margin: 0;
+    margin: 0.5em 0;
 }
 
 .site-content_header h1 .feather-icon {
