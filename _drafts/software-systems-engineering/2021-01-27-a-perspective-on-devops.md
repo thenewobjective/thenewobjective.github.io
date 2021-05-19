@@ -52,13 +52,13 @@ Thus you can conclude that the organization is part of The System and with that 
 From the 1960s to the early 1970s computer programming was primarily accomplished via punched-cards[^2]. The methodology
 was very much constrained by how these cards were processed. The development workflow was basically:
 
-<div class="mermaid">
+<figure class="mermaid">
 graph LR;
     A-->C;
     B-->D;
     C-->D;
     A-->B;
-</div>
+</figure>
 
 {TODO}
 
