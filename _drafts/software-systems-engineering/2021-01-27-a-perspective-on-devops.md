@@ -15,7 +15,7 @@ commentThreadId: -1
 
 "DevOps" is a [portmanteau](https://en.wiktionary.org/wiki/portmanteau_word) of the words "Development" and "Operations".
 While on the face of it the implied meaning seems obvious: unifying Software Development and Operations, in practice explanations
-seem to fall into a number of categories when describing it: Some take the top-down approach of combining traditional
+seem to fall into a number of categories when describing it: some take the top-down approach of combining traditional
 Development and Operations departments and simply calling it the "DevOps" department; Others[^1] focus on a set of bottom-up practices
 and tools and refer to that aggregate as "DevOps"; and some refer to it as a methodology, a culture, or some vaguely defined
 extension of the Agile movement. The goal of this article is to connect these disparate perspectives by taking an orthogonal
