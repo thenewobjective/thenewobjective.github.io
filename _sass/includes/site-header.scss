@@ -12,15 +12,11 @@
     position: relative;
     z-index: 2;
 
-    @media only screen and (max-width: 420px) {
+    @media only screen and (max-width: 1279px) { 
         width: 0vw;
     }
-	@media only screen and (min-width: 420px) and (max-width: 1279px) {
-		max-width: 4em;
-    }
-    @media only screen and (min-width: 1280px) {
-		max-width: 12em;
-	}
+
+    max-width: 12em;
 }
 
 @media only screen and (max-width: 420px) {
@@ -31,6 +27,17 @@
 
     #site-header:target + .site-content {
         min-width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 1279px) {
+    #site-header:target {
+        min-width: 12em;
+        max-width: 95vw
+    }
+
+    #site-header:target + .site-content {
+        min-width: calc(100vw - 12em);
     }
 }
 
@@ -57,7 +64,7 @@
     top: 0.5em;
     right: 0.5em;
 
-    @media only screen and (min-width: 420px) {
+    @media only screen and (min-width: 1280px) {
         display: none;
     }
 }

@@ -4,12 +4,8 @@
     word-break: break-word;
     min-height: 100vh; 
 
-    @media only screen and (max-width: 420px) {
+    @media only screen and (max-width: 1279px) { 
         width: 100vw;
-    }
-
-    @media only screen and (min-width: 421px) and (max-width: 1279px) {
-        width: calc(100vw - 4em);
     }
     @media only screen and (min-width: 1280px) {
         width: calc(100vw - 12em);
@@ -57,7 +53,7 @@
     margin-right: 0.5em;
     vertical-align: middle;
 
-    @media only screen and (max-width: 420px) {
+    @media only screen and (max-width: 1279px) {
         display: inline-block;
     }
 }
@@ -72,7 +68,7 @@
 }
 
 .site-content_header h1 > .feather-icon {
-    @media only screen and (max-width: 420px) {
+    @media only screen and (max-width: 1279px) {
         display: none;
     }
 }

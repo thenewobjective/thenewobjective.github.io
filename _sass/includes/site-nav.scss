@@ -67,13 +67,5 @@
 }
 
 .site-nav_link > span {
-    @media only screen and (max-width: 420px) {
-        display: inline;
-    }
-    @media only screen and (min-width: 421px) and (max-width: 1279px) {
-        display: none;
-    }
-    @media only screen and (min-width: 1280px) {
-        display: inline;
-    }
+    display: inline;
 }
