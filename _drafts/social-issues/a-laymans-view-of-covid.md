@@ -1514,4 +1514,6 @@ https://twitter.com/Kevin_McKernan/status/1372335441832202250
 https://twitter.com/RMConservative/status/1372234775138811910
 
 https://boriquagato.substack.com/p/your-childs-mask-protects-no-one/comments
+
+https://twitter.com/Kevin_McKernan/status/1397310045382135808
 -->
