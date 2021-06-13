@@ -1,0 +1,2 @@
+- Reference Bill Hill's argument
+- underlines break the shape of the letters
