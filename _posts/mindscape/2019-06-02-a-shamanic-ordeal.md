@@ -10,7 +10,7 @@ redirect_from:
 commentThreadId: 21
 ---
 
-[Previously](/mindscape/2019/06/02/rediscovering-the-self.html) I’ve written on my awkward journeys into the unconscious. Recently I had a vivid dream/vision which I can’t explain in any other way than being a partial Shamanic Ordeal. The dream began in no way special, but at some point it turned and became the most significant one I can remember:
+[Previously](/mindscape/rediscovering-the-self) I’ve written on my awkward journeys into the unconscious. Recently I had a vivid dream/vision which I can’t explain in any other way than being a partial Shamanic Ordeal. The dream began in no way special, but at some point it turned and became the most significant one I can remember:
 
 A pet cat of mine died recently and I saw him in a dream the night before in good health and active. One strange aspect of him though was that he was attached to what I would describe as a [Silver Cord](https://en.wikipedia.org/wiki/Silver_cord). The dream was short and otherwise unremarkable. The next night though was when the ordeal began.
 
@@ -26,7 +26,7 @@ The young female assistant who had distracted me earlier stepped forward to take
 
 The female then began to go to work on me: slowly removing the devices and rods from my still cut open hands. After removing a couple of the rods, she paused and stated: “next year we’ll have a better implant that will be smaller and less accessible that we will put here in the middle of your bones”. She expressed this in a way that sounded like it was supposed to be comforting for me. Before she could finish removing the items from my right hand a problem occurred: I felt as if a major blood clot formed in the middle of my arm. I could then see the veins swelling and feel the pressure building. I told her: “I think you did something wrong, I feel a clot here”, She then replied with what seemed to be some nervousness: “But I didn’t touch anything there”. At which point I awoke… For about 6 hours following the dream/vision I had faint phantom pain in my side and in my hands.
 
-The clarity, uniqueness, and detail of this experience has been greater than any I’ve had before. I was reminded of a presentation that [Graham Hancock](https://web.archive.org/web/20200307205035/https://www.youtube.com/watch?v=OMVb3mtdUdI ) gave on the topic of such experiences and I was very much surprised. I found a number of parallels which I am still trying to contend with. Some select quotes and snippets from his presentation:
+The clarity, uniqueness, and detail of this experience has been greater than any I’ve had before. I was reminded of a presentation that [Graham Hancock](https://web.archive.org/web/20200307205035/https://www.youtube.com/watch?v=OMVb3mtdUdI) gave on the topic of such experiences and I was very much surprised. I found a number of parallels which I am still trying to contend with. Some select quotes and snippets from his presentation:
 
 <figure>
     <img src="/media-library/shamanism/shamanic-1.png">
