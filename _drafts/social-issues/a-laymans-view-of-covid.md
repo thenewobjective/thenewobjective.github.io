@@ -1661,4 +1661,16 @@ https://twitter.com/Kevin_McKernan/status/1405130298132680705
 https://web.archive.org/web/20210616122015/https://twitter.com/Kevin_McKernan/status/1405130298132680705
 https://rationalground.com/dangerous-pathogens-found-on-childrens-face-masks/
 https://twitter.com/Kevin_McKernan/status/1405334410375929858
+
+Stockholm syndrome and vaccines
+
+
+vaccine passports and penn's bullshit episode on recycling bins
+
+The general willingness to "be a good person" and as a result falling into regulatory slavery
+
+https://dailycaller.com/2021/04/23/lockdown-cost-covid-19-coronavirus-pandemic-restrictions-mental-health/
+https://www.zerohedge.com/covid-19/us-regulators-meet-discuss-lifting-halt-jj-jab-despite-blood-clot-fears
+https://www.zerohedge.com/covid-19/cdc-looking-whether-masks-are-still-needed-outdoors
+https://www.zerohedge.com/markets/cdc-panel-recommends-resumption-jj-vaccine-benefits-outweigh-risks
 -->
