@@ -1630,4 +1630,15 @@ https://twitter.com/Keubiko/status/1403004879908442122
 https://twitter.com/andrewbostom/status/1396836516870164485
 
 https://www.zerohedge.com/covid-19/pakistans-punjab-province-decides-block-sim-cards-people-refusing-vaccines
+
+https://twitter.com/jimmy_dore/status/1397745370180964355
+https://dailycaller.com/2021/05/26/natural-immunity-covid-19-coronavirus-vaccine/
+https://www.military.com/daily-news/2021/04/26/pentagon-tracking-14-cases-of-heart-inflammation-troops-after-covid-19-shots.html
+https://twitter.com/jordanbpeterson/status/1398663043031220238
+https://twitter.com/Kevin_McKernan/status/1399417131196944386
+https://www.zerohedge.com/political/virologist-who-told-fauci-sars-cov-2-potentially-engineered-just-deleted-5000-tweets
+https://twitter.com/BretWeinstein/status/1401648242899578884
+https://www.zerohedge.com/covid-19/california-county-covid-19-death-toll-lowered-25-after-counting-method-change
+https://twitter.com/Kevin_McKernan/status/1401529937501229057
+https://www.zerohedge.com/covid-19/cdc-hold-emergency-meeting-after-100s-suffer-heart-inflammation-following-covid-vaccines
 -->
