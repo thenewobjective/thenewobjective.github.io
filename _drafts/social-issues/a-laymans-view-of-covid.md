@@ -1644,4 +1644,36 @@ https://www.zerohedge.com/covid-19/cdc-hold-emergency-meeting-after-100s-suffer-
 https://twitter.com/VincentRK/status/1382401753346375683
 https://www.zerohedge.com/covid-19/how-bill-gates-helped-drug-companies-maintain-their-monopoly-vaccines-during-covid
 https://twitter.com/Kevin_McKernan/status/1388890368519856128
+
+https://twitter.com/foundmyfitness/status/1399798979190087682
+
+https://twitter.com/gummibear737/status/1400547605676007426
+
+https://twitter.com/gerdosi/status/1400768602773590018
+https://twitter.com/Kevin_McKernan/status/1400847828105285649
+https://twitter.com/PierreKory/status/1400434666084225024
+
+https://twitter.com/BretWeinstein/status/1402656077854904321
+
+https://twitter.com/BretWeinstein/status/1402647948371005441
+https://twitter.com/AlexBerenson/status/1402984236634701829
+
+https://www.zerohedge.com/markets/astrazenecas-covid-jab-should-be-halted-people-over-60
+https://dailycaller.com/2021/06/14/novavax-coronavirus-vaccine-effective/
+https://twitter.com/Kevin_McKernan/status/1405130298132680705
+https://web.archive.org/web/20210616122015/https://twitter.com/Kevin_McKernan/status/1405130298132680705
+https://rationalground.com/dangerous-pathogens-found-on-childrens-face-masks/
+https://twitter.com/Kevin_McKernan/status/1405334410375929858
+
+Stockholm syndrome and vaccines
+
+
+vaccine passports and penn's bullshit episode on recycling bins
+
+The general willingness to "be a good person" and as a result falling into regulatory slavery
+
+https://dailycaller.com/2021/04/23/lockdown-cost-covid-19-coronavirus-pandemic-restrictions-mental-health/
+https://www.zerohedge.com/covid-19/us-regulators-meet-discuss-lifting-halt-jj-jab-despite-blood-clot-fears
+https://www.zerohedge.com/covid-19/cdc-looking-whether-masks-are-still-needed-outdoors
+https://www.zerohedge.com/markets/cdc-panel-recommends-resumption-jj-vaccine-benefits-outweigh-risks
 -->
