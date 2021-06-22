@@ -1641,4 +1641,7 @@ https://twitter.com/BretWeinstein/status/1401648242899578884
 https://www.zerohedge.com/covid-19/california-county-covid-19-death-toll-lowered-25-after-counting-method-change
 https://twitter.com/Kevin_McKernan/status/1401529937501229057
 https://www.zerohedge.com/covid-19/cdc-hold-emergency-meeting-after-100s-suffer-heart-inflammation-following-covid-vaccines
+https://twitter.com/VincentRK/status/1382401753346375683
+https://www.zerohedge.com/covid-19/how-bill-gates-helped-drug-companies-maintain-their-monopoly-vaccines-during-covid
+https://twitter.com/Kevin_McKernan/status/1388890368519856128
 -->
