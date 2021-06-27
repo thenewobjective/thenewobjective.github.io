@@ -530,3 +530,9 @@ Now go forth with your newfound knowledge and impress your fellow mortals.
 [^2]: "A programming language is low level when its programs require attention to the irrelevant." - Alan Perlis
 [^3]: If *e* is an expression and *x* is a variable, then <code>&lambda;x. e</code> is an abstraction.
 [^4]: A double entendre. See [True Name](https://en.wikipedia.org/wiki/True_name) as well as [Gerald Sussman's](https://en.wikipedia.org/wiki/Gerald_Jay_Sussman) use of the term in [SICP](https://youtu.be/V_7mmwpgJHU?t=775).
+
+<!-- 
+
+Add trampoline and memoization examples?
+http://raganwald.com/2018/09/10/why-y.html
+-->

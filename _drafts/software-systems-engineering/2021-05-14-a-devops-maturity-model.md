@@ -64,7 +64,7 @@ This model is chosen
     </tr>
     <tr>
       <th>Initial</th>
-      <th>Managed</th>
+      <th>Repeatable</th>
       <th>Defined</th>
       <th>Quantitatively Managed</th>
       <th>Optimizing</th>
@@ -88,17 +88,20 @@ This model is chosen
     </tr>
     <tr>
       <td>Testing</td>
-      <td colspan="5">&nbsp;</td>
+      <td>None</td>
+      <td colspan="4">&nbsp;</td>
       <td>Continuous Testing</td>
     </tr>
     <tr>
       <td>Release Management</td>
-      <td colspan="5">&nbsp;</td>
+      <td>Manual</td>
+      <td colspan="4">&nbsp;</td>
       <td>Continuous Release Management</td>
     </tr>
     <tr>
       <td>Infrastructure Monitoring</td>
-      <td colspan="5">&nbsp;</td>
+      <td>None</td>
+      <td colspan="4">&nbsp;</td>
       <td>Continuous Infrastructure Monitoring</td>
     </tr>
     <tr>

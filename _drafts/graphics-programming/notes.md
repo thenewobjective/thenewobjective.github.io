@@ -69,3 +69,15 @@ color keys
 https://avikdas.com/2020/09/08/rendering-curves-in-3d.html
 
 https://github.com/jagregory/abrash-black-book
+
+Rasterizer
+
+(Qy - Py)(x + 1 - (Qx + Px)/2)
+
+- Treat pixels as a square grid
+- A line intercepts the square in a shape of a trapezoid.
+- The area of a trapezoid is:
+
+h * (a+b)/2
+
+'a' and 'b' are parallel sides. 'h' is the distance between them

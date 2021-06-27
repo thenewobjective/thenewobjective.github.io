@@ -1673,4 +1673,5 @@ https://dailycaller.com/2021/04/23/lockdown-cost-covid-19-coronavirus-pandemic-r
 https://www.zerohedge.com/covid-19/us-regulators-meet-discuss-lifting-halt-jj-jab-despite-blood-clot-fears
 https://www.zerohedge.com/covid-19/cdc-looking-whether-masks-are-still-needed-outdoors
 https://www.zerohedge.com/markets/cdc-panel-recommends-resumption-jj-vaccine-benefits-outweigh-risks
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7323934/
 -->
