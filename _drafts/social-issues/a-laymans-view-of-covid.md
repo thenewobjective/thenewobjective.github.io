@@ -1720,4 +1720,6 @@ https://twitter.com/drsimonegold/status/1410352959129636873
 https://twitter.com/Independent/status/1412286551980183553
 https://www.zerohedge.com/covid-19/lambda-variants-unusual-mutations-may-make-it-resistant-vaccines-researchers-fearmonger
 https://www.zerohedge.com/covid-19/cdc-insists-benefits-mrna-vaccines-still-clearly-outweigh-risks-dangerous-side-effects
+https://www.zerohedge.com/medical/fda-adds-warning-about-heart-inflammation-covid-19-mrna-vaccines
+https://twitter.com/andrewbostom/status/1396836516870164485
 -->
