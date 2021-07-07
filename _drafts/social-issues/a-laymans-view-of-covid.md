@@ -1715,4 +1715,9 @@ https://twitter.com/Kevin_McKernan/status/1407377964141006853
 https://twitter.com/waukema/status/1405854411235201026
 https://web.archive.org/save/https://threadreaderapp.com/thread/1405907686412230657.html
 https://mobile.twitter.com/RandPaul/status/1409864645125578754
+https://twitter.com/Kevin_McKernan/status/1410596708291997706
+https://twitter.com/drsimonegold/status/1410352959129636873
+https://twitter.com/Independent/status/1412286551980183553
+https://www.zerohedge.com/covid-19/lambda-variants-unusual-mutations-may-make-it-resistant-vaccines-researchers-fearmonger
+https://www.zerohedge.com/covid-19/cdc-insists-benefits-mrna-vaccines-still-clearly-outweigh-risks-dangerous-side-effects
 -->
