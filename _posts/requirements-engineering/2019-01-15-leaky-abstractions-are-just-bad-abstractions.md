@@ -38,7 +38,11 @@ Expectations of reality and reality itself are two different things. If an abstr
 
 ## The Appropriate Abstraction
 
-The purpose of abstraction is to hide unnecessary details allowing one to focus on those relevant to your [domain](https://en.wikipedia.org/wiki/Domain_of_discourse). If you create an abstraction that excludes a necessary detail then you've created a "leaky abstraction" in the spirit of what Spolsky claims (even though his examples are debatable).
+> The purpose of abstraction is not to be vague,
+> but to create a new semantic level in which one can be absolutely precise
+> <cite><a href="https://en.wikipedia.org/wiki/Edsger_W._Dijkstra" target="_blank">Edsger Dijkstra</a></cite>
+
+The goal is to hide unnecessary details allowing one to focus on those relevant to your [domain](https://en.wikipedia.org/wiki/Domain_of_discourse). If you create an abstraction that excludes a necessary detail then you've created a "leaky abstraction" in the spirit of what Spolsky claims (even though his examples are debatable).
 
 An example of the right level of abstraction can be thought of by analogy with a geographic map.
 A map is an abstraction of the territory it represents. If the physical map of the United States was the same
