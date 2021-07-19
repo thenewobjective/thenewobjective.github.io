@@ -1753,6 +1753,14 @@ https://amp.dailycaller.com/2021/07/13/eu-who-covid-19-wont-accept-coronavirus-v
 https://mobile.twitter.com/gummibear737/status/1415070611752226819
 
 https://www.zerohedge.com/covid-19/astrazeneca-jj-working-modifications-eliminate-potentially-deadly-side-effects
-
-
+https://twitter.com/Kevin_McKernan/status/1412960203297931265
+https://dailycaller.com/2021/07/07/nature-johnson-and-johnson-astrazeneca-covid-19-vaccine/
+https://twitter.com/gummibear737/status/1412899366529024002
+https://www.zerohedge.com/covid-19/california-researchers-discover-americas-first-triple-mutant-covid-strain
+https://twitter.com/gummibear737/status/1413583397495230466
+https://twitter.com/zerohedge/status/1414642173342101510
+https://twitter.com/Kevin_McKernan/status/1414614952325824516
+https://twitter.com/DailyCaller/status/1415342573934288902
+https://twitter.com/meepbobeep/status/1415340654532730880
+https://dailycaller.com/2021/07/19/covid-antibodies-natural-infection-study-italy/
 -->
