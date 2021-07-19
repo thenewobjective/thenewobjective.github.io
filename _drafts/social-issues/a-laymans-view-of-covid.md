@@ -1720,4 +1720,10 @@ https://twitter.com/drsimonegold/status/1410352959129636873
 https://twitter.com/Independent/status/1412286551980183553
 https://www.zerohedge.com/covid-19/lambda-variants-unusual-mutations-may-make-it-resistant-vaccines-researchers-fearmonger
 https://www.zerohedge.com/covid-19/cdc-insists-benefits-mrna-vaccines-still-clearly-outweigh-risks-dangerous-side-effects
+- <https://twitter.com/BretWeinstein/status/1360040670228934656>
+- <https://www.timesofisrael.com/hmo-sees-only-544-covid-infections-among-523000-fully-vaccinated-israelis/>
+- <https://twitter.com/PerpetualValue/status/1361601758305390596>
+- <https://gab.com/boriquagato/posts/105777513369610588>
+- <https://gab.com/CharmingBarbie/posts/105776877353427431>
+- <https://gab.com/boriquagato/posts/105776718161162997>
 -->
