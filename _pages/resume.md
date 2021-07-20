@@ -148,7 +148,7 @@ I’m primarily interested in the study and application of Programming Language 
   alt="Sitecore"
   title="Sitecore Professional Developer"
   time="February 2017"
-  desc=""
+  desc="Sitecore 8.x"
 %}
 
 {% include resume-item.html
@@ -156,7 +156,7 @@ I’m primarily interested in the study and application of Programming Language 
   alt="Umbraco"
   title="Umbraco Certified Master"
   time="April 2017"
-  desc=""
+  desc="Umbraco 7"
 %}
 
 {% include resume-item.html
@@ -180,6 +180,14 @@ I’m primarily interested in the study and application of Programming Language 
   alt="PSDI icon"
   title="<a href='https://www.scrum.org/user/593633' target='_blank'>Professional Scrum Developer</a>"
   time="January 2020"
+  desc=""
+%}
+
+{% include resume-item.html
+  image="/media-library/resume/particular-software-logo.png"
+  alt="Distributed Systems Design Fundamentals"
+  title="<a href='https://www.credential.net/7ef5550e-b559-48a1-9c5f-187a0c377f38' target='_blank'>Distributed Systems Design Fundamentals</a>"
+  time="July 2021"
   desc=""
 %}
 
