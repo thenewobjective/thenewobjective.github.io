@@ -56,6 +56,7 @@ getting to the algorithm though we'll want some utility functions first:
 - <https://news.ycombinator.com/item?id=2419347>
 - <https://ronvalstar.nl/creating-tileable-noise-maps>
 - <https://twitter.com/JJcoolkl/status/1296085259243720705>
+- <https://twitter.com/_eseidel/status/1417147297473826819>
 
 color keys
 
