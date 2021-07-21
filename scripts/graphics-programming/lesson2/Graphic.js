@@ -7,21 +7,16 @@ class Graphic {
 
     get imageData(){ return this.#imageData; }
 
-    plot({x, y, color}) {
-        const {data, height, width} = this.#imageData;
-
+    plot({point: {x,y}, color: {r,g,b,a}}) {
+        const bytes = 4,
+              {data, height, width} = this.#imageData,
+              i = bytes * (width * y + x);
         if(x < 0 || y < 0 || x >= width || y >= height)
             return;
-
-        const xf = Math.floor(x),
-              yf = Math.floor(y),
-              bytes = 4,
-              i = bytes * (width * yf + xf);
-
-        data[i + 0] = (color >>> 24);
-        data[i + 1] = (color << 8 >>> 24);
-        data[i + 2] = (color << 16 >>> 24);
-        data[i + 3] = (color << 24 >>> 24);
+        data[i + 0] = r;
+        data[i + 1] = g;
+        data[i + 2] = b;
+        data[i + 3] = a;
     }
 }
 

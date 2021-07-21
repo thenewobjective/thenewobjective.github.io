@@ -3,7 +3,7 @@ layout: post
 icon: file-text
 category: Graphics Programming
 title:  "2 - Plotting Points"
-date:   2021-02-06 23:00:00 -0600
+date:   2021-07-21 11:00:00 -0600
 permalink: /graphics-programming/plotting-points
 commentThreadId: 46
 ---
@@ -74,7 +74,7 @@ Time to define our `plot` function. Since plotting is not specific to a shape we
 
 ```js
 class Graphic {
-    ...
+    // ...
     plot(x, y, r, g, b, a) {
         const bytes = 4,
               {data, width} = this.#imageData,
@@ -84,104 +84,118 @@ class Graphic {
         data[i + 2] = b
         data[i + 3] = a
     }
-    ...
+    // ...
 }
 ```
 
-You'd probably think it feels awkward and noisy to have to pass in the RGBA components separately as in `.plot(120,4,255,0,0,255)`, so we'll
-update the method to support hex colors: `.plot(120,4,0xFF0000FF)`, which is convenient as we can name them `.plot(120,4,RED)`. Let's stay consistent and
-continue to use named parameters `.plot({x:120, y:4, color:RED})`:
+The components being used to plot are related to each other so we can refactor this and make
+the relationship explicit to improve clarity. What are we plotting? We're not
+plotting `x,y,r,g,b,a`, we're plotting a `Point` with a particular `Color` so let's define them:
+
+```js
+// const p1 = new Point2D({x: 24, y: 13})
+// p1.toString() === '(24,13)'
+class Point2D {
+    constructor({x,y}) {
+        Object.assign(this,{x,y})
+    }
+    toString(){ return `(${this.x},${this.y})` }
+}
+```
+
+```js
+// const RED = new Color({r: 255, g: 0, b: 0, a: 255})
+// RED.toString() === '0xff0000ff'
+// RED.valueOf() === 0xff0000ff
+class Color {
+    constructor({r,g,b,a}){
+        Object.assign(this, {r,g,b,a})
+    }
+    toString() { 
+        return `0x${
+            this.valueOf().toString(16).padStart(8,'0')
+        }`
+    }
+    valueOf(){
+        return this.r * 256**3 +
+               this.g * 256**2 +
+               this.b * 256 +
+               this.a
+    }
+}
+```
+
+The components of a color only make sense if they are between `0-255`; to enforce this we'll add some validation.
+Since we expect to do more validation in the future a means of performing assertions will also be defined:
+
+```js
+class AssertionError extends Error {}
+```
+
+```js
+import AssertionError from "./AssertionError";
+
+const assert = (condition, message) => {
+    if(Boolean(condition) == false)
+        throw new AssertionError(message);
+}
+```
+
+```js
+import assert from "./assert"
+
+class Color {
+    constructor({r,g,b,a}){
+        const ERR = 'Color components must be between 0 and 255';
+        [r,g,b,a].forEach(c => assert(0 <= c && c <= 255, ERR))
+        Object.assign(this, {r,g,b,a})
+    }
+    // ...
+}
+```
+
+You might ask: why not clamp the values instead of throwing an exception? It's true that clamping would be more efficient
+but by clamping we would also be masking errors elsewhere. Why are bad values being created in the first place?
+If you are using a programming language with an appropriate numeric type (unsigned byte), then that would be preferable.
+Since ECMAScript does not static types, we will rely on this methodology instead.
+
+Now the plot method can be updated to support our new definitions:
 
 ```js
 class Graphic {
-    ...
-    plot({x, y, color}) {
+    //...
+    plot({point: {x,y}, color: {r,g,b,a}}) {
         const bytes = 4,
               {data, width} = this.#imageData,
               i = bytes * (width * y + x);
-        data[i + 0] = (color >>> 24);
-        data[i + 1] = (color << 8 >>> 24);
-        data[i + 2] = (color << 16 >>> 24);
-        data[i + 3] = (color << 24 >>> 24);
+        data[i + 0] = r;
+        data[i + 1] = g;
+        data[i + 2] = b;
+        data[i + 3] = a;
     }
-    ...
+    // ...
 }
 ```
 
-Passing in a single number for a color requires some work to get the individual components out again, so above you can see
-this being done with [bitwise shifting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators).
-
-How this works is that the binary representation of the color is left shifted to remove any previous channels and then right shifted to remove subsequent color channels
-leaving the desired result. The following may help to visualize how the green channel `0x99` is obtained from the color `0xFF99AACC` :
-
-```text
-Hex: |                       0xFF99AACC |
-Dec: |                       4288260812 |
-Bin: | 11111111100110011010101011001100 |
-
-Hex: |       FF        99        AA        CC |
-Dec: |      255       153       170       204 |
-Bin: | 11111111  10011001  10101010  11001100 |
-```
-
-Left shift (`<<`) 8 bits:
-
-```text
-Hex:       FF |       99        AA        CC        0 |
-Dec:      255 |      153       170       204        0 |
-Bin: 11111111 | 10011001  10101010  11001100 00000000 |
-```
-
-Only 32 bits are supported so anything to the left of the line are discarded:
-
-```text
-Hex: |       99        AA        CC        0 |
-Dec: |      153       170       204        0 |
-Bin: | 10011001  10101010  11001100 00000000 |
-```
-
-Right shift (`>>>`) 24 bits:
-
-```text
-Hex: |        0        0        0       99 |       AA        CC        0
-Dec: |        0        0        0      153 |      170       204        0
-Bin: | 00000000 00000000 00000000 10011001 | 10101010  11001100 00000000
-```
-
-Only 32 bits are supported so anything to the right of the line are discarded:
-
-```text
-Hex: |        0        0        0       99 |
-Dec: |        0        0        0      153 |
-Bin: | 00000000 00000000 00000000 10011001 |
-```
-
-Which leaves us with: `0x99`
-
 Now we don't want to attempt to draw pixels outside of the boundaries nor do we want
-to try and draw pixels at a fractional position such as `plot({x:-1, y:18.5, color:BLUE})`. Let's
+to try and draw pixels at a fractional position such as `{x:-1, y:18.5}` (at least not yet...). Let's
 update the method to handle these cases:
 
 ```js
 class Graphic {
-    ...
-    plot({x, y, color}) {
-        const {data, height, width} = this.#imageData;
-
+    // ...
+    plot({point: {x,y}, color: {r,g,b,a}}) {
+        const bytes = 4,
+              {data, height, width} = this.#imageData,
+              i = bytes * (width * y + x);
         if(x < 0 || y < 0 || x >= width || y >= height)
             return;
-
-        const xf = Math.floor(x),
-              yf = Math.floor(y),
-              bytes = 4,
-              i = bytes * (width * yf + xf);
-
-        data[i + 0] = (color >>> 24);
-        data[i + 1] = (color << 8 >>> 24);
-        data[i + 2] = (color << 16 >>> 24);
-        data[i + 3] = (color << 24 >>> 24);
+        data[i + 0] = r;
+        data[i + 1] = g;
+        data[i + 2] = b;
+        data[i + 3] = a;
     }
-    ...
+    // ...
 }
 ```
 
@@ -190,16 +204,29 @@ some noise:
 
 ```js
 import Graphic from './Graphic.js'
+import Color from './Color.js'
+import Point2D from './Point2D.js'
 
 class Noise extends Graphic {
-    randomColor() { return Math.floor(Math.random() * 0xFFFFFFFF) }
+    randomColor() { 
+        const randomInt = (max) => Math.floor(Math.random() * max);
+
+        return new Color({
+            r: randomInt(255),
+            g: randomInt(255),
+            b: randomInt(255),
+            a: randomInt(255)
+        })
+    }
 
     constructor({width, height}) {
         super({width, height})
 
         for(let x = 0; x < width; x++) {
             for(let y = 0; y < height; y++) {
-                this.plot({x, y, color: this.randomColor()})
+                const point = new Point2D({x,y}),
+                      color = this.randomColor()
+                this.plot({point, color})
             }
         }
     }
@@ -210,7 +237,7 @@ export default Noise
 
 Implementing noise is straightforward enough. Iterate over every pixel, generate a random color, then plot it.
 
-Next, we'll display our noise graphic:
+Next we'll display our noise graphic:
 
 ```js
 import Canvas from './Canvas.js'
@@ -228,13 +255,13 @@ canvas.draw({imageData: noise.imageData, top: 0, left: 0})
 ```
 
 As a client having to pass in `noise.imageData` to the `draw` method is a bit redundant. Let's update that method
-to accept the graphic directly:
+to accept the graphic directly as well as support our new `Point2D` class:
 
 ```js
 class Canvas {
-    ...
-    draw({graphic, top, left}) {
-        this.#ctx.putImageData(graphic.imageData, top, left)
+    // ...
+    draw({graphic: {imageData}, position: {x, y}}) {
+      this.#ctx.putImageData(imageData, x, y)
     }
 }
 ```
@@ -242,8 +269,19 @@ class Canvas {
 And update the corresponding example:
 
 ```js
-...
-canvas.draw({graphic: noise, top: 0, left: 0})
+import Canvas from './Canvas.js'
+import Noise from './Noise.js'
+import Point2D from './Point2D.js'
+
+const noise = new Noise({height: 480, width: 640})
+
+const canvas = new Canvas({
+    container: document.getElementById('noise-example'),
+    height: 480,
+    width: 640
+})
+
+canvas.draw({graphic: noise, position: new Point2D({x: 0, y: 0})})
 ```
 
 <figure id="noise-example">

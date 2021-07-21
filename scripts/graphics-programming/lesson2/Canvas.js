@@ -8,9 +8,9 @@ class Canvas {
       container.appendChild(this.#canvas)
     }
 
-    draw({graphic, top, left}) {
-      this.#ctx.putImageData(graphic.imageData, top, left)
-  }
+    draw({graphic: {imageData}, position: {x, y}}) {
+      this.#ctx.putImageData(imageData, x, y)
+    }
 }
 
 export default Canvas
