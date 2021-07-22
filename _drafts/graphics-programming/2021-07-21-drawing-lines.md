@@ -2,8 +2,8 @@
 layout: post
 icon: file-text
 category: Graphics Programming
-title:  "3 - Drawing Lines"
-date:   2021-02-07 10:00:00 -0600
+title:  "? - Drawing Lines"
+date:   2021-07-21 11:00:00 -0600
 permalink: /graphics-programming/drawing-lines
 commentThreadId: 47
 ---
@@ -30,7 +30,7 @@ B<sub>P<sub>0</sub></sub>(<em>t</em>) = P<sub>0</sub>
 B<sub>P<sub>0</sub>P<sub>1</sub>...P<sub><em>n</em></sub></sub>(<em>t</em>) = (1 - <em>t</em>)B<sub>P<sub>0</sub>P<sub>1</sub>...P<sub><em>n</em>-1</sub></sub>(<em>t</em>) + <em>t</em>B<sub>P<sub>1</sub>P<sub>2</sub>...P<sub><em>n</em></sub></sub>(<em>t</em>)
 </code>
 
-Where `t` is the `t`ime along the curve from 0 - 1. <code>P<sub>0</sub>&nbsp;-&nbsp;P<sub>n</sub></code> are the control points.
+Where `t` is the `t`ime along the curve from 0 - 1 (0% - 100%). <code>P<sub>0</sub>&nbsp;-&nbsp;P<sub>n</sub></code> are the control points.
 The result is a point on the curve at the given `t`.
 
 What's basically being done is a set of [Linear Interpolations](https://en.wikipedia.org/wiki/Linear_interpolation)
@@ -41,9 +41,6 @@ of the control points. In plain english to interpolate is to pass through some g
     <img src='/media-library/graphics-programming/bezier-lerp.png' alt='Deriving Bézier curve with Linear Interpolation'>
     <figcaption>Deriving Bézier curve with Linear Interpolation - Credit: <a href="https://pomax.github.io/bezierinfo/#whatis" target="_blank">Mike "Pomax" Kamermans</a></figcaption>
 </figure>
-
-So the `bezier` of a single control point is that control point. The `bezier` of multiple
-control points is a straight line between the `bezier`
 
 A near direct translation of the math to JavaScript could look like the following:
 
