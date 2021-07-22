@@ -66,4 +66,4 @@ a couple reasons:
 
 This style of named parameters will be used in all future examples.
 
-[Source code for this lesson](/scripts/graphics-programming/lesson1).
+[Source code for this lesson](https://github.com/thenewobjective/thenewobjective.github.io/tree/master/scripts/graphics-programming/lesson1).

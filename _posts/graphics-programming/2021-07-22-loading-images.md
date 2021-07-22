@@ -130,4 +130,4 @@ canvas.draw({graphic: catImage, position: {x: 0, y: 0}})
 </figure>
 <script type="module" src="/scripts/graphics-programming/lesson3/image-example.js"></script>
 
-[Source code for this lesson](/scripts/graphics-programming/lesson3).
+[Source code for this lesson](https://github.com/thenewobjective/thenewobjective.github.io/tree/master/scripts/graphics-programming/lesson3).

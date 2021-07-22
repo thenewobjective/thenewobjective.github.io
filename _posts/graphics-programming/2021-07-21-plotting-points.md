@@ -292,4 +292,4 @@ canvas.draw({graphic: noise, position: new Point2D({x: 0, y: 0})})
 You might have been surprised at how much effort went into putting a pixel on the screen but this is fundamental
 to our future work and now it's done. Time to move on.
 
-[Source code for this lesson](/scripts/graphics-programming/lesson2).
+[Source code for this lesson](https://github.com/thenewobjective/thenewobjective.github.io/tree/master/scripts/graphics-programming/lesson2).
