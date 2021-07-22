@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 category: Graphics Programming
-title:  "3 - Images"
+title:  "3 - Loading Images"
 date:   2021-07-22 10:00:00 -0600
 permalink: /graphics-programming/loading-images
 commentThreadId: 63
