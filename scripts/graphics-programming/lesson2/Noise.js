@@ -10,7 +10,7 @@ class Noise extends Graphic {
             r: randomInt(255),
             g: randomInt(255),
             b: randomInt(255),
-            a: randomInt(255)
+            a: 255
         })
     }
 
