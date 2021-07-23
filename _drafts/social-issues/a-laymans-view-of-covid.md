@@ -1799,4 +1799,5 @@ https://twitter.com/BallouxFrancois/status/1410723099528421380
 
 https://www.gavi.org/vaccineswork/why-vaccine-side-effects-might-be-more-common-people-whove-already-had-covid-19
 https://www.nature.com/articles/d41586-021-01442-9
+https://www.zerohedge.com/covid-19/israel-finds-pfizer-jab-only-39-effective-stopping-delta-variant
 -->
