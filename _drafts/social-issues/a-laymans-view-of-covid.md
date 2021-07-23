@@ -1796,4 +1796,7 @@ https://twitter.com/Covid19Critical/status/1410619792311132160
 https://www.infowars.com/posts/video-vaccinated-people-wearing-masks-outside-try-to-explain-why-they-still-cover-up/
 https://www.zerohedge.com/covid-19/new-study-shows-dangerous-hearth-inflammation-likely-tied-pfizer-moderna-jabs
 https://twitter.com/BallouxFrancois/status/1410723099528421380
+
+https://www.gavi.org/vaccineswork/why-vaccine-side-effects-might-be-more-common-people-whove-already-had-covid-19
+https://www.nature.com/articles/d41586-021-01442-9
 -->
