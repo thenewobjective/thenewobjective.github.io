@@ -111,7 +111,7 @@ Time to define our `plot` function. Since plotting is not specific to a shape we
 ```js
 class Graphic {
     ...
-    plot(x, y, r, g, b, a) {
+    setPixel(x, y, r, g, b, a) {
         let bytes = 4,
             {data, width, height} = this.imageData,
             i = bytes * (width * y + x);
@@ -124,13 +124,13 @@ class Graphic {
 }
 ```
 
-You'd probably think it feels awkward and noisy to have to pass in the RGBA components separately as in `.plot(120,4,255,0,0,255)`, so we'll
-update the method to support hex colors: `.plot(120,4,0xFF0000FF)`, which is convenient as we can name them `.plot(120,4,RED)`:
+You'd probably think it feels awkward and noisy to have to pass in the RGBA components separately as in `.setPixel(120,4,255,0,0,255)`, so we'll
+update the method to support hex colors: `.setPixel(120,4,0xFF0000FF)`, which is convenient as we can name them `.setPixel(120,4,RED)`:
 
 ```js
 class Graphic {
     ...
-    plot(x, y, c) {
+    setPixel(x, y, c) {
         let bytes = 4,
             {data, width, height} = this.imageData,
             i = bytes * (width * y + x);
@@ -188,13 +188,13 @@ Which leaves us with:
 ```
 
 Now we don't want to attempt to draw pixels outside of the boundaries nor do we want
-to try and draw pixels at a fractional position such as `plot(-1, 18.5, BLUE)`. Let's
+to try and draw pixels at a fractional position such as `setPixel(-1, 18.5, BLUE)`. Let's
 update the method to handle these cases:
 
 ```js
 class Graphic {
     ...
-    plot(x, y, c) {
+    setPixel(x, y, c) {
         let {width, height, data} = this.imageData;
 
         if(x < 0 || y < 0 || x >= width || y >= height)

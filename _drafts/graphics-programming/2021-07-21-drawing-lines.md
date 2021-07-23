@@ -123,7 +123,7 @@ class Graphic {
         const step = 0.01;
         for(let t = 0; t < 1; t += step) {
             const [x,y] = bezier({ctrlPts, t})
-            this.plot({x, y, color})
+            this.setPixel({x, y, color})
         }
     }
 }

@@ -17,7 +17,7 @@ class Graphic {
 
     get imageData(){ return this.#imageData; }
 
-    plot({x, y, color}) {
+    setPixel({x, y, color}) {
         const {data, height, width} = this.#imageData;
 
         if(x < 0 || y < 0 || x >= width || y >= height)
@@ -38,7 +38,7 @@ class Graphic {
         const step = 0.01;
         for(let t = 0; t < 1; t += step) {
             const [x,y] = bezier({ctrlPts, t})
-            this.plot({x, y, color})
+            this.setPixel({x, y, color})
         }
     }
 }

@@ -1,11 +1,10 @@
-import Graphic from './Graphic.js'
-import Color from './Color.js'
-import Point2D from './Point2D.js'
+import Graphic from '../lib/Graphic.js'
+import Color from '../lib/Color.js'
+import Point2D from '../lib/Point2D.js'
+import randomInt from '../lib/util/randomInt.js'
 
 class Noise extends Graphic {
     randomColor() { 
-        const randomInt = (max) => Math.floor(Math.random() * max);
-
         return new Color({
             r: randomInt(255),
             g: randomInt(255),
@@ -21,7 +20,7 @@ class Noise extends Graphic {
             for(let y = 0; y < height; y++) {
                 const point = new Point2D({x,y}),
                       color = this.randomColor()
-                this.plot({point, color})
+                this.setPixel({point, color})
             }
         }
     }

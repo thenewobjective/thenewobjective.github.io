@@ -1,6 +1,6 @@
-import Canvas from './Canvas.js'
+import Canvas from '../lib/Canvas.js'
 import Noise from './Noise.js'
-import Point2D from './Point2D.js'
+import Point2D from '../lib/Point2D.js'
 
 const noise = new Noise({height: 480, width: 640})
 

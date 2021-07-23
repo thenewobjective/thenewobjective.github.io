@@ -15,6 +15,7 @@ create a [proxy](https://en.wikipedia.org/wiki/Proxy_pattern){:target="_blank} c
 the element and hide the dirty details:
 
 ```js
+// lib/Canvas.js
 class Canvas {
     #canvas = document.createElement('canvas')
     #ctx = this.#canvas.getContext('2d')
@@ -34,6 +35,7 @@ api of the canvas. The canvas is transparent by default.
 We want to keep this class simple so we'll limit the ability to draw on it by providing a single method called `draw`:
 
 ```js
+// lib/Canvas.js
 class Canvas {
     ...
     draw({imageData, top, left}) {

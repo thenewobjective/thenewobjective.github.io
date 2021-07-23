@@ -20,6 +20,7 @@ The sample image we'll load is the following [cat picture](/scripts/graphics-pro
 (Credit [WikiMedia Commons](https://commons.wikimedia.org/wiki/File:June_odd-eyed-cat_cropped.jpg))
 
 ```js
+// lib/ImageLoader.js
 class ImageLoader {
     async load(url) {
         const image = await new Promise((resolve, reject) => {
@@ -52,6 +53,7 @@ With a standalone `ImageLoader` class we have opportunities for more ambitious l
 Now that we have a means of obtaining ImageData from an image url we'll want a corresponding `Graphic`:
 
 ```js
+// lib/ImageGraphic.js
 import Graphic from "./Graphic";
 
 class ImageGraphic extends Graphic {
@@ -70,6 +72,7 @@ already creates one. To avoid such redundancy we'll refactor the Graphic class t
 and while we're at it also expose height and width:
 
 ```js
+// lib/Graphic.js
 class Graphic {
     #height
     #width
@@ -87,15 +90,17 @@ class Graphic {
 }
 ```
 
-With this change our existing classes don't change but in the case of the `ImageGraphic` it's simplified to just:
+With this change our existing classes don't need to be updated and in the case of the `ImageGraphic` it's simplified to just:
 
 ```js
+// lib/ImageGraphic.js
 class ImageGraphic extends Graphic {}
 ```
 
 So the `ImageLoader` can now be updated to return this graphic directly:
 
 ```js
+// lib/ImageLoader.js
 class ImageLoader {
     async load(url) {
         // ...
@@ -110,8 +115,9 @@ class ImageLoader {
 Time to show the results of our efforts:
 
 ```js
-import Canvas from './Canvas.js'
-import ImageLoader from './ImageLoader.js'
+// examples/image-example.js
+import Canvas from '../lib/Canvas.js'
+import ImageLoader from '../lib/ImageLoader.js'
 
 const imageLoader = new ImageLoader(),
       catImage = await imageLoader.load('/scripts/graphics-programming/lesson3/assets/cat-cropped.jpg')
@@ -128,6 +134,6 @@ canvas.draw({graphic: catImage, position: {x: 0, y: 0}})
 <figure id="image-example">
     <figcaption>Image Example</figcaption>
 </figure>
-<script type="module" src="/scripts/graphics-programming/lesson3/image-example.js"></script>
+<script type="module" src="/scripts/graphics-programming/lesson3/examples/image-example.js"></script>
 
 [Source code for this lesson](https://github.com/thenewobjective/thenewobjective.github.io/tree/master/scripts/graphics-programming/lesson3).

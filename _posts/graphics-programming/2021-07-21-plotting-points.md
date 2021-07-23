@@ -12,6 +12,7 @@ With our canvas prepared we need a representation that can be rendered to it.
 This representation will be called a `Graphic`:
 
 ```js
+// lib/Graphic.js
 class Graphic {}
 ```
 
@@ -19,6 +20,7 @@ Recall that the canvas `draw` method requires an [ImageData](https://developer.m
 We'll define a property to hold onto this image data but we have to ensure that it's large enough to contain what we plot to it.
 
 ```js
+// lib/Graphic.js
 class Graphic {
     #imageData
 
@@ -70,12 +72,13 @@ const r = data[bytes * (width * y + x)  + 0],
 
 Notice that `height` is not necessary for this computation due to our choosing Row-Major order.
 
-Time to define our `plot` function. Since plotting is not specific to a shape we'll define it on the base class:
+Time to define our `setPixel` function. Since setting a pixel is not specific to a shape we'll define it on the base class:
 
 ```js
+// lib/Graphic.js
 class Graphic {
     // ...
-    plot(x, y, r, g, b, a) {
+    setPixel(x, y, r, g, b, a) {
         const bytes = 4,
               {data, width} = this.#imageData,
               i = bytes * (width * y + x);
@@ -93,23 +96,31 @@ the relationship explicit to improve clarity. What are we plotting? We're not
 plotting `x,y,r,g,b,a`, we're plotting a `Point` with a particular `Color` so let's define them:
 
 ```js
+// lib/Point2D.js
+
 // const p1 = new Point2D({x: 24, y: 13})
 // p1.toString() === '(24,13)'
 class Point2D {
     constructor({x,y}) {
-        Object.assign(this,{x,y})
+        this.x = x
+        this.y = y
     }
     toString(){ return `(${this.x},${this.y})` }
 }
 ```
 
 ```js
+// lib/Color.js
+
 // const RED = new Color({r: 255, g: 0, b: 0, a: 255})
 // RED.toString() === '0xff0000ff'
 // RED.valueOf() === 0xff0000ff
 class Color {
     constructor({r,g,b,a}){
-        Object.assign(this, {r,g,b,a})
+        this.r = r
+        this.g = g
+        this.b = b
+        this.a = a
     }
     toString() { 
         return `0x${
@@ -119,52 +130,49 @@ class Color {
     valueOf(){
         return this.r * 256**3 +
                this.g * 256**2 +
-               this.b * 256 +
+               this.b * 256    +
                this.a
     }
 }
 ```
 
-The components of a color only make sense if they are between `0-255`; to enforce this we'll add some validation.
-Since we expect to do more validation in the future a means of performing assertions will also be defined:
+The components of a color only make sense if they are between `0-255`; this could be enforced with input validation
+or by clamping. If we were using a programming language with a sufficiently expressive static type system we could use
+that to constrain the inputs (`unsigned byte`). This is not an option in ECMAScript. If we choose to perform runtime
+validation this could be quite inefficient when a significant number of colors are involved, also performing input validation
+violates the [Single-responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle).
+With a [contract system](https://www.npmjs.com/package/@final-hill/decorator-contracts) such validation could be moved to
+an invariant assertion. Since we want to keep this tutorial simple we'll rely on clamping the values:
 
 ```js
-class AssertionError extends Error {}
+// lib/util/clamp.js
+const clamp = (x, min, max) => Math.min(Math.max(x, min), max)
+
+export default clamp
 ```
 
 ```js
-import AssertionError from "./AssertionError";
-
-const assert = (condition, message) => {
-    if(Boolean(condition) == false)
-        throw new AssertionError(message);
-}
-```
-
-```js
-import assert from "./assert"
+// lib/Color.js
+import clamp from './util/clamp.js'
 
 class Color {
     constructor({r,g,b,a}){
-        const ERR = 'Color components must be between 0 and 255';
-        [r,g,b,a].forEach(c => assert(0 <= c && c <= 255, ERR))
-        Object.assign(this, {r,g,b,a})
+        this.r = clamp(r,0,255)
+        this.g = clamp(g,0,255)
+        this.b = clamp(b,0,255)
+        this.a = clamp(a,0,255)
     }
     // ...
 }
 ```
 
-You might ask: why not clamp the values instead of throwing an exception? It's true that clamping would be more efficient
-but by clamping we would also be masking errors elsewhere. Why are bad values being created in the first place?
-If you are using a programming language with an appropriate numeric type (unsigned byte), then that would be preferable.
-Since ECMAScript does not static types, we will rely on this methodology instead.
-
 Now the plot method can be updated to support our new definitions:
 
 ```js
+// lib/Graphic.js
 class Graphic {
     //...
-    plot({point: {x,y}, color: {r,g,b,a}}) {
+    setPixel({point: {x,y}, color: {r,g,b,a}}) {
         const bytes = 4,
               {data, width} = this.#imageData,
               i = bytes * (width * y + x);
@@ -182,9 +190,10 @@ to try and draw pixels at a fractional position such as `{x:-1, y:18.5}` (at lea
 update the method to handle these cases:
 
 ```js
+// lib/Graphic.js
 class Graphic {
     // ...
-    plot({point: {x,y}, color: {r,g,b,a}}) {
+    setPixel({point: {x,y}, color: {r,g,b,a}}) {
         const bytes = 4,
               {data, height, width} = this.#imageData,
               i = bytes * (width * y + x);
@@ -199,18 +208,52 @@ class Graphic {
 }
 ```
 
+Since we can plot a pixel it may also be useful to get a particular pixel:
+
+```js
+// lib/Graphic.js
+import Color from './Color.js'
+
+class Graphic {
+    //...
+    getPixel({x,y}) {
+        const bytes = 4,
+              {data, height, width} = this.#imageData,
+              i = bytes * (width * y + x);
+        if(x < 0 || y < 0 || x >= width || y >= height)
+            return new Color({r: 0, g: 0, b: 0, a: 0 });
+        return new Color({
+            r: data[i + 0],
+            g: data[i + 1],
+            b: data[i + 2],
+            a: data[i + 3]
+        })
+    }
+}
+```
+
+Since setting a pixel outside the boundaries doesn't throw an exception, getting one shouldn't either
+so in this case we'll return a transparent black pixel.
+
 With our new plotting ability we can start putting it to use. We'll generate
 some noise:
 
 ```js
-import Graphic from './Graphic.js'
-import Color from './Color.js'
-import Point2D from './Point2D.js'
+// lib/util/randomInt.js
+const randomInt = (max) => Math.floor(Math.random() * max)
+
+export default randomInt
+```
+
+```js
+// examples/Noise.js
+import Graphic from '../lib/Graphic.js'
+import Color from '../lib/Color.js'
+import Point2D from '../lib/Point2D.js'
+import randomInt from '../lib/util/randomInt.js'
 
 class Noise extends Graphic {
     randomColor() { 
-        const randomInt = (max) => Math.floor(Math.random() * max);
-
         return new Color({
             r: randomInt(255),
             g: randomInt(255),
@@ -226,7 +269,7 @@ class Noise extends Graphic {
             for(let y = 0; y < height; y++) {
                 const point = new Point2D({x,y}),
                       color = this.randomColor()
-                this.plot({point, color})
+                this.setPixel({point, color})
             }
         }
     }
@@ -240,8 +283,10 @@ Implementing noise is straightforward enough. Iterate over every pixel, generate
 Next we'll display our noise graphic:
 
 ```js
-import Canvas from './Canvas.js'
+// examples/noise-example.js
+import Canvas from '../lib/Canvas.js'
 import Noise from './Noise.js'
+
 
 const noise = new Noise({height: 480, width: 640})
 
@@ -258,6 +303,7 @@ As a client having to pass in `noise.imageData` to the `draw` method is a bit re
 to accept the graphic directly as well as support our new `Point2D` class:
 
 ```js
+// lib/Canvas.js
 class Canvas {
     // ...
     draw({graphic: {imageData}, position: {x, y}}) {
@@ -269,9 +315,10 @@ class Canvas {
 And update the corresponding example:
 
 ```js
-import Canvas from './Canvas.js'
+// examples/noise-example.js
+import Canvas from '../lib/Canvas.js'
 import Noise from './Noise.js'
-import Point2D from './Point2D.js'
+import Point2D from '../lib/Point2D.js'
 
 const noise = new Noise({height: 480, width: 640})
 
@@ -287,7 +334,7 @@ canvas.draw({graphic: noise, position: new Point2D({x: 0, y: 0})})
 <figure id="noise-example">
     <figcaption>Generating Noise</figcaption>
 </figure>
-<script type="module" src="/scripts/graphics-programming/lesson2/noise-example.js"></script>
+<script type="module" src="/scripts/graphics-programming/lesson2/examples/noise-example.js"></script>
 
 You might have been surprised at how much effort went into putting a pixel on the screen but this is fundamental
 to our future work and now it's done. Time to move on.

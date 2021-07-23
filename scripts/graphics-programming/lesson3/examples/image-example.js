@@ -1,5 +1,5 @@
-import Canvas from './Canvas.js'
-import ImageLoader from './ImageLoader.js'
+import Canvas from '../lib/Canvas.js'
+import ImageLoader from '../lib/ImageLoader.js'
 
 const imageLoader = new ImageLoader(),
       catImage = await imageLoader.load('/scripts/graphics-programming/lesson3/assets/cat-cropped.jpg')
