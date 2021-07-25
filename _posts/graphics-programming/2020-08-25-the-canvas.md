@@ -46,7 +46,7 @@ class Canvas {
 
 The drawing context requires an [ImageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData){:target='_blank'} object and
 a position therefore our `draw` method must accept the same. The `ImageData` object contains a one-dimensional array that represents
-pixels in <abbr title="Red Green Blue Alpha">RGBA</abbr> order with integer values between 0 and 255. That's 24 bits for color plus
+pixels in <abbr title="Red Green Blue Alpha">RGBA</abbr> order with integer values between 0 and 255. That's 24 bits for the color channels plus
 8 bits for the alpha channel. This color depth is referred to as [True Color](https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit)).
 The initial value of the array is zero filled which represents transparent black.
 
@@ -63,7 +63,7 @@ a couple reasons:
 
 1. It makes it obvious what the actual parameters are without having to inspect the implementation.
   Ex: `repo.find(12,140,53202)` vs `repo.find({age: 12, weight: 140, zip: 53202})`
-2. Extensions can be made without impacting clients
+2. Extensions can be made without impacting existing clients
   Ex: `repo.find({name: 'bob', age: 12, weight: 140, zip: 53202})`
 
 This style of named parameters will be used in all future examples.
