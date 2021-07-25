@@ -90,6 +90,36 @@ class Graphic {
 }
 ```
 
+Which is also an opportunity to refactor the `getPixel` and `setPixel` implementations:
+
+```js
+// lib/Graphic.js
+//...
+
+class Graphic {
+    #bytes = 4
+    
+    // ...
+
+    get bytes() { return this.#bytes }
+
+    getPixel({x,y}) {
+        const {bytes, height, width} = this,
+              {data} = this.#imageData,
+              i = bytes * (width * y + x);
+        // ...
+    }
+
+    setPixel({point: {x,y}, color: {r,g,b,a}}) {
+        const {bytes, height, width} = this,
+              {data} = this.#imageData,
+              i = bytes * (width * y + x);
+        // ...
+    }
+}
+// ...
+```
+
 With this change our existing classes don't need to be updated and in the case of the `ImageGraphic` it's simplified to just:
 
 ```js

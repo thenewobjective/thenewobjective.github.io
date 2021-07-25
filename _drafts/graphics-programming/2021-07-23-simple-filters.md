@@ -4,25 +4,60 @@ icon: file-text
 category: Graphics Programming
 title:  "4 - Filters"
 date:   2021-07-23 8:00:00 -0600
-permalink: /graphics-programming/filters
+permalink: /graphics-programming/simple-filters
 commentThreadId: -1
 ---
 
 Being able to plot pixels and load images into a graphic is all well and good but sometimes there is a desire to apply changes
 to a graphic after it has been created. Effects like blurring, sharpening, shifting colors, and more are what we'll tackle in this lesson.
 
-To start we introduce the concept of a `Filter`:
+To start we introduce the concept of a `Filter` with a single method `filterColor` that accepts a color and returns a new one by
+applying the desired algorithm:
 
 ```js
 // lib/filters/Filter.js
-import Graphic from '../Graphic.js'
 
-class Filter extends Graphic {
-    #graphic
-    constructor({graphic}) {
-        this.#graphic = graphic
+class Filter {
+    filterColor(color: {r,g,b,a}) { return color }
+}
+
+export default Filter
+```
+
+`Graphic` needs to be updated as well to apply the filter:
+
+```js
+// lib/Graphic.js
+
+class Graphic {
+   // ...
+
+    filter(filter) {
+        // for each pixel apply filter
+        // create new ImageData
     }
 }
+```
+
+## Grayscale
+
+Our first filter will be one to convert a graphic to [grayscale](https://en.wikipedia.org/wiki/Grayscale). This seems simple enough:
+we'll take the average of the three channels and return a new color:
+
+```js
+// lib/filters/Grayscale.js
+import Filter from './Filter.js'
+import Color from '../Color.js'
+
+class Grayscale extends Filter {
+    filterColor(color: {r,g,b,a}) {
+        const avgColor = (r + g + b) / 3
+
+        return new Color({r: avgColor, g: avgColor, b: avgColor, a})
+    }
+}
+
+export default Grayscale
 ```
 
 <!-->

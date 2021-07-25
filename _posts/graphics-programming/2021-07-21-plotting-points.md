@@ -18,23 +18,30 @@ class Graphic {}
 
 Recall that the canvas `draw` method requires an [ImageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData) object.
 We'll define a property to hold onto this image data but we have to ensure that it's large enough to contain what we plot to it.
+It may be useful for clients (users of this class) to know the height and width of a graphic in the future:
 
 ```js
 // lib/Graphic.js
 class Graphic {
     #imageData
+    #height
+    #width
 
     constructor({width,height}) {
         this.#imageData = new ImageData(width, height)
+        this.#height = height
+        this.#width = width
     }
 
     get imageData() { return this.#imageData; }
+    get height() { return this.#height }
+    get width() { return this.#width }
 }
 ```
 
 ## Plotting Pixels
 
-The next challenge is how to update individual pixels in the `#imageData`. If we can't plot a pixel, we can't do anything
+The next challenge is how to update individual pixels in the `#imageData`. If we can't plot a pixel we can't do anything
 more significant. Updating a specific pixel's color data will require a little arithmetic. First imagine
 this `#imageData` in matrix form like it would be displayed on the screen:
 
@@ -72,26 +79,31 @@ const r = data[bytes * (width * y + x)  + 0],
 
 Notice that `height` is not necessary for this computation due to our choosing Row-Major order.
 
-Time to define our `setPixel` function. Since setting a pixel is not specific to a shape we'll define it on the base class:
+Also, instead of using the name `bytes` we'll use a more descriptive one reflecting what they represent: `channels`
+
+Time to define our `setPixel` method. Since setting a pixel is not specific to a particular graphic we'll define it on the base class:
 
 ```js
 // lib/Graphic.js
 class Graphic {
     // ...
+    #channels = 4
+
+    get channels(){ return this.#channels }
+
     setPixel(x, y, r, g, b, a) {
-        const bytes = 4,
-              {data, width} = this.#imageData,
-              i = bytes * (width * y + x);
+        const {channels, width} = this,
+              {data} = this.#imageData,
+              i = channels * (width * y + x);
         data[i + 0] = r
         data[i + 1] = g
         data[i + 2] = b
         data[i + 3] = a
     }
-    // ...
 }
 ```
 
-The components being used to plot are related to each other so we can refactor this and make
+The components being used to plot are related to each other so we can refactor these and make
 the relationship explicit to improve clarity. What are we plotting? We're not
 plotting `x,y,r,g,b,a`, we're plotting a `Point` with a particular `Color` so let's define them:
 
@@ -107,46 +119,45 @@ class Point2D {
     }
     toString(){ return `(${this.x},${this.y})` }
 }
+
+export default Point2D
 ```
 
 ```js
 // lib/Color.js
 
 // const RED = new Color({r: 255, g: 0, b: 0, a: 255})
-// RED.toString() === '0xff0000ff'
-// RED.valueOf() === 0xff0000ff
 class Color {
-    constructor({r,g,b,a}){
-        this.r = r
-        this.g = g
-        this.b = b
-        this.a = a
+    constructor({r,g,b,a}) {
+        Object.assign(this, {r,g,b,a})
     }
+    // RED.toString() === '0xff0000ff'
     toString() { 
         return `0x${
             this.valueOf().toString(16).padStart(8,'0')
         }`
     }
-    valueOf(){
-        return this.r * 256**3 +
-               this.g * 256**2 +
-               this.b * 256    +
-               this.a
+    // RED.valueOf() === 0xff0000ff
+    valueOf() {
+        const {r,g,b,a} = this
+        return [a,b,g,r].reduce((sum, ch, i) => sum + ch * 256**i)
     }
 }
 ```
 
 The components of a color only make sense if they are between `0-255`; this could be enforced with input validation
-or by clamping. If we were using a programming language with a sufficiently expressive static type system we could use
-that to constrain the inputs (`unsigned byte`). This is not an option in ECMAScript. If we choose to perform runtime
+or by clamping. If we were using a programming language with a sufficiently expressive type system we could use
+that to constrain the inputs (such as `unsigned byte`). This is not an option in ECMAScript. If we choose to perform runtime
 validation this could be quite inefficient when a significant number of colors are involved, also performing input validation
-violates the [Single-responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle).
+violates the [Single-responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) as it's
+[orthogonal](https://en.wikipedia.org/wiki/Orthogonality#Computer_science) to the goal being accomplished.
 With a [contract system](https://www.npmjs.com/package/@final-hill/decorator-contracts) such validation could be moved to
-an invariant assertion. Since we want to keep this tutorial simple we'll rely on clamping the values:
+an invariant assertion where it belongs but since we want to keep this tutorial simple we'll rely on clamping the values for now:
 
 ```js
 // lib/util/clamp.js
-const clamp = (x, min, max) => Math.min(Math.max(x, min), max)
+
+const clamp = ({x, min, max}) => Math.min(Math.max(x, min), max)
 
 export default clamp
 ```
@@ -156,12 +167,14 @@ export default clamp
 import clamp from './util/clamp.js'
 
 class Color {
-    constructor({r,g,b,a}){
-        this.r = clamp(r,0,255)
-        this.g = clamp(g,0,255)
-        this.b = clamp(b,0,255)
-        this.a = clamp(a,0,255)
+    constructor({r,g,b,a}) {
+        const range = {min:0, max:255}
+        this.r = clamp({x:r, ...range})
+        this.g = clamp({x:g, ...range})
+        this.b = clamp({x:b, ...range})
+        this.a = clamp({x:a, ...range})
     }
+
     // ...
 }
 ```
@@ -171,17 +184,18 @@ Now the plot method can be updated to support our new definitions:
 ```js
 // lib/Graphic.js
 class Graphic {
-    //...
+    
+    // ...
+
     setPixel({point: {x,y}, color: {r,g,b,a}}) {
-        const bytes = 4,
-              {data, width} = this.#imageData,
-              i = bytes * (width * y + x);
+        const {channels, width} = this,
+              {data} = this.#imageData,
+              i = channels * (width * y + x);
         data[i + 0] = r;
         data[i + 1] = g;
         data[i + 2] = b;
         data[i + 3] = a;
     }
-    // ...
 }
 ```
 
@@ -192,11 +206,13 @@ update the method to handle these cases:
 ```js
 // lib/Graphic.js
 class Graphic {
+
     // ...
+    
     setPixel({point: {x,y}, color: {r,g,b,a}}) {
-        const bytes = 4,
-              {data, height, width} = this.#imageData,
-              i = bytes * (width * y + x);
+        const {channels, height, width} = this,
+              {data} = this.#imageData,
+              i = channels * (width * y + x);
         if(x < 0 || y < 0 || x >= width || y >= height)
             return;
         data[i + 0] = r;
@@ -204,22 +220,23 @@ class Graphic {
         data[i + 2] = b;
         data[i + 3] = a;
     }
-    // ...
 }
 ```
 
-Since we can plot a pixel it may also be useful to get a particular pixel:
+Since we can set a pixel it may also be useful to get one:
 
 ```js
 // lib/Graphic.js
 import Color from './Color.js'
 
 class Graphic {
+    
     //...
+
     getPixel({x,y}) {
-        const bytes = 4,
-              {data, height, width} = this.#imageData,
-              i = bytes * (width * y + x);
+        const {channels, height, width} = this,
+              {data} = this.#imageData,
+              i = channels * (width * y + x);
         if(x < 0 || y < 0 || x >= width || y >= height)
             return new Color({r: 0, g: 0, b: 0, a: 0 });
         return new Color({
@@ -232,11 +249,10 @@ class Graphic {
 }
 ```
 
-Since setting a pixel outside the boundaries doesn't throw an exception, getting one shouldn't either
+Since setting a pixel outside the boundaries doesn't throw an exception getting one shouldn't either
 so in this case we'll return a transparent black pixel.
 
-With our new plotting ability we can start putting it to use. We'll generate
-some noise:
+With our new plotting ability we can start putting it to use. We'll generate some noise:
 
 ```js
 // lib/util/randomInt.js
@@ -255,9 +271,9 @@ import randomInt from '../lib/util/randomInt.js'
 class Noise extends Graphic {
     randomColor() { 
         return new Color({
-            r: randomInt(255),
-            g: randomInt(255),
-            b: randomInt(255),
+            r: randomInt({max: 255}),
+            g: randomInt({max: 255}),
+            b: randomInt({max: 255}),
             a: 255
         })
     }

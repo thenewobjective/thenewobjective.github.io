@@ -4,10 +4,11 @@ import clamp from "./util/clamp.js";
 // RED.toString() === '0xff0000ff'
 class Color {
     constructor({r,g,b,a}){
-        this.r = clamp(r,0,255)
-        this.g = clamp(g,0,255)
-        this.b = clamp(b,0,255)
-        this.a = clamp(a,0,255)
+        const range = {min:0, max:255}
+        this.r = clamp({x:r, ...range})
+        this.g = clamp({x:g, ...range})
+        this.b = clamp({x:b, ...range})
+        this.a = clamp({x:a, ...range})
     }
     toString() { 
         return `0x${

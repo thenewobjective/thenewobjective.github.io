@@ -1,24 +1,24 @@
 import clamp from "./util/clamp.js";
 
 // const RED = new Color({r: 255, g: 0, b: 0, a: 255})
-// RED.toString() === '0xff0000ff'
 class Color {
-    constructor({r,g,b,a}){
-        this.r = clamp(r,0,255)
-        this.g = clamp(g,0,255)
-        this.b = clamp(b,0,255)
-        this.a = clamp(a,0,255)
+    constructor({r,g,b,a}) {
+        const range = {min:0, max:255}
+        this.r = clamp({x:r, ...range})
+        this.g = clamp({x:g, ...range})
+        this.b = clamp({x:b, ...range})
+        this.a = clamp({x:a, ...range})
     }
+    // RED.toString() === '0xff0000ff'
     toString() { 
         return `0x${
             this.valueOf().toString(16).padStart(8,'0')
         }`
     }
-    valueOf(){
-        return this.red   * 256**3 +
-               this.green * 256**2 +
-               this.blue  * 256    +
-               this.alpha
+    // RED.valueOf() === 0xff0000ff
+    valueOf() {
+        const {r,g,b,a} = this
+        return [a,b,g,r].reduce((sum, ch, i) => ch * 256**i + sum)
     }
 }
 
