@@ -46,7 +46,7 @@ With the above, loading our image looks like this:
 
 ```js
 const imageLoader = new ImageLoader(),
-    catImageData = await imageLoader.load('/scripts/graphics-programming/lesson3/assets/cat-cropped.jpg')
+      catImageData = await imageLoader.load('/scripts/graphics-programming/lesson3/assets/cat-cropped.jpg')
 ```
 
 With a standalone `ImageLoader` class we have opportunities for more ambitious loading approaches when the need arises.
@@ -68,56 +68,19 @@ export default ImageGraphic
 ```
 
 Here you can see we've run into an awkward situation. The `ImageLoader` returns image data but the base class of `Graphic`
-already creates one. To avoid such redundancy we'll refactor the Graphic class to accept an optional `imageData` argument
-and while we're at it also expose height and width:
+already creates one. To avoid such redundancy we'll refactor the Graphic class to accept an optional `imageData` argument:
 
 ```js
 // lib/Graphic.js
 class Graphic {
-    #height
-    #width
-    #imageData
+    // ...
 
     constructor({width, height, imageData}) {
         this.#imageData = imageData ?? new ImageData(width, height)
         this.#height = this.#imageData.height
         this.#width = this.#imageData.width
     }
-
-    get height(){ return this.#height }
-    get width(){ return this.#width }
-    // ...
 }
-```
-
-Which is also an opportunity to refactor the `getPixel` and `setPixel` implementations:
-
-```js
-// lib/Graphic.js
-//...
-
-class Graphic {
-    #bytes = 4
-    
-    // ...
-
-    get bytes() { return this.#bytes }
-
-    getPixel({x,y}) {
-        const {bytes, height, width} = this,
-              {data} = this.#imageData,
-              i = bytes * (width * y + x);
-        // ...
-    }
-
-    setPixel({point: {x,y}, color: {r,g,b,a}}) {
-        const {bytes, height, width} = this,
-              {data} = this.#imageData,
-              i = bytes * (width * y + x);
-        // ...
-    }
-}
-// ...
 ```
 
 With this change our existing classes don't need to be updated and in the case of the `ImageGraphic` it's simplified to just:
@@ -125,6 +88,8 @@ With this change our existing classes don't need to be updated and in the case o
 ```js
 // lib/ImageGraphic.js
 class ImageGraphic extends Graphic {}
+
+export default ImageGraphic
 ```
 
 So the `ImageLoader` can now be updated to return this graphic directly:
@@ -155,10 +120,9 @@ const imageLoader = new ImageLoader(),
 const canvas = new Canvas({
     container: document.getElementById('image-example'),
     height: catImage.height,
-    width: catImage.width
+    width: catImage.width,
+    graphic: catImage
 })
-
-canvas.draw({graphic: catImage, position: {x: 0, y: 0}})
 ```
 
 <figure id="image-example">
