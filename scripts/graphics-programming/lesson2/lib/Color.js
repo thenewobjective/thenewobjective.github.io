@@ -2,10 +2,7 @@ import clamp from "./util/clamp.js";
 
 // const RED = new Color({r: 255, g: 0, b: 0, a: 255})
 class Color {
-    #r
-    #g
-    #b
-    #a
+    #r; #g; #b; #a;
     
     constructor({r,g,b,a}) {
         const range = {min:0, max:255}
