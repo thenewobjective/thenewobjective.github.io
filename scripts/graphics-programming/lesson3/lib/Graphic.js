@@ -16,18 +16,16 @@ class Graphic {
     get imageData() { return this.#imageData; }
 
     setPixel({ point: { x, y }, color: { r, g, b, a } }) {
-        const { channels, height, width } = this,
-            { data } = this.#imageData,
-            i = channels * (width * y + x);
+        const { channels, height, width, imageData: { data } } = this,
+              i = channels * (width * y + x);
         if (x < 0 || y < 0 || x >= width || y >= height)
             return;
         data.set([r, g, b, a], i)
     }
 
     getPixel({ x, y }) {
-        const { channels, height, width } = this,
-            { data } = this.#imageData,
-            i = channels * (width * y + x);
+        const { channels, height, width, imageData: { data } } = this,
+              i = channels * (width * y + x);
         if (x < 0 || y < 0 || x >= width || y >= height)
             return new Color({ r: 0, g: 0, b: 0, a: 0 });
         const [r, g, b, a] = data.slice(i, i + 4)
