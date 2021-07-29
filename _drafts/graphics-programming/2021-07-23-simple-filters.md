@@ -2,8 +2,8 @@
 layout: post
 icon: file-text
 category: Graphics Programming
-title:  "4 - Filters"
-date:   2021-07-23 8:00:00 -0600
+title:  "4 - Simple Filters"
+date:   2021-07-28 8:00:00 -0600
 permalink: /graphics-programming/simple-filters
 commentThreadId: -1
 ---
