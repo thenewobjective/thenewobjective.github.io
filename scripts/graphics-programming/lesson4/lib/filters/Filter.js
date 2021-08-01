@@ -1,10 +1,5 @@
-import Graphic from '../Graphic.js'
-
-class Filter extends Graphic {
-    #graphic
-    constructor({graphic}) {
-        this.#graphic = graphic
-    }
+class Filter {
+    filterColor({color}) { return color }
 }
 
 export default Filter

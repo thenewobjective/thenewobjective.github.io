@@ -16,8 +16,7 @@ class Graphic {
     get imageData() { return this.#imageData; }
 
     setPixel({ point: { x, y }, color: { r, g, b, a } }) {
-        const { channels, height, width } = this,
-            { data } = this.#imageData,
+        const { channels, height, width, imageData: { data } } = this,
             i = channels * (width * y + x);
         if (x < 0 || y < 0 || x >= width || y >= height)
             return;
@@ -25,8 +24,7 @@ class Graphic {
     }
 
     getPixel({ x, y }) {
-        const { channels, height, width } = this,
-            { data } = this.#imageData,
+        const { channels, height, width, imageData: { data } } = this,
             i = channels * (width * y + x);
         if (x < 0 || y < 0 || x >= width || y >= height)
             return new Color({ r: 0, g: 0, b: 0, a: 0 });
