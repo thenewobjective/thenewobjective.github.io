@@ -57,6 +57,8 @@ getting to the algorithm though we'll want some utility functions first:
 - <https://ronvalstar.nl/creating-tileable-noise-maps>
 - <https://twitter.com/JJcoolkl/status/1296085259243720705>
 - <https://twitter.com/_eseidel/status/1417147297473826819>
+- <https://twitter.com/Foone/status/1421109783264862208>
+- <https://web.archive.org/web/20170314133311/http://xnaresources.com/default.asp?page=Tutorial:TileEngineSeries:1>
 
 color keys
 
