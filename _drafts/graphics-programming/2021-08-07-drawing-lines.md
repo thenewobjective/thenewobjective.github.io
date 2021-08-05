@@ -2,8 +2,8 @@
 layout: post
 icon: file-text
 category: Graphics Programming
-title:  "? - Drawing Lines"
-date:   2021-07-21 11:00:00 -0600
+title:  "7 - Drawing Lines"
+date:   2021-08-07 11:00:00 -0600
 permalink: /graphics-programming/drawing-lines
 commentThreadId: 47
 ---
