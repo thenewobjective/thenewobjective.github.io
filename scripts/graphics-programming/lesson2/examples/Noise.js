@@ -6,9 +6,9 @@ import randomInt from '../lib/util/randomInt.js'
 class Noise extends Graphic {
     randomColor() { 
         return new Color({
-            r: randomInt(255),
-            g: randomInt(255),
-            b: randomInt(255),
+            r: randomInt({max: 255}),
+            g: randomInt({max: 255}),
+            b: randomInt({max: 255}),
             a: 255
         })
     }

@@ -7,7 +7,6 @@ const imageLoader = new ImageLoader(),
 const canvas = new Canvas({
     container: document.getElementById('image-example'),
     height: catImage.height,
-    width: catImage.width
+    width: catImage.width,
+    graphic: catImage
 })
-
-canvas.draw({graphic: catImage, position: {x: 0, y: 0}})
