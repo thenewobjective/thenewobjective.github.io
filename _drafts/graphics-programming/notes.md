@@ -79,3 +79,13 @@ Rasterizer
 h * (a+b)/2
 
 'a' and 'b' are parallel sides. 'h' is the distance between them
+
+
+---------------
+
+https://www.w3.org/TR/2021/CRD-css-masking-1-20210805/
+https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/recoloring-images?view=netframeworkdesktop-4.8
+https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/using-transformations-to-scale-colors?view=netframeworkdesktop-4.8
+https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/how-to-use-a-color-matrix-to-transform-a-single-color?view=netframeworkdesktop-4.8
+http://127.0.0.1:4000/graphics-programming/complex-filters#vectors-points-and-colors
+https://tutorial.math.lamar.edu/Classes/CalcII/VectorArithmetic.aspx
