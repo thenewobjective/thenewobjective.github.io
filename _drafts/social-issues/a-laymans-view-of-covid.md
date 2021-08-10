@@ -1884,4 +1884,14 @@ https://dailycaller.com/2021/07/28/third-pfizer-dose-delta-centers-for-disease-c
 https://twitter.com/Kevin_McKernan/status/1420800645158817792
 https://www.rt.com/news/530759-sweden-delta-masks-zero-covid-deaths/
 https://www.zerohedge.com/covid-19/experts-move-goalposts-declare-herd-immunity-threshold-now-90-due-delta
+https://twitter.com/DailyCaller/status/1425083291921698819
+https://twitter.com/BretWeinstein/status/1424918213960167424
+https://twitter.com/BrendanEich/status/1400106743540105218
+https://twitter.com/gummibear737/status/1424830092803461120
+https://twitter.com/Kevin_McKernan/status/1424607569683881987
+https://www.zerohedge.com/covid-19/top-health-expert-says-dire-covid-19-predictions-were-uk
+https://twitter.com/gummibear737/status/1424480365943660545
+https://twitter.com/OBusybody/status/1424059795074584577
+https://twitter.com/Kevin_McKernan/status/1424085073356333060
+https://www.zerohedge.com/political/white-house-defies-who-plans-start-doling-out-booster-shots
 -->
