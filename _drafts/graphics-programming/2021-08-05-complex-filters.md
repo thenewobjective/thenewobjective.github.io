@@ -35,7 +35,9 @@ it could be challenging to visualize. So instead we can represent this with an a
 
 ## Vectors, Points, and Colors
 
-A `Vector` represents a quantity that has a `value` and a `direction`.
+A `Vector` represents a quantity that has a `value` and a `direction`. Its mathematic symbol is a bold or italic letter with an arrow above it:
+
+<pre><em>&#x20d7;v</em></pre>
 
 <figure>
     <img src="/media-library/graphics-programming/vector.png" alt="Vector">
@@ -75,7 +77,7 @@ Math.hypot(x2 - x1, y2 - y1)
 Since `(x1,y1)` is always the origin `(0,0)` the formula is just:
 
 ```js
-Math.hypot(x1, y2)
+Math.hypot(x2, y2)
 ```
 
 Which in the case of our point `(12,24)` the magnitude would be: `26.832815729997478`.
@@ -88,7 +90,7 @@ Therefore the inverse is what we want
 
 > θ = tan<sup>-1</sup> y/x
 
-We can accomplish this with paper and pencil with a [bit of effort](https://mathworld.wolfram.com/InverseTangent.html) but luckily in our case there is a function for that:
+We can accomplish this with paper and pencil with a [bit of effort](http://quickcalcbasic.com/computing%20the%20arctangent.pdf) but luckily in our case there is a function for that:
 
 ```js
 Math.atan(y / x)
@@ -195,11 +197,24 @@ class Color extends Vector {
 export default Color
 ```
 
-So we've established that a `Color` and a `Point` are vectors, so what? What does this give us?
+So we've established that a `Color` and a `Point` are vectors, so what? What does this give us? By recognizing that these are vectors, by giving these a name, we gain power over them[^1].
+We gain the ability to generalize how we operate; by manipulating vectors we can ignore if those vectors happen to be points, colors, or anything else that could be expressed as one.
+
+## Vector Operations
+
+There are many operations that can be performed against vectors and therefore colors. In this section we'll cover a subset of them as they directly relate to color manipulation. In
+future lessons we'll revisit this and add additional operations as needed.
+
+### Scaling
+
+The simplest operation that can be performed on a vector is `scaling`. 
+
+## Filters Revisited
+
+
+<!-- Split below into a new lesson -->
 
 ## Enter The Matrix
-
-## Filter Revisited
 
 ## The Identity Filter
 
@@ -210,3 +225,7 @@ So we've established that a `Color` and a `Point` are vectors, so what? What doe
 * [Source code for this lesson](https://github.com/thenewobjective/thenewobjective.github.io/tree/master/scripts/graphics-programming/lesson5).
 * [Kernel (image processing)](https://en.wikipedia.org/wiki/Kernel_(image_processing))
 * [Contrast (vision)](https://en.wikipedia.org/wiki/Contrast_(vision))
+
+## Notes
+
+[^1]: See [True Name](https://en.wikipedia.org/wiki/True_name) as well as [Gerald Sussman's](https://en.wikipedia.org/wiki/Gerald_Jay_Sussman) use of the term in [SICP](https://youtu.be/V_7mmwpgJHU?t=775)
