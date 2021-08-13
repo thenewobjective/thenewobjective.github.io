@@ -1894,4 +1894,5 @@ https://twitter.com/gummibear737/status/1424480365943660545
 https://twitter.com/OBusybody/status/1424059795074584577
 https://twitter.com/Kevin_McKernan/status/1424085073356333060
 https://www.zerohedge.com/political/white-house-defies-who-plans-start-doling-out-booster-shots
+https://twitter.com/Kevin_McKernan/status/1425653947927257089
 -->
