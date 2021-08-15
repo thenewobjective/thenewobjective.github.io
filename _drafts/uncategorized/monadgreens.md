@@ -27,4 +27,4 @@ https://twitter.com/type2error/status/1284414047895654401
 The sum of an infinite series being -1/12
 	https://www.youtube.com/c/Mathologer/search?query=-%201%2F12
 	
-"A mathematician is a blind man in a dark room looking for a black cat which isn’t there" - Charles Darwin
+https://quoteinvestigator.com/2015/02/15/hidden-cat/
