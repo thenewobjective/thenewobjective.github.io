@@ -89,3 +89,5 @@ https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/using-transfor
 https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/how-to-use-a-color-matrix-to-transform-a-single-color?view=netframeworkdesktop-4.8
 http://127.0.0.1:4000/graphics-programming/complex-filters#vectors-points-and-colors
 https://tutorial.math.lamar.edu/Classes/CalcII/VectorArithmetic.aspx
+
+http://jibbering.com/directanimation/
