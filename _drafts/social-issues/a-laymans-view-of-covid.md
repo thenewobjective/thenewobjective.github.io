@@ -1953,4 +1953,7 @@ https://web.archive.org/web/20210310042621/https://multipolar-magazin.de/artikel
 https://twitter.com/QTRResearch/status/1425501740913283075
 https://gab.com/TheAmericanJournal/posts/106739235403550379
 https://twitter.com/richardursomd/status/1425866603254661126
+- death by any cause after 28 days of covid infection is counted as covid infection
+- pcr tests being ended at end of 2021?
+https://www.fda.gov/news-events/press-announcements/fda-approves-first-covid-19-vaccine
 -->
