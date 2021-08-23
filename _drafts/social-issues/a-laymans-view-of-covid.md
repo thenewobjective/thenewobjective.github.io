@@ -1956,4 +1956,35 @@ https://twitter.com/richardursomd/status/1425866603254661126
 - death by any cause after 28 days of covid infection is counted as covid infection
 - pcr tests being ended at end of 2021?
 https://www.fda.gov/news-events/press-announcements/fda-approves-first-covid-19-vaccine
+https://www.israelnationalnews.com/News/News.aspx/312068
+
+https://www.nature.com/articles/d41586-021-02081-w
+https://www.sciencedirect.com/science/article/pii/S2052297521000883
+https://www.nytimes.com/2021/08/20/us/abbott-covid-tests.html
+https://mobile.twitter.com/Kevin_McKernan/status/1428865474801057792
+https://www.reuters.com/world/us/us-probing-moderna-vaccine-increased-heart-inflammation-risk-washington-post-2021-08-20/?taid=611f774a029ed3000190fa16&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter
+https://www.washingtonpost.com/health/2021/08/19/moderna-vaccine-myocarditis/
+https://search.brave.com/search?q=vaccinated+flight+attendant+dies+from+covid
+https://mobile.twitter.com/MickWest/status/1427776826772836353
+https://www.cnbc.com/amp/2021/08/12/mayo-clinic-covid-breakthrough-risk-may-be-much-lower-with-moderna-vaccine-than-pfizer.html?__twitter_impression=true
+https://mobile.twitter.com/zerohedge/status/1427063229306523652
+https://mobile.twitter.com/zerohedge/status/1426921700948590592
+https://mobile.twitter.com/Kevin_McKernan/status/1426565469276938240
+https://gab.com/RealAlexJones/posts/106749589244561390
+https://mobile.twitter.com/BretWeinstein/status/1422275022870106115
+https://mobile.twitter.com/Kevin_McKernan/status/1422174747979403271
+https://www.zerohedge.com/covid-19/moderna-pfizer-hike-vaccine-prices-25
+https://mobile.twitter.com/gerdosi/status/1422156908962713602
+https://www.zerohedge.com/covid-19/fda-may-grant-full-approval-pfizer-jab-early-september
+https://mobile.twitter.com/AJKayWriter/status/1403074507133186053
+https://twitter.com/Kevin_McKernan/status/1428807751459803145
+https://twitter.com/Kevin_McKernan/status/1429815354184937480
+https://twitter.com/Kevin_McKernan/status/1429816144446332928
+https://twitter.com/SethDillon/status/1429146462714306566
+https://www.zerohedge.com/covid-19/pfizer-vaccine-receives-full-approval-fda
+    - Recall Bill Gates' Freudian Slip about approval
+        - https://www.youtube.com/watch?v=pF752acTijY
+https://www.fda.gov/news-events/press-announcements/fda-approves-first-covid-19-vaccine
+https://twitter.com/Kevin_McKernan/status/1429852606709514240
+
 -->
