@@ -1988,4 +1988,6 @@ https://www.fda.gov/news-events/press-announcements/fda-approves-first-covid-19-
 https://twitter.com/Kevin_McKernan/status/1429852606709514240
 https://anandamide.substack.com/p/directed-evolution
 https://twitter.com/BrendanEich/status/1430053334405111808
+https://www.nytimes.com/2021/08/20/us/abbott-covid-tests.html?smid=tw-nytimes&smtyp=cur
+https://gab.com/SteveDeace/posts/106794561546430178
 -->
