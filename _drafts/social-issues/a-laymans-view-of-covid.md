@@ -1986,5 +1986,6 @@ https://www.zerohedge.com/covid-19/pfizer-vaccine-receives-full-approval-fda
         - https://www.youtube.com/watch?v=pF752acTijY
 https://www.fda.gov/news-events/press-announcements/fda-approves-first-covid-19-vaccine
 https://twitter.com/Kevin_McKernan/status/1429852606709514240
-
+https://anandamide.substack.com/p/directed-evolution
+https://twitter.com/BrendanEich/status/1430053334405111808
 -->
