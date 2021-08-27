@@ -2005,4 +2005,9 @@ https://twitter.com/DailyCaller/status/1430682137708138496
 https://twitter.com/zerohedge/status/1430646227813736448
 https://twitter.com/gummibear737/status/1430640893351038979
 https://twitter.com/Kevin_McKernan/status/1430640611602747392
+https://twitter.com/RandPaul/status/1431248576684888065
+https://www.zerohedge.com/covid-19/ends-debate-israeli-study-shows-natural-immunity-13x-more-effective-vaccines-stopping
+https://twitter.com/gerdosi/status/1431172114963369988
+https://twitter.com/gummibear737/status/1431362747439124482
+https://c19early.com/
 -->
