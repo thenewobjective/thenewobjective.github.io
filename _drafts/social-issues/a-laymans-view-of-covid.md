@@ -1987,6 +1987,23 @@ https://anandamide.substack.com/p/directed-evolution
 https://twitter.com/BrendanEich/status/1430053334405111808
 https://www.nytimes.com/2021/08/20/us/abbott-covid-tests.html?smid=tw-nytimes&smtyp=cur
 https://gab.com/SteveDeace/posts/106794561546430178
+https://twitter.com/gummibear737/status/1430292322701484035
+https://twitter.com/Zigmanfreud/status/1430249824335499265
+https://twitter.com/Kevin_McKernan/status/1430347377035120643
+https://www.medrxiv.org/content/10.1101/2021.08.24.21262415v1
+https://media.gab.com/system/media_attachments/files/083/094/587/original/6454591a8b9a3ed7.jpeg
+https://gab.com/groups/49159
+https://gab.com/Jmerville/posts/106817532907226948
+https://twitter.com/RandPaul/status/1431717188176650244
+https://twitter.com/gummibear737/status/1431679642092589059
+https://twitter.com/BrendanEich/status/1431670049425682434
+https://twitter.com/Kevin_McKernan/status/1431657145410494470
+https://gab.com/petergray/posts/106835698772672641
+https://www.breitbart.com/tech/2021/08/29/twitter-permanently-blacklists-independent-journalist-alex-berenson/
+https://www.infowars.com/posts/cdc-announces-plan-to-spend-millions-addressing-public-health-threat-of-gun-violence/
+https://www.zerohedge.com/covid-19/fdas-credibility-problem
+https://www.zerohedge.com/covid-19/pfizer-board-member-warns-policymakers-natural-immunity-needs-be-included-covid-mandate
+https://twitter.com/The_Real_Fly/status/1432830751607767040
 
 https://boriquagato.substack.com/p/why-are-vaccinations-seeming-to-drop
 https://boriquagato.substack.com/p/trial-balloons-and-covid-buffoons
