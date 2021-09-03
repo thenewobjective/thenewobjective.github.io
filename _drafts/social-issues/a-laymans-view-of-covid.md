@@ -438,11 +438,8 @@ TODO:
 * <https://twitter.com/zerohedge/status/1335611210415415298>
 * <https://twitter.com/boriquagato/status/1339552065656381443>
 * <https://web.archive.org/web/20201227210257/https://twitter.com/boriquagato/status/1343301300306362368>
-* <https://www.zerohedge.com/covid-19/fda-admits-pcr-tests-give-false-results-prepares-ground-biden-virus-rescue-miracle>
 * <https://twitter.com/Kevin_McKernan/status/1348742268245712898>
-* <https://www.zerohedge.com/covid-19/fda-admits-pcr-tests-give-false-results-prepares-ground-biden-virus-rescue-miracle>
 * <https://www.zerohedge.com/covid-19/its-long-past-time-cdc-clean-covid-19-death-counts>
-* <https://www.breitbart.com/science/2021/01/22/w-h-o-modifies-virus-testing-criteria-on-biden-inauguration-day-may-result-in-fewer-positives/>
 -->
 </section>
 </details>
@@ -2010,4 +2007,32 @@ https://www.zerohedge.com/covid-19/ends-debate-israeli-study-shows-natural-immun
 https://twitter.com/gerdosi/status/1431172114963369988
 https://twitter.com/gummibear737/status/1431362747439124482
 https://c19early.com/
+https://scitechdaily.com/inescapable-covid-19-antibody-discovery-neutralizes-all-known-sars-cov-2-strains/
+
+https://twitter.com/dr_barrett/status/1381019632224587776
+https://twitter.com/search?q=%40Kevin_McKernan%20PPV&src=typed_query&f=live
+https://gab.com/sethdillon/posts/106846640135414891
+https://gab.com/RealAlexJones/posts/106846447841788952
+https://gab.com/a/posts/106846428703005165
+https://freeworldnews.tv/watch?id=612c52d453b2ca7726ee28c0
+https://twitter.com/MarkChangizi/status/1432687569515515912
+https://www.zerohedge.com/covid-19/cdc-advisory-panel-hints-it-wont-back-bidens-booster-jab-plan
+https://boriquagato.substack.com/p/two-top-fda-vaccine-leaders-stepping?justPublished=true
+https://www.zerohedge.com/covid-19/pfizer-doses-first-patient-phase-23-trial-covid-therapeutic
+https://twitter.com/DailyCaller/status/1433448380546564102
+https://www.zerohedge.com/markets/europes-cdc-breaks-biden-admin-says-no-urgent-need-covid-boosters
+https://twitter.com/ianmSC/status/1433118256399720449
+https://twitter.com/gavanw/status/1433518902726692917
+https://twitter.com/Covid19Crusher/status/1433531443385286657
+https://twitter.com/gummibear737/status/1433520653580177460
+
+epitope
+	where anibodies bind on proteins
+
+https://twitter.com/Kevin_McKernan/status/1433790091143618562
+https://twitter.com/Kevin_McKernan/status/1433750978491293696
+https://twitter.com/zerohedge/status/1433779074149801987
+https://www.zerohedge.com/covid-19/teachers-not-increased-risk-covid-19-new-study-finds
+https://boriquagato.substack.com/p/more-on-the-bangladesh-mask-study
+https://twitter.com/MickWest/status/1433893016662511617
 -->
