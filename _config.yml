@@ -35,6 +35,8 @@ plugins:
   - jekyll-target-blank
 include: ['_pages']
 
+keep_files: ['CNAME']
+
 highlighter: rouge
 
 permalink: /:title
