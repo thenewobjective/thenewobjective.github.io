@@ -38,15 +38,11 @@ Notes
 	- Licensing number vs version. 
 
 
-   ╭────────────────────────────────────────────────────────────────╮
-   │                                                                │
-   │      New minor version of npm available! 6.4.1 -> 6.10.3       │
-   │   Changelog: https://github.com/npm/cli/releases/tag/v6.10.3   │
-   │               Run npm install -g npm to update!                │
-   │                                                                │
-   ╰────────────────────────────────────────────────────────────────╯
-
 http://www.haskellforall.com/2019/05/release-early-and-often.html
 https://gist.github.com/jashkenas/cbd2b088e20279ae2c8e
 https://en.wikipedia.org/wiki/Version_control
 	semantics control?
+
+Spec-ulation Keynote - Rich Hickey
+	https://www.youtube.com/watch?v=oyLBGkS5ICk
+	

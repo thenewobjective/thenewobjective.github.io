@@ -2108,4 +2108,14 @@ https://www.infowars.com/posts/ap-corrects-ivermectin-fake-news-only-2-poison-co
 https://foxnews.com/politics/cdc-tightened-masking-guidelines-after-threats-from-teachers-union
 https://dailycaller.com/2021/09/08/cdc-exploratory-work-vaccines-menstrual-irregularities/
 https://dailycaller.com/2021/09/08/report-teachers-unions-bullied-the-white-house-cdc-into-changing-school-masking-guidelines/
+https://twitter.com/gummibear737/status/1434612764878774283
+https://twitter.com/gummibear737/status/1434624421625536516
+https://www.zerohedge.com/covid-19/brazil-suspends-12-million-doses-chinas-sinovac-vaccine
+https://twitter.com/gummibear737/status/1436052500528967680
+https://dailycaller.com/2021/09/09/moderna-covid-19-vaccine-boosters-flu/
+https://twitter.com/Kevin_McKernan/status/1435999829717553153
+https://twitter.com/Kevin_McKernan/status/1435292807669817345
+https://twitter.com/Kevin_McKernan/status/1436086454657200131
+https://nypost.com/2021/09/07/nih-to-study-how-covid-19-vaccine-impacts-menstrual-cycle/?utm_medium=SocialFlow&utm_source=NYPTwitter&utm_campaign=SocialFlow
+https://twitter.com/gummibear737/status/1436417972843732994
 -->
