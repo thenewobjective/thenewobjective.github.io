@@ -2100,4 +2100,12 @@ https://twitter.com/zerohedge/status/1433779074149801987
 https://www.zerohedge.com/covid-19/teachers-not-increased-risk-covid-19-new-study-finds
 https://boriquagato.substack.com/p/more-on-the-bangladesh-mask-study
 https://twitter.com/MickWest/status/1433893016662511617
+
+https://twitter.com/zerohedge/status/1434959646981296129
+https://twitter.com/Kevin_McKernan/status/1434956746167132164
+https://twitter.com/gummibear737/status/1434996653824647187
+https://www.infowars.com/posts/ap-corrects-ivermectin-fake-news-only-2-poison-control-calls-not-70/
+https://foxnews.com/politics/cdc-tightened-masking-guidelines-after-threats-from-teachers-union
+https://dailycaller.com/2021/09/08/cdc-exploratory-work-vaccines-menstrual-irregularities/
+https://dailycaller.com/2021/09/08/report-teachers-unions-bullied-the-white-house-cdc-into-changing-school-masking-guidelines/
 -->
