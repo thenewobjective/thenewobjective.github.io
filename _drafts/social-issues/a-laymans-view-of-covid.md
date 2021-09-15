@@ -2092,7 +2092,7 @@ https://twitter.com/Covid19Crusher/status/1433531443385286657
 https://twitter.com/gummibear737/status/1433520653580177460
 
 epitope
-	where anibodies bind on proteins
+	where antibodies bind on proteins
 
 https://twitter.com/Kevin_McKernan/status/1433790091143618562
 https://twitter.com/Kevin_McKernan/status/1433750978491293696
@@ -2108,14 +2108,28 @@ https://www.infowars.com/posts/ap-corrects-ivermectin-fake-news-only-2-poison-co
 https://foxnews.com/politics/cdc-tightened-masking-guidelines-after-threats-from-teachers-union
 https://dailycaller.com/2021/09/08/cdc-exploratory-work-vaccines-menstrual-irregularities/
 https://dailycaller.com/2021/09/08/report-teachers-unions-bullied-the-white-house-cdc-into-changing-school-masking-guidelines/
-https://twitter.com/gummibear737/status/1434612764878774283
-https://twitter.com/gummibear737/status/1434624421625536516
-https://www.zerohedge.com/covid-19/brazil-suspends-12-million-doses-chinas-sinovac-vaccine
-https://twitter.com/gummibear737/status/1436052500528967680
-https://dailycaller.com/2021/09/09/moderna-covid-19-vaccine-boosters-flu/
-https://twitter.com/Kevin_McKernan/status/1435999829717553153
+
+https://twitter.com/gummibear737/status/1435364727346155527
+https://twitter.com/jimmy_dore/status/1436173694523502593
+https://twitter.com/Kevin_McKernan/status/1437934290436861956
+https://dailycaller.com/2021/09/15/pfizer-fda-meeting-booster-shot-vaccine-covid-19/
+https://gab.com/RealAlexJones/posts/106933380722850211
+https://www.zerohedge.com/covid-19/life-has-not-improved-much-we-hoped-singapore-outbreak-worsens-80-vaccinated
+https://twitter.com/gummibear737/status/1438113005141647367
+https://twitter.com/Ravarora1/status/1437556182420377600
+https://twitter.com/DailyCaller/status/1437598924915855363
+https://www.infowars.com/posts/hot-mic-catches-israeli-health-minister-admitting-vaccine-passports-are-about-coercion/
+https://www.infowars.com/posts/shock-leaked-video-top-doctors-discuss-need-to-inflate-the-real-covid-numbers-to-be-more-scary-to-the-public/
+https://notthebee.com/article/heres-a-montage-of-joe-biden-kamala-harris-and-andrew-cuomo-saying-last-year-that-you-shouldnt-trust-the-fda-and-the-vaccine
+https://twitter.com/Zinnsgh0st/status/1436936224099352577
+https://twitter.com/Kevin_McKernan/status/1436692107532673035
+https://news.gab.com/2021/07/29/important-download-covid-vaccine-religious-exemption-documents-here/
+https://twitter.com/MattGertz/status/1436285342810787857
+https://dailycaller.com/2021/09/10/unvaccinated-covid-19-cdc-study/
+https://www.newswars.com/business-owner-tests-positive-for-covid-for-second-time-despite-being-double-jabbed/
 https://twitter.com/Kevin_McKernan/status/1435292807669817345
-https://twitter.com/Kevin_McKernan/status/1436086454657200131
-https://nypost.com/2021/09/07/nih-to-study-how-covid-19-vaccine-impacts-menstrual-cycle/?utm_medium=SocialFlow&utm_source=NYPTwitter&utm_campaign=SocialFlow
-https://twitter.com/gummibear737/status/1436417972843732994
+https://twitter.com/gummibear737/status/1435345806844907529
+https://www.zerohedge.com/covid-19/vaccine-resistant-mu-variant-spreads-49-states-delta-driven-summer-wave-peaks
+https://twitter.com/Kevin_McKernan/status/1435404386029744133
+
 -->
