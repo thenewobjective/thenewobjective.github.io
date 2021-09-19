@@ -2131,5 +2131,5 @@ https://twitter.com/Kevin_McKernan/status/1435292807669817345
 https://twitter.com/gummibear737/status/1435345806844907529
 https://www.zerohedge.com/covid-19/vaccine-resistant-mu-variant-spreads-49-states-delta-driven-summer-wave-peaks
 https://twitter.com/Kevin_McKernan/status/1435404386029744133
-
+https://www.infowars.com/posts/biden-admin-limiting-supply-of-monoclonal-antibodies-in-7-southern-states-under-guise-of-preventing-a-shortage/
 -->
