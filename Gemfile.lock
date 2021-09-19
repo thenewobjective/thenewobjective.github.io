@@ -73,6 +73,7 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  ruby
 
 DEPENDENCIES
   jekyll (~> 4.2)
