@@ -2157,4 +2157,15 @@ https://twitter.com/Kevin_McKernan/status/1439951942244048901
 https://twitter.com/gummibear737/status/1440022239848673293
 Project Veritas
     https://www.youtube.com/watch?v=obdI7tgKLtA
+https://twitter.com/zerohedge/status/1438318305287282691
+https://search.brave.com/search?q=vaccinated+shed+more+virus
+https://en.wikipedia.org/wiki/Immune_tolerance
+https://www.creative-biolabs.com/high-zone-tolerization-method.html
+https://search.brave.com/search?q=High+Zone+Tolerization+caused+by+covid+vaccines&source=web
+https://boriquagato.substack.com/p/asymptomatic-covid-spread
+https://www.mirror.co.uk/news/uk-news/painful-periods-side-effect-covid-24996082?utm_source=gab.com
+https://twitter.com/Kevin_McKernan/status/1439222733540311045
+https://twitter.com/Kevin_McKernan/status/1439221290661974020
+https://twitter.com/zerohedge/status/1439217708751626243
+https://twitter.com/Kevin_McKernan/status/1439217638962569222
 -->
