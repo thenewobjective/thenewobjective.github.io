@@ -79,3 +79,7 @@ Rasterizer
 h * (a+b)/2
 
 'a' and 'b' are parallel sides. 'h' is the distance between them
+
+
+======
+https://tutorial.math.lamar.edu/Classes/Alg/SystemsTwoVrble.aspx

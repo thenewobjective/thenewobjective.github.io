@@ -86,3 +86,6 @@ type TestCatenate1 = Catenate<[1,2,3], [false,true]> // [1, 2, 3, false, true]
 type TestCatenate2 = Catenate<[1,2,3], ['a','b','c']> // [1, 2, 3, "a", "b", "c"]
 
 type TestCompose1 = Compose<typeof String, typeof Boolean>
+
+==========
+https://christof-schramm.net/posts/2019-10-14-type-level-programming-part2.html
