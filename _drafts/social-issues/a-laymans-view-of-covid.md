@@ -2192,4 +2192,16 @@ https://twitter.com/FrankLuntz/status/1438348006357565443
 https://twitter.com/Kevin_McKernan/status/1438497211231490051
 https://gab.com/a/posts/106949903082365746
 https://gab.com/a/posts/106949657200779295
+https://twitter.com/Kevin_McKernan/status/1440278606194753544
+https://twitter.com/Kevin_McKernan/status/1440264862953664521
+https://twitter.com/MartinKulldorff/status/1430660291579105284
+https://dailycaller.com/2021/09/21/johnson-and-johnson-booster-shot-immunity-two-months/
+https://dailycaller.com/2021/09/22/joe-biden-500-million-coronavirus-covid-19-pfizer-vaccines-donate-countries-world/
+https://www.zerohedge.com/geopolitical/ccp-dissident-claims-china-released-covid-military-world-games-october-2019
+https://twitter.com/Emily_Burns_V/status/1440725051964198927
+https://unherd.com/thepost/the-most-vaccine-hesitant-education-group-of-all-phds/?=frpo
+https://twitter.com/EricRWeinstein/status/1441066154059984898
+https://www.zerohedge.com/covid-19/cdc-panel-considers-delaying-booster-jabs-decision-1-month-wait-more-evidence
+https://twitter.com/Kevin_McKernan/status/1441113131678265352
+https://twitter.com/BretWeinstein/status/1441103003541405706
 -->
