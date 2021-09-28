@@ -2204,4 +2204,8 @@ https://twitter.com/EricRWeinstein/status/1441066154059984898
 https://www.zerohedge.com/covid-19/cdc-panel-considers-delaying-booster-jabs-decision-1-month-wait-more-evidence
 https://twitter.com/Kevin_McKernan/status/1441113131678265352
 https://twitter.com/BretWeinstein/status/1441103003541405706
+https://twitter.com/Kevin_McKernan/status/1442994949381894150
+https://www.zerohedge.com/geopolitical/too-late-house-passes-amendment-defund-wuhan-lab-middleman-outfit-ecohealth-alliance
+https://twitter.com/justask66054535/status/1442887876471971844
+https://twitter.com/Bobby_Network/status/1398630137097330688
 -->
