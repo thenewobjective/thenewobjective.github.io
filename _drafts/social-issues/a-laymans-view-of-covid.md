@@ -2208,4 +2208,9 @@ https://twitter.com/Kevin_McKernan/status/1442994949381894150
 https://www.zerohedge.com/geopolitical/too-late-house-passes-amendment-defund-wuhan-lab-middleman-outfit-ecohealth-alliance
 https://twitter.com/justask66054535/status/1442887876471971844
 https://twitter.com/Bobby_Network/status/1398630137097330688
+https://twitter.com/ianmSC/status/1441832050999193604
+https://web-archive-org.translate.goog/web/20200929211949/https://www.maurice.nl/2020/06/22/wells-proved-it-already-its-the-airborne-microdroplets/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=nui,elem
+https://twitter.com/BrendanEich/status/1441903300094267393
+https://twitter.com/jimmy_dore/status/1441903825623793668
+https://www.infowars.com/posts/alberta-chief-health-officer-were-counting-sick-people-who-decline-covid-tests-as-covid-positive/
 -->
