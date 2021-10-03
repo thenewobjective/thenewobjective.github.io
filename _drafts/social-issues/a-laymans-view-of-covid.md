@@ -2256,4 +2256,5 @@ https://twitter.com/EricRWeinstein/status/1444029749525815297
 https://twitter.com/JobobTaeleifi/status/1444028922379735041
 https://twitter.com/BrendanEich/status/1444058674406645760
 https://www.zerohedge.com/covid-19/jj-vaccine-possibly-linked-two-more-serious-health-conditions-eu-regulator-finds
+https://gab.com/RobertMaloneMD/posts/107037419258800731
 -->
