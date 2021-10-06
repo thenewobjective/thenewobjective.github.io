@@ -21,6 +21,10 @@
     - https://www.zerohedge.com/technology/911-system-goes-down-across-country-was-test
   - SolarWinds
     - https://duckduckgo.com/?kh=1&q=SolarWinds&sites=www.schneier.com&ia=web
+  - Facebook
+    - https://blog.cloudflare.com/october-2021-facebook-outage/
+  - Hawaii
+    - https://www.theguardian.com/technology/2018/jan/15/hawaii-missile-false-alarm-design-user-interface
 - Devops as a methodology
   - publishing multiple changes in a day
   - "The best testing is on production"
