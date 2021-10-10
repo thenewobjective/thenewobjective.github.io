@@ -2235,4 +2235,15 @@ https://twitter.com/Kevin_McKernan/status/1442113083271430145
 https://gab.com/LaurenWitzkeDE/posts/106999783598324334
 https://www.zerohedge.com/political/cdc-directors-late-night-intervention-makes-covid-boosters-available-anyone-who-wants-one
 https://www.zerohedge.com/covid-19/cdc-not-changing-definition-fully-vaccinatedfor-now-walensky
+https://gab.com/a/posts/107046048752169186
+https://twitter.com/BrendanEich/status/1445183697498501120
+https://twitter.com/BrendanEich/status/1445201703771410438
+https://www.zerohedge.com/covid-19/antibodies-persist-more-year-after-covid-19-infection-study-finds
+https://twitter.com/zerohedge/status/1445869060546183172
+https://dailycaller.com/2021/10/06/sweden-denmark-pause-covid-moderna-coronavirus-vaccine-myocarditis/
+https://www.infowars.com/posts/vaccinated-vermont-75-of-september-covid-deaths-were-jabbed/
+https://gab.com/White__Rabbit/posts/107045757106368405
+https://freeworldnews.tv/watch?id=615c8f31c7363f2ec3a4e1e4
+https://twitter.com/Kevin_McKernan/status/1446287473265491970
+https://twitter.com/LaloDagach/status/1446155975531143172
 -->
