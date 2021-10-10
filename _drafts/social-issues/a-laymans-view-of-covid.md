@@ -2268,4 +2268,16 @@ https://twitter.com/JobobTaeleifi/status/1444028922379735041
 https://twitter.com/BrendanEich/status/1444058674406645760
 https://www.zerohedge.com/covid-19/jj-vaccine-possibly-linked-two-more-serious-health-conditions-eu-regulator-finds
 https://gab.com/RobertMaloneMD/posts/107037419258800731
+https://twitter.com/Kevin_McKernan/status/1444785599102308353
+https://twitter.com/Kevin_McKernan/status/1444784856110673923
+https://twitter.com/zerohedge/status/1444761738428227590
+https://twitter.com/rubiconcapital_/status/1445491276133003265
+https://notthebee.com/article/china-spent-105-million-on-pcr-tests-just-months-before-first-confirmed-covid-case-
+https://www.tandfonline.com/doi/full/10.1080/13571516.2021.1976051#.YVyGCObrObA.twitter
+https://twitter.com/RWMaloneMD/status/1446129719578144768
+https://twitter.com/FreeBeacon/status/1445779596733935619
+https://notthebee.com/article/colorado-hospital-system-says-it-wont-give-organ-transplants-to-those-second-class-unvaxxed-people-in-almost-all-situation
+https://twitter.com/DanCrenshawTX/status/1446205299136811014
+https://twitter.com/gummibear737/status/1446179118480044037
+https://twitter.com/Kevin_McKernan/status/1446480686970544128
 -->
