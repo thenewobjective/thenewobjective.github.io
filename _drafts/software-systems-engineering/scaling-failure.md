@@ -23,6 +23,7 @@
     - https://duckduckgo.com/?kh=1&q=SolarWinds&sites=www.schneier.com&ia=web
   - Facebook
     - https://blog.cloudflare.com/october-2021-facebook-outage/
+    - https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
   - Hawaii
     - https://www.theguardian.com/technology/2018/jan/15/hawaii-missile-false-alarm-design-user-interface
 - Devops as a methodology
