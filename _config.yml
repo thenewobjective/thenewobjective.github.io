@@ -33,7 +33,7 @@ plugins:
   - rouge
   - jekyll-sitemap
   - jekyll-target-blank
-include: ['_pages']
+include: ['_pages', 'CNAME']
 
 highlighter: rouge
 
