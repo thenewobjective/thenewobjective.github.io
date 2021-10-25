@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Conway's Law and Consequences"
-date:   2021-10-17 12:00:00 -0600
+date:   2021-10-24 12:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/conways-law-and-consequences
 commentThreadId: -1
