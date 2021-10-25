@@ -87,7 +87,7 @@ you might expect. Microsoft [performed a study](https://augustl.com/blog/2019/be
 the top predictor of bugs in a codebase and discovered that the organization structure was the #1 offender by far.
 
 There is now cognitive dissonance in the mind of a Software Engineer. On one hand the above study makes sense in light of
-our knowledge of Conway's Law since the latte 1960s and yet, what is true of every bug discovered in a production system?
+our knowledge of Conway's Law since the late 1960s and yet, what is true of every bug discovered in a production system?
 
 1. The type system didn't prevent it
 2. The unit tests didn't catch it
