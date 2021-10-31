@@ -2333,4 +2333,6 @@ https://twitter.com/gummibear737/status/1453126898670874630
 https://twitter.com/DailyCaller/status/1453450461281988608
 https://www.zerohedge.com/covid-19/leaked-government-report-finds-vaccine-passports-could-actually-increase-spread-covid
 https://twitter.com/gummibear737/status/1453474817890529287
+https://tv.gab.com/channel/realalexjones/view/why-are-vaccinated-people-getting-cancer-6165cf02645a5a7fe8993514
+https://twitter.com/dperetti/status/1453778033807134735
 -->

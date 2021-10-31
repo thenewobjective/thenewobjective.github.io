@@ -38,3 +38,12 @@ into a separate location called
 * http://lambda-the-ultimate.org/node/567#comment-4550
 * https://www.google.com/search?ie=UTF-8&oe=UTF-8&q=Aspect+Oriented&btnG=&domains=http%3A%2F%2Flambda-the-ultimate.org&sitesearch=http%3A%2F%2Flambda-the-ultimate.org
 * http://www-public.imtbs-tsp.eu/~gibson/Teaching/Teaching-ReadingMaterial/Steimann06.pdf
+
+Css solves the aspect oriented Come FROM problem by either
+
+only having a single aspect (css class) 
+defining a set of completely orthogonal ones
+
+Effectively in the former case of removing the AOP feature 
+
+In the latter of taming it through a design pattern 
