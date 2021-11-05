@@ -1,0 +1,2 @@
+Dream symbol 
+The head of a cobra dark copper facing you the background is a dark reddish-brown on both sides of the Cobra are white rods top with small white spheres body of the cobra is a DNA strand in primary colors red blue but yellow connectors in-between and so on

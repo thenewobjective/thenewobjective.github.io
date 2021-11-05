@@ -1,0 +1,3 @@
+- https://link.springer.com/chapter/10.1007/978-3-319-91908-9_15
+- https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf
+- https://www.semanticscholar.org/paper/The-Next-7000-Programming-Languages-Chatley-Donaldson/0efc85468220d55aee233b54770ade95be5e3040
