@@ -47,3 +47,8 @@
 - Invasive species out-compete due to a novel means of beating.
 
 - https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
+
+
+
+"[Open Source] Make All Bugs Shallow" Linus's Law?
+https://twitter.com/mlhaufe/status/1456681915298222080
