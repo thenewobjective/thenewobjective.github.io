@@ -2391,4 +2391,11 @@ https://notthebee.com/article/scientists-claim-that-over-80-of-deer-in-iowa-test
 https://www.cnbc.com/2021/11/05/pfizer-says-its-covid-pill-with-hiv-drug-cuts-the-risk-of-hospitalization-or-death-by-89percent.html?utm_term=Autofeed&utm_medium=Social&utm_content=Main&utm_source=Twitter#Echobox=1636109162
 https://twitter.com/BrendanEich/status/1456965650627416067
 https://www.tabletmag.com/contributors/norman-doidge
+https://twitter.com/Kevin_McKernan/status/1457042519745773568
+https://gab.com/SteveDeace/posts/107230522157304653
+https://twitter.com/PierreKory/status/1456972925119127557
+https://twitter.com/gummibear737/status/1434237628258344961
+https://twitter.com/gummibear737/status/1458208564271587328
+https://twitter.com/MaxBlumenthal/status/1458561013171822596
+https://twitter.com/MaxBlumenthal/status/1458561043278467072
 -->
