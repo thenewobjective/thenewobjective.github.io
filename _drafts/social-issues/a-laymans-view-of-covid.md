@@ -2399,4 +2399,8 @@ https://twitter.com/gummibear737/status/1458208564271587328
 https://twitter.com/MaxBlumenthal/status/1458561013171822596
 https://twitter.com/MaxBlumenthal/status/1458561043278467072
 https://twitter.com/IvoryHecker/status/1458504347671793671
+https://twitter.com/BrendanEich/status/1459721267288760328
+https://twitter.com/DrRobDavidson/status/1459517614389174280
+See Dopesick series w/ Michael Keaton to see some background on the FDA
+https://www.zerohedge.com/covid-19/fda-recalls-millions-home-covid-19-tests-over-false-positives
 -->
