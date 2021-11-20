@@ -2403,4 +2403,20 @@ https://twitter.com/BrendanEich/status/1459721267288760328
 https://twitter.com/DrRobDavidson/status/1459517614389174280
 See Dopesick series w/ Michael Keaton to see some background on the FDA
 https://www.zerohedge.com/covid-19/fda-recalls-millions-home-covid-19-tests-over-false-positives
+https://twitter.com/BrendanEich/status/1462123839605788676
+https://www.zerohedge.com/markets/people-dont-know-special-fund-exists-feds-pay-zero-claims-covid-19-vaccine-injuriesdeaths
+https://twitter.com/Kevin_McKernan/status/1457454219888320518
+https://trialsitenews.com/fdas-smoking-gun-disinformation-campaign-targeting-ivermectin/
+https://twitter.com/alexandrosM/status/1457320719075864577
+https://mobile.twitter.com/gummibear737/status/1453474817890529287
+https://twitter.com/seanmdav/status/1458974181203267588
+https://twitter.com/MartyMakary/status/1458090097493094405
+https://gab.com/RealAlexJones/posts/107261853801850651
+https://www.zerohedge.com/political/it-raises-serious-constitutional-concerns-appeals-court-re-affirms-stay-biden-vaccine
+https://twitter.com/BrendanEich/status/1460086462767001600
+https://twitter.com/jimmy_dore/status/1460035898364497923
+https://gab.com/rooshv/posts/107266955540279870
+https://gab.com/INFOWARS/posts/107271762787048583
+https://twitter.com/DrJBhattacharya/status/1460782420827852803
+https://notthebee.com/article/the-definition-of-fully-vaccinated-against-covid-19-is-changing-to-three-shots-and-gee-i-wonder-if-theyll-stop-there
 -->
