@@ -1,4 +1,5 @@
 import Color from "./Color.js"
+import {Filter} from './filters/index.js'
 
 class Graphic {
     #channels = 4
@@ -15,9 +16,7 @@ class Graphic {
     get width() { return this.#width }
     get imageData() { return this.#imageData; }
 
-    clone() {
-        return new Graphic({imageData: this.#imageData})
-    }
+    filter(){ return new Filter({graphic: this}) }
 
     setPixel({ point: { x, y }, color: { r, g, b, a } }) {
         const { channels, height, width, imageData: { data } } = this,
@@ -37,21 +36,7 @@ class Graphic {
         return new Color({ r, g, b, a })
     }
 
-    filter({ filter }) {
-        const newGraphic = this.clone(),
-              { channels, height, width, imageData: { data } } = newGraphic
-        for (let x = 0; x < width; x++) {
-            for (let y = 0; y < height; y++) {
-                const i = channels * (width * y + x),
-                      [r, g, b, a] = data.slice(i, i + 4),
-                      { r: r2, g: g2, b: b2, a: a2 } = filter.filterColor({color: { r, g, b, a }})
-                      
-                data.set([r2,g2,b2,a2],i)
-            }
-        }
-
-        return newGraphic
-    }
+    render(){}
 }
 
 export default Graphic

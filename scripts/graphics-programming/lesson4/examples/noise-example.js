@@ -6,6 +6,8 @@ const canvas = new Canvas({
     container: document.getElementById('noise-example'),
     height: 480,
     width: 640,
-    graphic: new Graphic({height: 480, width: 640})
-            .filter({filter: new Noise()})
+    graphic: new Noise({
+        graphic: new Graphic({height: 480, width: 640})
+    })
 })
+canvas.render()

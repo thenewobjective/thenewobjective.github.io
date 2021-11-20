@@ -1,9 +1,5 @@
 import Graphic from "./Graphic.js";
 
-class ImageGraphic extends Graphic {
-    clone() {
-        return new ImageGraphic({imageData: this.imageData})
-    }
-}
+class ImageGraphic extends Graphic {}
 
 export default ImageGraphic
