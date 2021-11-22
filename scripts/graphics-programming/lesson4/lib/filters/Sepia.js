@@ -1,8 +1,8 @@
-import Filter from './Filter.js'
+import {Filter} from './index.js'
 import Color from '../Color.js'
 
 class Sepia extends Filter {
-    filterColor({color: {r,g,b,a}}) {
+    filterColor({r,g,b,a}) {
         return new Color({
             r: 0.393*r + 0.769*g + 0.189*b, 
             g: 0.349*r + 0.686*g + 0.168*b,

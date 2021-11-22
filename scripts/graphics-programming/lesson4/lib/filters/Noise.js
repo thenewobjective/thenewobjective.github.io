@@ -1,4 +1,4 @@
-import Filter from './Filter.js'
+import {Filter} from './index.js'
 import Color from '../Color.js'
 import randomInt from '../util/randomInt.js'
 

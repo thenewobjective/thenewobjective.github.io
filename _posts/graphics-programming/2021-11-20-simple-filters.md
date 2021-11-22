@@ -3,7 +3,7 @@ layout: post
 icon: file-text
 category: Graphics Programming
 title:  "4 - Simple Filters"
-date:   2021-08-05 10:00:00 -0600
+date:   2021-11-20 10:00:00 -0600
 permalink: /graphics-programming/simple-filters
 commentThreadId: 64
 ---
@@ -11,66 +11,80 @@ commentThreadId: 64
 * TOC
 {:toc}
 
-## Filter
+## Introduction
 
 Being able to plot pixels and load images into a graphic is all well and good but sometimes there is a desire to apply changes
-to a graphic after it has been created. Effects like blurring, sharpening, shifting colors, and more are what we'll tackle in this lesson.
-
-To start we introduce the concept of a `Filter` with a single method `filterColor` that accepts a color and returns a new one by
-applying the desired algorithm:
+to a graphic after it has been created. Effects like blurring, sharpening, shifting colors, and more are what we'll tackle
+in this lesson. To start we introduce the concept of a `Filter`:
 
 ```js
 // lib/filters/Filter.js
 class Filter {
-    filterColor({color}) { return color }
+    #graphic
+
+    constructor({graphic}) {
+        this.#graphic = graphic
+    }
+
+    get channels() { return this.#graphic.channels }
+    get height() { return this.#graphic.height }
+    get width() { return this.#graphic.width }
+    get imageData() { return this.#graphic.imageData; }
+
+    render() {
+        this.#graphic.render()
+
+        const {height, width} = this
+        for (let x = 0; x < width; x++) {
+            for (let y = 0; y < height; y++) {
+                const point = {x,y},
+                      color = this.getPixel(point)
+                this.setPixel({point,color})
+            }
+        }
+    }
+
+    filterColor(color) { return color }
+
+    getPixel(point) { return this.#graphic.getPixel(point) }
+
+    setPixel({ point, color }) {
+        this.#graphic.setPixel({point, color: this.filterColor(color)})
+    }
 }
 
 export default Filter
 ```
 
-`Graphic` needs to be updated as well to apply the filter. To remain as stateless as possible the filter will return a new graphic by cloning.
+A `Filter` acts like a `Graphic` by sharing its interface but you'll notice it doesn't extend it.
+Instead, it accepts a `graphic` in the constructor and forwards the method calls to the
+wrapped object `#graphic`. The reason for this is that our goal is to not only apply a single filter to a
+graphic but to be able to apply any number of them we want in any order. To support this use-case
+we're leveraging the [Decorator Pattern](https://en.wikipedia.org/wiki/Decorator_pattern). The
+filter algorithm itself is the `filterColor` method. This algorithm is then applied in the
+`setPixel` method by intercepting the color.
+
+The `render` method applies the algorithm to every pixel in the wrapped graphic.
+A wrinkle here though is that the wrapped graphic could be either a graphic or another filter.
+To support free composition the `Graphic` class itself also needs a `render` method:
 
 ```js
 // lib/Graphic.js
+
+// ...
 class Graphic {
     // ...
-
-    clone() {
-        return new Graphic({imageData: this.#imageData})
-    }
-
-    filter({ filter }) {
-        const newGraphic = this.clone(),
-              { channels, height, width, imageData: { data } } = newGraphic
-        for (let x = 0; x < width; x++) {
-            for (let y = 0; y < height; y++) {
-                const i = channels * (width * y + x),
-                      [r, g, b, a] = data.slice(i, i + 4),
-                      { r: r2, g: g2, b: b2, a: a2 } = filter.filterColor({color: { r, g, b, a }})
-                      
-                data.set([r2,g2,b2,a2],i)
-            }
-        }
-
-        return newGraphic
-    }
+    render(){}
 }
+
+export default Graphic
 ```
 
-This new `clone()` method should be specialized for each `Graphic` subtype. Thus far we only have one other to worry about:
-
-```js
-// lib/ImageGraphic
-class ImageGraphic extends Graphic {
-    clone() {
-        return new ImageGraphic({imageData: this.imageData})
-    }
-}
-```
+This method may be useful for use-cases beyond filters as well but at this point it's just a stub.
 
 ## Noise
 
-For our first filter we can revisit our Noise example from [lesson 2](/graphics-programming/plotting-points):
+For our first filter we'll revisit our Noise example from [lesson 2](/graphics-programming/plotting-points):
 
 ```js
 // examples/Noise.js
@@ -139,9 +153,56 @@ const canvas = new Canvas({
     container: document.getElementById('noise-example'),
     height: 480,
     width: 640,
-    graphic: new Graphic({height: 480, width: 640})
-            .filter({filter: new Noise()})
+    graphic: new Noise({
+        graphic: new Graphic({height: 480, width: 640})
+    }).render()
 })
+```
+
+With every `Graphic` now supporting a `render` method it looks a little awkward to have it called
+directly before assigning it to the canvas. The canvas itself should control when and how rendering is
+performed so we'll refactor and update `Canvas`:
+
+```js
+// lib/Canvas.js
+class Canvas {
+  #canvas = document.createElement('canvas')
+  #ctx = this.#canvas.getContext('2d', { alpha: false })
+  #graphic
+
+  constructor({ container, height, width, graphic }) {
+    this.#canvas.style.backgroundColor = 'black'
+    Object.assign(this.#canvas, { height, width })
+    container.appendChild(this.#canvas)
+    this.#graphic = graphic
+  }
+
+  render() {
+    this.#graphic.render()
+    this.#ctx.putImageData(this.#graphic.imageData, 0, 0)
+  }
+}
+
+export default Canvas
+```
+
+The example is now:
+
+```js
+// examples/noise-example.js
+import Canvas from '../lib/Canvas.js'
+import Noise  from '../lib/filters/Noise.js'
+import Graphic from '../lib/Graphic.js'
+
+const canvas = new Canvas({
+    container: document.getElementById('noise-example'),
+    height: 480,
+    width: 640,
+    graphic: new Noise({
+        graphic: new Graphic({height: 480, width: 640})
+    })
+})
+canvas.render()
 ```
 
 <figure id="noise-example">
@@ -160,7 +221,7 @@ import Filter from './Filter.js'
 import Color from '../Color.js'
 
 class AvgGrayscale extends Filter {
-    filterColor(color: {r,g,b,a}) {
+    filterColor({r,g,b,a}) {
         const avgColor = (r + g + b) / 3
 
         return new Color({r: avgColor, g: avgColor, b: avgColor, a})
@@ -179,14 +240,15 @@ import ImageLoader from '../lib/ImageLoader.js'
 import AvgGrayscale  from '../lib/filters/AvgGrayscale.js'
 
 const imageLoader = new ImageLoader(),
-      butterflyImage = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
+      graphic = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
 
 const canvas = new Canvas({
     container: document.getElementById('grayscale-example-1'),
-    height: butterflyImage.height,
-    width: butterflyImage.width,
-    graphic: butterflyImage.filter({filter: new AvgGrayscale()})
+    height: graphic.height,
+    width: graphic.width,
+    graphic: new AvgGrayscale({graphic})
 })
+canvas.render()
 ```
 
 <figure>
@@ -209,7 +271,7 @@ import Filter from './Filter.js'
 import Color from '../Color.js'
 
 class Grayscale extends Filter {
-    filterColor({color: {r,g,b,a}}) {
+    filterColor({r,g,b,a}) {
         const luminance = 0.2126*r + 0.7152*g + 0.0722*b
         return new Color({r: luminance, g: luminance, b: luminance, a})
     }
@@ -227,14 +289,15 @@ import ImageLoader from '../lib/ImageLoader.js'
 import Grayscale  from '../lib/filters/Grayscale.js'
 
 const imageLoader = new ImageLoader(),
-      butterflyImage = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
+      graphic = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
 
 const canvas = new Canvas({
     container: document.getElementById('grayscale-example-2'),
-    height: butterflyImage.height,
-    width: butterflyImage.width,
-    graphic: butterflyImage.filter({filter: new Grayscale()})
+    height: graphic.height,
+    width: graphic.width,
+    graphic: new Grayscale({graphic})
 })
+canvas.render()
 ```
 
 <figure>
@@ -250,7 +313,7 @@ const canvas = new Canvas({
 
 The `Brightness` filter brightens or darkens a graphic by a specified `amount`. An `amount` of `1` would have
 no change. An amount of `0.5` would darken the graphic by `50%`. An `amount` of `2` would be `200%` brightness.
-A brightness of less than `0` is undefined so the value is clamped:
+A brightness of less than `0` is undefined so the value is clamped.
 
 ```js
 // lib/filters/Brightness.js
@@ -259,12 +322,16 @@ import Color from '../Color.js'
 
 class Brightness extends Filter {
     #amount
-    constructor({amount}) {
-        super()
+
+    constructor({graphic, amount}) {
+        super({graphic})
         this.#amount = Math.max(amount,0)
     }
-    filterColor({color: {r,g,b,a}}) {
-        const amount = this.#amount
+
+    get amount(){ return this.#amount }
+
+    filterColor({r,g,b,a}) {
+        const {amount} = this
         return new Color({r: r*amount, g: g*amount, b: b*amount, a})
     }
 }
@@ -279,14 +346,15 @@ import Brightness  from '../lib/filters/Brightness.js'
 import ImageLoader from '../lib/ImageLoader.js'
 
 const imageLoader = new ImageLoader(),
-      butterflyImage = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
+      graphic = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
 
 const canvas = new Canvas({
     container: document.getElementById('brightness-example'),
-    height: butterflyImage.height,
-    width: butterflyImage.width,
-    graphic: butterflyImage.filter({filter: new Brightness({amount: 1.75})})
+    height: graphic.height,
+    width: graphic.width,
+    graphic: new Brightness({graphic, amount: 1.75})
 })
+canvas.render()
 ```
 
 <figure>
@@ -308,7 +376,7 @@ import Filter from './Filter.js'
 import Color from '../Color.js'
 
 class Invert extends Filter {
-    filterColor({color: {r,g,b,a}}) {
+    filterColor({r,g,b,a}) {
         return new Color({r: 255-r, g: 255-g, b: 255-b, a})
     }
 }
@@ -323,14 +391,15 @@ import Invert  from '../lib/filters/Invert.js'
 import ImageLoader from '../lib/ImageLoader.js'
 
 const imageLoader = new ImageLoader(),
-      butterflyImage = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
+      graphic = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
 
 const canvas = new Canvas({
     container: document.getElementById('invert-example'),
-    height: butterflyImage.height,
-    width: butterflyImage.width,
-    graphic: butterflyImage.filter({filter: new Invert()})
+    height: graphic.height,
+    width: graphic.width,
+    graphic: new Invert({graphic})
 })
+canvas.render()
 ```
 
 <figure>
@@ -353,7 +422,7 @@ import Filter from './Filter.js'
 import Color from '../Color.js'
 
 class Sepia extends Filter {
-    filterColor({color: {r,g,b,a}}) {
+    filterColor({r,g,b,a}) {
         return new Color({
             r: 0.393*r + 0.769*g + 0.189*b, 
             g: 0.349*r + 0.686*g + 0.168*b,
@@ -376,14 +445,15 @@ import Sepia  from '../lib/filters/Sepia.js'
 import ImageLoader from '../lib/ImageLoader.js'
 
 const imageLoader = new ImageLoader(),
-      butterflyImage = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
+      graphic = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
 
 const canvas = new Canvas({
     container: document.getElementById('sepia-example'),
-    height: butterflyImage.height,
-    width: butterflyImage.width,
-    graphic: butterflyImage.filter({filter: new Sepia()})
+    height: graphic.height,
+    width: graphic.width,
+    graphic: new Sepia({graphic})
 })
+canvas.render()
 ```
 
 <figure>
@@ -397,52 +467,138 @@ const canvas = new Canvas({
 
 ## Composing Filters
 
-As you might suspect, filters can be composed. Recall that our `Graphic` class returns a new graphic:
+Applying multiple filters is simple composition. An example would be to invert an image before applying sepia:
 
 ```js
-// lib/Graphic.js
-class Graphic {
-    // ...
-
-    filter({ filter }) {
-        // ...
-
-        return newGraphic
-    }
-}
-```
-
-Since each graphic has a `filter` method we can compose filters by method chaining. An example would be
-to invert an image before setting it to grayscale:
-
-```js
-// examples/invert-grayscale-example.js
+// examples/invert-sepia-example.js
 import Canvas from '../lib/Canvas.js'
-import Invert  from '../lib/filters/Invert.js'
-import Grayscale from '../lib/filters/Grayscale.js'
+import Invert from '../lib/filters/Invert.js'
+import Sepia from '../lib/filters/Sepia.js'
 import ImageLoader from '../lib/ImageLoader.js'
 
 const imageLoader = new ImageLoader(),
-      butterflyImage = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
+      image = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
 
 const canvas = new Canvas({
-    container: document.getElementById('invert-grayscale-example'),
-    height: butterflyImage.height,
-    width: butterflyImage.width,
-    graphic: butterflyImage.filter({filter: new Invert()}).filter({filter: new Grayscale()})
+    container: document.getElementById('invert-sepia-example'),
+    height: graphic.height,
+    width: graphic.width,
+    graphic: new Sepia({
+        graphic: new Invert({graphic: image})
+    })
 })
+canvas.render()
 ```
+
+While the composition is straightforward it's a bit more verbose than necessary
+with the multiple imports and constructor calls. Why bother with them at all?
+In the context of a `Filter` each name is unique so we can update our code to
+leverage method chaining for composition.
+
+First, to avoid [issues](https://twitter.com/mlhaufe/status/1321168932296921089) with
+cyclical imports, we'll create an index for the filters defined thus far. Note that the
+base class `Filter` comes first:
+
+```js
+// lib/filters/index.js
+import Filter from './Filter.js'
+import AvgGrayscale from './AvgGrayscale.js'
+import Brightness from './Brightness.js'
+import Grayscale from './Grayscale.js'
+import Invert from './Invert.js'
+import Noise from './Noise.js'
+import Sepia from './Sepia.js'
+
+export {AvgGrayscale, Brightness, Filter, Grayscale, Invert, Noise, Sepia}
+```
+
+Each of our individual filters then import the `Feature` class from this index
+instead of directly:
+
+```js
+// lib/filters/AvgGrayscale.js
+// lib/filters/Brightness.js
+// lib/filters/Grayscale.js
+// lib/filters/Invert.js
+// lib/filters/Noise.js
+// lib/filters/Sepia.js
+import {Filter} from './index.js'
+
+// ...
+```
+
+With that in hand the `Filter` class can now implement the composition api:
+
+```js
+// lib/filters/Filter.js
+import {AvgGrayscale, Brightness, Grayscale, Invert, Noise, Sepia} from './index.js'
+
+class Filter {
+    // ...
+    avgGrayscale() { return new AvgGrayscale({graphic: this}) }
+    brightness({amount}) { return new Brightness({graphic: this, amount}) }
+    grayscale() { return new Grayscale({graphic: this}) }
+    invert() { return new Invert({graphic: this}) }
+    noise(){ return new Noise({graphic: this}) }
+    sepia() { return new Sepia({graphic: this}) }
+}
+```
+
+The final piece is to update the base `Graphic` to apply a filter:
+
+```js
+// lib/Graphic.js
+import {Filter} from './filters/index.js'
+
+// ...
+
+class Graphic {
+    // ...
+    filter(){ return new Filter({graphic: this}) }
+}
+
+export default Graphic
+```
+
+Our composed example is now:
+
+```js
+// examples/invert-sepia-example.js
+import Canvas from '../lib/Canvas.js'
+import ImageLoader from '../lib/ImageLoader.js'
+
+const imageLoader = new ImageLoader(),
+      image = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
+
+const canvas = new Canvas({
+    container: document.getElementById('invert-sepia-example'),
+    height: image.height,
+    width: image.width,
+    graphic: image.filter().invert().sepia()
+})
+canvas.render()
+```
+
+Notice how we've eliminated the need for client code to import filters and our nested constructor calls
+have become simple method chaining.
 
 <figure>
     <figcaption>Original Image</figcaption>
     <img src="/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg" alt="Butterfly on leaves">
 </figure>
-<figure id="invert-grayscale-example">
-    <figcaption>Invert + Grayscale Filter</figcaption>
+<figure id="invert-sepia-example">
+    <figcaption>Invert + Sepia Filter</figcaption>
 </figure>
-<script type="module" src="/scripts/graphics-programming/lesson4/examples/invert-grayscale-example.js"></script>
+<script type="module" src="/scripts/graphics-programming/lesson4/examples/invert-sepia-example.js"></script>
 
-This is far from all of the simple filters that could be applied, but the general approach should be clear. In the next lesson we'll tackle more complicated filters which adjust pixels based on their neighbors.
+This is far from all of the simple filters that could be applied, but the general approach should be clear.
+Also, as a reminder, we're not aiming for the most efficient implementation at this stage. The priority
+is understanding; efficiency comes later. To quote:
+
+> For every polynomial-time algorithm you have, there is an exponential algorithm that I would rather run.
+> <cite><a href="https://en.wikipedia.org/wiki/Alan_Perlis" target="_blank">Alan Perlis</a></cite>
+
+In the next lesson we'll tackle more ambitious filters which adjust pixels based on their neighbors.
 
 ## Additional Reading
 

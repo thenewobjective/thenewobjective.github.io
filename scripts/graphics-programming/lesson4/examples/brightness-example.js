@@ -3,11 +3,12 @@ import Brightness  from '../lib/filters/Brightness.js'
 import ImageLoader from '../lib/ImageLoader.js'
 
 const imageLoader = new ImageLoader(),
-      butterflyImage = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
+      graphic = await imageLoader.load('/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg')
 
 const canvas = new Canvas({
     container: document.getElementById('brightness-example'),
-    height: butterflyImage.height,
-    width: butterflyImage.width,
-    graphic: butterflyImage.filter({filter: new Brightness({amount: 1.75})})
+    height: graphic.height,
+    width: graphic.width,
+    graphic: new Brightness({graphic, amount: 1.75})
 })
+canvas.render()
