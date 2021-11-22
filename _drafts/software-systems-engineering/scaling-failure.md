@@ -10,6 +10,7 @@
     - https://www.forbes.com/sites/gordonkelly/2020/03/26/microsoft-windows-10-warning-crashes-boot-problems-no-internet-wifi-upgrade-windows-10-free/#6dc9823a4846
   - Tesla
     - https://www.zerohedge.com/technology/tesla-systems-reportedly-suffer-complete-network-outage
+      https://twitter.com/zerohedge/status/1462842376204996625
   - Browsers
     - Firefox ESR
   - Myspace

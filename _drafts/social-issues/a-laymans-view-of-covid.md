@@ -2433,4 +2433,7 @@ https://gab.com/rooshv/posts/107266955540279870
 https://gab.com/INFOWARS/posts/107271762787048583
 https://twitter.com/DrJBhattacharya/status/1460782420827852803
 https://notthebee.com/article/the-definition-of-fully-vaccinated-against-covid-19-is-changing-to-three-shots-and-gee-i-wonder-if-theyll-stop-there
+https://twitter.com/DailyCaller/status/1462852205061488644
+https://twitter.com/foundmyfitness/status/1462844248458293248
+https://twitter.com/zerohedge/status/1462809415309008907
 -->
