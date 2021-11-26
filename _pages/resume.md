@@ -195,7 +195,7 @@ I’m primarily interested in the study and application of Programming Language 
 
 ## Employment
 
-{% include resume-item.html 
+{% include resume-item.html
     image="/media-library/resume/final-hill-icon.jpg"
     alt="Final Hill"
     title="Founder"
@@ -671,7 +671,7 @@ I’m primarily interested in the study and application of Programming Language 
             for the Formiga system created by former doctoral student <a href="https://cs.uwec.edu/~hardtr/" target="_blank">Ryan Hardt</a>
         </li>
         <li>
-            Ported a <a href="https://www.cs.utexas.edu/users/dsb/GPL/graph.htm" target="_blank">Graph Product Line</a> based from AspectJ 
+            Ported a <a href="https://www.cs.utexas.edu/users/dsb/GPL/graph.htm" target="_blank">Graph Product Line</a> based from AspectJ
             to Java for use in a larger research project headed by former doctoral student <a href="https://www.linkedin.com/in/cheng-thao-9548195/" target="_blank">Cheng Thao</a>.
         </li>
         <li>
