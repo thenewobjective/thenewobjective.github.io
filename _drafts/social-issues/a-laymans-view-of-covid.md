@@ -2445,4 +2445,5 @@ https://gab.com/LaurenWitzkeDE/posts/107343959667158888
 https://twitter.com/Ayjchan/status/1462451543798693893
 https://twitter.com/SwiftOnSecurity/status/1462382529403621378
 https://media.gab.com/system/media_attachments/files/091/400/022/original/d934e96192b0767d.jpg
+https://twitter.com/BretWeinstein/status/1464319738394284034
 -->
