@@ -83,3 +83,12 @@ h * (a+b)/2
 
 ======
 https://tutorial.math.lamar.edu/Classes/Alg/SystemsTwoVrble.aspx
+
+=====
+https://ciechanow.ski/curves-and-surfaces/
+https://www.youtube.com/watch?v=NbSee-XM7WA
+
+========
+L-System
+
+mipmaps
