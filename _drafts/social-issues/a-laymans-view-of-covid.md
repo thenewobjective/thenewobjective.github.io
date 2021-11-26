@@ -2436,4 +2436,13 @@ https://notthebee.com/article/the-definition-of-fully-vaccinated-against-covid-1
 https://twitter.com/DailyCaller/status/1462852205061488644
 https://twitter.com/foundmyfitness/status/1462844248458293248
 https://twitter.com/zerohedge/status/1462809415309008907
+https://www.zerohedge.com/markets/us-covid-deaths-2021-have-surpassed-2020s-total-despite-vaccines-treatments
+https://twitter.com/Kevin_McKernan/status/1463979146632175622
+https://twitter.com/MaajidNawaz/status/1463953797777141769
+https://twitter.com/profnfenton/status/1463850155195654146
+https://twitter.com/BorgerPieter/status/1463839898830622721
+https://gab.com/LaurenWitzkeDE/posts/107343959667158888
+https://twitter.com/Ayjchan/status/1462451543798693893
+https://twitter.com/SwiftOnSecurity/status/1462382529403621378
+https://media.gab.com/system/media_attachments/files/091/400/022/original/d934e96192b0767d.jpg
 -->
