@@ -2446,4 +2446,14 @@ https://twitter.com/Ayjchan/status/1462451543798693893
 https://twitter.com/SwiftOnSecurity/status/1462382529403621378
 https://media.gab.com/system/media_attachments/files/091/400/022/original/d934e96192b0767d.jpg
 https://twitter.com/BretWeinstein/status/1464319738394284034
+https://twitter.com/BrendanEich/status/1464662244009000964
+https://www.zerohedge.com/political/president-betrayed-bureaucrats-scott-atlas-exposes-real-covid-disaster
+https://twitter.com/JStein_WaPo/status/1464998225736314882
+https://gab.com/LanceMigliaccio/posts/107357159699974306
+https://www.zerohedge.com/covid-19/fda-advisory-committee-narrowly-votes-approve-mercks-covid-miracle-drug
+https://twitter.com/Kevin_McKernan/status/1465753814716325900
+https://www.zerohedge.com/covid-19/oxford-professor-official-data-shows-face-masks-made-no-meaningful-difference-infection
+https://twitter.com/BretWeinstein/status/1466164402881658880
+https://twitter.com/Kevin_McKernan/status/1466157290533400579
+https://twitter.com/ScienceWDrDoug/status/1465875249224900609
 -->
