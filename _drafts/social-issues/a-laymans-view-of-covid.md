@@ -2464,4 +2464,14 @@ https://www.thegatewaypundit.com/2021/11/video-former-pfizer-employee-says-covid
 https://news.yahoo.com/covid-vaccines-future-might-not-174707895.html
 https://freeworldnews.tv/watch?id=61a6c4f8433996761dc0dc53
 https://www.medrxiv.org/content/10.1101/2021.11.30.21267048v1
+https://www.zerohedge.com/geopolitical/microchip-containing-your-vaccine-passport-information-can-now-be-embedded-your-hand
+https://twitter.com/Kevin_McKernan/status/1465659150478843908
+https://www.wsj.com/articles/omicron-unlikely-to-cause-severe-illness-in-vaccinated-people-biontech-founder-says-11638286176
+https://dailycaller.com/2021/11/30/moderna-ceo-coronavirus-vaccine-less-effective-omicron/
+https://twitter.com/BrendanEich/status/1465188219213926404
+https://twitter.com/EricRWeinstein/status/1465200664326275072
+https://dailycaller.com/2021/11/27/world-health-organization-omicron-variant-nu-xi-coronavirus/
+https://twitter.com/jordanbpeterson/status/1463663485695447040
+https://notthebee.com/article/the-director-of-the-cdc-claims-that-covid-lockdowns-worked-and-as-proof-she-cites-chinas-totally-reliable-and-not-fabricated-coronavirus-data
+https://dailycaller.com/2021/11/24/federal-government-compliance-rate-joe-biden-vaccine-mandate-omb/
 -->
