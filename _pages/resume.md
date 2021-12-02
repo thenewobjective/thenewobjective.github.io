@@ -14,8 +14,8 @@ nav_order: 1
 
 ## Overview
 
-USMC War veteran, Co-Founder and CISO of a Health & Nutrition related [startup](https://www.shouhealth.com/).
-Systems Engineer with a formal education in Computer Science and nearly 20 years of experience in the software industry.
+USMC War veteran, entrepreneur, and Systems Engineer with a formal education in Computer Science and
+more than 20 years of experience in the software industry.
 
 I’m primarily interested in the study and application of Programming Language Theory to systems in a variety of industries and fields.
 
@@ -196,20 +196,44 @@ I’m primarily interested in the study and application of Programming Language 
 ## Employment
 
 {% include resume-item.html
-  image="/media-library/resume/centare.jpg"
-  alt="Centare"
-  title="Senior Consultant"
-  time="November 2020 - Present"
-  desc="<a href='https://www.centare.com/' target='_blank'>Centare</a>"
+    image="/media-library/resume/final-hill-icon.jpg"
+    alt="Final Hill"
+    title="Founder"
+    time="November 2020 - Present"
+    desc="<a href='https://final-hill.com/' target='_blank'>Final Hill</a>"
 %}
 
 <details>
     <summary>Details</summary>
     <ul>
-        <li>Azure Solution Architecture</li>
-        <li>Data Engineering</li>
-        <li>Content Management Systems</li>
+        <li>Requirements Engineering Tools</li>
+    </ul>
+</details>
+
+{% include resume-item.html
+  image="/media-library/resume/rsi-icon.jpg"
+  alt="Rural Sourcing"
+  title="Principal Consultant"
+  time="November 2020 - Present"
+  desc="<a href='https://www.ruralsourcing.com/' target='_blank'>Rural Sourcing</a>"
+%}
+
+<details>
+    <summary>Details</summary>
+    <ul>
+        <li>(Formerly Centare)</li>
+        <li>Cloud Solution Architecture (Azure, AWS)</li>
+        <li>Data Engineering (ETL, Azure Data Factory)</li>
+        <li>Enterprise Architecture</li>
+        <li>Digital Experience Platforms (DXPs)</li>
+        <li>Magnolia CMS</li>
+        <li>Docker</li>
+        <li>Requirements Engineering</li>
+        <li>React JS, Angular</li>
         <li>Digital Transformation</li>
+        <li>App Modernization</li>
+        <li>Micro-services</li>
+        <li>Micro-frontends</li>
     </ul>
 </details>
 
@@ -218,6 +242,7 @@ I’m primarily interested in the study and application of Programming Language 
     <ul>
         <li>Marquette Energy Analytics</li>
         <li>Direct Supply</li>
+        <li>Navitus</li>
     </ul>
 </details>
 
@@ -646,7 +671,7 @@ I’m primarily interested in the study and application of Programming Language 
             for the Formiga system created by former doctoral student <a href="https://cs.uwec.edu/~hardtr/" target="_blank">Ryan Hardt</a>
         </li>
         <li>
-            Ported a <a href="https://www.cs.utexas.edu/users/dsb/GPL/graph.htm" target="_blank">Graph Product Line</a> based from AspectJ 
+            Ported a <a href="https://www.cs.utexas.edu/users/dsb/GPL/graph.htm" target="_blank">Graph Product Line</a> based from AspectJ
             to Java for use in a larger research project headed by former doctoral student <a href="https://www.linkedin.com/in/cheng-thao-9548195/" target="_blank">Cheng Thao</a>.
         </li>
         <li>

@@ -33,6 +33,8 @@
     - https://www.theguardian.com/technology/2018/jan/15/hawaii-missile-false-alarm-design-user-interface
   - GoDaddy
     - https://gizmodo.com/a-security-breach-exposed-emails-and-site-passwords-of-1848108614
+  - Google Cloud
+    - https://www.zerohedge.com/markets/everythings-down-100s-major-websites-offline
 - Devops as a methodology
   - publishing multiple changes in a day
   - "The best testing is on production"

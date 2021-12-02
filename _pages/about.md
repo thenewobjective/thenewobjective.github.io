@@ -13,7 +13,7 @@ nav_order: 6
 
 ![Profile Image](/images/profile/top-hat-justice.jpg){:class="about-me_profile"}
 
-I am a USMC war veteran and Systems Engineer with a formal education in Computer Science (Programming Language Theory).
+I am a USMC war veteran, entrepreneur, and Systems Engineer with a formal education in Computer Science (Programming Language Theory).
 I’ve been programming in some form since 1996 (IBM 386).
 
 I am highly [conscientious](https://www.youtube.com/watch?v=q15eTySnWxc) and moderately
