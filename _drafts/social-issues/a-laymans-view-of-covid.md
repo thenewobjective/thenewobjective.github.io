@@ -2456,4 +2456,12 @@ https://www.zerohedge.com/covid-19/oxford-professor-official-data-shows-face-mas
 https://twitter.com/BretWeinstein/status/1466164402881658880
 https://twitter.com/Kevin_McKernan/status/1466157290533400579
 https://twitter.com/ScienceWDrDoug/status/1465875249224900609
+https://gab.com/Shazlandia/posts/107346360625945693
+https://twitter.com/BrendanEich/status/1460677825304748032
+https://www.zerohedge.com/geopolitical/who-explains-why-it-skipped-xi-when-naming-new-covid-19-variant-omicron
+https://www.zerohedge.com/political/uk-health-authority-slammed-watchdog-misleading-claim-unvaxxd-have-32-times-risk-covid
+https://www.thegatewaypundit.com/2021/11/video-former-pfizer-employee-says-covid-19-vaccine-causes-recipients-become-susceptible-virus/
+https://news.yahoo.com/covid-vaccines-future-might-not-174707895.html
+https://freeworldnews.tv/watch?id=61a6c4f8433996761dc0dc53
+https://www.medrxiv.org/content/10.1101/2021.11.30.21267048v1
 -->
