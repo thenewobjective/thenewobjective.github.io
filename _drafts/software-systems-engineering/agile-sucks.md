@@ -95,11 +95,7 @@ Pushes software back into an analogous form of biology:
 	But the customer has to die first?
 
 Clown Computing
-	https://www.jwz.org/blog/2019/03/today-in-clown-computing-myspace/
-	https://twitter.com/bcrypt/status/1124544207127961600
-	Boeing
-		https://youtu.be/ikMmkHzlTpk?t=4316
-		Not being informed of the update as if the semantics of the system won't change
+
 		
 Agile is immaturity
     See Meyer's book section on CMMI
