@@ -1,6 +1,9 @@
 - Clown Computing
   - Single point of failure. Someone else's computer.
   - Now you can bring a country to it's knees with a bug. Brick-the-world
+	  Boeing
+		  https://youtu.be/ikMmkHzlTpk?t=4316
+		    Not being informed of the update as if the semantics of the system won't change
     - Cloudflare
       - https://blog.cloudflare.com/cloudflare-outage-on-july-17-2020/
       - https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/
@@ -18,6 +21,7 @@
   - Google
     - https://www.computerworld.com/article/3442676/chrome-os-upgrade-standard.amp.html
     - https://mobile.twitter.com/ericlaw/status/1225814104201474050
+    - - https://twitter.com/bcrypt/status/1124544207127961600
   - 911
     - https://www.zerohedge.com/technology/911-system-goes-down-across-country-was-test
   - SolarWinds
@@ -27,6 +31,8 @@
     - https://engineering.fb.com/2021/10/05/networking-traffic/outage-details/
   - Hawaii
     - https://www.theguardian.com/technology/2018/jan/15/hawaii-missile-false-alarm-design-user-interface
+  - GoDaddy
+    - https://gizmodo.com/a-security-breach-exposed-emails-and-site-passwords-of-1848108614
   - Google Cloud
     - https://www.zerohedge.com/markets/everythings-down-100s-major-websites-offline
 - Devops as a methodology
