@@ -2464,6 +2464,10 @@ https://www.thegatewaypundit.com/2021/11/video-former-pfizer-employee-says-covid
 https://news.yahoo.com/covid-vaccines-future-might-not-174707895.html
 https://freeworldnews.tv/watch?id=61a6c4f8433996761dc0dc53
 https://www.medrxiv.org/content/10.1101/2021.11.30.21267048v1
+https://twitter.com/gummibear737/status/1466909911296708608
+https://twitter.com/BretWeinstein/status/1467162135113334787
+https://twitter.com/excel_wang/status/1463868641796050949
+https://thenewamerican.com/man-forced-to-take-covid-shot-to-receive-lung-transplant-dies-after-second-dose/
 https://www.zerohedge.com/geopolitical/microchip-containing-your-vaccine-passport-information-can-now-be-embedded-your-hand
 https://twitter.com/Kevin_McKernan/status/1465659150478843908
 https://www.wsj.com/articles/omicron-unlikely-to-cause-severe-illness-in-vaccinated-people-biontech-founder-says-11638286176
@@ -2478,4 +2482,5 @@ https://rumble.com/vq3fwz-judge-orders-pfizer-fda-to-release-documents.htm
 https://twitter.com/arunschirps/status/1467577756103983110
 https://twitter.com/BrendanEich/status/1466450253368995841
 https://twitter.com/TulsiGabbard/status/1466716340476162064
+https://twitter.com/Kevin_McKernan/status/1467546727297294342
 -->

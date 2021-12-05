@@ -92,3 +92,6 @@ https://www.youtube.com/watch?v=NbSee-XM7WA
 L-System
 
 mipmaps
+
+Area of polygon
+https://mobile.twitter.com/keenanisalive/status/1436318376654147585

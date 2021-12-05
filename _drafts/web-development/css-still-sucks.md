@@ -58,4 +58,7 @@ https://twitter.com/anatudor/status/1379384427151818756
 
 https://twitter.com/BraveSampson/status/1440721838418501633
 https://twitter.com/anatudor/status/1454161279959109641
+
+https://mobile.twitter.com/anatudor/status/1452187811747139589
 https://www.stefanjudis.com/today-i-learned/the-surprising-behavior-of-important-css-custom-properties/
+https://www.quirksmode.org/blog/archives/2021/07/custom_properti.html
