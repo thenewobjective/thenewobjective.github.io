@@ -2474,4 +2474,8 @@ https://dailycaller.com/2021/11/27/world-health-organization-omicron-variant-nu-
 https://twitter.com/jordanbpeterson/status/1463663485695447040
 https://notthebee.com/article/the-director-of-the-cdc-claims-that-covid-lockdowns-worked-and-as-proof-she-cites-chinas-totally-reliable-and-not-fabricated-coronavirus-data
 https://dailycaller.com/2021/11/24/federal-government-compliance-rate-joe-biden-vaccine-mandate-omb/
+https://rumble.com/vq3fwz-judge-orders-pfizer-fda-to-release-documents.htm
+https://twitter.com/arunschirps/status/1467577756103983110
+https://twitter.com/BrendanEich/status/1466450253368995841
+https://twitter.com/TulsiGabbard/status/1466716340476162064
 -->
