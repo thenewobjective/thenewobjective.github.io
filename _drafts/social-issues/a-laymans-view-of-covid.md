@@ -2486,4 +2486,5 @@ https://twitter.com/Kevin_McKernan/status/1467546727297294342
 https://twitter.com/PeterHotez/status/1467486069537087491
 https://www.zerohedge.com/geopolitical/omicron-we-warned-you-covid-farce-would-never-end
 https://twitter.com/gummibear737/status/1467634226728210466
+https://rwmalonemd.substack.com/p/one-and-done-not-with-omicron
 -->
