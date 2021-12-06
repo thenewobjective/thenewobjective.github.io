@@ -2479,4 +2479,7 @@ https://twitter.com/jordanbpeterson/status/1463663485695447040
 https://notthebee.com/article/the-director-of-the-cdc-claims-that-covid-lockdowns-worked-and-as-proof-she-cites-chinas-totally-reliable-and-not-fabricated-coronavirus-data
 https://dailycaller.com/2021/11/24/federal-government-compliance-rate-joe-biden-vaccine-mandate-omb/
 https://twitter.com/Kevin_McKernan/status/1467546727297294342
+https://twitter.com/PeterHotez/status/1467486069537087491
+https://www.zerohedge.com/geopolitical/omicron-we-warned-you-covid-farce-would-never-end
+https://twitter.com/gummibear737/status/1467634226728210466
 -->
