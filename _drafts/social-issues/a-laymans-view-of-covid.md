@@ -2487,4 +2487,5 @@ https://twitter.com/PeterHotez/status/1467486069537087491
 https://www.zerohedge.com/geopolitical/omicron-we-warned-you-covid-farce-would-never-end
 https://twitter.com/gummibear737/status/1467634226728210466
 https://rwmalonemd.substack.com/p/one-and-done-not-with-omicron
+https://medicalxpress.com/news/2021-09-drugs-mimic-effects-cigarette-sars-cov-.html
 -->
