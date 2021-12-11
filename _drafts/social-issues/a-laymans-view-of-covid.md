@@ -2494,4 +2494,15 @@ https://www.zerohedge.com/covid-19/fauci-definition-fully-vaccinated-will-be-cha
 https://twitter.com/jordanbpeterson/status/1469420590243008516
 https://twitter.com/Kevin_McKernan/status/1469433187587735557
 https://twitter.com/gummibear737/status/1469432148356739080
+https://twitter.com/PeterHotez/status/1467486069537087491
+https://www.zerohedge.com/geopolitical/omicron-we-warned-you-covid-farce-would-never-end
+https://twitter.com/gummibear737/status/1467634226728210466
+https://rwmalonemd.substack.com/p/one-and-done-not-with-omicron
+https://medicalxpress.com/news/2021-09-drugs-mimic-effects-cigarette-sars-cov-.html
+https://twitter.com/MichaelPSenger/status/1468678384427274243
+https://twitter.com/ifihadastick/status/1468719342984572929
+https://twitter.com/gummibear737/status/1469084499761934337
+https://twitter.com/orwell2022/status/1468921662657683461
+https://www.zerohedge.com/covid-19/nih-no-documents-available-removal-gain-function-definition-website
+https://gab.com/Carsonwolf/posts/107419351122099921
 -->
