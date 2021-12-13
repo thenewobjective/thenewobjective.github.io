@@ -2494,6 +2494,7 @@ https://www.zerohedge.com/covid-19/fauci-definition-fully-vaccinated-will-be-cha
 https://twitter.com/jordanbpeterson/status/1469420590243008516
 https://twitter.com/Kevin_McKernan/status/1469433187587735557
 https://twitter.com/gummibear737/status/1469432148356739080
+https://twitter.com/Kevin_McKernan/status/1469509636470489089
 https://twitter.com/PeterHotez/status/1467486069537087491
 https://www.zerohedge.com/geopolitical/omicron-we-warned-you-covid-farce-would-never-end
 https://twitter.com/gummibear737/status/1467634226728210466
