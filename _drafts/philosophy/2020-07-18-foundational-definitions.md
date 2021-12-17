@@ -268,4 +268,11 @@ https://en.wikipedia.org/wiki/Carl_Rogers
 https://en.wikipedia.org/wiki/Neurophenomenology
 https://en.wikipedia.org/wiki/Philosophy_of_mind
 https://en.wikipedia.org/wiki/Idealism
+
+"""
+What we call reality is in fact nothing
+more than a culturally sanctioned  and
+linguistically reinforced hallucination
+"""
+- Terance Mckenna
 -->
