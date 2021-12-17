@@ -139,7 +139,7 @@ So let's try that as a guideline for the use-case of [requirements management](h
 1. Assume that everyone on the project must know everything everyone else does
 2. Everyone writes down what they know (Bus Factor)
 3. What is written down is shared in one document, location, or tool
-4. Everyone refers to that centralized location instead of the the entire group
+4. Everyone refers to that centralized location instead of the entire group
 
 The resulting graph now looks like the following where the green node is the centralized documentation:
 
@@ -160,7 +160,7 @@ There is a concept in psychology referred to sometimes as ["Miller's Law"](https
 or more commonly as [The Rule of 7 &#177; 2](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two). It basically says human beings can only manage
 about seven objects/ideas in our [active memory](https://en.wikipedia.org/wiki/Short-term_memory) at a time. Additionally, we on average work ~8 hours a day. While those exact numbers
 vary between individuals the larger takeaway here is that a person cannot operate on an order-of-magnitude more than these numbers. We don't keep dozens of objects in active memory nor
-working more than 24 hours in a day.
+work more than 24 hours in a day.
 
 The consequence of these human limitations is that we use tricks like [chunking](https://en.wikipedia.org/wiki/Chunking_(psychology)) to try and abstract the details. If we use the example
 of human management: how many meetings can we practically hold in a day with them being useful? 4-6? 10-20? How many direct reports? At what number do these begin to be less useful or become a hindrance?
@@ -187,7 +187,7 @@ Can you think of other variations in these communication graphs? Perhaps you hav
 2. 3-9 Scrum Teams
 3. Each Scrum team is 3-9 individuals in size
 
-While some in that community think this was some profound insight, you know from the above lessons that it was more-so a (re-)discovery of the constraints nature and the universe have put upon us this this area.
+While some in that community think this was some profound insight, you know from the above lessons that it was more-so a (re-)discovery of the constraints that nature and the universe have placed upon us.
 
 ## Free to Choose but no Free Lunch
 
