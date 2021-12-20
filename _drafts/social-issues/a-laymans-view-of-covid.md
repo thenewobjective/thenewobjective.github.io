@@ -2494,4 +2494,17 @@ https://twitter.com/gummibear737/status/1469084499761934337
 https://twitter.com/orwell2022/status/1468921662657683461
 https://www.zerohedge.com/covid-19/nih-no-documents-available-removal-gain-function-definition-website
 https://gab.com/Carsonwolf/posts/107419351122099921
+https://twitter.com/orwell2022/status/1468921662657683461
+https://gab.com/RealAlexJones/posts/107420457561272418
+https://twitter.com/AlexPStory/status/1469290065339768832
+https://www.worldtribune.com/researcher-andrew-hills-conflict-a-40-million-gates-foundation-grant-vs-a-half-million-human-lives/
+https://gab.com/RobertMaloneMD/posts/107430603802001660
+https://gab.com/RealAlexJones/posts/107430425570669618
+https://twitter.com/Kevin_McKernan/status/1470903395338838018
+https://twitter.com/Kevin_McKernan/status/1470738603785474048
+https://twitter.com/KimIversenShow/status/1471229990372921346
+https://twitter.com/Kevin_McKernan/status/1471284075172442118
+https://rwmalonemd.substack.com/p/has-omicron-shifted-receptor-binding?r=ta0o1&utm_campaign=post&utm_medium=web
+https://www.wnd.com/2021/12/4968311/
+https://notthebee.com/article/the-study-the-cdc-used-to-justify-masking-in-schools-is-reportedly-profoundly-misleading-and-has-significant-flaws
 -->
