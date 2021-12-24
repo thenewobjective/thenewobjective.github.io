@@ -2545,4 +2545,7 @@ https://ashmedai.substack.com/p/is-there-plausible-basis-for-fertility
 https://twitter.com/ianmSC/status/1467207613368582146
 https://www.zerohedge.com/covid-19/covid-outbreak-us-cruise-ship-despite-fully-vaxxed-passengers
 https://twitter.com/gummibear737/status/1467982863035416590
+https://twitter.com/BrendanEich/status/1474425379490205701
+https://twitter.com/Not_the_Bee/status/1474425088611172357
+https://dailycaller.com/2021/12/23/merck-molnupiravir-covid-19-pill-coronavirus-variant-fda/
 -->
