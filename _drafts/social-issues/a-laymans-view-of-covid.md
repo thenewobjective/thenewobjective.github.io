@@ -2568,4 +2568,9 @@ https://twitter.com/DailyCaller/status/1471804873612185600
 https://twitter.com/Kevin_McKernan/status/1471596811714453509
 https://twitter.com/Kevin_McKernan/status/1471141209003470849
 https://twitter.com/Kevin_McKernan/status/1471178575911043079
+
+johnson and johnson discontinued
+	are they now considered unvaccinated?
+	
+Omicron variant being used as an excuse to remove monoclonal antibodies?
 -->
