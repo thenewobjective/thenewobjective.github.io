@@ -2573,6 +2573,8 @@ https://twitter.com/zerohedge/status/1467119076849897475
 https://twitter.com/Bobby_Network/status/1466429620358684679
 https://twitter.com/camilstoenescu/status/1462329740442935300
 https://twitter.com/DrEliDavid/status/1466729565670330371
+https://www.zerohedge.com/political/no-country-can-boost-its-way-out-who-warns-booster-programs-could-prolong-pandemic
+https://www.medrxiv.org/content/10.1101/2021.08.24.21262415v1
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
