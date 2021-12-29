@@ -2575,6 +2575,13 @@ https://twitter.com/camilstoenescu/status/1462329740442935300
 https://twitter.com/DrEliDavid/status/1466729565670330371
 https://www.zerohedge.com/political/no-country-can-boost-its-way-out-who-warns-booster-programs-could-prolong-pandemic
 https://www.medrxiv.org/content/10.1101/2021.08.24.21262415v1
+https://dailycaller.com/2021/12/28/cdc-estimate-omicron-delta-variant-covid-19-coronavirus-dominant/
+https://www.zerohedge.com/covid-19/uk-expert-warns-against-overinterpreting-covid-19-data
+https://twitter.com/nytimes/status/1474096240065449989
+https://twitter.com/zerohedge/status/1475825189774667778
+https://www.zerohedge.com/covid-19/covid-antiviral-pills-cause-life-threatening-reactions-many-common-meds
+https://twitter.com/EricRWeinstein/status/1475689581450125313
+https://www.zerohedge.com/covid-19/latest-study-shows-booster-protection-against-omicron-drops-25-after-just-10-weeks
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
