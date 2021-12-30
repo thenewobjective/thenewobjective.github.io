@@ -2582,6 +2582,31 @@ https://twitter.com/zerohedge/status/1475825189774667778
 https://www.zerohedge.com/covid-19/covid-antiviral-pills-cause-life-threatening-reactions-many-common-meds
 https://twitter.com/EricRWeinstein/status/1475689581450125313
 https://www.zerohedge.com/covid-19/latest-study-shows-booster-protection-against-omicron-drops-25-after-just-10-weeks
+https://twitter.com/Kevin_McKernan/status/1474110348571648004
+https://gab.com/a/posts/107500024576982514
+https://twitter.com/justask66054535/status/1474587605219962881
+https://www.zerohedge.com/covid-19/protests-erupt-south-korea-over-vaccination-deaths
+https://dailycaller.com/2021/12/23/merck-molnupiravir-covid-19-pill-coronavirus-variant-fda/
+https://twitter.com/Kevin_McKernan/status/1475980031562289161
+https://twitter.com/FatEmperor/status/1475930299674636288
+https://twitter.com/BrendanEich/status/1466438566901432321
+https://twitter.com/Kevin_McKernan/status/1476342101789057028
+https://twitter.com/BrendanEich/status/1476289922868801538
+https://twitter.com/Kevin_McKernan/status/1476268485017849862
+https://twitter.com/P_McCulloughMD/status/1475972237287174147
+https://www.zerohedge.com/covid-19/
+bombshell-admission-cdc-drops-post-isolation-pcr-test-because-they-can-remain-positive-12
+https://dailycaller.com/2021/12/29/us-confirmed-over-441000-new-covid-cases-tuesday-record/
+https://twitter.com/DailyCaller/status/1476372471658041345
+https://gab.com/INFOWARS/posts/107533366003620246
+https://gab.com/RobertMaloneMD/posts/107533961569408997
+https://twitter.com/RandPaul/status/1476400178466803712
+https://twitter.com/PhilHollowayEsq/status/1474730650649477127
+https://twitter.com/Kevin_McKernan/status/1474723745021542406
+https://www.zerohedge.com/covid-19/lancet-editor-comes-clean-admits-he-knew-peter-daszak-had-significant-regrettable
+https://www.zerohedge.com/covid-19/belgium-man-arrested-while-attempting-get-9th-covid-19-vaccine-behalf-others
+https://twitter.com/Kevin_McKernan/status/1475214941321846784
+
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
