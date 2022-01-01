@@ -2606,6 +2606,16 @@ https://twitter.com/Kevin_McKernan/status/1474723745021542406
 https://www.zerohedge.com/covid-19/lancet-editor-comes-clean-admits-he-knew-peter-daszak-had-significant-regrettable
 https://www.zerohedge.com/covid-19/belgium-man-arrested-while-attempting-get-9th-covid-19-vaccine-behalf-others
 https://twitter.com/Kevin_McKernan/status/1475214941321846784
+https://www.zerohedge.com/covid-19/vaccine-mandate-domestic-flights-not-being-considered-says-cdc-director-after-faucis
+https://twitter.com/Kevin_McKernan/status/1476205268073656323
+https://www.zerohedge.com/covid-19/global-new-cases-top-1-million-2nd-day-omicron-wave-intensifies
+https://twitter.com/Kevin_McKernan/status/1476186541072519173
+https://www.zerohedge.com/political/rand-paul-thousands-dying-every-month-because-faucis-obsession-pushing-vaccines
+https://gab.com/RobertMaloneMD/posts/107530679047084690
+https://www.zerohedge.com/covid-19/fauci-goes-there-finally-admits-kids-not-being-hospitalized-covid
+https://notthebee.com/article/los-angeles-schools-will-no-longer-require-cloth-masks-because-they-are-requiring-n95s-instead
+https://dailycaller.com/2021/12/30/cdc-rochelle-walensky-pcr-tests-isolation-quarantine-guidance/
+https://www.zerohedge.com/covid-19/cdc-sued-withholding-post-licensure-v-safe-data-covid-vaccines
 
 
 johnson and johnson discontinued
