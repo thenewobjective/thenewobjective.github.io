@@ -2616,7 +2616,8 @@ https://www.zerohedge.com/covid-19/fauci-goes-there-finally-admits-kids-not-bein
 https://notthebee.com/article/los-angeles-schools-will-no-longer-require-cloth-masks-because-they-are-requiring-n95s-instead
 https://dailycaller.com/2021/12/30/cdc-rochelle-walensky-pcr-tests-isolation-quarantine-guidance/
 https://www.zerohedge.com/covid-19/cdc-sued-withholding-post-licensure-v-safe-data-covid-vaccines
-
+https://twitter.com/VPrasadMDMPH/status/1475145220618526729
+https://twitter.com/zerohedge/status/1479251539810308100
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
