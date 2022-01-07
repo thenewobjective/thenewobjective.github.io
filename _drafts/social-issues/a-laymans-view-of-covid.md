@@ -2623,6 +2623,17 @@ https://twitter.com/jimmy_dore/status/1479145974287110144
 https://twitter.com/trikomes/status/1479513670224789505
 https://twitter.com/Not_the_Bee/status/1479515677732085760
 https://twitter.com/Not_the_Bee/status/1479508249338650625
+https://twitter.com/VPrasadMDMPH/status/1475145220618526729
+https://twitter.com/zerohedge/status/1479251539810308100
+https://www.zerohedge.com/political/covid-corrupt-federal-statistics
+https://twitter.com/Kevin_McKernan/status/1476699298456911873
+https://www.zerohedge.com/covid-19/netherlands-announces-plan-dole-out-6-vaccine-doses
+https://twitter.com/Kevin_McKernan/status/1476548453748645892
+https://gab.com/AriShekelstein/posts/107538713640405149
+https://gab.com/RobertMaloneMD/posts/107537633258206811
+https://www.zerohedge.com/covid-19/fda-maintains-pcr-tests-are-gold-standard-despite-cdc-dropping-over-positive-results-12
+https://twitter.com/Ayjchan/status/1478131692456009733
+https://twitter.com/joerogan/status/1478618135104266242
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
