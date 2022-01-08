@@ -2636,9 +2636,72 @@ https://twitter.com/Ayjchan/status/1478131692456009733
 https://twitter.com/joerogan/status/1478618135104266242
 https://twitter.com/jimmy_dore/status/1479549701988892680
 https://www.zerohedge.com/covid-19/omicron-could-end-being-less-deadly-seasonal-flu-new-us-study-finds
+https://amp.dailycaller.com/2021/08/22/cia-nsa-michael-hayden-deport-maga-unvaccinated-trump-afghanistan?__twitter_impression=true
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
 	
 Omicron variant being used as an excuse to remove monoclonal antibodies?
+
+JRE #1701
+	Rhonda Patrick
+	Vaccines
+	@130:00
+	- myocarditis
+		- more likely from COVID than mrna vaccine?
+		- but wouldn't you get COVID anyway? See israeli breakout...
+			- and if you already had COVID, the vaccine side-effects are stronger...
+	- What is Long Haul COVID?
+		- mostly impacts the younger?
+	- VAERS reporting. healht care professionals supposed to report.
+		- Do they?
+		- What is the time frame?
+	- POTS
+		Post orthostatic tachiocarcial syndrome?
+	- "For most people vaccines are safe"
+	- Spike protein
+		- prefussion/postfusion
+			- pfizer/J&J lock the spike protein so it won't expand	
+		- from virus is different than from vaccine
+		- "we don't now if it's harmful"
+			- not enough evidence
+		- What of the side-effects then?
+			- they don't stay in the injection site
+			- biodistribution studies (from pfizer?)
+				- Is this consistent with the FOIA request of the Japanese data?
+			- She doesn't talk about the aggregation in the ovaries and bones
+			- SIMOA test: 25% false positives for spike protein?
+			- mRNA vaccines 
+				- associated with myocarditis
+			- J&J uses adenoviral
+				- linked to blood clots?
+		- ADE: Abtibody dependent enhancement
+			- might make viruses able to infect better
+			- or causes immune system to be more sensitive and self-damage
+			- caused by postfusion antibodies?
+				- What about Israel?
+		- Testing positive means what in practice?
+		- vaccines reduce overall transmission?
+			- this is questionable
+		- why is the comparison between vaccinated vs unvaccinated
+			- why not covid recovered?
+		- since subsequent vaccines cause harder side-effects, what would the "boosters" do?
+		- claims natural vs vaccinated immunity are equivalent in effectiveness
+			- doubtful
+		- Ivermectin
+			- anecdotal evidence is limited
+			- many studies are flawed
+				- some people are getting Ivermectin alone
+				- some are getting it in combination with numerous things
+				- placebo groups seem iffy
+				- this data then gets aggregated
+				- benefit might be exaggerated?
+				- what is the effectiveness on variants?
+				- Does seem to shorten the time of infection?
+				- Animal grade could be harful due to dosage issues
+				- but is generally a safe drug
+		- regeneron does not work against variant?
+	- vs pregnancy?
+		- COVID vs vaccine...
+			- claims data suggests it's ok
 -->
