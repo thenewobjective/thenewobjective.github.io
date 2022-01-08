@@ -2634,6 +2634,8 @@ https://gab.com/RobertMaloneMD/posts/107537633258206811
 https://www.zerohedge.com/covid-19/fda-maintains-pcr-tests-are-gold-standard-despite-cdc-dropping-over-positive-results-12
 https://twitter.com/Ayjchan/status/1478131692456009733
 https://twitter.com/joerogan/status/1478618135104266242
+https://twitter.com/jimmy_dore/status/1479549701988892680
+https://www.zerohedge.com/covid-19/omicron-could-end-being-less-deadly-seasonal-flu-new-us-study-finds
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
