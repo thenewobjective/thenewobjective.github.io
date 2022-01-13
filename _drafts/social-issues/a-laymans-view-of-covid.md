@@ -2637,6 +2637,9 @@ https://twitter.com/joerogan/status/1478618135104266242
 https://twitter.com/jimmy_dore/status/1479549701988892680
 https://www.zerohedge.com/covid-19/omicron-could-end-being-less-deadly-seasonal-flu-new-us-study-finds
 https://amp.dailycaller.com/2021/08/22/cia-nsa-michael-hayden-deport-maga-unvaccinated-trump-afghanistan?__twitter_impression=true
+https://www.zerohedge.com/covid-19/t-cells-common-colds-cross-protect-against-infection-covid-19-study
+https://twitter.com/JackPosobiec/status/1480687602097348608
+https://twitter.com/Covid19Crusher/status/1480839870008471552
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
