@@ -47,3 +47,4 @@ Data, Entity, Model, and Data Structure.
   * Coined the term "Entity"
 * William Cook's work:
   * [Object-Oriented Programming versus Abstract Data Types](https://www.cs.utexas.edu/users/wcook/papers/OOPvsADT/CookOOPvsADT90.pdf)
+  * <https://stackoverflow.com/questions/8743995/what-is-difference-between-a-model-and-an-entity>
