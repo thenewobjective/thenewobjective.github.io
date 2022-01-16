@@ -2640,6 +2640,8 @@ https://amp.dailycaller.com/2021/08/22/cia-nsa-michael-hayden-deport-maga-unvacc
 https://www.zerohedge.com/covid-19/t-cells-common-colds-cross-protect-against-infection-covid-19-study
 https://twitter.com/JackPosobiec/status/1480687602097348608
 https://twitter.com/Covid19Crusher/status/1480839870008471552
+https://twitter.com/Kevin_McKernan/status/1482142968609923082
+https://twitter.com/jordanbpeterson/status/1482199354589032450
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
