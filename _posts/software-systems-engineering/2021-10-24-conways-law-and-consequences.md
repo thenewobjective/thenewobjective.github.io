@@ -238,6 +238,15 @@ nor a strategic deficiency in a vacuum. An organization is a duality of the tool
 > “We become what we behold. We shape our tools and then our tools shape us”
 > <cite><a href="https://en.wikipedia.org/wiki/John_M._Culkin" target="_blank">John M. Culkin</a></cite>
 
+A parting cartoon by [Manu Cornet](https://en.wikipedia.org/wiki/Manu_Cornet):
+
+<figure>
+    <img src="/media-library/software-systems-engineering/org-charts-manu-cornet.png" alt="Org charts by Manu Cornet">
+    <figcaption>
+        "Org charts" - <a href="https://en.wikipedia.org/wiki/Manu_Cornet" target="_blank">Manu Cornet</a>
+    </figcaption>
+</figure>
+
 ## Further Reading
 
 * [Systemantics. The Systems Bible](https://www.amazon.com/SYSTEMANTICS-SYSTEMS-BIBLE-John-Gall-ebook/dp/B00AK1BIDM) by John Gall
