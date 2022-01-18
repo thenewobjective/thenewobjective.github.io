@@ -2671,6 +2671,20 @@ https://dailycaller.com/2022/01/14/michigan-nursing-homes-covid-19-deaths-gretch
 https://twitter.com/Kevin_McKernan/status/1483167571654365193
 https://twitter.com/zerohedge/status/1483166281276833795
 https://twitter.com/BrendanEich/status/1482939740328316928
+https://twitter.com/PatrickSSte/status/1480295819886698499
+https://notthebee.com/article/a-staggering-number-of-covid-hospitalizations-in-new-york-state-actually-have-nothing-to-do-with-covid
+https://twitter.com/PaulMainwood/status/1479528897259712513
+https://twitter.com/BretWeinstein/status/1480418910851588097
+https://twitter.com/DailyCaller/status/1480660722782724096
+https://dailycaller.com/2022/01/10/cdc-rochelle-walensky-overwhelming-covid-deaths-people-with-comorbidities/
+https://twitter.com/BrentAWilliams2/status/1482025625388990466
+https://twitter.com/Kevin_McKernan/status/1482027715729498113
+https://twitter.com/gummibear737/status/1482133201510453248
+https://twitter.com/GraduatedBen/status/1481845667576393728
+https://www.nytimes.com/2022/01/14/health/cloth-masks-covid-cdc.html
+https://twitter.com/Kevin_McKernan/status/1483074878311964673
+https://twitter.com/gummibear737/status/1483407091134050304
+https://twitter.com/kyotolover12/status/1483398027050369024
 
 
 johnson and johnson discontinued
