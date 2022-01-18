@@ -2642,6 +2642,36 @@ https://twitter.com/JackPosobiec/status/1480687602097348608
 https://twitter.com/Covid19Crusher/status/1480839870008471552
 https://twitter.com/Kevin_McKernan/status/1482142968609923082
 https://twitter.com/jordanbpeterson/status/1482199354589032450
+https://gab.com/RobertMaloneMD/posts/107544688794982656
+https://patch.com/wisconsin/wauwatosa/mask-policy-changes-announced-froedtert-medical-college-wi
+https://www.zerohedge.com/covid-19/moderna-ceo-scrambles-sell-more-boosters-omicron-wave-shows-signs-waning
+https://www.zerohedge.com/covid-19/covid-vaccines-do-disrupt-menstrual-cycles-new-study-reveals
+https://twitter.com/timpers7/status/1479720558203912195
+https://www.zerohedge.com/covid-19/dems-panic-over-teachers-union-push-remote-learning-yet-another-study-shows-academic
+https://twitter.com/Keggs719/status/1479974962509361158
+https://twitter.com/Kevin_McKernan/status/1480230578251251714
+https://www.zerohedge.com/political/biden-admin-cuts-floridas-weekly-monoclonal-shipment-half
+https://twitter.com/TheWuhanClan/status/1480217942377779203
+https://www.dailyveracity.com/2022/01/10/massive-study-of-145-countries-finds-huge-increase-in-death-following-vaccinations/
+https://twitter.com/gummibear737/status/1480883709746323459
+https://www.bnnbloomberg.ca/repeat-booster-shots-spur-european-warning-on-immune-system-risks-1.1706083.amp.html
+https://notthebee.com/article/starting-saturday-dc-is-going-to-require-you-to-be-vaccinated-and-show-photo-id-to-go-pretty-much-anywhere-and-i-guess-photo-id-is-no-longer-racist
+https://twitter.com/Kevin_McKernan/status/1481262710025338888
+https://www.zerohedge.com/covid-19/new-study-shows-covids-ability-infect-drops-90-after-20-minutes-air
+https://twitter.com/MickWest/status/1481792662730539011
+https://twitter.com/Aroown/status/1481719772563787779
+https://www.telegraph.co.uk/news/2022/01/12/duped-covid-lab-leak-deniers/
+https://twitter.com/EliasTheodorou/status/1481836987267137537
+https://www.theguardian.com/world/2021/sep/10/boys-more-at-risk-from-pfizer-jab-side-effect-than-covid-suggests-study
+https://vinayprasadmdmph.substack.com/p/uk-now-reports-myocarditis-stratified?s=09
+https://twitter.com/jimmy_dore/status/1481809543533195264
+https://www.zerohedge.com/medical/states-investigating-surge-mortality-rate-among-18-49-year-olds-majority-unrelated-covid-19
+https://twitter.com/CaulfieldTim/status/1483195201376043010
+https://dailycaller.com/2022/01/14/michigan-nursing-homes-covid-19-deaths-gretchen-whitmer/
+https://twitter.com/Kevin_McKernan/status/1483167571654365193
+https://twitter.com/zerohedge/status/1483166281276833795
+https://twitter.com/BrendanEich/status/1482939740328316928
+
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
