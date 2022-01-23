@@ -2685,7 +2685,12 @@ https://www.nytimes.com/2022/01/14/health/cloth-masks-covid-cdc.html
 https://twitter.com/Kevin_McKernan/status/1483074878311964673
 https://twitter.com/gummibear737/status/1483407091134050304
 https://twitter.com/kyotolover12/status/1483398027050369024
-
+https://twitter.com/toadmeister/status/1484058149074223107
+https://mobile.twitter.com/kevin_mckernan/status/1484539468778557442
+https://www.zerohedge.com/covid-19/bizarro-world-researcher-calls-out-censorship-after-journal-pulls-covid-19-vaccine-adverse
+https://notthebee.com/article/cdc-director-walensky-says-that-the-cdc-is-changing-from-fully-vaxxed-to-up-to-date-meaning-youll-have-to-get-boosted-to-remain-fully-vaxxed
+https://dailycaller.com/2022/01/19/cdc-natural-immunity-outperforms-vaccination-covid-19-coronavirus/
+https://twitter.com/BrendanEich/status/1484304430899994630
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
