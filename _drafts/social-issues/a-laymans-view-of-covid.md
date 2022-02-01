@@ -2691,6 +2691,26 @@ https://www.zerohedge.com/covid-19/bizarro-world-researcher-calls-out-censorship
 https://notthebee.com/article/cdc-director-walensky-says-that-the-cdc-is-changing-from-fully-vaxxed-to-up-to-date-meaning-youll-have-to-get-boosted-to-remain-fully-vaxxed
 https://dailycaller.com/2022/01/19/cdc-natural-immunity-outperforms-vaccination-covid-19-coronavirus/
 https://twitter.com/BrendanEich/status/1484304430899994630
+https://twitter.com/EricRWeinstein/status/1480780228272136192
+https://twitter.com/MoNscience/status/1485761245705867265
+https://www.zerohedge.com/covid-19/pfizer-launches-trials-new-omicron-vaccine-cases-continue-slump
+https://dailycaller.com/2022/01/25/covid-19-coronavirus-vaccine-fertility-pregnancy-safety-nih/
+https://www.breitbart.com/politics/2022/01/25/ron-desantis-battles-joe-biden-2000-floridians-had-lifesaving-coronavirus-treatment-canceled-because-of-bidens-indefensible-edict/
+https://twitter.com/Kevin_McKernan/status/1486190591897710592
+https://twitter.com/gummibear737/status/1486444821858422800
+https://notthebee.com/article/swedish-health-officials-just-announced-that-they-do-not-recommend-covid-vaccines-for-children-benefits-do-no-outweigh-the-risks
+https://twitter.com/Kevin_McKernan/status/1486836152665780224
+https://twitter.com/Ravarora1/status/1485363608418586624
+https://twitter.com/Kevin_McKernan/status/1359345102569811969
+https://pubmed.ncbi.nlm.nih.gov/33278625/
+https://twitter.com/The_OtherET/status/1487851988981362694
+https://twitter.com/CJCharchuk/status/1486395547594280970
+https://phys.org/news/2022-01-sars-cov-spike-protein-human-endogenous.html
+https://www.infowars.com/posts/msm-blackout-of-medical-doctors-pandemic-response-roundtable-is-a-crime-against-humanity/
+https://twitter.com/SpittinVenoms/status/1486149936471281664
+https://twitter.com/RandPaul/status/1485005628322025472
+https://dailycaller.com/2022/01/18/johns-hopkins-mask-vaccine-booster-requirement/
+https://www.zerohedge.com/political/and-prize-worst-journalism-year-goes
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
