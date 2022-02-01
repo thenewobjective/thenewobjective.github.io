@@ -2720,6 +2720,12 @@ https://twitter.com/gummibear737/status/1486035156892794886
 https://notthebee.com/article/desantis-slams-bidens-fda-for-halting-monoclonal-antibodies-treatments-access-to-treatment-shouldnt-be-denied-based-on-the-whims-of-a-floundering-president
 https://twitter.com/MailOnline/status/1486013821974204418
 https://www.zerohedge.com/covid-19/fda-restricts-use-2-monoclonal-antibody-treatments
+https://twitter.com/gummibear737/status/1486035156892794886
+https://twitter.com/fynn_fan/status/1486384006530842624
+https://twitter.com/joshzepps/status/1486213462816866304
+https://aaronsiri.substack.com/p/fda-asks-the-court-to-delay-first
+https://twitter.com/Kevin_McKernan/status/1487075219151990784
+https://www.zerohedge.com/political/sweden-wont-recommend-vaccinating-children-under-12-due-lack-clear-benefit
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
