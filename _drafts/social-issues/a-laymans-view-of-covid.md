@@ -2711,6 +2711,15 @@ https://twitter.com/SpittinVenoms/status/1486149936471281664
 https://twitter.com/RandPaul/status/1485005628322025472
 https://dailycaller.com/2022/01/18/johns-hopkins-mask-vaccine-booster-requirement/
 https://www.zerohedge.com/political/and-prize-worst-journalism-year-goes
+https://www.zerohedge.com/covid-19/south-african-scientists-find-boosters-dont-protect-against-omicron
+https://twitter.com/gummibear737/status/1484485259412611074
+https://twitter.com/mattwridley/status/1484242322535583744
+https://notthebee.com/article/as-they-prepare-to-strap-your-kids-into-n95-masks-enjoy-this-flashback-to-march-of-2020-when-nurses-were-posting-selfies-showing-the-brutal-effects-of-wearing-an-n95-all-day
+https://twitter.com/Kevin_McKernan/status/1485653738559877132
+https://twitter.com/gummibear737/status/1486035156892794886
+https://notthebee.com/article/desantis-slams-bidens-fda-for-halting-monoclonal-antibodies-treatments-access-to-treatment-shouldnt-be-denied-based-on-the-whims-of-a-floundering-president
+https://twitter.com/MailOnline/status/1486013821974204418
+https://www.zerohedge.com/covid-19/fda-restricts-use-2-monoclonal-antibody-treatments
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
