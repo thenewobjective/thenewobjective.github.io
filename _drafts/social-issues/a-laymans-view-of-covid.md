@@ -2726,6 +2726,15 @@ https://twitter.com/joshzepps/status/1486213462816866304
 https://aaronsiri.substack.com/p/fda-asks-the-court-to-delay-first
 https://twitter.com/Kevin_McKernan/status/1487075219151990784
 https://www.zerohedge.com/political/sweden-wont-recommend-vaccinating-children-under-12-due-lack-clear-benefit
+https://twitter.com/gummibear737/status/1488499636419584008
+https://twitter.com/Kevin_McKernan/status/1488898629884649472
+https://twitter.com/gummibear737/status/1488896263370473472
+https://twitter.com/Ravarora1/status/1488763970127220736
+https://twitter.com/gummibear737/status/1488947220393218049
+https://patch.com/wisconsin/brookfield-wi/latest-hospital-capacity-brookfield-area-nodx-20220201?utm_source=twitter.com&utm_medium=social&utm_term=health+%26+fitness&utm_campaign=autopost&utm_content=brookfield-wi
+https://notthebee.com/article/why-on-earth-is-the-fda-pushing-pfizer-to-submit-data-on-vaccinating-kids-under-5-if-it-wasnt-ready
+https://twitter.com/DrJBhattacharya/status/1487148474629902338
+
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
