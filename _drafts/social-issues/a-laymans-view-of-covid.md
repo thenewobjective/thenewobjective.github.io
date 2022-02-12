@@ -2720,6 +2720,30 @@ https://twitter.com/gummibear737/status/1486035156892794886
 https://notthebee.com/article/desantis-slams-bidens-fda-for-halting-monoclonal-antibodies-treatments-access-to-treatment-shouldnt-be-denied-based-on-the-whims-of-a-floundering-president
 https://twitter.com/MailOnline/status/1486013821974204418
 https://www.zerohedge.com/covid-19/fda-restricts-use-2-monoclonal-antibody-treatments
+https://mobile.twitter.com/akheriaty/status/1488199977734053895
+https://notthebee.com/article/huge-breakthrough-scientists-have-finally-realized-two-years-later-that-lockdowns-did-nothing-to-stop-the-virus-but-had-devastating-effects-on-our-country-and-economy
+https://twitter.com/jordanbpeterson/status/1488616920953860104
+https://twitter.com/Kevin_McKernan/status/1488007841118134275
+https://twitter.com/BrendanEich/status/1368988794377019393
+https://twitter.com/Kevin_McKernan/status/1488658653091713024
+https://twitter.com/Kevin_McKernan/status/1488687024831963138
+https://www.zerohedge.com/covid-19/natural-immunity-lasts-least-18-months-study
+https://twitter.com/fynn_fan/status/1489377795721551882
+https://www.zerohedge.com/covid-19/fda-issues-warning-2-recalled-covid-19-tests
+https://gab.com/K2xxSteve/posts/107736901412404373
+https://www.zerohedge.com/covid-19/pentagon-responds-dod-whistleblowers-claim-spiking-disease-rates-military-after-covid
+https://twitter.com/gummibear737/status/1486035156892794886
+https://www.reuters.com/world/europe/sweden-decides-against-recommending-covid-vaccines-kids-aged-5-12-2022-01-27/
+https://twitter.com/ianmSC/status/1490794727142158337
+https://gab.com/rooshv/posts/107782412979388429
+https://www.zerohedge.com/covid-19/pfizer-quietly-adds-language-warning-unfavorable-pre-clinical-clinical-or-safety-data-may
+https://twitter.com/Kevin_McKernan/status/1491222579947790337
+https://gab.com/vaxwatch/posts/107763655954434954
+https://rwmalonemd.substack.com/p/a-health-public-policy-nightmare?r=ta0o1
+https://www.researchgate.net/publication/358386329_Strictly_regular_use_of_ivermectin_as_prophylaxis_for_COVID-19_leads_to_a_90_reduction_in_COVID-19_mortality_rate_in_a_dose-response_manner_definitive_results_of_a_prospective_observational_study_of_a
+https://rwmalonemd.substack.com/p/regarding-the-defense-medical-epidemiological
+https://gab.com/RobertMaloneMD/posts/107734694140667544
+
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
