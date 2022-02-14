@@ -2767,7 +2767,7 @@ https://twitter.com/EricRWeinstein/status/1491624722273955841
 https://twitter.com/Kevin_McKernan/status/1492145254241288192
 https://rumble.com/vujua7-pfizer-quietly-adds-language-warning-that-unfavorable-pre-clinical.html?mref=6zof&mc=dgip3&utm_source=newsletter&utm_medium=email&utm_campaign=The+Alex+Jones+Show&ep=1
 https://rumble.com/vu45xo-doctor-mccullough-study-proves-childrens-hearts-destroyed-by-covid-vaccine.html?mref=6zof&mc=dgip3&utm_source=newsletter&utm_medium=email&utm_campaign=The+Alex+Jones+Show&ep=2
-
+https://twitter.com/BretWeinstein/status/1493263750723342338
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
