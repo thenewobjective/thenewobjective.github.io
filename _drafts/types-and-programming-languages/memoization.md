@@ -1,0 +1,5 @@
+- https://search.brave.com/search?q=memoization+of+reference+and+side-effect&source=web
+- http://www.cs.cornell.edu/courses/cs312/2002fa/lectures/lec21.htm
+- https://search.brave.com/search?q=memoization+must+be+pure
+- https://softwareengineering.stackexchange.com/questions/396501/is-a-memoized-pure-function-itself-considered-pure
+- https://twitter.com/mlhaufe/status/1489639498677989380
