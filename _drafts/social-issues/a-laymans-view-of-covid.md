@@ -2757,6 +2757,16 @@ https://twitter.com/gummibear737/status/1488947220393218049
 https://patch.com/wisconsin/brookfield-wi/latest-hospital-capacity-brookfield-area-nodx-20220201?utm_source=twitter.com&utm_medium=social&utm_term=health+%26+fitness&utm_campaign=autopost&utm_content=brookfield-wi
 https://notthebee.com/article/why-on-earth-is-the-fda-pushing-pfizer-to-submit-data-on-vaccinating-kids-under-5-if-it-wasnt-ready
 https://twitter.com/DrJBhattacharya/status/1487148474629902338
+https://twitter.com/MaajidNawaz/status/1491028621557116929
+https://twitter.com/Kevin_McKernan/status/1491055443879153671
+https://www.zerohedge.com/political/white-house-now-says-it-never-really-wanted-lockdowns
+https://twitter.com/zerohedge/status/1491581327921106947
+https://www.zerohedge.com/markets/they-will-not-silence-me-doctor-who-discovered-omicron-was-pressured-not-reveal-its-mild
+https://www.zerohedge.com/covid-19/cdc-spreads-misinformation-masking-not-science
+https://twitter.com/EricRWeinstein/status/1491624722273955841
+https://twitter.com/Kevin_McKernan/status/1492145254241288192
+https://rumble.com/vujua7-pfizer-quietly-adds-language-warning-that-unfavorable-pre-clinical.html?mref=6zof&mc=dgip3&utm_source=newsletter&utm_medium=email&utm_campaign=The+Alex+Jones+Show&ep=1
+https://rumble.com/vu45xo-doctor-mccullough-study-proves-childrens-hearts-destroyed-by-covid-vaccine.html?mref=6zof&mc=dgip3&utm_source=newsletter&utm_medium=email&utm_campaign=The+Alex+Jones+Show&ep=2
 
 
 johnson and johnson discontinued
