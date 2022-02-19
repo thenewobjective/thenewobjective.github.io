@@ -25,6 +25,10 @@ https://www.scrum.org/resources/blog/5-powerful-things-about-sprint
 
 ---
 
+https://www.quora.com/Is-Agile-development-a-failing-concept
+
+---
+
 After you have run a few sprints, the emphasis usually starts to shift from resolving uncertainty to completing features so that they can be released – at least to selected users. It allows you to gather quantitative data and to understand how users employ your product in its target environment. The shift should be reflected in your sprint goal, which now focuses on “getting stuff done” rather than testing ideas
 
 https://www.scrum.org/resources/blog/scrum-master-studio-series-frame-2-sprint-goal

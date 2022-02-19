@@ -2768,6 +2768,19 @@ https://twitter.com/Kevin_McKernan/status/1492145254241288192
 https://rumble.com/vujua7-pfizer-quietly-adds-language-warning-that-unfavorable-pre-clinical.html?mref=6zof&mc=dgip3&utm_source=newsletter&utm_medium=email&utm_campaign=The+Alex+Jones+Show&ep=1
 https://rumble.com/vu45xo-doctor-mccullough-study-proves-childrens-hearts-destroyed-by-covid-vaccine.html?mref=6zof&mc=dgip3&utm_source=newsletter&utm_medium=email&utm_campaign=The+Alex+Jones+Show&ep=2
 https://twitter.com/BretWeinstein/status/1493263750723342338
+https://twitter.com/DailySignal/status/1491918180914282504
+https://twitter.com/Kevin_McKernan/status/1492881908786728966
+https://twitter.com/BrendanEich/status/1474425379490205701
+https://twitter.com/chrismartenson/status/1493363816045944839
+https://elcolectivodeuno.wordpress.com/2021/12/29/how-much-more-evidence-do-you-need-here-is-a-list-of-860-scientific-studies-and-reports-linking-covid-vaccines-to-hundreds-of-adverse-effects-and-deaths/
+https://meridian.allenpress.com/aplm/article/doi/10.5858/arpa.2021-0435-SA/477788/Autopsy-Histopathologic-Cardiac-Findings-in-Two
+https://www.zerohedge.com/covid-19/breakthrough-research-finds-link-between-long-covid-and-vagus-nerve-damage
+https://scitechdaily.com/covid-19-can-infect-nerve-cells-and-cause-a-range-of-neurological-and-psychiatric-symptoms/https://scitechdaily.com/covid-19-can-infect-nerve-cells-and-cause-a-range-of-neurological-and-psychiatric-symptoms/
+https://twitter.com/DrJohnB2/status/1495043137525497860
+https://www.zerohedge.com/covid-19/contagious-lies-cdc-claims-hospitalization-rising-among-unvaccinated-teens-contrary-its
+https://gab.com/RealAlexJones/posts/106383523156799599
+https://mobile.twitter.com/kevin_mckernan/status/1380496861514113026
+https://twitter.com/gerdosi/status/1371546469954633733
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
