@@ -2781,6 +2781,8 @@ https://www.zerohedge.com/covid-19/contagious-lies-cdc-claims-hospitalization-ri
 https://gab.com/RealAlexJones/posts/106383523156799599
 https://mobile.twitter.com/kevin_mckernan/status/1380496861514113026
 https://twitter.com/gerdosi/status/1371546469954633733
+https://mobile.twitter.com/ACMEAtomicAce/status/1499384207642140681
+
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
