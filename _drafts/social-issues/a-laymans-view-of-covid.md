@@ -2782,7 +2782,30 @@ https://gab.com/RealAlexJones/posts/106383523156799599
 https://mobile.twitter.com/kevin_mckernan/status/1380496861514113026
 https://twitter.com/gerdosi/status/1371546469954633733
 https://mobile.twitter.com/ACMEAtomicAce/status/1499384207642140681
-
+https://mobile.twitter.com/gummibear737/status/1502294368757198848
+https://mobile.twitter.com/gummibear737/status/1504141219903188993
+https://dailycaller.com/2022/03/16/audit-new-york-state-undercounted-nursing-home-deaths/
+https://mobile.twitter.com/KelleyKga/status/1504428939212693505
+https://mobile.twitter.com/Kevin_McKernan/status/1359345102569811969
+https://mobile.twitter.com/Kevin_McKernan/status/1506295769552363521
+https://www.cnbc.com/2022/03/23/covid-moderna-vaccine-for-young-kids-up-to-44percent-effective-against-omicron.html?__source=twitter|main
+https://mobile.twitter.com/foundmyfitness/status/1508866504107855875
+https://mobile.twitter.com/Kevin_McKernan/status/1509157283955097600
+https://mobile.twitter.com/Kevin_McKernan/status/1509150813595254798
+https://www.zerohedge.com/covid-19/introducing-covid-xe-new-mutant-strain-found-uk-who-warns-its-more-contagious-omicron
+https://twitter.com/zerohedge/status/1513192683568865285
+https://twitter.com/Kevin_McKernan/status/1513194561069363201
+https://twitter.com/Kevin_McKernan/status/1359345102569811969
+https://twitter.com/Kevin_McKernan/status/1504200934053789699
+https://twitter.com/Kevin_McKernan/status/1506398739140857861
+https://twitter.com/Kevin_McKernan/status/1506422185170198529
+https://twitter.com/Kevin_McKernan/status/1506801272590110721
+https://twitter.com/Kevin_McKernan/status/1508410890487574528
+https://twitter.com/Kevin_McKernan/status/1508645558914797575
+https://twitter.com/Kevin_McKernan/status/1509401423376752644
+https://twitter.com/Kevin_McKernan/status/1509685709208276994
+https://twitter.com/Dylan_Housman/status/1512142796823703557
+https://twitter.com/francispouliot_/status/1443246252246843404
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
