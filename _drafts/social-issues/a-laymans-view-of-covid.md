@@ -2806,6 +2806,15 @@ https://twitter.com/Kevin_McKernan/status/1509401423376752644
 https://twitter.com/Kevin_McKernan/status/1509685709208276994
 https://twitter.com/Dylan_Housman/status/1512142796823703557
 https://twitter.com/francispouliot_/status/1443246252246843404
+https://mobile.twitter.com/BrendanEich/status/1474425379490205701
+https://mobile.twitter.com/USMortality/status/1514630944736563200
+https://mobile.twitter.com/BrendanEich/status/1514661288458133528
+https://mobile.twitter.com/DailyCaller/status/1516454125185208326
+https://dailycaller.com/2022/04/20/doj-appeals-mask-mandate-ruling-after-cdc-request/
+https://mobile.twitter.com/Kevin_McKernan/status/1518921067372457984
+https://mobile.twitter.com/alexandrosM/status/1520572303993540608
+https://mobile.twitter.com/Kevin_McKernan/status/1524618192680853507
+https://www.zerohedge.com/covid-19/watch-fauci-admits-you-use-lockdowns-get-people-vaccinated
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
