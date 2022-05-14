@@ -83,6 +83,7 @@ https://mermaid-js.github.io/mermaid/#/
 
 
 [^2]: Floris Erich. [DevOps is Simply Interaction Between Development and Operations](https://www.researchgate.net/publication/330477403_DevOps_is_Simply_Interaction_Between_Development_and_Operations_First_International_Workshop_DEVOPS_2018_Chateau_de_Villebrumier_France_March_5-6_2018_Revised_Selected_Papers). January 2019
+https://www.researchgate.net/profile/Floris-Erich-2/publication/330477403_DevOps_is_Simply_Interaction_Between_Development_and_Operations_First_International_Workshop_DEVOPS_2018_Chateau_de_Villebrumier_France_March_5-6_2018_Revised_Selected_Papers/links/5cd4c9ba92851c4eab911562/DevOps-is-Simply-Interaction-Between-Development-and-Operations-First-International-Workshop-DEVOPS-2018-Chateau-de-Villebrumier-France-March-5-6-2018-Revised-Selected-Papers.pdf
 
 
 ## Further Reading

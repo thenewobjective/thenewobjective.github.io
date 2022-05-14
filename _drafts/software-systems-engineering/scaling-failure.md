@@ -1,6 +1,8 @@
 - Clown Computing
   - Single point of failure. Someone else's computer.
   - Now you can bring a country to it's knees with a bug. Brick-the-world
+    Atlassian
+      - https://www.atlassian.com/engineering/post-incident-review-april-2022-outage
 	  Boeing
 		  https://youtu.be/ikMmkHzlTpk?t=4316
 		    Not being informed of the update as if the semantics of the system won't change
