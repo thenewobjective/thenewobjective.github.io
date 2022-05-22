@@ -86,6 +86,7 @@ https://en.wikipedia.org/wiki/FRACTRAN
 ## Going Beyond
 
 - Microsoft Excel
+- Lacing as Computing
 
 
 ## Summary
