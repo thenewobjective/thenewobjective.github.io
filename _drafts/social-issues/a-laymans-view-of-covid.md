@@ -2863,6 +2863,18 @@ https://mobile.twitter.com/Kevin_McKernan/status/1518921067372457984
 https://mobile.twitter.com/alexandrosM/status/1520572303993540608
 https://mobile.twitter.com/Kevin_McKernan/status/1524618192680853507
 https://www.zerohedge.com/covid-19/watch-fauci-admits-you-use-lockdowns-get-people-vaccinated
+https://www.zerohedge.com/political/white-house-admits-it-lied-about-vaccines
+https://www.jwz.org/blog/2022/02/cdc-recolors-maps-to-declare-victory/
+https://notthebee.com/article/young-adults-are-dropping-dead-of-something-called-sudden-adult-death-syndrome-and-doctors-are-just-completely-stumped-about-it
+https://twitter.com/Kevin_McKernan/status/1534691206181146625
+https://twitter.com/Kevin_McKernan/status/1525106726931922944
+https://twitter.com/BrendanEich/status/1524105134770249728
+https://gab.com/RobertMaloneMD/posts/108326076836139918
+https://twitter.com/Kevin_McKernan/status/1530399170770649088
+https://twitter.com/disclosetv/status/1529898564264112144
+https://www.telegraph.co.uk/news/2022/05/28/astrazeneca-vaccine-may-increase-risk-serious-neurological-condition/
+https://twitter.com/Kevin_McKernan/status/1530934818585780224
+https://www.zerohedge.com/covid-19/cdc-director-issues-alert-pfizers-covid-19-pill
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
