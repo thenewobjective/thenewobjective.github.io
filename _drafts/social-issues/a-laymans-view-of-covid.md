@@ -2881,6 +2881,7 @@ https://twitter.com/BrendanEich/status/1538253982845399040
 https://twitter.com/Kevin_McKernan/status/1536080074193215489
 https://gab.com/Footdoc/posts/108466535566535035
 https://mobile.twitter.com/weeden3sandra/status/1535128903190208513
+https://www.zerohedge.com/covid-19/efficacy-estimates-pfizers-vaccine-young-children-come-under-scrutiny
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?

@@ -34,6 +34,8 @@ https://blog.trailofbits.com/2019/08/08/246-findings-from-our-smart-contract-aud
 
 Don't unit test what works? Only look for what should fail? A test is an existence proof. So check falsifiable information?
 
+"The real value of tests is not that they detect bugs in the code, but that they detect inadequacies in the methods, concentration, and skills of those who design and produce the code." — C.A.R. Hoare
+
 
 https://news.ycombinator.com/item?id=12924173
 
