@@ -2875,6 +2875,12 @@ https://twitter.com/disclosetv/status/1529898564264112144
 https://www.telegraph.co.uk/news/2022/05/28/astrazeneca-vaccine-may-increase-risk-serious-neurological-condition/
 https://twitter.com/Kevin_McKernan/status/1530934818585780224
 https://www.zerohedge.com/covid-19/cdc-director-issues-alert-pfizers-covid-19-pill
+https://twitter.com/Kevin_McKernan/status/1538532481107910660
+https://www.zerohedge.com/covid-19/pfizer-stops-enrollment-covid-pill-trial-after-latest-lousy-results
+https://twitter.com/BrendanEich/status/1538253982845399040
+https://twitter.com/Kevin_McKernan/status/1536080074193215489
+https://gab.com/Footdoc/posts/108466535566535035
+https://mobile.twitter.com/weeden3sandra/status/1535128903190208513
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
