@@ -2882,6 +2882,10 @@ https://twitter.com/Kevin_McKernan/status/1536080074193215489
 https://gab.com/Footdoc/posts/108466535566535035
 https://mobile.twitter.com/weeden3sandra/status/1535128903190208513
 https://www.zerohedge.com/covid-19/efficacy-estimates-pfizers-vaccine-young-children-come-under-scrutiny
+https://www.zerohedge.com/covid-19/who-tedros-privately-admits-lab-leak-most-likely-explanation-covid-19
+https://twitter.com/Kevin_McKernan/status/1539092471053004800
+https://twitter.com/Ravarora1/status/1540359709466583040
+https://rwmalonemd.substack.com/p/immune-imprinting-comirnaty-and-omicron-520
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
