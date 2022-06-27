@@ -275,4 +275,15 @@ more than a culturally sanctioned  and
 linguistically reinforced hallucination
 """
 - Terance Mckenna
+
+## Fictionalism
+
+https://en.m.wikipedia.org/wiki/Philosophy_of_mathematics#Fictionalism
+https://en.m.wikipedia.org/wiki/Fictionalism
+https://plato.stanford.edu/entries/fictionalism-mathematics/
+
+## Nominalism
+
+https://en.wikipedia.org/wiki/Nominalism
+https://plato.stanford.edu/entries/nominalism-mathematics/
 -->
