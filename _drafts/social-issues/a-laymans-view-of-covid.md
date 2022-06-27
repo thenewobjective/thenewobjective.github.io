@@ -2815,6 +2815,14 @@ https://mobile.twitter.com/Kevin_McKernan/status/1518921067372457984
 https://mobile.twitter.com/alexandrosM/status/1520572303993540608
 https://mobile.twitter.com/Kevin_McKernan/status/1524618192680853507
 https://www.zerohedge.com/covid-19/watch-fauci-admits-you-use-lockdowns-get-people-vaccinated
+https://dailycaller.com/2022/05/19/cdc-covid-coronavirus-vaccine-variant-omicron-flu-shot/
+https://mobile.twitter.com/BrendanEich/status/1529344347014955008
+https://fee.org/articles/the-new-york-times-explains-why-mask-mandates-don-t-work/
+https://mobile.twitter.com/Kevin_McKernan/status/1533857744549208064
+https://mobile.twitter.com/TexasLindsay/status/1537082146493440001
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4125239
+https://www.based-politics.com/2022/06/23/who-chief-believes-covid-19-likely-did-come-from-lab-leak/
+https://edition.cnn.com/2022/06/22/health/ba4-ba5-escape-antibodies-covid-vaccine/index.html
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
