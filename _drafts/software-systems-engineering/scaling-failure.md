@@ -3,6 +3,15 @@
   - Now you can bring a country to it's knees with a bug. Brick-the-world
     Atlassian
       - https://www.atlassian.com/engineering/post-incident-review-april-2022-outage
+      - https://www.zdnet.com/article/atlassian-estimates-cloud-outage-could-take-another-two-weeks-to-fix/
+        https://newsletter.pragmaticengineer.com/p/scoop-atlassian?s=r
+          Rumored details:
+          force nearly all customers to cloud platform away from on-premise
+          Someone runs a script to delete "old" accounts and instead delete 400 customers
+          weeks to restore
+          Tell customers the accounts are accidentally disabled
+          customer reps possibly partying in vegas?
+          https://twitter.com/lzsthw/status/1514408580824371211
 	  Boeing
 		  https://youtu.be/ikMmkHzlTpk?t=4316
 		    Not being informed of the update as if the semantics of the system won't change
