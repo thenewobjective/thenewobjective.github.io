@@ -2894,6 +2894,9 @@ https://www.zerohedge.com/covid-19/who-tedros-privately-admits-lab-leak-most-lik
 https://twitter.com/Kevin_McKernan/status/1539092471053004800
 https://twitter.com/Ravarora1/status/1540359709466583040
 https://rwmalonemd.substack.com/p/immune-imprinting-comirnaty-and-omicron-520
+https://mobile.twitter.com/Kevin_McKernan/status/1528759273383247872
+https://www.zerohedge.com/medical/more-900-cases-hepatitis-unknown-origin-reported-children-who-says
+https://mobile.twitter.com/Kevin_McKernan/status/1542467530681352194
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?

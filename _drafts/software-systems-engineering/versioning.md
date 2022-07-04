@@ -14,9 +14,6 @@ Further Reading
 
 	
 	
-	
-	
-	
 Notes
 	- SemVer is incompatible with staggered releases?
 	- Web browser style release numbers become pointless. Formerly were milestones. Now what are they? 
@@ -45,4 +42,11 @@ https://en.wikipedia.org/wiki/Version_control
 
 Spec-ulation Keynote - Rich Hickey
 	https://www.youtube.com/watch?v=oyLBGkS5ICk
-	
+
+==========
+https://stackoverflow.com/questions/3179242/sprint-versions-vs-release-versions-in-jira-and-greenhopper
+https://search.brave.com/search?q=build+version+vs+sprint+iteration&source=web
+https://soshace.com/setting-up-automated-semantic-versioning-for-your-nodejs-project/
+https://semantic-release.gitbook.io/semantic-release/usage/getting-started
+https://medium.com/the-liberators/myth-in-scrum-new-features-are-delivered-only-at-the-end-of-the-sprint-3981fcdf198
+https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html
