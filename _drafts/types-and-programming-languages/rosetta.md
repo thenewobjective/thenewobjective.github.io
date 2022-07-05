@@ -61,3 +61,13 @@ Reference: "Propositions as Types" by Philip Wadler <https://www.youtube.com/wat
 
 "The visitor pattern is essentially the same thing as Church encoding"
     <https://www.haskellforall.com/2021/01/the-visitor-pattern-is-essentially-same.html>
+
+========
+Boolean Algebra vs Propositional Logic
+- <https://math.stackexchange.com/questions/1210458/what-is-the-difference-between-boolean-logic-and-propositional-logic#1210498>
+- <https://cs.stackexchange.com/questions/45357/boolean-algebraic-expression-vs-propositional-logic-expression>
+- <https://twitter.com/mlhaufe/status/1328006667049512960>
+
+
+====
+[Doxastic logic](https://en.wikipedia.org/wiki/Doxastic_logic)
