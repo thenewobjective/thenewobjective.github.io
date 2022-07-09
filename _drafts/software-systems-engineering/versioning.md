@@ -11,9 +11,6 @@ Further Reading
 	- https://jonoscript.wordpress.com/2011/07/18/its-not-about-the-version-numbers-its-about-extension-compatibility-and-long-term-support/
 	- https://semver.org/
 	- https://www.robnagler.com/2015/04/11/Major-Release-Syndrome.html
-
-	
-	
 	
 	
 	
@@ -45,4 +42,8 @@ https://en.wikipedia.org/wiki/Version_control
 
 Spec-ulation Keynote - Rich Hickey
 	https://www.youtube.com/watch?v=oyLBGkS5ICk
-	
+
+
+Versioning runaway.
+
+Semantic granularity.

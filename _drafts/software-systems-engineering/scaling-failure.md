@@ -22,6 +22,7 @@
       - http://n-gate.com/hackernews/2019/07/14/
   - Windows 10
     - https://www.forbes.com/sites/gordonkelly/2020/03/26/microsoft-windows-10-warning-crashes-boot-problems-no-internet-wifi-upgrade-windows-10-free/#6dc9823a4846
+    - https://mobile.twitter.com/brullov_art/status/1194905594462949376
   - Tesla
     - https://www.zerohedge.com/technology/tesla-systems-reportedly-suffer-complete-network-outage
       https://twitter.com/zerohedge/status/1462842376204996625
