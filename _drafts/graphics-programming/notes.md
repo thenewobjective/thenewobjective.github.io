@@ -20,7 +20,26 @@
 - <https://github.com/WebKit/webkit/blob/89c28d471fae35f1788a0f857067896a10af8974/Source/WebCore/platform/graphics/UnitBezier.h#L62>
 - <https://sf2platinum.wordpress.com/2020/10/15/row-scrolling-for-parallax-effects/>
 - <https://en.wikipedia.org/wiki/Ordered_dithering>
-
+- <https://en.wikipedia.org/wiki/Chroma_key>
+- <https://developer.mozilla.org/en-US/docs/Web/CSS/filter>
+- <https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/contrast>
+- <https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Filter_effects>
+- <https://web.dev/canvas-imagefilters/>
+- <https://1library.net/document/q5egw9rq-image-processing-in-smalltalk.html?utm_source=related_list>
+- <https://docs.gimp.org/2.10/en/filters.html>
+- <https://en.wikipedia.org/wiki/Impossible_color>
+- <https://www.tutorialspoint.com/dip/brightness_and_contrast.htm>
+- <https://softwarebydefault.com/2013/03/03/colomatrix-image-filters/>
+- <https://docs.microsoft.com/en-us/dotnet/api/system.drawing.imaging.colormatrix?redirectedfrom=MSDN&view=dotnet-plat-ext-6.0&viewFallbackFrom=net-5.0>
+- <https://www.codeproject.com/Articles/3772/ColorMatrix-Basics-Simple-Image-Color-Adjustment>
+- <https://www.techrepublic.com/article/how-do-i-convert-images-to-grayscale-and-sepia-tone-using-c/>
+- <http://www.jhlabs.com/ip/filters/index.html>
+- <https://en.wikipedia.org/wiki/2D_computer_graphics>
+- <https://yoksel.github.io/svg-filters/#/>
+- <https://en.wikipedia.org/wiki/SVG_filter_effects>
+- <https://css-tricks.com/creating-patterns-with-svg-filters/>
+- <https://en.wikipedia.org/wiki/Digital_image_processing#Digital_image_transformations>
+- <https://web.archive.org/web/20200117191525/http://www.dmc.fmph.uniba.sk/public_html/doc/Java/index.htm>
 ---
 
 Determining the points of this curve can be accomplished by divide and conquer between the control points.
