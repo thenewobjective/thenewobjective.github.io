@@ -157,3 +157,15 @@ at least partly that:
 Which is quite convincing but is thinking of the future of programming. To tackle the problems 
 of today, Alan Kay expresses it better: Is it Complex or did we make it complicated?
 -->
+
+<!--
+Clean Architecture implies Code First instead of DB first development?
+	(Entity Framework)
+-->
+
+<!-- 
+Monolith by architecture, or monolith by infrastructure?
+https://twitter.com/alexcwatt/status/1544876135711916035
+
+https://medium.com/qe-unit/airbnbs-microservices-architecture-journey-to-quality-engineering-d5a490e6ba4f
+-->

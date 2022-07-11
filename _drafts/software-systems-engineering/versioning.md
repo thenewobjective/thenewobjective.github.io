@@ -11,8 +11,6 @@ Further Reading
 	- https://jonoscript.wordpress.com/2011/07/18/its-not-about-the-version-numbers-its-about-extension-compatibility-and-long-term-support/
 	- https://semver.org/
 	- https://www.robnagler.com/2015/04/11/Major-Release-Syndrome.html
-
-	
 	
 Notes
 	- SemVer is incompatible with staggered releases?
@@ -43,7 +41,12 @@ https://en.wikipedia.org/wiki/Version_control
 Spec-ulation Keynote - Rich Hickey
 	https://www.youtube.com/watch?v=oyLBGkS5ICk
 
-==========
+
+Versioning runaway.
+
+Semantic granularity.
+
+
 https://stackoverflow.com/questions/3179242/sprint-versions-vs-release-versions-in-jira-and-greenhopper
 https://search.brave.com/search?q=build+version+vs+sprint+iteration&source=web
 https://soshace.com/setting-up-automated-semantic-versioning-for-your-nodejs-project/

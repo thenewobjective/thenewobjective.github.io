@@ -2897,6 +2897,14 @@ https://rwmalonemd.substack.com/p/immune-imprinting-comirnaty-and-omicron-520
 https://mobile.twitter.com/Kevin_McKernan/status/1528759273383247872
 https://www.zerohedge.com/medical/more-900-cases-hepatitis-unknown-origin-reported-children-who-says
 https://mobile.twitter.com/Kevin_McKernan/status/1542467530681352194
+https://dailycaller.com/2022/06/27/cdc-kids-vaccine-covid-coronavirus-flawed-study-fda/
+https://twitter.com/Kevin_McKernan/status/1544863596055859201
+https://twitter.com/Biorealism/status/1544645436224315393
+https://twitter.com/Kevin_McKernan/status/1543293918569271297
+https://nypost.com/2021/10/21/nih-admits-us-funded-gain-of-function-in-wuhan-despite-faucis-repeated-denials/
+https://twitter.com/Kevin_McKernan/status/1541406485514690560
+https://twitter.com/anish_koka/status/1540875930205315072
+https://web.archive.org/web/20220626130318/https://twitter.com/Kevin_McKernan/status/1541037331142025216
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
