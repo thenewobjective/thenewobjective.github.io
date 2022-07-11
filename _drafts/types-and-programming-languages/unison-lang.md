@@ -156,6 +156,6 @@ Haskell and some ML based languages have variants of these type systems
 Regarding Smalltalk: I first learned it through Squeak:
 https://squeak.org/
 
-The philosophy is more important though and can be a bit of a challenge to “get it”. Watching videos by Alan Kay can do a lot to help understand it. I could find some of them if you’re interested. I’ve probably already sent enough for now.
+The philosophy is more important though and can be a bit of a challenge to “get it”. Watching videos by Alan Kay can do a lot to help understand it. I could find some of them if you’re interested. I’ve probably already said enough for now.
 
 """
