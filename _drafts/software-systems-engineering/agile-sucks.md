@@ -137,3 +137,55 @@ https://www.linkedin.com/pulse/scrum-communism-nemanja-marin%C4%8Di%C4%87/
 Agile Scaling?
 
 https://www.quora.com/How-many-of-you-software-developers-would-love-to-go-back-to-the-days-before-Scrum-Agile-Back-then-we-simply-gave-an-estimate-and-wrote-the-software-No-daily-standups-no-sprints-You-just-wrote-the-code-How-is-Scrum
+
+
+==========
+Think of processes such as Agile/Scrum like McDonalds
+
+Most employees are inexperienced teenagers.
+
+In order to provide a consistent, quality product to a customer
+
+a significant amount of process is required.
+
+
+but Scrum/Agile are not sufficient because...
+
+
+
+Hackers vs. Painters
+
+Hackers vs. Engineers.
+
+etc...
+
+=======
+Agile as Epicycles
+	The planets MUST move in circles, let's just keep adding them til it fits the data...
+
+========
+Agile pbi split
+
+A 21 is split into three items of... 8 ? 7 isn't a Fibonacci number…
+
+
+========
+No concept of negative velocity
+
+Why do bugs have positive velocity?
+
+===============
+Hidden costs to "velocity"
+Deployments
+Sprint planning
+Retro
+Daily standup
+Post daily
+Etc
+
+Added to sprint plan
+
+Velocity cost?
+
+============
+Trigger word: Swarming

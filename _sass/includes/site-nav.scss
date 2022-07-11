@@ -1,7 +1,7 @@
 .site-nav {
     display: flex;
     flex-direction: column;
-    font-size: larger;
+    font-size: x-large;
     width: 100%;
 }
 
@@ -68,4 +68,8 @@
 
 .site-nav_link > span {
     display: inline;
+}
+
+.rss {
+    color: orange;
 }

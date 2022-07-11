@@ -1,10 +1,10 @@
 ---
 layout: post
 icon: file-text
-title:  "A Synthesis of the Functional and Object Oriented Paradigms"
+title:  "Feature-Oriented Progamming in JavaScript"
 date:   2022-02-13 00:00:00 -0600
 category: Types and Programming Languages
-permalink: /types-and-programming-languages/a-synthesis-of-the-functional-and-object-oriented-paradigms
+permalink: /types-and-programming-languages/feature-oriented-programming-in-javascript
 commentThreadId: -1
 ---
 
@@ -13,8 +13,8 @@ commentThreadId: -1
 
 ## Introduction
 
-The <abbr title="The spirit of the times">zeitgeist</abbr> for programming languages remain one which
-is a dance or struggle between the Functional and Object-Oriented paradigms. We can see this via numerous
+The <abbr title="The spirit of the times">zeitgeist</abbr> of programming languages remain a
+dance/struggle between the Functional and Object-Oriented paradigms. We can see this via numerous
 popularity indices such as the [TIOBE index](https://www.tiobe.com/tiobe-index/). Both of these paradigms
 have existed for at least 50 years. Is it not surprising that we have yet to adopt a successor that takes
 the best of both? A true synthesis yielding something greater than the sum of its parts? The current
@@ -23,10 +23,13 @@ an awkward mixture of of multiple paradigms. To avoid cognitive dissonance succe
 focus on a subset of their language and banish the rest to dark corners and exceptional use cases. One
 dominant paradigm drives the application and one-off features of the others might be leveraged in edge-cases.
 
+<!--
 In this article I will show you: the essence of these two paradigms, why they aren't directly compatible,
 design patterns each uses to exceed its limitations, and a proper synthesis of both which introduces a new
 programming paradigm.
+-->
 
+<!--
 ## Functional Programming
 
 In Functional Programming (FP) the most important idea is mapping inputs to outputs: a function. Programs
@@ -126,7 +129,10 @@ So why not just pick one of the two paradigms and be done with the whole affair?
 - [Why Functional Programming Matters](https://www.cse.chalmers.se/~rjmh/Papers/whyfp.pdf)
 - [Why calculating is better than scheming](https://www.cs.kent.ac.uk/people/staff/dat/miranda/wadler87.pdf)
 - [Hutton's Razor(s)](https://jfdm.github.io/post/2019-12-04-Razor.html)
+- [Constructors Considered Harmful](https://gbracha.blogspot.com/2007/06/constructors-considered-harmful.html)
+- [Object Initialization and Construction Revisited](https://gbracha.blogspot.com/2007/08/object-initialization-and-construction.html)
 
+-->
 <!--
 ```ts
 type Exp = Lit | Add
