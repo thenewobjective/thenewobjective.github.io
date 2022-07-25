@@ -119,6 +119,12 @@ With the above you can now understand where Brooks's Law applies:
 > "...adding manpower to a late software project makes it later"
 > <cite>Fred Brooks</cite>
 
+As well as the motivation behind [Gordon Bell's](https://en.wikipedia.org/wiki/Gordon_Bell) comment:
+
+> "I’ve never seen a job being done by a five-hundred-person
+> team that couldn’t be done better by fifty people."
+> <cite>Chester Gordon Bell</cite>
+
 If the truth of a project or an organization exists only in the minds of its members, then getting someone up
 to speed is a daunting task if all other members must be informed and must inform this new addition. In such an organization
 you must also be concerned about the [Bus Factor](https://en.wikipedia.org/wiki/Bus_factor). How many people can you lose and
@@ -252,3 +258,4 @@ A parting cartoon by [Manu Cornet](https://en.wikipedia.org/wiki/Manu_Cornet):
 * [Systemantics. The Systems Bible](https://www.amazon.com/SYSTEMANTICS-SYSTEMS-BIBLE-John-Gall-ebook/dp/B00AK1BIDM) by John Gall
 * [The Mythical Man-Month](https://www.amazon.com/Mythical-Man-Month-Anniversary-Software-Engineering-ebook/dp/B00B8USS14) by Frederick P. Brooks Jr.
 * [Exploding Software-Engineering Myths](https://www.microsoft.com/en-us/research/blog/exploding-software-engineering-myths/)
+* [Team Topologies](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819/ref=sr_1_1) by Matthew Skelton and Manual Pais
