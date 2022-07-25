@@ -2905,6 +2905,24 @@ https://nypost.com/2021/10/21/nih-admits-us-funded-gain-of-function-in-wuhan-des
 https://twitter.com/Kevin_McKernan/status/1541406485514690560
 https://twitter.com/anish_koka/status/1540875930205315072
 https://web.archive.org/web/20220626130318/https://twitter.com/Kevin_McKernan/status/1541037331142025216
+https://twitter.com/Kevin_McKernan/status/1549213512005730305
+https://www.business-standard.com/article/international/covid-19-pandemic-frequent-boosters-can-weaken-immunity-says-eu-122011201707_1.html
+https://twitter.com/JodieAbacus/status/1550804429267402753
+https://gab.com/USCenturion2020/posts/108698778391652274
+https://childrenshealthdefense.org/defender/european-medicines-agency-eu-pfizer-vaccine/
+https://twitter.com/Kevin_McKernan/status/1547414882743734272
+https://www.9news.com.au/world/covid19-vaccines-affected-42-per-cent-of-womens-menstrual-cycles-study-says/73bb874a-4d06-4696-ade6-79cdd112516f?ocid=Gab
+https://gab.com/USCenturion2020/posts/108663949071911435
+https://fee.org/articles/natural-immunity-offered-more-protection-against-omicron-than-3-vaccine-doses-new-england-journal-of-medicine-study-finds/
+https://twitter.com/MakingC19Waves/status/1549222518057467904
+https://twitter.com/MartyMakary/status/1549726021636734976
+https://twitter.com/Kevin_McKernan/status/1549733211789578241
+https://mobile.twitter.com/kevin_mckernan/status/1549728232676655104
+https://www.zerohedge.com/covid-19/dr-birx-admits-she-and-fauci-made-science-lockdowns-social-distancing
+https://twitter.com/mendez_rod/status/1550175182072926208
+https://pubmed.ncbi.nlm.nih.gov/32533071/
+https://twitter.com/NLamolinara/status/1550176547084161024
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8248252/
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
