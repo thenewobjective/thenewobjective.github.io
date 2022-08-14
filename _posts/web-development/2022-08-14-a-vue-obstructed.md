@@ -43,12 +43,16 @@ export const mutations = {
 }
 ```
 
+{%raw%}
+
 ```html
 <!-- layouts/default.vue -->
 <template>
   <h1>{{$store.state.pageTitle}}</h1>
 </template>
 ```
+
+{%endraw%}
 
 ```html
 <!-- pages/index.vue -->
