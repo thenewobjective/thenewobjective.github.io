@@ -19,3 +19,13 @@ It seemed that I had no real choice; I couldn’t act any other way. It was as i
 I’m reminded of the Ancient Egyptian concept of [multiple souls](https://en.wikipedia.org/wiki/Ancient_Egyptian_conception_of_the_soul). Obligatory cultural reference:
 
 {% include youtube.html id="jhBSum8GILY" %}
+
+<!-- 
+TODO:
+
+Update blog post to reference The Matrix:
+
+https://thenewobjective.com/mindscape/watching-free-will
+"You've already made the choice, now you have to understand it."
+https://www.youtube.com/results?search_query=You%27ve+already+made+the+choice%2C+now+you+have+to+understand+it
+-->
