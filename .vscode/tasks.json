@@ -13,7 +13,7 @@
             "label": "serve",
             "type": "shell",
             "group": "build",
-            "command": "jekyll build"
+            "command": "bundle exec jekyll serve --watch"
         },
         {
             "label": "install",
