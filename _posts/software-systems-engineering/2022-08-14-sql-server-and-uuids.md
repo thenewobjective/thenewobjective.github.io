@@ -2,10 +2,10 @@
 layout: post
 icon: file-text
 title:  "SQL Server and UUIDs"
-date:   2022-08-13 11:00:00 -0600
+date:   2022-08-14 11:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/sql-server-and-uuids
-commentThreadId: -1
+commentThreadId: 76
 ---
 
 * TOC
