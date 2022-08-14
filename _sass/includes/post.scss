@@ -1,13 +1,13 @@
 .post {
     line-height: 1.8;
 	text-align: justify;
+	hyphens: auto;
 }
 
 .post > table {
 	border: 1px solid var(--font-color);
 	border-collapse: collapse;
-	margin: 1em 0;
-	white-space: nowrap;
+	margin: 1em auto;
 }
 
 .post > table th,
