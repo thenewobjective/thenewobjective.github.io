@@ -2923,6 +2923,16 @@ https://twitter.com/mendez_rod/status/1550175182072926208
 https://pubmed.ncbi.nlm.nih.gov/32533071/
 https://twitter.com/NLamolinara/status/1550176547084161024
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8248252/
+https://twitter.com/ChristinaNCarr1/status/1553330901018443777
+https://twitter.com/EricRWeinstein/status/1552003699932745729
+https://dailycaller.com/2022/07/29/cdc-google-facebook-twitter-collusion/
+https://twitter.com/Kevin_McKernan/status/1553888078669963265
+https://dailysceptic.org/2022/08/13/large-german-insurer-reports-staggering-rise-in-adverse-effects-from-covid-19-vaccines/
+https://twitter.com/LionAdvocacy/status/1558822130967519233
+https://twitter.com/DrEliDavid/status/1558550815488499714
+https://jessicar.substack.com/p/is-the-spike-protein-acting-as-a
+https://jeanmarcbenoitmd.substack.com/
+https://anandamide.substack.com/p/directed-evolution?utm_source=%2Fprofile%2F32722070-anandamide&utm_medium=reader2
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
