@@ -2933,6 +2933,14 @@ https://twitter.com/DrEliDavid/status/1558550815488499714
 https://jessicar.substack.com/p/is-the-spike-protein-acting-as-a
 https://jeanmarcbenoitmd.substack.com/
 https://anandamide.substack.com/p/directed-evolution?utm_source=%2Fprofile%2F32722070-anandamide&utm_medium=reader2
+https://www.theepochtimes.com/lawsuits-coming-for-entities-that-dont-change-covid-mandates-after-cdc-update-lawyer_4667572.html?utm_source=News&utm_campaign=breaking-2022-08-17-1&utm_medium=email&est=XPcLjHCDDly0sXTJ4Lg/8QGSLJFWYgi66Snu32K9SmjsU8bUEeK171BN+VH2KwruQhcMHg==
+https://twitter.com/profnfenton/status/1553067759755460610
+https://twitter.com/RepThomasMassie/status/1553776199930970112
+https://mobile.twitter.com/kevin_mckernan/status/1555655642823663621
+https://mobile.twitter.com/kevin_mckernan/status/1556244742878494720
+https://web.archive.org/web/20220812062113/https://twitter.com/lionadvocacy/status/1557834239240015872
+https://twitter.com/zerohedge/status/1560074413965541377
+https://twitter.com/Kevin_McKernan/status/1560072738269790212
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
