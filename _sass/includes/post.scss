@@ -14,6 +14,8 @@
 .post > table td {
 	border: 1px solid var(--font-color);
 	padding: 0.5em 1em;
+	word-break: initial;
+    text-align: left;
 }
 
 .post > table thead {

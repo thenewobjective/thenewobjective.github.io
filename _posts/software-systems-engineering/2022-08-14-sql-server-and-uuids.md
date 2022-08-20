@@ -40,8 +40,8 @@ Are there implementation concerns?
 
 ## Choosing a key format
 
-A simple integer seems reasonable at first but depending on the volume of data you can have problems if it’s not a big enough. Database systems give you many choices in this area and it can be easy to make the wrong one. Choosing an integer as a surrogate key (__int<sup>32</sup>__) means you're limited to __2<sup>32</sup> = ~4 billion__ records max.
-Also, if you move your record to another table or another database, you ca have collisions if they are using the same scheme.
+A simple integer seems reasonable at first but depending on the volume of data you can have problems if it's not a big enough. Database systems give you many choices in this area and it can be easy to make the wrong one. Choosing an integer as a surrogate key (__int<sup>32</sup>__) means you're limited to __2<sup>32</sup> = ~4 billion__ records max.
+Also, if you move your record to another table or another database, you can have collisions if they are using the same scheme.
 
 You might recall when the Social Media platform Parler crashed:
 
