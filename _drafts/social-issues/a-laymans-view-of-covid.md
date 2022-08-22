@@ -2941,6 +2941,23 @@ https://mobile.twitter.com/kevin_mckernan/status/1556244742878494720
 https://web.archive.org/web/20220812062113/https://twitter.com/lionadvocacy/status/1557834239240015872
 https://twitter.com/zerohedge/status/1560074413965541377
 https://twitter.com/Kevin_McKernan/status/1560072738269790212
+https://web.archive.org/web/20220708170136/https://twitter.com/pfizer/status/1545122250860466177
+https://mobile.twitter.com/Kevin_McKernan/status/1546522682740690945
+https://dailycaller.com/2022/07/25/anthony-fauci-vaccinated-individuals-dead-ends-coronavirus/
+https://mobile.twitter.com/zerohedge/status/1552798612018667521
+https://mobile.twitter.com/VPrasadMDMPH/status/1554324738062925827
+https://mobile.twitter.com/BrendanEich/status/1554862488314716160
+https://mobile.twitter.com/Kevin_McKernan/status/1555167245101326337
+https://mobile.twitter.com/JordanSchachtel/status/1554853610151968771
+https://mobile.twitter.com/Kevin_McKernan/status/1555151154060922880
+https://mobile.twitter.com/Kevin_McKernan/status/1555269969352572930
+https://notthebee.com/article/new-cdc-covid-guidelines-treat-vaccinated-and-unvaccinated-individuals-exactly-the-same-so-what-about-all-those-people-who-lost-their-jobs-because-they-didnt-get-the-shot
+https://mobile.twitter.com/EricRWeinstein/status/1557984927857065987
+https://mobile.twitter.com/Kevin_McKernan/status/1557958350708555776
+https://mobile.twitter.com/Kevin_McKernan/status/1559283308487376896
+https://mobile.twitter.com/gummibear737/status/1559280060242313217
+https://mobile.twitter.com/EricRWeinstein/status/1559415106881982464
+https://mobile.twitter.com/greg_price11/status/1561770367273811971
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
