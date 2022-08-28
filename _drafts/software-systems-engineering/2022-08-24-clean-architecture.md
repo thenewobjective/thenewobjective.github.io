@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Clean Architecture"
-date:   2022-08-14 13:00:00 -0600
+date:   2022-08-24 13:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/clean-architecture
 commentThreadId: -1
