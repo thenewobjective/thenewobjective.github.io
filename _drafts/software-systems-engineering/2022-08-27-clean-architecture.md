@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Clean Architecture"
-date:   2022-08-24 13:00:00 -0600
+date:   2022-08-27 13:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/clean-architecture
 commentThreadId: -1
@@ -120,7 +120,7 @@ Thus the following unattributed quote becomes clear:
 
 In traditional architecture the primary enemy is gravity. The Archway is an effective tool that
 fights against it. The question we have now is: what is the analogous enemy in Software and what is
-the "Arch" in Software Architecture?
+its "Arch"?
 
 In the early days of Software Engineering there was a major concern. It was referred to as
 [The Software Crisis](https://en.wikipedia.org/wiki/Software_crisis). This crisis can be
@@ -133,32 +133,85 @@ summarized by a quote from [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsge
 > <cite markdown="1">[Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_Dijkstra)</cite>
 
 There was a point where the computer was the most expensive part of a project. Now it is by far
-the programmer. This isn't simply because computing has become practically free, but also that
-the programmers have become far more expensive. You, I, and most people now have a supercomputer
-in their pocket. Let's compare:
+the programmer. Computing has become practically free and the price of the programmer has skyrocketed.
+You, I, and most people now have a supercomputer in their pocket:
 
 * **1997** - Intel ASCI Red/9152 supercomputer: **1.338 TFLOPS**
 * **2021** - IPhone 13 Pro: **1.5 TFLOPS**
 
-So why do most software projects fail? The failure rates,
-[depending on the study](https://www.zdnet.com/article/study-68-percent-of-it-projects-fail/),
-range from 50% to 80% or more.
+So why do most software projects fail if the machines are plenty and capable?
 
-There are many presentations and discussions 
+The failure rates, [depending on the study](https://www.zdnet.com/article/study-68-percent-of-it-projects-fail/),
+range from 50% to 80% or more. There is also a cute aphorism called the [Ninety–ninety rule](https://en.wikipedia.org/wiki/Ninety%E2%80%93ninety_rule):
+
+> The first 90 percent of the code accounts for the first 90 percent of the development time.
+> The remaining 10 percent of the code accounts for the other 90 percent of the development time.
+> <cite>Tom Cargill, Bell Labs</cite>
+
+In my earlier article, ["Conway's Law and Consequences"](/software-systems-engineering/conways-law-and-consequences),
+I tackle the human organization aspect of software and how they relate. I invite you to read that before continuing here. In this article I focus only on the implementation. So back to the original question: What is the analogy to gravity in software and what is our "arch"? I think this becomes clear with the following graphic:
+
+<figure>
+    <img src="/media-library/software-systems-engineering/complexity-time-loc.png" alt="Complexity over time chart">
+    <figcaption>Intrinsic vs Extrinsic complexity over time</figcaption>
+</figure>
+
+As we develop solutions, some problems are naturally (intrinsically) harder than others; for example: adding a
+list of numbers vs computing the running average of the same list. The code we write though often has
+extraneous details and overhead that has nothing directly to with the problem we are trying to solve (extrinsic).
+
+Let's compare a program that writes "Hello World" to the console in Java and JavaScript:
+
+```java
+// Java
+class HelloWorld {
+    public static void main(String[] args)
+    {
+        System.out.println("Hello World");
+    }
+}
+```
+
+```js
+// JavaScript
+console.log('Hello World')
+```
+
+Not to pick on Java in this contrived example, but it makes clear the point that many of our challenges in software
+are not because the problems are complex but that we
+[make them complicated](https://www.youtube.com/watch?v=ubaX1Smg6pY).
+
+So the complexity of our code, whether it be extrinsic or intrinsic is the "weight" that bears upon us and the machines
+that must execute it thus complexity is our analogy to gravity and what we are fighting against. How can we get the two lines of our chart to align?
+
+## Anergetic Systems Failure
+
+Before we can identify our "arch" to fighting against complexity, we need to understand that complexity better.
+
+You may have heard of the [Peter principle](https://en.wikipedia.org/wiki/Peter_principle):
+
+> Every employee tends to rise to his level of incompetence
+
+There is an analogous observation by [Michael Arntzenius](http://www.rntz.net/index.html) for software:
+
+> Software grows until it exceeds our capacity to understand it.
+
+This perspective is a good observation of the general trend, but we don't have to take it as a universal truth.
+
+It takes effort/energy to implement a feature in our software. Not all of our efforts are useful.
+
+In physics energy is the ability to do work and is defined by the following relation:
+`Energy = Exergy + Anergy`. Exergy is the part of energy used in useful work. Anergy is the
+energy wasted in side effects such as heat or in overcoming friction and other activities not related to the goal.
+
+In software system development we deal with this as well not just literally in the machine's execution of our code,
+but also by analogy in the virtual implementation. In the above "Hello World" example you can identify the useful
+work (exergy) clearly: the logging of the "Hello World" message. You can also identify the wasted effort (anergy)
+in the Java code: the ceremony around defining the class and method.
 
 <!--
-[Gerald Sussman](https://en.wikipedia.org/wiki/Gerald_Jay_Sussman)
-explained in his [presentation](https://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute/)
-at least partly that:
-<q cite="https://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute/">
-    We Really Don't Know How To Compute!
-</q>
+## Example Architectures
 
-Which is quite convincing but is thinking of the future of programming. To tackle the problems 
-of today, Alan Kay expresses it better: Is it Complex or did we make it complicated?
--->
-
-<!--
 Clean Architecture implies Code First instead of DB first development?
 	(Entity Framework)
 -->
