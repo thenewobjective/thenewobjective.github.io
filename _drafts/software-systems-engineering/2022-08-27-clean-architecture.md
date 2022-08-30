@@ -210,6 +210,46 @@ work (exergy) clearly: the logging of the "Hello World" message. You can also id
 in the Java code: the ceremony around defining the class and method.
 
 <!--
+Energy = Exergy + Anergy
+Code   =  ?     +   Code Smell
+
+
+https://en.wikipedia.org/wiki/Energy
+    SI unit	joule
+https://en.wikipedia.org/wiki/Exergy
+
+What is the relationship between Anergy and Entropy?
+https://www.quora.com/What-is-the-difference-between-anergy-and-entropy
+https://wikidiff.com/anergy/entropy
+https://en.wikipedia.org/wiki/Entropy
+    joules per kelvin
+https://en.wikipedia.org/wiki/Entropy_(order_and_disorder)
+https://en.wikipedia.org/wiki/Entropy_(computing)
+https://en.wikipedia.org/wiki/Information_theory
+https://en.wikipedia.org/wiki/Entropy_in_thermodynamics_and_information_theory
+https://en.wikipedia.org/wiki/Entropy_(information_theory)
+
+software Rot
+https://en.wikipedia.org/wiki/Software_rot
+
+
+Is Entropy and Complexity equivalent?
+But Biological forms increase complexity...
+Definitions
+https://www.quora.com/Whats-the-relation-between-complexity-and-entropy
+-->
+
+<!-- 
+Database first vs code first
+Where is the Domain of the application?
+    Why isn't C# a framework details instead of the database?
+
+https://search.brave.com/search?q=database+first+vs+code+first
+https://crosp.net/blog/software-architecture/clean-architecture-part-1-databse-vs-domain/
+https://hackmd.io/@pierodibello/S1JvdXoKP
+-->
+
+<!--
 ## Example Architectures
 
 Clean Architecture implies Code First instead of DB first development?
