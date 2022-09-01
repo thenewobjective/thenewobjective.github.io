@@ -2959,6 +2959,12 @@ https://mobile.twitter.com/gummibear737/status/1559280060242313217
 https://mobile.twitter.com/EricRWeinstein/status/1559415106881982464
 https://mobile.twitter.com/greg_price11/status/1561770367273811971
 https://anandamide.substack.com/
+https://twitter.com/VPrasadMDMPH/status/1564088565524357120
+https://twitter.com/BretWeinstein/status/1564740273774956544
+https://twitter.com/BrendanEich/status/1565079391171780608
+https://twitter.com/DailyCaller/status/1562794460076879874
+https://www.zerohedge.com/political/drastic-increase-non-infectious-diseases-military-explained-data-glitch-whistleblower
+https://www.zerohedge.com/political/cdc-finally-admits-covid-mutations-hobbled-vaccine-effectiveness
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
