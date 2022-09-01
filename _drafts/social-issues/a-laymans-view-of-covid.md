@@ -2964,6 +2964,8 @@ https://mobile.twitter.com/Kevin_McKernan/status/1562516260016906242
 https://mobile.twitter.com/federicolois/status/1563387040540274688
 https://notthebee.com/article/that-covid-booster-all-your-liberal-friends-will-soon-be-taking-its-set-to-be-released-before-human-testing-is-complete
 https://mobile.twitter.com/AlexBerenson/status/1563989382180343810
+https://www.quora.com/Israel-reports-60-of-patients-hospitalized-with-COVID-are-fully-vaccinated-Is-this-a-regional-anomaly-or-are-we-being-given-inaccurate-data-by-the-CDC/answer/Toma%C5%BE-Vargazon
+https://mobile.twitter.com/BrendanEich/status/1565079391171780608
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
