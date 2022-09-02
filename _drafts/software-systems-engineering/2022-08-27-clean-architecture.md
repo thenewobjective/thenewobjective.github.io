@@ -269,6 +269,22 @@ https://crosp.net/blog/software-architecture/clean-architecture-part-1-databse-v
 https://hackmd.io/@pierodibello/S1JvdXoKP
 -->
 
+<!-- 
+https://stackoverflow.com/questions/14420276/well-designed-query-commands-and-or-specifications
+
+https://search.brave.com/search?q=database+first+vs+code+first
+
+https://wiki.c2.com/?CodeSmell
+
+https://crosp.net/blog/software-architecture/clean-architecture-part-1-databse-vs-domain/
+
+https://hackmd.io/@pierodibello/S1JvdXoKP
+
+https://search.brave.com/search?q=entity+framework+vs+database+project&source=desktop
+
+
+-->
+
 <!--
 ## Example Architectures
 

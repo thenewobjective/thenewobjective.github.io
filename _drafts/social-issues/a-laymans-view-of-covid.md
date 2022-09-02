@@ -2959,6 +2959,13 @@ https://mobile.twitter.com/gummibear737/status/1559280060242313217
 https://mobile.twitter.com/EricRWeinstein/status/1559415106881982464
 https://mobile.twitter.com/greg_price11/status/1561770367273811971
 https://anandamide.substack.com/
+https://mobile.twitter.com/gummibear737/status/1453474817890529287
+https://mobile.twitter.com/Kevin_McKernan/status/1562516260016906242
+https://mobile.twitter.com/federicolois/status/1563387040540274688
+https://notthebee.com/article/that-covid-booster-all-your-liberal-friends-will-soon-be-taking-its-set-to-be-released-before-human-testing-is-complete
+https://mobile.twitter.com/AlexBerenson/status/1563989382180343810
+https://www.quora.com/Israel-reports-60-of-patients-hospitalized-with-COVID-are-fully-vaccinated-Is-this-a-regional-anomaly-or-are-we-being-given-inaccurate-data-by-the-CDC/answer/Toma%C5%BE-Vargazon
+https://mobile.twitter.com/BrendanEich/status/1565079391171780608
 https://twitter.com/VPrasadMDMPH/status/1564088565524357120
 https://twitter.com/BretWeinstein/status/1564740273774956544
 https://twitter.com/BrendanEich/status/1565079391171780608
