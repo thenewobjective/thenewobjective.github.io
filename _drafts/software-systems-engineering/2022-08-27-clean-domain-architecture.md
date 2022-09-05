@@ -1,10 +1,10 @@
 ---
 layout: post
 icon: file-text
-title:  "Clean Architecture"
+title:  "Clean Domain Architecture"
 date:   2022-08-27 13:00:00 -0600
 category: Software Systems Engineering
-permalink: /software-systems-engineering/clean-architecture
+permalink: /software-systems-engineering/clean-domain-architecture
 commentThreadId: -1
 ---
 
@@ -262,6 +262,7 @@ https://hackmd.io/@pierodibello/S1JvdXoKP
 
 https://search.brave.com/search?q=entity+framework+vs+database+project&source=desktop
 
+https://www.johndcook.com/blog/2010/05/10/taking-your-code-for-a-walk/
 
 -->
 
