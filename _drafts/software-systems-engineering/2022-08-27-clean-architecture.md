@@ -235,16 +235,11 @@ Relationship to Big O notation?
 there is a difference between an algorithm and the expression of the algorithm in a particular language
 The expression of that algorithm generally has overhead due to readability preferences ()
 
-
 https://en.m.wikipedia.org/wiki/Code_refactoring
 https://en.m.wikipedia.org/wiki/Decomposition_(computer_science)
-
 https://softwareengineering.stackexchange.com/a/97695
-
 https://en.m.wikipedia.org/wiki/Software_rot
-
 https://en.m.wikipedia.org/wiki/Software_entropy
-
 https://en.m.wikipedia.org/wiki/Technical_debt
 
 Software rot due to a lack of robustness 
@@ -267,9 +262,7 @@ Where is the Domain of the application?
 https://search.brave.com/search?q=database+first+vs+code+first
 https://crosp.net/blog/software-architecture/clean-architecture-part-1-databse-vs-domain/
 https://hackmd.io/@pierodibello/S1JvdXoKP
--->
 
-<!-- 
 https://stackoverflow.com/questions/14420276/well-designed-query-commands-and-or-specifications
 
 https://search.brave.com/search?q=database+first+vs+code+first
