@@ -196,47 +196,67 @@ There is an analogous observation by [Michael Arntzenius](http://www.rntz.net/in
 
 > Software grows until it exceeds our capacity to understand it.
 
-This perspective is a good observation of the general trend, but we don't have to take it as a universal truth.
+These quotes may feel like great observations of some general truth, but we don't need to take them at face-value.
+How does such a situation arise in software?
 
-It takes effort/energy to implement a feature in our software. Not all of our efforts are useful.
+It takes effort/energy to implement a feature in our software and not all of our efforts are useful.
 
-In physics energy is the ability to do work and is defined by the following relation:
+In physics energy is defined as the ability to do work and can be expressed by the following relation:
 `Energy = Exergy + Anergy`. Exergy is the part of energy used in useful work. Anergy is the
-energy wasted in side effects such as heat or in overcoming friction and other activities not related to the goal.
+energy wasted in side effects such as heat or in overcoming friction and other activities not related
+to the desired outcome. Anergy is sometimes referred to as
+[disorder](https://en.wikipedia.org/wiki/Entropy_(order_and_disorder)) and
+[entropy](https://wikidiff.com/anergy/entropy)
 
-In software system development we deal with this as well not just literally in the machine's execution of our code,
-but also by analogy in the virtual implementation. In the above "Hello World" example you can identify the useful
-work (exergy) clearly: the logging of the "Hello World" message. You can also identify the wasted effort (anergy)
-in the Java code: the ceremony around defining the class and method.
+In software we deal with this as well by the analogous relation:
+`Algorithm = Algorithmic Exergy + Algorithmic Anergy`. You may have seen this under another name:
+[Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity). Plainly speaking,
+when we express an algorithm we do so in some language or notation we more-or-less find convenient.
+These could be flow charts, Python, a natural language like english, or even
+[artistic paintings](https://www.dangermouse.net/esoteric/piet/samples.html). Whatever we adopt as
+our language of expression, we also adopt certain tradeoffs. In the above "Hello World" comparison
+you can identify the useful work (exergy) clearly: the logging of the "Hello World" message. You
+can also identify the wasted effort (anergy) in the Java code: the ceremony around defining the
+class and method.
 
 <!--
-Energy = Exergy + Anergy
-Code   =  ?     +   Code Smell
+
+Code = Implementation? + Technical Debt?
+                       + Software Entropy?
+
+What is refactoring reducing?
+Refactoring won't eliminate language overhead
+
+Relationship to cyclomatic complexity? 
+
+Cyclomatic complexity doesn't measure extraneous language features though. 
+Relationship to Big O notation? 
+
+there is a difference between an algorithm and the expression of the algorithm in a particular language
+The expression of that algorithm generally has overhead due to readability preferences ()
 
 
-https://en.wikipedia.org/wiki/Energy
-    SI unit	joule
-https://en.wikipedia.org/wiki/Exergy
+https://en.m.wikipedia.org/wiki/Code_refactoring
+https://en.m.wikipedia.org/wiki/Decomposition_(computer_science)
 
-What is the relationship between Anergy and Entropy?
-https://www.quora.com/What-is-the-difference-between-anergy-and-entropy
-https://wikidiff.com/anergy/entropy
-https://en.wikipedia.org/wiki/Entropy
-    joules per kelvin
-https://en.wikipedia.org/wiki/Entropy_(order_and_disorder)
-https://en.wikipedia.org/wiki/Entropy_(computing)
-https://en.wikipedia.org/wiki/Information_theory
-https://en.wikipedia.org/wiki/Entropy_in_thermodynamics_and_information_theory
-https://en.wikipedia.org/wiki/Entropy_(information_theory)
+https://softwareengineering.stackexchange.com/a/97695
 
-software Rot
-https://en.wikipedia.org/wiki/Software_rot
+https://en.m.wikipedia.org/wiki/Software_rot
 
+https://en.m.wikipedia.org/wiki/Software_entropy
 
-Is Entropy and Complexity equivalent?
-But Biological forms increase complexity...
-Definitions
-https://www.quora.com/Whats-the-relation-between-complexity-and-entropy
+https://en.m.wikipedia.org/wiki/Technical_debt
+
+Software rot due to a lack of robustness 
+
+Implementation does not just introduce intentional or accidental technical debt, but there is also the overhead of the implementation language itself. A great maze of if-elsedom? All low-level code? 
+
+Low level code being all code not directly related to the problem domain. Like for loops, the return or break statement, etc. 
+
+Are design patterns considered tech debt? 
+
+Is using a particular programming language? 
+PHP VS Haskell 
 -->
 
 <!-- 

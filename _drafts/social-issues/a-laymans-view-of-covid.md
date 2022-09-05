@@ -2966,6 +2966,13 @@ https://notthebee.com/article/that-covid-booster-all-your-liberal-friends-will-s
 https://mobile.twitter.com/AlexBerenson/status/1563989382180343810
 https://www.quora.com/Israel-reports-60-of-patients-hospitalized-with-COVID-are-fully-vaccinated-Is-this-a-regional-anomaly-or-are-we-being-given-inaccurate-data-by-the-CDC/answer/Toma%C5%BE-Vargazon
 https://mobile.twitter.com/BrendanEich/status/1565079391171780608
+https://twitter.com/VPrasadMDMPH/status/1564088565524357120
+https://twitter.com/BretWeinstein/status/1564740273774956544
+https://twitter.com/BrendanEich/status/1565079391171780608
+https://twitter.com/DailyCaller/status/1562794460076879874
+https://www.zerohedge.com/political/drastic-increase-non-infectious-diseases-military-explained-data-glitch-whistleblower
+https://www.zerohedge.com/political/cdc-finally-admits-covid-mutations-hobbled-vaccine-effectiveness
+https://twitter.com/BrendanEich/status/1563413692338753536
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
