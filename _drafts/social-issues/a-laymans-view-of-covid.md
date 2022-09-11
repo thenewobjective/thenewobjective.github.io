@@ -2973,6 +2973,12 @@ https://twitter.com/DailyCaller/status/1562794460076879874
 https://www.zerohedge.com/political/drastic-increase-non-infectious-diseases-military-explained-data-glitch-whistleblower
 https://www.zerohedge.com/political/cdc-finally-admits-covid-mutations-hobbled-vaccine-effectiveness
 https://twitter.com/BrendanEich/status/1563413692338753536
+https://twitter.com/PierreKory/status/1566575744985300994
+https://twitter.com/Kevin_McKernan/status/1566787260359507969
+https://twitter.com/jimmy_dore/status/1566450475150491648
+https://twitter.com/DailyCaller/status/1566856216571219970
+https://twitter.com/Kevin_McKernan/status/1568962000167882758
+https://gab.com/RobertMaloneMD/posts/108959976717183528
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
