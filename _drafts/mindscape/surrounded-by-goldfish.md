@@ -1,6 +1,6 @@
 Assuming Dunning kreuger does not apply
 
-Chestertons fence
+Chesterton's fence
 
 Tact
 
@@ -12,12 +12,12 @@ Having expectations instead of hope
 
 Network effect
 
-By definition, hakf the population has below average intelligence
+By definition, half the population has below average intelligence
 
 You go to war with the people you have not the people you want 
 
 Quotes:
-Dont cast pearls before swine
+Don't cast pearls before swine
 
 You can lead a horse to water...
 

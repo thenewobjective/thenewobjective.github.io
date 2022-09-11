@@ -286,4 +286,72 @@ https://plato.stanford.edu/entries/fictionalism-mathematics/
 
 https://en.wikipedia.org/wiki/Nominalism
 https://plato.stanford.edu/entries/nominalism-mathematics/
+
+## Misc
+
+Abstractions are just useful fictions
+  - The speed of light is measured as a round trip and not one way
+  - how electricity moves through wires
+  - All abstractions are leaky?
+    - contradicts my earlier blog post
+
+## Truth vs reality
+  If something is "True", does it make it "Real"?
+
+## Facts vs Evidence
+
+Lawyers argue interpretation of facts. It's literally deriving an *ought* from an *is*.
+
+When Scientists talk about evidence that doesn't seem to be the same thing as talking about facts.
+*Evidence* seems to be tied directly to a particular theory whereas a *fact* may be just *information*
+
+
+## Jordan Peterson on Phenomenology
+
+The objective view of reality via science has limits
+
+A subjective view involves the subject.
+
+The union of self with reality.
+
+It's one thing to ask "if a tree falls in the forest does it make a sound?"
+and another to ask: "If there is no one around, is there a tree in the forest?"
+
+All experience and feelings are considered reality and not a separate objective reality
+  Phenomena vs Noumena
+  Qualia
+
+#################################
+
+We don't see objects and apply meaning to them, we see meanings.
+
+Getting an Ought from an Is.
+
+Curve fitting: https://xkcd.com/2048/
+
+Example of a model/abstraction as a useful fiction:
+https://www.youtube.com/watch?app=desktop&v=O-WCZ8PkrK0
+
+
+############
+
+Useful fictions
+  Alchemical Net
+  Shakespeare esolang
+
+##########
+
+Randomized Control Trials are a technique not the basis of truth. 
+
+Archaeology is not based on it for example 
+
+###
+
+Optical Illusions
+
+
+###
+
+"The facts are the enemy of the truth" 
+Don Quixote
 -->
