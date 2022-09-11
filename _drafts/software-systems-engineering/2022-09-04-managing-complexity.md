@@ -1,10 +1,10 @@
 ---
 layout: post
 icon: file-text
-title:  "Clean Domain Architecture"
-date:   2022-08-27 13:00:00 -0600
+title:  "Managing Complexity"
+date:   2022-09-04 13:00:00 -0600
 category: Software Systems Engineering
-permalink: /software-systems-engineering/clean-domain-architecture
+permalink: /software-systems-engineering/managing-complexity
 commentThreadId: -1
 ---
 
@@ -33,8 +33,7 @@ Credit: [Nina Aldin Thune](https://commons.wikimedia.org/w/index.php?curid=28249
 </figure>
 
 This structure is quite imposing. Standing at 481 feet tall it remained the tallest man-made
-structure for more than 3,800+ years with a weight of at least
-5.75 million tons.
+structure for more than 3,800 years with a weight of at least 5.75 million tons.
 <sup>[[ref](https://weightofstuff.com/how-much-does-the-pyramid-of-giza-weigh/)]</sup>
 
 Is this considered a grand architecture? No, this is an example of what can be accomplished with
@@ -110,7 +109,7 @@ Credit: [Benh LIEU SONG](https://commons.wikimedia.org/w/index.php?curid=6926930
     </tr>
 </table>
 
-Thus the following unattributed quote becomes clear:
+Thus, the following unattributed quote becomes clear:
 
 > "Any idiot can build a bridge that stands, but it takes an
 > engineer to build a bridge that barely stands."
@@ -119,7 +118,7 @@ Thus the following unattributed quote becomes clear:
 ### Fighting Complexity
 
 In traditional architecture the primary enemy is gravity. The Archway is an effective tool that
-fights against it. The question we have now is: what is the analogous enemy in Software and what is
+fights against it. The question we have now is: what is the analogous enemy in Software, and what is
 its "Arch"?
 
 In the early days of Software Engineering there was a major concern. It was referred to as
@@ -186,7 +185,7 @@ that must execute it thus complexity is our analogy to gravity and what we are f
 
 ## Anergetic Systems Failure
 
-Before we can identify our "arch" to fighting against complexity, we need to understand that complexity better.
+Before we can identify our "arches" for fighting against complexity, we need to understand that complexity better.
 
 You may have heard of the [Peter principle](https://en.wikipedia.org/wiki/Peter_principle):
 
@@ -196,36 +195,98 @@ There is an analogous observation by [Michael Arntzenius](http://www.rntz.net/in
 
 > Software grows until it exceeds our capacity to understand it.
 
-These quotes may feel like great observations of some general truth, but we don't need to take them at face-value.
-How does such a situation arise in software?
-
-It takes effort/energy to implement a feature in our software and not all of our efforts are useful.
+These quotes may feel like observations of some great general truth, but we don't need to take them as such.
+How does such a situation arise? It takes effort to implement features in our software and not all of those
+efforts are useful.
 
 In physics energy is defined as the ability to do work and can be expressed by the following relation:
-`Energy = Exergy + Anergy`. Exergy is the part of energy used in useful work. Anergy is the
-energy wasted in side effects such as heat or in overcoming friction and other activities not related
+`Energy = Exergy + Anergy`. Exergy is the part of energy used in useful work. Anergy is that
+portion which is wasted in side effects such as heat, overcoming friction, and other activities not related
 to the desired outcome. Anergy is sometimes referred to as
 [disorder](https://en.wikipedia.org/wiki/Entropy_(order_and_disorder)) and
 [entropy](https://wikidiff.com/anergy/entropy)
 
-In software we deal with this as well by the analogous relation:
+In software, we deal with this as well by the analogous relation:
 `Algorithm = Algorithmic Exergy + Algorithmic Anergy`. You may have seen this under another name:
 [Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity). Plainly speaking,
-when we express an algorithm we do so in some language or notation we more-or-less find convenient.
-These could be flow charts, Python, a natural language like english, or even
+when we express an algorithm we do so in some language/notation we find convenient.
+These could be flow charts, Python, a natural language like English, or even
 [artistic paintings](https://www.dangermouse.net/esoteric/piet/samples.html). Whatever we adopt as
-our language of expression, we also adopt certain tradeoffs. In the above "Hello World" comparison
+our language of expression, we also adopt certain trade-offs. In the above "Hello World" comparison
 you can identify the useful work (exergy) clearly: the logging of the "Hello World" message. You
 can also identify the wasted effort (anergy) in the Java code: the ceremony around defining the
-class and method.
+class and method. As we create ever larger systems, this incidental complexity (anergy)
+grows as well until the "weight" of it makes further changes practically impossible. This "weight"
+being the cognitive overhead and execution cost on the underlying machine. This ultimate failure
+I like to call **"Anergetic Systems Failure"**, or as others have called it:
+["Project Heat Death"](https://ieeexplore.ieee.org/document/4302682) as an
+[analogy from cosmology](https://en.wikipedia.org/wiki/Heat_death_of_the_universe).
+
+## The Language of the Domain
+
+
+## Explicitness and Syntactic Sugar
+
+
+Algorithmic Anergy is not just about explicit syntactic noise.
+
+<!-- (Or maybe it is and the implications are not clear?) -->
+
+<!-- Design patterns are bug reports against your programming language -->
+
+<!-- Syntactic Sugar Cons. point-free programming as legos with a single peg.-->
+
+<!-- A language is considered Low-Level if it forces you to pay attention to the irrelevant -->
+
+<!-- implicit meaning in your mind vs explicit meaning in the code. 
+    let point = {x: 3, y: 4, z: 12}
+
+    vs.
+
+    let point = [3, 4, 12]
+
+    EIBTI.
+-->
+
+<!-- Architecture dominates materials -->
 
 <!--
+https://en.wikipedia.org/wiki/Language-oriented_programming
 
-Code = Implementation? + Technical Debt?
-                       + Software Entropy?
+A good language provides primitives, a means of combination, and a means of abstraction
+that become the primitives of the next layer closer to the target domain.
+Syntactic sugar gets in the way due to a lack of orthogonality.
+
+Emergent behaviors and leaky abstractions are due to ???
+ -->
+
+<!-- 
+https://martinfowler.com/dsl.html
+https://en.wikipedia.org/wiki/Domain-specific_language
+-->
+
+<!-- 
+
+A Domain is a [Domain of Discourse](https://en.wikipedia.org/wiki/Domain_of_discourse).
+    A sphere of knowledge (ontology), influence, or activity. The subject area to which the
+    user applies a program is the domain of the software.
+-->
+
+<!--
+Edsger Dijkstra call APL "a mistake, carried through to perfection"
+    No control structures?
+Per Alan Kay: perhaps because of required learning curve to be effective?
+    Does the same apply to regex syntax?
+-->
+
+## Misc
+<!--
 
 What is refactoring reducing?
 Refactoring won't eliminate language overhead
+
+> Strive to add function by deleting code.
+> <cite markdown="1">[Jon Bentley](https://en.wikipedia.org/wiki/Jon_Bentley_(computer_scientist))</cite>
 
 Relationship to cyclomatic complexity? 
 
@@ -248,16 +309,28 @@ Implementation does not just introduce intentional or accidental technical debt,
 
 Low level code being all code not directly related to the problem domain. Like for loops, the return or break statement, etc. 
 
-Are design patterns considered tech debt? 
+Are design patterns considered tech debt, or the lack of a proper domain language? 
 
-Is using a particular programming language? 
+Is using a particular programming language considered technical debt?
 PHP VS Haskell 
+
+HQ9+ vs Perl
 -->
 
 <!-- 
 Database first vs code first
 Where is the Domain of the application?
     Why isn't C# a framework details instead of the database?
+
+If the database is chosen as the place for the entities you end up in a situation
+of building a relational model that decomposes the desired entities into a normalized form
+useful for that database. DBMSes also force you to define behavior separate from the entities
+as stored procedures. Custom types are also generally not possible:
+Is there a ZIP-code type? Phone type? Email Type? A UPC code type? etc.
+What's considered optimal for a database representation does not make it optimal for representation in
+other parts of your application. You'd also be combining your 
+Data Access Layer (DAL) with your Business Logic Layer. (Which may or may not be okay)
+
 
 https://search.brave.com/search?q=database+first+vs+code+first
 https://crosp.net/blog/software-architecture/clean-architecture-part-1-databse-vs-domain/
@@ -277,6 +350,20 @@ https://search.brave.com/search?q=entity+framework+vs+database+project&source=de
 
 https://www.johndcook.com/blog/2010/05/10/taking-your-code-for-a-walk/
 
+-->
+
+<!--
+Domain specific languages versus impedance mismatch. 
+
+General purpose languages and combining multiple domains. 
+
+Primitives means of combination and means of abstraction.
+
+Cognitive overhead of multiple dsls.
+ 
+Internal versus external dsls.
+
+Regularity is desirable across problem domains as we are optimizing human understanding and minimizing cognitive load. We are not code golfing every where. 
 -->
 
 <!--
