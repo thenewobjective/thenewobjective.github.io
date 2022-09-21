@@ -2980,6 +2980,15 @@ https://twitter.com/DailyCaller/status/1566856216571219970
 https://twitter.com/Kevin_McKernan/status/1568962000167882758
 https://gab.com/RobertMaloneMD/posts/108959976717183528
 https://twitter.com/Kevin_McKernan/status/1572065612238815233
+https://mobile.twitter.com/VPrasadMDMPH/status/1569658685684875269
+https://mobile.twitter.com/jimmy_dore/status/1568737532892049408
+https://mobile.twitter.com/DrJBhattacharya/status/1568638449074458624
+https://www.zerohedge.com/covid-19/da-refuses-provide-key-covid-19-vaccine-safety-analyses
+https://mobile.twitter.com/Kevin_McKernan/status/1569493879229136898
+https://mobile.twitter.com/BrendanEich/status/1474425379490205701
+https://mobile.twitter.com/BrendanEich/status/1572222683169050626
+https://mobile.twitter.com/EpochTimes/status/1571554647285944326
+https://notthebee.com/article/im-just-gonna-leave-this-right-here-and-walk-away
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
