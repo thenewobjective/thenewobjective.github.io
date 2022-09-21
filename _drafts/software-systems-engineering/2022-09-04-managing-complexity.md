@@ -209,7 +209,7 @@ to the desired outcome. Anergy is sometimes referred to as
 In software, we deal with this as well by the analogous relation:
 `Algorithm = Algorithmic Exergy + Algorithmic Anergy`. You may have seen this under another name:
 [Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity). Plainly speaking,
-when we express an algorithm we do so in some language/notation we find convenient.
+when we express an algorithm we do so in some language we find convenient.
 These could be flow charts, Python, a natural language like English, or even
 [artistic paintings](https://www.dangermouse.net/esoteric/piet/samples.html). Whatever we adopt as
 our language of expression, we also adopt certain trade-offs. In the above "Hello World" comparison
@@ -222,15 +222,57 @@ I like to call **"Anergetic Systems Failure"**, or as others have called it:
 ["Project Heat Death"](https://ieeexplore.ieee.org/document/4302682) as an
 [analogy from cosmology](https://en.wikipedia.org/wiki/Heat_death_of_the_universe).
 
-## The Language of the Domain
+## The Language Of The Domain
 
+Seeing that our choice of language has a direct impact on the complexity of our work, we know
+the first problem to be solved: using a better language. That's easier said than done though; in 2004
+[best estimates](http://lambda-the-ultimate.org/node/7) were that at least 4,600 programming languages existed.
+In the nearly 20 years since then we can safely assume that number has increased significantly.
 
-## Explicitness and Syntactic Sugar
+Due to this [paradox of choice](https://en.wikipedia.org/wiki/The_Paradox_of_Choice) and the
+[inertia of the industry](https://www.tiobe.com/tiobe-index/), we tend to pick
+what is most popular and easy for us to learn (similar to what we already know). As a consequence
+we tend to use languages that are
+["general-purpose"](https://en.wikipedia.org/wiki/General-purpose_programming_language)
+and not particularly well suited for any specific problem. In other words, we fall into the
+[Golden Hammer fallacy](https://en.wikipedia.org/wiki/Law_of_the_instrument#Computer_programming).
+To state it another way: you don't know the details of the project you're building, but you've
+decided to use Python as your programming language as that's what you and your team already know.
 
+<!--
+The problem with "general-purpose" languages are also their key selling-point: you don't know the details
+of the problem and don't want to juggle dozens of specialized languages in the same project. Just look
+at the mess that is web an average development project: HTML, CSS, (Java|Type)Script, a
+Server-Side language (C#, PHP, etc.), SQL for database access, YAML for build and deployment...
+-->
 
+<!-- 
+https://martinfowler.com/dsl.html
+https://en.wikipedia.org/wiki/Domain-specific_language
+-->
+
+<!--
+Domain specific languages versus impedance mismatch. 
+
+General purpose languages and combining multiple domains. 
+
+Primitives means of combination and means of abstraction.
+
+Cognitive overhead of multiple dsls.
+ 
+Internal versus external dsls.
+
+Regularity is desirable across problem domains as we are optimizing human understanding and minimizing cognitive load. We are not code golfing every where. 
+-->
+
+<!--
+Even if you can't pick the optimal language, Architecture dominates materials
+-->
+
+<!--
 Algorithmic Anergy is not just about explicit syntactic noise.
-
-<!-- (Or maybe it is and the implications are not clear?) -->
+(Or maybe it is and the implications are not clear?)
+ -->
 
 <!-- Design patterns are bug reports against your programming language -->
 
@@ -248,8 +290,6 @@ Algorithmic Anergy is not just about explicit syntactic noise.
     EIBTI.
 -->
 
-<!-- Architecture dominates materials -->
-
 <!--
 https://en.wikipedia.org/wiki/Language-oriented_programming
 
@@ -258,15 +298,9 @@ that become the primitives of the next layer closer to the target domain.
 Syntactic sugar gets in the way due to a lack of orthogonality.
 
 Emergent behaviors and leaky abstractions are due to ???
- -->
-
-<!-- 
-https://martinfowler.com/dsl.html
-https://en.wikipedia.org/wiki/Domain-specific_language
 -->
 
 <!-- 
-
 A Domain is a [Domain of Discourse](https://en.wikipedia.org/wiki/Domain_of_discourse).
     A sphere of knowledge (ontology), influence, or activity. The subject area to which the
     user applies a program is the domain of the software.
@@ -279,9 +313,7 @@ Per Alan Kay: perhaps because of required learning curve to be effective?
     Does the same apply to regex syntax?
 -->
 
-## Misc
 <!--
-
 What is refactoring reducing?
 Refactoring won't eliminate language overhead
 
@@ -331,39 +363,16 @@ What's considered optimal for a database representation does not make it optimal
 other parts of your application. You'd also be combining your 
 Data Access Layer (DAL) with your Business Logic Layer. (Which may or may not be okay)
 
-
 https://search.brave.com/search?q=database+first+vs+code+first
 https://crosp.net/blog/software-architecture/clean-architecture-part-1-databse-vs-domain/
 https://hackmd.io/@pierodibello/S1JvdXoKP
-
 https://stackoverflow.com/questions/14420276/well-designed-query-commands-and-or-specifications
-
 https://search.brave.com/search?q=database+first+vs+code+first
-
 https://wiki.c2.com/?CodeSmell
-
 https://crosp.net/blog/software-architecture/clean-architecture-part-1-databse-vs-domain/
-
 https://hackmd.io/@pierodibello/S1JvdXoKP
-
 https://search.brave.com/search?q=entity+framework+vs+database+project&source=desktop
-
 https://www.johndcook.com/blog/2010/05/10/taking-your-code-for-a-walk/
-
--->
-
-<!--
-Domain specific languages versus impedance mismatch. 
-
-General purpose languages and combining multiple domains. 
-
-Primitives means of combination and means of abstraction.
-
-Cognitive overhead of multiple dsls.
- 
-Internal versus external dsls.
-
-Regularity is desirable across problem domains as we are optimizing human understanding and minimizing cognitive load. We are not code golfing every where. 
 -->
 
 <!--
@@ -376,6 +385,5 @@ Clean Architecture implies Code First instead of DB first development?
 <!-- 
 Monolith by architecture, or monolith by infrastructure?
 https://twitter.com/alexcwatt/status/1544876135711916035
-
 https://medium.com/qe-unit/airbnbs-microservices-architecture-journey-to-quality-engineering-d5a490e6ba4f
 -->

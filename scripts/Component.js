@@ -21,11 +21,12 @@ class Component {
     }
 
     handleEvent(e) {
-        if(this["on" + e.type]) {
-            this["on" + e.type](e);
+        const eventName = `on${e.type}`
+        if(this[eventName]) {
+            this[eventName](e);
         }
-        if (this.handlers && this.handlers["on" + e.type]) {
-          this.handlers["on" + e.type](e);
+        if (this.handlers && this.handlers[eventName]) {
+          this.handlers[eventName](e);
         }
     }
 }
