@@ -1,6 +1,11 @@
 .post {
     line-height: 1.8;
 	text-align: justify;
+	/*
+	 Eliminates excessive word spacing that some browsers inject on short lines,
+	 Ref: <https://stackoverflow.com/questions/15118540/css-text-align-justify-big-spaces>
+	 */
+	word-spacing: -1px;
 	hyphens: auto;
 }
 
