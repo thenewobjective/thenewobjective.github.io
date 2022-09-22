@@ -2989,6 +2989,7 @@ https://mobile.twitter.com/BrendanEich/status/1474425379490205701
 https://mobile.twitter.com/BrendanEich/status/1572222683169050626
 https://mobile.twitter.com/EpochTimes/status/1571554647285944326
 https://notthebee.com/article/im-just-gonna-leave-this-right-here-and-walk-away
+https://mobile.twitter.com/gummibear737/status/1572661509058334725
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
