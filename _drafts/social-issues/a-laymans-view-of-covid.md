@@ -2990,6 +2990,20 @@ https://mobile.twitter.com/BrendanEich/status/1572222683169050626
 https://mobile.twitter.com/EpochTimes/status/1571554647285944326
 https://notthebee.com/article/im-just-gonna-leave-this-right-here-and-walk-away
 https://mobile.twitter.com/gummibear737/status/1572661509058334725
+https://twitter.com/DylanLeClair_/status/1569428868716429314
+https://twitter.com/P_McCulloughMD/status/1569370950340349952
+https://twitter.com/Kevin_McKernan/status/1570155968763240448
+https://twitter.com/Kevin_McKernan/status/1570112474694696965
+https://mobile.twitter.com/drmikehart/status/1569800035495297025
+https://mobile.twitter.com/DylanLeClair_/status/1571204438194360325
+https://www.zerohedge.com/covid-19/us-marine-corps-quietly-drops-punishments-refusing-covid-19-vaccine
+https://twitter.com/Kevin_McKernan/status/1571690395435679744
+https://twitter.com/rfsquared/status/1572737223891755010
+https://twitter.com/RandPaul/status/1573287318101934080
+https://twitter.com/Kevin_McKernan/status/1573678403340877826
+https://twitter.com/BrendanEich/status/1400297243962380291
+https://twitter.com/P_McCulloughMD/status/1573491363164864536
+https://twitter.com/EricRWeinstein/status/1573695804069421056
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
