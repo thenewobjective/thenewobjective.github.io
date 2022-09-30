@@ -354,4 +354,9 @@ Optical Illusions
 
 "The facts are the enemy of the truth" 
 Don Quixote
+
+==========
+https://en.wikipedia.org/wiki/Two_Dogmas_of_Empiricism
+https://en.m.wikipedia.org/wiki/Philosophy_of_mathematics#Fictionalism
 -->
+
