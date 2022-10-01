@@ -17,3 +17,5 @@ https://bertrandmeyer.com/2013/10/03/the-laws-of-branching-part-2-tichy-and-joy/
 
 
 https://trunkbaseddevelopment.com/
+
+https://jamesmckay.net/2017/01/martin-fowler-and-feature-branches-revisited/

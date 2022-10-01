@@ -3004,6 +3004,17 @@ https://twitter.com/Kevin_McKernan/status/1573678403340877826
 https://twitter.com/BrendanEich/status/1400297243962380291
 https://twitter.com/P_McCulloughMD/status/1573491363164864536
 https://twitter.com/EricRWeinstein/status/1573695804069421056
+https://mobile.twitter.com/Kevin_McKernan/status/1572947642019356672
+https://mobile.twitter.com/Kevin_McKernan/status/1575130826295197697
+https://mobile.twitter.com/Kevin_McKernan/status/1575110008739885058
+https://mobile.twitter.com/Kevin_McKernan/status/1575502113555513345
+https://mobile.twitter.com/gummibear737/status/1575556137310908416
+https://mobile.twitter.com/Kevin_McKernan/status/1575546136290418688
+https://www.reuters.com/business/healthcare-pharmaceuticals/indonesia-drug-agency-approves-chinas-walvax-mrna-vaccine-emergency-use-2022-09-29/
+https://mobile.twitter.com/Kevin_McKernan/status/1575832910342463489
+https://mobile.twitter.com/kevin_mckernan/status/1574556786090188800
+https://mobile.twitter.com/kevin_mckernan/status/1574731314984411139
+https://www.mdpi.com/2076-393X/10/10/1651
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
