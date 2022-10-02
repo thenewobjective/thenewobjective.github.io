@@ -3015,6 +3015,9 @@ https://mobile.twitter.com/Kevin_McKernan/status/1575832910342463489
 https://mobile.twitter.com/kevin_mckernan/status/1574556786090188800
 https://mobile.twitter.com/kevin_mckernan/status/1574731314984411139
 https://www.mdpi.com/2076-393X/10/10/1651
+https://twitter.com/mverbora/status/1574566361619083264
+https://www.outkick.com/cdc-quietly-ends-recommendation-for-universal-masking-in-healthcare-facilities/
+https://twitter.com/Kevin_McKernan/status/1576297873167171584
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
