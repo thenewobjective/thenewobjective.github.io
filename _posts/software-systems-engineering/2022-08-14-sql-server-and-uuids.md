@@ -14,15 +14,15 @@ commentThreadId: 76
 ## Introduction
 
 When designing database tables to maintain the state of your objects you often have entities that do not have a
-[Natural Key](https://en.wikipedia.org/wiki/Natural_key) (attributes that exist on the entity itself) to uniquely
+[Natural Key](https://en.wikipedia.org/wiki/Natural_key), attributes that exist on the entity itself, to uniquely
 identify them over time. One example can be a Customer:
 
 | Name     | Email                | Address           |
 |----------|----------------------|-------------------|
 | Jane Doe | jane.doe@example.com | Merrick, NY 11566 |
 
-Any of the attributes can change. That doesn't mean that the Customer becomes a different person.
-If Jane Doe is married and moves to a new state, she is still the same customer:
+Any of the attributes can change. That doesn't mean that the customer becomes a different person.
+If Jane Doe is married and moves to a new state, she is still the same person:
 
 | Name       | Email                  | Address                |
 |------------|------------------------|------------------------|
@@ -40,10 +40,10 @@ Are there implementation concerns?
 
 ## Choosing a key format
 
-A simple integer seems reasonable at first but depending on the volume of data you can have problems if it's not a big enough. Database systems give you many choices in this area and it can be easy to make the wrong one. Choosing an integer as a surrogate key (__int<sup>32</sup>__) means you're limited to __2<sup>32</sup> = ~4 billion__ records max.
-Also, if you move your record to another table or another database, you can have collisions if they are using the same scheme.
+A simple integer seems reasonable at first but depending on the volume of data you can have problems if it's not big enough. Database systems give you many choices in this area, and it can be easy to make the wrong one. Choosing an integer as a surrogate key (__int<sup>32</sup>__) means you're limited to __2<sup>32</sup> = ~4 billion__ records max.
+Also, if you move your record to another table or another database, you can have collisions if the second database uses the same scheme.
 
-You might recall when the Social Media platform Parler crashed:
+You might recall when the social media platform Parler crashed:
 
 <figure>
   <img src="/media-library/software-systems-engineering/parler-crash.png" alt="Parler Crash">
@@ -55,22 +55,22 @@ Credit: [@saramehmei](https://twitter.com/sarahmei/status/1348474968527360001)
 In their case they chose a signed integer (__int<sup>31</sup>__) as a key which meant they were limited to
 __2<sup>31</sup> = ~2.1 billion__ records max.
 
-A seemingly reasonable alternative solution is to use a UUID/GUID as the Surrogate key.
+A seemingly reasonable alternative solution would be to use a UUID/GUID as the Surrogate key.
 
 This poses two challenges though:
 
 1. A UUID is a big key: 128 bits (16 bytes)
 2. It's pseudo-random and therefore unsorted
 
-The first point is not so bad as a problem but the second point can be a significant challenge.
+The first point is not so bad as a problem, but the second point can be a significant one.
 
 With an unordered key the database can’t store records on disk in a useful way. Which means if there
-is a need to search for records and they aren’t in memory a terrible amount of work (I/O operations)
-need to be done to find the appropriate records. A weak analogy: It’s easy for me to store and find the
+is a need to search for records, and they aren’t in memory, a terrible amount of work (I/O operations)
+need to be done to find the appropriate records. A weak analogy: it’s easy for me to store and find the
 records of everyone when I can group them by the first letter of their last name. It’s not that easy if
 a random number identifies them instead.
 
-So can do we get the benefits of clustering along with the benefits of a UUIDs uniqueness? In other words:
+So can we get the benefits of clustering along with the benefits of a UUIDs uniqueness? In other words:
 is it possible to have a random, unique, but also ordered key?
 
 The answer is yes, but you must choose the correct type of UUID
@@ -98,7 +98,7 @@ Versions:
 | 4       | Random                                                                            |
 | 5       | namespace name based (SHA-1)                                                      |
 
-So given the choices above which are the standard types it looks like we can’t use any
+Given the choices above which are the standard types it looks like we can’t use any
 of them as the best candidates (1 and 2) rely on the MAC of the underlying machine.
 If I’m on a virtual machine what does that mean? There are other implications as well...
 
