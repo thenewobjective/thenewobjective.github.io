@@ -358,5 +358,209 @@ Don Quixote
 ==========
 https://en.wikipedia.org/wiki/Two_Dogmas_of_Empiricism
 https://en.m.wikipedia.org/wiki/Philosophy_of_mathematics#Fictionalism
+
+
+## The Problem of Universals
+
+Thomas Morgan
+  I've been thinking a lot lately about the problem of universals.  What are your thoughts on this?
+  <https://en.wikipedia.org/wiki/Problem_of_universals#:~:text=The%20problem%20of%20universals%20is,to%20exist%20beyond%20those%20objects%3F>
+
+Michael Haufe
+  I thought about this a bit last month and only made a little progress. My current scattered thoughts are:
+  - Only directly numerical attributes of objects are used in scientific empiricism and not other attributes we might deem as "qualia"
+  - This implies that these "qualia" are attributes of us and not the object. But are they?
+  - An Objective view of reality demands a Subject / Object segregation.
+  - Are these "objective" attributes like "length" only objective though? Can length be qualia?
+  - What of phenomenon that can't be reproduced? Phenomenon of a single instance?
+  - George Boole wrote a book called The Laws of Thought. Can there be an analogous Psychological/Archetypal laws? A so called "algebra"
+    of Jung's efforts or of esoteric works which would capture some of these qualia?
+
+Alfredo Liu-Perez
+  Am I correct in saying that in the Game of Thrones novels some  universals are the characters in the novels? If so, 
+  those universals only exist in our imagination. 
+
+Michael Haufe
+  If I tackle this as a fictionalist/nominalist/programmer: We've already solved this: the independent existence of such
+  properties are referred to as Traits. The nature of their existence ends there per the definition of 'existence' to a Fictionalist.
+
+Thomas Morgan
+  If our current scientific theories are correct, even "length" is relative to the observer (due to length contraction in the theory
+  of relativity).  Furthermore, since "color" is just wave length, color is also relative to the observer
+
+Thomas Morgan
+  I think "qualia" must be attributes of us because they are dependent upon our experience of a thing.  However, that does not mean 
+  that the thing we are experiencing as a "qualia" does not exist independently of us.  For example, when I see an object as red, 
+  it is because my brain is interpreting the wave length of the light reflecting off of an object in a certain way.  However, the 
+  wave itself surely exists independently of my having observed it.  And even though the measure of the wave length is dependent upon 
+  the observer measuring it, there is still some physical object that the observer is measuring to get that wavelength.  This is what 
+  is intended by the abstract (mathematical) notion of an "invariant".  A vector, say, can be represented using different coordinates, 
+  but the vector itself does not change.
+
+Michael Haufe
+  I think the problem that remains there is that you shift the burden to defining what the word "exists" means. when you say:
+  "... that does not mean that the thing we are experiencing as a 'qualia' does not exist independently of us."
+
+Michael Haufe
+  nevermind the "independent" part, that would have to come later once you get the first word on a solid foundation
+
+Michael Haufe
+  Does Santa Claus "exist"? Does he "exist" "independent" of ourselves?
+
+Michael Haufe
+  What is the difference between the things-in-themselves and things we bring into "reality"?
+  I can generate a "reality" through thoughts. Populate it, and "realize" it through invention and such.
+  Do we not do the same with many of these labels such as "length"? We model our shared delusion with some 
+  framework, say "physics", we then convince each other of the utility of that framework so we have the same
+  shared delusion.
+  Or perhaps a better word is: a shared narrative instead of delusion.
+
+Thomas Morgan
+  The metaphysics of existence is a difficult topic, to be sure.  However, I am a realist.  When I was speaking 
+  of existence above, I was speaking in the context of physical objects, of the things-in-themselves.  Existence 
+  means something completely different when talking about ideas, concepts, abstractions, etc.  What I mean to say 
+  is that there actually is a physical object there to be observed.  The reason why we are capable of having shared 
+  narratives that are remarkably similar to each other is because there is an underlying reality independent of 
+  observers that we are all observing with similar senses.  One can argue about in what sense a universal exists, 
+  and that is why I posted this in the first place, but particulars, things-in-themselves, exist in a real, physical 
+  sense (at least I believe that to be true).  And while I acknowledge that we can never know with 100% certainty 
+  that what we experience as reality is in fact real, I believe that it is in fact so.
+
+Michael Haufe
+  and yet we know that below certain size scales under the empirical model we can not divorce subject from the observer
+
+Michael Haufe
+  So if the "thing-in-itself" can not be observed without our entanglement, then does it even count as phenomenon?
+
+Michael Haufe
+  we're limited to indirect inference and interpretation which goes back to our mental model: deriving an ought-from-an-is
+
+Thomas Morgan
+  We do not know that at small scales we can not divorce subject from observer.  That is only one interpretation of quantum mechanics.
+
+Thomas Morgan
+  Furthermore, empiricism can never yield an explanation as to the metaphysics of being or the reason why things are the way they are. 
+   It can only describe reality, in the same way that we can only experience reality filtered through our senses.
+
+Michael Haufe
+  And we also have to recall that "observer" has a specific definition in physics we have to be careful not to
+  abuse (https://en.wikipedia.org/wiki/Observer_(quantum_physics))
+
+Michael Haufe
+  right, we agree there
+
+Alfredo Liu-Perez
+  Can we say that existence is a matter of degree and changes through time? Like my existence is 100% now, but was much
+  less before I was born and will be less after I die. Albert Einstein doesn't exist now but he did exist at one point.
+```
+One of the more unsettling discoveries in the past half century is that the universe is not locally real. “Real,” meaning that objects have definite properties independent of observation—an apple can be red even when no one is looking; “local” means objects can only be influenced by their surroundings, and that any influence cannot travel faster than light. Investigations at the frontiers of quantum physics have found that these things cannot both be true. Instead, the evidence shows objects are not influenced solely by their surroundings and they may also lack definite properties prior to measurement. As Albert Einstein famously bemoaned to a friend, “Do you really believe the moon is not there when you are not looking at it?”
+```
+<https://www.scientificamerican.com/article/the-universe-is-not-locally-real-and-the-physics-nobel-prize-winners-proved-it/>
+
+Michael Haufe
+  We can't say, that depends on your model of reality.
+
+Alfredo Liu-Perez
+  Or does "Albert Einstein", the name of that person, doesn't count as existing since it's just words invented by us to name something that exists.
+
+Alfredo Liu-Perez
+  This is deep. Very deep. Or maybe it's not deep and it just depends on our definition of existence.
+
+Thomas Morgan
+  Personally, I wouldn't say that existence is a matter of degree so much as it is a matter of kind.  Albert Einstein, as a temporal being, 
+  existed within a certain window of time and no longer exists (at least physically).  My understanding of Albert Einstein might be said 
+  to exist in the manner of an idea or a concept (if such things can be said to exist).  Because my understanding of Albert Einstein is 
+  based on my personal experience, that idea or concept cannot be said to exist independently of me, and so it lives and dies with me as 
+  an individual.  However, Albert Einstein, the myth, the legend, may live on beyond me as a sort of shared understanding or narrative.  
+  It is still dependent upon the people who know of Albert Einstein, but it is not solely dependent upon an individual.  Then there are 
+  concepts of mathematics or logic, tautological facts that some might argue have an existence entirely independent of people.  The argument 
+  might be that the reason that people must, when thinking correctly and logically, come up with the same answers is because those answers 
+  exist, in some sense, outside of the people who are considering them.
+
+
+Michael Haufe
+  It's one thing to ask "if a tree falls in the forest does it make a sound?"
+  and another to ask: "If there is no one around, is there a tree in the forest?"
+
+Thomas Morgan
+  However, I would still answer yes to both questions
+
+Michael Haufe
+  If I speak something to a rock, what is it to the rock?
+
+Thomas Morgan
+  The rock is not conscious, and so can have no experience of the sound.  But the sound still exists as vibrations in the air
+
+Alfredo Liu-Perez
+  Is there a definition of existence we can use so we are all talking about the same thing?
+
+Thomas Morgan
+  That, ultimately, is the question at hand
+
+Michael Haufe
+  @alfredo.liu-perez hence the field of Ontology
+  <https://en.wikipedia.org/wiki/Ontology>
+
+Thomas Morgan
+  <https://en.wikipedia.org/wiki/Ontology#Particulars_and_universals>
+
+Alfredo Liu-Perez
+  We can agree that existence is whatever is made of particles or waves.
+
+Michael Haufe
+  nope
+
+Alfredo Liu-Perez
+  crap
+
+Michael Haufe
+  we can't do that even.
+
+Michael Haufe
+  I mean, YOU can, which is fine.
+
+Michael Haufe
+  but until Physics became part of our zeitgeist, that was not reality (after Galileo)
+
+Michael Haufe
+  There were some ancient greeks who were "Atomists", but it was not popular
+
+Michael Haufe
+  and even in the modern day we don't think that's true. For example a Quark never exists on its own. it is always
+  paired with at least one other quark. When we try to separate them, the energy we put into that separation spawns more quarks
+
+Michael Haufe
+  So the universe may be discrete, but may not be atomic? Which is a strange state of affairs in my mind
+
+Michael Haufe
+  <https://en.wikipedia.org/wiki/Color_confinement>
+
+Alfredo Liu-Perez
+  It think that's ok. things coming in and out of existence is fine. there was a particle/quark or a wave when it existed and none when it ceased to exist.
+
+Michael Haufe
+  except they don't do that either. recall the conservation laws.
+
+Michael Haufe
+  they always "exist" as either matter or energy
+
+Michael Haufe
+  https://www.scientificamerican.com/article/the-universe-is-not-locally-real-and-the-physics-nobel-prize-winners-proved-it/#:~:text=Under%20quantum%20mechanics%2C%20nature%20is,another%20no%20matter%20the%20distance
+
+
+Michael Haufe
+  Which returns us to the question: what is a "thing-in-itself"?
+
+Thomas Morgan
+  I am inclined to give up locality before I give up realism
+
+Michael Haufe
+  I forgot to mention this before when you mentioned "underlying reality"
+  <https://en.wikipedia.org/wiki/Unus_mundus>
+
+Michael Haufe
+  After refreshing myself on Eternalism, I'm slowly becoming more suspicious of locality as well
+  <https://en.wikipedia.org/wiki/Eternalism_(philosophy_of_time)>
 -->
+
 
