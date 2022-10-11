@@ -3018,10 +3018,15 @@ https://www.mdpi.com/2076-393X/10/10/1651
 https://twitter.com/mverbora/status/1574566361619083264
 https://www.outkick.com/cdc-quietly-ends-recommendation-for-universal-masking-in-healthcare-facilities/
 https://twitter.com/Kevin_McKernan/status/1576297873167171584
+https://twitter.com/Kevin_McKernan/status/1579316879654780929
+https://twitter.com/disclosetv/status/1576248705123987456
+https://twitter.com/gummibear737/status/1579113379662217217
+https://gab.com/disclosetv/posts/109129913345002814
+https://gab.com/Dissidentsoaps/posts/109130272628796559
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
-	
+
 Omicron variant being used as an excuse to remove monoclonal antibodies?
 
 JRE #1701
