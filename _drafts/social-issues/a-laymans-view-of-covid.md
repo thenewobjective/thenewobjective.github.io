@@ -3023,6 +3023,10 @@ https://twitter.com/disclosetv/status/1576248705123987456
 https://twitter.com/gummibear737/status/1579113379662217217
 https://gab.com/disclosetv/posts/109129913345002814
 https://gab.com/Dissidentsoaps/posts/109130272628796559
+https://twitter.com/Kevin_McKernan/status/1580182533400334336
+https://dailycaller.com/2022/10/10/florida-covid-19-vaccine-study-surgeon-general-joseph-ladapo-cardiac-heart-related-deaths/
+https://twitter.com/MartyMakary/status/1580391841836384262
+https://www.zerohedge.com/covid-19/pfizer-exec-admits-under-oath-we-never-tested-covid-vaccine-against-transmission
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
