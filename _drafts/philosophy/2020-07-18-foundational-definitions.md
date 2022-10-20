@@ -564,3 +564,7 @@ Michael Haufe
 -->
 
 
+<!--
+https://www.johndcook.com/blog/2022/01/21/modal-logic-and-sf/
+https://twitter.com/BartoszMilewski/status/1582041833940865024
+ -->

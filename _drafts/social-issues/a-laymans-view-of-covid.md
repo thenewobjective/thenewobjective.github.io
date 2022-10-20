@@ -3027,6 +3027,27 @@ https://twitter.com/Kevin_McKernan/status/1580182533400334336
 https://dailycaller.com/2022/10/10/florida-covid-19-vaccine-study-surgeon-general-joseph-ladapo-cardiac-heart-related-deaths/
 https://twitter.com/MartyMakary/status/1580391841836384262
 https://www.zerohedge.com/covid-19/pfizer-exec-admits-under-oath-we-never-tested-covid-vaccine-against-transmission
+https://twitter.com/alexandrosM/status/1574541420010307587
+https://anandamide.substack.com/
+https://twitter.com/gummibear737/status/1581390541119696896
+https://twitter.com/BretWeinstein/status/1580743407747551233
+https://twitter.com/BretWeinstein/status/1582903069733376001
+https://twitter.com/TuckerCarlson/status/1582895910295855104
+"Brought to you by Pfizer"
+https://twitter.com/RandPaul/status/1582864380005228545
+https://twitter.com/BrendanEich/status/1481695573593903104
+https://twitter.com/Kevin_McKernan/status/1582207062989496320
+https://twitter.com/Kevin_McKernan/status/1581783065537351680
+https://twitter.com/GidMK/status/1579243976766656512
+https://twitter.com/VPrasadMDMPH/status/1582580919759605761
+https://twitter.com/zerohedge/status/1582795523706089475
+https://twitter.com/Kevin_McKernan/status/1582780913892528129
+https://twitter.com/Kevin_McKernan/status/1579798221391814656
+https://twitter.com/JordanSchachtel/status/1582377821107732481
+https://twitter.com/RandPaul/status/1582824839362260992
+https://twitter.com/Rob_Roos/status/1579759795225198593
+https://twitter.com/AAPSonline/status/1535449794570690560
+https://twitter.com/Kevin_McKernan/status/1579799490684678144
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
