@@ -3051,6 +3051,7 @@ https://twitter.com/Kevin_McKernan/status/1579799490684678144
 https://www.zerohedge.com/covid-19/sweden-stops-recommending-covid-19-vaccines-children
 https://mobile.twitter.com/VPrasadMDMPH/status/1576940478972379136
 https://mobile.twitter.com/CultGuide/status/1574750360295833600
+https://mobile.twitter.com/gummibear737/status/1583105981981986816
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
