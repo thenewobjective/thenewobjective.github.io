@@ -3052,6 +3052,12 @@ https://www.zerohedge.com/covid-19/sweden-stops-recommending-covid-19-vaccines-c
 https://mobile.twitter.com/VPrasadMDMPH/status/1576940478972379136
 https://mobile.twitter.com/CultGuide/status/1574750360295833600
 https://mobile.twitter.com/gummibear737/status/1583105981981986816
+https://twitter.com/Kevin_McKernan/status/1583210988295565312
+https://twitter.com/KateTalksTruth/status/1583466027043602432
+https://twitter.com/acritschristoph/status/1583486403416969216
+https://mobile.twitter.com/gummibear737/status/1583090644007809025
+https://twitter.com/DrJBhattacharya/status/1580925874181795840
+https://twitter.com/zerohedge/status/1583608790360162304
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
