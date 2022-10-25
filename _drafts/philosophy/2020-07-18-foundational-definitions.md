@@ -563,6 +563,10 @@ Michael Haufe
   <https://en.wikipedia.org/wiki/Eternalism_(philosophy_of_time)>
 -->
 
+<!-- 
+What is knowledge?
+https://mobile.twitter.com/fermatslibrary/status/1584904871131717634
+-->
 
 <!--
 https://www.johndcook.com/blog/2022/01/21/modal-logic-and-sf/
