@@ -3074,6 +3074,7 @@ https://twitter.com/Kevin_McKernan/status/1584533865200521216
 https://twitter.com/Kevin_McKernan/status/1584535290135265280
 https://twitter.com/Kevin_McKernan/status/1586447224829280256
 https://twitter.com/VanityFair/status/1586036528064741376
+https://twitter.com/Kevin_McKernan/status/1588860247674093570
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
