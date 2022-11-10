@@ -3077,6 +3077,9 @@ https://twitter.com/VanityFair/status/1586036528064741376
 https://twitter.com/Kevin_McKernan/status/1588860247674093570
 https://dailycaller.com/2022/10/27/rsv-covid-coronavirus-immunity-debt-hospitals-children-virus/
 https://dailycaller.com/2022/11/04/sweden-novavax-myocarditis-side-effects-covid-19-coronavirus-vaccine/
+https://twitter.com/DailyCaller/status/1590751249833799680
+https://twitter.com/jimmy_dore/status/1588697080562094080
+https://twitter.com/jeffgilchrist/status/1573772566346567680
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
