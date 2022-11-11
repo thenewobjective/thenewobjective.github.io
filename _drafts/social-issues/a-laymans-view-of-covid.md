@@ -3080,6 +3080,9 @@ https://dailycaller.com/2022/11/04/sweden-novavax-myocarditis-side-effects-covid
 https://twitter.com/DailyCaller/status/1590751249833799680
 https://twitter.com/jimmy_dore/status/1588697080562094080
 https://twitter.com/jeffgilchrist/status/1573772566346567680
+https://mobile.twitter.com/kevin_mckernan/status/1590333267685027840
+https://twitter.com/jimmy_dore/status/1590536216835158017
+https://twitter.com/Kevin_McKernan/status/1590848418779639808
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
