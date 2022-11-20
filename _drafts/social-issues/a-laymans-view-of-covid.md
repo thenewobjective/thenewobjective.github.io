@@ -3085,6 +3085,21 @@ https://twitter.com/jimmy_dore/status/1590536216835158017
 https://twitter.com/Kevin_McKernan/status/1590848418779639808
 https://twitter.com/Kevin_McKernan/status/1591114690956083207
 https://twitter.com/zerohedge/status/1592412148411637762
+https://mobile.twitter.com/Kevin_McKernan/status/1584937457208160256
+https://mobile.twitter.com/Kevin_McKernan/status/1584935205252366338
+https://mobile.twitter.com/gummibear737/status/1585274538538967041
+https://mobile.twitter.com/Kevin_McKernan/status/1585689696138428417
+https://mobile.twitter.com/zerohedge/status/1585689090653126656
+https://mobile.twitter.com/Kevin_McKernan/status/1585674178971291650
+https://mobile.twitter.com/DailyCaller/status/1585541999142264832
+https://mobile.twitter.com/zerohedge/status/1585993607269449728
+https://mobile.twitter.com/jimmy_dore/status/1585237461533618177
+https://mobile.twitter.com/Kevin_McKernan/status/1590121603249029120
+https://mobile.twitter.com/Not_the_Bee/status/1588189724149161985
+https://mobile.twitter.com/BrendanEich/status/1586417331449626624
+https://mobile.twitter.com/BrendanEich/status/1587685819547983873
+https://mobile.twitter.com/Kevin_McKernan/status/1585806851043516416
+https://mobile.twitter.com/DailyCaller/status/1585859031968669700
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
