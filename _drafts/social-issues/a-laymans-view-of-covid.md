@@ -3095,6 +3095,27 @@ https://mobile.twitter.com/BrendanEich/status/1586417331449626624
 https://mobile.twitter.com/BrendanEich/status/1587685819547983873
 https://mobile.twitter.com/Kevin_McKernan/status/1585806851043516416
 https://mobile.twitter.com/DailyCaller/status/1585859031968669700
+https://mobile.twitter.com/unusual_whales/status/1595483050934423552
+https://notthebee.com/article/read-this-poor-panicked-womans-thread--this-is-dr-faucis-legacy
+https://mobile.twitter.com/BrendanEich/status/1597158424307195905
+https://mobile.twitter.com/zerohedge/status/1597311393753169920
+https://www.zerohedge.com/medical/very-serious-shortages-amoxicillin-augmentin-tamiflu-albuterol-tylenol-have-erupted-all
+https://mobile.twitter.com/BrendanEich/status/1597606437642960898
+https://mobile.twitter.com/LongDesertTrain/status/1597353291868155906
+https://mobile.twitter.com/jordanbpeterson/status/1597614342299701249
+https://twitter.com/Kevin_McKernan/status/1594194968541028352
+https://twitter.com/Kevin_McKernan/status/1594682610965516288
+https://search.brave.com/search?q=senate+votes+to+end+covid+emergency&source=android
+https://www.zerohedge.com/political/grade-gaslighting-fda-says-anti-ivermectin-campaign-was-just-recommendation
+https://twitter.com/jimmy_dore/status/1594868758392147968
+https://twitter.com/BrendanEich/status/1595804952814682112
+https://twitter.com/MartyMakary/status/1595551617939537920
+https://twitter.com/Kevin_McKernan/status/1595755114920382470
+https://twitter.com/BrendanEich/status/1595511948052860928
+https://twitter.com/BernieSpofforth/status/1596566018700333062
+https://search.brave.com/search?q=God+gave+us+two+arms+for+two+vaccines&source=android
+https://www.zerohedge.com/medical/another-study-finds-heart-inflammation-higher-after-moderna-vaccination-versus-pfizer
+https://gab.com/INFOWARS/posts/109417271770225319
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
