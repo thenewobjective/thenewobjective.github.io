@@ -3121,6 +3121,8 @@ https://twitter.com/BernieSpofforth/status/1596566018700333062
 https://search.brave.com/search?q=God+gave+us+two+arms+for+two+vaccines&source=android
 https://www.zerohedge.com/medical/another-study-finds-heart-inflammation-higher-after-moderna-vaccination-versus-pfizer
 https://gab.com/INFOWARS/posts/109417271770225319
+https://mobile.twitter.com/Kevin_McKernan/status/1597679526049636352
+https://mobile.twitter.com/Not_the_Bee/status/1597679450287910912
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
