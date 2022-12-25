@@ -117,7 +117,7 @@ I prefer to follow the advice of Computer Scientist Frank Atanassow:
 > Furthermore, we would not be having this discussion in the first place,
 > since truth would be self-evident, and so we could not possibly disagree."
 >
-> <cite><a href="<http://lambda-the-ultimate.org/node/175#comment-1333>" target="_blank">http://lambda-the-ultimate.org/node/175#comment-1333</a></cite>
+> <cite><a href="<<http://lambda-the-ultimate.org/node/175#comment-1333>>" target="_blank">http://lambda-the-ultimate.org/node/175#comment-1333</a></cite>
 
 In the field of Epidemiology where I am not qualified I must settle for simpler
 tools to form a conclusion; namely by seeking consistency and identifying contradictions.
@@ -493,7 +493,7 @@ This is consistent with the following study:
 
 > "We show that the cell surface protein ACE2 and the protease TMPRSS2 are expressed in
 > sustentacular cells of the olfactory epithelium but not, or much less, in most olfactory receptor neurons."
-> <cite><a href="<<https://pubmed.ncbi.nlm.nih.gov/32379417/>>" target="_blank">https://pubmed.ncbi.nlm.nih.gov/32379417/</a></cite>
+> <cite><a href="<<<https://pubmed.ncbi.nlm.nih.gov/32379417/>>>" target="_blank">https://pubmed.ncbi.nlm.nih.gov/32379417/</a></cite>
 
 Omega-3 supplementation may help prevent this problem or aid in recovery:
 
@@ -3110,6 +3110,29 @@ https://twitter.com/MartyMakary/status/1599157979529371648
 https://twitter.com/Kevin_McKernan/status/1603589563837911040
 https://twitter.com/Kevin_McKernan/status/1605231248926031872
 https://twitter.com/jordanbpeterson/status/1605978900965769218
+https://mobile.twitter.com/unusual_whales/status/1595483050934423552
+https://notthebee.com/article/read-this-poor-panicked-womans-thread--this-is-dr-faucis-legacy
+https://mobile.twitter.com/BrendanEich/status/1597158424307195905
+https://mobile.twitter.com/zerohedge/status/1597311393753169920
+https://www.zerohedge.com/medical/very-serious-shortages-amoxicillin-augmentin-tamiflu-albuterol-tylenol-have-erupted-all
+https://mobile.twitter.com/BrendanEich/status/1597606437642960898
+https://mobile.twitter.com/LongDesertTrain/status/1597353291868155906
+https://mobile.twitter.com/jordanbpeterson/status/1597614342299701249
+https://twitter.com/Kevin_McKernan/status/1594194968541028352
+https://twitter.com/Kevin_McKernan/status/1594682610965516288
+https://search.brave.com/search?q=senate+votes+to+end+covid+emergency&source=android
+https://www.zerohedge.com/political/grade-gaslighting-fda-says-anti-ivermectin-campaign-was-just-recommendation
+https://twitter.com/jimmy_dore/status/1594868758392147968
+https://twitter.com/BrendanEich/status/1595804952814682112
+https://twitter.com/MartyMakary/status/1595551617939537920
+https://twitter.com/Kevin_McKernan/status/1595755114920382470
+https://twitter.com/BrendanEich/status/1595511948052860928
+https://twitter.com/BernieSpofforth/status/1596566018700333062
+https://search.brave.com/search?q=God+gave+us+two+arms+for+two+vaccines&source=android
+https://www.zerohedge.com/medical/another-study-finds-heart-inflammation-higher-after-moderna-vaccination-versus-pfizer
+https://gab.com/INFOWARS/posts/109417271770225319
+https://mobile.twitter.com/Kevin_McKernan/status/1597679526049636352
+https://mobile.twitter.com/Not_the_Bee/status/1597679450287910912
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?

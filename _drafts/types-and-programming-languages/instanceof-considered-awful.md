@@ -3,6 +3,8 @@ A instanceof B harmful?
 	
 which leads to another blog topic: namespace pollution
 
+https://alvinalexander.com/java/java-instanceof-interface-example/
+
 
 Not object oriented
 	Implies if-elsedom and switchdom
