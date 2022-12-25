@@ -117,7 +117,7 @@ I prefer to follow the advice of Computer Scientist Frank Atanassow:
 > Furthermore, we would not be having this discussion in the first place,
 > since truth would be self-evident, and so we could not possibly disagree."
 >
-> <cite><a href="http://lambda-the-ultimate.org/node/175#comment-1333" target="_blank">http://lambda-the-ultimate.org/node/175#comment-1333</a></cite>
+> <cite><a href="<http://lambda-the-ultimate.org/node/175#comment-1333>" target="_blank">http://lambda-the-ultimate.org/node/175#comment-1333</a></cite>
 
 In the field of Epidemiology where I am not qualified I must settle for simpler
 tools to form a conclusion; namely by seeking consistency and identifying contradictions.
@@ -162,7 +162,7 @@ According to [this study](http://rc.rcjournal.com/content/55/5/569) they might:
 > burden during 1 hour of use, at realistic clinical work rates, but the FFR
 > dead-space carbon dioxide and oxygen levels were significantly above and
 > below, respectively, the ambient workplace standards, and elevated P<sub>CO<sub>2</sub></sub>
-> is a possibility. Exhalation valve did not significantly ameliorate the 
+> is a possibility. Exhalation valve did not significantly ameliorate the
 > FFR's P<sub>CO<sub>2</sub></sub> impact.
 
 ##### Cloth Masks
@@ -493,7 +493,7 @@ This is consistent with the following study:
 
 > "We show that the cell surface protein ACE2 and the protease TMPRSS2 are expressed in
 > sustentacular cells of the olfactory epithelium but not, or much less, in most olfactory receptor neurons."
-> <cite><a href="https://pubmed.ncbi.nlm.nih.gov/32379417/" target="_blank">https://pubmed.ncbi.nlm.nih.gov/32379417/</a></cite>
+> <cite><a href="<<https://pubmed.ncbi.nlm.nih.gov/32379417/>>" target="_blank">https://pubmed.ncbi.nlm.nih.gov/32379417/</a></cite>
 
 Omega-3 supplementation may help prevent this problem or aid in recovery:
 
@@ -592,7 +592,7 @@ I also came across an [opinion piece](https://archive.is/NzH6X) describing their
 There are contradictions in their messaging as well:
 
 > Preliminary investigations conducted by the Chinese authorities have found no
-> clear evidence of human-to-human transmission of the novel #coronavirus 
+> clear evidence of human-to-human transmission of the novel #coronavirus
 > (2019-nCoV) identified in #Wuhan, #China.
 > <cite><a href="https://twitter.com/WHO/status/1217043229427761152" target="_blank">Twitter @WHO: Jan 14, 2020</a></cite>
 
@@ -682,7 +682,7 @@ the age of 65.
 
 February 7, 2011
 
-It has been [reported](https://web.archive.org/web/20210207134547if_/https://www.zerohedge.com/covid-19/wake-call-astrazeneca-jab-fails-prevent-south-africa-strain) that this vaccine is less effective against the 
+It has been [reported](https://web.archive.org/web/20210207134547if_/https://www.zerohedge.com/covid-19/wake-call-astrazeneca-jab-fails-prevent-south-africa-strain) that this vaccine is less effective against the
 South African strain.
 
 March 11, 2021
@@ -1663,7 +1663,6 @@ https://rationalground.com/dangerous-pathogens-found-on-childrens-face-masks/
 https://twitter.com/Kevin_McKernan/status/1405334410375929858
 
 Stockholm syndrome and vaccines
-
 
 vaccine passports and penn's bullshit episode on recycling bins
 
@@ -3100,6 +3099,17 @@ https://mobile.twitter.com/BrendanEich/status/1586417331449626624
 https://mobile.twitter.com/BrendanEich/status/1587685819547983873
 https://mobile.twitter.com/Kevin_McKernan/status/1585806851043516416
 https://mobile.twitter.com/DailyCaller/status/1585859031968669700
+https://twitter.com/Leftylockdowns1/status/1595184054864846849
+https://twitter.com/Kevin_McKernan/status/1594349029013745664
+https://twitter.com/Kevin_McKernan/status/1594350527277588481
+https://twitter.com/VPrasadMDMPH/status/1594054294411440128
+https://twitter.com/BrendanEich/status/1597315129661882368
+https://twitter.com/Kevin_McKernan/status/1597394330733678593
+https://twitter.com/VPrasadMDMPH/status/1599261114214539264
+https://twitter.com/MartyMakary/status/1599157979529371648
+https://twitter.com/Kevin_McKernan/status/1603589563837911040
+https://twitter.com/Kevin_McKernan/status/1605231248926031872
+https://twitter.com/jordanbpeterson/status/1605978900965769218
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
