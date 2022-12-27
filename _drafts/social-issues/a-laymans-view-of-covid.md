@@ -117,7 +117,9 @@ I prefer to follow the advice of Computer Scientist Frank Atanassow:
 > Furthermore, we would not be having this discussion in the first place,
 > since truth would be self-evident, and so we could not possibly disagree."
 >
-> <cite><a href="<<http://lambda-the-ultimate.org/node/175#comment-1333>>" target="_blank">http://lambda-the-ultimate.org/node/175#comment-1333</a></cite>
+> <cite markdown="1">
+<http://lambda-the-ultimate.org/node/175#comment-1333>
+</cite>
 
 In the field of Epidemiology where I am not qualified I must settle for simpler
 tools to form a conclusion; namely by seeking consistency and identifying contradictions.
@@ -493,7 +495,9 @@ This is consistent with the following study:
 
 > "We show that the cell surface protein ACE2 and the protease TMPRSS2 are expressed in
 > sustentacular cells of the olfactory epithelium but not, or much less, in most olfactory receptor neurons."
-> <cite><a href="<<<https://pubmed.ncbi.nlm.nih.gov/32379417/>>>" target="_blank">https://pubmed.ncbi.nlm.nih.gov/32379417/</a></cite>
+> <cite markdown="1">
+<https://pubmed.ncbi.nlm.nih.gov/32379417/>
+</cite>
 
 Omega-3 supplementation may help prevent this problem or aid in recovery:
 
@@ -3133,6 +3137,25 @@ https://www.zerohedge.com/medical/another-study-finds-heart-inflammation-higher-
 https://gab.com/INFOWARS/posts/109417271770225319
 https://mobile.twitter.com/Kevin_McKernan/status/1597679526049636352
 https://mobile.twitter.com/Not_the_Bee/status/1597679450287910912
+https://twitter.com/Doctor_Eric_B/status/1607796330247720965
+https://mobile.twitter.com/bretweinstein/status/1598891760549507072
+https://twitter.com/BretWeinstein/status/1599837784344514561
+https://twitter.com/Dylan_Housman/status/1599836054001192962
+https://gab.com/disclosetv/posts/109451292240121973
+https://twitter.com/BretWeinstein/status/1600212920637739008
+https://twitter.com/TheJikky/status/1605872895866961921
+https://gab.com/RT/posts/109471098963383019
+https://mobile.twitter.com/realgeorgehotz/status/1600633450158923776
+https://www.infowars.com/posts/dr-peter-mccullough-messenger-rna-is-transferring-from-vaccinated-to-unvaccinated/
+https://www.zerohedge.com/political/fda-says-ivermectin-doesnt-work-against-covid-19-points-studies-show-it-does
+https://twitter.com/Rossana38510044/status/1603501598826700815
+https://twitter.com/Kevin_McKernan/status/1605438282334146561
+https://dailysceptic.org/2022/12/24/huge-spikes-in-neonatal-deaths-following-vaccine-rollout-data-from-major-israeli-health-insurer-show/
+https://twitter.com/Kevin_McKernan/status/1607225221936779268
+https://twitter.com/boriquagato/status/1607746386933547008
+https://twitter.com/DrJohnB2/status/1607673969452146689
+https://twitter.com/DiscipleFeynman/status/1607668205442699265
+https://twitter.com/DrJohnB2/status/1607670185795719168
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
