@@ -3156,6 +3156,7 @@ https://twitter.com/boriquagato/status/1607746386933547008
 https://twitter.com/DrJohnB2/status/1607673969452146689
 https://twitter.com/DiscipleFeynman/status/1607668205442699265
 https://twitter.com/DrJohnB2/status/1607670185795719168
+https://twitter.com/RandPaul/status/1598319913101312002
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?

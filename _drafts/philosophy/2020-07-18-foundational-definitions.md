@@ -82,8 +82,6 @@ If we obtain one or more facts, we aren't necessarily aware of them.
 
 ## Truth
 
-
-
 <!--
 {There is a big difference between something being true, knowing that it is true, and knowing that you know it is true. We might say something is true if it is a theorem; we know that it's true if we know it is a theorem and there exists a proof; and we know that we know it's true if we can exhibit a proof that we understand.
 
@@ -195,7 +193,6 @@ Vacuous proof
 
   Now scale that sentiment to a Deity: "I am that I am"
 
-
   From <https://en.wikipedia.org/wiki/Ein_Sof>:
 
 > Before He gave any shape to the world, before He produced any form, He was alone, without form and without
@@ -234,7 +231,6 @@ The word "real" is the problem?
 Are Archetypes as true as numbers?
 https://youtu.be/f-wWBGo6a2w?t=2289
 
-
 =========
 
 empirical/procedural knowledge
@@ -255,8 +251,6 @@ Pseudo-science is predicting the past:
 
 Richard Feynman
 https://www.informationphilosopher.com/solutions/scientists/feynman/past_and_future.html
-
-
 
 """
 My lab's attempt to relate a subjective reality (anxiety) to an objective reality (entropy): Psychological entropy: A framework for understanding uncertainty-related anxiety: 
@@ -305,7 +299,6 @@ Lawyers argue interpretation of facts. It's literally deriving an *ought* from a
 When Scientists talk about evidence that doesn't seem to be the same thing as talking about facts.
 *Evidence* seems to be tied directly to a particular theory whereas a *fact* may be just *information*
 
-
 ## Jordan Peterson on Phenomenology
 
 The objective view of reality via science has limits
@@ -332,7 +325,6 @@ Curve fitting: https://xkcd.com/2048/
 Example of a model/abstraction as a useful fiction:
 https://www.youtube.com/watch?app=desktop&v=O-WCZ8PkrK0
 
-
 ############
 
 Useful fictions
@@ -349,7 +341,6 @@ Archaeology is not based on it for example
 
 Optical Illusions
 
-
 ###
 
 "The facts are the enemy of the truth" 
@@ -358,7 +349,6 @@ Don Quixote
 ==========
 https://en.wikipedia.org/wiki/Two_Dogmas_of_Empiricism
 https://en.m.wikipedia.org/wiki/Philosophy_of_mathematics#Fictionalism
-
 
 ## The Problem of Universals
 
@@ -477,7 +467,6 @@ Thomas Morgan
   might be that the reason that people must, when thinking correctly and logically, come up with the same answers is because those answers 
   exist, in some sense, outside of the people who are considering them.
 
-
 Michael Haufe
   It's one thing to ask "if a tree falls in the forest does it make a sound?"
   and another to ask: "If there is no one around, is there a tree in the forest?"
@@ -547,7 +536,6 @@ Michael Haufe
 Michael Haufe
   https://www.scientificamerican.com/article/the-universe-is-not-locally-real-and-the-physics-nobel-prize-winners-proved-it/#:~:text=Under%20quantum%20mechanics%2C%20nature%20is,another%20no%20matter%20the%20distance
 
-
 Michael Haufe
   Which returns us to the question: what is a "thing-in-itself"?
 
@@ -571,4 +559,5 @@ https://mobile.twitter.com/fermatslibrary/status/1584904871131717634
 <!--
 https://www.johndcook.com/blog/2022/01/21/modal-logic-and-sf/
 https://twitter.com/BartoszMilewski/status/1582041833940865024
+https://bigthink.com/starts-with-a-bang/reality-objective-exist/
  -->

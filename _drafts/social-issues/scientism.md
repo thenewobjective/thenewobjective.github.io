@@ -10,3 +10,5 @@ Peer Review
 
 Woke
     <https://twitter.com/jordanbpeterson/status/1595783558639108097>
+
+<https://notthebee.com/article/a-world-governed-by-scientists-you-say-ill-pass>
