@@ -3157,6 +3157,19 @@ https://twitter.com/DrJohnB2/status/1607673969452146689
 https://twitter.com/DiscipleFeynman/status/1607668205442699265
 https://twitter.com/DrJohnB2/status/1607670185795719168
 https://twitter.com/RandPaul/status/1598319913101312002
+https://boriquagato.substack.com/p/are-covid-vaccines-associated-with
+https://twitter.com/Kevin_McKernan/status/1609647535630741504
+https://twitter.com/TheChiefNerd/status/1609598904097558529
+https://gab.com/RobertMaloneMD/posts/109585541544652405
+https://gab.com/RobertMaloneMD/posts/109585461594717707
+https://twitter.com/DailyCaller/status/1607919278098890752
+https://twitter.com/Kevin_McKernan/status/1608092301297082370
+https://twitter.com/ABridgen/status/1608397305484566529
+https://twitter.com/RandPaul/status/1608623473240195072
+https://twitter.com/Kevin_McKernan/status/1609204147705843715
+https://twitter.com/Kevin_McKernan/status/1609605647565488128
+https://twitter.com/Kevin_McKernan/status/1609605706633678850
+https://twitter.com/Kevin_McKernan/status/1609605670697054208
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?

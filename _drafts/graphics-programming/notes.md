@@ -86,6 +86,8 @@ getting to the algorithm though we'll want some utility functions first:
 <https://gab.com/AwwesomeAI>
 <https://opengameart.org/content/pixtura12-medieval-pixel-font>
 <https://twitter.com/gabrielpeyre/status/1604355786343419904>
+<https://twitter.com/InputOutputHK/status/1609229317371740161>
+<https://www.sciencedirect.com/science/article/pii/S2590148619300032>
 
 color keys
 
