@@ -3170,6 +3170,8 @@ https://twitter.com/Kevin_McKernan/status/1609204147705843715
 https://twitter.com/Kevin_McKernan/status/1609605647565488128
 https://twitter.com/Kevin_McKernan/status/1609605706633678850
 https://twitter.com/Kevin_McKernan/status/1609605670697054208
+https://mobile.twitter.com/Kevin_McKernan/status/1611000042520997891
+https://anandamide.substack.com/p/compounding-error
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
