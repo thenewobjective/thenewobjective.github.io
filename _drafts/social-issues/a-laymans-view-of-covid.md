@@ -3172,6 +3172,17 @@ https://twitter.com/Kevin_McKernan/status/1609605706633678850
 https://twitter.com/Kevin_McKernan/status/1609605670697054208
 https://mobile.twitter.com/Kevin_McKernan/status/1611000042520997891
 https://anandamide.substack.com/p/compounding-error
+https://mobile.twitter.com/BrendanEich/status/1599900855150452762
+https://igorchudov.substack.com/p/the-unvaccinated-had-more-car-crashes
+https://mobile.twitter.com/Kevin_McKernan/status/1604807737409667072
+https://mobile.twitter.com/zerohedge/status/1604744622948982784
+https://mobile.twitter.com/BrendanEich/status/1604742643291824128
+https://mobile.twitter.com/c_plushie/status/1609498404102770689
+https://web.archive.org/web/20230105051044/https://twitter.com/ramzpaul/status/1609721956055531521
+https://mobile.twitter.com/P_McCulloughMD/status/1610257536162332672
+https://notthebee.com/article/um-excuse-me-do-what-now
+https://www.zerohedge.com/markets/cdc-finally-releases-vaers-safety-monitoring-analyses-covid-vaccines
+https://twitter.com/jimmy_dore/status/1613610309943713793
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
