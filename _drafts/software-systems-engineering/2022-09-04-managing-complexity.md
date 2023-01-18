@@ -32,12 +32,13 @@ Credit: [Nina Aldin Thune](https://commons.wikimedia.org/w/index.php?curid=28249
 </figcaption>
 </figure>
 
-This structure is quite imposing. Standing at 481 feet tall it remained the tallest man-made
-structure for more than 3,800 years with a weight of at least 5.75 million tons.
+This structure is quite imposing. Standing at 481 feet tall and having a weight of at
+least 5.75 million tons, it remained the largest man-made structure for more than 3,800 years.
 <sup>[[ref](https://weightofstuff.com/how-much-does-the-pyramid-of-giza-weigh/)]</sup>
 
-Is this considered a grand architecture? No, this is an example of what can be accomplished with
-brute force at scale. This is little better than a pile of rocks:
+Despite it being a grand monolith, can it be considered a grand architecture?
+No, this is an example of what can be accomplished with perhaps the greatest of brute force methods.
+It amounts to little better than a pile of rocks:
 
 <figure>
     <img src="/media-library/software-systems-engineering/rock-pile.png" alt="A pile of rocks">
@@ -48,7 +49,7 @@ Credit: [Wikipedia](https://en.wikipedia.org/wiki/Cairn)
 </figcaption>
 </figure>
 
-Even so we have to wait 3,800+ until another structure could overtake in the year 1092;
+Even so it still took more than 3,800 years until another structure could overtake it in height in the year 1092;
 [The Lincoln Cathedral](https://en.wikipedia.org/wiki/Lincoln_Cathedral):
 
 <figure>
@@ -60,9 +61,10 @@ Credit: [Wikipedia](https://en.wikipedia.org/wiki/Lincoln_Cathedral)
 </figcaption>
 </figure>
 
-This cathedral stood at 525 feet tall and was the tallest man-made structure for 238 years. You notice
-that the form of this structure is vastly different from the that of the pyramid. What is the fundamental
-difference between the two? What enabled this new scale? The answer is the discovery of the
+This cathedral stood at 525 feet and was the tallest man-made structure itself for another 238 years.
+You'll notice that the form of this structure is vastly different from the that of the pyramid.
+What is the fundamental difference between the two? What enabled this new scale?
+The answer was not some new material but a new organization of existing ones, specifically the
 [Arch](https://en.wikipedia.org/wiki/Arch):
 
 <figure>
@@ -74,9 +76,8 @@ Credit: [Wikipedia](https://en.wikipedia.org/wiki/Arch#/media/File:Arch_Balance_
 </figcaption>
 </figure>
 
-This discovery enabled grander constructions with orders of magnitude less effort.
-No more brute-forcing large structures. We can obtain scale through the proper
-organization of the materials.
+The arch enabled grander constructions with orders of magnitude less effort.
+No more brute-forcing large structures. We obtain scale through organization.
 
 <table>
     <tr>
@@ -117,9 +118,9 @@ Thus, the following unattributed quote becomes clear:
 
 ### Fighting Complexity
 
-In traditional architecture the primary enemy is gravity. The Archway is an effective tool that
-fights against it. The question we have now is: what is the analogous enemy in Software, and what is
-its "Arch"?
+In traditional architecture the primary enemy is gravity. The Arch is an effective tool that
+fights against it. The question we have now is: what is the analogy to gravity enemy in Software,
+and what is the "Arch"?
 
 In the early days of Software Engineering there was a major concern. It was referred to as
 [The Software Crisis](https://en.wikipedia.org/wiki/Software_crisis). This crisis can be
@@ -132,13 +133,13 @@ summarized by a quote from [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsge
 > <cite markdown="1">[Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_Dijkstra)</cite>
 
 There was a point where the computer was the most expensive part of a project. Now it is by far
-the programmer. Computing has become practically free and the price of the programmer has skyrocketed.
+the programmer. Computing has become practically free, but the price of the programmer has skyrocketed.
 You, I, and most people now have a supercomputer in their pocket:
 
 * **1997** - Intel ASCI Red/9152 supercomputer: **1.338 TFLOPS**
 * **2021** - IPhone 13 Pro: **1.5 TFLOPS**
 
-So why do most software projects fail if the machines are plenty and capable?
+So why do most software projects fail if the machines are plenty and more than capable?
 
 The failure rates, [depending on the study](https://www.zdnet.com/article/study-68-percent-of-it-projects-fail/),
 range from 50% to 80% or more. There is also a cute aphorism called the [Ninetyâ€“ninety rule](https://en.wikipedia.org/wiki/Ninety%E2%80%93ninety_rule):
@@ -148,7 +149,11 @@ range from 50% to 80% or more. There is also a cute aphorism called the [Ninetyâ
 > <cite>Tom Cargill, Bell Labs</cite>
 
 In my earlier article, ["Conway's Law and Consequences"](/software-systems-engineering/conways-law-and-consequences),
-I tackle the human organization aspect of software and how they relate. I invite you to read that before continuing here. In this article I focus only on the implementation. So back to the original question: What is the analogy to gravity in software and what is our "arch"? I think this becomes clear with the following graphic:
+I tackle the human organization aspect of software and how they relate. I invite you to read that before continuing here. In this article I'm focusing on that first 90% mentioned in the above quote.
+
+So back to the original question: What is the analogy to gravity in software and what is our "arch"? 
+
+{Need a smoother transition to introducing this graphic}
 
 <figure>
     <img src="/media-library/software-systems-engineering/complexity-time-loc.png" alt="Complexity over time chart">
@@ -157,7 +162,7 @@ I tackle the human organization aspect of software and how they relate. I invite
 
 As we develop solutions, some problems are naturally (intrinsically) harder than others; for example: adding a
 list of numbers vs computing the running average of the same list. The code we write though often has
-extraneous details and overhead that has nothing directly to with the problem we are trying to solve (extrinsic).
+extraneous details and overhead that has nothing directly to do with the problem we are trying to solve (extrinsic).
 
 Let's compare a program that writes "Hello World" to the console in Java and JavaScript:
 
@@ -263,6 +268,12 @@ Cognitive overhead of multiple dsls.
 Internal versus external dsls.
 
 Regularity is desirable across problem domains as we are optimizing human understanding and minimizing cognitive load. We are not code golfing every where. 
+-->
+
+<!-- 
+"Once a language feels infinite, the specific benefits of a new feature are still apparent.
+But the general costs in added complexity are no longer apparent."
+<https://erights.medium.com/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9>
 -->
 
 <!--
@@ -387,3 +398,8 @@ Monolith by architecture, or monolith by infrastructure?
 https://twitter.com/alexcwatt/status/1544876135711916035
 https://medium.com/qe-unit/airbnbs-microservices-architecture-journey-to-quality-engineering-d5a490e6ba4f
 -->
+
+## Additional References
+
+* _[Clean architecture : a craftsman's guide to software structure and design](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)_, Robert C. Martin, 2017
+* _[Is it really "Complex"? Or did we just make it "Complicated"?](https://www.youtube.com/watch?v=ubaX1Smg6pY)_, Alan Kay, June 2014
