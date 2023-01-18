@@ -3170,6 +3170,8 @@ https://twitter.com/Kevin_McKernan/status/1609204147705843715
 https://twitter.com/Kevin_McKernan/status/1609605647565488128
 https://twitter.com/Kevin_McKernan/status/1609605706633678850
 https://twitter.com/Kevin_McKernan/status/1609605670697054208
+https://twitter.com/Kevin_McKernan/status/1615021901046321160
+https://notthebee.com/article/sam-harris-says-in-some-sense-we-were-unlucky-that-covid-didnt-kill-hundreds-of-thousands-of-kids-because-people-wouldnt-have-been-so-skeptical-of-vaccines
 https://mobile.twitter.com/Kevin_McKernan/status/1611000042520997891
 https://anandamide.substack.com/p/compounding-error
 https://mobile.twitter.com/BrendanEich/status/1599900855150452762
