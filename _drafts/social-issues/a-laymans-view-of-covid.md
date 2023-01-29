@@ -3185,6 +3185,11 @@ https://mobile.twitter.com/P_McCulloughMD/status/1610257536162332672
 https://notthebee.com/article/um-excuse-me-do-what-now
 https://www.zerohedge.com/markets/cdc-finally-releases-vaers-safety-monitoring-analyses-covid-vaccines
 https://twitter.com/jimmy_dore/status/1613610309943713793
+https://twitter.com/vivekhaldar/status/1617260846895489025
+https://twitter.com/boriquagato/status/1619320443437211651
+https://twitter.com/Doctor_Eric_B/status/1619391509127913473
+https://twitter.com/themilkbartv/status/1615682695035748356
+https://twitter.com/Doctor_Eric_B/status/1619391509127913473
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
