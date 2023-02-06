@@ -3190,6 +3190,17 @@ https://twitter.com/boriquagato/status/1619320443437211651
 https://twitter.com/Doctor_Eric_B/status/1619391509127913473
 https://twitter.com/themilkbartv/status/1615682695035748356
 https://twitter.com/Doctor_Eric_B/status/1619391509127913473
+https://twitter.com/BallouxFrancois/status/1620265902133633025
+https://www.zerohedge.com/medical/fda-quietly-changes-end-date-study-heart-inflammation-after-pfizer-covid-vaccination
+https://twitter.com/RepThomasMassie/status/1616249150248452099
+https://twitter.com/TracyBethHoeg/status/1621734467667906561
+https://twitter.com/Kevin_McKernan/status/1615094757897773060
+https://twitter.com/jimmy_dore/status/1615477926287519744
+https://twitter.com/hugh_mankind/status/1620938059075264516
+https://twitter.com/MartyMakary/status/1620855460458029056
+https://twitter.com/gummibear737/status/1621299996388728834
+https://twitter.com/Kevin_McKernan/status/1622243585889280002
+https://twitter.com/boriquagato/status/1622228978428698624
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
