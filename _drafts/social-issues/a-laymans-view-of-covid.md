@@ -3201,6 +3201,24 @@ https://twitter.com/MartyMakary/status/1620855460458029056
 https://twitter.com/gummibear737/status/1621299996388728834
 https://twitter.com/Kevin_McKernan/status/1622243585889280002
 https://twitter.com/boriquagato/status/1622228978428698624
+https://boriquagato.substack.com/p/cdc-admits-no-rcts-support-mask-efficacy/comments
+https://twitter.com/Kevin_McKernan/status/1628248208144052227
+https://twitter.com/Kevin_McKernan/status/1628073508281495560
+https://twitter.com/kevin_mckernan/status/1629602522825408512
+https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html
+https://twitter.com/jimmy_dore/status/1623755528919986176
+https://twitter.com/kevinnbass/status/1628636367017197570
+https://twitter.com/Kevin_McKernan/status/1609605647565488128
+https://notthebee.com/article/would-you-look-at-that-nbc-is-now-reporting-study-that-shows-prior-infection-is-just-as-good-as-the-vaccine
+https://www.zerohedge.com/covid-19/pfizer-confirms-it-ended-covid-19-vaccine-pregnancy-trial-early
+https://twitter.com/RobertKennedyJr/status/1630231368298020865
+https://twitter.com/Kevin_McKernan/status/1630319944947707905
+https://twitter.com/BrendanEich/status/1538253982845399040
+https://maryannedemasi.substack.com/p/exclusive-whatever-happened-to-pfizers
+https://twitter.com/VigilantFox/status/1630686806055239680
+https://twitter.com/Kevin_McKernan/status/1625526035478446084
+https://twitter.com/gummibear737/status/1630143576653934593
+https://joomi.substack.com/p/is-sars-cov-2-infecting-gut-bacteria?utm_medium=ios
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
