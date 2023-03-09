@@ -3219,6 +3219,9 @@ https://twitter.com/VigilantFox/status/1630686806055239680
 https://twitter.com/Kevin_McKernan/status/1625526035478446084
 https://twitter.com/gummibear737/status/1630143576653934593
 https://joomi.substack.com/p/is-sars-cov-2-infecting-gut-bacteria?utm_medium=ios
+https://twitter.com/BretWeinstein/status/1632408926145871873
+https://twitter.com/DailyCaller/status/1632375412603928577
+https://anandamide.substack.com/p/pfizer-and-moderna-bivalent-vaccines?utm_source=direct&utm_campaign=post&utm_medium=web
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
