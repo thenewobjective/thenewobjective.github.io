@@ -3222,6 +3222,10 @@ https://joomi.substack.com/p/is-sars-cov-2-infecting-gut-bacteria?utm_medium=ios
 https://twitter.com/BretWeinstein/status/1632408926145871873
 https://twitter.com/DailyCaller/status/1632375412603928577
 https://anandamide.substack.com/p/pfizer-and-moderna-bivalent-vaccines?utm_source=direct&utm_campaign=post&utm_medium=web
+https://twitter.com/boriquagato/status/1634172564724391937
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8492451/
+https://twitter.com/VigilantFox/status/1634740549671432192
+https://twitter.com/jordanbpeterson/status/1632189028912037889
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
