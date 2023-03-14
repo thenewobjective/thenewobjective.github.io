@@ -244,6 +244,19 @@ and not particularly well suited for any specific problem. In other words, we fa
 To state it another way: you don't know the details of the project you're building, but you've
 decided to use Python as your programming language as that's what you and your team already know.
 
+<!-- 
+“The complexity of software is an essential property”
+Fred Brooks, “No silver bullet”, 1987
+
+Essential Complexity / Accidental Complexity
+
+Paper: Out of the Tar Pit
+-->
+
+<!-- 
+Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves.
+-->
+
 <!--
 The problem with "general-purpose" languages are also their key selling-point: you don't know the details
 of the problem and don't want to juggle dozens of specialized languages in the same project. Just look
