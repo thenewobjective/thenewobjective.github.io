@@ -110,7 +110,7 @@ Credit: [Benh LIEU SONG](https://commons.wikimedia.org/w/index.php?curid=6926930
     </tr>
 </table>
 
-Thus, the following unattributed quote becomes clear:
+Thus, the following quote becomes clear:
 
 > "Any idiot can build a bridge that stands, but it takes an
 > engineer to build a bridge that barely stands."
@@ -119,18 +119,22 @@ Thus, the following unattributed quote becomes clear:
 ### Fighting Complexity
 
 In traditional architecture the primary enemy is gravity. The Arch is an effective tool that
-fights against it. The question we have now is: what is the analogy to gravity enemy in Software,
+fights against it. The question we have now is: what is the analogy to gravity in Software,
 and what is the "Arch"?
 
 In the early days of Software Engineering there was a major concern. It was referred to as
 [The Software Crisis](https://en.wikipedia.org/wiki/Software_crisis). This crisis can be
-summarized by a quote from [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_Dijkstra):
+summarized by a couple quotes:
 
 > “The major cause of the software crisis is that the machines have become several orders of magnitude more
 > powerful! To put it quite bluntly: as long as there were no machines, programming was no problem at all;
 > when we had a few weak computers, programming became a mild problem, and now we have gigantic computers,
 > programming has become an equally gigantic problem.”
 > <cite markdown="1">[Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_Dijkstra)</cite>
+<br>
+> Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of
+> each other, with no structural integrity, but just done by brute force and thousands of slaves.
+> <cite markdown="1">[Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay)</cite>
 
 There was a point where the computer was the most expensive part of a project. Now it is by far
 the programmer. Computing has become practically free, but the price of the programmer has skyrocketed.
@@ -149,19 +153,12 @@ range from 50% to 80% or more. There is also a cute aphorism called the [Ninety�
 > <cite>Tom Cargill, Bell Labs</cite>
 
 In my earlier article, ["Conway's Law and Consequences"](/software-systems-engineering/conways-law-and-consequences),
-I tackle the human organization aspect of software and how they relate. I invite you to read that before continuing here. In this article I'm focusing on that first 90% mentioned in the above quote.
+I tackle the human organization aspect of software and how they relate. I invite you to read that before continuing here. In this article I'm focusing on the non-organization aspect.
 
 So back to the original question: What is the analogy to gravity in software and what is our "arch"?
 
-{Need a smoother transition to introducing this graphic}
-
-<figure>
-    <img src="/media-library/software-systems-engineering/complexity-time-loc.png" alt="Complexity over time chart">
-    <figcaption>Intrinsic vs Extrinsic complexity over time</figcaption>
-</figure>
-
 As we develop solutions, some problems are naturally (intrinsically) harder than others; for example: adding a
-list of numbers vs computing the running average of the same list. The code we write though often has
+list of numbers vs computing the running average of the same list. The code we write often has
 extraneous details and overhead that has nothing directly to do with the problem we are trying to solve (extrinsic).
 
 Let's compare a program that writes "Hello World" to the console in Java and JavaScript:
@@ -186,7 +183,12 @@ are not because the problems are complex but that we
 [make them complicated](https://www.youtube.com/watch?v=ubaX1Smg6pY).
 
 So the complexity of our code, whether it be extrinsic or intrinsic is the "weight" that bears upon us and the machines
-that must execute it thus complexity is our analogy to gravity and what we are fighting against. How can we get the two lines of our chart to align?
+that must execute it thus complexity is our analogy to gravity and what we are fighting against. How can we get the two lines of this chart to align?
+
+<figure>
+    <img src="/media-library/software-systems-engineering/complexity-time-loc.png" alt="Complexity over time chart">
+    <figcaption>Intrinsic vs Extrinsic complexity over time</figcaption>
+</figure>
 
 ## Anergetic Systems Failure
 
@@ -229,6 +231,16 @@ I like to call **"Anergetic Systems Failure"**, or as others have called it:
 
 ## The Language Of The Domain
 
+> The complexity of software is an essential property, not an accidental one. Hence
+> descriptions of a software entity that abstract away its complexity often abstract away its
+> essence.
+> <cite markdown="1">
+    Fred Brooks, [“No silver bullet”, 1987](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)
+</cite>
+
+> As more complex things are made, architecture dominates materials!
+> <cite markdown="1">Marvin Minsky, </cite>
+
 Seeing that our choice of language has a direct impact on the complexity of our work, we know
 the first problem to be solved: using a better language. That's easier said than done though; in 2004
 [best estimates](http://lambda-the-ultimate.org/node/7) were that at least 4,600 programming languages existed.
@@ -245,16 +257,12 @@ To state it another way: you don't know the details of the project you're buildi
 decided to use Python as your programming language as that's what you and your team already know.
 
 <!-- 
-“The complexity of software is an essential property”
-Fred Brooks, “No silver bullet”, 1987
+1GL - 5GL
 
-Essential Complexity / Accidental Complexity
-
-Paper: Out of the Tar Pit
 -->
 
 <!-- 
-Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves.
+Paper: Out of the Tar Pit
 -->
 
 <!--
@@ -281,9 +289,39 @@ Cognitive overhead of multiple dsls.
 Internal versus external dsls.
 
 Regularity is desirable across problem domains as we are optimizing human understanding and minimizing cognitive load. We are not code golfing every where. 
+
+Language Oriented Programming
 -->
 
 <!-- 
+
+# No Silver Bullet:
+```
+What does a high-level language accomplish?
+It frees a program from much of its accidental
+complexity.
+
+	The most a high-level language can do is to furnish
+all the constructs the programmer imagines in the
+abstract program. To be sure, the level of our
+sophistication in thinking about data structures,
+data types, and the operations is steadily rising,
+but at an ever-decreasing rate. And language development
+approaches closer and closer to the sophistication of
+users.
+	Moreover, at some point the elaboration of a 
+high-level language beceomes a burden that increases,
+not reduces, the intellectual task of the user who
+rarely uses the esoteric constructs.
+
+    Aside: The goal of FP and FL?
+        Bracha: Like Legos with a single peg
+        https://buffered.io/posts/point-free-style-what-is-it-good-for/
+        https://wiki.haskell.org/Pointfree#Problems_with_pointfree
+        Too abstract: hence   
+-->
+
+<!--
 "Once a language feels infinite, the specific benefits of a new feature are still apparent.
 But the general costs in added complexity are no longer apparent."
 <https://erights.medium.com/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9>
@@ -312,6 +350,8 @@ Algorithmic Anergy is not just about explicit syntactic noise.
     let point = [3, 4, 12]
 
     EIBTI.
+
+    Church vs Curry typing
 -->
 
 <!--
@@ -321,7 +361,7 @@ A good language provides primitives, a means of combination, and a means of abst
 that become the primitives of the next layer closer to the target domain.
 Syntactic sugar gets in the way due to a lack of orthogonality.
 
-Emergent behaviors and leaky abstractions are due to ???
+Emergent behaviors and leaky abstractions are due to essential complexity being abstracted
 -->
 
 <!-- 
@@ -415,7 +455,8 @@ Simple vs Easy. The goal of architecture is simplicity, not familiarity
 https://youtu.be/LKtk3HCgTa8?t=1149
 -->
 
-## Additional References
+## References and Additional Resources
 
 * _[Clean architecture : a craftsman's guide to software structure and design](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)_, Robert C. Martin, 2017
 * _[Is it really "Complex"? Or did we just make it "Complicated"?](https://www.youtube.com/watch?v=ubaX1Smg6pY)_, Alan Kay, June 2014
+* _[No Silver Bullet—Essence and Accident in Software Engineering](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)_, Frederick P. Brooks, Jr. 1986
