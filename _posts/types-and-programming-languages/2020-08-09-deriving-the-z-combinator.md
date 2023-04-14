@@ -21,23 +21,23 @@ the reader with a sense of something missing. Let's see if I can do better.
 The fixed-point of a function is the argument that you give to it so that it will return that
 same argument. A simple example:
 
-<code>
-&lambda;x. x * x
-</code>
+```text
+λx. x * x
+```
 
 What value would be the fixed-point of this function? `0` would work:
 
-<code>
-(&lambda;x. x * x) 0<br>
-&rarr; (0) * (0)<br>
-&rarr; 0
-</code>
+```text
+(λx. x * x) 0
+→ (0) * (0)
+→ 0
+```
 
 A function doesn't have to have a single fixed-point either. Let's take the following:
 
-<code>
-&lambda;x. |x|
-</code>
+```text
+λx. |x|
+```
 
 The absolute value (`|x|`) will return the input when it's non-negative. Therefore every non-negative number
 is its fixed-point.
@@ -45,9 +45,9 @@ is its fixed-point.
 The fixed-points of functions aren't restricted to numbers and strings of course. They can be other functions.
 A trivial example is the identity function:
 
-<code>
-&lambda;x. x
-</code>
+```text
+λx. x
+```
 
 Every argument is a fixed-point. If we restrict ourselves to only using functions as arguments,
 and only using the arguments specified we have "combinators"; simple enough. Now you
@@ -82,12 +82,12 @@ let fact = n =>
 
 A significant improvement of clarity over the prior form. You can now more easily identify what the fixed-point would be:
 
-<code>
-fact(1)<br>
-&rarr; (1) < 2 ? 1 : (1) * fact((1) - 1)<br>
-&rarr; true ? 1 : (1) * fact((1) - 1)<br>
-&rarr; 1
-</code>
+```text
+fact(1)
+→ (1) < 2 ? 1 : (1) * fact((1) - 1)
+→ true ? 1 : (1) * fact((1) - 1)
+→ 1
+```
 
 Now, can we convert this into a combinator?
 
@@ -122,10 +122,10 @@ let fact = (self, n) =>
 
 A quick test shows that this works:
 
-<code>
-fact(fact,7)<br>
-&rarr; 5040
-</code>
+```text
+fact(fact,7)
+→ 5040
+```
 
 A bit inconvenient though and low-level[^2]. Let's see if we can extract the essence
 of what's going on and abstract this threading. We'll begin with [currying](https://en.wikipedia.org/wiki/Currying) the function:
@@ -137,11 +137,10 @@ let fact = self =>
 
 If we call our curried function without the number parameter:
 
-<code>
-fact(fact)<br>
-&rarr;
-n => n < 2 ? 1 : n * self(self)(n - 1) 
-</code>
+```text
+fact(fact)
+→ n => n < 2 ? 1 : n * self(self)(n - 1)
+```
 
 Notice the pattern? `self(self)` in the body and `fact(fact)` in the call.
 
@@ -156,10 +155,10 @@ let fact = self => {
 
 A quick test and you see it still works:
 
-<code>
-fact(fact)(7)<br>
-&rarr; 5040
-</code>
+```text
+fact(fact)(7)
+→ 5040
+```
 
 The `let` declaration feels a little dirty so let's refactor that into a lambda as well:
 
@@ -190,10 +189,10 @@ let becomes the argument.
 
 Another quick test to show that it still works:
 
-<code>
-fact(fact)(7)<br>
-&rarr; 5040
-</code>
+```text
+fact(fact)(7)
+→ 5040
+```
 
 With all of this refactoring what did it get us? Notice that the innermost body of our new `fact` has the same form
 as the original before we turned it into a combinator. Let's separate that innermost body into it's own declaration:
@@ -230,10 +229,10 @@ let fact = (() => {
 
 Done!
 
-<code>
-fact(7)<br>
-&rarr; 5040
-</code>
+```text
+fact(7)
+→ 5040
+```
 
 Once again, let's do some cleanup by refactoring that local let declaration into a lambda:
 
@@ -339,10 +338,10 @@ let fact = fix(fact =>
 
 Final check:
 
-<code>
-fact(7)<br>
-&rarr; 5040
-</code>
+```text
+fact(7)
+→ 5040
+```
 
 Let's try our `fix` combinator on another definition to see if it works more generally:
 
@@ -356,10 +355,10 @@ let fib = fix(fib =>
 )
 ```
 
-<code>
-fib(12)<br>
-&rarr; 144
-</code>
+```text
+fib(12)
+→ 144
+```
 
 Success!
 
@@ -445,10 +444,10 @@ let fact = fix(fact =>
 )
 ```
 
-<code>
-fact(7)<br>
-&rarr;5040
-</code>
+```text
+fact(7)
+→ 5040
+```
 
 So far so good. Now with our pattern clear, we'll replace the
 innermost self-application with `fix(f)`
@@ -480,10 +479,10 @@ let fix = f => n =>
 
 Final sanity check:
 
-<code>
-fact(7)<br>
-&rarr;5040
-</code>
+```text
+fact(7)
+→ 5040
+```
 
 Compare our new definition with the original:
 
@@ -528,11 +527,5 @@ Now go forth with your newfound knowledge and impress your fellow mortals.
 
 [^1]: Belinfante J. G. F. (1987) [S/K/ID: Combinators in Forth.](http://soton.mpeforth.com/flag/jfar/vol4/no4/article6.pdf) § The Fixed Point Theorem. p. 565
 [^2]: "A programming language is low level when its programs require attention to the irrelevant." - Alan Perlis
-[^3]: If *e* is an expression and *x* is a variable, then <code>&lambda;x. e</code> is an abstraction.
+[^3]: If *e* is an expression and *x* is a variable, then `λx. e` is an abstraction.
 [^4]: A double entendre. See [True Name](https://en.wikipedia.org/wiki/True_name) as well as [Gerald Sussman's](https://en.wikipedia.org/wiki/Gerald_Jay_Sussman) use of the term in [SICP](https://youtu.be/V_7mmwpgJHU?t=775).
-
-<!-- 
-
-Add trampoline and memoization examples?
-http://raganwald.com/2018/09/10/why-y.html
--->
