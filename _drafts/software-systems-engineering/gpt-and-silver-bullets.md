@@ -79,7 +79,9 @@ class Person {
 }
 ```
 
-<https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html>
+- <https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html>
+- <http://web.archive.org/web/20131106014825/http://www.javaworld.com/javaworld/jw-09-2003/jw-0905-toolbox.html>
+- [To accessor or not to accessor?](https://www.macqueen.us/smalltalkReport/ST/91_95/SMAL0208.PDF)
 
 // Write a program that sorts an array of integers
 // vs
