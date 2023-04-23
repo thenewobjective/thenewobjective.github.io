@@ -15,7 +15,7 @@ nav_order: 1
 ## Overview
 
 USMC War veteran, entrepreneur, and Systems Engineer with a formal education in Computer Science and
-more than 20 years of experience in the software industry.
+more than 25 years of experience in the software industry.
 
 I’m primarily interested in the study and application of Programming Language Theory to systems in a variety of industries and fields.
 
@@ -213,7 +213,7 @@ I’m primarily interested in the study and application of Programming Language 
 {% include resume-item.html
   image="/media-library/resume/rsi-icon.jpg"
   alt="Rural Sourcing"
-  title="Principal Consultant"
+  title="Principal Consultant, Manager"
   time="November 2020 - Present"
   desc="<a href='https://www.ruralsourcing.com/' target='_blank'>Rural Sourcing</a>"
 %}
@@ -234,16 +234,44 @@ I’m primarily interested in the study and application of Programming Language 
         <li>App Modernization</li>
         <li>Micro-services</li>
         <li>Micro-frontends</li>
+        <li>DevOps</li>
+        <li>Security + HIPAA Compliance</li>
     </ul>
 </details>
 
 <details>
     <summary>Clients</summary>
-    <ul>
-        <li>Marquette Energy Analytics</li>
-        <li>Direct Supply</li>
-        <li>Navitus</li>
-    </ul>
+    {% include resume-item.html
+      image="/media-library/resume/mea-icon.jpg"
+      alt="Marquette Energy Analytics Icon"
+      title="Marquette Energy Analytics"
+      time=""
+      desc="<ul>
+        <li>Azure Data Factory training</li>
+        <li>Azure Machine Learning training</li>
+      </ul>"
+    %}
+
+    {% include resume-item.html
+      image="/media-library/resume/direct-supply-icon.jpg"
+      alt="Direct Supply Icon"
+      title="Direct Supply"
+      time=""
+      desc="<ul>
+        <li>Performed an evaluation of ~26 CMSes and DXPs to identify the appropriate platform for the company's Digital Transformation</li>
+        <li>Architected aided the client team in implementation of the chosen Digital Experience Platform (Magnolia)</li>
+      </ul>"
+    %}
+
+    {% include resume-item.html
+      image="/media-library/resume/navitus-icon.jpg"
+      alt="Navitus Icon"
+      title="Navitus"
+      time=""
+      desc="Lead a team of ~32 to architect and implement a Fee-for-service Platform and Software Product Line to
+        support Drug Manufacturers, Drug Rebate analysts, and Medical providers. This platform integrates
+        with state medicaid agencies and financial systems."
+    %}
 </details>
 
 {% include resume-item.html
