@@ -257,11 +257,12 @@ To state it another way: you don't know the details of the project you're buildi
 decided to use Python as your programming language as that's what you and your team already know.
 
 <!-- 
-1GL - 5GL
-
+Elaborations to express an idea complicate the expression - Gerald Sussman
 -->
 
 <!-- 
+1GL - 5GL
+
 Paper: Out of the Tar Pit
 -->
 
