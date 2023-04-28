@@ -3227,6 +3227,21 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8492451/
 https://twitter.com/VigilantFox/status/1634740549671432192
 https://twitter.com/jordanbpeterson/status/1632189028912037889
 https://twitter.com/Kevin_McKernan/status/1635872381204938755
+https://twitter.com/RWMaloneMD/status/1636498127866806272
+https://twitter.com/boriquagato/status/1637878357072248832
+https://twitter.com/boriquagato/status/1637884682716041227
+https://twitter.com/jordanbpeterson/status/1632189028912037889
+https://twitter.com/Kevin_McKernan/status/1649867249786781700
+https://gab.com/INFOWARS/posts/110238492415807659
+https://twitter.com/Not_the_Bee/status/1650915124142653470
+https://www.zerohedge.com/covid-19/fda-vaccines-dont-have-prevent-infection-or-transmission
+https://www.zerohedge.com/medical/cdc-officials-make-false-statements-about-possible-covid-19-vaccine-side-effects
+https://twitter.com/Kevin_McKernan/status/1649048637295689729
+https://twitter.com/michaelpsenger/status/1650154362998763522
+https://twitter.com/VigilantFox/status/1650126479227863043
+https://twitter.com/stkirsch/status/1650870024654176257
+https://www.zerohedge.com/medical/explosive-new-study-finds-face-masks-may-increase-stillbirths-testicular-dysfunction
+https://twitter.com/sonia_elijah/status/1649884071613419521
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
