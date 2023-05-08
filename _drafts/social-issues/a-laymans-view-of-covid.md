@@ -3242,6 +3242,23 @@ https://twitter.com/VigilantFox/status/1650126479227863043
 https://twitter.com/stkirsch/status/1650870024654176257
 https://www.zerohedge.com/medical/explosive-new-study-finds-face-masks-may-increase-stillbirths-testicular-dysfunction
 https://twitter.com/sonia_elijah/status/1649884071613419521
+https://www.zerohedge.com/political/twitter-files-who-stealth-edited-vaccine-info-help-twitter-censor-tucker-carlson
+https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-023-15624-9
+https://twitter.com/RandPaul/status/1651778918611922948
+https://lynncomerford.substack.com/p/college-administrator-its-come-to?utm_campaign=post
+https://media.gab.com/cdn-cgi/image/width=1491,quality=100,fit=scale-down/system/media_attachments/files/136/650/664/original/cd201b85934c5996.jpg
+https://www.infowars.com/posts/covid-vaccines-linked-to-untreatable-eyeball-clots-study-reveals/
+https://twitter.com/Kevin_McKernan/status/1652848890595385348
+https://twitter.com/Kevin_McKernan/status/1643579498904842240
+https://twitter.com/kacdnp91/status/1642666654835572738
+https://twitter.com/Kevin_McKernan/status/1626056034442698753
+https://twitter.com/Kevin_McKernan/status/1628073508281495560
+https://twitter.com/Kevin_McKernan/status/1622833422791061505
+https://twitter.com/boriquagato/status/1622582444271587335
+https://twitter.com/Kevin_McKernan/status/1622598220961521665
+https://twitter.com/Kevin_McKernan/status/1622833422791061505
+https://twitter.com/Kevin_McKernan/status/1626056034442698753
+https://www.frontiersin.org/articles/10.3389/fonc.2022.975980/full
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
