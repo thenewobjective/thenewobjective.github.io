@@ -111,6 +111,10 @@ I lived in Milwaukee longer than I wanted and having finally left the city I can
         <img src='/media-library/uncategorized/brookfield/owls_1024.jpg' alt='Barn Owls' loading='lazy'>
         <figcaption>Barn Owls</figcaption>
     </figure>
+    <figure class="gallery-item">
+        <img src="/media-library/uncategorized/brookfield/turkey-vulture_1024.jpg" alt="Turkey Vulture" loading="lazy">
+        <figcaption>Turkey Vulture (harrassed by a Raven)</figcaption>
+    </figure>
 </article>
 
 I had an encounter with the Mountain Lion who left the tracks above as well. It was night time and I believe it caught a turkey and was not a fan of having company. It gave the signature scream. If you've never heard a Mountain Lion scream it's not something you'd forget:
