@@ -3259,6 +3259,17 @@ https://twitter.com/Kevin_McKernan/status/1622598220961521665
 https://twitter.com/Kevin_McKernan/status/1622833422791061505
 https://twitter.com/Kevin_McKernan/status/1626056034442698753
 https://www.frontiersin.org/articles/10.3389/fonc.2022.975980/full
+https://twitter.com/MartinNeil9/status/1656679358264909827
+https://twitter.com/boriquagato/status/1657023387682701317
+https://twitter.com/joshg99/status/1658421192326365185
+https://twitter.com/boriquagato/status/1659586455629443073
+https://twitter.com/Kevin_McKernan/status/1654364575460913153
+https://www.zerohedge.com/markets/fda-issues-emergency-bacteria-warning-500000-covid-19-tests
+https://twitter.com/joshg99/status/1657637432467107841
+https://www.zerohedge.com/medical/johnson-johnson-covid-19-vaccine-becomes-unavailable-us
+https://www.infowars.com/posts/ventilators-killed-nearly-all-covid-patients-study/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9940680/
+https://twitter.com/BrendanEich/status/1660523999372398593
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
