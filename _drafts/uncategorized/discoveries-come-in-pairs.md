@@ -1,7 +1,12 @@
 - [The Periodic Table](https://en.wikipedia.org/wiki/Periodic_table#Mendeleev's_table)
 - Natural Selection
 - general relativity
+  - <https://press.princeton.edu/ideas/was-einstein-the-first-to-discover-general-relativity>
+- Turing Machine
 - church-turing thesis
 - curry-howard correspondance
 - calculus
+  - Liebniz and Newton
+- Binary arithmetic
+  - <https://twitter.com/mlhaufe/status/1658522997026586639>
 - etc.

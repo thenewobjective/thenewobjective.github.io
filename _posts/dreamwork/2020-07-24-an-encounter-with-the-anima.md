@@ -3,8 +3,10 @@ layout: post
 icon: file-text
 title:  "An Encounter With The Anima"
 date:   2020-07-24 03:00:00 -0600
-category: Mindscape
-permalink: /mindscape/an-encounter-with-the-anima
+category: Dreamwork
+permalink: /dreamwork/an-encounter-with-the-anima
+redirect_from:
+    - /mindscape/an-encounter-with-the-anima
 commentThreadId: 40
 ---
 
@@ -36,7 +38,7 @@ and the masculine aspect of women being [Animus](https://en.wikipedia.org/wiki/A
 the yin-yang symbol:
 
 <figure>
-    <img src="/media-library/mindscape/yin-yang.png" alt="Yin-Yang symbol">
+    <img src="/media-library/dreamwork/yin-yang.png" alt="Yin-Yang symbol">
     <figcaption>Yin-Yang - Credit: <a href="https://en.wikipedia.org/wiki/Taijitu" target="_blank">Wikipedia</a></figcaption>
 </figure>
 

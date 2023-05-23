@@ -3,10 +3,11 @@ layout: post
 icon: file-text
 title:  "Watching “Free” Will"
 date:   2019-06-02 12:00:00 -0600
-category: Mindscape
-permalink: /mindscape/watching-free-will
+category: Dreamwork
+permalink: /dreamwork/watching-free-will
 redirect_from:
     - /watching-free-will/
+    - /mindscape/watching-free-will
 commentThreadId: 24
 ---
 
@@ -20,12 +21,9 @@ I’m reminded of the Ancient Egyptian concept of [multiple souls](https://en.wi
 
 {% include youtube.html id="jhBSum8GILY" %}
 
-<!-- 
-TODO:
+I'm also reminded of a common theme in The Matrix:
 
-Update blog post to reference The Matrix:
+> You've already made the choice, now you have to understand it.
+> <cite>The Oracle, Matrix Reloaded</cite>
 
-https://thenewobjective.com/mindscape/watching-free-will
-"You've already made the choice, now you have to understand it."
-https://www.youtube.com/results?search_query=You%27ve+already+made+the+choice%2C+now+you+have+to+understand+it
--->
+{% include youtube.html id="vTTSiCwEs08" %}

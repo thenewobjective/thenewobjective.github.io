@@ -3,8 +3,10 @@ layout: post
 icon: file-text
 title:  "Sehnsucht"
 date:   2022-05-21 12:00:00 -0600
-category: Mindscape
+category: Dreamwork
 permalink: /mindscape/sehnsucht
+redirect_from:
+    - /dreamwork/sehnsucht
 commentThreadId: 73
 ---
 
@@ -15,7 +17,7 @@ stage. The following unprompted symbolism I don't understand yet.
 In a field of black a sword stood, perhaps laid against an unseen object. The base of the sword was cradled in blue flowers divorced from their stems. Below is a rough painting of the imagery:
 
 <figure>
-    <img src="/media-library/mindscape/sword-blue-flowers.jpg" alt="Sword in blue flowers">
+    <img src="/media-library/dreamwork/sword-blue-flowers.jpg" alt="Sword in blue flowers">
 </figure>
 
 In a poor attempt at interpretation, I got the impression that the blackness was water, perhaps a form of

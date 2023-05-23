@@ -3,14 +3,15 @@ layout: post
 icon: file-text
 title:  "A Shamanic Ordeal"
 date:   2019-06-02 12:00:00 -0600
-category: Mindscape
-permalink: /mindscape/a-shamanic-ordeal
+category: Dreamwork
+permalink: /dreamwork/a-shamanic-ordeal
 redirect_from:
     - /a-shamanic-ordeal/
+    - /mindscape/a-shamanic-ordeal
 commentThreadId: 21
 ---
 
-[Previously](/mindscape/rediscovering-the-self) I’ve written on my awkward journeys into the unconscious. Recently I had a vivid dream/vision which I can’t explain in any other way than being a partial Shamanic Ordeal. The dream began in no way special, but at some point it turned and became the most significant one I can remember:
+[Previously](/dreamwork/rediscovering-the-self) I’ve written on my awkward journeys into the unconscious. Recently I had a vivid dream/vision which I can’t explain in any other way than being a partial Shamanic Ordeal. The dream began in no way special, but at some point it turned and became the most significant one I can remember:
 
 A pet cat of mine died recently and I saw him in a dream the night before in good health and active. One strange aspect of him though was that he was attached to what I would describe as a [Silver Cord](https://en.wikipedia.org/wiki/Silver_cord). The dream was short and otherwise unremarkable. The next night though was when the ordeal began.
 

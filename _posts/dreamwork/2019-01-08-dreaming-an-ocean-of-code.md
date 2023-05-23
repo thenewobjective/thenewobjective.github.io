@@ -3,10 +3,11 @@ layout: post
 icon: file-text
 title:  "Dreaming an Ocean of Code"
 date:   2019-01-08 12:00:00 -0600
-category: Mindscape
-permalink: /mindscape/dreaming-an-ocean-of-code
+category: Dreamworks
+permalink: /dreamwork/dreaming-an-ocean-of-code
 redirect_from:
     - /dreaming-an-ocean-of-code/
+    - /mindscape/dreaming-an-ocean-of-code
 commentThreadId: 20
 ---
 

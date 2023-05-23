@@ -3,8 +3,10 @@ layout: post
 icon: file-text
 title:  "Visions of Revelation"
 date:   2020-07-18 12:00:00 -0600
-category: Mindscape
-permalink: /mindscape/visions-of-revelation
+category: Dreamwork
+permalink: /dreamwork/visions-of-revelation
+redirect_from:
+    - /mindscape/visions-of-revelation
 commentThreadId: 38
 ---
 
@@ -43,7 +45,7 @@ letters and symbolic representations of larger esoteric ideas. Through nine days
 revealed:
 
 <figure>
-    <img src="/media-library/mindscape/odins-sacrifice.jpg" alt="Odin's Sacrifice">
+    <img src="/media-library/dreamwork/odins-sacrifice.jpg" alt="Odin's Sacrifice">
     <figcaption>Odin's Sacrifice by Lorenz Frølich, 1895. From <a href="https://en.wikipedia.org/wiki/Odin">Wikipedia</a></figcaption>
 </figure>
 
@@ -69,7 +71,7 @@ Following the ordeal:
 
 ## The Theory of Evolution
 
-Alongside Charles Darwin, Alfred Russel Wallace co-discovered Natural Selection. In Wallace's case he came to the revelation during a 
+Alongside Charles Darwin, Alfred Russel Wallace co-discovered Natural Selection. In Wallace's case he came to the revelation during a
 [Malarial Fever Dream](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4918116/#Sec2title):
 
 > According to his recollections, he was lying in bed one day [...] suffering from a "rather severe" attack of malaria.
@@ -130,7 +132,7 @@ He's most famous for his discovery of the structure of [Benzene](https://en.wiki
 > <cite><a href="https://web.archive.org/web/20200719084832/http://www.chem.uzh.ch/dam/jcr:ffffffff-e65b-5674-0000-000031849f54/10_Structure_Theory_slides.pdf" target="_blank">August Kekulé, Benzolfest, 1890</a></cite>
 
 <figure>
-    <img src="/media-library/mindscape/ouroboros-benzene.png" alt="Benzene and Uroburos">
+    <img src="/media-library/dreamwork/ouroboros-benzene.png" alt="Benzene and Uroburos">
     <figcaption>Credit: <a href="https://commons.wikimedia.org/w/index.php?curid=29661966" target="_blank">Haltopub</a>. CC BY-SA 3.0</figcaption>
 </figure>
 
@@ -174,7 +176,7 @@ I made a conscious choice to not include religious related dreams/visions/revela
 I may revisit this decision in the future. Some examples being:
 
 * [The Temptation of Christ](https://en.wikipedia.org/wiki/Temptation_of_Christ)
-* [The Burning Bush](https://en.wikipedia.org/wiki/Burning_bush) 
+* [The Burning Bush](https://en.wikipedia.org/wiki/Burning_bush)
 * [The Ten Commandments](https://en.wikipedia.org/wiki/Ten_Commandments#Biblical_narrative)
 * Native American [Vision Quests](https://en.wikipedia.org/wiki/Vision_quest)
 

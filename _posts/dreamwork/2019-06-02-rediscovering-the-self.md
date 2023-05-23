@@ -3,10 +3,11 @@ layout: post
 icon: file-text
 title:  "Rediscovering the Self"
 date:   2019-06-02 12:00:00 -0600
-category: Mindscape
-permalink: /mindscape/rediscovering-the-self
+category: Dreamwork
+permalink: /dreamworks/rediscovering-the-selfs
 redirect_from:
     - /rediscovering-the-self/
+    - /mindscape/rediscovering-the-self
 commentThreadId: 22
 ---
 
