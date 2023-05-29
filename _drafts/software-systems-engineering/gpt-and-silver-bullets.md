@@ -90,3 +90,8 @@ class Person {
 // programmers (unless the latter were just doing commodity drudge-work anyway)
 
 // reference requirements issues like Bertrand Meyer's blog post and that comic
+
+// What I find most interesting here is that the lawyers doubled down. Moved completely into Type 1 thinking
+// https://simonwillison.net/2023/May/27/lawyer-chatgpt/
+// also this:
+// https://twitter.com/cwhowell123/status/1662501821133254656
