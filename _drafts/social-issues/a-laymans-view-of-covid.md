@@ -3270,6 +3270,20 @@ https://www.zerohedge.com/medical/johnson-johnson-covid-19-vaccine-becomes-unava
 https://www.infowars.com/posts/ventilators-killed-nearly-all-covid-patients-study/
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9940680/
 https://twitter.com/BrendanEich/status/1660523999372398593
+https://twitter.com/zerohedge/status/1616063225098911744
+https://twitter.com/Kevin_McKernan/status/1615694113122263040
+https://twitter.com/Kevin_McKernan/status/1615693160683905025
+https://notthebee.com/article/this-followup-to-the-project-veritas-video-with-the-pfizer-exec-is-positively-insane
+https://www.zerohedge.com/political/massive-mask-study-shows-little-no-difference-preventing-covid-flu-infection
+https://gab.com/RobertMaloneMD/posts/109932513953719611
+https://twitter.com/Kevin_McKernan/status/1635389417996308480
+https://twitter.com/jimmy_dore/status/1649510600584601601
+https://gab.com/INFOWARS/posts/110226435031702759
+https://twitter.com/KeithEv84928885/status/1608107922847940608
+https://www.zerohedge.com/covid-19/leaked-pentagon-report-forensically-dismantles-fauci-led-natural-origin-study
+https://pubmed.ncbi.nlm.nih.gov/36751569/
+https://twitter.com/Kevin_McKernan/status/1662789299392200704
+https://www.zerohedge.com/covid-19/zero-young-healthy-individuals-died-covid-19-israeli-data-show
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?
