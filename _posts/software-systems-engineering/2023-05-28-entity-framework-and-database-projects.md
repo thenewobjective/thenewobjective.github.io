@@ -101,7 +101,7 @@ The organization of each tier (more-or-less) should follows a Clean Architecture
     <figcaption>Common sub-architecture</figcaption>
 </figure>
 
-If you squint you can see that even the organization of the tiers themselves follow a similar Clean Architecture shape where the Services act as the Business Logic Tier and coordinate:
+If you squint you can see that even the organization of the tiers themselves follow a similar Clean Architecture shape where the Services act as the Business Logic Tier and coordinates:
 
 <figure>
     <img src="/media-library/software-systems-engineering/spl-clean-clean.png" alt="Clean Architecture Tiers">
@@ -112,9 +112,9 @@ Hence the Services (Business Logic Tier) is the "Center" of the distributed appl
 
 ## Domain Entities vs Database Entities
 
-Up until now has been a rather long setting of the stage in order to tackle the core question:
+With my painfully long setting of the stage out of the way, we can finally get to the point and tackle the core question:
 In a Services project (which is the core of a distributed application), should the fundamental Entities (the core truth) be defined
-as <abbr title="Plain Old Class Objects">POCOs</abbr> or should we manage them in the database of the service as part of the [DDL](https://en.wikipedia.org/wiki/Data_definition_language)?
+as <abbr title="Plain Old Class Objects">POCOs</abbr> or should we manage them in the associated database of the service as part of the [DDL](https://en.wikipedia.org/wiki/Data_definition_language)?
 
 Clean Architecture is not necessarily incompatible with either approach but here would be what that looks like with each:
 
@@ -198,6 +198,6 @@ There may still be some value in having an explicit database project in exceptio
 
 ## Conclusion
 
-I am not against a Database Project in general, but I am strongly against defining Domain Entities in that project via a Database-first approach as it seems to violate Clean Architecture in a significant way. I think there might be a place for it in a Code-First approach with a peer Database project, but I don’t know the dynamics of how that would work in practice. I believe the Learning Curve will be much higher for an average development team than it would be with introducing Entity Framework. Specialized, significant knowledge in databases in general is required and I don’t think the average team has the background or skill to handle this without significant adaptive pressure. I am also concerned about the migration tax required to convert to a DB project from an existing EF project. Converting to a database project is very much a non-trivial effort and the benefits would have to dwarf what modern EF provides today. I am not seeing enough to entertain that on [brownfield](https://en.wikipedia.org/wiki/Brownfield_(software_development)) projects, and I don’t see the benefit on future [Greenfield](https://en.wikipedia.org/wiki/Greenfield_project) projects. If there was an existing legacy database that was being used by many applications, I could see the value in a database project,  but I don’t see how database projects fit into a Microservice + Clean Architecture approach in general.
+I am not against a Database Project in general, but I am strongly against defining Domain Entities in that project via a Database-first approach as it seems to violate Clean Architecture in a significant way. I think there might be a place for it in a Code-First approach with a peer Database project, but I don’t know the dynamics of how that would work in practice. I believe the Learning Curve will be much higher for an average development team than it would be with introducing Entity Framework. Specialized, significant knowledge in databases in general is required and I don’t think the average team has the background or skill to handle this without significant adaptive pressure. I am also concerned about the migration tax required to convert to a DB project from an existing EF project. Converting to a database project is very much a non-trivial effort and the benefits would have to dwarf what modern EF provides today. I am not seeing enough to entertain that on [brownfield](https://en.wikipedia.org/wiki/Brownfield_(software_development)) projects, and I don’t see the benefit on future [greenfield](https://en.wikipedia.org/wiki/Greenfield_project) projects. If there was an existing legacy database that was being used by many applications, I could see the value in a database project,  but I don’t see how database projects fit into a Microservice + Clean Architecture approach in general.
 
 As always, I am open to being convinced otherwise. I think a discussion is useful not just for the current projects but future ones as well. Entity Framework has come a long way since its beginning, and Database Projects are an old reliable workhorse I and perhaps many of you have had success with in the past. If you have anything to add, it would be appreciated.
