@@ -5,7 +5,6 @@ title:  "Design by Contract"
 date:   2021-10-28 12:00:00 -0600
 category: Types and Programming Languages
 permalink: /types-and-programming-languages/design-by-contract
-commentThreadId: -1
 ---
 
 <!--
@@ -64,8 +63,6 @@ look at the implementation instead of being able to rely on a higher level of ab
 
 Here's another example
 
-
-
 ## Further Reading
 
-- http://se.ethz.ch/~meyer/publications/computer/contract.pdf
+- <http://se.ethz.ch/~meyer/publications/computer/contract.pdf>

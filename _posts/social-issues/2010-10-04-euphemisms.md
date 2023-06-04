@@ -7,7 +7,6 @@ category: Social Issues
 permalink: /social-issues/euphemisms
 redirect_from:
     - /euphemisms/
-commentThreadId: 15
 ---
 
 > A Euphemism is a nice word for a nasty thing

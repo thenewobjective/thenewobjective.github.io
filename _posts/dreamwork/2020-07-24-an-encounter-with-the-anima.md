@@ -7,7 +7,6 @@ category: Dreamwork
 permalink: /dreamwork/an-encounter-with-the-anima
 redirect_from:
     - /mindscape/an-encounter-with-the-anima
-commentThreadId: 40
 ---
 
 > Out of the night that covers me,<br>

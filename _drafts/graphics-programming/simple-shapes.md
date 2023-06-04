@@ -5,7 +5,6 @@ category: Graphics Programming
 title:  "- Simple Shapes"
 date:   2030-04-29 02:00:00 -0600
 permalink: /graphics-programming/simple-shapes
-commentThreadId: -1
 ---
 
 As children we learned about simple 2D shapes, so they seem to be an appropriate place to start.

@@ -5,7 +5,6 @@ title:  "A DevOps Maturity Model"
 date:   2021-05-14 12:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/a-devops-maturity-model
-commentThreadId: -1
 ---
 
 * TOC
@@ -21,7 +20,7 @@ Some examples of Maturity Models are:
 and more weakly [Shu-Ha-Ri](https://www.scrum.org/resources/blog/shu-ha-ri-professional-coaching)
 in the Agile methodology.
 
-This model is chosen 
+This model is chosen
 
 ## The Practices
 
@@ -132,4 +131,5 @@ This model is chosen
 * [Explore DORA's research program](https://www.devops-research.com/research.html)
 
 ## Notes
+
 - Release Cadence

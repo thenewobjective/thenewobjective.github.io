@@ -8,7 +8,6 @@ permalink: /dreamwork/symbolic-candle
 redirect_from:
     - /symbolic-candle/
     - /mindscape/symbolic-candle
-commentThreadId: 23
 ---
 
 Through the active trial and error of symbolic dreaming ([see previously](/dreamwork/2019/06/02/rediscovering-the-self.html)), I’ve come across some interesting images. I’m not certain of how to categorize them nor which to ignore so I’ve been focusing on things unexpected: objects and images I couldn’t create in a fully conscious imagination which seem important. This seems very subjective and arbitrary, but it’s a start.

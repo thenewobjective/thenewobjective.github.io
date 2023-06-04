@@ -7,7 +7,6 @@ category: Types and Programming Languages
 permalink: /types-and-programming-languages/overview-of-prefix-vs-postfix-notations-evaluation-schemes
 redirect_from:
     - /overview-of-prefix-vs-postfix-notations-evaluation-schemes/
-commentThreadId: 12
 ---
 
 *Yahoo decided to [kill Yahoo Groups](https://twitter.com/textfiles/status/1184461099237814273).

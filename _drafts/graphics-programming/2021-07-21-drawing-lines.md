@@ -5,7 +5,6 @@ category: Graphics Programming
 title:  "? - Drawing Lines"
 date:   2021-07-21 11:00:00 -0600
 permalink: /graphics-programming/drawing-lines
-commentThreadId: 47
 ---
 
 The next natural step from plotting points is drawing lines. From straight lines

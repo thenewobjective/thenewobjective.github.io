@@ -5,7 +5,6 @@ title:  "SQL Server and UUIDs"
 date:   2022-08-14 11:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/sql-server-and-uuids
-commentThreadId: 76
 ---
 
 * TOC
@@ -19,21 +18,21 @@ identify them over time. One example can be a Customer:
 
 | Name     | Email                | Address           |
 |----------|----------------------|-------------------|
-| Jane Doe | jane.doe@example.com | Merrick, NY 11566 |
+| Jane Doe | <jane.doe@example.com> | Merrick, NY 11566 |
 
 Any of the attributes can change. That doesn't mean that the customer becomes a different person.
 If Jane Doe is married and moves to a new state, she is still the same person:
 
 | Name       | Email                  | Address                |
 |------------|------------------------|------------------------|
-| Jane Smith | jane.smith@example.com | Philadelphia, PA 19111 |
+| Jane Smith | <jane.smith@example.com> | Philadelphia, PA 19111 |
 
 To identify that entity over time we define a [Surrogate Key](https://en.wikipedia.org/wiki/Surrogate_key).
 A proxy representing the entity.
 
 | *ID*   | Name       | Email                  | Address                |
 |--------|------------|------------------------|------------------------|
-| __12__ | Jane Smith | jane.smith@example.com | Philadelphia, PA 19111 |
+| __12__ | Jane Smith | <jane.smith@example.com> | Philadelphia, PA 19111 |
 
 There are some practical concerns though when choosing an appropriate key. What format should it take?
 Are there implementation concerns?

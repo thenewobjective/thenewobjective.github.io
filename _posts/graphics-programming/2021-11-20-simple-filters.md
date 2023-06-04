@@ -5,7 +5,6 @@ category: Graphics Programming
 title:  "4 - Simple Filters"
 date:   2021-11-20 10:00:00 -0600
 permalink: /graphics-programming/simple-filters
-commentThreadId: 64
 ---
 
 * TOC

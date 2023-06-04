@@ -8,7 +8,6 @@ permalink: /dreamwork/a-shamanic-ordeal
 redirect_from:
     - /a-shamanic-ordeal/
     - /mindscape/a-shamanic-ordeal
-commentThreadId: 21
 ---
 
 [Previously](/dreamwork/rediscovering-the-self) I’ve written on my awkward journeys into the unconscious. Recently I had a vivid dream/vision which I can’t explain in any other way than being a partial Shamanic Ordeal. The dream began in no way special, but at some point it turned and became the most significant one I can remember:

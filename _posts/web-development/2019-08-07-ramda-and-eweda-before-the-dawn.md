@@ -7,7 +7,6 @@ category: Web Development
 permalink: /web-development/ramda-and-eweda-before-the-dawn
 redirect_from:
     - /ramda-and-eweda-before-the-dawn/
-commentThreadId: 5
 ---
 
 [Ramda](https://ramdajs.com/) and [Eweda](https://github.com/CrossEye/eweda) are functional programming libraries for JavaScript developed by [Scott Sauyet](https://twitter.com/scott_sauyet), [G. Lathoud](http://glat.info/transfun/), and others. Before Ramda and in the early days of Eweda there were significant philosophical and architectural discussions between Scott and I. If you’re interested in the prehistory of these libraries you might find these threads enlightening.

@@ -5,7 +5,6 @@ title:  "Entity Framework and Database Projects"
 date:   2023-05-28 13:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/entity-framework-and-database-projects
-commentThreadId: 84
 ---
 
 * TOC

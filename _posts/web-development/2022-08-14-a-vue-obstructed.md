@@ -5,7 +5,6 @@ title:  "A Vue Obstructed"
 date:   2022-08-14 10:00:00 -0600
 category: Web Development
 permalink: /web-development/a-vue-obstructed
-commentThreadId: 75
 ---
 
 I attempted to convert this blog from Jekyll to Vue (Nuxt specifically). I wanted to eliminate server side dependencies to run this website. Sadly I failed to complete the conversion and had to give up the endeavor.

@@ -5,7 +5,6 @@ title:  "Symbolic Garden"
 date:   2023-05-22 9:00:00 -0600
 category: Dreamwork
 permalink: /dreamwork/symbolic-garden
-commentThreadId: 83
 ---
 
 Last night I was presented an image of the busts of two grim reapers. One was cloaked

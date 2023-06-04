@@ -7,7 +7,6 @@ category: War and Peace
 permalink: /war-and-peace/call-of-duty
 redirect_from:
     - /call-of-duty/
-commentThreadId: 6
 ---
 
 Call of Duty is another First Person Shooter game which simulates real world conflicts and has currently hit the high mark of popularity. Like many games which have come before it in the same genre, such as the Counter Strike series, the Medal of Honor series, the Delta Force series and more, what sets Call of Duty apart is its’ Multiplayer Mode. A significant number of people who purchase the game do so only for this multiplayer game-play or Zombie mode which is a World War 2 survival mode where the players fight against Nazi Zombies with stereotypical characters such as President Nixon, Fidel Castro, German Scientist, a Russian Drunk, an American Gung Ho Soldier, and a Japanese Soldier. Players seem to rarely if ever touch the main game including all of my siblings and their friends.

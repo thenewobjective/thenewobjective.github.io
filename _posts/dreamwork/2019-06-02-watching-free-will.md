@@ -8,7 +8,6 @@ permalink: /dreamwork/watching-free-will
 redirect_from:
     - /watching-free-will/
     - /mindscape/watching-free-will
-commentThreadId: 24
 ---
 
 I had an interesting dream which reminded me of the weak hold we have on the concept of free will. There was nothing particularly significant in the dream itself in regards to artifacts and symbols. What was exceptional in this case was that I was controlling my “body” in a third person perspective and yet looking through the eyes like a suit.

@@ -5,7 +5,6 @@ title:  "Escaping The City"
 date:   2021-09-19 10:00:00 -0600
 category: Uncategorized
 permalink: /uncategorized/escaping-the-city
-commentThreadId: 66
 ---
 
 I lived in Milwaukee longer than I wanted and having finally left the city I can enjoy my new neighbors:

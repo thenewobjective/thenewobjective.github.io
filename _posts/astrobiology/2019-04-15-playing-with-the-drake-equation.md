@@ -7,7 +7,6 @@ category: Astrobiology
 permalink: /astrobiology/playing-with-the-drake-equation/
 redirect_from:
     - /playing-with-the-drake-equation/
-commentThreadId: 27
 ---
 
 Thinking about the existence of extraterrestrials is always fun. One way to be self-indulgent is with the [Drake Equation](https://seti.org/drake-equation-index).

@@ -5,7 +5,6 @@ title:  "A Perspective On DevOps"
 date:   2021-01-27 12:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/a-perspective-on-devops
-commentThreadId: -1
 ---
 
 * TOC
@@ -81,10 +80,8 @@ http://museum.ipsj.or.jp/en/computer/device/paper/words.html
 https://github.com/jasonbellamy/jekyll-mermaid/issues
 https://mermaid-js.github.io/mermaid/#/
 
-
 [^2]: Floris Erich. [DevOps is Simply Interaction Between Development and Operations](https://www.researchgate.net/publication/330477403_DevOps_is_Simply_Interaction_Between_Development_and_Operations_First_International_Workshop_DEVOPS_2018_Chateau_de_Villebrumier_France_March_5-6_2018_Revised_Selected_Papers). January 2019
 https://www.researchgate.net/profile/Floris-Erich-2/publication/330477403_DevOps_is_Simply_Interaction_Between_Development_and_Operations_First_International_Workshop_DEVOPS_2018_Chateau_de_Villebrumier_France_March_5-6_2018_Revised_Selected_Papers/links/5cd4c9ba92851c4eab911562/DevOps-is-Simply-Interaction-Between-Development-and-Operations-First-International-Workshop-DEVOPS-2018-Chateau-de-Villebrumier-France-March-5-6-2018-Revised-Selected-Papers.pdf
-
 
 ## Further Reading
 
@@ -95,7 +92,6 @@ https://www.researchgate.net/profile/Floris-Erich-2/publication/330477403_DevOps
 
 * https://sre.google/sre-book/table-of-contents/
 * https://www.rackspace.com/blog/quantifying-devops-capability-its-important-to-keep-calms/
-
 
 ALM Team
 
@@ -207,7 +203,6 @@ DevOps as a culture is insufficient
     think of conway's law and the reverse conway's law.
     A change of organization leading to a change in implementation.
   Can there be a culture with 1 person?
-
 
 https://www.youtube.com/watch?v=-rPPqm44xLs
 https://en.wikipedia.org/wiki/Mainframe_computer

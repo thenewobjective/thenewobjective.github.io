@@ -6,7 +6,6 @@ date:   2020-05-17 12:00:00 -0600
 category: USMC
 permalink: /usmc/land-nav-with-mortars
 featuredImage: /media-library/usmc/land-nav.jpg
-commentThreadId: 35
 ---
 
 <figure>

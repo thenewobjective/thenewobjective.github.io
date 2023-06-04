@@ -7,7 +7,6 @@ category: Requirements Engineering
 permalink: /requirements-engineering/leaky-abstractions-are-just-bad-abstractions
 redirect_from:
     - /leaky-abstractions-are-just-bad-abstractions/
-commentThreadId: 17
 ---
 
 ## Introduction
@@ -105,7 +104,6 @@ Example in a Datastructure. Perhaps a Stack with an array implementation?
 
 Are concatenative languages an over-abstraction?
 
-
 ----
 
 Alan Kay
@@ -136,6 +134,5 @@ idioms in the language are expressions that occur repeatedly in multiple context
 
 ----
 "Architecture is a vertical abstraction on implementation" --Roy Fielding et al.
-
 
 -->

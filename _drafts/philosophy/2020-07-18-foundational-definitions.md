@@ -5,7 +5,6 @@ title:  "Foundational Definitions"
 date:   2020-07-18 12:00:00 -0600
 category: Philosophy
 permalink: /philosophy/foundational-definitions
-commentThreadId: -1
 ---
 
 > “Philosophy is just a byproduct of misunderstanding language!  Why can’t you see that?”

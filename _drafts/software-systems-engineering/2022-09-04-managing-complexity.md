@@ -5,7 +5,6 @@ title:  "Managing Complexity"
 date:   2022-09-04 13:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/managing-complexity
-commentThreadId: -1
 ---
 
 * TOC

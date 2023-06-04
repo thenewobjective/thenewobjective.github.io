@@ -5,7 +5,6 @@ title:  "Deriving the Z-Combinator"
 date:   2020-08-09 00:00:00 -0600
 category: Types and Programming Languages
 permalink: /types-and-programming-languages/deriving-the-z-combinator
-commentThreadId: 42
 ---
 
 * TOC

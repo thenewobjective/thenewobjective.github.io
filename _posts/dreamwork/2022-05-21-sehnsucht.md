@@ -7,7 +7,6 @@ category: Dreamwork
 permalink: /mindscape/sehnsucht
 redirect_from:
     - /dreamwork/sehnsucht
-commentThreadId: 73
 ---
 
 While continuing my experiments with [Dream incubation](https://en.wikipedia.org/wiki/Dream_incubation), I've

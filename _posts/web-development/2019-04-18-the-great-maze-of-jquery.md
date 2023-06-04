@@ -7,7 +7,6 @@ category: Web Development
 permalink: /web-development/the-great-maze-of-jquery
 redirect_from:
     - /the-great-maze-of-jquery/
-commentThreadId: 2
 ---
 
 *David Mark ([@Cinsoft](https://twitter.com/Cinsoft), [Github](https://github.com/david-mark), [comp.lang.javascript](https://groups.google.com/forum/#!profile/comp.lang.javascript/APn2wQdow28xcHDrDggfWTU5hXOy7oRk11vZM0N4N-idI7HJycIOyoXWIDEZoK6_MEPc2ywEyeeK)) is a notorious web developer from a different age. He is abrasive and effective. The following is a reposting of [my response](https://gist.github.com/mlhaufe/a7d7469db14b3b006e6cdf15e5669d80) to a request for comments on yet another jQuery architectural problem. It has been slightly edited for blog form.*

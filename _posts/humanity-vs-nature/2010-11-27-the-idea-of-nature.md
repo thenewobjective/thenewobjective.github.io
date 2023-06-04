@@ -7,7 +7,6 @@ category: Humanity vs Nature
 permalink: /humanity-vs-nature/the-idea-of-nature
 redirect_from:
     - /the-idea-of-nature/
-commentThreadId: 32
 ---
 
 The “idea of nature” represents a human interpretation of what reality beyond our society represents, and as our understanding of its mechanics develops, so does our belief in what the “idea” is.

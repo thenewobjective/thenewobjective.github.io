@@ -7,7 +7,6 @@ category: Humanity vs Nature
 permalink: /humanity-vs-nature/picher-and-cardin
 redirect_from:
     - /picher-and-cardin/
-commentThreadId: 28
 ---
 
 The first couple decades of my life were overall not very pleasant. One chapter of this was when we lived with an uncle for a short time in a small town in Oklahoma: Picher-Cardin. I was surprised recently to find out that a documentary was made about the place. You may find it interesting and it describes the area and situation better than I could have:

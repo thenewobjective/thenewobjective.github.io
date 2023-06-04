@@ -5,7 +5,6 @@ title:  "Data, Models, and Entities"
 date:   2022-01-16 12:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/data-models-and-entities
-commentThreadId: -1
 ---
 
 * TOC

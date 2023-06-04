@@ -7,7 +7,6 @@ category: Dreamwork
 permalink: /dreamwork/visions-of-revelation
 redirect_from:
     - /mindscape/visions-of-revelation
-commentThreadId: 38
 ---
 
 * TOC

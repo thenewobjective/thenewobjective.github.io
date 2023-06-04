@@ -7,7 +7,6 @@ category: Uncategorized
 permalink: /uncategorized/appearance-in-the-houston-chronicle
 redirect_from:
     - /appearance-in-the-houston-chronicle/
-commentThreadId: 11
 ---
 
 I received the news recently that a picture including me appeared in the [Houston Chronicle](https://www.houstonchronicle.com/business/amp/Houston-backed-startup-assistance-program-coming-14435056.php) on the subject of the Gener8tor program.

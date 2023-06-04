@@ -5,7 +5,6 @@ category: Graphics Programming
 title:  "- Shapes to Graphics"
 date:   2030-04-29 03:00:00 -0600
 permalink: /graphics-programming/shapes-to-graphics
-commentThreadId: -1
 ---
 
 Each of our shapes has a corresponding graphic representation:

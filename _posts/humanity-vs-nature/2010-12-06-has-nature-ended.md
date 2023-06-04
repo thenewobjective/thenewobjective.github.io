@@ -7,7 +7,6 @@ category: Humanity vs Nature
 permalink: /humanity-vs-nature/has-nature-ended
 redirect_from:
     - /has-nature-ended/
-commentThreadId: 29
 ---
 
 The question, “Has Nature ended?” can be as difficult to define as the answer is to be given. Humanity’s interpretation

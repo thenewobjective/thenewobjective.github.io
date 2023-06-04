@@ -5,7 +5,6 @@ category: Graphics Programming
 title:  "3 - Loading Images"
 date:   2021-07-22 10:00:00 -0600
 permalink: /graphics-programming/loading-images
-commentThreadId: 63
 ---
 
 From [lesson 2](/graphics-programming/plotting-points) we gained the ability to plot points and render image data to a canvas.
