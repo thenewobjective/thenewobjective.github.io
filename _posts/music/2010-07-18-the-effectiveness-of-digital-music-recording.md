@@ -7,7 +7,6 @@ category: Music
 permalink: /music/the-effectiveness-of-digital-music-recording
 redirect_from:
     - /the-effectiveness-of-digital-music-recording/
-commentThreadId: 19
 ---
 
 *The following is a derivative of a paper written in 2010 for [the late](https://shepherdexpress.com/music/on-music/update-memorial-service-dr.-martin-jack-rosenblum-planned-thursday/) Dr. Martin Rosenblum, who was kind enough to request a copy of this for his library. It has been updated for presentation on the web.*
@@ -18,7 +17,7 @@ When an artist creates music it can extend beyond the notes, chords and lyrics h
 
 Knowing what an artist can potentially create, to what degree can we experience this creation? Without enumerating over a detailed description of the anatomy of the ear and how each individual portion works, it is sufficient to say that the human ear can [detect sounds](http://hypertextbook.com/facts/2003/ChrisDAmbrose.shtml){:target="blank"} ranging from approximately 15 Hz to upwards of 20 kHz. Relative to the sound ranges creatable by a musician our ears pale in comparison, covering only one fifth of the potential spectrum. While this may be the case, it is not representative of what it entails for a person to experience music, though it is commonly accepted to be the most important part. Sound consists of vibrations in the air and while our ears have evolved to be sensitive to them, they are not the only part of our body with which we can feel them. Vibrations in the air, especially when intense enough, vibrate our bodies which we can feel. There have been a number of studies to this effect involving the deaf and their exceptional ability to to “hear” [through vibrations](http://www.scientificamerican.com/article.cfm?id=brain-scans-show-deaf-sub). So even with a lack of ears one can still appreciate the sounds a musician can create given that they are within a bearable range not to cause injury.
 
-With knowledge of the practical limits of a musician’s performance and knowledge of the limits of an average listener’s sound perception, we can now tackle the main question of whether the performance can be recorded effectively for the listener to perceive accurately. The recording medium that will be focused on will not be analog but digital as this is currently the most prevalent and is of arguably comparable quality. 
+With knowledge of the practical limits of a musician’s performance and knowledge of the limits of an average listener’s sound perception, we can now tackle the main question of whether the performance can be recorded effectively for the listener to perceive accurately. The recording medium that will be focused on will not be analog but digital as this is currently the most prevalent and is of arguably comparable quality.
 
 Digital recording works fundamentally by sampling the changes in air pressure (amplitude) over a given period of time (frequency) at a high rate, translating these variables into a set of numbers which are then stored in an electronic or other format onto a medium such as a disc or an electronic device. The higher the rate of sampling and the greater the range of amplitudes recorded, the more accurate the representation becomes.
 

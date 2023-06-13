@@ -5,7 +5,6 @@ title:  "Not Svelte but Gros"
 date:   2020-06-24 12:00:00 -0600
 category: Web Development
 permalink: /web-development/not-svelte-but-gros
-commentThreadId: 36
 ---
 
 * TOC

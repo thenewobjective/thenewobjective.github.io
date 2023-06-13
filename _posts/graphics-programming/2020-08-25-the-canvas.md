@@ -5,7 +5,6 @@ category: Graphics Programming
 title:  "1 - The Canvas"
 date:   2020-08-25 18:45:00 -0600
 permalink: /graphics-programming/the-canvas
-commentThreadId: 45
 ---
 
 There are multiple ways to render things to a webpage. We're going to choose the `<canvas>`

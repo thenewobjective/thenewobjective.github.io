@@ -7,7 +7,6 @@ category: Humanity vs Nature
 permalink: /humanity-vs-nature/the-future-of-nature
 redirect_from:
     - /the-future-of-nature/
-commentThreadId: 30
 ---
 
 In order to predict the future of nature, or more accurately, humanity’s future relationship with nature, it would

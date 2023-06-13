@@ -74,3 +74,10 @@ Getting 100% but not actually having valid tests
 
 
 When a measure becomes a target…
+
+
+========
+
+Is the existence of Unit Testing a design pattern and therefore a language smell?
+
+How much to Code Contracts and Type Systems Subsume?

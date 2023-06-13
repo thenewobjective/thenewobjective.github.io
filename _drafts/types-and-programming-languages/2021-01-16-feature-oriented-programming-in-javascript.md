@@ -5,7 +5,6 @@ title:  "Feature-Oriented Progamming in JavaScript"
 date:   2022-02-13 00:00:00 -0600
 category: Types and Programming Languages
 permalink: /types-and-programming-languages/feature-oriented-programming-in-javascript
-commentThreadId: -1
 ---
 
 * TOC
@@ -113,7 +112,6 @@ So why not just pick one of the two paradigms and be done with the whole affair?
 
 ## Synthesis: Feature Oriented Programming
 
-
 ## Conclusion
 
 ## References
@@ -155,7 +153,6 @@ const expSeven: Exp = { tag: 'Add',
 // 7
 const seven = evaluate(expSeven)
 ```
-
 
 ## Introduction
 

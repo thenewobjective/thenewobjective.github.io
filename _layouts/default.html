@@ -1,43 +1,48 @@
 <!doctype html>
 <html lang="en-US" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="referrer" content="no-referrer, strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' ; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/; img-src 'self' https://avatars.githubusercontent.com">
-    <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    <meta name="og:description" content="{{ page.description }}">
-    {% else %}
-    <meta name="description" content="The personal website of Michael L Haufe">
-    <meta name="og:description" content="The personal website of Michael L Haufe">
-    {% endif %}
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    {% if page.featuredImage %}
-    <meta property="og:image" content="{{ site.url }}{{ page.featuredImage }}">
-    {% else %}
-    <meta property="og:image" content="{{ site.url }}/images/icons/android-chrome-512x512.png">
-    {% endif %}
-    <title>{{ site.title }} | {{ page.title }}</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/dialog-polyfill.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico" >
-    <link rel="manifest" href="/images/icons/site.webmanifest">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &raquo; Feed" href="/feed.xml" />
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-    <link rel="search" href="{{ site.url }}/search.xml" type="application/opensearchdescription+xml" title="{{ site.title }}"/>
-    <link type="text/plain" rel="author" href="/humans.txt" />
-    <script src="/scripts/dialog-polyfill.js" defer></script>
-    <script type="module" src="/scripts/main.js"></script>
-  </head>
-  <body>
-    {%- include site-header.html -%}
-    {%- include site-content.html -%}
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  <meta name="og:description" content="{{ page.description }}">
+  {% else %}
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  {% endif %}
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if page.featuredImage %}
+  <meta property="og:image" content="{{ site.url }}{{ page.featuredImage }}">
+  {% else %}
+  <meta property="og:image" content="{{ site.url }}/images/icons/android-chrome-512x512.png">
+  {% endif %}
+  <title>{{ site.title }} | {{ page.title }}</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/dialog-polyfill.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="search" href="{{ site.url }}/search.xml" type="application/opensearchdescription+xml"
+    title="{{ site.title }}" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script src="/scripts/dialog-polyfill.js" defer></script>
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body>
+  {%- include site-header.html -%}
+  {%- include site-content.html -%}
+</body>
+
 </html>

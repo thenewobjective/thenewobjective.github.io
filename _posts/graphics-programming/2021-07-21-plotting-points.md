@@ -5,7 +5,6 @@ category: Graphics Programming
 title:  "2 - Plotting Points"
 date:   2021-07-21 11:00:00 -0600
 permalink: /graphics-programming/plotting-points
-commentThreadId: 46
 ---
 
 With our canvas prepared we need a representation that can be rendered to it.

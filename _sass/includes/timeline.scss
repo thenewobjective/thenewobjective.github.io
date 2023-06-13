@@ -1,0 +1,26 @@
+.timeline {
+    list-style: none;
+    margin: 0 0 0 1em;
+    padding: 0;
+    position: relative;
+
+    .entry {
+        border-left: 1px solid black;
+        padding: 1em;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -0.5em;
+            width: 1em;
+            height: 1em;
+            background-color: gray;
+            border-radius: 50%;
+        }
+
+        .entry-title {
+            display: block;
+        }
+    }
+}

@@ -7,7 +7,6 @@ category: Web Development
 permalink: /web-development/a-criticism-of-web-components
 redirect_from:
     - /a-criticism-of-web-components/
-commentThreadId: 1
 ---
 
 *This is a repost of my (now deleted) comment on [SitePen](https://www.sitepen.com/blog/2018/07/06/web-components-in-2018/). I’ve added some additions and references. A similar comment of mine was removed from the [Mozilla blog](https://hacks.mozilla.org/2018/11/the-power-of-web-components).*

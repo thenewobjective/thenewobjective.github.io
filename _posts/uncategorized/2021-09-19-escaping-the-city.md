@@ -5,7 +5,6 @@ title:  "Escaping The City"
 date:   2021-09-19 10:00:00 -0600
 category: Uncategorized
 permalink: /uncategorized/escaping-the-city
-commentThreadId: 66
 ---
 
 I lived in Milwaukee longer than I wanted and having finally left the city I can enjoy my new neighbors:
@@ -106,6 +105,14 @@ I lived in Milwaukee longer than I wanted and having finally left the city I can
     <figure class='gallery-item'>
         <img src='/media-library/uncategorized/brookfield/swallows_1024.jpg' alt='Swallows in nest' loading='lazy'>
         <figcaption>Swallows nesting</figcaption>
+    </figure>
+    <figure class='gallery-item'>
+        <img src='/media-library/uncategorized/brookfield/owls_1024.jpg' alt='Barn Owls' loading='lazy'>
+        <figcaption>Barn Owls</figcaption>
+    </figure>
+    <figure class="gallery-item">
+        <img src="/media-library/uncategorized/brookfield/turkey-vulture_1024.jpg" alt="Turkey Vulture" loading="lazy">
+        <figcaption>Turkey Vulture (harrassed by a Raven)</figcaption>
     </figure>
 </article>
 

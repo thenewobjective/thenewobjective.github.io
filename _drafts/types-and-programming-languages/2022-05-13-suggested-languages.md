@@ -5,7 +5,6 @@ title:  "Suggested Languages"
 date:   2021-10-28 12:00:00 -0600
 category: Types and Programming Languages
 permalink: /types-and-programming-languages/suggested-languages
-commentThreadId: -1
 ---
 
 * TOC
@@ -65,7 +64,7 @@ has to teach.
 
 ## Imperative and Procedural
 
-Procedural programming is something you are likely most familiar with. It's basically 
+Procedural programming is something you are likely most familiar with. It's basically
 
 ## Functional
 
@@ -81,17 +80,14 @@ Procedural programming is something you are likely most familiar with. It's basi
 
 ## Profound Jokes and the Esoteric
 
-https://en.wikipedia.org/wiki/FRACTRAN
+<https://en.wikipedia.org/wiki/FRACTRAN>
 
 ## Going Beyond
 
-- Microsoft Excel
-- Lacing as Computing
-
+* Microsoft Excel
+* Lacing as Computing
 
 ## Summary
-
-
 
 ## Further Reading
 

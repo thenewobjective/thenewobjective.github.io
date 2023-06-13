@@ -5,7 +5,6 @@ title:  "Gitchi Manitous - The Great Mystery"
 date:   2021-01-27 10:00:00 -0600
 category: Mindscape
 permalink: /mindscape/gitchi-manitous
-commentThreadId: 56
 ---
 
 > According to the creation story [of the <a href="https://en.wikipedia.org/wiki/Anishinaabe" target="_blank">Anishinabe</a>],

@@ -5,7 +5,6 @@ title:  "Scheduling Work"
 date:   2021-01-16 12:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/scheduling-work
-commentThreadId: -1
 ---
 
 ## Notes

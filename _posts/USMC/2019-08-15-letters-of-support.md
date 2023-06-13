@@ -7,7 +7,6 @@ category: USMC
 permalink: /usmc/letters-of-support
 redirect_from:
     - /letters-of-support/
-commentThreadId: 10
 ---
 
 I was deployed to Fallujah Iraq during "[Operation Iraqi Freedom](https://en.wikipedia.org/wiki/Iraq_War#2003.3A_Invasion)". During that time I received a large number of letters of support

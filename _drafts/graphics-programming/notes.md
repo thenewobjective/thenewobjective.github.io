@@ -40,6 +40,7 @@
 - <https://css-tricks.com/creating-patterns-with-svg-filters/>
 - <https://en.wikipedia.org/wiki/Digital_image_processing#Digital_image_transformations>
 - <https://web.archive.org/web/20200117191525/http://www.dmc.fmph.uniba.sk/public_html/doc/Java/index.htm>
+
 ---
 
 Determining the points of this curve can be accomplished by divide and conquer between the control points.
@@ -74,18 +75,27 @@ getting to the algorithm though we'll want some utility functions first:
 - <https://web.archive.org/web/20110408024242/http://designfestival.com/the-cicada-principle-and-why-it-matters-to-web-designers/>
 - <https://news.ycombinator.com/item?id=2419347>
 - <https://ronvalstar.nl/creating-tileable-noise-maps>
+- <https://twitter.com/TimSweeneyEpic/status/1580710552900636672>
 - <https://twitter.com/JJcoolkl/status/1296085259243720705>
 - <https://twitter.com/_eseidel/status/1417147297473826819>
 - <https://twitter.com/Foone/status/1421109783264862208>
 - <https://web.archive.org/web/20170314133311/http://xnaresources.com/default.asp?page=Tutorial:TileEngineSeries:1>
+<https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection>
+<http://conal.net/fran/tutorial.htm>
+<https://ailef.tech/2022/11/12/creating-a-2d-physics-engine-from-scratch-in-javascript/>
+<https://gab.com/AwwesomeAI>
+<https://opengameart.org/content/pixtura12-medieval-pixel-font>
+<https://twitter.com/gabrielpeyre/status/1604355786343419904>
+<https://twitter.com/InputOutputHK/status/1609229317371740161>
+<https://www.sciencedirect.com/science/article/pii/S2590148619300032>
 
 color keys
 
 - <https://twitter.com/migueldeicaza/status/1379493005116243976>
 
-https://avikdas.com/2020/09/08/rendering-curves-in-3d.html
+<https://avikdas.com/2020/09/08/rendering-curves-in-3d.html>
 
-https://github.com/jagregory/abrash-black-book
+<https://github.com/jagregory/abrash-black-book>
 
 Rasterizer
 
@@ -99,13 +109,12 @@ h * (a+b)/2
 
 'a' and 'b' are parallel sides. 'h' is the distance between them
 
-
 ======
-https://tutorial.math.lamar.edu/Classes/Alg/SystemsTwoVrble.aspx
+<https://tutorial.math.lamar.edu/Classes/Alg/SystemsTwoVrble.aspx>
 
 =====
-https://ciechanow.ski/curves-and-surfaces/
-https://www.youtube.com/watch?v=NbSee-XM7WA
+<https://ciechanow.ski/curves-and-surfaces/>
+<https://www.youtube.com/watch?v=NbSee-XM7WA>
 
 ========
 L-System
@@ -113,4 +122,4 @@ L-System
 mipmaps
 
 Area of polygon
-https://mobile.twitter.com/keenanisalive/status/1436318376654147585
+<https://mobile.twitter.com/keenanisalive/status/1436318376654147585>

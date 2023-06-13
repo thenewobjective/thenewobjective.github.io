@@ -5,7 +5,6 @@ title:  "That SLA is a Lie"
 date:   2021-01-04 12:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/that-sla-is-a-lie
-commentThreadId: 53
 ---
 
 With the commoditization of cloud infrastructure there have been a deluge of SaaS and PaaS offerings.

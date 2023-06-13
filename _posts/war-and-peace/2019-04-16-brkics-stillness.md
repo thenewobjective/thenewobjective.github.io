@@ -7,7 +7,6 @@ category: War and Peace
 permalink: /war-and-peace/brkics-stillness
 redirect_from:
     - /brkics-stillness/
-commentThreadId: 9
 ---
 
 [Brkic’s stories](https://www.amazon.com/Stillness-Stories-Courtney-Angela-Brkic/dp/0374269998/ref=sr_1_fkmrnull_1?keywords=Brkic%27s+Stillness&qid=1555395418&s=gateway&sr=8-1-fkmrnull) focus on aspects of the Balkan wars which are often overlooked. Beyond the racial conflict between the differing ethnic groups of the region, the stories also express the personal views and experiences of those who are caught in the middle of the conflict with no obvious preferences but to be left alone. These individuals all experience a fog of not knowing their fate, not knowing the intentions of their captors, or in the case of Lejla in *The Jasmine Shade* not knowing the intentions of even former friends in her community. What is surprising in these stories is the fact that the people involved don’t express their thoughts on the reasons for the conflict at large, nor a particular feeling on it beyond simple survival, as if a reason isn’t expected.

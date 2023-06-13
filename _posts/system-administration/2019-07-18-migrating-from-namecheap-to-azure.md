@@ -7,7 +7,6 @@ category: System Administration
 permalink: /system-administration/migrating-from-namecheap-to-azure
 redirect_from:
     - /migrating-from-namecheap-to-azure/
-commentThreadId: 14
 ---
 
 * TOC
@@ -33,8 +32,8 @@ I also don’t see a reasonable way to avoid downtime with this method, but you 
 
 ## Prerequisites
 
-- Azure Subscription
-- Azure Resource Group
+* Azure Subscription
+* Azure Resource Group
 
 You would be wise to migrate your other resources to azure first before moving the domain to mitigate risk and down-time. Setup appropriate redirects, DNS settings, and so on first before migrating the domain.
 
@@ -203,11 +202,11 @@ After transferring the domain, the next steps are verification, especially your 
 
 ## References
 
-- <https://channel9.msdn.com/Shows/Azure-Friday/App-Service-Domains>
-- <https://jrudlin.github.io/2018/10/27/domain-name-registration-transfer-to-azure-app-service-domains/>
-- <https://www.lieben.nu/liebensraum/2017/07/transferring-a-domain-to-azure-dns-and-billing/>
-- <https://docs.microsoft.com/en-us/rest/api/appservice/domains/createorupdate>
-- <https://social.msdn.microsoft.com/Forums/sqlserver/en-US/271731d8-6cd2-443b-b861-ee4ee30e34e9/transfer-domain-registration-to-azure?forum=windowsazurewebsitespreview#61163e9a-a85e-4cdb-a470-1e922b5f279d>
-- <http://www.deployazure.com/web-mobile/app-service/migrating-wordpress-blog-to-azure-app-service/>
-- <https://www.onepagezen.com/transfer-domain-azure/>
-- <https://docs.microsoft.com/en-us/Azure/app-service/app-service-web-tutorial-custom-ssl>
+* <https://channel9.msdn.com/Shows/Azure-Friday/App-Service-Domains>
+* <https://jrudlin.github.io/2018/10/27/domain-name-registration-transfer-to-azure-app-service-domains/>
+* <https://www.lieben.nu/liebensraum/2017/07/transferring-a-domain-to-azure-dns-and-billing/>
+* <https://docs.microsoft.com/en-us/rest/api/appservice/domains/createorupdate>
+* <https://social.msdn.microsoft.com/Forums/sqlserver/en-US/271731d8-6cd2-443b-b861-ee4ee30e34e9/transfer-domain-registration-to-azure?forum=windowsazurewebsitespreview#61163e9a-a85e-4cdb-a470-1e922b5f279d>
+* <http://www.deployazure.com/web-mobile/app-service/migrating-wordpress-blog-to-azure-app-service/>
+* <https://www.onepagezen.com/transfer-domain-azure/>
+* <https://docs.microsoft.com/en-us/Azure/app-service/app-service-web-tutorial-custom-ssl>

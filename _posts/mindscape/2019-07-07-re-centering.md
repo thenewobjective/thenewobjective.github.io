@@ -7,10 +7,9 @@ category: Mindscape
 permalink: /mindscape/re-centering
 redirect_from:
     - /re-centering/
-commentThreadId: 25
 ---
 
-Following my [recent ordeal](/mindscape/a-shamanic-ordeal) I decided to eliminate all chemical dependencies. If I’m to delve into my subconscious again I would like to do so without being influence or pulled in some direction due to something I am unaware of. Alcohol and caffeine have been a staple for years and my tolerance to both are so high that I would have to consume a terrible amount in order to move the needle. This is a clear sign that a heavy finger is on the scale that could be distorting my view of reality.
+Following my [recent ordeal](/dreamworks/a-shamanic-ordeal) I decided to eliminate all chemical dependencies. If I’m to delve into my subconscious again I would like to do so without being influence or pulled in some direction due to something I am unaware of. Alcohol and caffeine have been a staple for years and my tolerance to both are so high that I would have to consume a terrible amount in order to move the needle. This is a clear sign that a heavy finger is on the scale that could be distorting my view of reality.
 
 I am currently finishing my fourth week of detoxing and it has been an ordeal of its own; especially when doing so without medical/chemical assistance. I enjoyed all of the following symptoms:
 

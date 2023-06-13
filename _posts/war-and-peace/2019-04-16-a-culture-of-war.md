@@ -7,7 +7,6 @@ category: War and Peace
 permalink: /war-and-peace/a-culture-of-war
 redirect_from:
     - /a-culture-of-war/
-commentThreadId: 8
 ---
 
 I’ve had a father, a step-father, an uncle, aunt, cousin, and so on who’ve served in the military. Myself as well. With a significant family history of service, and so close to my generation, the impact on my own perspective towards warfare should be seemingly obvious to an outside observer, but that would not necessarily be the case. I am reminded of a story of an abusive man who died of old age and his two sons were at his funeral. One was a drunkard and destitute, the other was very successful. When asked what they thought of their abusive father and how their lives turned out, both would reply: “With a father like that, how else was I supposed to turn out?”. My choice to join the military had little to do with the other members of my family doing so, and the same could probably be said of them.

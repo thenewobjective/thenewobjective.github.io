@@ -1,19 +1,26 @@
 .post {
     line-height: 1.8;
 	text-align: justify;
+	/*
+	 Eliminates excessive word spacing that some browsers inject on short lines,
+	 Ref: <https://stackoverflow.com/questions/15118540/css-text-align-justify-big-spaces>
+	 */
+	word-spacing: -1px;
+	hyphens: auto;
 }
 
 .post > table {
 	border: 1px solid var(--font-color);
 	border-collapse: collapse;
-	margin: 1em 0;
-	white-space: nowrap;
+	margin: 1em auto;
 }
 
 .post > table th,
 .post > table td {
 	border: 1px solid var(--font-color);
 	padding: 0.5em 1em;
+	word-break: initial;
+    text-align: left;
 }
 
 .post > table thead {

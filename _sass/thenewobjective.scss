@@ -1,4 +1,3 @@
-
 :root {
 	--font-color: #ccc;
 	--link-color: #61A5E4;
@@ -10,23 +9,28 @@
 ::-webkit-scrollbar {
 	-webkit-appearance: none;
 }
+
 ::-webkit-scrollbar:vertical {
 	width: 0.5em;
 }
+
 ::-webkit-scrollbar:horizontal {
 	height: 0.5em;
 }
+
 ::-webkit-scrollbar-thumb {
 	background-color: rgba(0, 0, 0, .5);
 	border-radius: 10px;
 	border: 2px solid var(--content-bg);
 }
+
 ::-webkit-scrollbar-track {
 	border-radius: 10px;
 	background-color: var(--site-dark-bg);
 }
 
-body, html {
+body,
+html {
 	background-color: #000;
 	color: var(--font-color);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -44,8 +48,8 @@ body {
 	font-size: calc(1em + 0.5vw);
 
 	@media only screen and (max-width: 420px) {
-        overflow-x: auto;
-    }
+		overflow-x: auto;
+	}
 }
 
 a {
@@ -53,16 +57,19 @@ a {
 	text-decoration: none;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
 	text-decoration: underline;
 }
 
 blockquote {
-    background: var(--site-dark-bg);
-    border-left: 0.5em solid var(--link-color);
-    padding: 0.5em 1em;
-    margin: 1em;
+	background: var(--site-dark-bg);
+	border-left: 0.5em solid var(--link-color);
+	padding: 0.5em 1em;
+	margin: 1em;
 }
+
 cite {
 	display: block;
 	text-align: right;
@@ -79,19 +86,19 @@ figure {
 	text-align: center;
 }
 
-figure img { 
+figure img {
 	cursor: pointer;
 	max-width: 100%;
 }
 
 figure.highlight {
 	text-align: left;
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 figcaption {
-	font-size: small;
+	font-size: smaller;
 }
 
 ul {
@@ -104,7 +111,8 @@ ul {
 	padding: 1em;
 }
 
-p > code, li > code {
+p>code,
+li>code {
 	color: darkorange;
 }
 
@@ -114,29 +122,28 @@ p > code, li > code {
 
 input {
 	background-color: var(--site-dark-bg);
-    font-size: inherit;
-    padding: 0.5em;
-    border: 1px inset var(--shadow-color);
-    color: var(--font-color);
+	font-size: inherit;
+	padding: 0.5em;
+	border: 1px inset var(--shadow-color);
+	color: var(--font-color);
 }
 
-@import
-	"includes/site-header",
-	"includes/details",
-	"includes/site-content",
-	"includes/site-footer",
-	"includes/post",
-	"includes/feather-icon",
-	"includes/resume-item",
-	"includes/gallery",
-	"includes/dialog",
-	"includes/category-nav",
-	"includes/youtube",
-	"includes/codepen",
-	"includes/comments",
-	"includes/search",
-	"includes/mermaid",
-	"pages/about-me",
-	"alt-obsidian",
-	"pages/demos"
+@import "includes/site-header",
+"includes/details",
+"includes/site-content",
+"includes/site-footer",
+"includes/post",
+"includes/feather-icon",
+"includes/resume-item",
+"includes/gallery",
+"includes/dialog",
+"includes/category-nav",
+"includes/youtube",
+"includes/codepen",
+"includes/search",
+"includes/mermaid",
+"includes/timeline",
+"pages/about-me",
+"alt-obsidian",
+"pages/demos"
 ;

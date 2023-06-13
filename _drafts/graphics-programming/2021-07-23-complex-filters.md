@@ -5,7 +5,6 @@ category: Graphics Programming
 title:  "5 - Complex Filters"
 date:   2021-08-05 10:00:00 -0600
 permalink: /graphics-programming/complex-filters
-commentThreadId: -1
 ---
 
 * TOC
@@ -23,5 +22,5 @@ commentThreadId: -1
 
 ## Additional Reading
 
-- [Kernel (image processing)](https://en.wikipedia.org/wiki/Kernel_(image_processing))
-- [Contrast (vision)](https://en.wikipedia.org/wiki/Contrast_(vision))
+* [Kernel (image processing)](https://en.wikipedia.org/wiki/Kernel_(image_processing))
+* [Contrast (vision)](https://en.wikipedia.org/wiki/Contrast_(vision))

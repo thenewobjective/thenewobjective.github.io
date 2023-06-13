@@ -7,7 +7,6 @@ category: Web Development
 permalink: /web-development/css-grid-with-detail-view
 redirect_from:
     - /css-grid-with-detail-view/
-commentThreadId: 3
 ---
 
 There have been a couple projects over the years where information would need to be displayed in a grid with an inline detail view. This could be a product listing, a gallery with long descriptions, or anything else you might imagine as appropriate. A challenge though is to make such a layout without JavaScript, make it responsive, and when the detail view is expanded to keep the details immediately below the chosen item.

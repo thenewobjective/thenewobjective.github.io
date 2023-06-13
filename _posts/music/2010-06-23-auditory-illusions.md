@@ -7,7 +7,6 @@ category: Music
 permalink: /music/auditory-illusions
 redirect_from:
     - /auditory-illusions/
-commentThreadId: 18
 ---
 
 Auditory illusions, like optical illusions, are tricks of the mind. These illusions come in a variety of forms and can have a number of applications. This post will explore some of these illusions along wit some of the of applications in which they have been intentionally integrated. The aim is to cover some of the breadth of this extensive subject and not necessarily its depth.
