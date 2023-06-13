@@ -450,6 +450,8 @@ Clean Architecture implies Code First instead of DB first development?
 Monolith by architecture, or monolith by infrastructure?
 https://twitter.com/alexcwatt/status/1544876135711916035
 https://medium.com/qe-unit/airbnbs-microservices-architecture-journey-to-quality-engineering-d5a490e6ba4f
+Scaling on a single DB
+https://twitter.com/lawrjones/status/1666704786048135172
 
 Simple vs Easy. The goal of architecture is simplicity, not familiarity
 https://youtu.be/LKtk3HCgTa8?t=1149

@@ -79,9 +79,29 @@ class Person {
 }
 ```
 
+## Getters and Setters
+
 - <https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html>
-- <http://web.archive.org/web/20131106014825/http://www.javaworld.com/javaworld/jw-09-2003/jw-0905-toolbox.html>
 - [To accessor or not to accessor?](https://www.macqueen.us/smalltalkReport/ST/91_95/SMAL0208.PDF)
+- <https://gbracha.blogspot.com/2009/03/subsuming-packages-and-other-stories.html>
+
+getters and setters are harmful
+
+- Violation of the Command Query Separation Principle
+- <https://dev.to/scottshipp/avoid-getters-and-setters-whenever-possible-c8m>
+- <https://stackoverflow.com/a/12187495/153209>
+- <http://wiki.c2.com/?AccessorsAreEvil>
+- <https://dev.to/scottshipp/avoid-getters-and-setters-whenever-possible-c8m>
+- <http://web.archive.org/web/20130811012500/http://www.javaworld.com/javaworld/jw-09-2003/jw-0905-toolbox.html?page=1>
+
+=======
+Command-Query Separation limitation
+ stack.pop()
+  // mutates the stack and returns the result
+  // alternatively: no mutations allowed
+  // stack.pop() -> (top, newStack)
+
+## Misc
 
 // Write a program that sorts an array of integers
 // vs
@@ -92,6 +112,8 @@ class Person {
 // reference requirements issues like Bertrand Meyer's blog post and that comic
 
 // What I find most interesting here is that the lawyers doubled down. Moved completely into Type 1 thinking
-// https://simonwillison.net/2023/May/27/lawyer-chatgpt/
+// <https://simonwillison.net/2023/May/27/lawyer-chatgpt/>
 // also this:
-// https://twitter.com/cwhowell123/status/1662501821133254656
+// <https://twitter.com/cwhowell123/status/1662501821133254656>
+
+- <https://cacm.acm.org/blogs/blog-cacm/273577-ai-does-not-help-programmers/fulltext>
