@@ -2923,6 +2923,7 @@ https://twitter.com/mendez_rod/status/1550175182072926208
 https://pubmed.ncbi.nlm.nih.gov/32533071/
 https://twitter.com/NLamolinara/status/1550176547084161024
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8248252/
+https://www.zerohedge.com/covid-19/china-approves-hiv-drug-covid-patients
 
 johnson and johnson discontinued
 	are they now considered unvaccinated?

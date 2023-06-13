@@ -36,9 +36,8 @@ This structure is quite imposing. Standing at 481 feet tall it remained the tall
 structure for more than 3,800+ years with a weight of at least
 5.75 million tons.
 <sup>[[ref](https://weightofstuff.com/how-much-does-the-pyramid-of-giza-weigh/)]</sup>
-
-Is this considered a grand architecture? No, this is an example of what can be accomplished with
-brute force at scale. This is little better than a pile of rocks:
+Is this considered a grand architecture? No, this is a monument to brute force. 
+It is little better than a pile of rocks:
 
 <figure>
     <img src="/media-library/software-systems-engineering/rock-pile.png" alt="A pile of rocks">
@@ -49,7 +48,7 @@ Credit: [Wikipedia](https://en.wikipedia.org/wiki/Cairn)
 </figcaption>
 </figure>
 
-Even so we have to wait 3,800+ until another structure could overtake in the year 1092;
+Even so we have to wait 3,800+ years until another structure could overtake it in the year 1092;
 [The Lincoln Cathedral](https://en.wikipedia.org/wiki/Lincoln_Cathedral):
 
 <figure>
@@ -61,9 +60,9 @@ Credit: [Wikipedia](https://en.wikipedia.org/wiki/Lincoln_Cathedral)
 </figcaption>
 </figure>
 
-This cathedral stood at 525 feet tall and was the tallest man-made structure for 238 years. You notice
-that the form of this structure is vastly different from the that of the pyramid. What is the fundamental
-difference between the two? What enabled this new scale? The answer is the discovery of the
+This cathedral stood at 525 feet tall and became the tallest man-made structure for the next 238 years.
+You'll notice that the form of this structure is vastly different from the that of the pyramid.
+What is the fundamental difference between the two? What enabled this new scale? The answer is the discovery of the
 [Arch](https://en.wikipedia.org/wiki/Arch):
 
 <figure>
@@ -76,8 +75,8 @@ Credit: [Wikipedia](https://en.wikipedia.org/wiki/Arch#/media/File:Arch_Balance_
 </figure>
 
 This discovery enabled grander constructions with orders of magnitude less effort.
-No more brute-forcing large structures. We can obtain scale through the proper
-organization of the materials.
+No more brute-force monuments, we obtain scale through a more powerful organization
+of the same materials. Let's compare:
 
 <table>
     <tr>
@@ -118,9 +117,9 @@ Thus the following unattributed quote becomes clear:
 
 ### Fighting Complexity
 
-In traditional architecture the primary enemy is gravity. The Archway is an effective tool that
-fights against it. The question we have now is: what is the analogous enemy in Software and what is
-the "Arch" in Software Architecture?
+When architecting buildings the primary enemy is gravity. The Arch is an effective pattern that
+fights against it. The question we have now is: what is the analogous enemy in Software Engineering
+and what is the "Arch" in Software Architecture?
 
 In the early days of Software Engineering there was a major concern. It was referred to as
 [The Software Crisis](https://en.wikipedia.org/wiki/Software_crisis). This crisis can be
@@ -132,27 +131,25 @@ summarized by a quote from [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsge
 > programming has become an equally gigantic problem.”
 > <cite markdown="1">[Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_Dijkstra)</cite>
 
-There was a point where the computer was the most expensive part of a project. Now it is by far
-the programmer. This isn't simply because computing has become practically free, but also that
-the programmers have become far more expensive. You, I, and most people now have a supercomputer
-in their pocket. Let's compare:
+There was a point at which the computer was the most expensive part of a project. Now it is by far
+the programmer. Computing has become practically free, but the programmers have become far more expensive.
+You, I, and most people now have a supercomputer in their pocket:
 
-* **1997** - Intel ASCI Red/9152 supercomputer: **1.338 TFLOPS**
-* **2021** - IPhone 13 Pro: **1.5 TFLOPS**
+* **1997** - [Intel ASCI Red/9152 supercomputer](https://en.wikipedia.org/wiki/ASCI_Red): **1.338 TFLOPS**
+* **2021** - [IPhone 13 Pro](https://en.wikipedia.org/wiki/IPhone_13_Pro): **1.5 TFLOPS**
 
 So why do most software projects fail? The failure rates,
 [depending on the study](https://www.zdnet.com/article/study-68-percent-of-it-projects-fail/),
 range from 50% to 80% or more.
 
-There are many presentations and discussions 
 
 <!--
-[Gerald Sussman](https://en.wikipedia.org/wiki/Gerald_Jay_Sussman)
-explained in his [presentation](https://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute/)
-at least partly that:
-<q cite="https://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute/">
-    We Really Don't Know How To Compute!
-</q>
+ Link to microsoft study and my previous blog post. Code complexity remains even after
+ the organization complexity is resolved
+-->
+
+
+<!--
 
 Which is quite convincing but is thinking of the future of programming. To tackle the problems 
 of today, Alan Kay expresses it better: Is it Complex or did we make it complicated?
