@@ -7,7 +7,7 @@
             "label": "build",
             "group": "build",
             "type": "shell",
-            "command": "jekyll build"
+            "command": "bundle exec jekyll build"
         },
         {
             "label": "serve",
