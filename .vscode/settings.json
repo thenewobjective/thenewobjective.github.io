@@ -5,5 +5,8 @@
     "cSpell.words": [
         "Parler",
         "TFLOPS"
-    ]
+    ],
+    "[markdown]": {
+        "editor.wordWrap": "off"
+    }
 }
