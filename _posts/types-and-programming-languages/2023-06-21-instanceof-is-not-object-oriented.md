@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "instanceof Is Not Object Oriented"
-date:   2021-06-21 12:00:00 -0600
+date:   2023-06-21 12:00:00 -0600
 category: Types and Programming Languages
 permalink: /types-and-programming-languages/instanceof-is-not-object-oriented
 ---
