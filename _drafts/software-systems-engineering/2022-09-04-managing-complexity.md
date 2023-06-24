@@ -439,6 +439,10 @@ https://search.brave.com/search?q=entity+framework+vs+database+project&source=de
 https://www.johndcook.com/blog/2010/05/10/taking-your-code-for-a-walk/
 -->
 
+<!-- 
+'So much complexity in software comes from trying to make one thing do two things.' -- Ryan Singer
+-->
+
 <!--
 ## Example Architectures
 
