@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Branching Strategies"
-date:   2023-06-14 13:00:00 -0600
+date:   2023-06-26 13:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/branching-strategies
 ---

@@ -6,14 +6,15 @@
 {the higher level semantics of the language are not explicit and have to be kept in ones mind and/or derived. }
 {rely on the composition of stacks & stack manipulation functions (or Arrays in the case of APL and friends). Why limit oneself to a single Container type? }
 ---
+
 problem with tacit:
 names are potentially replaced with positional
 manipulation functions. for example see the quadratic
 formula implemented in an applicative vs tacit language:
 quadratic-formula(a, b, c) def= (root1, root2)
 where minusb = - 0 b
-radical = sqrt (- (* b b) (* 4 (* a c))))
-divisor = * 2 a
+radical = sqrt (- (*b b) (* 4 (*a c))))
+divisor =* 2 a
 root1 = / (+ minusb radical) divisor
 root2 = / (- minusb radical) divisor
 quadratic-2 == # a b c => [root1 root2 ]
@@ -36,6 +37,7 @@ Especially in the presence of macros?\
 \
 (apply quadratic-formula '(1 0 -4))\
 (apply quadratic-formula (reverse '(1 0 -4))"
+
 - Greg Buchholz
 {
 Concatenative PLs don't just eliminate spurious intermediate names but also nominal parameters.
@@ -44,14 +46,13 @@ Concatenative PLs don't just eliminate spurious intermediate names but also nomi
 - intermediate, explicit replaced with intermediate manipulation of implicit names
 - more for the sake of "beauty" than clarity.
 }
-Gilad Bracha refers to this style to Lego with a single peg. No wonder an explicit type is needed
+Gilad Bracha refers to this style to Lego with a single peg. No wonder an explicit type is needed
 
-https://groups.google.com/d/msg/comp.lang.javascript/b-7lSuoPDWQ/GvoshODtFAAJ
-http://www.google.com/url?q=http%3A%2F%2Flambda-the-ultimate.org%2Fnode%2F900%23comment-8723&sa=D&sntz=1&usg=AFQjCNFJceII8qo57m8gsDFisPHUFBji6w
+<https://groups.google.com/d/msg/comp.lang.javascript/b-7lSuoPDWQ/GvoshODtFAAJ>
+<http://www.google.com/url?q=http%3A%2F%2Flambda-the-ultimate.org%2Fnode%2F900%23comment-8723&sa=D&sntz=1&usg=AFQjCNFJceII8qo57m8gsDFisPHUFBji6w>
 
+<https://groups.google.com/forum/#!searchin/comp.lang.javascript/haufe$20concatenative|sort:date/comp.lang.javascript/9FxKCWG7NLQ/AQ6ehNcsBQAJ>
+<https://groups.google.com/forum/#!searchin/comp.lang.javascript/haufe$20concatenative|sort:date/comp.lang.javascript/b-7lSuoPDWQ/Y7DY2tr4FAAJ>
+<https://groups.yahoo.com/neo/groups/concatenative/conversations/topics/4997>
 
-
-
-https://groups.google.com/forum/#!searchin/comp.lang.javascript/haufe$20concatenative|sort:date/comp.lang.javascript/9FxKCWG7NLQ/AQ6ehNcsBQAJ
-https://groups.google.com/forum/#!searchin/comp.lang.javascript/haufe$20concatenative|sort:date/comp.lang.javascript/b-7lSuoPDWQ/Y7DY2tr4FAAJ
-https://groups.yahoo.com/neo/groups/concatenative/conversations/topics/4997
+If low-level operations like dup, swap, etc. are replaced with variables, then what have we gained over functional languages?
