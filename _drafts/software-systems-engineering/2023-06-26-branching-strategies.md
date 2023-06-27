@@ -12,23 +12,67 @@ permalink: /software-systems-engineering/branching-strategies
 
 ## Introduction
 
-<!-- // TODO -->
+Some programs are ephemeral; they are run once and then discarded. Examples include CLI scripts and one-off report
+generators. These are often referred to as throw-away since we can recreate them on-demand with little effort.
+Other programs are longer-lived; they are run multiple times, maintained, enhanced, and often collaboratively
+developed. This code and its associated operations require coordination, communication and care. Since these
+operations matter enough to be careful, they matter enough to build/use a system. As you likely know, the system
+we use is called a [Version Control System (VCS)](https://en.wikipedia.org/wiki/Version_control) which is a subtype
+of a [Software Configuration Management (SCM)](https://en.wikipedia.org/wiki/Software_configuration_management) system.
 
-## The Limitations of Human Processes
+Adopting a VCS is not enough. We must also establish a strategy for using it. Just like buying a car doesn't automatically
+get you to work, buying a VCS doesn't automatically get you a working system. You must also have a strategy for using it.
+Not all strategies are created equal and some are better than others. In this post, we will explore the various strategies
+and their trade-offs.
 
-<!--
-"SRE is what you get when you treat operations as if it’s a software problem."
+## Version Control Systems (VCS)
 
-If it matters enough to be careful it matters enough to build a system
- -->
+Before we can discuss branching strategies, we must first understand the VCS landscape. There are two main types of VCS:
 
-[![Evolution of the Programming Systems Product](https://mermaid.ink/img/pako:eNptkDFPAzEMhf-K5YGpN0CZbmCBCjEgVeqaxTq7bcQlAZ-DelT97ySUo-JASpTI-d7zi4_YJRZs8S0TK0W735OaiwDmrRdYvac-m08R0hZsL7DWtFMKwccdbMbBJAy1xrn7Uh0aOvgBHNbVNHflOFPwFE2Ksno5rOg4oY8SRan3H8JwBc_ko5Ut_OMAZ8EUsbkuhb85ZtDNBZq9LGfyKf5v6vbfJpfPIi4wiAbyXMZ3rFqHZUJBHLblyqQv1fJUuPzKZLJib0mx3VI_yAIpW9qMscPWNMsEPXiqLb-p0yeRH49J?type=png)](https://mermaid.live/edit#pako:eNptkDFPAzEMhf-K5YGpN0CZbmCBCjEgVeqaxTq7bcQlAZ-DelT97ySUo-JASpTI-d7zi4_YJRZs8S0TK0W735OaiwDmrRdYvac-m08R0hZsL7DWtFMKwccdbMbBJAy1xrn7Uh0aOvgBHNbVNHflOFPwFE2Ksno5rOg4oY8SRan3H8JwBc_ko5Ut_OMAZ8EUsbkuhb85ZtDNBZq9LGfyKf5v6vbfJpfPIi4wiAbyXMZ3rFqHZUJBHLblyqQv1fJUuPzKZLJib0mx3VI_yAIpW9qMscPWNMsEPXiqLb-p0yeRH49J)
+* Centralized Version Control Systems (CVCS)
+* Distributed Version Control Systems (DVCS)
+
+### Centralized Version Control Systems (CVCS)
+
+CVCSs are the older of the two types. They are characterized by a single, central repository that is shared by all
+developers. This repository is the source of truth and all changes must be pushed to it. Examples include Subversion
+(SVN) and Team Foundation Version Control (TFVC). These systems were criticized for being slow and for being a single
+point of failure. Branching was also expensive and slow with merges being even more so. This expensiveness of branching
+and merging (via the reverse [Conway's Law](/software-systems-engineering/conways-law-and-consequences#the-inverse))
+led to developers avoiding branching and merging. This avoidance led to ad-hoc human processes for managing changes
+which led to errors and frustration. There was a shining light in the darkness, however, and that was Perforce which
+supported cheap branching and merging.
+
+### Distributed Version Control Systems (DVCS)
+
+DVCSs are the newer of the two types. They are characterized by a local repository for each developer and a central
+repository that is shared by all developers. This central repository is the source of truth and all changes must be
+
+<!-- 
+https://blog.codinghorror.com/software-branching-and-parallel-universes/
+https://www.cloudbees.com/blog/branching-strategy
+-->
+
+### Version Control or Change Control?
 
 ## Why A Branching Strategy?
 
+
+<!-- One should not confuse the centralized nature of the repository with the centralized nature of the workflow. The
+workflow is a separate concern and can be centralized or decentralized regardless of the VCS. -->
+
+[![Evolution of the Programming Systems Product](https://mermaid.ink/img/pako:eNptkDFPAzEMhf-K5YGpN0CZbmCBCjEgVeqaxTq7bcQlAZ-DelT97ySUo-JASpTI-d7zi4_YJRZs8S0TK0W735OaiwDmrRdYvac-m08R0hZsL7DWtFMKwccdbMbBJAy1xrn7Uh0aOvgBHNbVNHflOFPwFE2Ksno5rOg4oY8SRan3H8JwBc_ko5Ut_OMAZ8EUsbkuhb85ZtDNBZq9LGfyKf5v6vbfJpfPIi4wiAbyXMZ3rFqHZUJBHLblyqQv1fJUuPzKZLJib0mx3VI_yAIpW9qMscPWNMsEPXiqLb-p0yeRH49J?type=png)](https://mermaid.live/edit#pako:eNptkDFPAzEMhf-K5YGpN0CZbmCBCjEgVeqaxTq7bcQlAZ-DelT97ySUo-JASpTI-d7zi4_YJRZs8S0TK0W735OaiwDmrRdYvac-m08R0hZsL7DWtFMKwccdbMbBJAy1xrn7Uh0aOvgBHNbVNHflOFPwFE2Ksno5rOg4oY8SRan3H8JwBc_ko5Ut_OMAZ8EUsbkuhb85ZtDNBZq9LGfyKf5v6vbfJpfPIi4wiAbyXMZ3rFqHZUJBHLblyqQv1fJUuPzKZLJib0mx3VI_yAIpW9qMscPWNMsEPXiqLb-p0yeRH49J)
+
+
 ### Branching Strategy Defined
 
+<!-- Just a workflow? -->
+
 ### The One Man Show
+
+<!-- "Don't manage people, manage the work" 
+  so branching strategy is agnostic to the number of people?
+-->
 
 <!-- Below is a variation that avoids the need for cherry-picking and long-running release branches. -->
 
@@ -49,27 +93,11 @@ CI: Continuous Integration
     Every integration point needs gates
 -->
 
-## Version Control Systems (VCS)
-
-### Centralized Version Control Systems (CVCS)
-
-Examples:
-
-* Subversion (SVN)
-* Team Foundation Version Control (TFVC)
-
-Criticisms:
-
-* Branches are expensive
-* Branches are slow
-* Branches are hard to merge
-
-### Distributed Version Control Systems (DVCS)
-
-Examples:
-
-* Git
-* Mercurial (Hg)
+<!-- " The disaster I see with having one branch is either every commit has 
+to be final and non breaking or the single branch is filled with unfinished 
+features, bugs and breaking code." 
+Which can be mitigated somewhat by feature flags.
+-->
 
 ### Versioning
 
@@ -93,12 +121,6 @@ Examples:
 
  <!-- prevent branching from master? -->
 
-<!-- " The disaster I see with having one branch is either every commit has 
-to be final and non breaking or the single branch is filled with unfinished 
-features, bugs and breaking code." 
-Which can be mitigated somewhat by feature flags.
--->
-
 <!-- 
 For example, how many developers are actively working on the project? 
 Are all developers on the team highly trusted? What regression testing is in place?
@@ -119,7 +141,6 @@ uncontrolled and unmanaged branching is guaranteed to fail.
 
 ## Single Branch
 
-* [Trunk Based Development](https://trunkbaseddevelopment.com/)
 
 ### Feature Flags vs Feature Branching
 
@@ -134,6 +155,8 @@ by mistake. When feature branches go wrong, they only go wrong in your developme
 environment, and the damage is relatively limited. When feature toggles go wrong,
 on the other hand, they go wrong in production—sometimes with catastrophic results.
 """
+
+Feature flags as a Strangler Pattern?
 -->
 
 ### Release Tags vs Release Branches
@@ -148,6 +171,7 @@ on the other hand, they go wrong in production—sometimes with catastrophic res
 
 * <https://jamesmckay.net/2017/01/martin-fowler-and-feature-branches-revisited/>
 * <https://martinfowler.com/articles/feature-toggles.html>
+* <https://trunkbaseddevelopment.com/>
 
 ### Branch Folders
 
@@ -228,6 +252,9 @@ Auto creating a dev server for branches?
  <https://stackoverflow.com/questions/3184555/cleaning-up-old-remote-git-branches#3184742>
  <https://stackoverflow.com/questions/13064613/how-to-prune-local-tracking-branches-that-do-not-exist-on-remote-anymore#17029936>
  <https://blogs.msdn.microsoft.com/devops/2018/04/19/release-flow-how-we-do-branching-on-the-vsts-team/>
+<https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops>
+<https://devblogs.microsoft.com/devops/introducing-scalar/>
+<https://xkcd.com/1597/>
 
 <https://learn.microsoft.com/en-us/azure/devops/repos/tfvc/branching-strategies-with-tfvc?view=azure-devops&viewFallbackFrom=vsts>
 
@@ -236,6 +263,9 @@ Auto creating a dev server for branches?
 <https://www.cloudbees.com/blog/branching-strategy>
 
 <https://devblogs.microsoft.com/devops/release-flow-how-we-do-branching-on-the-vsts-team/>
+
+Case sensitivity in git
+<https://github.com/tawman/git-unite>
 
 feature flags vs feature branches
  how is versioning impacted?
@@ -316,3 +346,9 @@ rough git-flow
                                                  |           |                                        |           |
                                                  +-----------+                                        +-----------+
 ```
+<!-- Throw away code 
+
+https://craftofcoding.wordpress.com/2020/02/19/what-is-throw-away-code/
+"Build a throw-away prototype as soon as possible, then throw it away and build the real thing."
+https://corgibytes.com/blog/2016/11/01/throwaway-code/
+-->
