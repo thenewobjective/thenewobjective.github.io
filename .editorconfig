@@ -1,0 +1,14 @@
+# EditorConfig: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+indent_style = space
+trim_trailing_whitespace = true # consistent with Markdown Lint rule MD009
