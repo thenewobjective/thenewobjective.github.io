@@ -51,8 +51,8 @@ Gilad Bracha refers to this style to Lego with a single peg. No wonder an explic
 <https://groups.google.com/d/msg/comp.lang.javascript/b-7lSuoPDWQ/GvoshODtFAAJ>
 <http://www.google.com/url?q=http%3A%2F%2Flambda-the-ultimate.org%2Fnode%2F900%23comment-8723&sa=D&sntz=1&usg=AFQjCNFJceII8qo57m8gsDFisPHUFBji6w>
 
-<https://groups.google.com/forum/#!searchin/comp.lang.javascript/haufe$20concatenative|sort:date/comp.lang.javascript/9FxKCWG7NLQ/AQ6ehNcsBQAJ>
-<https://groups.google.com/forum/#!searchin/comp.lang.javascript/haufe$20concatenative|sort:date/comp.lang.javascript/b-7lSuoPDWQ/Y7DY2tr4FAAJ>
+https://groups.google.com/g/comp.lang.javascript/c/9FxKCWG7NLQ/m/AQ6ehNcsBQAJ
+https://groups.google.com/g/comp.lang.javascript/c/b-7lSuoPDWQ/m/Y7DY2tr4FAAJ
 <https://groups.yahoo.com/neo/groups/concatenative/conversations/topics/4997>
 
 If low-level operations like dup, swap, etc. are replaced with variables, then what have we gained over functional languages?
