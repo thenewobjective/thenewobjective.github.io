@@ -92,7 +92,7 @@ The two primary forces that drive the design of a branching strategy are the two
 * The communication structure of the organization (How your team is organized)
 * The technical structure of the implementation (How your code is organized)
 
-If these two are in conflict, then the strategy will be suboptimal, awkward, and even harmful. For example, if the
+If these two are not aligned, then the strategy will be suboptimal, awkward, and even harmful. For example, if the
 organization is arranged into teams that are responsible for different parts of the codebase, then the strategy
 should reflect that. Another example is if the implementation has multiple long-running releases to be maintained,
 then the strategy should reflect that. The strategy is also a workflow; it has a set of rules that govern how
@@ -102,16 +102,20 @@ changes are made and how they are integrated.
 
 [![Single Branch](https://mermaid.ink/img/pako:eNq9kMFOhDAQhl-FzLlshAKmPRqNJ73szfQyoSPbLG1JLYkr4d0tRfYRvE2_-b90ZhbovSaQUJalCspFE0eSxdm4YaTiKaDrLxv_aw8mvgacMiqK3ltr4n_WwMBSsGh0GnnZuIJ4IUsKZCo1hqsCtvP7rKmVoxtMqtu3esfDimF2Sdsiq3Jr-mOeNEZ60Sb6APITxy9igHP055vrQSaBjtCzwSGgvacoS2_7UfNtGUzoPry3h5ieIBf4BinEqaurqhKPnWi7tmJwA8mb7iRq8dDUnLeci2Zl8JP1av0Fa36Opw?type=png)](https://mermaid.live/edit#pako:eNq9kMFOhDAQhl-FzLlshAKmPRqNJ73szfQyoSPbLG1JLYkr4d0tRfYRvE2_-b90ZhbovSaQUJalCspFE0eSxdm4YaTiKaDrLxv_aw8mvgacMiqK3ltr4n_WwMBSsGh0GnnZuIJ4IUsKZCo1hqsCtvP7rKmVoxtMqtu3esfDimF2Sdsiq3Jr-mOeNEZ60Sb6APITxy9igHP055vrQSaBjtCzwSGgvacoS2_7UfNtGUzoPry3h5ieIBf4BinEqaurqhKPnWi7tmJwA8mb7iRq8dDUnLeci2Zl8JP1av0Fa36Opw)
 
-The simplest strategy is to have a single branch. The idea is that all changes are made directly and no sub-branches
-are created. This strategy is simple and easy to understand. It's basically a non-strategy. This can be appropriate
+The simplest strategy is to have a single branch. The idea is that all changes are made directly, and no other branches
+are created. This approach is simple and easy to understand. It's basically a non-strategy.
+
+<!--
+This can be appropriate
 for small projects like a personal website, or a small library with a single developer. It can also be appropriate for
 a team that consists of a few very experienced people who have been working together for many years on the
-same project where there is a high degree of trust and a mature automated integration & testing system
-(<abbr title="Continuous Intregration" markdown="1">[CI](https://en.wikipedia.org/wiki/Continuous_integration)</abbr>)
-to prevent regressions. In other words, this strategy is appropriate for a team that is highly cohesive and has a high degree
+same project where there is a high degree of trust and a mature automation system in place for testing and
+building to prevent regressions. In other words, this strategy is appropriate for a team that is highly cohesive and has a high degree
 of trust. The [EiffelStudio](https://bertrandmeyer.com/2013/09/30/the-laws-of-branching-part-1/) team is an example of this.
-
-<!-- relationship to XP Methodology -->
+-->
+<!-- relationship to XP Methodology
+https://thinkinglabs.io/articles/2022/05/30/on-the-evilness-of-feature-branching-the-problems.html
+ -->
 
 #### Versioning
 
