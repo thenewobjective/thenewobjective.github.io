@@ -4,3 +4,6 @@ exergy
 anergy
 Anergetic
 Kolmogorov
+DVCSs
+CVCSs
+EiffelStudio

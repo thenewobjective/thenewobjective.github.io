@@ -1,3 +1,4 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q1997 - Intel ASCI Red/9152 supercomputer: 1.338 TFLOPS\n2021 - IPhone 13 Pro: 1.5 TFLOPS\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QEdsger Dijkstra\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThis crisis can be summarized by a quote from Edsger Dijkstra:\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTurning and turning in the widening gyre The falcon cannot hear the falconer; Things fall apart; the centre cannot hold; Mere anarchy is loosed upon the world...\\E$"}
