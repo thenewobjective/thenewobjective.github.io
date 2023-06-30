@@ -9,9 +9,9 @@
 
 
 """
-periodic reminder: letters and words are also just squiggles that we learn to make sense of. 
+periodic reminder: letters and words are also just squiggles that we learn to make sense of.
 
 there is nothing more "natural" about the alphabet than about mathematical or programming notations; it is all just a process of learning to read.
-""" 
+"""
 <https://mobile.twitter.com/argumatronic/status/1059519942645624835>
 -- @argumatronic

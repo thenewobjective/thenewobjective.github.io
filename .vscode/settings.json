@@ -8,5 +8,7 @@
     ],
     "[markdown]": {
         "editor.wordWrap": "off"
-    }
+    },
+    "editor.renderWhitespace": "all",
+    "files.eol": "\n"
 }

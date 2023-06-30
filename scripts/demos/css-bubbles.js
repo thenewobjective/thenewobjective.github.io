@@ -3,7 +3,7 @@ import {qs} from '../query.js'
 let container = qs('.demo-bubbles')
 
 function rand(min,max){
-    return Math.random() * (max - min) + min;  
+    return Math.random() * (max - min) + min;
 }
 
 function randInt(min,max){

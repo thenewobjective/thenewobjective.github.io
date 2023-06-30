@@ -23,7 +23,7 @@ class Index extends Map {
     upsert(token, title, url) {
       if(!this.has(token))
         this.set(token,[{title,url}])
-      else 
+      else
         this.set(token, this.get(token).concat({title,url}))
     }
 }

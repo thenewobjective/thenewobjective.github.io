@@ -34,12 +34,12 @@ o	Potentially many more for other services
 •	How is Program Level backlog managed?
 •	Bugs/issues that impact multiple portals are difficult to debug
 •	Knowledge of entire system is lost (blinders on)
-•	Integration 
+•	Integration
 Mono-Repo
 
 •	Potentially heavier to clone for developers (workarounds possible)
 •	Backlog management can be challenging (workarounds possible)
-•	
+•
 
 References
 

@@ -3,7 +3,7 @@ There are many stories of developers rewriting their software in another languag
 https://twitter.com/mlhaufe/status/1078758256141631490
 
 @donsbot
- Let's be honest, if you rewrote language X to the same language X you also would've gained a speedup. 
+ Let's be honest, if you rewrote language X to the same language X you also would've gained a speedup.
 @FunctorFact
 """
 

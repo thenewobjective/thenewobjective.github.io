@@ -75,7 +75,7 @@ this array in matrix form like it would be displayed on the screen:
 
 ```text
 y x -------------------------->
-|  R B G A R B G A ... R B G A  
+|  R B G A R B G A ... R B G A
 |  R B G A R B G A ... R B G A
 |  ...
 v  R B G A R B G A ... R B G A

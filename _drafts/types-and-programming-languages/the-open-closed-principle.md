@@ -37,7 +37,7 @@ There is a saying: "Hacks Breed Hacks", how does that influence your reasoning?
 
 Grizzly Kier
   20 days ago
-Also important to note. Closed to modification is that you shouldn't alter the state of the class at runtime. If there's a genuine bug in the class the closed for modification doesn't mean you can't fix said bug. Just don't modify the class to handle specific cases that come up with only certain classes it interfaces with. This more relates to the Single Responsibility Principle. (edited) 
+Also important to note. Closed to modification is that you shouldn't alter the state of the class at runtime. If there's a genuine bug in the class the closed for modification doesn't mean you can't fix said bug. Just don't modify the class to handle specific cases that come up with only certain classes it interfaces with. This more relates to the Single Responsibility Principle. (edited)
 
 
 Matt Adams
@@ -57,7 +57,7 @@ I see each sprint update that they're tracking removing that fix as an issue, so
 Leif Guillermo
   20 days ago
 I've typically interpreted it like this: Imagine relying on an API and expecting a specific set of functionality from it. It would be a really bad thing if the API changed on you without you knowing. Similarly, with objects, we wouldn't want dependencies to change what they do, so if we need to modify for a new use-case we'd want to extend the existing functionality and then modify that extension. Anyone relying on the old object won't be affected.
-If there's a bug in the original intended-functionality, I believe the Open-Closed principle doesn't apply, because in essence the user of that object is expecting the intended functionality to be bug free. (edited) 
+If there's a bug in the original intended-functionality, I believe the Open-Closed principle doesn't apply, because in essence the user of that object is expecting the intended functionality to be bug free. (edited)
 
 
 Michael Haufe
@@ -167,7 +167,7 @@ If instead your render function should loop over each passed in widget, and call
 Matt Adams
   19 days ago
 Went ahead and pulled up my copy to see what Meyer said in this situation:
-image.png 
+image.png
 image.png
 
 
@@ -225,7 +225,7 @@ I just wanted to take a moment to thank Michael for starting this conversation! 
 
 Michael Haufe
   19 days ago
-this isn't just an OOP problem though, it was mentioned upstream that you have this  issue in functional approaches as well where you might have a function with some behavior embedded (switch statement or otherwise) (edited) 
+this isn't just an OOP problem though, it was mentioned upstream that you have this  issue in functional approaches as well where you might have a function with some behavior embedded (switch statement or otherwise) (edited)
 
 
 Jeffrey Burke
@@ -237,7 +237,7 @@ That is to say the SRP has a lot do with understanding what "modification" means
 
 Michael Haufe
   13 days ago
-A bug for one client may be a feature for another. Example: JavaScript couldn't fix the Math.random() function to make it crypto random, nor could they fix the Y2K bug in Date (inherited from Java). These would break the web. (edited) 
+A bug for one client may be a feature for another. Example: JavaScript couldn't fix the Math.random() function to make it crypto random, nor could they fix the Y2K bug in Date (inherited from Java). These would break the web. (edited)
 
 
 Jeffrey Burke
@@ -249,12 +249,12 @@ I have no disagreement with your assessment lol ... but will say that should not
 
 Michael Haufe
   13 days ago
-I'm using the Socratic method in both threads and playing Devil's Advocate, so I haven't expressed my own opinion yet in either thread. (edited) 
+I'm using the Socratic method in both threads and playing Devil's Advocate, so I haven't expressed my own opinion yet in either thread. (edited)
 
 
 Jeffrey Burke
   13 days ago
-fair.  I recognize you were only providing a framework for a comment :slightly_smiling_face: (edited) 
+fair.  I recognize you were only providing a framework for a comment :slightly_smiling_face: (edited)
 
 
 Michael Haufe
@@ -277,7 +277,7 @@ abstract class Exp {
     abstract evaluate(): number
 }
 
-class Lit extends Exp { 
+class Lit extends Exp {
     constructor(
         public value: number
     ) { super(); }
@@ -289,11 +289,11 @@ class Lit extends Exp {
 
 class Add extends Exp {
     constructor(
-        public left: Exp, 
+        public left: Exp,
         public right: Exp
     ) { super(); }
 
-    evaluate() { 
+    evaluate() {
         return this.left.eval() + this.right.eval()
     }
 }
@@ -309,7 +309,7 @@ How do I add a new expression type Mul? Easy, just declare a new class:
 ```
 class Mul extends Exp {
     constructor(
-        public left: Exp, 
+        public left: Exp,
         public right: Exp
     ) { super(); }
 
@@ -324,7 +324,7 @@ let expTen: Exp = new Add(new Lit(4), new Mul(new Lit(2), new Lit(3)))
 let ten = expTen.evaluate() // 10
 ```
 
-But how do I add a new method (toString)? 
+But how do I add a new method (toString)?
 
 You may respond:
 "Ha you idiot, that's why we use functional programming. We don't have that problem"
@@ -337,7 +337,7 @@ type LitType = { _brand: 'Lit', value: number }
 type AddType = { _brand: 'Add', left: ExpType, right: ExpType }
 
 // Data "Constructors" (aka Introduction rules)
-function Lit(value: number): LitType { 
+function Lit(value: number): LitType {
     return { _brand: 'Lit', value }
 }
 
@@ -400,7 +400,7 @@ Wouldn't that require perfect knowledge of the future?
 Leif Guillermo
   13 days ago
 When coming up with an approach for implementation, it can help to determine whether you're going to have variability in functionality or variability in structure. Data structures are going to be better for variability in functionality, and Objects are going to be better for variability in structure.
-Data structures can expose their fields and shouldn't have unnecessary functionality associated with them, you create other classes that handle the functionality. (edited) 
+Data structures can expose their fields and shouldn't have unnecessary functionality associated with them, you create other classes that handle the functionality. (edited)
 
 
 Michael Haufe
@@ -413,7 +413,7 @@ Matt Adams
 Wouldn't that require perfect knowledge of the future?
 No, it shouldn't. For version 1.0.0, whatever the public interface of a module is, that should be set in stone. For users of that library, that is the stable interface and everything in it is open/closed. However, if the author needs to change that interface, they cannot do so without introducing a versioning change, say, 1.1.0 in this case (minor since interface additions should be non-downline breaking generally).
 If you only ever published one version of something, then yes, your first version would have to be forward thinking and consider every aspect of how it could be used or need to be modified, as changing the interface would violate the Closed principle.
-Edit - Summarizing a bit: The way I interpret it is that Open/Closed depends on what's shipped. If you need to modify the interface, you must ship a new version with an updated interface. Software itself is holistic with its version number, in that something like Spring 4 going to Spring 5 doesn't break Closed since it, in itself, is a different "module of software" with its own interface contracts entirely. (edited) 
+Edit - Summarizing a bit: The way I interpret it is that Open/Closed depends on what's shipped. If you need to modify the interface, you must ship a new version with an updated interface. Software itself is holistic with its version number, in that something like Spring 4 going to Spring 5 doesn't break Closed since it, in itself, is a different "module of software" with its own interface contracts entirely. (edited)
 
 
 Leif Guillermo
@@ -435,7 +435,7 @@ If you don't own the code, you have introduce new functionality at the boarder o
 
 Leif Guillermo
   13 days ago
-Oh, also, switch statements are bad in OOP when you can use generics/polymorphism :slightly_smiling_face: Kind of similar to what Matt was saying though, you'd want to figure out what your specification is prior to implementing it. A switch is a nice quick and dirty way of implementing something if you know things aren't going to change, but if you're expecting to add additional methods, you're going to be changing the logical flow of your application, and it can become harder to test the more you add, so it's not really good for future maintainability. (edited) 
+Oh, also, switch statements are bad in OOP when you can use generics/polymorphism :slightly_smiling_face: Kind of similar to what Matt was saying though, you'd want to figure out what your specification is prior to implementing it. A switch is a nice quick and dirty way of implementing something if you know things aren't going to change, but if you're expecting to add additional methods, you're going to be changing the logical flow of your application, and it can become harder to test the more you add, so it's not really good for future maintainability. (edited)
 :100:
 1
 

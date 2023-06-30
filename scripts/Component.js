@@ -11,7 +11,7 @@ class Component {
     el
 
     /**
-     * @param {ComponentOptions} options 
+     * @param {ComponentOptions} options
      */
     constructor(options) {
         Object.assign(this, {

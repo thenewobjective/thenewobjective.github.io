@@ -6,7 +6,7 @@ Who I believe was paraphrasing Luiz Fernando Capretz:
 excerpt from Search Results
 Web results
 
-Object-Oriented Software: Design . - Page 150 
+Object-Oriented Software: Design . - Page 150
 
 I'm also reminded of Feynman's Appendix to the Rogers Commission Report on the Space Shuttle Challenger Accident:
 

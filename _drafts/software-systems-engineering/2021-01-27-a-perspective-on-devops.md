@@ -131,7 +131,7 @@ specialized roles in the organization can be architected as a vertical abstracti
 
 {you will notice that up to this point I have avoided conflating the term "people" and "roles".}
 
-{incidental and accidental complexities also scale. What becomes apparent rather quickly is that these complexities do not scale at the same rate. Building scale dog house analogy. Analogies are lies that tell the truth} 
+{incidental and accidental complexities also scale. What becomes apparent rather quickly is that these complexities do not scale at the same rate. Building scale dog house analogy. Analogies are lies that tell the truth}
 
 {a collection of birds may be called a flock, but a collection of developers is called a merge conflict}
 

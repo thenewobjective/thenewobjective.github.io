@@ -14,7 +14,7 @@ class Filter {
 
     render() {
         this.#graphic.render()
-        
+
         const {height, width} = this
         for (let x = 0; x < width; x++) {
             for (let y = 0; y < height; y++) {

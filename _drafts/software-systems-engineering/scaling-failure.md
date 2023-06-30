@@ -62,7 +62,7 @@
 - Being the right size
   - http://web.archive.org/web/20190521234939/http://irl.cs.ucla.edu/papers/right-size.html
 
-- In biology the current set of genes are the result and not the history of changes, by which I mean 
+- In biology the current set of genes are the result and not the history of changes, by which I mean
   you don't know why a current result exists, just that the current shape is the result of being battered
   over a geological period of time.
 - Invasive species out-compete due to a novel means of beating.
@@ -137,7 +137,7 @@
 - Being the right size
   - http://web.archive.org/web/20190521234939/http://irl.cs.ucla.edu/papers/right-size.html
 
-- In biology the current set of genes are the result and not the history of changes, by which I mean 
+- In biology the current set of genes are the result and not the history of changes, by which I mean
   you don't know why a current result exists, just that the current shape is the result of being battered
   over a geological period of time.
 - Invasive species out-compete due to a novel means of beating.

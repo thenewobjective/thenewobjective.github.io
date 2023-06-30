@@ -39,7 +39,7 @@ In other words, after a few billing cycles to the client we can start releasing 
 Agile: Progress at the expense of Preservation
 
 - https://www.youtube.com/watch?v=m3Nn-cqYdbM
-- https://www.youtube.com/watch?v=2JNXx8VdbAE 
+- https://www.youtube.com/watch?v=2JNXx8VdbAE
 - https://www.youtube.com/watch?v=a-BOSpxYJ9M
 
 ---
@@ -64,7 +64,7 @@ Project Manager Comment:
 
 https://andyjohns.co/why-standups-are-useless-and-how-to-run-great-product-team-meetings/
 
-	- http://failedturing.blogspot.com/2016/10/agile-development-bertrand-meyer-edx.html 
+	- http://failedturing.blogspot.com/2016/10/agile-development-bertrand-meyer-edx.html
 	- https://myagilemind.wordpress.com/2011/10/18/story-points-vs-development-hours/
 	- Decisions today for an "MVP" leads to consequences.
 		○ "Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat."
@@ -85,7 +85,7 @@ Cloning vs environment issues.
 	disease in animals
 	See also Project 2501's speech before the merge
 
-Moving from testing and pre-release verification to 
+Moving from testing and pre-release verification to
 live feedback and deployment fixes
 	Like Tesla <https://youtu.be/ikMmkHzlTpk?t=2729>
 	Like the DevOps movement
@@ -100,14 +100,14 @@ Pushes software back into an analogous form of biology:
 
 Clown Computing
 
-		
+
 Agile is immaturity
     See Meyer's book section on CMMI
-	
+
 	https://twitter.com/search?q=agile%20(from%3Aheadinthebox)&src=typed_query
 https://www.youtube.com/results?search_query=erik+meijer+agile
 
-You can't spell Fragile without Agile 
+You can't spell Fragile without Agile
 
 if agile is so great why is our software so bad?
 
@@ -121,7 +121,7 @@ https://www.linkedin.com/pulse/scrum-communism-nemanja-marin%C4%8Di%C4%87/
 
 
 	Jocko <https://www.youtube.com/watch?v=zrlpv1HkKjM> @40:00
-	
+
 	"What is wrong with you that each one of your teams needs to talk to you every single day?"
 	"That's crazy to me. THat's not decentralized command"
 	"You aren't giving people the right direction"
@@ -130,7 +130,7 @@ https://www.linkedin.com/pulse/scrum-communism-nemanja-marin%C4%8Di%C4%87/
 	"You haven't given them the trust"
 	etc.
 	There are a number of reasons why it's happening, but it shouldn't be
-	
+
 	-------
 	WHat happens if a Product owner is not available for a meeting? What happens?
 

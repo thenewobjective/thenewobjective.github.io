@@ -14,7 +14,7 @@ Network effect
 
 By definition, half the population has below average intelligence
 
-You go to war with the people you have not the people you want 
+You go to war with the people you have not the people you want
 
 Quotes:
 Don't cast pearls before swine
@@ -78,7 +78,7 @@ But they still wouldn't have the tools, and have not grown.
 
 
 You have a right to your prejudices. Remember Huxley:
-https://youtu.be/vIeFt88Hm8s?t=4347 
+https://youtu.be/vIeFt88Hm8s?t=4347
 It was considered immoral to reject a sexual advance as it was prejudicial
 You can't have preferences without prejudices
 
@@ -120,4 +120,4 @@ You can do all of the right things and still fail.
 
 Recall the poem:
 
-I took my power in my hands and went against the world twas not quite as David had but I was twice as bold. The stone I cast but it was I who fell instead, was Goliath too large or I too small? 
+I took my power in my hands and went against the world twas not quite as David had but I was twice as bold. The stone I cast but it was I who fell instead, was Goliath too large or I too small?

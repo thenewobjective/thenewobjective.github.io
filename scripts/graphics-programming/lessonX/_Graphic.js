@@ -34,7 +34,7 @@ class Graphic {
         data[i + 3] = (c << 24 >>> 24);
     }
 
-    
+
 
     plotBezier({t, ctrlPts, c}){
         const step = 0.1

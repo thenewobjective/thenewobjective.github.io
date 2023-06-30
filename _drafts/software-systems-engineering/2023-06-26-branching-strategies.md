@@ -127,12 +127,12 @@ of trust. The [EiffelStudio](https://bertrandmeyer.com/2013/09/30/the-laws-of-br
 
 #### Release Management
 
-<!-- Release Tags vs Release Branches 
+<!-- Release Tags vs Release Branches
 
 """
 A tag is immutable.
-Whereas you can create a branch named "1.0.0" - you, or anyone with commit rights, can also then simply push 
-to that branch (deliberately or not) and change what 1.0.0 means. You can't do that with a tag, once you 
+Whereas you can create a branch named "1.0.0" - you, or anyone with commit rights, can also then simply push
+to that branch (deliberately or not) and change what 1.0.0 means. You can't do that with a tag, once you
 create a tag - that's it; Tag 1.0.0 means exactly that and can't be changed*.
 That's the main practical difference between a tag and a branch
 
@@ -140,11 +140,11 @@ That's the main practical difference between a tag and a branch
 """
 
 """
-Tags are mainly used for future reference to the specific version of the project, by tagging a commit. 
-You can always use branches of course, but if you change versions a lot, you will end up with lots of 
+Tags are mainly used for future reference to the specific version of the project, by tagging a commit.
+You can always use branches of course, but if you change versions a lot, you will end up with lots of
 unused or rarely used branches.
 
-Practically, tags are branches without branches anyway, just adding a way to reference a specific version 
+Practically, tags are branches without branches anyway, just adding a way to reference a specific version
 of the project to reduce complexity.
 """
 -->
@@ -153,14 +153,14 @@ of the project to reduce complexity.
 """
 Why not use tags for releases?
 Other branching workflows use Git tags to mark a specific commit as a release. Tags are useful for marking
-points in your history as important. Tags introduce extra steps in your workflow that aren't necessary if 
+points in your history as important. Tags introduce extra steps in your workflow that aren't necessary if
 you're using branches for your releases.
 
-Tags are maintained and pushed separately from your commits. Team members can easily miss tagging a commit 
-and then have to go back through the history afterwards to fix the tag. You can also forget the extra step 
+Tags are maintained and pushed separately from your commits. Team members can easily miss tagging a commit
+and then have to go back through the history afterwards to fix the tag. You can also forget the extra step
 to push the tag, leaving the next developer working from an older version of the code when supporting the release.
 
-The release branch strategy extends the basic feature branch workflow to handle releases. Your team doesn't 
+The release branch strategy extends the basic feature branch workflow to handle releases. Your team doesn't
 have to adopt any new version control process other than the cherry-pick to port changes.
 """
 https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=vsts#why-not-use-tags-for-releases
@@ -179,7 +179,7 @@ based on trust, policies, and communications that are not encoded in the strateg
 [normal distribution](https://www.britannica.com/science/human-intelligence-psychology/The-IQ-test#ref13355)
 of skill and experience on the team. The team will need to take tighter control of the project.
 
-<!-- 
+<!--
 No CI due to no branches and no PRs but can still have post-commit checks via hooks
 -->
 
@@ -244,10 +244,10 @@ Feature branching is a strategy that is similar to task branching, but the scope
 <!--
 """
 if you’re using feature toggles solely as a substitute for branching and merging,
-you are releasing code into production that you know for a fact to be immature, 
-untested, buggy, unstable and not fit for purpose. Your feature toggles are 
-supposed to isolate this code of course, but there is always a risk that the 
-isolation could be incomplete, or that the toggle could be flipped prematurely 
+you are releasing code into production that you know for a fact to be immature,
+untested, buggy, unstable and not fit for purpose. Your feature toggles are
+supposed to isolate this code of course, but there is always a risk that the
+isolation could be incomplete, or that the toggle could be flipped prematurely
 by mistake. When feature branches go wrong, they only go wrong in your development
 environment, and the damage is relatively limited. When feature toggles go wrong,
 on the other hand, they go wrong in production—sometimes with catastrophic results.
@@ -256,9 +256,9 @@ on the other hand, they go wrong in production—sometimes with catastrophic res
 Feature flags as a Strangler Pattern?
 -->
 
-<!-- " The disaster I see with having one branch is either every commit has 
-to be final and non breaking or the single branch is filled with unfinished 
-features, bugs and breaking code." 
+<!-- " The disaster I see with having one branch is either every commit has
+to be final and non breaking or the single branch is filled with unfinished
+features, bugs and breaking code."
 Which can be mitigated somewhat by feature flags.
 -->
 
@@ -288,10 +288,10 @@ Back Merging
 during iteration planning
  choose feature(s) that can be completed in that iteration
   What iteration is chosen if reintroduced? When it starts? when it finishes?
-  
+
  create a feature branch for each selected feature
   branch under features/feature-43
-  
+
 <https://news.ycombinator.com/item?id=7350432>
 <https://web.archive.org/web/20160310192046/http://www.stucharlton.com/blog/archives/000589.html>
 
@@ -319,7 +319,7 @@ Can't go to master due to subsequent changes? -->
 * <https://martinfowler.com/articles/feature-toggles.html>
 * <https://blog.codinghorror.com/software-branching-and-parallel-universes/>
 
-<!-- 
+<!--
 Integration Branches
 
 Just because code will build and pass tests on a developer's machine does not mean that it will build and pass tests
@@ -355,9 +355,9 @@ feature branches as deployment options
  multiple interacting projects?
  what gets versioned together gets deployed together
 
-* Depending on who you ask, Microsoft uses 
+* Depending on who you ask, Microsoft uses
   [Trunk Based Development](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/release-flow),
-  or [Release Flow](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/use-git-microsoft), 
+  or [Release Flow](https://docs.microsoft.com/en-us/azure/devops/learn/devops-at-microsoft/use-git-microsoft),
   or [something else](https://blogs.msdn.microsoft.com/oldnewthing/20180312-00/?p=98215) entirely.
 
  • Integration Branches
@@ -378,7 +378,7 @@ rough git-flow
 
 -->
 
-<!-- Throw away code 
+<!-- Throw away code
 
 https://craftofcoding.wordpress.com/2020/02/19/what-is-throw-away-code/
 "Build a throw-away prototype as soon as possible, then throw it away and build the real thing."

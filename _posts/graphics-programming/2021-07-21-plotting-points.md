@@ -44,7 +44,7 @@ this `#imageData` in matrix form like it would be displayed on the screen:
 
 ```text
 y x -------------------------->
-|  R B G A R B G A ... R B G A  
+|  R B G A R B G A ... R B G A
 |  R B G A R B G A ... R B G A
 |  ...
 v  R B G A R B G A ... R B G A
@@ -126,7 +126,7 @@ export default Point2D
 // const RED = new Color({r: 255, g: 0, b: 0, a: 255})
 class Color {
     #r; #g; #b; #a;
-    
+
     constructor({r,g,b,a}) {
         this.#r = r
         this.#g = g
@@ -140,7 +140,7 @@ class Color {
     get a() { return this.#a }
 
     // RED.toString() === '0xff0000ff'
-    toString() { 
+    toString() {
         return `0x${
             this.valueOf().toString(16).padStart(8,'0')
         }`
@@ -205,7 +205,7 @@ Now the plot method can be updated to support our new definitions:
 ```js
 // lib/Graphic.js
 class Graphic {
-    
+
     // ...
 
     setPixel({point: {x,y}, color: {r,g,b,a}}) {
@@ -225,7 +225,7 @@ update the method to handle these cases:
 class Graphic {
 
     // ...
-    
+
     setPixel({point: {x,y}, color: {r,g,b,a}}) {
         const { channels, height, width, imageData: { data } } = this,
               i = channels * (width * y + x);
@@ -277,7 +277,7 @@ import Point2D from '../lib/Point2D.js'
 import randomInt from '../lib/util/randomInt.js'
 
 class Noise extends Graphic {
-    randomColor() { 
+    randomColor() {
         return new Color({
             r: randomInt({max: 255}),
             g: randomInt({max: 255}),
@@ -330,7 +330,7 @@ Let's update the class to accept the graphic directly:
 class Canvas {
     #canvas = document.createElement('canvas')
     #ctx = this.#canvas.getContext('2d',{alpha: false})
-  
+
     constructor({container, height, width, graphic: {imageData}}) {
         this.#canvas.style.backgroundColor = 'black'
         Object.assign(this.#canvas, {height, width})

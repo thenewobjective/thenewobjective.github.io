@@ -4,7 +4,7 @@ import Point2D from '../lib/Point2D.js'
 import randomInt from '../lib/util/randomInt.js'
 
 class Noise extends Graphic {
-    randomColor() { 
+    randomColor() {
         return new Color({
             r: randomInt({max: 255}),
             g: randomInt({max: 255}),

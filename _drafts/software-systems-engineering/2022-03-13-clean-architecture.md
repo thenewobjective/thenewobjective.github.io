@@ -36,7 +36,7 @@ This structure is quite imposing. Standing at 481 feet tall it remained the tall
 structure for more than 3,800+ years with a weight of at least
 5.75 million tons.
 <sup>[[ref](https://weightofstuff.com/how-much-does-the-pyramid-of-giza-weigh/)]</sup>
-Is this considered a grand architecture? No, this is a monument to brute force. 
+Is this considered a grand architecture? No, this is a monument to brute force.
 It is little better than a pile of rocks:
 
 <figure>
@@ -151,7 +151,7 @@ range from 50% to 80% or more.
 
 <!--
 
-Which is quite convincing but is thinking of the future of programming. To tackle the problems 
+Which is quite convincing but is thinking of the future of programming. To tackle the problems
 of today, Alan Kay expresses it better: Is it Complex or did we make it complicated?
 -->
 
@@ -160,7 +160,7 @@ Clean Architecture implies Code First instead of DB first development?
 	(Entity Framework)
 -->
 
-<!-- 
+<!--
 Monolith by architecture, or monolith by infrastructure?
 https://twitter.com/alexcwatt/status/1544876135711916035
 

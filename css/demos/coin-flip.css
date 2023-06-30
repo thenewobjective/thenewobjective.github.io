@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.demo-coin-flip .coin-flip { 
+.demo-coin-flip .coin-flip {
     width: 100px;
     height: 100px;
     left: 0;
@@ -38,7 +38,7 @@
     0% { top: 100%; }
     100% { top: 0%; }
 }
-  
+
 @keyframes flip-head {
     0%, 100% { transform: rotateX(0deg); }
     50% { transform: rotateX(180deg); }

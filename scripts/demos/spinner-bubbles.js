@@ -3,7 +3,7 @@ import {qs} from '../query.js'
 class SpinnerBubbles {
     constructor() {
         this.el = qs('.spinner-bubbles-canvas')
-        
+
         this.centerX = this.el.offsetWidth / 2
         this.centerY =  this.el.offsetHeight / 2
 
@@ -28,7 +28,7 @@ class SpinnerBubbles {
     }
 
     init(){
-        this.bubbles = Array.from({length: this.bubbleCount}).map((_,i) => 
+        this.bubbles = Array.from({length: this.bubbleCount}).map((_,i) =>
             new Bubble(i, this.bubbleRadius, this.bubblingCount, this.coilCount, this.bubbleCount)
         )
         this.el.innerHTML = ''
@@ -89,7 +89,7 @@ class Bubble {
 
         if(this.theta > (bubblingCount + pic2))
             this.theta -= (bubblingCount + pic2);
-        
+
         if(this.theta < pic2) {
             this.y = this.radius * (this.theta/pic - 1);
             const r1 = Math.sqrt(this.radius**2 - this.y**2);
@@ -113,7 +113,7 @@ class Bubble {
         this.el.style.zIndex = `${Math.round(this.z) + 100}`;
 
         const pixelRadius = Math.round(Math.max(0, this.z * this.radius) / 512)
-        
+
         if(pixelRadius > 1) {
             this.el.style.filter = `blur(${pixelRadius}px)`
         } else {

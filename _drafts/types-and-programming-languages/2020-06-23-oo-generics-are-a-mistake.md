@@ -40,7 +40,7 @@ Associated Types
 * TypeScript simulation
 
 Generics vs Associated Types
-  
+
 Bonus: Reification
 
 Conclusion

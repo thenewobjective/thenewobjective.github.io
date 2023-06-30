@@ -212,7 +212,7 @@ March 11, 2021
 
 [7 European Nations Halt AstraZeneca Jabs On Reports Of "Serious" Blood Clots](https://www.zerohedge.com/markets/astrazeneca-slides-denmark-suspends-vaccinations-blood-clot-fears)
 
-<!-- 
+<!--
 https://www.zerohedge.com/covid-19/german-researchers-link-astrazeneca-jab-rare-blood-clots
 
 https://www.zerohedge.com/covid-19/top-eu-regulator-shares-results-astrazeneca-jab-safety-review-after-blood-clot-claims
@@ -368,7 +368,7 @@ JRE #1701
 	- "For most people vaccines are safe"
 	- Spike protein
 		- prefussion/postfusion
-			- pfizer/J&J lock the spike protein so it won't expand	
+			- pfizer/J&J lock the spike protein so it won't expand
 		- from virus is different than from vaccine
 		- "we don't now if it's harmful"
 			- not enough evidence
@@ -378,7 +378,7 @@ JRE #1701
 				- Is this consistent with the FOIA request of the Japanese data?
 			- She doesn't talk about the aggregation in the ovaries and bones
 			- SIMOA test: 25% false positives for spike protein?
-			- mRNA vaccines 
+			- mRNA vaccines
 				- associated with myocarditis
 			- J&J uses adenoviral
 				- linked to blood clots?

@@ -7,7 +7,7 @@ No semantics
 	docker
 	github actions
 	etc.
-	
+
 	all yaml
 
 

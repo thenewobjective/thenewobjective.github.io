@@ -45,8 +45,8 @@ https://twitter.com/Jonathan_Blow/status/1194078100885164032
 In support of TDD:
 	My unit test approach It demonstrates consistency with requirements
 		(Do contracts subsume completely?)
-		
-		
+
+
 	• https://blog.ploeh.dk/page2/
 	• https://sites.google.com/site/agilepatterns/home/red-green-refactor
 

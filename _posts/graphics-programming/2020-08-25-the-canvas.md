@@ -18,7 +18,7 @@ the element and hide the dirty details:
 class Canvas {
     #canvas = document.createElement('canvas')
     #ctx = this.#canvas.getContext('2d')
-  
+
     constructor({container, height, width}) {
       Object.assign(this.#canvas, {height, width})
       container.appendChild(this.#canvas)

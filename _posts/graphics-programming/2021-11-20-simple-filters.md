@@ -93,7 +93,7 @@ import Point2D from '../lib/Point2D.js'
 import randomInt from '../lib/util/randomInt.js'
 
 class Noise extends Graphic {
-    randomColor() { 
+    randomColor() {
         return new Color({
             r: randomInt({max: 255}),
             g: randomInt({max: 255}),
@@ -423,7 +423,7 @@ import Color from '../Color.js'
 class Sepia extends Filter {
     filterColor({r,g,b,a}) {
         return new Color({
-            r: 0.393*r + 0.769*g + 0.189*b, 
+            r: 0.393*r + 0.769*g + 0.189*b,
             g: 0.349*r + 0.686*g + 0.168*b,
             b: 0.272*r + 0.534*g + 0.131*b,
             a

@@ -8,10 +8,10 @@ ordering of method calls not type checkable?
 		implies state?
 		violates encapsulation?
 			also can't express object pools and proxies
-	
+
 	how to I express lifecycle order?
 		o.init() => o.connected() => o.attributeChanged => o.disconnected()
-		
+
 	Have to be different objects?
 		RawObject => ConnectedObject => DisconnectedObject => RawOBject?
 No mutable private state?

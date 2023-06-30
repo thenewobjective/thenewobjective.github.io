@@ -1,1 +1,1 @@
-Drill instructor in Kuwait 
+Drill instructor in Kuwait

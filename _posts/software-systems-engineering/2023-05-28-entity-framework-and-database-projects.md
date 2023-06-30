@@ -37,7 +37,7 @@ The appropriate representation of a system (Software or otherwise) is its [requi
 
 ```text
 R1: All Men Are Mortal
-R2: Socrates Is A Man 
+R2: Socrates Is A Man
 ---------------------- Modus-Ponens (Thus we can derive)
 R3: Socrates Is Mortal
 ```

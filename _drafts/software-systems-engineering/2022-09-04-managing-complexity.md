@@ -255,11 +255,11 @@ and not particularly well suited for any specific problem. In other words, we fa
 To state it another way: you don't know the details of the project you're building, but you've
 decided to use Python as your programming language as that's what you and your team already know.
 
-<!-- 
+<!--
 Elaborations to express an idea complicate the expression - Gerald Sussman
 -->
 
-<!-- 
+<!--
 1GL - 5GL
 
 Paper: Out of the Tar Pit
@@ -272,28 +272,28 @@ at the mess that is web an average development project: HTML, CSS, (Java|Type)Sc
 Server-Side language (C#, PHP, etc.), SQL for database access, YAML for build and deployment...
 -->
 
-<!-- 
+<!--
 https://martinfowler.com/dsl.html
 https://en.wikipedia.org/wiki/Domain-specific_language
 -->
 
 <!--
-Domain specific languages versus impedance mismatch. 
+Domain specific languages versus impedance mismatch.
 
-General purpose languages and combining multiple domains. 
+General purpose languages and combining multiple domains.
 
 Primitives means of combination and means of abstraction.
 
 Cognitive overhead of multiple dsls.
- 
+
 Internal versus external dsls.
 
-Regularity is desirable across problem domains as we are optimizing human understanding and minimizing cognitive load. We are not code golfing every where. 
+Regularity is desirable across problem domains as we are optimizing human understanding and minimizing cognitive load. We are not code golfing every where.
 
 Language Oriented Programming
 -->
 
-<!-- 
+<!--
 
 # No Silver Bullet:
 ```
@@ -309,7 +309,7 @@ data types, and the operations is steadily rising,
 but at an ever-decreasing rate. And language development
 approaches closer and closer to the sophistication of
 users.
-	Moreover, at some point the elaboration of a 
+	Moreover, at some point the elaboration of a
 high-level language beceomes a burden that increases,
 not reduces, the intellectual task of the user who
 rarely uses the esoteric constructs.
@@ -318,7 +318,7 @@ rarely uses the esoteric constructs.
         Bracha: Like Legos with a single peg
         https://buffered.io/posts/point-free-style-what-is-it-good-for/
         https://wiki.haskell.org/Pointfree#Problems_with_pointfree
-        Too abstract: hence   
+        Too abstract: hence
 -->
 
 <!--
@@ -342,7 +342,7 @@ Algorithmic Anergy is not just about explicit syntactic noise.
 
 <!-- A language is considered Low-Level if it forces you to pay attention to the irrelevant -->
 
-<!-- implicit meaning in your mind vs explicit meaning in the code. 
+<!-- implicit meaning in your mind vs explicit meaning in the code.
     let point = {x: 3, y: 4, z: 12}
 
     vs.
@@ -364,7 +364,7 @@ Syntactic sugar gets in the way due to a lack of orthogonality.
 Emergent behaviors and leaky abstractions are due to essential complexity being abstracted
 -->
 
-<!-- 
+<!--
 A Domain is a [Domain of Discourse](https://en.wikipedia.org/wiki/Domain_of_discourse).
     A sphere of knowledge (ontology), influence, or activity. The subject area to which the
     user applies a program is the domain of the software.
@@ -384,10 +384,10 @@ Refactoring won't eliminate language overhead
 > Strive to add function by deleting code.
 > <cite markdown="1">[Jon Bentley](https://en.wikipedia.org/wiki/Jon_Bentley_(computer_scientist))</cite>
 
-Relationship to cyclomatic complexity? 
+Relationship to cyclomatic complexity?
 
-Cyclomatic complexity doesn't measure extraneous language features though. 
-Relationship to Big O notation? 
+Cyclomatic complexity doesn't measure extraneous language features though.
+Relationship to Big O notation?
 
 there is a difference between an algorithm and the expression of the algorithm in a particular language
 The expression of that algorithm generally has overhead due to readability preferences ()
@@ -399,21 +399,21 @@ https://en.m.wikipedia.org/wiki/Software_rot
 https://en.m.wikipedia.org/wiki/Software_entropy
 https://en.m.wikipedia.org/wiki/Technical_debt
 
-Software rot due to a lack of robustness 
+Software rot due to a lack of robustness
 
-Implementation does not just introduce intentional or accidental technical debt, but there is also the overhead of the implementation language itself. A great maze of if-elsedom? All low-level code? 
+Implementation does not just introduce intentional or accidental technical debt, but there is also the overhead of the implementation language itself. A great maze of if-elsedom? All low-level code?
 
-Low level code being all code not directly related to the problem domain. Like for loops, the return or break statement, etc. 
+Low level code being all code not directly related to the problem domain. Like for loops, the return or break statement, etc.
 
-Are design patterns considered tech debt, or the lack of a proper domain language? 
+Are design patterns considered tech debt, or the lack of a proper domain language?
 
 Is using a particular programming language considered technical debt?
-PHP VS Haskell 
+PHP VS Haskell
 
 HQ9+ vs Perl
 -->
 
-<!-- 
+<!--
 Database first vs code first
 Where is the Domain of the application?
     Why isn't C# a framework details instead of the database?
@@ -424,7 +424,7 @@ useful for that database. DBMSes also force you to define behavior separate from
 as stored procedures. Custom types are also generally not possible:
 Is there a ZIP-code type? Phone type? Email Type? A UPC code type? etc.
 What's considered optimal for a database representation does not make it optimal for representation in
-other parts of your application. You'd also be combining your 
+other parts of your application. You'd also be combining your
 Data Access Layer (DAL) with your Business Logic Layer. (Which may or may not be okay)
 
 https://search.brave.com/search?q=database+first+vs+code+first
@@ -439,7 +439,7 @@ https://search.brave.com/search?q=entity+framework+vs+database+project&source=de
 https://www.johndcook.com/blog/2010/05/10/taking-your-code-for-a-walk/
 -->
 
-<!-- 
+<!--
 'So much complexity in software comes from trying to make one thing do two things.' -- Ryan Singer
 -->
 
@@ -450,7 +450,7 @@ Clean Architecture implies Code First instead of DB first development?
 	(Entity Framework)
 -->
 
-<!-- 
+<!--
 Monolith by architecture, or monolith by infrastructure?
 https://twitter.com/alexcwatt/status/1544876135711916035
 https://medium.com/qe-unit/airbnbs-microservices-architecture-journey-to-quality-engineering-d5a490e6ba4f

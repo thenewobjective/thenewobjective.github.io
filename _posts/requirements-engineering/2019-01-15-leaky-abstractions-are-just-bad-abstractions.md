@@ -122,13 +122,13 @@ roman numerals & tally marks vs multiplication
 
 Systems
 - Emergent Properties
-- Intentional Properties 
+- Intentional Properties
 
 ----
 A language is defined by primitives, means of combination, and a means of abstraction.
 
 idioms in the language are expressions that occur repeatedly in multiple contexts.
-	- these idioms are candidates for being abstracted to form a new idiom at a 
+	- these idioms are candidates for being abstracted to form a new idiom at a
 	higher level language of discourse where they are a new primitive
 - Tennant's Correspondance Principle applies here.
 

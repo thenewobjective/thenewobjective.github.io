@@ -26,16 +26,16 @@ type IfThenElse<P extends boolean,Q,R> = P extends true ? Q : R
 
 type Head<XS extends unknown[]> = XS extends [] ? never : XS[0]
 
-type Tail<XS extends unknown[]> = 
+type Tail<XS extends unknown[]> =
     XS extends [infer Head, ...infer Tail] ? Tail : never
 
-type Catenate<XS extends unknown[],YS extends unknown[]> = 
+type Catenate<XS extends unknown[],YS extends unknown[]> =
     XS extends [] ? YS :
     XS extends [infer Head, ...infer Tail] ? [Head, ...Catenate<Tail,YS>]:
     never
 
 /*
-type Compose<F extends (args: unknown[]) => unknown, G extends (args: unknown[]) => unknown> = 
+type Compose<F extends (args: unknown[]) => unknown, G extends (args: unknown[]) => unknown> =
     ReturnType<G> extends Parameters<F> ? (args: Parameters<G>) => ReturnType<F> : never
 */
 

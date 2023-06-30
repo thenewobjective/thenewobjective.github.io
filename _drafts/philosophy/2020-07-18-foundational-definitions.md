@@ -222,8 +222,8 @@ Is the number 7 more "real" than 7 items on your desk?
 Noumenon vs Phenomenon
 	https://en.wikipedia.org/wiki/Phenomenon
 	https://en.wikipedia.org/wiki/Noumenon
-	
-	
+
+
 The word "real" is the problem?
 
 ========
@@ -252,7 +252,7 @@ Richard Feynman
 https://www.informationphilosopher.com/solutions/scientists/feynman/past_and_future.html
 
 """
-My lab's attempt to relate a subjective reality (anxiety) to an objective reality (entropy): Psychological entropy: A framework for understanding uncertainty-related anxiety: 
+My lab's attempt to relate a subjective reality (anxiety) to an objective reality (entropy): Psychological entropy: A framework for understanding uncertainty-related anxiety:
 https://www.researchgate.net/publication/221752816_Psychological_Entropy_A_Framework_for_Understanding_Uncertainty-Related_Anxiety
 """
 
@@ -332,9 +332,9 @@ Useful fictions
 
 ##########
 
-Randomized Control Trials are a technique not the basis of truth. 
+Randomized Control Trials are a technique not the basis of truth.
 
-Archaeology is not based on it for example 
+Archaeology is not based on it for example
 
 ###
 
@@ -342,7 +342,7 @@ Optical Illusions
 
 ###
 
-"The facts are the enemy of the truth" 
+"The facts are the enemy of the truth"
 Don Quixote
 
 ==========
@@ -366,8 +366,8 @@ Michael Haufe
     of Jung's efforts or of esoteric works which would capture some of these qualia?
 
 Alfredo Liu-Perez
-  Am I correct in saying that in the Game of Thrones novels some  universals are the characters in the novels? If so, 
-  those universals only exist in our imagination. 
+  Am I correct in saying that in the Game of Thrones novels some  universals are the characters in the novels? If so,
+  those universals only exist in our imagination.
 
 Michael Haufe
   If I tackle this as a fictionalist/nominalist/programmer: We've already solved this: the independent existence of such
@@ -378,12 +378,12 @@ Thomas Morgan
   of relativity).  Furthermore, since "color" is just wave length, color is also relative to the observer
 
 Thomas Morgan
-  I think "qualia" must be attributes of us because they are dependent upon our experience of a thing.  However, that does not mean 
-  that the thing we are experiencing as a "qualia" does not exist independently of us.  For example, when I see an object as red, 
-  it is because my brain is interpreting the wave length of the light reflecting off of an object in a certain way.  However, the 
-  wave itself surely exists independently of my having observed it.  And even though the measure of the wave length is dependent upon 
-  the observer measuring it, there is still some physical object that the observer is measuring to get that wavelength.  This is what 
-  is intended by the abstract (mathematical) notion of an "invariant".  A vector, say, can be represented using different coordinates, 
+  I think "qualia" must be attributes of us because they are dependent upon our experience of a thing.  However, that does not mean
+  that the thing we are experiencing as a "qualia" does not exist independently of us.  For example, when I see an object as red,
+  it is because my brain is interpreting the wave length of the light reflecting off of an object in a certain way.  However, the
+  wave itself surely exists independently of my having observed it.  And even though the measure of the wave length is dependent upon
+  the observer measuring it, there is still some physical object that the observer is measuring to get that wavelength.  This is what
+  is intended by the abstract (mathematical) notion of an "invariant".  A vector, say, can be represented using different coordinates,
   but the vector itself does not change.
 
 Michael Haufe
@@ -399,20 +399,20 @@ Michael Haufe
 Michael Haufe
   What is the difference between the things-in-themselves and things we bring into "reality"?
   I can generate a "reality" through thoughts. Populate it, and "realize" it through invention and such.
-  Do we not do the same with many of these labels such as "length"? We model our shared delusion with some 
+  Do we not do the same with many of these labels such as "length"? We model our shared delusion with some
   framework, say "physics", we then convince each other of the utility of that framework so we have the same
   shared delusion.
   Or perhaps a better word is: a shared narrative instead of delusion.
 
 Thomas Morgan
-  The metaphysics of existence is a difficult topic, to be sure.  However, I am a realist.  When I was speaking 
-  of existence above, I was speaking in the context of physical objects, of the things-in-themselves.  Existence 
-  means something completely different when talking about ideas, concepts, abstractions, etc.  What I mean to say 
-  is that there actually is a physical object there to be observed.  The reason why we are capable of having shared 
-  narratives that are remarkably similar to each other is because there is an underlying reality independent of 
-  observers that we are all observing with similar senses.  One can argue about in what sense a universal exists, 
-  and that is why I posted this in the first place, but particulars, things-in-themselves, exist in a real, physical 
-  sense (at least I believe that to be true).  And while I acknowledge that we can never know with 100% certainty 
+  The metaphysics of existence is a difficult topic, to be sure.  However, I am a realist.  When I was speaking
+  of existence above, I was speaking in the context of physical objects, of the things-in-themselves.  Existence
+  means something completely different when talking about ideas, concepts, abstractions, etc.  What I mean to say
+  is that there actually is a physical object there to be observed.  The reason why we are capable of having shared
+  narratives that are remarkably similar to each other is because there is an underlying reality independent of
+  observers that we are all observing with similar senses.  One can argue about in what sense a universal exists,
+  and that is why I posted this in the first place, but particulars, things-in-themselves, exist in a real, physical
+  sense (at least I believe that to be true).  And while I acknowledge that we can never know with 100% certainty
   that what we experience as reality is in fact real, I believe that it is in fact so.
 
 Michael Haufe
@@ -428,7 +428,7 @@ Thomas Morgan
   We do not know that at small scales we can not divorce subject from observer.  That is only one interpretation of quantum mechanics.
 
 Thomas Morgan
-  Furthermore, empiricism can never yield an explanation as to the metaphysics of being or the reason why things are the way they are. 
+  Furthermore, empiricism can never yield an explanation as to the metaphysics of being or the reason why things are the way they are.
    It can only describe reality, in the same way that we can only experience reality filtered through our senses.
 
 Michael Haufe
@@ -456,14 +456,14 @@ Alfredo Liu-Perez
   This is deep. Very deep. Or maybe it's not deep and it just depends on our definition of existence.
 
 Thomas Morgan
-  Personally, I wouldn't say that existence is a matter of degree so much as it is a matter of kind.  Albert Einstein, as a temporal being, 
-  existed within a certain window of time and no longer exists (at least physically).  My understanding of Albert Einstein might be said 
-  to exist in the manner of an idea or a concept (if such things can be said to exist).  Because my understanding of Albert Einstein is 
-  based on my personal experience, that idea or concept cannot be said to exist independently of me, and so it lives and dies with me as 
-  an individual.  However, Albert Einstein, the myth, the legend, may live on beyond me as a sort of shared understanding or narrative.  
-  It is still dependent upon the people who know of Albert Einstein, but it is not solely dependent upon an individual.  Then there are 
-  concepts of mathematics or logic, tautological facts that some might argue have an existence entirely independent of people.  The argument 
-  might be that the reason that people must, when thinking correctly and logically, come up with the same answers is because those answers 
+  Personally, I wouldn't say that existence is a matter of degree so much as it is a matter of kind.  Albert Einstein, as a temporal being,
+  existed within a certain window of time and no longer exists (at least physically).  My understanding of Albert Einstein might be said
+  to exist in the manner of an idea or a concept (if such things can be said to exist).  Because my understanding of Albert Einstein is
+  based on my personal experience, that idea or concept cannot be said to exist independently of me, and so it lives and dies with me as
+  an individual.  However, Albert Einstein, the myth, the legend, may live on beyond me as a sort of shared understanding or narrative.
+  It is still dependent upon the people who know of Albert Einstein, but it is not solely dependent upon an individual.  Then there are
+  concepts of mathematics or logic, tautological facts that some might argue have an existence entirely independent of people.  The argument
+  might be that the reason that people must, when thinking correctly and logically, come up with the same answers is because those answers
   exist, in some sense, outside of the people who are considering them.
 
 Michael Haufe
@@ -550,7 +550,7 @@ Michael Haufe
   <https://en.wikipedia.org/wiki/Eternalism_(philosophy_of_time)>
 -->
 
-<!-- 
+<!--
 What is knowledge?
 https://mobile.twitter.com/fermatslibrary/status/1584904871131717634
 -->

@@ -25,8 +25,8 @@ These two perspectives are hardly new in fact we've had them since the invention
 
 References
 
-[2] 
-[3] 
+[2]
+[3]
 [4] https://gcc.gnu.org/ml/gcc/2002-08/msg00552.html
 
 Further Reading
@@ -51,7 +51,7 @@ I believe the thought is that they don't want to pay for what they don't use
 
 It is true that implementations of garbage collectors can be fraught with performance problems including GC pauses or in the case of copying collectors that a leaky abstraction would impact your own code
 
-My counter-argument is that manual memory allocation is incidental to the problem you're trying to resolve if I'm implementing a sorting algorithm for instance the allocation of the allocation of memory is not relevant to the actual 
+My counter-argument is that manual memory allocation is incidental to the problem you're trying to resolve if I'm implementing a sorting algorithm for instance the allocation of the allocation of memory is not relevant to the actual
 
 The domain of discourse is what is relevant not the incidental complexity of the memory management regardless if it is a leaky abstraction or not
 

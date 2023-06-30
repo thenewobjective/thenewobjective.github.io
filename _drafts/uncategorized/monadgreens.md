@@ -21,7 +21,7 @@ In mathematics
 
 The sum of an infinite series being -1/12
  <https://www.youtube.com/c/Mathologer/search?query=-%201%2F12>
- 
+
 <https://quoteinvestigator.com/2015/02/15/hidden-cat/>
 
 "Quidquid latine dictum sit, altum videtur"

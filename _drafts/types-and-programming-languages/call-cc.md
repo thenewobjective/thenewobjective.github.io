@@ -1,5 +1,5 @@
 ```js
-function callcc (f,cc) { 
+function callcc (f,cc) {
   f(function(x,k) { cc(x) },cc)
 }
 ```

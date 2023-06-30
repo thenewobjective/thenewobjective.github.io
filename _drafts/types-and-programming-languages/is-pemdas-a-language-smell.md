@@ -5,7 +5,7 @@ https://www.huffingtonpost.ca/entry/math-problem-twitter-bedmas-pemdas_ca_5d4203
 
     (2/3) / (3/7) =
         {reciprocal of 2nd fraction}
-    (2/3) * (7/3) = 
+    (2/3) * (7/3) =
     (2*7)/(3*3) = 14/9
 
 Now try with a zero in the numerator:
@@ -29,6 +29,6 @@ etc.
 60 / 5(7-5) = 24
 
     Following PEMDAS
-        60 / 5(2) = 
+        60 / 5(2) =
         60 / 10 =
         6

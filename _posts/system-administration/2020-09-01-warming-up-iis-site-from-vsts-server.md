@@ -79,7 +79,7 @@ goto :eof
 
 var url = WScript.arguments(0), // access commandline arguments
     TIMEOUT = 1000 * 60 * 10, // 10 mins
-    // Connection timeouts 
+    // Connection timeouts
     // <https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms760403(v=vs.85)?redirectedfrom=MSDN>
     lResolve = TIMEOUT,
     lConnect = TIMEOUT;

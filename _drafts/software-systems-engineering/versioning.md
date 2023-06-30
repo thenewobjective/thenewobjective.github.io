@@ -11,10 +11,10 @@ Further Reading
 	- https://jonoscript.wordpress.com/2011/07/18/its-not-about-the-version-numbers-its-about-extension-compatibility-and-long-term-support/
 	- https://semver.org/
 	- https://www.robnagler.com/2015/04/11/Major-Release-Syndrome.html
-	
+
 Notes
 	- SemVer is incompatible with staggered releases?
-	- Web browser style release numbers become pointless. Formerly were milestones. Now what are they? 
+	- Web browser style release numbers become pointless. Formerly were milestones. Now what are they?
 	- Versions vs Revisions
 	- Brendan Eich
 		○ https://twitter.com/BrendanEich/status/346303275596910592
@@ -27,10 +27,10 @@ Notes
 		○ https://bertrandmeyer.com/2017/12/12/devops-concept-workshop-announcement/
 		○ https://bertrandmeyer.com/2010/10/24/the-cloud-and-its-risks/
 	- If I change a UI or grossly update documentation, is that a Major version bump in SemVer if the API is the code is unchanged?
-	- What if the build system changes? WebPack => ParcelJS? 
+	- What if the build system changes? WebPack => ParcelJS?
 		○ The compiled source could be equivalent, but the source code is different. Hence version vs revision are different
 		○ Release vs Version vs Revision?
-	- Licensing number vs version. 
+	- Licensing number vs version.
 
 
 http://www.haskellforall.com/2019/05/release-early-and-often.html

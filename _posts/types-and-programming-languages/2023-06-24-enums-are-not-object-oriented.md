@@ -23,7 +23,7 @@ a fixed set of named constants. For example:
 
 ```typescript
 enum Color {
-  RED  = 0xFF0000, 
+  RED  = 0xFF0000,
   GREEN = 0x00FF00,
   BLUE = 0x0000FF
 }
@@ -101,7 +101,7 @@ function printColor(color: Color) {
 // or
 
 function printColor(color: Color) {
-  if (color === Color.RED) 
+  if (color === Color.RED)
     console.log("Red");
   else if (color === Color.GREEN)
     console.log("Green");
@@ -112,7 +112,7 @@ function printColor(color: Color) {
 
 Such forms of conditional logic are procedural and not object oriented.
 [Elsewhere](/types-and-programming-languages/instanceof-is-not-object-oriented) I have described
-this as the great maze of if-elsedom and switchdom where you have to navigate through the maze of 
+this as the great maze of if-elsedom and switchdom where you have to navigate through the maze of
 conditionals to find the code you wish to execute. This has the additional problem of being
 brittle to change. If you add a new color, you have to find all the places where you have
 a conditional/switch and add a new branch.
@@ -140,7 +140,7 @@ color.print();
 ```
 
 Where `color` is an instance of a subtype of `Color` that implements the `print` method.
-  
+
 But how should colors be represented? One approach is to use an explicit class hierarchy:
 
 ```typescript

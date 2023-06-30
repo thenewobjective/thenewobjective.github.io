@@ -13,12 +13,12 @@ AGPL only
 	another reason to AGPL
 		https://twitter.com/interfluidity/status/1191239999175319552
 		"""
-		skills and knowledge almost impossible, because 
-		learnings are quickly obsoleted by the next 
+		skills and knowledge almost impossible, because
+		learnings are quickly obsoleted by the next
 		“improvement” on continuous deployment.
 
 		The 1990s web centered URLs and view source,
-		treated users as contributors. This web treats 
+		treated users as contributors. This web treats
 		users the way a pusher does. /fin
 		"""
 		Steve Randy Waldman

@@ -3,7 +3,7 @@ import clamp from "./util/clamp.js";
 // const RED = new Color({r: 255, g: 0, b: 0, a: 255})
 class Color {
     #r; #g; #b; #a;
-    
+
     constructor({r,g,b,a}) {
         const range = {min:0, max:255}
         this.#r = clamp({x:r, ...range})
@@ -18,7 +18,7 @@ class Color {
     get a() { return this.#a }
 
     // RED.toString() === '0xff0000ff'
-    toString() { 
+    toString() {
         return `0x${
             this.valueOf().toString(16).padStart(8,'0')
         }`

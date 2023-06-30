@@ -137,14 +137,14 @@ type Exp = Lit | Add
 type Lit = { tag: 'Lit', value: number }
 type Add = { tag: 'Add', left: Exp, right: Exp }
 
-const evaluate = (exp: Exp): number => 
+const evaluate = (exp: Exp): number =>
     exp.tag == 'Lit' ? exp.value :
     evaluate(exp.left) + evaluate(exp.right)
 
 // 7 = 4 + (2 + 1)
-const expSeven: Exp = { tag: 'Add', 
+const expSeven: Exp = { tag: 'Add',
     left: { tag: 'Lit', value: 4 },
-    right: { tag: 'Add', 
+    right: { tag: 'Add',
         left: { tag: 'Lit', value: 2 },
         right: { tag: 'Lit', value: 1 }
     }
@@ -176,7 +176,7 @@ interface ILitType extends IExpType { value: number }
 interface IAddType extends IExpType { left: IExpType, right: IExpType }
 
 // Data "Constructors" (aka Introduction rules)
-class Lit implements ILitType { 
+class Lit implements ILitType {
     constructor(public value: number) { }
 }
 class Add implements IAddType {
@@ -198,7 +198,7 @@ type LitType = { _brand: 'Lit', value: number }
 type AddType = { _brand: 'Add', left: ExpType, right: ExpType }
 
 // Data "Constructors" (aka Introduction rules)
-function Lit(value: number): LitType { 
+function Lit(value: number): LitType {
     return { _brand: 'Lit', value }
 }
 function Add(left: ExpType, right: ExpType): AddType {
@@ -248,7 +248,7 @@ let expSeven: ExpType = Add(Lit(4), Add(Lit(2), Lit(1)))
   * A lexical environment
   * Free variables in that environment
 
-https://secure.wikimedia.org/wikipedia/en/wiki/Closure_%28computer_science%29 
+https://secure.wikimedia.org/wikipedia/en/wiki/Closure_%28computer_science%29
 
 ====================================================================================
 
@@ -284,7 +284,7 @@ trivial:
 type EvalType = (exp: ExpType) => number
 
 // Data "Destructor" (aka Elimination rule)
-let evaluate: EvalType = (exp: ExpType) => 
+let evaluate: EvalType = (exp: ExpType) =>
     exp._brand == 'Lit' ? exp.value :
     exp._brand == 'Add' ? evaluate(exp.left) + evaluate(exp.right) :
     NaN
