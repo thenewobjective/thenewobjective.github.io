@@ -72,7 +72,7 @@ analogy: while our universes were parallel they are now converging and problems 
 inconsistencies between them will be revealed.
 
 <figure>
-  <img src="/media-library/software-systems-engineering/mirror-dimension-dr-strange.webp" alt="Mirror Dimension from Dr Strange">
+  <img src="../../media-library/software-systems-engineering/mirror-dimension-dr-strange.webp" alt="Mirror Dimension from Dr Strange">
   <figcaption markdown="1">
 [The Mirror Dimension](https://marvel.fandom.com/wiki/Mirror_Dimension) from [Doctor Strange (film)](https://en.wikipedia.org/wiki/Doctor_Strange_(2016_film))
   </figcaption>
@@ -100,36 +100,68 @@ changes are made and how they are integrated.
 
 ### Single Branch
 
-[![Single Branch](https://mermaid.ink/img/pako:eNq9kMFOhDAQhl-FzLlshAKmPRqNJ73szfQyoSPbLG1JLYkr4d0tRfYRvE2_-b90ZhbovSaQUJalCspFE0eSxdm4YaTiKaDrLxv_aw8mvgacMiqK3ltr4n_WwMBSsGh0GnnZuIJ4IUsKZCo1hqsCtvP7rKmVoxtMqtu3esfDimF2Sdsiq3Jr-mOeNEZ60Sb6APITxy9igHP055vrQSaBjtCzwSGgvacoS2_7UfNtGUzoPry3h5ieIBf4BinEqaurqhKPnWi7tmJwA8mb7iRq8dDUnLeci2Zl8JP1av0Fa36Opw?type=png)](https://mermaid.live/edit#pako:eNq9kMFOhDAQhl-FzLlshAKmPRqNJ73szfQyoSPbLG1JLYkr4d0tRfYRvE2_-b90ZhbovSaQUJalCspFE0eSxdm4YaTiKaDrLxv_aw8mvgacMiqK3ltr4n_WwMBSsGh0GnnZuIJ4IUsKZCo1hqsCtvP7rKmVoxtMqtu3esfDimF2Sdsiq3Jr-mOeNEZ60Sb6APITxy9igHP055vrQSaBjtCzwSGgvacoS2_7UfNtGUzoPry3h5ieIBf4BinEqaurqhKPnWi7tmJwA8mb7iRq8dDUnLeci2Zl8JP1av0Fa36Opw)
+<!-- Definition, Pros, Cons, Team and Code Structure, Relationship to methodology, Versioning and Releases -->
+
+<figure markdown="1">
+
+[![Single Branch](https://mermaid.ink/img/pako:eNq9j0EKwjAURK8isw7F2hqTrBVXrtxJNp8mtkHTlJiCWnp3a0WP4G7m8x78GVAFY6FQu7SP1DU66naxqIL3Lv0zg8Hb6MmZ6ZnhfddIjfVWQ03RULxo6HacuL4zlOzOuBQi1JmuN8tAfQrHR1tBpdjbL7R1VEfyP8rO0uEzeV7O0FF7CsF_xalCDbhDyXUmZVGuZF5wwVeC4QFVFHm2lHKTCy6E5OWSjwzP2c_HF2Zdbsc?type=png)](https://mermaid.live/edit#pako:eNq9j0EKwjAURK8isw7F2hqTrBVXrtxJNp8mtkHTlJiCWnp3a0WP4G7m8x78GVAFY6FQu7SP1DU66naxqIL3Lv0zg8Hb6MmZ6ZnhfddIjfVWQ03RULxo6HacuL4zlOzOuBQi1JmuN8tAfQrHR1tBpdjbL7R1VEfyP8rO0uEzeV7O0FF7CsF_xalCDbhDyXUmZVGuZF5wwVeC4QFVFHm2lHKTCy6E5OWSjwzP2c_HF2Zdbsc)
+
+<figcaption>Single Branch</figcaption>
+</figure>
 
 The simplest strategy is to have a single branch. The idea is that all changes are made directly, and no other branches
-are created. This approach is simple and easy to understand. It's basically a non-strategy.
+are created. This approach is simple and easy to understand. It's basically a non-strategy that gives you version
+control and little else.
+
+This strategy is appropriate for small projects and tightly-knit teams: a wiki, a personal website, a small library, etc.
+This can also be usable for larger projects when the codebase is simple and modularized with defined areas of responsibility.
+The idea is that if you make small changes, then at worst you should only break a small part of the system which should then
+be easy to fix. An example of this is the [EiffelStudio](https://bertrandmeyer.com/2013/09/30/the-laws-of-branching-part-1/)
+project.
+
+If the codebase is not modularized/simple, then chaos can ensue. A seemingly small change can have
+[far-reaching consequences](https://en.wikipedia.org/wiki/Butterfly_effect) and potentially break the entire system
+in a way that is difficult to fix. Assuming that the codebase **is** modularized/simple, then this strategy is still
+risky when the team is large and/or inexperienced. The reason is that as the team grows, the number of changes
+increases, and the likelihood of overlap and breakages increases. This is especially true for inexperienced developers
+who are more likely to make mistakes. This can be mitigated somewhat by code reviews, pair programming,
+[Continuous Integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration), and other human processes.
+
+From the above, you might notice that this strategy corresponds and couples well with the
+[Extreme Programming (XP)](https://en.wikipedia.org/wiki/Extreme_programming) methodology which emphasizes
+simplicity, tight communication in a team, and incremental development with frequent releases. The basic
+idea (as described by [Bertrand Meyer](https://www.amazon.com/Agile-Good-Hype-Bertrand-Meyer/dp/3319051547/ref=sr_1_1?crid=O7JHT1XXCOOB))
+is *"Increment then Simplify"*. You define a set of tests that represent the requirements of the new functionality.
+The tests fail because the implementation doesn't exist yet. You then write the code to make the tests pass. This is
+called [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development). Once the tests pass,
+you [refactor](https://en.wikipedia.org/wiki/Code_refactoring) to make it simpler and more maintainable. Rinse and
+repeat.
+
+Release management is straightforward with this strategy. You could simply deploy the latest commit to production,
+or you could tag a commit with a release version and deploy that. The latter is more disciplined and is often used
+in conjunction with the [Semantic Versioning](https://semver.org/) scheme. A Continuous Delivery (CD) pipeline
+can be configured to automatically deploy the latest commit to a production environment, or it can be configured to
+wait for a specific tag and deploy the associated commit to the appropriate environment(s).
+
+<figure markdown="1">
+
+[![Single Branch with release version tags](https://mermaid.ink/img/pako:eNqdkLFOwzAURX8lurOJ4rqpa89FTEzdkJdHbBKrdRwZB7VE-XfSoLKxdHtXOufq6U5oonXQaH1-STR0Jpm-KJoYgs__3UWmVhcGX7ysyuqJzkNHBg-Y7y4_JBqAIbgUyNvl9-nGGeTOBWdwwyyl01Lczws3Dpaye7Y-xwT9QedPx0Bjjsdr30DnNLo7dPDUJgp_lFul19-F1qEYBurfYgx3cYnQEy7Qqi6VEvWWc6VqwaViuEILocrdlsv9Xu4qKeqNnBm-1wI-_wBqwnrU?type=png)](https://mermaid.live/edit#pako:eNqdkLFOwzAURX8lurOJ4rqpa89FTEzdkJdHbBKrdRwZB7VE-XfSoLKxdHtXOufq6U5oonXQaH1-STR0Jpm-KJoYgs__3UWmVhcGX7ysyuqJzkNHBg-Y7y4_JBqAIbgUyNvl9-nGGeTOBWdwwyyl01Lczws3Dpaye7Y-xwT9QedPx0Bjjsdr30DnNLo7dPDUJgp_lFul19-F1qEYBurfYgx3cYnQEy7Qqi6VEvWWc6VqwaViuEILocrdlsv9Xu4qKeqNnBm-1wI-_wBqwnrU)
+
+<figcaption>Single Branch with release version tags</figcaption>
+</figure>
 
 <!--
-This can be appropriate
-for small projects like a personal website, or a small library with a single developer. It can also be appropriate for
-a team that consists of a few very experienced people who have been working together for many years on the
-same project where there is a high degree of trust and a mature automation system in place for testing and
-building to prevent regressions. In other words, this strategy is appropriate for a team that is highly cohesive and has a high degree
-of trust. The [EiffelStudio](https://bertrandmeyer.com/2013/09/30/the-laws-of-branching-part-1/) team is an example of this.
--->
-<!-- relationship to XP Methodology
 https://thinkinglabs.io/articles/2022/05/30/on-the-evilness-of-feature-branching-the-problems.html
  -->
 
-#### Versioning
+<!--
+When a branch is created at abstracts and hides the work in progress this is a problem if parallel work is being done
+that overlaps.
 
-<!-- <https://semver.org/> -->
-<!-- <https://blog.codinghorror.com/whats-in-a-version-number-anyway/> -->
-<!-- <https://www.infoq.com/articles/roy-fielding-on-versioning/> -->
-<!-- versioning vs multiple people editing an NPM package (DEV environment) -->
-<!-- <https://medium.com/swlh/how-to-automatically-bump-npm-package-version-feee0e4dde6f> -->
-<!-- <https://softwareengineering.stackexchange.com/questions/253306/why-is-build-number-an-abuse-of-semantic-versioning> -->
-<!-- <https://stackoverflow.com/questions/52312672/vsts-azure-devops-auto-increment-package-version> -->
+No concept of Hotfix?
 
-<!-- {Versioning is a form of naming} -->
-
-#### Release Management
+A Hotfix is a change that is made directly to the release branch. If there is only one branch, then it's a moot point.
+-->
 
 <!-- Release Tags vs Release Branches
 
@@ -139,8 +171,6 @@ Whereas you can create a branch named "1.0.0" - you, or anyone with commit right
 to that branch (deliberately or not) and change what 1.0.0 means. You can't do that with a tag, once you
 create a tag - that's it; Tag 1.0.0 means exactly that and can't be changed*.
 That's the main practical difference between a tag and a branch
-
-* You can delete and recreate a tag thereby changing a tag, but certainly not by accident.
 """
 
 """
@@ -153,39 +183,9 @@ of the project to reduce complexity.
 """
 -->
 
-<!--
-"""
-Why not use tags for releases?
-Other branching workflows use Git tags to mark a specific commit as a release. Tags are useful for marking
-points in your history as important. Tags introduce extra steps in your workflow that aren't necessary if
-you're using branches for your releases.
-
-Tags are maintained and pushed separately from your commits. Team members can easily miss tagging a commit
-and then have to go back through the history afterwards to fix the tag. You can also forget the extra step
-to push the tag, leaving the next developer working from an older version of the code when supporting the release.
-
-The release branch strategy extends the basic feature branch workflow to handle releases. Your team doesn't
-have to adopt any new version control process other than the cherry-pick to port changes.
-"""
-https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=vsts#why-not-use-tags-for-releases
--->
-
 <!-- release notes -->
 
 <!-- A Branching Strategy for Staggered and Long Term Releases -->
-
-#### Caveats
-
-As the team/project grows and changes, this strategy will become less and less appropriate. The reason is that it's
-based on trust, policies, and communications that are not encoded in the strategy itself. At scale this will
-[break down](/software-systems-engineering/conways-law-and-consequences#communication-structure) due to
-[Miller's Law](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two) and the
-[normal distribution](https://www.britannica.com/science/human-intelligence-psychology/The-IQ-test#ref13355)
-of skill and experience on the team. The team will need to take tighter control of the project.
-
-<!--
-No CI due to no branches and no PRs but can still have post-commit checks via hooks
--->
 
 ### Task Branching
 
@@ -193,9 +193,11 @@ No CI due to no branches and no PRs but can still have post-commit checks via ho
 
 This strategy is sometimes referred to as "feature branching", but I prefer the term "task branching" because it's
 more accurate in its association with a task in an issue tracking system and the scope of the changes it includes.
-The idea is to have a single branch, but to create a new branch for each task. This complements the single
+The idea is to have a single branch, but to create a new branch for each task. This augments the single
 branch strategy by providing a way to isolate changes that are slightly more complex to complete or time-consuming while
-enabling the team to continue to work on other tasks in parallel that might have overlapping changes.
+enabling the team to continue to work on other tasks in parallel that might have overlapping changes. You can think of
+this as an encoding of the "trust" and "communication" aspects of the single branch strategy that only exists in the
+minds of the team members.
 
 In the above diagram you'll notice that each task branch name is prefixed with a "folder" name
 `user/<username>/task-<task-id>`. This is a convention that can be used to help organize the branches
@@ -418,7 +420,3 @@ https://corgibytes.com/blog/2016/11/01/throwaway-code/
 ### Nexus and Safe
 
 * Is there any direct relationship between branching strategies and Nexus/Safe?
-
-### Methodologies
-
-* Is there a reltion between branching strategies and methodologies like Scrum, Kanban, XP, etc.?
