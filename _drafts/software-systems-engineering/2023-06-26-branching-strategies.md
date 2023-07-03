@@ -163,25 +163,7 @@ No concept of Hotfix?
 A Hotfix is a change that is made directly to the release branch. If there is only one branch, then it's a moot point.
 -->
 
-<!-- Release Tags vs Release Branches
-
-"""
-A tag is immutable.
-Whereas you can create a branch named "1.0.0" - you, or anyone with commit rights, can also then simply push
-to that branch (deliberately or not) and change what 1.0.0 means. You can't do that with a tag, once you
-create a tag - that's it; Tag 1.0.0 means exactly that and can't be changed*.
-That's the main practical difference between a tag and a branch
-"""
-
-"""
-Tags are mainly used for future reference to the specific version of the project, by tagging a commit.
-You can always use branches of course, but if you change versions a lot, you will end up with lots of
-unused or rarely used branches.
-
-Practically, tags are branches without branches anyway, just adding a way to reference a specific version
-of the project to reduce complexity.
-"""
--->
+<!-- Release Tags vs Release Branches -->
 
 <!-- release notes -->
 
@@ -222,10 +204,9 @@ provide this functionality and provide a user interface to configure:
 * [GitHub article](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 * [Azure DevOps article](https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser)
 
-While the Pull Request is pending, the developer can continue to work on other tasks in parallel.
-
-After the pull request is approved and the gate is passed, the task branch can be merged into the main branch. This
-usually happens automatically by your chosen Git hosting service.
+While the Pull Request is pending, the developer can continue to work on other tasks in parallel. After the pull request
+is approved and the gates are passed, the task branch can be merged into the main branch. This usually happens automatically
+by your chosen Git hosting service.
 
 Tasks, being generally small in scope, often do not require a lot of time to complete and do not require a lot of
 changes to the code base. This means that the task branch will often be merged into the main branch without any
@@ -237,13 +218,17 @@ services usually provide a way to delete these branches with a single click or d
 
 <!-- Relationship to Scrum/XP -->
 
+Any methodology that utilizes a task-based approach to development can benefit from this strategy. This includes
+Scrum, XP, and Kanban. In fact, this strategy is often used in conjunction with the single branch strategy in
+
 ### Feature Branching
+
+Feature branching is sometimes used as a synonym for task branching, which is unfortunate. The term "feature" is
+often used to describe a larger body of work that is too complex to be completed in a single task.
 
 <!-- No Longer XP? Solidly Scrum?
 CMMI?
  -->
-
-Feature branching is a strategy that is similar to task branching, but the scope of the changes are larger.
 
 <!-- Feature Flags vs Feature Branching -->
 
