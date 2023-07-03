@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Branching Strategies"
-date:   2023-06-26 13:00:00 -0600
+date:   2023-07-02 13:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/branching-strategies
 ---
@@ -72,7 +72,7 @@ analogy: while our universes were parallel they are now converging and problems 
 inconsistencies between them will be revealed.
 
 <figure>
-  <img src="../../media-library/software-systems-engineering/mirror-dimension-dr-strange.webp" alt="Mirror Dimension from Dr Strange">
+  <img src="/media-library/software-systems-engineering/mirror-dimension-dr-strange.webp" alt="Mirror Dimension from Dr Strange">
   <figcaption markdown="1">
 [The Mirror Dimension](https://marvel.fandom.com/wiki/Mirror_Dimension) from [Doctor Strange (film)](https://en.wikipedia.org/wiki/Doctor_Strange_(2016_film))
   </figcaption>
@@ -106,7 +106,7 @@ changes are made and how they are integrated.
 
 [![Single Branch](https://mermaid.ink/img/pako:eNq9j0EKwjAURK8isw7F2hqTrBVXrtxJNp8mtkHTlJiCWnp3a0WP4G7m8x78GVAFY6FQu7SP1DU66naxqIL3Lv0zg8Hb6MmZ6ZnhfddIjfVWQ03RULxo6HacuL4zlOzOuBQi1JmuN8tAfQrHR1tBpdjbL7R1VEfyP8rO0uEzeV7O0FF7CsF_xalCDbhDyXUmZVGuZF5wwVeC4QFVFHm2lHKTCy6E5OWSjwzP2c_HF2Zdbsc?type=png)](https://mermaid.live/edit#pako:eNq9j0EKwjAURK8isw7F2hqTrBVXrtxJNp8mtkHTlJiCWnp3a0WP4G7m8x78GVAFY6FQu7SP1DU66naxqIL3Lv0zg8Hb6MmZ6ZnhfddIjfVWQ03RULxo6HacuL4zlOzOuBQi1JmuN8tAfQrHR1tBpdjbL7R1VEfyP8rO0uEzeV7O0FF7CsF_xalCDbhDyXUmZVGuZF5wwVeC4QFVFHm2lHKTCy6E5OWSjwzP2c_HF2Zdbsc)
 
-<figcaption>Single Branch</figcaption>
+<figcaption>Single Branch Strategy</figcaption>
 </figure>
 
 The simplest strategy is to have a single branch. The idea is that all changes are made directly, and no other branches
@@ -137,12 +137,6 @@ called [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven
 you [refactor](https://en.wikipedia.org/wiki/Code_refactoring) to make it simpler and more maintainable. Rinse and
 repeat.
 
-Release management is straightforward with this strategy. You could simply deploy the latest commit to production,
-or you could tag a commit with a release version and deploy that. The latter is more disciplined and is often used
-in conjunction with the [Semantic Versioning](https://semver.org/) scheme. A Continuous Delivery (CD) pipeline
-can be configured to automatically deploy the latest commit to a production environment, or it can be configured to
-wait for a specific tag and deploy the associated commit to the appropriate environment(s).
-
 <figure markdown="1">
 
 [![Single Branch with release version tags](https://mermaid.ink/img/pako:eNqdkLFOwzAURX8lurOJ4rqpa89FTEzdkJdHbBKrdRwZB7VE-XfSoLKxdHtXOufq6U5oonXQaH1-STR0Jpm-KJoYgs__3UWmVhcGX7ysyuqJzkNHBg-Y7y4_JBqAIbgUyNvl9-nGGeTOBWdwwyyl01Lczws3Dpaye7Y-xwT9QedPx0Bjjsdr30DnNLo7dPDUJgp_lFul19-F1qEYBurfYgx3cYnQEy7Qqi6VEvWWc6VqwaViuEILocrdlsv9Xu4qKeqNnBm-1wI-_wBqwnrU?type=png)](https://mermaid.live/edit#pako:eNqdkLFOwzAURX8lurOJ4rqpa89FTEzdkJdHbBKrdRwZB7VE-XfSoLKxdHtXOufq6U5oonXQaH1-STR0Jpm-KJoYgs__3UWmVhcGX7ysyuqJzkNHBg-Y7y4_JBqAIbgUyNvl9-nGGeTOBWdwwyyl01Lczws3Dpaye7Y-xwT9QedPx0Bjjsdr30DnNLo7dPDUJgp_lFul19-F1qEYBurfYgx3cYnQEy7Qqi6VEvWWc6VqwaViuEILocrdlsv9Xu4qKeqNnBm-1wI-_wBqwnrU)
@@ -150,56 +144,67 @@ wait for a specific tag and deploy the associated commit to the appropriate envi
 <figcaption>Single Branch with release version tags</figcaption>
 </figure>
 
-<!--
-https://thinkinglabs.io/articles/2022/05/30/on-the-evilness-of-feature-branching-the-problems.html
- -->
+Release management is straightforward with this strategy. You could simply deploy the latest commit to production,
+or you could tag a commit with a release version and deploy that. The latter is more disciplined and is often used
+in conjunction with the [Semantic Versioning](https://semver.org/) scheme. A Continuous Delivery (CD) pipeline
+can be configured to automatically deploy the latest commit to a production environment, or it can be configured to
+wait for a specific tag and deploy the associated commit to the appropriate environment(s).
 
 <!--
-When a branch is created at abstracts and hides the work in progress this is a problem if parallel work is being done
-that overlaps.
-
 No concept of Hotfix?
 
 A Hotfix is a change that is made directly to the release branch. If there is only one branch, then it's a moot point.
 -->
 
-<!-- Release Tags vs Release Branches -->
-
-<!-- release notes -->
-
-<!-- A Branching Strategy for Staggered and Long Term Releases -->
-
 ### Task Branching
 
-[![Task Branching](https://mermaid.ink/img/pako:eNqdkkFPwzAMhf9K5XO7tdnWrjkiECdOcEK9eK3XhjbJlCYSY9p_Jy0bYgMqxO3Ffv6eI_kApa4IOERRVJhCWWE74sET9m1wY1CVjVD10Dj1a2HvDe6aQZdaSmEHtRmdQQGuJzOXXYNuS3PrIVHCFgVcur-ohspWOxtIFGooSDI1TXMus_pa60qimm9cHaWnpGvq5Yh9kaLrBjFw01U2sd_3Tady_0b48a-_LfXf2MmwawqE4PveWvlDOBQq8EbbkKQCuJcVmtZHqaP3uV2Flu4qYbUBvsWupxDQWf24VyVwaxydTbcCa4Py00Xj0MPHuY1XF8IO1bPW8jzon8AP8AqcxfEsj5N8uczYarHIcxbC3pfZesbSFUvXWbxO0iTNjiG8jYTk-A6nL_4X?type=png)](https://mermaid.live/edit#pako:eNqdkkFPwzAMhf9K5XO7tdnWrjkiECdOcEK9eK3XhjbJlCYSY9p_Jy0bYgMqxO3Ffv6eI_kApa4IOERRVJhCWWE74sET9m1wY1CVjVD10Dj1a2HvDe6aQZdaSmEHtRmdQQGuJzOXXYNuS3PrIVHCFgVcur-ohspWOxtIFGooSDI1TXMus_pa60qimm9cHaWnpGvq5Yh9kaLrBjFw01U2sd_3Tady_0b48a-_LfXf2MmwawqE4PveWvlDOBQq8EbbkKQCuJcVmtZHqaP3uV2Flu4qYbUBvsWupxDQWf24VyVwaxydTbcCa4Py00Xj0MPHuY1XF8IO1bPW8jzon8AP8AqcxfEsj5N8uczYarHIcxbC3pfZesbSFUvXWbxO0iTNjiG8jYTk-A6nL_4X)
+<figure markdown="1">
+
+[![Task branching](https://mermaid.ink/img/pako:eNqdkkFvwjAMhf9K5XMpTSgBct600067TbmYNrRdmwSlyTSG-O9L2zEBAzTtZtnv-XuWvIfcFBI4lLV7srithBU6N0rVLnJY8kjAO0nSJBXQT9YWdV6Fpu-knaq2Qr-RU4ddMyF0NmpG90VVybwx3kUKa903lLSlvL3nhE2us7vSmEKhnq59OWHf5EvKucW9qbpt-6LnsPniTt7fye9x_7bh6u1XQp0cT4_H_zvGXfjlljMyEQAxBH2wFuFD9kJHYeYqqaSAXlagbQJaH4LObwt08rGonbHAN9h2Mgb0zrzsdA7cWS-PoocaS4vqR7VFDXwPH8ApZcmSrZZ0lRLKlozMYtgBz7IsISuSpiQjswWjdH6I4dOYsIIM9tehHhlyiPA8fvXw3IcvxXYA4g?type=png)](https://mermaid.live/edit#pako:eNqdkkFvwjAMhf9K5XMpTSgBct600067TbmYNrRdmwSlyTSG-O9L2zEBAzTtZtnv-XuWvIfcFBI4lLV7srithBU6N0rVLnJY8kjAO0nSJBXQT9YWdV6Fpu-knaq2Qr-RU4ddMyF0NmpG90VVybwx3kUKa903lLSlvL3nhE2us7vSmEKhnq59OWHf5EvKucW9qbpt-6LnsPniTt7fye9x_7bh6u1XQp0cT4_H_zvGXfjlljMyEQAxBH2wFuFD9kJHYeYqqaSAXlagbQJaH4LObwt08rGonbHAN9h2Mgb0zrzsdA7cWS-PoocaS4vqR7VFDXwPH8ApZcmSrZZ0lRLKlozMYtgBz7IsISuSpiQjswWjdH6I4dOYsIIM9tehHhlyiPA8fvXw3IcvxXYA4g)
+
+<figcaption>Task Branching Strategy</figcaption>
+</figure>
 
 This strategy is sometimes referred to as "feature branching", but I prefer the term "task branching" because it's
 more accurate in its association with a task in an issue tracking system and the scope of the changes it includes.
-The idea is to have a single branch, but to create a new branch for each task. This augments the single
-branch strategy by providing a way to isolate changes that are slightly more complex to complete or time-consuming while
-enabling the team to continue to work on other tasks in parallel that might have overlapping changes. You can think of
-this as an encoding of the "trust" and "communication" aspects of the single branch strategy that only exists in the
-minds of the team members.
+The idea is to have a single branch, but to create a new branch for each task. This augments the Single
+Branch strategy by encoding (and potentially automating) some "communication" and "coordination" aspects of a
+team's process into the VCS in a form that is enforceable and time invariant as individuals come and go. In other
+words this enables trust by reducing the need for constant communication and coordination.
+
+Another benefit of this strategy is that it can be used to help enforce a "pull request" process. In this process
+a developer creates a branch for a task, makes changes, and then creates a pull request to merge the changes
+into the main branch. The pull request can be used to review the changes and to run automated tests at that point
+in time instead of waiting until the changes are merged into the main branch (which is the case with the Single
+Branch strategy). This can help to reduce the risk of breaking the build and can help to reduce the time it takes
+to fix a build breakage.
+
+This strategy isn't without its own wrinkles of course. If there are a lot of developers working on a lot of tasks
+then the number of branches can grow quickly. This can be mitigated by deleting branches after they are merged
+into the main branch but <abbrev title="In my Experience">IME</abbrev> this isn't always done and not necessarily
+because of laziness. Sometimes it's useful to keep a branch around for a while after it's merged in case there
+is a need to revert the changes. This is especially true if the changes are large and/or complex. In this case
+the branch can be used to help isolate the changes and to help with debugging.
 
 In the above diagram you'll notice that each task branch name is prefixed with a "folder" name
 `user/<username>/task-<task-id>`. This is a convention that can be used to help organize the branches
-in the repository especially if there are many developers working on many tasks. In my experience there is a tendency
-for older branches not to be deleted which pollutes the branch list. The folder convention can help to mitigate this problem.
-To configure and enforce branch folders in Azure DevOps you can use the following guide: "[Require branches to be created in folders](https://learn.microsoft.com/en-us/azure/devops/repos/git/require-branch-folders?view=azure-devops&tabs=browser)".
+in the repository especially if there are many developers and many tasks. The folder convention can help to
+mitigate the problem of branch pollution. To configure and enforce branch folders in Azure DevOps you can use the following
+guide: "[Require branches to be created in folders](https://learn.microsoft.com/en-us/azure/devops/repos/git/require-branch-folders?view=azure-devops&tabs=browser)".
 Git also supports a "hook" concept for [enforcement](https://itnext.io/using-git-hooks-to-enforce-branch-naming-policy-ffd81fa01e5e)
 of conventions like this.
 
-You'll also notice the branch names also include an ID number. This is a convention that can be used to help
+You'll also notice the branch names include an ID number. This is a convention that can be used to help
 correlate the branch to the task in an issue tracking system. You may be fortunate enough to have an issue tracking
-system that can be integrated with your source control system that automatically links the two together. If not,
-this convention can help to manually correlate the two. In my experience this is helpful when you have a team
-member who was working on a task and then left the team or is on extended leave. Coupled with the polluting
-branches problem mentioned above, this can make it far easier to locate the task in progress.
+system that can be integrated with your VCS that automatically links the two together. If not, this convention can help
+to manually correlate the two. In my experience this is helpful when you have a team member who was working on a task and
+then left the team or is on extended leave. Coupled with the polluting branches problem mentioned above, this can make it
+far easier to locate the task in progress.
 
-When it comes time to integrate the task branch back into the main branch (merging), the team should utilize a pull request
-(merge request) to ensure that the changes are consistent with the team's standards and conventions. This often consists of
-a code review, automated testing, build, and code analysis often referred to as a "gate". Most Git hosting services
-provide this functionality and provide a user interface to configure:
+As mentioned above, when it comes time to integrate the task branch back into the main branch (merging), the team should
+utilize a pull request (merge request) to ensure that the changes are consistent with the team's standards and conventions.
+This often consists of a code review, automated testing, build, and code analysis often referred to as a "gate". Most Git
+hosting services provide this functionality and provide a user interface to configure:
 
 * [GitHub article](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 * [Azure DevOps article](https://learn.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser)
@@ -209,14 +214,39 @@ is approved and the gates are passed, the task branch can be merged into the mai
 by your chosen Git hosting service.
 
 Tasks, being generally small in scope, often do not require a lot of time to complete and do not require a lot of
-changes to the code base. This means that the task branch will often be merged into the main branch without any
+changes to the code base. This means that the task branch will usually be merged into the main branch without any
 conflicts. If there are conflicts, they should also be relatively straightforward to resolve.
+
+Merging introduces another wrinkle. There are different [strategies](https://www.atlassian.com/git/tutorials/using-branches/merge-strategy)
+for merging and each has its own pros and cons when it comes to the history of the repository and conflict resolution. In the
+context of the Task Branching strategy, we know that the task branch will be limited in scope and will not be worked on for
+a long period of time. It's also treated as a "throw away" branch and a black box as far as any other branch is concerned.
+This means that the history of the task branch is not important and can be discarded. Therefore, the
+["squash merge"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits)
+strategy is a good fit. This will create a single commit on the main branch that contains all changes from the task
+branch. This keeps the history of the main branch clean and easy to understand.
 
 After the merge, the task branch should be deleted. If it is not deleted, it will continue to exist in the repository
 and will continue to pollute the branch list (hence the need for the folder convention mentioned above). Git hosting
 services usually provide a way to delete these branches with a single click or do it automatically after the merge.
 
-<!-- Relationship to Scrum/XP -->
+The development methodologies compatible with this strategy are [Scrum](https://www.scrum.org/resources/what-is-scrum),
+[XP](https://www.extremeprogramming.org/), [Lean](https://en.wikipedia.org/wiki/Lean_software_development),
+[Kanban](https://en.wikipedia.org/wiki/Kanban_(development)), and any other methodology that has an explicit concept
+of a "task" or "story" that is worked on for a short period of time.
+
+Release versioning here works the same as the Single Branch strategy. Choose a particular commit on the main branch
+and tag it with a version number which can then be used to manually/automatically build and release an artifact.
+
+<!-- Relate to Scrum and it's release vs sprint process -->
+
+### Integration Branching
+
+<!--
+
+How do you handle ambitious refactorings and feature development?
+  By strangler pattern and in parts
+ -->
 
 Any methodology that utilizes a task-based approach to development can benefit from this strategy. This includes
 Scrum, XP, and Kanban. In fact, this strategy is often used in conjunction with the single branch strategy in
@@ -252,10 +282,6 @@ to be final and non breaking or the single branch is filled with unfinished
 features, bugs and breaking code."
 Which can be mitigated somewhat by feature flags.
 -->
-
-<!-- ******************************************************* -->
-<!-- ******************************************************* -->
-<!-- ******************************************************* -->
 
 <!-- Goals
 * [Avoid Cherry Picking](https://devblogs.microsoft.com/oldnewthing/?p=98215)
@@ -299,6 +325,31 @@ Need a hotfix on current february release.
 
 Can't go to master due to subsequent changes? -->
 
+### Release Branching
+<!-- Release Tags vs Release Branches
+
+"""
+A tag is immutable.
+Whereas you can create a branch named "1.0.0" - you, or anyone with commit rights, can also then simply push
+to that branch (deliberately or not) and change what 1.0.0 means. You can't do that with a tag, once you
+create a tag - that's it; Tag 1.0.0 means exactly that and can't be changed*.
+That's the main practical difference between a tag and a branch
+"""
+
+"""
+Tags are mainly used for future reference to the specific version of the project, by tagging a commit.
+You can always use branches of course, but if you change versions a lot, you will end up with lots of
+unused or rarely used branches.
+
+Practically, tags are branches without branches anyway, just adding a way to reference a specific version
+of the project to reduce complexity.
+"""
+-->
+
+<!-- release notes -->
+
+<!-- A Branching Strategy for Staggered and Long Term Releases -->
+
 ## References and Further Reading
 
 * [Trunk Based Development](https://trunkbaseddevelopment.com/)
@@ -309,6 +360,7 @@ Can't go to master due to subsequent changes? -->
 * <https://jamesmckay.net/2017/01/martin-fowler-and-feature-branches-revisited/>
 * <https://martinfowler.com/articles/feature-toggles.html>
 * <https://blog.codinghorror.com/software-branching-and-parallel-universes/>
+* [On the Evilness of Feature Branching - The Problems](https://thinkinglabs.io/articles/2022/05/30/on-the-evilness-of-feature-branching-the-problems.html)
 
 <!--
 Integration Branches
@@ -389,7 +441,7 @@ https://corgibytes.com/blog/2016/11/01/throwaway-code/
 * <https://stackoverflow.com/questions/16386323/following-git-flow-how-should-you-handle-a-hotfix-of-an-earlier-release>
 * <https://reallifeprogramming.com/git-process-that-works-say-no-to-gitflow-50bf2038ccf7>
 * [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/)
-  * [Git Flow Considered Harmful](https://www.endoflineblog.com/gitflow-considered-harmful) -->
+  * [Git Flow Considered Harmful](https://www.endoflineblog.com/gitflow-considered-harmful)
 
 ### GitHub Flow
 
