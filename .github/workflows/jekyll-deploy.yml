@@ -6,8 +6,12 @@ name: Jekyll Deploy
 on:
   push:
     branches: [ master ]
+    paths-ignore:
+      '._drafts/**'
   pull_request:
     branches: [ master ]
+    paths-ignore:
+      '._drafts/**'
   schedule:
     - cron: "0 0 * * *"
 
