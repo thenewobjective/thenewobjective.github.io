@@ -40,6 +40,8 @@
 - <https://css-tricks.com/creating-patterns-with-svg-filters/>
 - <https://en.wikipedia.org/wiki/Digital_image_processing#Digital_image_transformations>
 - <https://web.archive.org/web/20200117191525/http://www.dmc.fmph.uniba.sk/public_html/doc/Java/index.htm>
+- <https://kaboomjs.com/blog/3000>
+- <https://twitter.com/fgasking/status/1675779146771845120>
 
 ---
 
