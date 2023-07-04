@@ -28,3 +28,5 @@ The sum of an infinite series being -1/12
 Translation: "Anything said in Latin sounds profound."
 
 <https://twitter.com/engineers_feed/status/1543284183581093888>
+
+"Twelve plus one" uses the same letters that spell "eleven plus two".
