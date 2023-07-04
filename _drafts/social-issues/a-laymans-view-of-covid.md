@@ -451,4 +451,14 @@ https://www.conservativereview.com/horowitz-confidential-pfizer-document-shows-t
 https://dailycaller.com/2023/06/13/covid-patient-zero-wuhan-institute-virology-china/
 https://twitter.com/p_mcculloughmd/status/1668447564226609153
 https://www.conservativereview.com/horowitz-confidential-pfizer-document-shows-the-company-observed-1-6-million-adverse-events-covering-nearly-every-organ-system-2661316948.html
+https://dailycaller.com/2023/06/27/ccp-ordered-destruction-early-covid-samples-order-shows/
+https://twitter.com/Kevin_McKernan/status/1673801451070537728
+https://twitter.com/YALiberty/status/1673812488477966336
+https://gab.com/INFOWARS/posts/110628409347752456
+https://www.zerohedge.com/covid-19/schachtel-how-flu-disappeared-during-covid-era
+https://twitter.com/TheChiefNerd/status/1675131630611058689
+https://www.washingtontimes.com/news/2021/oct/20/illegal-immigrants-exempt-dojs-vaccine-mandate-dep/
+https://twitter.com/kevinnbass/status/1675904783935471618
+https://twitter.com/Kevin_McKernan/status/1676269071157927944
+https://www.zerohedge.com/covid-19/new-research-paper-mrna-covid-19-vaccines-are-gene-therapy-products
 -->
