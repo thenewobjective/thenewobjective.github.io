@@ -1,0 +1,129 @@
+:root {
+    --font-color: #ccc;
+    --link-color: #61A5E4;
+    --site-dark-bg: #222931;
+    --content-bg: #2D3742;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+
+    &:vertical {
+        width: 0.5em;
+    }
+
+    &:horizontal {
+        height: 0.5em;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid var(--content-bg);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: var(--site-dark-bg);
+}
+
+body,
+html {
+    background-color: #000;
+    color: var(--font-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-size: calc(1em + 0.5vw);
+
+    @media only screen and (max-width: 420px) {
+        overflow-x: auto;
+    }
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+blockquote {
+    background: var(--site-dark-bg);
+    border-left: 0.5em solid var(--link-color);
+    padding: 0.5em 1em;
+    margin: 1em;
+}
+
+cite {
+    display: block;
+    text-align: right;
+}
+
+hr {
+    border-color: #000 transparent #555;
+    border-radius: 100%;
+}
+
+figure {
+    background-color: var(--site-dark-bg);
+    padding: 1em;
+    text-align: center;
+
+    & img {
+        cursor: pointer;
+        max-width: 100%;
+    }
+}
+
+figure.highlight {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+figcaption {
+    font-size: smaller;
+}
+
+ul {
+    margin: 0;
+    padding: 0 0 0 2em;
+}
+
+.highlight pre {
+    overflow: auto;
+    padding: 1em;
+}
+
+p>code,
+li>code {
+    color: darkorange;
+}
+
+.warn {
+    color: red;
+}
+
+input {
+    background-color: var(--site-dark-bg);
+    font-size: inherit;
+    padding: 0.5em;
+    border: 1px inset var(--shadow-color);
+    color: var(--font-color);
+}

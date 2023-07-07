@@ -4,48 +4,53 @@
     height: 100%;
     position: absolute;
     width: 100%;
-}
 
-.demo-bubbles .bubble {
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    background: radial-gradient(transparent,transparent,aqua);
-    top: 100%;
+    & .bubble {
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        background: radial-gradient(transparent, transparent, aqua);
+        top: 100%;
 
-    animation-name: float;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
+        animation-name: float;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
 
-.demo-bubbles .bubble::before {
-    content: "";
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    top: 14%;
-    left: 22%;
-    border-radius: 50%;
-    background: radial-gradient(rgba(255,255,255,.5),transparent);
-}
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            top: 14%;
+            left: 22%;
+            border-radius: 50%;
+            background: radial-gradient(rgba(255, 255, 255, .5), transparent);
+        }
+    }
 
-.demo-bubbles .size0 {
-    width: 20px;
-    height: 20px;
-}
+    & .size0 {
+        width: 20px;
+        height: 20px;
+    }
 
-.demo-bubbles .size1 {
-    width: 35px;
-    height: 35px;
-}
+    & .size1 {
+        width: 35px;
+        height: 35px;
+    }
 
-.demo-bubbles .size2 {
-    width: 50px;
-    height: 50px;
+    & .size2 {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @keyframes float {
-    from { top : 100% }
-    to   { top: 0%; }
+    from {
+        top: 100%
+    }
+
+    to {
+        top: 0%;
+    }
 }

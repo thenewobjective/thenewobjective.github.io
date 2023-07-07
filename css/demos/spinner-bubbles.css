@@ -24,8 +24,8 @@
 .spinner-bubbles-form {
     margin: auto;
     width: 640px;
-}
 
-.spinner-bubbles-form label {
-    display: block;
+    & label {
+        display: block;
+    }
 }
