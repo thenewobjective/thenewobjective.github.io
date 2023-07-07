@@ -1,28 +1,8 @@
 import Figure from './Figure.js'
-import {qsa, qs} from './query.js'
+import { qsa } from './query.js'
 
 let figures = qsa('figure')
-        .map(figure => new Figure({ el: figure }))
-
-if(qs('.mermaid')) {
-    const script = Object.assign(document.createElement('script'), {
-        src: '/scripts/mermaid.min.js'
-    })
-    document.head.appendChild(script)
-
-    // <https://mermaid-js.github.io/>
-    // TODO: <https://github.com/mermaid-js/mermaid/issues/856>
-    mermaid.initialize({
-        startOnLoad: true,
-        theme: 'default',
-        flowchart: {
-            // diagramPadding:20,
-            htmlLabels:false,
-            useMaxWidth:false,
-            width: '100%'
-        }
-    });
-}
+    .map(figure => new Figure({ el: figure }));
 
 // This Chrome bug seems to still exist as of 2022-07-17
 // https://stackoverflow.com/a/38588927/153209
