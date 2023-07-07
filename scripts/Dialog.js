@@ -1,6 +1,6 @@
 import Component from "./Component.js";
 
-class Dialog extends Component {
+export default class Dialog extends Component {
     constructor(options) {
         super(options)
         this.el = document.createElement('dialog')
@@ -10,24 +10,13 @@ class Dialog extends Component {
             ${options.content}
         </form>`
         document.body.appendChild(this.el)
-        dialogPolyfill.registerDialog(this.el)
     }
 
-    onclick(e) {
-        console.log(e.target)
-    }
+    onclick(e) { }
 
-    close() {
-        this.el.close()
-    }
+    close() { this.el.close() }
 
-    show() {
-        this.el.show()
-    }
+    show() { this.el.show() }
 
-    showModal() {
-        this.el.showModal()
-    }
+    showModal() { this.el.showModal() }
 }
-
-export default Dialog
