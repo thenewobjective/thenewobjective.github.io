@@ -17,6 +17,7 @@ Unit Testing
 https://mobile.twitter.com/igrigorik/status/1090631220029882369
 
 https://pindancing.blogspot.com/2009/09/sudoku-in-coders-at-work.html
+https://twitter.com/mlhaufe/status/1679204392367521793
 
 https://news.ycombinator.com/item?id=12924173
 
