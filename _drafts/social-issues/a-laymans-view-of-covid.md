@@ -461,4 +461,6 @@ https://www.washingtontimes.com/news/2021/oct/20/illegal-immigrants-exempt-dojs-
 https://twitter.com/kevinnbass/status/1675904783935471618
 https://twitter.com/Kevin_McKernan/status/1676269071157927944
 https://www.zerohedge.com/covid-19/new-research-paper-mrna-covid-19-vaccines-are-gene-therapy-products
+https://twitter.com/JesslovesMJK/status/1678051826112028678
+https://twitter.com/TheChiefNerd/status/1676964681414754304
 -->

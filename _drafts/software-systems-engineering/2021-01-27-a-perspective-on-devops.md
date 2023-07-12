@@ -73,6 +73,8 @@ was very much constrained by how these cards were processed. The development wor
 ===========================================
 ===========================================
 
+Crockford History: <https://www.youtube.com/watch?v=JxAXlJEmNMg>
+
 http://www.columbia.edu/cu/computinghistory/fisk.pdf
 http://museum.ipsj.or.jp/en/computer/device/paper/words.html
 https://github.com/jasonbellamy/jekyll-mermaid/issues
