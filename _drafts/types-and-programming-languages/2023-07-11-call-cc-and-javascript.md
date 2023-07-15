@@ -210,7 +210,7 @@ class ContError extends Error { returnValue = undefined; }
 
 function callcc(fnCont) {
     const contErr = new ContError("Unable to continue current continuation.");
-    const fnEscape = (returnValue: T) => {
+    const fnEscape = (returnValue) => {
       contErr.returnValue = returnValue;
       throw contErr;
     }
@@ -266,17 +266,194 @@ console.log(
 I know what you're thinking. This is a lot of work to implement a feature
 that is already built into the language. But this is just the beginning.
 
-## Generators
+## Early Exit
 
-## Green Threads
+Here's an example of `call/cc` being used to compute the product of a list
+and exiting early when a zero is encountered:
 
-## Fibers
+```js
+// Singly Linked List
+const NIL = Object.freeze({});
+const Cons = (head, tail) => Object.freeze({ head, tail });
 
-<!-- fibonacci call stack -->
+const product = (xs) => callcc((exit) => {
+  const recur = (x) =>
+    x === NIL ? 1 :
+      (x.head === 0) ? exit(0) : // early exit
+        x.head * recur(x.tail);
+
+  return recur(xs);
+});
+
+const xs = Cons(1, Cons(2, Cons(3, NIL))),
+  ys = Cons(0, xs)
+
+console.log(product(xs)) // 6
+console.log(product(ys)) // 0
+```
+
+## try/catch
+
+This is a bit circuitous since we're using exceptions to implement `call/cc`,
+but we can use `call/cc` to implement our own `try/catch` for the sake of demonstration:
+
+```js
+function tryCatchFinally(tryBlock, catchBlock, finallyBlock) {
+  let exceptionOccurred = false,
+    result;
+
+  callcc(function (exit) {
+    // Execute the try block and capture the result
+    result = tryBlock(function (exitResult) {
+      exceptionOccurred = true;
+      result = exitResult;
+      exit(exitResult);
+    });
+
+    // If the try block completes without an exception, return the result
+    return result;
+  });
+
+  // Check if an exception occurred
+  if (exceptionOccurred)
+    // Execute the catch block and return its result
+    result = catchBlock(result);
+
+  // Execute the finally block
+  finallyBlock();
+
+  // Return the result
+  return result;
+}
+```
+
+Which enables us to write code like this:
+
+```js
+tryCatchFinally(
+  (exitEarly) => {
+    // Try block
+    // Your code here
+    // You can call `exitEarly(result)` to exit early and return a result
+  },
+  (error) => {
+    // Catch block
+    // Handle the error or perform any necessary cleanup
+    // Return a result if desired
+  },
+  () => {
+    // Finally block
+    // Perform any necessary cleanup or resource release
+  }
+);
+```
+
+And a simple example with division by zero:
+
+```js
+function divide(a, b) {
+  return tryCatchFinally(
+    (exitEarly) => {
+      if (b === 0)
+        exitEarly('Division by zero');
+      return a / b;
+    },
+    (error) => {
+      console.log('Caught an error:', error);
+      return 'Error occurred';
+    },
+    () => {
+      console.log('Finally block executed');
+    }
+  );
+}
+
+console.log(divide(6, 2));
+// [LOG]: "Finally block executed"
+// [LOG]: 3
+
+console.log(divide(4, 0));
+// [LOG]: "Caught an error:",  "Division by zero"
+// [LOG]: "Finally block executed"
+// [LOG]: "Error occurred"
+```
+
+## Generators and Coroutines
+
+Next, we can use `call/cc` to implement form of
+[generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator):
+
+```js
+function generator(body) {
+  let isDone = false;
+
+  const iterator = {
+    next: (value) => {
+      return callcc((exit) => {
+        if (isDone)
+          return { value: undefined, done: true };
+        const result = body(value, exit);
+        return { value: result.value, done: false };
+      });
+    },
+    throw: (error) => {
+      return callcc((exit) => {
+        isDone = true;
+        return { value: error, done: true, isError: true };
+      });
+    }
+  };
+
+  return iterator;
+}
+```
+
+With a contrived example:
+
+```js
+function myGenerator() {
+  let counter = 0;
+  return function(value, yields) {
+    if (counter <= 5) {
+      const result = counter;
+      counter += value || 1;
+      yields({ value: result, done: false });
+    } else {
+      yields({ value: counter, done: true });
+    }
+  };
+}
+
+const iterator = generator(myGenerator());
+console.log(iterator.next());  // { value: 0, done: false }
+console.log(iterator.next(2)); // { value: 1, done: false }
+console.log(iterator.next());  // { value: 3, done: false }
+console.log(iterator.next(3)); // { value: 4, done: false }
+console.log(iterator.next());  // { value: 7, done: true  }
+console.log(iterator.throw('I Am Error')) // { value: "I am Error", done: true, isError: true }
+```
+
+The error case could be handled more elegantly, but you get the idea.
+
+With some minor tweaks this can basically fill the role of a coroutine as well since
+you can pass a value to `next` which enables bidirectional communication between the
+generator and the code that controls its execution.  This bidirectional communication
+is a characteristic of coroutines, where they can suspend their execution and yield
+a value, and also receive input values to continue their execution from the previous
+yield point.
 
 ## Amb
 
+<!-- fibonacci call stack -->
+
 ## Conclusion
+
+In this article we've explored the `call/cc` function and how it can be used to
+implement a variety of control flow constructs. This is far from an exhaustive
+list, and given the native support of most of these constructs in modern JavaScript
+it's unlikely that you'll ever want to use `call/cc` in most application.
+
+The utility of `amb` though may be a bit more compelling <!-- -->
 
  <!-- npm library -->
 
@@ -291,6 +468,6 @@ that is already built into the language. But this is just the beginning.
 * <http://okmij.org/ftp/continuations/against-callcc.html>
 * <https://en.wikipedia.org/wiki/Call-with-current-continuation>
 * <https://esdiscuss.org/topic/generators-vs-foreach>
-* Generators and CoRoutines <https://2ality.com/2015/03/es6-generators.html>
 * <https://wiki.haskell.org/Continuation>
-https://en.wikipedia.org/wiki/Delimited_continuation
+* Generators and CoRoutines <https://2ality.com/2015/03/es6-generators.html>
+* <https://wingolog.org/archives/2013/02/25/on-generators>
