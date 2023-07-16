@@ -463,4 +463,9 @@ https://twitter.com/Kevin_McKernan/status/1676269071157927944
 https://www.zerohedge.com/covid-19/new-research-paper-mrna-covid-19-vaccines-are-gene-therapy-products
 https://twitter.com/JesslovesMJK/status/1678051826112028678
 https://twitter.com/TheChiefNerd/status/1676964681414754304
+https://twitter.com/MakisMD/status/1665405441386455042
+https://www.zerohedge.com/medical/alarming-sevenfold-increase-stevens-johnson-syndrome-linked-covid-19-and-vaccine
+https://dailycaller.com/2023/07/12/covid-lab-leak-scientists-paper-likely/
+https://notthebee.com/article/fauci-knew-in-february-of-2020-that-gain-of-function-research-had-been-taking-place-in-wuhan-prior-to-the-pandemic-
+https://twitter.com/RandPaul/status/1679623731377733632
 -->
