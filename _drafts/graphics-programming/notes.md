@@ -18,7 +18,6 @@
 - <https://rosettacode.org/wiki/Bitmap/B%C3%A9zier_curves/Cubic>
 - <https://github.com/jacobcpeters/Unit-Bezier>
 - <https://github.com/WebKit/webkit/blob/89c28d471fae35f1788a0f857067896a10af8974/Source/WebCore/platform/graphics/UnitBezier.h#L62>
-- <https://sf2platinum.wordpress.com/2020/10/15/row-scrolling-for-parallax-effects/>
 - <https://en.wikipedia.org/wiki/Ordered_dithering>
 - <https://en.wikipedia.org/wiki/Chroma_key>
 - <https://developer.mozilla.org/en-US/docs/Web/CSS/filter>
@@ -42,6 +41,10 @@
 - <https://web.archive.org/web/20200117191525/http://www.dmc.fmph.uniba.sk/public_html/doc/Java/index.htm>
 - <https://kaboomjs.com/blog/3000>
 - <https://twitter.com/fgasking/status/1675779146771845120>
+- <https://en.wikipedia.org/wiki/Phong_reflection_model>
+- <https://twitter.com/gabrielpeyre/status/1526427292615946240>
+- [The Image Deblurring Problem: Matrices, Wavelets, and Multilevel Methods](https://www.ams.org/journals/notices/202208/noti2534/noti2534.html?adat=September%202022&trk=2534&galt=none&cat=feature&pdfissue=202208&pdffile=rnoti-p1284.pdf&_zs=vmoJL1&_zl=3foo6)
+- [Hex Grids](https://playtechs.blogspot.com/2007/04/hex-grids.html)
 
 ---
 
@@ -81,10 +84,7 @@ getting to the algorithm though we'll want some utility functions first:
 - <https://twitter.com/JJcoolkl/status/1296085259243720705>
 - <https://twitter.com/_eseidel/status/1417147297473826819>
 - <https://twitter.com/Foone/status/1421109783264862208>
-- <https://web.archive.org/web/20170314133311/http://xnaresources.com/default.asp?page=Tutorial:TileEngineSeries:1>
-<https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection>
 <http://conal.net/fran/tutorial.htm>
-<https://ailef.tech/2022/11/12/creating-a-2d-physics-engine-from-scratch-in-javascript/>
 <https://gab.com/AwwesomeAI>
 <https://opengameart.org/content/pixtura12-medieval-pixel-font>
 <https://twitter.com/gabrielpeyre/status/1604355786343419904>
