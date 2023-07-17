@@ -24,207 +24,82 @@ use case, but it is a good starting point.
 
 ## The Domain
 
-A `Tile` represents an `image` and a `size`. We'll assume that the tile is square,
-so the width and height will be the same. The `image` represents the tile's
+A `Tile` represents an `image` where the `image` represents the tile's
 appearance. We have a challenge though, we need to represent the image in a way
 that remains agnostic to the display. Within the domain layer, we don't know
-anything about how entities are utilized nor do we want to. So we need to represent
-the image without reference to file formats, paths, or any other environment
-related concept. We can use an ID to represent the image. It can be a string,
-number, or any other type that can be used to uniquely identify it. Since we
-expect to have a lot of tiles, a string name seems like a poor idea especially
+anything about how entities are utilized nor do we want to. So we need a
+representation that doesn't mention file formats, paths, nor any other environment
+related concept. We can use an ID to represent this image though. It can be a string,
+number, or any other identifier that can be used uniquely. Since we
+expect to have a lot of tiles, a string name seems like a poor choice especially
 with similar tiles ("grass1", "grass2", "yellowgrass", etc.). So we'll use a
 number.
 
 ```ts
 // src/domain/Tile.mts
 export class Tile {
-    constructor(
-        readonly id: number,
-        readonly size: number
-    ) { }
+    constructor(readonly id: number) { }
 }
 ```
-
-### Value Objects and Entities
-
-This is a good time to introduce the concept of *Value Objects* and *Entity Objects*.
-A value object is an object that is identified by its attributes. For example,
-a 2D point is identified by its `x` and `y` coordinates. If we have two points
-with the same coordinates, then they are considered equal. In contrast, an
-entity is an object that is identified by a single attribute: its identity
-attribute (`id`). Entities are objects that can change over time while still
-being considered equal. For example, a `Person` can change their address, but
-they are still the same person. If we consider the `Tile` class, it is an entity
-because it can change over time. For example, we can change the size
-and still consider it a Grass tile. However, if we change the `id`, then
-it is no longer the same.
 
 ## The Use Case
 
 Our first and only use case is to render a tile to the screen. We don't know
-what a screen is, nor which tile to render, nor how to get the image
-associated with it. Luckily, we don't need to know any of that. We can define
-a use case via ["Wishful Thinking"](http://wiki.c2.com/?WishfulThinking) and
-delegation. We'll assume (and require) that there is some form of `Presenter`
-that can render a tile, and that there is some form of `Repository` that can
-retrieve the appropriate tile based on its ID and size.
+what a screen is but luckily, we don't need to. The use case can be defined
+via ["Wishful Thinking"](http://wiki.c2.com/?WishfulThinking).
+
+So what is a use case? It's an application of the domain to a specific problem.
+It takes the form of either a `Command` or a `Query`. So fittingly, we'll place
+our use cases under the `application` directory and begin with defining the
+concept of a `UseCase`.
 
 ```ts
-// src/application/Presenter.mts
-export interface Presenter<T> {
-    present(entity: T): void;
+// src/application/UseCase.mts
+export interface UseCase<T, U> {
+    execute(input: T): U;
 }
 ```
 
-```ts
-// src/application/Repository.mts
-export interface Repository<K, V> {
-    get(id: K): V;
-}
-```
-
-Repositories generally store entities only. If you think about it for a moment,
-it makes sense. If a repository stored value objects, then how would you look
-them up? You would need to know all attributes of the object in
-order to find it. Which means you already have the value object. Instead, we
-store entities in repositories and use the identity attribute to look them up.
-We don't know the format of the identity attribute, so we use a generic type
-parameter `K` to represent it.
-
-This distinction between value objects and entities is important enough that
-we should make it explicit in our code. Let's return to the Domain layer and
-represent the concept of an entity:
-
-```ts
-// src/domain/Entity.mts
-export abstract class Entity<K> {
-    constructor(readonly id: K) { }
-
-    equals(other: Entity<K>): boolean {
-        return this.id === other.id;
-    }
-}
-```
-
-Now we can make the `Tile` class extend `Entity`:
-
-```ts
-// src/domain/Tile.mts
-import { Entity } from "./Entity.mjs";
-
-export class Tile extends Entity<number> {
-    constructor(
-        readonly id: number,
-        readonly size: number
-    ) { super(id); }
-}
-```
-
-These changes now enable our Repository to be more explicit:
-
-```ts
-// src/application/Repository.mts
-import { Entity } from "../domain/Entity.mjs";
-
-export interface Repository<K, V extends Entity<K>> {
-    get(id: K): V;
-}
-```
-
-Now, back to our use case:
+A Command is a use case that has no return value and has side effects. A Query
+is a use case that has no side effects and returns a value.
 
 ```ts
 // src/application/usecases/RenderTileUseCase.mts
+import { Tile } from "../../domain/Tile.mjs";
+import { UseCase } from "../UseCase.mjs";
 import { Presenter } from "../Presenter.mjs";
-import { Repository } from "../Repository.mjs";
-import { TileDto } from "../models/TileDto.mjs";
 
-export class RenderTileUseCase {
+export class RenderTileUseCase implements UseCase<number, void> {
     constructor(
-        private readonly _presenter: Presenter<TileDto>,
-        private readonly _repository: Repository<number, TileDto>
+        private readonly _presenter: Presenter<any, Tile>
     ) { }
 
-    execute(id: number, size: number): void {
-        const tile = this.repository.get(id);
-        const dto = new TileDto(tile.id, tile.size);
-        this.presenter.present(dto);
+    execute(id: number): void {
+        this._presenter.present(new Tile(id));
     }
 }
+
 ```
 
-```ts
+We'll require that there is some form of `Presenter` that can render a tile.
 
+```ts
+// src/application/Presenter.mts
+export abstract class Presenter<C, T> {
+    accessor container: C | null;
+    constructor() { }
+
+    abstract present(model: T): void;
+}
 ```
 
 The above interfaces represent our requirements for the use case and the contract
 that client code must fulfill. In order for someone to use the `RenderTileUseCase`,
-they must provide a `Presenter` and a `Repository`. The `RenderTileUseCase` is
-then responsible for delegating to the `Presenter` and `Repository` to fulfill
-the use case.
-
-If you squint a little, you can see that the `RenderTileUseCase` is an instance
-of the [Command Pattern](https://en.wikipedia.org/wiki/Command_pattern). It
-encapsulates the request to render a tile, and it delegates to the `Presenter`
-and `Repository` to fulfill the request. We could make the concept of a `Command`
-explicit, but it's not necessary at this point and would just be a
-[False Abstraction](https://mortoray.com/the-false-abstraction-antipattern/).
+they must provide a `Presenter`.
 
 ## The Data Layer
 
-The data layer is responsible for managing the persistence of data. In our case,
-we need to be able to get a concrete `Tile` based on an abstract one. So what
-is a concrete `Tile` specifically? Practically it's just a `Tile` with an image
-associated with it. There are a lot of ways to represent an image, but we'll
-use a [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL) since we know
-that the environment is a web browser.
-
-```ts
-// src/data/TileDto.mts
-import { Tile } from "../domain/Tile.mjs";
-
-export class TileDto extends Tile {
-    constructor(
-        readonly id: number,
-        readonly size: number,
-        readonly image: URL
-    ) {
-        super(id, size);
-    }
-}
-```
-
-You'll notice that the class has a `Dto` suffix. This is because the class
-represents a [*Data Transfer Object*](https://en.wikipedia.org/wiki/Data_transfer_object).
-A DTO is an object that is used to transfer data between application layers and potentially
-across a network or process boundary. In our case, the `TileDto` is used to transfer
-data between the data layer and the use case layer.
-
-Now that we have a `TileDto`, it's time to implement the `Repository` interface and
-get our hands dirty by interacting with the environment.
-
-```ts
-// src/data/TileRepository.mts
-import { Tile } from "../domain/Tile.mjs";
-import { TileDto } from "./TileDto.mjs";
-import { Repository } from "../application/Repository.mjs";
-
-export class TileRepository implements Repository<Tile> {
-    get(tile: Tile): TileDto {
-        const image = new URL(`./assets/${tile.id}-${tile.size}.png`, import.meta.url);
-        return new TileDto(tile.id, tile.size, image);
-    }
-}
-```
-
-Simple enough. We're relying on the tile images existing the `data/assets` directory as `*.png`
-files. We're also relying on the tile images being named after their ID and size. So if we want to
-get the image for tile 1 of size 64, we'll look for `./assets/1-64.png`. There is no error handling
-in this code, but we'll get to that later. Just happy path for now.
-Recall the saying, ["Make it work, make it right, make it fast"](https://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast).
-
-Now we'll actually need images to load. I've obtained some from
+We actually need some images to render. So I've obtained some from
 [opengameart.org](https://opengameart.org/content/topdown-tileset):
 
 ![Grass Tile](/scripts/tile-graphics/lesson1/src/data/assets/0-64.png)
@@ -233,24 +108,170 @@ Now we'll actually need images to load. I've obtained some from
 
 ![Water Tile](/scripts/tile-graphics/lesson1/src/data/assets/2-64.png)
 
+These are 64x64 pixel images and will be stored in the `data/assets` directory until
+there is a better place for them. By convention, these images are named after their
+ID and size. So the image for tile 1 of size 64 is named `1-64.png`. There is more
+that can be done here, but we'll just happy path for now.
+Recall the saying, ["Make it work, make it right, make it fast"](https://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast).
+
 ## The Presentation Layer
 
-We can load a tile with an image, but we still need to render it to the screen. This is where
-the `Presenter` comes in. The `Presenter` is responsible for presenting data to the user. In
-our case, we'll assume that the `Presenter` is a web browser and that it can render an image
-to the screen. We'll also assume that the `Presenter` is a web browser that supports
-[ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
+Next we tackle the implementation of a `Presenter`. In our case, the
+`Presenter` is targeted at a web browser, so we'll use the DOM to render the
+tile with a simple `<img>` tag.
+
+```ts
+// src/presentation/Presenter.mts
+export abstract class Presenter<C, T> {
+    accessor container: C;
+    constructor(container: C) { this.container = container; }
+
+    abstract present(model: T): void;
+}
+```
 
 ```ts
 // src/presentation/TilePresenter.mts
 import { Presenter } from "../application/Presenter.mjs";
-import { TileDto } from "../data/TileDto.mjs";
+import { Tile } from "../domain/Tile.mjs";
 
-export class TilePresenter implements Presenter<TileDto> {
-    present(tile: Tile) {
-        const image = document.createElement("img");
-        image.src = tile.image.href;
-        document.body.appendChild(image);
+export class TilePresenter extends Presenter<HTMLElement, Tile> {
+    present(tile: Tile): void {
+        const img = document.createElement("img");
+        img.src = `/data/assets/${tile.id}-64.png`;
+        this.container.appendChild(img);
     }
 }
 ```
+
+### Introducing PUC
+
+The Use Case and Presenter are now complete, but we need to wire them together.
+This wiring can be accomplished via an "Agent" which is concept adapted from PAC
+([Presentation-Abstraction-Control](https://www.dossier-andreas.net/software_architecture/pac.html))
+architecture. Think of it like a simplified version of Hierarchical MVC.
+A PAC "Agent" is a triad of Presentation, Abstraction, and Control. Since we
+are following Clean Architecture, our agent instead will be a PUC triad. The Presenter,
+Use Case, and Control. The Control mediates between the Use Case and Presenter.
+
+<figure markdown="1">
+
+![PUC Agent](https://mermaid.ink/img/pako:eNplkM1ugzAQhF_F2rOJsIEQfKuS3FKp6s-l8sXFmwQ12MgYqSni3WtIXFXqbWb2m5W9I9RWIwg4OdWdyetOOmkIIf3wcUseTmj8PdSNw9o31pDD8z0iTw77QKCLwdYa7-wl2rcet6rH2f6rkCRJIr_oP3Dg0OhZAYUWXasaHZ45zhMJ_owtShBBauU-JUgzBW7otPK41423DsRRXXqkoAZvX66mBuHdgBHaNSp8sP2lcCk93o6x3IRCp8y7tW0sBgtihC8QrFhtNmWe8TTP8oqzqqRwBcGzapUWLOMlK9I1z9YThe9lAZt-AG9Uc0Q?type=png)
+
+<figcaption>PUC Agent</figcaption>
+</figure>
+
+These agents can be composed into a hierarchy, like the DOM:
+
+<figure markdown="1">
+
+![PUC Agent Hierarchy](https://mermaid.ink/img/pako:eNqVk1FPwjAUhf_Kcp8H2VrZoG8KvmliFF-0PlR6hUXWkq5LRMJ_t50rDo0j7OnenXPu-rXrDhZaIjBYGrFZRfMZN1zJwuDCFlpF8yvfV_Xrt3y5RGXTZw5NweHFq5F7fhI39-HdncHKudD4wKHphKZaWaPXXm7LjvhY4VRU6MW2bMW_46PBYHAY1jQh7L2oZIgdc5BzOUg_B-njIKc5SJeDdDlI8LYsxxz0XA7az0H7OOhpDtrloF0O-us8js4sgP8nUIihRFOKQrrfdec_ysGusHQLYa6Uwrxz4GrvfPVGCovXsrDaAHsT6wpjELXVD1u1AGZNjcE0K4Tby_LgwiZ0-30pmrsRw0aoJ63LEHQtsB18AKPJMB2Ps5QSOrlI0mSSxbAFliVD14xIPsomOc1zso_hsxmQ7r8AbNYi5Q?type=png)
+
+<figcaption>PUC Agent Hierarchy</figcaption>
+</figure>
+
+We've already defined a Presenter and Use Case, so we just need to define the Control.
+
+```ts
+// src/presentation/Control.mts
+import { Presenter } from "../application/Presenter.mjs";
+import { UseCase } from "../application/UseCase.mjs";
+
+export abstract class Control {
+    constructor(children: Control[] = []) {
+        children.forEach(child => this.addChild(child));
+    }
+
+    accessor parent: Control | null;
+    accessor presenter: Presenter<any, any>;
+    accessor useCase: UseCase<any, any>;
+
+    #children: Control[] = [];
+
+    get children(): Control[] {
+        return this.#children.slice();
+    }
+
+    addChild(child: Control): void {
+        this.#children.push(child);
+        child.parent = this;
+    }
+
+    removeChild(child: Control): void {
+        const index = this.#children.indexOf(child);
+        if (index >= 0) {
+            this.#children.splice(index, 1);
+            child.parent = null;
+        }
+    }
+
+    render(): void {
+        this.#children.forEach(child => child.render());
+    }
+}
+```
+
+Then the specific control for our use case:
+
+```ts
+// src/presentation/TileControl.mts
+import { Control } from "./Control.mjs";
+import { RenderTileUseCase } from "../application/usecases/RenderTileUseCase.mjs";
+import { TilePresenter } from "./TilePresenter.mjs";
+
+export class TileAgent implements Agent {
+    #presenter: TilePresenter
+    #useCase: RenderTileUseCase
+
+    constructor(
+        readonly id: number
+    ) {
+        this.#presenter = new TilePresenter(container);
+        this.#useCase = new RenderTileUseCase(this.#presenter);
+    }
+
+    render(): void {
+        this.#useCase.execute(this.id);
+    }
+}
+```
+
+### Putting it all together
+
+The final piece is the entry point. This is the code that will be executed
+when the page loads. It will encapsulate interaction with the DOM and
+attach one or agents to the page. We'll use a simple `ApplicationAgent` to
+represent this.
+
+```ts
+// src/presentation/ApplicationAgent.mts
+import { Agent } from "./Agent.mjs";
+
+export class ApplicationAgent {
+    #container: HTMLElement = document.documentElement
+
+    constructor(
+        readonly children: Agent[]
+    ) { }
+
+    run(): void {
+        this.children.forEach(child => child.render());
+    }
+}
+```
+
+And now the top level entry point:
+
+```ts
+// src/index.mts
+import { ApplicationAgent } from "./presentation/ApplicationAgent.mjs";
+import { TileAgent } from "./presentation/TileAgent.mjs";
+
+const app = new ApplicationAgent([
+    new TileAgent(0),
+    new TileAgent(1),
+    new TileAgent(2),
+]);
+```
+
+## Infrastructure Layer

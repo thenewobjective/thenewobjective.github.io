@@ -1,15 +1,13 @@
+import { Tile } from "../../domain/Tile.mjs";
+import { UseCase } from "../UseCase.mjs";
 import { Presenter } from "../Presenter.mjs";
-import { Repository } from "../Repository.mjs";
-import { TileDto } from "../models/TileDto.mjs";
 
-export class RenderTileUseCase {
+export class RenderTileUseCase implements UseCase<number, void> {
     constructor(
-        private readonly _presenter: Presenter<TileDto>,
-        private readonly _repository: Repository<number, TileDto>
+        private readonly _presenter: Presenter<any, Tile>
     ) { }
 
-    execute(id: number, size: number): void {
-        const tileDto = this._repository.get(id);
-        this._presenter.present(tileDto);
+    execute(id: number): void {
+        this._presenter.present(new Tile(id));
     }
 }
