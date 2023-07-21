@@ -1,26 +1,13 @@
 import { ContainerControl } from "../ContainerControl.mjs";
 import { TileEnginePresenter } from "./TileEnginePresenter.mjs";
-import { UseCase } from "../../application/UseCase.mjs";
-import { Presenter } from "../../application/Presenter.mjs";
-
-class RenderChildrenUseCase implements UseCase<unknown, void> {
-    constructor(
-        readonly presenter: Presenter<unknown>,
-        readonly children: unknown[]
-    ) { }
-
-    execute(): void {
-        this.children.forEach(child => {
-            this.presenter.present(child);
-        })
-    }
-}
+import { RenderTiles } from "../../application/usecases/RenderTiles.mjs";
 
 export class TileEngineControl extends ContainerControl {
     override accessor presenter = new TileEnginePresenter();
-    override accessor useCase = new RenderChildrenUseCase(this.presenter, this.children);
+    override accessor useCase = new RenderTiles(
+        this.presenter,
+        this.children.map(child => child.abstraction)
+    );
 
-    start(): void {
-        this.useCase.execute();
-    }
+    start() { this.useCase.execute(); }
 }
