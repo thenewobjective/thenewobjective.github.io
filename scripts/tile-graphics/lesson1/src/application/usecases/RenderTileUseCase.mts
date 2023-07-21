@@ -4,7 +4,7 @@ import { Presenter } from "../Presenter.mjs";
 
 export class RenderTileUseCase implements UseCase<number, void> {
     constructor(
-        private readonly _presenter: Presenter<any, Tile>
+        private readonly _presenter: Presenter<Tile>
     ) { }
 
     execute(id: number): void {
