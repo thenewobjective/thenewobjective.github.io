@@ -469,4 +469,6 @@ https://dailycaller.com/2023/07/12/covid-lab-leak-scientists-paper-likely/
 https://notthebee.com/article/fauci-knew-in-february-of-2020-that-gain-of-function-research-had-been-taking-place-in-wuhan-prior-to-the-pandemic-
 https://twitter.com/RandPaul/status/1679623731377733632
 https://www.zerohedge.com/political/lancet-paper-post-vax-autopsies-nuked-after-attracting-special-attention-dr-peter
+https://petermcculloughmd.substack.com/p/media-twists-rfks-remark-at-ny-press
+https://twitter.com/RandPaul/status/1683104377601417221
 -->
