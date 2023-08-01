@@ -69,3 +69,5 @@ Bad defaults
 <https://twitter.com/LeaVerou/status/1668984897162149888>
 <https://twitter.com/challengescss/status/1668536462906621953>
 <https://twitter.com/romainmenke/status/1669004363828797442>
+
+<https://www.smashingmagazine.com/2023/07/define-array-colors-css/>
