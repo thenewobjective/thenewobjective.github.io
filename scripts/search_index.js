@@ -4,7 +4,7 @@
 # // stemming could be done, but won't be as it's overkill for this blog
 stop_words: ['the', 'be', 'to', 'of', 'and', 'a', 'in', 'that', 'have', 'i', 'it', 'for', 'not', 'on', 'with']
 exclude_urls:
-- '/demos/coin-flip.html'
+  - '/demos/coin-flip.html'
   - '/demos/css-bubbles.html'
   - '/demos/disk-collisions.html'
   - '/demos/spinner-bubbles.html'
