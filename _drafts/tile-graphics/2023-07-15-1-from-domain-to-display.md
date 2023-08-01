@@ -124,11 +124,11 @@ simple for now ([YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it
 We actually need some images to render. So I've obtained some from
 [opengameart.org](https://opengameart.org/content/topdown-tileset):
 
-![Grass Tile](/scripts/tile-graphics/lesson1/src/data/assets/0-64.png)
+![Grass Tile](/scripts/tile-graphics/lesson-1/849c6086a07317cf94cb.png)
 
-![Sand Tile](/scripts/tile-graphics/lesson1/src/data/assets/1-64.png)
+![Sand Tile](/scripts/tile-graphics/lesson-1/dad55d91b8d6b946af31.png)
 
-![Water Tile](/scripts/tile-graphics/lesson1/src/data/assets/2-64.png)
+![Water Tile](/scripts/tile-graphics/lesson-1/6db2be0f09ca0cbfa1e2.png)
 
 These are 64x64 pixel images and will be stored in the `src/data/assets` directory until
 there is a better place for them. By convention, these images are named after their

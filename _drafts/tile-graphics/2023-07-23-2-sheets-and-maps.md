@@ -379,10 +379,9 @@ sampleMap.render();
 
 Time to see it in action:
 
-<iframe src="/scripts/tile-graphics/lesson-2" width="640px" height="320px"></iframe>
+<iframe src="/scripts/tile-graphics/lesson-2" width="720px" height="720px"></iframe>
 
-This was probably more work than you expected since each layer of the architecture
-had to be introduced first. But now that the structure is in place, future work
-will be more straightforward as it will follow the same pattern.
+We now have support for tile maps and sheets. Creating and editing tile maps can be tedious,
+so in the next lesson we'll look at how to create a tile map editor to make the process easier.
 
 The code for this lesson can be found [here](https://github.com/mlhaufe/tile-engine/tree/v0.2.0)
