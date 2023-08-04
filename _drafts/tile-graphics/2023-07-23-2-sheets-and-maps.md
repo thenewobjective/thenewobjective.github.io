@@ -4,7 +4,7 @@ icon: file-text
 category: Tile Graphics
 title:  "2. Sheets and Maps"
 date:   2023-07-23 12:00:00 -0600
-permalink: /tile-graphics/sheets-and-maps/
+permalink: /tile-graphics/sheets-and-maps
 ---
 
 In the previous lesson we have the following index file:
