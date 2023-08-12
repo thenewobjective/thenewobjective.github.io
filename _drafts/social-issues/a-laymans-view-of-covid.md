@@ -471,4 +471,10 @@ https://twitter.com/RandPaul/status/1679623731377733632
 https://www.zerohedge.com/political/lancet-paper-post-vax-autopsies-nuked-after-attracting-special-attention-dr-peter
 https://petermcculloughmd.substack.com/p/media-twists-rfks-remark-at-ny-press
 https://twitter.com/RandPaul/status/1683104377601417221
+https://www.zerohedge.com/political/covid-19-vagus-nerve-inflammation-may-lead-dysautonomia-new-study
+https://twitter.com/Kevin_McKernan/status/1680551110757474304
+https://www.zerohedge.com/political/cdc-used-journal-promote-masks-despite-unreliable-and-unsupported-data-new-analysis
+https://www.zerohedge.com/covid-19/cdc-changed-definition-breakthrough-covid-19-after-emails-about-vaccine-failure
+https://twitter.com/kevin_mckernan/status/1674555376102932482
+https://www.zerohedge.com/covid-19/kids-almost-never-transmitted-covid-schools-major-new-study-finds
 -->
