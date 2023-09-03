@@ -477,4 +477,8 @@ https://www.zerohedge.com/political/cdc-used-journal-promote-masks-despite-unrel
 https://www.zerohedge.com/covid-19/cdc-changed-definition-breakthrough-covid-19-after-emails-about-vaccine-failure
 https://twitter.com/kevin_mckernan/status/1674555376102932482
 https://www.zerohedge.com/covid-19/kids-almost-never-transmitted-covid-schools-major-new-study-finds
+https://threadreaderapp.com/thread/1690025951600508929.html
+https://twitter.com/CantPostIt/status/1690146048734629888
+https://twitter.com/Kevin_McKernan/status/1690484725402456064
+https://twitter.com/r_hirschman/status/1690054601892864011
 -->

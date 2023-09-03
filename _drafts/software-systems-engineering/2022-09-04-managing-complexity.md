@@ -442,6 +442,24 @@ https://www.johndcook.com/blog/2010/05/10/taking-your-code-for-a-walk/
 <!--
 'So much complexity in software comes from trying to make one thing do two things.' -- Ryan Singer
 -->
+<!--
+https://twitter.com/CompSciFact/status/1649076783315075075
+https://en.wikipedia.org/wiki/Feature-driven_development
+https://en.wikipedia.org/wiki/Algorithm#Expressing_algorithms
+https://en.wikipedia.org/wiki/Wirth%27s_law
+https://en.wikipedia.org/wiki/Software_design_pattern
+https://en.wikipedia.org/wiki/Language_game_(philosophy)
+https://laetusinpraesens.org/docs/systfail.php
+https://twitter.com/wallingf/status/1144718612353015808
+https://www.johndcook.com/blog/2012/04/23/100x-better-approach-to-software/
+https://dl.acm.org/doi/10.1145/505145.505147
+http://www.gkc.org.uk/martin/papers/middle-out-t.pdf
+http://lambda-the-ultimate.org/node/4560
+https://www.cs.utexas.edu/ftp/predator/fsatsRevised.pdf
+https://twitter.com/rauschma/status/1567871859122737163
+https://www.devtopics.com/101-great-computer-programming-quotes/
+https://twitter.com/FunctorFact/status/1655606046478462978
+-->
 
 <!--
 ## Example Architectures

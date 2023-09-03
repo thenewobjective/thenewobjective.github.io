@@ -71,3 +71,4 @@ Bad defaults
 <https://twitter.com/romainmenke/status/1669004363828797442>
 
 <https://www.smashingmagazine.com/2023/07/define-array-colors-css/>
+<https://twitter.com/ChallengesCss/status/1669625956493869057>
