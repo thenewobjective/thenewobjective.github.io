@@ -481,4 +481,14 @@ https://threadreaderapp.com/thread/1690025951600508929.html
 https://twitter.com/CantPostIt/status/1690146048734629888
 https://twitter.com/Kevin_McKernan/status/1690484725402456064
 https://twitter.com/r_hirschman/status/1690054601892864011
+https://www.zerohedge.com/covid-19/fda-drops-ivermectin-bombshell
+https://twitter.com/dystopian_DU/status/1691720646777258271
+https://twitter.com/P_McCulloughMD/status/1691423187165151233
+https://twitter.com/JordanSchachtel/status/1696959694688964920
+https://twitter.com/Kevin_McKernan/status/1698656875091218839
+https://www.zerohedge.com/political/fda-clarifies-ivermectin-remains-unapproved-covid-19-docs-can-prescribe
+https://www.zerohedge.com/political/pfizer-documents-show-covid-19-vaccines-contain-potentially-harmful-modified-rna-not-mrna
+https://www.zerohedge.com/medical/covid-mask-wearers-could-be-exposed-toxic-chemicals-study
+https://twitter.com/Kevin_McKernan/status/1697353695103430947
+https://www.zerohedge.com/political/cdc-repeatedly-advised-people-post-vaccination-conditions-get-more-doses
 -->
