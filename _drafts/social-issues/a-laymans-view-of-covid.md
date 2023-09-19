@@ -491,4 +491,16 @@ https://www.zerohedge.com/political/pfizer-documents-show-covid-19-vaccines-cont
 https://www.zerohedge.com/medical/covid-mask-wearers-could-be-exposed-toxic-chemicals-study
 https://twitter.com/Kevin_McKernan/status/1697353695103430947
 https://www.zerohedge.com/political/cdc-repeatedly-advised-people-post-vaccination-conditions-get-more-doses
+https://www.youtube.com/watch?v=JUlPwbjtero
+https://twitter.com/drdrew/status/1701357732228378705
+https://twitter.com/GauteNilsen/status/1569756514369282049
+https://www.city-journal.org/article/the-harm-caused-by-masks
+https://www.infowars.com/posts/huge-whistleblower-says-cia-paid-off-experts-to-lie-about-covid-origins-virus-did-come-from-wuhan-lab/
+https://twitter.com/RefugeOfSinner5/status/1701589987907838033
+https://twitter.com/AlexBerenson/status/1701985570426122636
+https://twitter.com/Kevin_McKernan/status/1703026695748653507
+https://www.zerohedge.com/covid-19/journal-rejects-request-retract-study-suggesting-negative-covid-vaccine-effectiveness
+https://notthebee.com/article/cdc-is-trying-to-convince-health-care-workers-that-surgical-masks-are-just-as-good-as-n95s-and-they-are-having-none-of-it
+https://www.zerohedge.com/political/statistically-significant-increase-myopericarditis-and-single-organ-cutaneous-vasculitis
+https://www.zerohedge.com/covid-19/covid-19-vaccines-revealed-be-neither-safe-nor-effective-watchdog
 -->
