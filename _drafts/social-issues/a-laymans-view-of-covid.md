@@ -155,4 +155,31 @@ JRE #1701
 		- COVID vs vaccine...
 			- claims data suggests it's ok
 =========
+https://twitter.com/Inversionism/status/1707103052526715216
+https://www.zerohedge.com/political/covid-reinfections-clear-faster-including-unvaccinated-people-study
+https://twitter.com/IamBrookJackson/status/1711612865294008551
+https://twitter.com/IamBrookJackson/status/1710724896680976699
+https://boriquagato.substack.com/p/did-the-pfizer-vaccine-even-really
+https://dailysceptic.org/2023/09/23/german-whistleblower-finds-dna-contamination-up-to-354-times-recommended-limit-in-biontech-pfizer-vaccine/
+https://twitter.com/Kevin_McKernan/status/1705198391393722814
+https://www.theepochtimes.com/us/cdc-refuses-to-release-updated-information-on-post-vaccination-heart-inflammation-5496214
+https://twitter.com/zerohedge/status/1706108167677940114
+https://twitter.com/VigilantFox/status/1706696540956283365
+https://twitter.com/stkirsch/status/1707929424379912673
+https://twitter.com/JohnBeaudoinSr/status/1712426335690281050
+https://twitter.com/boriquagato/status/1710291573445951632
+https://www.zerohedge.com/political/will-make-your-blood-boil-biden-admin-goes-full-orwell-denying-vaxx-mandates-ever
+https://twitter.com/Kevin_McKernan/status/1708468675081077200
+https://www.quantamagazine.org/how-many-microbes-does-it-take-to-make-you-sick-20230927
+https://www.zerohedge.com/covid-19/cdc-ends-covid-19-vaccination-cards
+https://www.zerohedge.com/covid-19/cdc-journal-and-five-others-rejected-key-paper-covid-vaccines-heart-inflammation
+https://twitter.com/RefugeOfSinner5/status/1709225153429737584
+https://rwmalonemd.substack.com/p/nobel-prize-for-physiology-or-medicine
+https://twitter.com/zerohedge/status/1706831391445623171
+https://twitter.com/Kevin_McKernan/status/1708538027448885737
+https://www.zerohedge.com/medical/excess-deaths-cardiovascular-diseases-44-last-year-among-uk-citizens-aged-15-44
+https://twitter.com/zerohedge/status/1708559940644700314
+https://web.archive.org/web/20231002171647/https://twitter.com/BretWeinstein/status/1708861716245934359
+https://gab.com/EpochTV/posts/111156772614108438
+https://twitter.com/zerohedge/status/1706828152436293975
 -->

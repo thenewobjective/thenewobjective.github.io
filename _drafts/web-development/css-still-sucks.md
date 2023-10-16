@@ -72,3 +72,4 @@ Bad defaults
 
 <https://www.smashingmagazine.com/2023/07/define-array-colors-css/>
 <https://twitter.com/ChallengesCss/status/1669625956493869057>
+<https://dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j>
