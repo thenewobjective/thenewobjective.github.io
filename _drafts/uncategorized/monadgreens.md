@@ -30,3 +30,6 @@ Translation: "Anything said in Latin sounds profound."
 <https://twitter.com/engineers_feed/status/1543284183581093888>
 
 "Twelve plus one" uses the same letters that spell "eleven plus two".
+
+The politics:
+<https://twitter.com/SteveStuWill/status/1712943403091267897>

@@ -147,7 +147,7 @@ Vacuous proof
     * Prefer the simplest one (Occam's Razor)
 * Plato's cave
 * Theory guided by facts
-* The role of science and its limits (Sciencism)
+* The role of science and its limits (Scientism)
 * Jordan Peterson vs Sam Harris debate
 * Relationship to Information theory
 * "root of the knowledge heap"
@@ -223,7 +223,6 @@ Noumenon vs Phenomenon
 	https://en.wikipedia.org/wiki/Phenomenon
 	https://en.wikipedia.org/wiki/Noumenon
 
-
 The word "real" is the problem?
 
 ========
@@ -289,6 +288,7 @@ Abstractions are just useful fictions
     - contradicts my earlier blog post
 
 ## Truth vs reality
+
   If something is "True", does it make it "Real"?
 
 ## Facts vs Evidence

@@ -74,7 +74,7 @@ is facilitate challenges in one or more systems being used and catch things that
 How many organizations are using Excel spreadsheets for something it was not intended for? How many have subsequently become so reliant upon
 this for their work and their paycheck that it would be catastrophic if the underlying original problem was fixed? We can see a clear example
 of this in the field of Genetics. Last year (2020) a number of human genes were renamed to stop Microsoft Excel from
-[misinterpreting them as dates](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates).
+[misinterpreting them as dates](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates)[^1].
 
 Microsoft Excel [wasn't the problem](https://support.microsoft.com/en-us/office/format-numbers-as-text-583160db-936b-4e52-bdff-6f1863518ba4)
 here nor were the tens of thousands of gene names. Clearly, it's the organizations' processes that put them into that situation.
@@ -258,3 +258,7 @@ A parting cartoon by [Manu Cornet](https://en.wikipedia.org/wiki/Manu_Cornet):
 * [The Mythical Man-Month](https://www.amazon.com/Mythical-Man-Month-Anniversary-Software-Engineering-ebook/dp/B00B8USS14) by Frederick P. Brooks Jr.
 * [Exploding Software-Engineering Myths](https://www.microsoft.com/en-us/research/blog/exploding-software-engineering-myths/)
 * [Team Topologies](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819/ref=sr_1_1) by Matthew Skelton and Manual Pais
+
+## Footnotes
+
+[^1]: Microsoft released a feature to mitigate this problem in October 2023: <https://www.theverge.com/2023/10/21/23926585/microsoft-excel-misreading-dates-human-genes-conversion-fixed>s
