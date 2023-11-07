@@ -91,7 +91,7 @@ Versions:
 | Version | Description                                                                       |
 |---------|-----------------------------------------------------------------------------------|
 | 0       | nil UUID 00000000-0000-0000-0000-000000000000                                     |
-| 1       | data-time + MAC address (utilizes a Gregorian epoch timestamp)                    |
+| 1       | date-time + MAC address (utilizes a Gregorian epoch timestamp)                    |
 | 2       | date-time + MAC Address + DCE Security (utilizes a Gregorian epoch timestamp)     |
 | 3       | namespace name based (MD5)                                                        |
 | 4       | Random                                                                            |
