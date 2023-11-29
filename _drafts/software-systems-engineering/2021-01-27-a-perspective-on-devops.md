@@ -167,27 +167,6 @@ In summary, my perspective is that DevOps should not be treated as merely the Ve
 * Donovan Brown
   * "DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."
 
-* Features
-  * Security
-    * SSL (Mozilla Observatory)
-  * Hosting
-  * Continuous Integration
-    * Unit Testing
-      * <https://www.c-sharpcorner.com/article/selenium-automation-test-cases-for-the-net-web-application/>
-    * Screaming Frog
-  * Continuous Delivery
-    * <https://docs.microsoft.com/en-us/iis/install/installing-publishing-technologies/installing-and-configuring-web-deploy-on-iis-80-or-later>
-  * Monitoring
-    * Availability Testing (Application Insights)
-    * Analytics
-    * Security
-  * Maintenance
-    * DB backups
-* Continuous Deployment
-
-* What gets released together gets versioned together
-* Infrastructure as Code
-
 * From the HDI meetup:
   * "AntiFragility"
 

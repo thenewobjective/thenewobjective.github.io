@@ -132,4 +132,27 @@ This model is chosen
 
 ## Notes
 
-- Release Cadence
+* Release Cadence
+
+<!--
+* Features
+  * Security
+    * SSL (Mozilla Observatory)
+  * Hosting
+  * Continuous Integration
+    * Unit Testing
+      * <https://www.c-sharpcorner.com/article/selenium-automation-test-cases-for-the-net-web-application/>
+    * Screaming Frog
+  * Continuous Delivery
+    * <https://docs.microsoft.com/en-us/iis/install/installing-publishing-technologies/installing-and-configuring-web-deploy-on-iis-80-or-later>
+  * Monitoring
+    * Availability Testing (Application Insights)
+    * Analytics
+    * Security
+  * Maintenance
+    * DB backups
+* Continuous Deployment
+
+* What gets released together gets versioned together
+* Infrastructure as Code
+-->
