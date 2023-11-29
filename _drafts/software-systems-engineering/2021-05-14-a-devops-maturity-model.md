@@ -129,6 +129,7 @@ This model is chosen
 * Ineta Būcena. _[DevOps maturity model](https://devopsadoptmeth.wordpress.com/method-description/devops-maturity-model/)_ (Accessed May 2021)
 * Phil Wittmer. (July 16, 2020) [A DevOps Maturity Model to Monitor Your Progress](https://www.tiempodev.com/blog/devops-maturity-model/)
 * [Explore DORA's research program](https://www.devops-research.com/research.html)
+* <https://www.3pillarglobal.com/insights/a-devops-maturity-model-to-monitor-your-progress/>
 
 ## Notes
 

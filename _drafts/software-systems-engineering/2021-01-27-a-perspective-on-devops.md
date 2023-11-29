@@ -73,6 +73,8 @@ was very much constrained by how these cards were processed. The development wor
 ===========================================
 ===========================================
 
+https://www.3pillarglobal.com/insights/what-is-devops-where-did-it-come-from/
+
 Crockford History: <https://www.youtube.com/watch?v=JxAXlJEmNMg>
 
 http://www.columbia.edu/cu/computinghistory/fisk.pdf
