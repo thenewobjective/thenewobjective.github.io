@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="2 - Plotting Points">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/graphics-programming/plotting-points">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | 2 - Plotting Points</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/graphics-programming/plotting-points">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        2 - Plotting Points
+      </h1>
+      
+      
+        <time>July 21, 2021</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/graphics-programming/the-canvas" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/graphics-programming" class="category-nav_title" rel="archives">Graphics Programming</a>
+    <a href="/graphics-programming/loading-images" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <p>With our canvas prepared we need a representation that can be rendered to it.
+This representation will be called a <code class="language-plaintext highlighter-rouge">Graphic</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Graphic.js</span>
+<span class="kd">class</span> <span class="nx">Graphic</span> <span class="p">{}</span>
+</code></pre></div></div>
+
+<p>Recall that the canvas <code class="language-plaintext highlighter-rouge">draw</code> method requires an <a href="https://developer.mozilla.org/en-US/docs/Web/API/ImageData" target="_blank" rel="noopener noreferrer">ImageData</a> object.
+We’ll define a property to hold onto this image data but we have to ensure that it’s large enough to contain what we plot to it.
+It may be useful for clients (users of this class) to know the height and width of a graphic in the future:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Graphic.js</span>
+<span class="kd">class</span> <span class="nx">Graphic</span> <span class="p">{</span>
+    <span class="err">#</span><span class="nx">imageData</span><span class="p">;</span> <span class="err">#</span><span class="nx">height</span><span class="p">;</span> <span class="err">#</span><span class="nx">width</span><span class="p">;</span>
+
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">width</span><span class="p">,</span><span class="nx">height</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">imageData</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageData</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">height</span> <span class="o">=</span> <span class="nx">height</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">width</span> <span class="o">=</span> <span class="nx">width</span>
+    <span class="p">}</span>
+
+    <span class="kd">get</span> <span class="nx">imageData</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">imageData</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kd">get</span> <span class="nx">height</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">height</span> <span class="p">}</span>
+    <span class="kd">get</span> <span class="nx">width</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">width</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+      <h2 id="plotting-pixels">
+        
+        
+          <a href="#plotting-pixels">#</a> Plotting Pixels
+        
+        
+      </h2>
+
+<p>The next challenge is how to update individual pixels in the <code class="language-plaintext highlighter-rouge">#imageData</code>. If we can’t plot a pixel we can’t do anything
+more significant. Updating a specific pixel’s color data will require a little arithmetic. First imagine
+this <code class="language-plaintext highlighter-rouge">#imageData</code> in matrix form like it would be displayed on the screen:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>y x --------------------------&gt;
+|  R B G A R B G A ... R B G A
+|  R B G A R B G A ... R B G A
+|  ...
+v  R B G A R B G A ... R B G A
+</code></pre></div></div>
+
+<p>Mathematically this is referred to as <a href="https://en.wikipedia.org/wiki/Tensor_reshaping#Matricization" target="_blank" rel="noopener noreferrer">Matricization</a>
+in <a href="https://en.wikipedia.org/wiki/Row-_and_column-major_order" target="_blank" rel="noopener noreferrer">Row-Major order</a>. In other words you read left to right,
+from top to bottom. With this you can work out the following formula to find a desired x/y position:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>((y * (width * bytes)) + (x * bytes)) + component
+</code></pre></div></div>
+
+<p>Simplified as:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bytes * (width * y + x) + component
+</code></pre></div></div>
+
+<p>In this case <code class="language-plaintext highlighter-rouge">bytes = 4</code> for RGBA and we’ll use the following dimensions as an example <code class="language-plaintext highlighter-rouge">width = 640</code>, and <code class="language-plaintext highlighter-rouge">height = 360</code>.
+The component is the offset for the particular color channel. So to access the colors at a particular <code class="language-plaintext highlighter-rouge">(x,y)</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">r</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">bytes</span> <span class="o">*</span> <span class="p">(</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">x</span><span class="p">)</span>  <span class="o">+</span> <span class="mi">0</span><span class="p">],</span>
+      <span class="nx">g</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">bytes</span> <span class="o">*</span> <span class="p">(</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">x</span><span class="p">)</span>  <span class="o">+</span> <span class="mi">1</span><span class="p">],</span>
+      <span class="nx">b</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">bytes</span> <span class="o">*</span> <span class="p">(</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">x</span><span class="p">)</span>  <span class="o">+</span> <span class="mi">2</span><span class="p">],</span>
+      <span class="nx">a</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">bytes</span> <span class="o">*</span> <span class="p">(</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">x</span><span class="p">)</span>  <span class="o">+</span> <span class="mi">3</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Notice that <code class="language-plaintext highlighter-rouge">height</code> is not necessary for this computation due to our choosing Row-Major order.</p>
+
+<p>Also, instead of using the name <code class="language-plaintext highlighter-rouge">bytes</code> we’ll use a more descriptive one reflecting what they represent: <code class="language-plaintext highlighter-rouge">channels</code></p>
+
+<p>Time to define our <code class="language-plaintext highlighter-rouge">setPixel</code> method. Since setting a pixel is not specific to a particular graphic we’ll define it on the base class:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Graphic.js</span>
+<span class="kd">class</span> <span class="nx">Graphic</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+    <span class="err">#</span><span class="nx">channels</span> <span class="o">=</span> <span class="mi">4</span>
+
+    <span class="kd">get</span> <span class="nx">channels</span><span class="p">(){</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">channels</span> <span class="p">}</span>
+
+    <span class="nx">setPixel</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="nx">g</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">a</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="p">{</span> <span class="nx">channels</span><span class="p">,</span> <span class="nx">width</span><span class="p">,</span> <span class="na">imageData</span><span class="p">:</span> <span class="p">{</span> <span class="nx">data</span> <span class="p">}</span> <span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
+              <span class="nx">i</span> <span class="o">=</span> <span class="nx">channels</span> <span class="o">*</span> <span class="p">(</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">x</span><span class="p">);</span>
+        <span class="nx">data</span><span class="p">.</span><span class="kd">set</span><span class="p">([</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">],</span> <span class="nx">i</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The components being used to plot are related to each other so we can refactor these and make
+the relationship explicit to improve clarity. What are we plotting? We’re not
+plotting <code class="language-plaintext highlighter-rouge">x,y,r,g,b,a</code>, we’re plotting a <code class="language-plaintext highlighter-rouge">Point</code> with a particular <code class="language-plaintext highlighter-rouge">Color</code> so let’s define them:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// const p1 = new Point2D({x: 24, y: 13})</span>
+<span class="kd">class</span> <span class="nx">Point2D</span> <span class="p">{</span>
+    <span class="err">#</span><span class="nx">x</span><span class="p">;</span> <span class="err">#</span><span class="nx">y</span><span class="p">;</span>
+
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">x</span> <span class="o">=</span> <span class="nx">x</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">y</span>
+    <span class="p">}</span>
+
+    <span class="kd">get</span> <span class="nx">x</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">x</span> <span class="p">}</span>
+    <span class="kd">get</span> <span class="nx">y</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">y</span> <span class="p">}</span>
+
+    <span class="c1">// p1.toString() === '(24,13)'</span>
+    <span class="nx">toString</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="s2">`(</span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">x</span><span class="p">}</span><span class="s2">,</span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">y</span><span class="p">}</span><span class="s2">)`</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Point2D</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Color.js</span>
+
+<span class="c1">// const RED = new Color({r: 255, g: 0, b: 0, a: 255})</span>
+<span class="kd">class</span> <span class="nx">Color</span> <span class="p">{</span>
+    <span class="err">#</span><span class="nx">r</span><span class="p">;</span> <span class="err">#</span><span class="nx">g</span><span class="p">;</span> <span class="err">#</span><span class="nx">b</span><span class="p">;</span> <span class="err">#</span><span class="nx">a</span><span class="p">;</span>
+
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">r</span> <span class="o">=</span> <span class="nx">r</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">g</span> <span class="o">=</span> <span class="nx">g</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">b</span> <span class="o">=</span> <span class="nx">b</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">a</span> <span class="o">=</span> <span class="nx">a</span>
+    <span class="p">}</span>
+
+    <span class="kd">get</span> <span class="nx">r</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">r</span> <span class="p">}</span>
+    <span class="kd">get</span> <span class="nx">g</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">g</span> <span class="p">}</span>
+    <span class="kd">get</span> <span class="nx">b</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">b</span> <span class="p">}</span>
+    <span class="kd">get</span> <span class="nx">a</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">a</span> <span class="p">}</span>
+
+    <span class="c1">// RED.toString() === '0xff0000ff'</span>
+    <span class="nx">toString</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s2">`0x</span><span class="p">${</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">valueOf</span><span class="p">().</span><span class="nx">toString</span><span class="p">(</span><span class="mi">16</span><span class="p">).</span><span class="nx">padStart</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">)</span>
+        <span class="p">}</span><span class="s2">`</span>
+    <span class="p">}</span>
+
+    <span class="c1">// RED.valueOf() === 0xff0000ff</span>
+    <span class="nx">valueOf</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="p">{</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span>
+        <span class="k">return</span> <span class="p">[</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">r</span><span class="p">].</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">sum</span><span class="p">,</span> <span class="nx">ch</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">sum</span> <span class="o">+</span> <span class="nx">ch</span> <span class="o">*</span> <span class="mh">0x100</span><span class="o">**</span><span class="nx">i</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>A color can be represented with a single number by the hexadecimal convention: <code class="language-plaintext highlighter-rouge">0xRRGGBBAA</code>.
+The <code class="language-plaintext highlighter-rouge">valueOf</code> method computes this from the color components by:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">this</span><span class="p">.</span><span class="nx">r</span> <span class="o">*</span> <span class="mh">0x100</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">g</span> <span class="o">*</span> <span class="mh">0x100</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">b</span> <span class="o">*</span> <span class="mh">0x100</span><span class="o">**</span><span class="mi">1</span> <span class="o">+</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">a</span> <span class="o">*</span> <span class="mh">0x100</span><span class="o">**</span><span class="mi">0</span>
+</code></pre></div></div>
+
+<p>Which is generalized to the single reduce expression.</p>
+
+<p>The components of a color only make sense if they are between <code class="language-plaintext highlighter-rouge">0-255</code>; this could be enforced with input validation
+or by clamping. If we were using a programming language with a sufficiently expressive type system we could use
+that to constrain the inputs (such as <code class="language-plaintext highlighter-rouge">unsigned byte</code>). This is not an option in ECMAScript. If we choose to perform runtime
+validation this could be quite inefficient when a significant number of colors are involved, also performing input validation
+violates the <a href="https://en.wikipedia.org/wiki/Single-responsibility_principle" target="_blank" rel="noopener noreferrer">Single-responsibility principle</a> as it’s
+<a href="https://en.wikipedia.org/wiki/Orthogonality#Computer_science" target="_blank" rel="noopener noreferrer">orthogonal</a> to the goal being accomplished.
+With a <a href="https://www.npmjs.com/package/@final-hill/decorator-contracts" target="_blank" rel="noopener noreferrer">contract system</a> such validation could be moved to
+an invariant assertion where it belongs but since we want to keep this tutorial simple we’ll rely on clamping the values for now:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/util/clamp.js</span>
+
+<span class="kd">const</span> <span class="nx">clamp</span> <span class="o">=</span> <span class="p">({</span><span class="nx">x</span><span class="p">,</span> <span class="nx">min</span><span class="p">,</span> <span class="nx">max</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">min</span><span class="p">),</span> <span class="nx">max</span><span class="p">)</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">clamp</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Color.js</span>
+<span class="k">import</span> <span class="nx">clamp</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./util/clamp.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">Color</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">})</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">range</span> <span class="o">=</span> <span class="p">{</span><span class="na">min</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="na">max</span><span class="p">:</span><span class="mi">255</span><span class="p">}</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">r</span> <span class="o">=</span> <span class="nx">clamp</span><span class="p">({</span><span class="na">x</span><span class="p">:</span><span class="nx">r</span><span class="p">,</span> <span class="p">...</span><span class="nx">range</span><span class="p">})</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">g</span> <span class="o">=</span> <span class="nx">clamp</span><span class="p">({</span><span class="na">x</span><span class="p">:</span><span class="nx">g</span><span class="p">,</span> <span class="p">...</span><span class="nx">range</span><span class="p">})</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">b</span> <span class="o">=</span> <span class="nx">clamp</span><span class="p">({</span><span class="na">x</span><span class="p">:</span><span class="nx">b</span><span class="p">,</span> <span class="p">...</span><span class="nx">range</span><span class="p">})</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">a</span> <span class="o">=</span> <span class="nx">clamp</span><span class="p">({</span><span class="na">x</span><span class="p">:</span><span class="nx">a</span><span class="p">,</span> <span class="p">...</span><span class="nx">range</span><span class="p">})</span>
+    <span class="p">}</span>
+
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Now the plot method can be updated to support our new definitions:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Graphic.js</span>
+<span class="kd">class</span> <span class="nx">Graphic</span> <span class="p">{</span>
+
+    <span class="c1">// ...</span>
+
+    <span class="nx">setPixel</span><span class="p">({</span><span class="na">point</span><span class="p">:</span> <span class="p">{</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">},</span> <span class="na">color</span><span class="p">:</span> <span class="p">{</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">}})</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="p">{</span> <span class="nx">channels</span><span class="p">,</span> <span class="nx">width</span><span class="p">,</span> <span class="na">imageData</span><span class="p">:</span> <span class="p">{</span> <span class="nx">data</span> <span class="p">}</span> <span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
+              <span class="nx">i</span> <span class="o">=</span> <span class="nx">channels</span> <span class="o">*</span> <span class="p">(</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">x</span><span class="p">);</span>
+        <span class="nx">data</span><span class="p">.</span><span class="kd">set</span><span class="p">([</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">],</span> <span class="nx">i</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>We don’t want to attempt to draw pixels outside of the boundaries nor do we want
+to try and draw pixels at a fractional position such as <code class="language-plaintext highlighter-rouge">{x:-1, y:18.5}</code> (at least not yet…). Let’s
+update the method to handle these cases:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Graphic.js</span>
+<span class="kd">class</span> <span class="nx">Graphic</span> <span class="p">{</span>
+
+    <span class="c1">// ...</span>
+
+    <span class="nx">setPixel</span><span class="p">({</span><span class="na">point</span><span class="p">:</span> <span class="p">{</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">},</span> <span class="na">color</span><span class="p">:</span> <span class="p">{</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">}})</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="p">{</span> <span class="nx">channels</span><span class="p">,</span> <span class="nx">height</span><span class="p">,</span> <span class="nx">width</span><span class="p">,</span> <span class="na">imageData</span><span class="p">:</span> <span class="p">{</span> <span class="nx">data</span> <span class="p">}</span> <span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
+              <span class="nx">i</span> <span class="o">=</span> <span class="nx">channels</span> <span class="o">*</span> <span class="p">(</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">x</span><span class="p">);</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">y</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">x</span> <span class="o">&gt;=</span> <span class="nx">width</span> <span class="o">||</span> <span class="nx">y</span> <span class="o">&gt;=</span> <span class="nx">height</span><span class="p">)</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="nx">data</span><span class="p">.</span><span class="kd">set</span><span class="p">([</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">],</span> <span class="nx">i</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Since we can set a pixel it may also be useful to get one:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Graphic.js</span>
+<span class="k">import</span> <span class="nx">Color</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Color.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">Graphic</span> <span class="p">{</span>
+    <span class="c1">//...</span>
+
+    <span class="nx">getPixel</span><span class="p">({</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">})</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="p">{</span> <span class="nx">channels</span><span class="p">,</span> <span class="nx">height</span><span class="p">,</span> <span class="nx">width</span><span class="p">,</span> <span class="na">imageData</span><span class="p">:</span> <span class="p">{</span> <span class="nx">data</span> <span class="p">}</span> <span class="p">}</span> <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
+              <span class="nx">i</span> <span class="o">=</span> <span class="nx">channels</span> <span class="o">*</span> <span class="p">(</span><span class="nx">width</span> <span class="o">*</span> <span class="nx">y</span> <span class="o">+</span> <span class="nx">x</span><span class="p">);</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">y</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">x</span> <span class="o">&gt;=</span> <span class="nx">width</span> <span class="o">||</span> <span class="nx">y</span> <span class="o">&gt;=</span> <span class="nx">height</span><span class="p">)</span>
+            <span class="k">return</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">({</span><span class="na">r</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="na">g</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="na">a</span><span class="p">:</span> <span class="mi">0</span> <span class="p">});</span>
+        <span class="kd">const</span> <span class="p">[</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">]</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">({</span> <span class="nx">r</span><span class="p">,</span> <span class="nx">g</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">a</span> <span class="p">})</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Since setting a pixel outside the boundaries doesn’t throw an exception getting one shouldn’t either
+so in this case we’ll return a transparent black pixel.</p>
+
+<p>With our new plotting ability we can start putting it to use. We’ll generate some noise:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/util/randomInt.js</span>
+<span class="kd">const</span> <span class="nx">randomInt</span> <span class="o">=</span> <span class="p">({</span><span class="nx">max</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">max</span><span class="p">)</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">randomInt</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/Noise.js</span>
+<span class="k">import</span> <span class="nx">Graphic</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Graphic.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Color</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Color.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Point2D</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Point2D.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">randomInt</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/util/randomInt.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">Noise</span> <span class="kd">extends</span> <span class="nx">Graphic</span> <span class="p">{</span>
+    <span class="nx">randomColor</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">({</span>
+            <span class="na">r</span><span class="p">:</span> <span class="nx">randomInt</span><span class="p">({</span><span class="na">max</span><span class="p">:</span> <span class="mi">255</span><span class="p">}),</span>
+            <span class="na">g</span><span class="p">:</span> <span class="nx">randomInt</span><span class="p">({</span><span class="na">max</span><span class="p">:</span> <span class="mi">255</span><span class="p">}),</span>
+            <span class="na">b</span><span class="p">:</span> <span class="nx">randomInt</span><span class="p">({</span><span class="na">max</span><span class="p">:</span> <span class="mi">255</span><span class="p">}),</span>
+            <span class="na">a</span><span class="p">:</span> <span class="mi">255</span>
+        <span class="p">})</span>
+    <span class="p">}</span>
+
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">super</span><span class="p">({</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">})</span>
+
+        <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="nx">width</span><span class="p">;</span> <span class="nx">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">y</span> <span class="o">&lt;</span> <span class="nx">height</span><span class="p">;</span> <span class="nx">y</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">const</span> <span class="nx">point</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Point2D</span><span class="p">({</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">}),</span>
+                      <span class="nx">color</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">randomColor</span><span class="p">()</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">setPixel</span><span class="p">({</span><span class="nx">point</span><span class="p">,</span> <span class="nx">color</span><span class="p">})</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Noise</span>
+</code></pre></div></div>
+
+<p>Implementing noise is straightforward enough. Iterate over every pixel, generate a random color, then plot it.</p>
+
+<p>Next we’ll display our noise graphic:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/noise-example.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Noise</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Noise.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">noise</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Noise</span><span class="p">({</span><span class="na">height</span><span class="p">:</span> <span class="mi">480</span><span class="p">,</span> <span class="na">width</span><span class="p">:</span> <span class="mi">640</span><span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">noise-example</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="mi">480</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="mi">640</span>
+<span class="p">})</span>
+
+<span class="nx">canvas</span><span class="p">.</span><span class="nx">draw</span><span class="p">({</span><span class="na">imageData</span><span class="p">:</span> <span class="nx">noise</span><span class="p">.</span><span class="nx">imageData</span><span class="p">,</span> <span class="na">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="na">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">})</span>
+</code></pre></div></div>
+
+<p>As a client having to pass in <code class="language-plaintext highlighter-rouge">noise.imageData</code> to the <code class="language-plaintext highlighter-rouge">draw</code> method is a bit redundant and excessive.
+Let’s update the class to accept the graphic directly:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Canvas.js</span>
+<span class="kd">class</span> <span class="nx">Canvas</span> <span class="p">{</span>
+    <span class="err">#</span><span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">canvas</span><span class="dl">'</span><span class="p">)</span>
+    <span class="err">#</span><span class="nx">ctx</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="dl">'</span><span class="s1">2d</span><span class="dl">'</span><span class="p">,{</span><span class="na">alpha</span><span class="p">:</span> <span class="kc">false</span><span class="p">})</span>
+
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">container</span><span class="p">,</span> <span class="nx">height</span><span class="p">,</span> <span class="nx">width</span><span class="p">,</span> <span class="na">graphic</span><span class="p">:</span> <span class="p">{</span><span class="nx">imageData</span><span class="p">}})</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">black</span><span class="dl">'</span>
+        <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">,</span> <span class="p">{</span><span class="nx">height</span><span class="p">,</span> <span class="nx">width</span><span class="p">})</span>
+        <span class="nx">container</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">putImageData</span><span class="p">(</span><span class="nx">imageData</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Canvas</span>
+</code></pre></div></div>
+
+<p>And update the corresponding example:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/noise-example.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Noise</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Noise.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">noise-example</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="mi">480</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="mi">640</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Noise</span><span class="p">({</span><span class="na">height</span><span class="p">:</span> <span class="mi">480</span><span class="p">,</span> <span class="na">width</span><span class="p">:</span> <span class="mi">640</span><span class="p">})</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<figure id="noise-example">
+    <figcaption>Generating Noise</figcaption>
+</figure>
+<script type="module" src="/scripts/graphics-programming/lesson2/examples/noise-example.js"></script>
+
+<p>You might have been surprised at how much effort went into putting a pixel on the screen but this is fundamental
+to our future work and now it’s done. Time to move on.</p>
+
+<p><a href="https://github.com/thenewobjective/thenewobjective.github.io/tree/master/scripts/graphics-programming/lesson2" target="_blank" rel="noopener noreferrer">Source code for this lesson</a>.</p>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/graphics-programming/the-canvas" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/graphics-programming" class="category-nav_title" rel="archives">Graphics Programming</a>
+    <a href="/graphics-programming/loading-images" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

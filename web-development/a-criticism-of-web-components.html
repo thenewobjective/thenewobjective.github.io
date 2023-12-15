@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="A Criticism of Web Components">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/web-development/a-criticism-of-web-components">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | A Criticism of Web Components</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/web-development/a-criticism-of-web-components">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        A Criticism of Web Components
+      </h1>
+      
+      
+        <time>March 18, 2019</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/web-development" class="category-nav_title" rel="archives">Web Development</a>
+    <a href="/web-development/ramda-and-eweda-before-the-dawn" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <p><em>This is a repost of my (now deleted) comment on <a href="https://www.sitepen.com/blog/2018/07/06/web-components-in-2018/" target="_blank" rel="noopener noreferrer">SitePen</a>. I’ve added some additions and references. A similar comment of mine was removed from the <a href="https://hacks.mozilla.org/2018/11/the-power-of-web-components" target="_blank" rel="noopener noreferrer">Mozilla blog</a>.</em></p>
+
+<ul id="markdown-toc">
+  <li><a href="#css-pseudo-selectors-dont-work" id="markdown-toc-css-pseudo-selectors-dont-work">CSS pseudo selectors don’t work</a></li>
+  <li><a href="#incompatible-with-native-elements" id="markdown-toc-incompatible-with-native-elements">Incompatible with native elements</a></li>
+  <li><a href="#non-trivial-elements-have-to-extend-htmlelement" id="markdown-toc-non-trivial-elements-have-to-extend-htmlelement">Non-trivial elements HAVE to extend HTMLElement</a></li>
+  <li><a href="#javascript-required" id="markdown-toc-javascript-required">JavaScript required</a></li>
+  <li><a href="#potentially-exponential-fallbacks" id="markdown-toc-potentially-exponential-fallbacks">Potentially exponential fallbacks</a></li>
+  <li><a href="#polyfills-required" id="markdown-toc-polyfills-required">Polyfills required</a></li>
+  <li><a href="#aria" id="markdown-toc-aria">Aria</a></li>
+  <li><a href="#seo" id="markdown-toc-seo">SEO</a></li>
+  <li><a href="#additional-limitations" id="markdown-toc-additional-limitations">Additional Limitations</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+  <li><a href="#additional-reading" id="markdown-toc-additional-reading">Additional Reading</a></li>
+</ul>
+<hr>
+
+<p>It seems that <a href="https://en.wikipedia.org/wiki/The_Emperor%27s_New_Clothes" target="_blank" rel="noopener noreferrer">The Emperor has no clothes</a>…</p>
+
+<blockquote>
+  <p>“Safe upon the solid rock the ugly houses stand: Come and see my shining palace built upon the sand!”</p>
+
+  <p><cite>–  Edna St Vincent Millay</cite></p>
+</blockquote>
+
+<p>Sadly there are significant issues with the standards still in many places, and many undefined behaviors.</p>
+      <h2 id="css-pseudo-selectors-dont-work">
+        
+        
+          <a href="#css-pseudo-selectors-dont-work">#</a> CSS pseudo selectors don’t work
+        
+        
+      </h2>
+
+<p>Did you create your own form component such as <code class="language-plaintext highlighter-rouge">&lt;calendar /&gt;</code>?</p>
+
+<p>Well the :checked selector won’t find it unless you happened to have hidden inside of it the right native <code class="language-plaintext highlighter-rouge">&lt;input/&gt;</code> to catch it. It’s then up to you to get that to actually “check” the right parts of your UX.</p>
+
+<p>Want something more semantic and relevant to your component like <code class="language-plaintext highlighter-rouge">:focusable</code>? Too bad. you can’t define your own as that is not part of any standard. The closest is the <a href="https://drafts.csswg.org/css-shadow-parts/" target="_blank" rel="noopener noreferrer">following</a> which is <em>barely</em> a draft standard</p>
+    
+      <h2 id="incompatible-with-native-elements">
+        
+        
+          <a href="#incompatible-with-native-elements">#</a> Incompatible with native elements
+        
+        
+      </h2>
+
+<p>If you have a custom input element the surrounding <code class="language-plaintext highlighter-rouge">&lt;form&gt;</code> ignores your component so you may have to create <code class="language-plaintext highlighter-rouge">&lt;my-form/&gt;</code> too, or add extra logic to the native one to simply recognize your new element.</p>
+
+<p>Alternatively you have to dynamically <a href="https://stackoverflow.com/questions/38623176/how-can-i-create-a-web-component-that-acts-like-a-form-element/38667839" target="_blank" rel="noopener noreferrer">hack</a> your custom element to inject, update, and remove a hidden input field for every relevant value just so the container will get the right value. This won’t cover other issues such as the other DOM properties which ignore your components:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">HTMLFormElement</span><span class="p">.</span><span class="nx">elements</span>
+<span class="nx">HTMLFormElement</span><span class="p">.</span><span class="nx">length</span>
+<span class="nx">HTMLFormElement</span><span class="p">.</span><span class="nx">autocomplete</span>
+
+<span class="k">new</span> <span class="nx">FormData</span><span class="p">(</span><span class="nx">form</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>and so on.</p>
+    
+      <h2 id="non-trivial-elements-have-to-extend-htmlelement">
+        
+        
+          <a href="#non-trivial-elements-have-to-extend-htmlelement">#</a> Non-trivial elements HAVE to extend HTMLElement
+        
+        
+      </h2>
+
+<p>It sucks to say the least to have to re-invent something like <code class="language-plaintext highlighter-rouge">&lt;button /&gt;</code> <a href="https://codepen.io/mlhaufe/pen/yxBEdx" target="_blank" rel="noopener noreferrer">from scratch</a> instead of a more specific element such as <code class="language-plaintext highlighter-rouge">HTMLButtonElement</code> but the current standard requires that you extend the base <code class="language-plaintext highlighter-rouge">HTMLElement</code></p>
+
+<ul>
+  <li><a href="https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-customized-builtin-example" target="_blank" rel="noopener noreferrer">https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-customized-builtin-example</a></li>
+  <li><a href="https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-autonomous-drawbacks" target="_blank" rel="noopener noreferrer">https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-autonomous-drawbacks</a></li>
+</ul>
+
+<p>Even IF you COULD extend a more specific element directly, not all elements have a class to extend, like <code class="language-plaintext highlighter-rouge">&lt;footer /&gt;</code>. So you have to use the hacky property in registration, extends:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">customElements</span><span class="p">.</span><span class="nx">define</span><span class="p">(</span><span class="dl">'</span><span class="s1">custom-footer</span><span class="dl">'</span><span class="p">,</span> <span class="nx">CustomFooter</span><span class="p">,</span> <span class="p">{</span><span class="na">extends</span><span class="p">:</span> <span class="dl">'</span><span class="s1">footer</span><span class="dl">'</span><span class="p">});</span>
+</code></pre></div></div>
+
+<p>The built-in tags were never designed to be extended, and if you tried you will probably break <a href="https://en.wikipedia.org/wiki/Liskov_substitution_principle" target="_blank" rel="noopener noreferrer">Liskov’s Substitution Principle</a> now or later. For example, if you could extend HTMLInputElement your new element has to support all of the current <code class="language-plaintext highlighter-rouge">type="…"</code> options, properties, and methods. When the standard changes and they add a new property or method, your subtype will be inconsistent with it and by definition NOT be an instance of <code class="language-plaintext highlighter-rouge">HTMLInputElement</code>. As a result of this, there is now a large set of guidelines published for you to deal with. A hallmark of poor design:</p>
+
+<ul>
+  <li><a href="https://w3ctag.github.io/webcomponents-design-guidelines/" target="_blank" rel="noopener noreferrer">https://w3ctag.github.io/webcomponents-design-guidelines/</a></li>
+  <li><a href="https://github.com/webcomponents/gold-standard/wiki" target="_blank" rel="noopener noreferrer">https://github.com/webcomponents/gold-standard/wiki</a></li>
+</ul>
+    
+      <h2 id="javascript-required">
+        
+        
+          <a href="#javascript-required">#</a> JavaScript required
+        
+        
+      </h2>
+
+<p>In the age of <a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API" target="_blank" rel="noopener noreferrer">ServiceWorkers</a> and offline-support, I don’t know how much this matters to you, but it is still a valid point for some. WebComponents simply don’t work without JavaScript enabled, so if that matters get ready to develop some fallback content for graceful degradation for each element, or for the entire page; or, get ready to write some bootstrap code to find and replace/upgrade some elements with your updated code. In either case you’re not saving yourself any time nor code writing.</p>
+
+<p><strong>Update</strong>: Chrome for Android may start disabling JavaScript on 2G connections</p>
+    
+      <h2 id="potentially-exponential-fallbacks">
+        
+        
+          <a href="#potentially-exponential-fallbacks">#</a> Potentially exponential fallbacks
+        
+        
+      </h2>
+
+<p>WebComponents, like other HTML elements, are compositional by nesting:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;my-foo&gt;</span>
+    <span class="nt">&lt;my-bar&gt;&lt;/my-bar&gt;</span>
+<span class="nt">&lt;/my-foo&gt;</span>
+</code></pre></div></div>
+
+<p>Are your fallbacks compositional?</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;my-foo&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"my-foo-fallback"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;my-bar&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"my-bar-fallback"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/my-bar&gt;</span>
+<span class="nt">&lt;/my-foo&gt;</span>
+</code></pre></div></div>
+
+<p>Is that right? Maybe more so like this?</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;my-foo&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"my-foo-fallback"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;my-bar&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"my-bar-fallback"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/my-bar&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/my-foo&gt;</span>
+</code></pre></div></div>
+
+<p>That doesn’t seem right either… And this is with only TWO contrived tags.</p>
+
+<p>Now, you might say that is why the <code class="language-plaintext highlighter-rouge">is=""</code> attribute exists:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">is=</span><span class="s">"my-foo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">is=</span><span class="s">"my-bar"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>Looks good at first for something trivial, but this is a <a href="https://wiki.whatwg.org/wiki/Custom_Elements#Subclassing_existing_elements" target="_blank" rel="noopener noreferrer">hack</a> and once you add in the Shadow DOM you’re back in the same situation.</p>
+    
+      <h2 id="polyfills-required">
+        
+        
+          <a href="#polyfills-required">#</a> Polyfills required
+        
+        
+      </h2>
+
+<ul>
+  <li>These are all DRAFT standards, so for a consistent experience you’re going to probably <a href="https://github.com/WebComponents/webcomponentsjs" target="_blank" rel="noopener noreferrer">polyfill</a>.</li>
+  <li>The polyfill is potentially <a href="https://pbs.twimg.com/media/DlKFIgtVAAEssTb.jpg:large" target="_blank" rel="noopener noreferrer">100kB+</a> in size based on your support requirements and has a good chance of conflicting with your Content Security Policy (a lot of dynamic style manipulation).</li>
+  <li>Your component will render differently across browsers due to the polyfill.</li>
+</ul>
+
+<p>In my experience the child selector is unreliable (<code class="language-plaintext highlighter-rouge">&gt;</code>) due to the intermediate html elements injected by the library (especially Firefox and Microsoft Edge)</p>
+
+<ul>
+  <li>SLOOOOW at scale (10+ components). There is a significant amount of DOM Mutation listening going on behind the scenes</li>
+  <li><a href="https://www.webcomponents.org/polyfills#known-limitations" target="_blank" rel="noopener noreferrer">Other issue</a></li>
+  <li>HTML Imports are now <a href="https://blog.chromium.org/2018/09/chrome-70-beta-shape-detection-web.html" target="_blank" rel="noopener noreferrer">deprecated</a>, so that particular polyfill may not be around in the future.
+    <ul>
+      <li>
+<strong>Update</strong>: YouTube was <a href="https://techdows.com/2019/03/youtube-broken-chrome-canary-74-html-imports.html" target="_blank" rel="noopener noreferrer">broken</a> due to this.</li>
+    </ul>
+  </li>
+</ul>
+    
+      <h2 id="aria">
+        
+        
+          <a href="#aria">#</a> Aria
+        
+        
+      </h2>
+
+<p>I already mentioned earlier that you have to re-add Aria roles for the custom version of elements you’re creating, but in addition, there is no encapsulation of Aria declarations for your component:</p>
+
+<p><a href="https://lists.w3.org/Archives/Public/public-webapps/2014JulSep/0355.html" target="_blank" rel="noopener noreferrer">https://lists.w3.org/Archives/Public/public-webapps/2014JulSep/0355.html</a></p>
+    
+      <h2 id="seo">
+        
+        
+          <a href="#seo">#</a> SEO
+        
+        
+      </h2>
+
+<p>Assuming you were able to get Aria figured out in a reasonable manner does not automatically mean it will be “accessible” to search engines (go figure). <a href="https://twitter.com/check_ca" target="_blank" rel="noopener noreferrer">@check_ca</a> discovered <a href="https://twitter.com/check_ca/status/1121561114276433920" target="_blank" rel="noopener noreferrer">recently</a> that Google does not do well with indexing heavy WebComponent sites. His search around April 25, 2019 yielded the following:</p>
+
+<figure>
+    <img src="/media-library/web-development/webcomponent-search-1.png" alt="WebComponent Search results">
+</figure>
+
+<p>Slightly later when I attempted the same search (April 29, 2019):</p>
+
+<figure>
+    <img src="/media-library/web-development/webcomponent-search-2.png" alt="WebComponent Search results">
+</figure>
+
+<p>Reviewing the source code of one of these pages (holy shitballs):</p>
+
+<figure>
+    <img src="/media-library/web-development/webcomponent-search-3.png" alt="WebComponent Search results">
+</figure>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;dom-if/&gt;</code> ? Really? Well, I’m not going to go into why that’s a terrible idea in this post. Gilad Bracha has already criticized this in the following <a href="https://gbracha.blogspot.com/2014/09/a-domain-of-shadows.html" target="_blank" rel="noopener noreferrer">article</a> sufficiently. Back to SEO:</p>
+
+<p>I’m going to assume this is simply growing pains for search engines. They’ve had to deal with worse in the past with Java Applets, Silverlight, and Adobe Flash. Though I can’t help but point to a weekend project I did in <a href="https://ht2012.org/" target="_blank" rel="noopener noreferrer">2012</a> with XML+XSLT for much better effect. The <a href="http://thedailywtf.com/articles/Sketchy-Skecherscom" target="_blank" rel="noopener noreferrer">Skechers site</a> and a World of Warcraft <a href="https://web.archive.org/web/20071030105540/http://www.wowarmory.com/#team-info.xml?" target="_blank" rel="noopener noreferrer">site</a> did similar.</p>
+    
+      <h2 id="additional-limitations">
+        
+        
+          <a href="#additional-limitations">#</a> Additional Limitations
+        
+        
+      </h2>
+
+<p><a href="https://github.com/webcomponents/gold-standard/wiki/Web-Component-Limitations" target="_blank" rel="noopener noreferrer">https://github.com/webcomponents/gold-standard/wiki/Web-Component-Limitations</a></p>
+    
+      <h2 id="conclusion">
+        
+        
+          <a href="#conclusion">#</a> Conclusion
+        
+        
+      </h2>
+
+<p>While I have hopes for this standard, I’ve been burned too often to suggest it to anyone. I’d say wait to see if the current native elements could be implemented as WebComponents, otherwise be prepared to potentially be doing it yourself. If you’re going to go down that path you might as well throw it all away and just build yet another web framework fully suited to your needs. Feel free to add comments, workarounds, and updates on your frustrations and efforts. As time goes on I hope this post can be thrown in the dustbin of history.</p>
+    
+      <h2 id="additional-reading">
+        
+        
+          <a href="#additional-reading">#</a> Additional Reading
+        
+        
+      </h2>
+
+<ul>
+  <li>
+<a href="https://adamsilver.io/" target="_blank" rel="noopener noreferrer">Adam Silver</a> has written an <a href="https://adamsilver.io/articles/the-problem-with-web-components/" target="_blank" rel="noopener noreferrer">article</a> based on this one and others that provides another perspective.</li>
+  <li>
+<a href="https://lea.verou.me/" target="_blank" rel="noopener noreferrer">Lea Verou</a>’s <a href="https://lea.verou.me/2020/09/the-failed-promise-of-web-components/" target="_blank" rel="noopener noreferrer">article</a> covers some usability issues and has a call to action.</li>
+  <li>
+<a href="https://blog.logrocket.com/what-happened-to-web-components/" target="_blank" rel="noopener noreferrer">Anna Monus</a> asks: <a href="https://blog.logrocket.com/what-happened-to-web-components/" target="_blank" rel="noopener noreferrer">What happened to web components?</a>
+</li>
+</ul>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/web-development" class="category-nav_title" rel="archives">Web Development</a>
+    <a href="/web-development/ramda-and-eweda-before-the-dawn" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

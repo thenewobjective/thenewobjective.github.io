@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="Overview of prefix vs postfix notations + evaluation schemes">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/types-and-programming-languages/overview-of-prefix-vs-postfix-notations-evaluation-schemes">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | Overview of prefix vs postfix notations + evaluation schemes</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/types-and-programming-languages/overview-of-prefix-vs-postfix-notations-evaluation-schemes">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        Overview of prefix vs postfix notations + evaluation schemes
+      </h1>
+      
+      
+        <time>October 4, 2010</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/types-and-programming-languages" class="category-nav_title" rel="archives">Types and Programming Languages</a>
+    <a href="/types-and-programming-languages/dynamic-programming-for-great-justice" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <p><em>Yahoo decided to <a href="https://twitter.com/textfiles/status/1184461099237814273" target="_blank" rel="noopener noreferrer">kill Yahoo Groups</a>.
+Below is a rescue of a <a href="https://groups.yahoo.com/neo/groups/concatenative/conversations/topics/4997" target="_blank" rel="noopener noreferrer">conversation</a> I was involved in. With luck the Web Archive can rescue the rest. Quotes have been formatted for presentation.</em></p>
+<hr>
+<blockquote>
+    <p>Hi All,</p>
+    <p>First of all, I am very glad to be a part of this awesome mailing list. Lets keep it alive :) Now, to the topic:<br>I have tried to find a decent overview or an open discussion (if there is one) about the substantial differences of prefix vs postfix notation for concatenative languages, but I couldn’t. Also, I would like to discuss potential advantages of different evaluation schemes. I would be grateful if any could provide clarifications to the statements and give some examples, maybe. So:</p>
+    <ol>
+    <li>Postfix, left-to-right evaluation<br> Well, this is like any FORTH-like language we know. Values and quotations are pushed onto the stack, operations and combinators are directly executed.</li>
+    <li>Postfix, right-to-left evaluation This one is used, as far as I know only in <a href="https://github.com/joshsh/ripple" target="_blank" rel="noreferrer noopener noopener noreferrer">Ripple</a>. Values, execution tokens and such are pushed onto the stack and only evalueted once explicit apply “.” is encountered. Are there any direct advantages to that scheme, aside from the “inehrent” lazyness for all operations (say: we save some quoting here and there…)?</li>
+    <li>Prefix, left-to-right evaluation<br> As far as I know, this one is <a href="http://om-language.org/" target="_blank" rel="noreferrer noopener noopener noreferrer">Om Language</a>. The author itself mentions following advantages of a prefix notation:
+    <ul>
+    <li>
+<em>Prefix notation more closely models function composition. Instead of storing a data stack in memory, the Om evaluator stores a composed partial function.</em><br> – So? We can do that in a normal postifx notation as well, as <a href="http://www.nsl.com/k/xy/xy.htm" target="_blank" rel="noreferrer noopener noopener noreferrer">XY</a> does.</li>
+    <li>
+<em>The evaluator can read, parse and evaluate the input stream in a single pass, sending results to the output stream as soon as they are evaluated. This cannot be done with a postfix, stack-based language because any data on the stack must remain there as it may be needed by a function later.</em><br> – Could someone give some examples here (and/or counter-examples)? I can’t get this :(</li>
+    <li>
+<em>Functions can be optimized to only read into memory the data that is required; stack-based postfix languages have no knowledge of the function to apply until the data is already in memory, on the stack. </em><br> – I guess we can get this for free with postfix, right-to-left evaluation, right?</li>
+    <li>
+<em>Incoming data, such as events, become simple to handle at a language level: a program might evaluate to a function that acts as a state machine that processes any additional data appended to the program and transitions to a new state, ready to process new data.</em><br> – Damn, I don’t get that either :(</li>
+    <li>
+<em>An integrated development environment can provide hints to the user about the data that is expected by a function. </em> – Why we can’t do the same for posfix? Almost every definition in forth-like languages has stack-effect diagram, so IDE can use that, right? What is a benefit of having prefix here? BTW, why there is no IDE that will show stack effect diagram inside a definition automatically, based on a current cursor position?</li>
+    </ul>
+    </li>
+    <li>Prefix, right-to-left evaluation<br>I guess this is totally useless and not possible, right? :)</li>
+    </ol>
+    <p>Thank you very much for your time.</p>
+    <p>Best Regards,<br> Artjoms.</p>
+    <cite>Artjom Kossow (Jul 5, 2014)</cite>
+</blockquote>
+<hr>
+<blockquote>
+    <p>Artjom Kossow <a href="mailto:a.kosovs@..." target="_blank" rel="noreferrer noopener">a.kosovs@…</a> [concatenative] scripsit:<br><br>&gt; 2. Postfix, right-to-left evaluation<br>&gt; This one is used, as far as I know only in Ripple<br>&gt; &lt;<a href="https://github.com/joshsh/ripple" target="_blank" rel="noreferrer noopener noopener noreferrer">https://github.com/joshsh/ripple</a>&gt;. Values, execution tokens and such<br>&gt; are pushed onto the stack and only evalueted once explicit apply “.” is<br>&gt; encountered. Are there any direct advantages to that scheme, aside from the<br>&gt; “inehrent” lazyness for all operations (say: we save some quoting here and<br>&gt; there…)?<br><br>In general, laziness is of small benefit in itself: Haskell folks say that<br>laziness is to keep them honest about purity. Though of course there are<br>some programs that benefit from it directly, there are probably just as<br>many that suffer.<br><br>It also seems obvious that postfix RTL is equivalent to prefix LTR.<br><br>&gt; 4. Prefix, right-to-left evaluation<br>&gt; I guess this is totally useless and not possible, right? :)<br><br>No, it would be the same as plain old postfix LTR.<br><br>—<br>John Cowan <a href="http://www.ccil.org/~cowan" target="_blank" rel="noreferrer noopener noopener noreferrer">http://www.ccil.org/~cowan</a> <a href="mailto:cowan@..." target="_blank" rel="noreferrer noopener">cowan@…</a><br>In politics, obedience and support are the same thing. –Hannah Arendt</p>
+    <cite> John Cowan (Jul 6, 2014)</cite>
+</blockquote>
+<hr>
+<blockquote>
+    <p>Artjom Kossow <a href="mailto:a.kosovs@..." target="_blank" rel="noreferrer noopener">a.kosovs@…</a> [concatenative]<br>&lt;<a href="mailto:concatenative@yahoogroups.com" target="_blank" rel="noreferrer noopener">concatenative@yahoogroups.com</a>&gt; wrote:<br>&gt; First of all, I am very glad to be a part of this awesome mailing list. Lets keep it alive :)<br><br>No doubt :).<br><br>&gt; Now, to the topic:<br>&gt; I have tried to find a decent overview or an open discussion (if there is one) about the substantial differences of prefix vs postfix notation for concatenative languages, but I couldn’t. Also, I would like to discuss potential advantages of different evaluation schemes. I would be grateful if any could provide clarifications to the statements and give some examples, maybe. So:<br><br>Such talk is fairly rare, but I wouldn’t mind seeing some thought<br>about it. One problem is that usually we think about stack-based<br>concatenative languages, which are simply left to right and postfix.<br>(Another interesting issue is that “fix” implies a grammar, and<br>concatenative grammar is the least grammatical possible.)<br><br>&gt; Prefix, left-to-right evaluation<br>&gt; As far as I know, this one is Om Language. The author itself mentions following advantages of a prefix notation:<br><br>[…]<br>&gt; – Could someone give some examples here (and/or counter-examples)? I can’t get this :(<br><br>You’re on the cutting edge here :). Sorry!<br><br>I’ll say that there’s some purpose is making the syntax of the<br>language reflect what you’re trying to express; even though a compiler<br>may do something else, it’s not bad for the author to be able to tell<br>the reader that additional information.<br><br>&gt; Functions can be optimized to only read into memory the data that is required; stack-based postfix languages have no knowledge of the function to apply until the data is already in memory, on the stack.<br>&gt; – I guess we can get this for free with postfix, right-to-left evaluation, right?<br><br>Nothing’s free, and some of the analysis can become very complicated.<br><br>&gt;What is a benefit of having prefix here? BTW, why there is no IDE that will show stack effect diagram inside a definition automatically, based on a current cursor position?<br><br>I completely agree — it would seem kinda fun to have arrows pointing<br>to the data sources for the current cursor position.<br><br>&gt; 4. Prefix, right-to-left evaluation<br>&gt; I guess this is totally useless and not possible, right? :)<br><br>Actually, this is how APL works (and J, K, and its other descendants,<br>as well as FP/FL which were its ancestors). Not concatenative, though.<br><br>&gt; Best Regards,<br>&gt; Artjoms.<br><br>-Wm</p>
+    <cite> William Tanksley, Jr (Jul 6, 2014)</cite>
+</blockquote>
+<hr>
+<blockquote>
+    <p>On Sun, Jul 6, 2014 at 11:49 AM, John Cowan <a href="mailto:cowan@..." target="_blank" rel="noreferrer noopener">cowan@…</a> [concatenative] &lt;<a href="mailto:concatenative@yahoogroups.com" target="_blank" rel="noreferrer noopener">concatenative@yahoogroups.com</a>&gt; wrote:<br> <br>&gt; In general, laziness is of small benefit in itself: Haskell folks say that<br>&gt; laziness is to keep them honest about purity. Though of course there are<br>&gt; some programs that benefit from it directly, there are probably just as<br>&gt; many that suffer.<br><br>Lazy evaluation is more expressive than eager evaluation.</p>
+    <p>Also compound expression may not have a Normal Form under eager evaluation, but have one under Lazy Evaluation:<br><br>left (x,y) = x<br>right (x,y) = y<br><br>answer = left (42,loop)<br>loop = right loop<br><br>With eager (innermost reduction):<br><br>answer<br>=&gt; left (42,loop)<br>=&gt; left (42,right loop)<br>=&gt; left (42,right (right loop))<br>=&gt; left (42,right (right (right loop)))<br>=&gt; …<br><br>With Lazy (outermost reduction):<br><br>answer<br>=&gt; left (42,loop)<br>=&gt; 42<br><br>—-<br><br>If your language is Non-Turing complete, it’s irrelevant of course (except in terms of efficiency which is aided by Graph Reduction when Normal Order is used).<br><br>I’ve heard the claim more than once that with Lazy Evaluation you also lose the necessity for Macros, though I’m not sure how far you can take that beyond building the equivalent of your own version of If-Then-Else. I find Macros to be a more general symptom of having an insufficient syntax in your programming language</p>
+    <cite><a href="https://thenewobjective.com">Michael Haufe</a> (Jul 6, 2014)</cite>
+</blockquote>
+<hr>
+<blockquote>
+    <p>On Sun, Jul 6, 2014 at 1:25 PM, ‘William Tanksley, Jr’ <a href="mailto:wtanksleyjr@..." target="_blank" rel="noreferrer noopener">wtanksleyjr@…</a> [concatenative] &lt;<a href="mailto:concatenative@yahoogroups.com" target="_blank" rel="noreferrer noopener">concatenative@yahoogroups.com</a>&gt; wrote:<br>Artjom Kossow <a href="mailto:a.kosovs@..." target="_blank" rel="noreferrer noopener">a.kosovs@…</a> [concatenative]<br>&lt;<a href="mailto:concatenative@yahoogroups.com" target="_blank" rel="noreferrer noopener">concatenative@yahoogroups.com</a>&gt; wrote:<br>&gt; &gt; First of all, I am very glad to be a part of this awesome mailing list. Lets keep it alive :)<br>&gt;<br>&gt; No doubt :).<br>&gt; <br>&gt; &gt; Now, to the topic:<br>&gt; &gt; I have tried to find a decent overview or an open discussion (if there is one) about the substantial differences of prefix vs postfix notation for concatenative languages, but I couldn’t. Also, I would like to discuss potential advantages of different evaluation schemes. I would be grateful if any could provide clarifications to the statements and give some examples, maybe. So:<br>&gt; <br>&gt; Such talk is fairly rare, but I wouldn’t mind seeing some thought<br>&gt; about it. One problem is that usually we think about stack-based<br>&gt; concatenative languages, which are simply left to right and postfix.<br>&gt; (Another interesting issue is that “fix” implies a grammar, and<br>&gt; concatenative grammar is the least grammatical possible.)</p>
+    <p>If we were Japanese we might be arguing top-to-bottom, or bottom-to-top.</p>
+    <p>Since the languages I speak are Left-to-Right, and because I prefer to glance at an expression and immediately know its ultimate purpose, I am firmly in the camp where the final expression is on the left side:</p>
+    <p>sq := time dup</p>
+    <p>instead of</p>
+    <p>sq := dup time<br><br>or<br><br>dup time =: sq<br><br>One shouldn’t have to execute a program in their head in order to understand what the goal is: that’s partly what a computer is for</p>
+    <cite><a href="https://thenewobjective.com">Michael Haufe</a> (Jul 6, 2014)</cite>
+</blockquote>
+<hr>
+<blockquote>
+    <p>Michael Haufe <a href="mailto:tno@..." target="_blank" rel="noreferrer noopener">tno@…</a> wrote:<br>&gt; Since the languages I speak are Left-to-Right, and because I prefer to<br>&gt; glance at an expression and immediately know its ultimate purpose, I am<br>&gt; firmly in the camp where the final expression is on the left side:<br><br>This has absolutely nothing to do with how to express definitions, and<br>only a tiny bit to do with expressing assignments. That’s the only<br>time when “the final expression is on the left side” — and it can be<br>treated as a special case.<br><br>Please read Iverson’s “Notation as a tool of thought” to see more<br>about how useful a right-to-left precedence language can be, even<br>while reading left to right.<br><a href="http://www.jsoftware.com/papers/tot.htm" target="_blank" rel="noreferrer noopener noopener noreferrer">http://www.jsoftware.com/papers/tot.htm</a><br><br>-Wm</p>
+    <cite> William Tanksley, Jr (Jul 6, 2014)</cite>
+</blockquote>
+<hr>
+<blockquote>
+    <p>Michael Haufe <a href="mailto:tno@..." target="_blank" rel="noreferrer noopener">tno@…</a> [concatenative] scripsit:<br><br>&gt; Also compound expression may not have a Normal Form under eager evaluation,<br>&gt; but have one under Lazy Evaluation:<br><br>The converse is also true in non-confluent term rewriting systems like Pure.<br><br>—<br>John Cowan <a href="http://www.ccil.org/~cowan" target="_blank" rel="noreferrer noopener noopener noreferrer">http://www.ccil.org/~cowan</a> <a href="mailto:cowan@..." target="_blank" rel="noreferrer noopener">cowan@…</a><br>And through this revolting graveyard of the universe the muffled,<br>maddening beating of drums, and thin, monotonous whine of blasphemous<br>flutes from inconceivable, unlighted chambers beyond Time; the<br>detestable pounding and piping whereunto dance slowly, awkwardly, and<br>absurdly the gigantic tenebrous ultimate gods –the blind, voiceless,<br>mindless gargoyles whose soul is Nyarlathotep. (Lovecraft)</p>
+    <cite> John Cowan (Jul 6, 2014)</cite>
+</blockquote>
+<hr>
+<blockquote>
+    <p>Thank you all for the replies.<br>&gt;It also seems obvious that postfix RTL is equivalent to prefix LTR.</p>
+    <p>&gt;&gt; 4. Prefix, right-to-left evaluation<br>&gt;&gt; I guess this is totally useless and not possible, right? :)<br><br>&gt;No, it would be the same as plain old postfix LTR.<br><br>Sure, they are “equivalent”, abstractly speaking. But in fact, as Michael Haufe pointed out (a good point, actually!), there are some differences for the programmer<br>&gt;One shouldn’t have to execute a program in their head in order to understand what the goal is: that’s partly what a computer is for<br><br>All I wanted is to get a good scope about such “little things” (like Michael Haufe pointed out) in regard to each notation+evaluation scheme combination,diregarding their “formal” equivalence.<br><br>Regarding all the benefits that I’ve listed for Om Language (which were unclear and unanswered), I guess that I will write an email to the author (I suppose he is also a member of this group, but he haven’t replied) and then report here :)</p>
+    <cite> artemonster (Jul 14, 2014)</cite>
+</blockquote>
+<hr>
+<blockquote>
+    <p><a href="mailto:a.kosovs@..." target="_blank" rel="noreferrer noopener">a.kosovs@…</a> [concatenative] &lt;<a href="mailto:concatenative@yahoogroups.com" target="_blank" rel="noreferrer noopener">concatenative@yahoogroups.com</a>&gt; wrote:<br>&gt; Regarding all the benefits that I’ve listed for Om Language (which were unclear and unanswered), I guess that I will write an email to the author (I suppose he is also a member of this group, but he haven’t replied) and then report here :)<br><br>I look forward to hearing the results! I’m glad we’re digging around.</p>
+    <cite> William Tanksley, Jr (Jul 14, 2014)</cite>
+</blockquote>
+<hr>
+<blockquote>
+    <p>On Sun, Jul 6, 2014 at 9:50 PM, ‘William Tanksley, Jr’ <a href="mailto:wtanksleyjr@..." target="_blank" rel="noreferrer noopener">wtanksleyjr@…</a> [concatenative] &lt;<a href="mailto:concatenative@yahoogroups.com" target="_blank" rel="noreferrer noopener">concatenative@yahoogroups.com</a>&gt; wrote:</p>
+    <p>&gt; Michael Haufe <a href="mailto:tno@..." target="_blank" rel="noreferrer noopener">tno@…</a> wrote:<br>&gt; &gt; Since the languages I speak are Left-to-Right, and because I prefer to<br>&gt; &gt; glance at an expression and immediately know its ultimate purpose, I am<br>&gt; &gt; firmly in the camp where the final expression is on the left side:<br>&gt; <br>&gt; This has absolutely nothing to do with how to express definitions, and<br>&gt; only a tiny bit to do with expressing assignments. That’s the only<br>&gt; time when “the final expression is on the left side” — and it can be<br>&gt; treated as a special case.</p>
+    <p>What I was primarily referring to here was if a syntax tree representing the compound expression was flattened, where the root would be positioned. (Though yes, I do prefer the assignments on the left side)<br><br>&gt; Please read Iverson’s “Notation as a tool of thought” to see more<br>&gt; about how useful a right-to-left precedence language can be, even<br>&gt; while reading left to right.<br>&gt; <a href="http://www.jsoftware.com/papers/tot.htm" target="_blank" rel="noreferrer noopener noopener noreferrer">http://www.jsoftware.com/papers/tot.htm</a></p>
+    <p>Yes, I’ve read this a number of times over the years. Is there anything in particular you want to point to in the ~50 pages referenced?</p>
+    <p>Immediately before section 1.5, for instance, is the following which is similar to what I said earlier (irt. monadic forms):</p>
+    <p><br>“Syntactic rules are further simplified by adopting a single form for all dyadic functions, which appear between their arguments, and for all monadic functions, which appear before their arguments.”</p>
+    <cite> Michael Haufe (Jul 15, 2014)</cite>
+</blockquote>
+<hr>
+<blockquote>
+    <p>Hi, everybody! I heard from Artyom that folks were interested in some clarifications about Om. My mind hasn’t been in the language for a while, but I’ll see if I can shed some light on what I was trying to get at on the website. Some of that is likely specific to Om vs. prefix languages in general.<br><br>&gt; Prefix notation more closely models function composition. Instead of storing a data stack in memory, the Om evaluator stores a composed partial function.<br><br>The in-memory state of a computation in a postfix language is represented by a data stack. In Om, an in-memory computation is a function stack, which is analogous to a function composition.<br><br>For example, the hypothetical Om program “swap {A}” would first push the “swap” function, then the constant “{A}” function. The function stack now represents the composition of “swap” and “{A}”.<br><br>&gt; The evaluator can read, parse and evaluate the input stream in a single pass, sending results to the output stream as soon as they are evaluated. This cannot be done with a postfix, stack-based language because any data on the stack must remain there as it may be needed by a function later.<br><br>Think of Om as a stream-based language that rewrites a program from an input stream into a program sent to an output stream.<br><br>In the above example: when “{B}” is pushed onto “swap {A}”, the state is “swap {A} {B}”, which the interpreter then rewrites as “{B} {A}”. These are both constant functions, and since there is no way that any remaining program could modify these (because it is prefix), they can be written to the output stream.<br><br>So for the program “swap {A} {B} swap {C}”, this will get rewritten to “{B} {A} swap {C}”, and {B} and {A} can be written to the output stream, leaving only “swap {C}” on the “function stack”. When the constant program {D} gets pushed, {D} and {C} are output to the output stream, leaving the function stack empty.<br><br>To better understand evaluation in Om: given the program “swap {A} swap {B} {C}”, the interpreter will:<br>– Push “swap” onto the function stack<br>– Push “{A}” onto the function stack<br>– Push “swap” onto the function stack<br>– Push “{B}” onto the function stack<br>– Push “{C}” onto the function stack<br>– Rewrite the program as “swap {A} {C} {B}”<br>– Rewrite the program as “{C} {A} {B}”<br>– Output constant functions “{C}”, “{A}”, and “{B}”.<br>– The function stack is now empty.<br><br>&gt; Functions can be optimized to only read into memory the data that is required; stack-based postfix languages have no knowledge of the function to apply until the data is already in memory, on the stack.<br><br>An example is the “drop” function. In Om, when the “drop” function is pushed onto the stack, any constant function that follows (i.e. an operand) will cause the “drop” function and the constant function to be rewritten as an empty program.<br><br>In a postfix language, a function like this would first require the operand to be pushed onto a data stack in memory, and then “drop” would come along and remove it.<br><br>Om, however, never needs to read the full the operand into memory. The “drop” function can read the operand directly from the input stream and discard the characters as they come in.<br><br>&gt; Incoming data, such as events, become simple to handle at a language level: a program might evaluate to a function that acts as a state machine that processes any additional data appended to the program and transitions to a new state, ready to process new data.<br><br>As any Om computation is a “function stack” (which represents a composed function), one could imagine that events could arrive as program elements on the input stream, thereby changing the state of the program to a new state, ready to receive new events. Therefore, a simple event-handling mechanism is central to the language.<br><br>&gt; An integrated development environment can provide hints to the user about the data that is expected by a function.<br><br>The idea here is that the operator is typed first in a prefix language (followed by its operands). As soon as the operator is entered, the operands it expects could be indicated to the user by an IDE. (I suppose this breaks down for people who typically enter data in a right-to-left direction in their text editor…)<br><br>Thanks again for the interest! Hope that helps. Please let me know if any of that still doesn’t make sense.<br><br>Jason</p>
+    <cite> the.sparist (Jul 15, 2014)</cite>
+</blockquote>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/types-and-programming-languages" class="category-nav_title" rel="archives">Types and Programming Languages</a>
+    <a href="/types-and-programming-languages/dynamic-programming-for-great-justice" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

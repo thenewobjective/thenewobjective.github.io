@@ -1,0 +1,56 @@
+.demo-bubbles {
+    background-color: black;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+    & .bubble {
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        background: radial-gradient(transparent, transparent, aqua);
+        top: 100%;
+
+        animation-name: float;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            top: 14%;
+            left: 22%;
+            border-radius: 50%;
+            background: radial-gradient(rgba(255, 255, 255, .5), transparent);
+        }
+    }
+
+    & .size0 {
+        width: 20px;
+        height: 20px;
+    }
+
+    & .size1 {
+        width: 35px;
+        height: 35px;
+    }
+
+    & .size2 {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@keyframes float {
+    from {
+        top: 100%
+    }
+
+    to {
+        top: 0%;
+    }
+}

@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="Migrating from Namecheap to Azure">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/system-administration/migrating-from-namecheap-to-azure">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | Migrating from Namecheap to Azure</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/system-administration/migrating-from-namecheap-to-azure">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        Migrating from Namecheap to Azure
+      </h1>
+      
+      
+        <time>July 18, 2019</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/system-administration" class="category-nav_title" rel="archives">System Administration</a>
+    <a href="/system-administration/" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <ul id="markdown-toc">
+  <li><a href="#caveats" id="markdown-toc-caveats">Caveats</a></li>
+  <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a></li>
+  <li><a href="#transferring-out-of-namecheap" id="markdown-toc-transferring-out-of-namecheap">Transferring out of Namecheap</a></li>
+  <li><a href="#transferring-into-azure" id="markdown-toc-transferring-into-azure">Transferring into Azure</a></li>
+  <li><a href="#post-transfer" id="markdown-toc-post-transfer">Post-Transfer</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
+
+<p>I’ve spent a number of years hosting my websites on Namecheap. Their prices were very reasonable and the customer support was excellent. Over time though I’ve been doing increasingly ambitious projects on Azure, as well as working to divorce myself from all things Google. Early this year (2019) I finally decided to consolidate all of my web properties on the Microsoft stack. Spending hours with Customer support trying to identify mystery DNS servers, ever changing hosting servers, multiple cpanels, and a half dozen other minor nuisances finally became too much. “Just give me direct server access, I’ll do it myself”. Below you can see the steps I took to transfer some of my domains to Azure.</p>
+      <h2 id="caveats">
+        
+        
+          <a href="#caveats">#</a> Caveats
+        
+        
+      </h2>
+
+<p>I followed these steps in February of 2019. There was no user interface available nor documentation on how to do it. A user interface is in the works and by the time you read this post it may already exist. Do look for it before trying to follow in my footsteps. This is a <a href="https://en.wiktionary.org/wiki/black_art#English" target="_blank" rel="noopener noreferrer">Dark Art</a>.</p>
+
+<p>Note that this will only work for a limited number of TLDs. According to <a href="https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain#buy-the-domain" target="_blank" rel="noopener noreferrer">Microsoft documentation</a>:</p>
+
+<figure>
+  <img src="/media-library/azure/azure-domain-transfer-tld-restriction.png" alt="Azure domain transfer TLD restriction">
+</figure>
+
+<p>In this post I am only going to show the steps I used to transfer a domain without an associated mail server, database, or any other resource tied to it. This was a simple flat file website used as a placeholder for future work. If you have a more complicated site with dependencies then use this guide as a supplement for other guides. I offer no guarantee that these steps will work for you as the interfaces and APIs will change.</p>
+
+<p>If you come across an issue not covered here, you should follow the normal support channels such as Stack Overflow, Microsoft Azure support, or Namecheap support as appropriate.</p>
+
+<p>I also don’t see a reasonable way to avoid downtime with this method, but you might be able to keep it to a minimum depending on how you manage redirects, SSL certificate migrations, and DNS settings during the transfer.</p>
+    
+      <h2 id="prerequisites">
+        
+        
+          <a href="#prerequisites">#</a> Prerequisites
+        
+        
+      </h2>
+
+<ul>
+  <li>Azure Subscription</li>
+  <li>Azure Resource Group</li>
+</ul>
+
+<p>You would be wise to migrate your other resources to azure first before moving the domain to mitigate risk and down-time. Setup appropriate redirects, DNS settings, and so on first before migrating the domain.</p>
+
+<p>The SSL guide for Azure is relatively straightforward. You can see this and others in the <a href="#references">References</a> section below</p>
+    
+      <h2 id="transferring-out-of-namecheap">
+        
+        
+          <a href="#transferring-out-of-namecheap">#</a> Transferring out of Namecheap
+        
+        
+      </h2>
+
+<p>Step 1: Navigate to the Namecheap dashboard</p>
+
+<figure>
+  <img src="/media-library/azure/namecheap-dashboard.png" alt="Namecheap Dashboard">
+</figure>
+
+<p>Click the <strong>“Manage”</strong> button next to the domain you want to transfer</p>
+
+<p>Step 2: Unlock Domain and obtain Auth Code</p>
+
+<p>Under the “Transfer Out” section you’ll see a link to <strong>“UNLOCK”</strong> the domain. After unlocking, click the <strong>“AUTH CODE”</strong> button.</p>
+
+<figure>
+  <img src="/media-library/azure/namecheap-transfer-out.png" alt="Namecheap Transfer Out">
+</figure>
+
+<p>This will open a popup. Fill in the feedback.</p>
+
+<figure>
+  <img src="/media-library/azure/namecheap-feedback.png" alt="Namecheap Feedback">
+</figure>
+
+<p>You’ll then see a confirmation on where it emailed the code.</p>
+
+<figure>
+  <img src="/media-library/azure/namecheap-authcode-email.png" alt="Namecheap Authcode Email">
+</figure>
+
+<p>Check your inbox. You’ll see a confirmation email:</p>
+
+<figure>
+  <img src="/media-library/azure/namecheap-authcode-inbox.png" alt="Namecheap Authcode Inbox">
+</figure>
+
+<p>Remember this authcode.</p>
+    
+      <h2 id="transferring-into-azure">
+        
+        
+          <a href="#transferring-into-azure">#</a> Transferring into Azure
+        
+        
+      </h2>
+
+<p>Microsoft does not document how to do this. I suspected it was possible though because 2 years earlier (Aug 2017) I saw a <a href="https://channel9.msdn.com/Shows/Azure-Friday/App-Service-Domains" target="_blank" rel="noopener noreferrer">short video</a> on Channel9 that said this was a planned feature. After browsing around the Azure portal for a couple hours there was nothing to be seen. There are a few posts around the internet about using a few varieties of powershell scripts, but they don’t seem to work (bitrot?). Azure has a REST API though that will do the trick. Go to the <a href="https://docs.microsoft.com/en-us/rest/api/appservice/domains/createorupdate" target="_blank" rel="noopener noreferrer">Domains – Create Or Update</a> page, and click “Try It”</p>
+
+<figure>
+  <img src="/media-library/azure/azure-rest-api-tryit.png" alt="Azure REST Try It">
+</figure>
+
+<p>You may be prompted to sign-in to your Azure account. Fill in the mandatory fields. The “api-version” field already has a default value defined:</p>
+
+<figure>
+  <img src="/media-library/azure/azure-rest-domain-transfer-info.png" alt="Azure REST domain transfer info">
+</figure>
+
+<p>In the JSON object add your information, the auth code from the earlier email, and consent information.</p>
+
+<figure>
+  <img src="/media-library/azure/azure-rest-domain-transfer-body.png" alt="Azure REST domain transfer body">
+</figure>
+
+<p>Remember, this is JSON, so if your auth code has a character such as <code class="language-plaintext highlighter-rouge">\</code> in it you’ll have to escape it: <code class="language-plaintext highlighter-rouge">\\</code></p>
+
+<p>You can generate a timestamp in your browser console or scratchpad for use in the <strong>“agreedAt”</strong> field</p>
+
+<figure>
+  <img src="/media-library/azure/azure-rest-domain-transfer-date.png" alt="Azure REST domain transfer date">
+</figure>
+
+<p>The “agreedBy” field is the Client IP address according to the docs. You can obtain this in a number of ways. Such as <a href="https://duckduckgo.com/?q=what+is+my+ip&amp;t=hk&amp;ia=answer" target="_blank" rel="noopener noreferrer">https://duckduckgo.com/?q=what+is+my+ip&amp;t=hk&amp;ia=answer</a></p>
+
+<p>The “agreementKeys” were left as the default values. After a <a href="https://docs.microsoft.com/en-us/rest/api/appservice/topleveldomains/listagreements#tldlegalagreement" target="_blank" rel="noopener noreferrer">little digging</a> they stand for the following. I can’t find a link for the proper DNTA one at the moment. It might be the <a href="https://www.godaddy.com/legal/agreements/domain-name-transfer-agreement" target="_blank" rel="noopener noreferrer">GoDaddy one</a> as Azure has a partnership with them. Let me know if you know the proper link and I’ll update this page:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DNPA</td>
+      <td>Domain Name Proxy Agreement</td>
+    </tr>
+    <tr>
+      <td>DNTA</td>
+      <td>Domain Name Transfer Agreement</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Hit the run button and you should get a 202 message:</p>
+
+<figure>
+  <img src="/media-library/azure/azure-rest-api-domain-transfer-run-ok.png" alt="Azure REST API Domain Transfer Run Ok">
+</figure>
+
+<p>You might also get an error like I did:</p>
+
+<figure>
+  <img src="/media-library/azure/azure-rest-api-domain-transfer-run-fail.png" alt="Azure REST API Domain Transfer Run Fail">
+</figure>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MissingSubscriptionRegistration"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The subscription is not registered to use namespace 'Microsoft.DomainRegistration'. See https://aka.ms/rps-not-found for how to register subscriptions."</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MissingSubscriptionRegistration"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"target"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Microsoft.DomainRegistration"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The subscription is not registered to use namespace 'Microsoft.DomainRegistration'. See https://aka.ms/rps-not-found for how to register subscriptions."</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>This is how I resolved that:</p>
+
+<figure>
+  <img src="/media-library/azure/azure-resource-providers.png" alt="Azure Resource Providers">
+</figure>
+
+<figure>
+  <img src="/media-library/azure/microsoft-domain-registration-1.png" alt="Microsoft Domain Registration">
+</figure>
+
+<figure>
+  <img src="/media-library/azure/microsoft-domain-registration-2.png" alt="Microsoft Domain Registration">
+</figure>
+
+<p>Then try to run the API command again:</p>
+
+<figure>
+  <img src="/media-library/azure/azure-rest-api-domain-transfer-run-ok.png" alt="Azure REST API Domain Transfer Run Ok">
+</figure>
+
+<p>Navigate to the Azure Resource Group and you should see a new entry</p>
+
+<figure>
+  <img src="/media-library/azure/arg-new-domain.png" alt="Azure new domain">
+</figure>
+
+<p>Open the resource and you’ll see a “Pending” message at the top:</p>
+
+<figure>
+  <img src="/media-library/azure/arg-new-domain-details.png" alt="Azure new domain details">
+</figure>
+
+<p>Now you play the waiting game. I only had to wait an hour or so, but I wouldn’t be surprised if this takes longer. Namecheap sent the following email:</p>
+
+<figure>
+  <img src="/media-library/azure/namecheap-confirm.png" alt="Namecheap confirmation details">
+</figure>
+
+<p>Now this email is <strong>Bullshit</strong>. I waited a week and nothing happened. You have to <strong>click the link</strong> to CANCEL the transfer. See the comment from Namecheap support:</p>
+
+<figure>
+  <img src="/media-library/azure/namecheap-confirm-support.jpg" alt="Namecheap confirm support">
+</figure>
+
+<figure>
+  <img src="/media-library/azure/namecheap-azure-domain-transfer-request.png" alt="Namecheap Azure Domain Transfer Request">
+</figure>
+
+<p>After clicking Approve, go back to Azure and wait. This could take awhile. I only had to wait an hour or so, but according to the message it could take days…</p>
+
+<figure>
+  <img src="/media-library/azure/azure-app-service-domain-registered.png" alt="Azure App Service Domain Registered">
+</figure>
+    
+      <h2 id="post-transfer">
+        
+        
+          <a href="#post-transfer">#</a> Post-Transfer
+        
+        
+      </h2>
+
+<p>After transferring the domain, the next steps are verification, especially your SSL certificate and DNS settings. You can see a guide on how to do this in the references section below along with other guides that may be useful.</p>
+    
+      <h2 id="references">
+        
+        
+          <a href="#references">#</a> References
+        
+        
+      </h2>
+
+<ul>
+  <li><a href="https://channel9.msdn.com/Shows/Azure-Friday/App-Service-Domains" target="_blank" rel="noopener noreferrer">https://channel9.msdn.com/Shows/Azure-Friday/App-Service-Domains</a></li>
+  <li><a href="https://jrudlin.github.io/2018/10/27/domain-name-registration-transfer-to-azure-app-service-domains/" target="_blank" rel="noopener noreferrer">https://jrudlin.github.io/2018/10/27/domain-name-registration-transfer-to-azure-app-service-domains/</a></li>
+  <li><a href="https://www.lieben.nu/liebensraum/2017/07/transferring-a-domain-to-azure-dns-and-billing/" target="_blank" rel="noopener noreferrer">https://www.lieben.nu/liebensraum/2017/07/transferring-a-domain-to-azure-dns-and-billing/</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/rest/api/appservice/domains/createorupdate" target="_blank" rel="noopener noreferrer">https://docs.microsoft.com/en-us/rest/api/appservice/domains/createorupdate</a></li>
+  <li><a href="https://social.msdn.microsoft.com/Forums/sqlserver/en-US/271731d8-6cd2-443b-b861-ee4ee30e34e9/transfer-domain-registration-to-azure?forum=windowsazurewebsitespreview#61163e9a-a85e-4cdb-a470-1e922b5f279d" target="_blank" rel="noopener noreferrer">https://social.msdn.microsoft.com/Forums/sqlserver/en-US/271731d8-6cd2-443b-b861-ee4ee30e34e9/transfer-domain-registration-to-azure?forum=windowsazurewebsitespreview#61163e9a-a85e-4cdb-a470-1e922b5f279d</a></li>
+  <li><a href="http://www.deployazure.com/web-mobile/app-service/migrating-wordpress-blog-to-azure-app-service/" target="_blank" rel="noopener noreferrer">http://www.deployazure.com/web-mobile/app-service/migrating-wordpress-blog-to-azure-app-service/</a></li>
+  <li><a href="https://www.onepagezen.com/transfer-domain-azure/" target="_blank" rel="noopener noreferrer">https://www.onepagezen.com/transfer-domain-azure/</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/Azure/app-service/app-service-web-tutorial-custom-ssl" target="_blank" rel="noopener noreferrer">https://docs.microsoft.com/en-us/Azure/app-service/app-service-web-tutorial-custom-ssl</a></li>
+</ul>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/system-administration" class="category-nav_title" rel="archives">System Administration</a>
+    <a href="/system-administration/" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

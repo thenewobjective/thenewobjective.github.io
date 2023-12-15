@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="1 - The Canvas">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/graphics-programming/the-canvas">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | 1 - The Canvas</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/graphics-programming/the-canvas">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        1 - The Canvas
+      </h1>
+      
+      
+        <time>August 26, 2020</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/graphics-programming/intro" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/graphics-programming" class="category-nav_title" rel="archives">Graphics Programming</a>
+    <a href="/graphics-programming/plotting-points" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <p>There are multiple ways to render things to a webpage. We’re going to choose the <code class="language-plaintext highlighter-rouge">&lt;canvas&gt;</code>
+element as it provides the most control. Given the declarative nature of our approach though
+the drawing routines provided by the canvas API are not going to be used. Therefore we’ll
+create a <a href="https://en.wikipedia.org/wiki/Proxy_pattern" target="_blank" rel="noopener noreferrer">proxy</a> class to wrap
+the element and hide the dirty details:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Canvas.js</span>
+<span class="kd">class</span> <span class="nx">Canvas</span> <span class="p">{</span>
+    <span class="err">#</span><span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">canvas</span><span class="dl">'</span><span class="p">)</span>
+    <span class="err">#</span><span class="nx">ctx</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="dl">'</span><span class="s1">2d</span><span class="dl">'</span><span class="p">)</span>
+
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">container</span><span class="p">,</span> <span class="nx">height</span><span class="p">,</span> <span class="nx">width</span><span class="p">})</span> <span class="p">{</span>
+      <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">,</span> <span class="p">{</span><span class="nx">height</span><span class="p">,</span> <span class="nx">width</span><span class="p">})</span>
+      <span class="nx">container</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The private property <code class="language-plaintext highlighter-rouge">#canvas</code> holds the actual HTML element.
+The <code class="language-plaintext highlighter-rouge">constructor</code> accepts a <code class="language-plaintext highlighter-rouge">height</code> and a <code class="language-plaintext highlighter-rouge">width</code> for defining the initial size and a <code class="language-plaintext highlighter-rouge">container</code>
+for the html element that will contain the canvas . The <code class="language-plaintext highlighter-rouge">#ctx</code> property references the drawing
+api of the canvas. The canvas is transparent by default.</p>
+
+<p>We want to keep this class simple so we’ll limit the ability to draw on it by providing a single method called <code class="language-plaintext highlighter-rouge">draw</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Canvas.js</span>
+<span class="kd">class</span> <span class="nx">Canvas</span> <span class="p">{</span>
+    <span class="p">...</span>
+    <span class="nx">draw</span><span class="p">({</span><span class="nx">imageData</span><span class="p">,</span> <span class="nx">top</span><span class="p">,</span> <span class="nx">left</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">putImageData</span><span class="p">(</span><span class="nx">imageData</span><span class="p">,</span> <span class="nx">top</span><span class="p">,</span> <span class="nx">left</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The drawing context requires an <a href="https://developer.mozilla.org/en-US/docs/Web/API/ImageData" target="_blank" rel="noopener noreferrer">ImageData</a> object and
+a position therefore our <code class="language-plaintext highlighter-rouge">draw</code> method must accept the same. The <code class="language-plaintext highlighter-rouge">ImageData</code> object contains a one-dimensional array that represents
+pixels in <abbr title="Red Green Blue Alpha">RGBA</abbr> order with integer values between 0 and 255. That’s 24 bits for the color channels plus
+8 bits for the alpha channel. This color depth is referred to as <a href="https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit)" target="_blank" rel="noopener noreferrer">True Color</a>.
+The initial value of the array is zero filled which represents transparent black.</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[R,G,B,A,R,G,B,A,...,R,G,B,A]
+[0,0,0,0,0,0,0,0,...,0,0,0,0]
+</code></pre></div></div>
+
+<p>For example if the dimensions are 640x360 then the size of <code class="language-plaintext highlighter-rouge">imageData</code> is <code class="language-plaintext highlighter-rouge">width x height x 4 bytes = 921,600 bytes</code>.
+With different dimensions you can see that the memory requirements would change significantly.</p>
+
+<p>A note on style: you’ll notice that parameter destructuring is used in the definition of <code class="language-plaintext highlighter-rouge">draw</code>. Named parameters are preferable to positional for
+a couple reasons:</p>
+
+<ol>
+  <li>It makes it obvious what the actual parameters are without having to inspect the implementation.
+  Ex: <code class="language-plaintext highlighter-rouge">repo.find(12,140,53202)</code> vs <code class="language-plaintext highlighter-rouge">repo.find({age: 12, weight: 140, zip: 53202})</code>
+</li>
+  <li>Extensions can be made without impacting existing clients
+  Ex: <code class="language-plaintext highlighter-rouge">repo.find({name: 'bob', age: 12, weight: 140, zip: 53202})</code>
+</li>
+</ol>
+
+<p>This style of named parameters will be used in all future examples.</p>
+
+<p><a href="https://github.com/thenewobjective/thenewobjective.github.io/tree/master/scripts/graphics-programming/lesson1" target="_blank" rel="noopener noreferrer">Source code for this lesson</a>.</p>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/graphics-programming/intro" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/graphics-programming" class="category-nav_title" rel="archives">Graphics Programming</a>
+    <a href="/graphics-programming/plotting-points" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

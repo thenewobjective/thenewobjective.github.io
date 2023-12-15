@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="That SLA is a Lie">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/software-systems-engineering/that-sla-is-a-lie">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | That SLA is a Lie</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/software-systems-engineering/that-sla-is-a-lie">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        That SLA is a Lie
+      </h1>
+      
+      
+        <time>January 4, 2021</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/software-systems-engineering/" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/software-systems-engineering" class="category-nav_title" rel="archives">Software Systems Engineering</a>
+    <a href="/software-systems-engineering/conways-law-and-consequences" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <p>With the commoditization of cloud infrastructure there have been a deluge of SaaS and PaaS offerings.
+These are an inevitable consequence and have tradeoffs of their own when using them in your organization.
+Usually these services are accompanied by an SLA with an availability guarantee (i.e., 99.5%). Depending
+on the architecture of these services though this number can be misleading at best and result in
+more downtime than expected.</p>
+      <h2 id="downtime-estimates">
+        
+        
+          <a href="#downtime-estimates">#</a> Downtime Estimates
+        
+        
+      </h2>
+
+<p>An SLA (Service Level Agreement) generally has an uptime guarantee. These are presented as an availability percentage
+such as 99%, 99.5%, 99.99%, etc. From these you can calculate downtime over a period of time. For example to calculate
+the downtime for a year given a 99.9% uptime guarantee:</p>
+
+<p>There are <code class="language-plaintext highlighter-rouge">24 x 365.2425 = ~8766</code> <a href="https://en.wikipedia.org/wiki/Year" target="_blank" rel="noopener noreferrer">hours in a year</a>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">99.9% of 8766 hours = 8757 hours</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">8766 hours - 8757 hours = 9 hours</code> downtime per year</p>
+
+<p>Downtime per month: <code class="language-plaintext highlighter-rouge">9 hours / 12 = 45 minutes</code></p>
+
+<p>Downtime per week: <code class="language-plaintext highlighter-rouge">45 / 4 = 11 minutes 15 seconds</code></p>
+
+<p>Downtime per day: <code class="language-plaintext highlighter-rouge">9 hours / 365.2425 = ~1 minute 29 seconds</code></p>
+
+<p>We can repeat this for other common SLA offerings:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>SLA Percentage</th>
+      <th>Downtime per year</th>
+      <th>Downtime per month</th>
+      <th>Downtime per week</th>
+      <th>Downtime per day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>99</td>
+      <td>3d 15h 39m 36s</td>
+      <td>7h 18m 18s</td>
+      <td>1h 49m 35s</td>
+      <td>14m 24s</td>
+    </tr>
+    <tr>
+      <td>99.5</td>
+      <td>1d 19h 49m 48s</td>
+      <td>3h 39m 9s</td>
+      <td>54m 47s</td>
+      <td>7m 12s</td>
+    </tr>
+    <tr>
+      <td>99.9</td>
+      <td>9h 00</td>
+      <td>45m</td>
+      <td>11m 15s</td>
+      <td>1m 29s</td>
+    </tr>
+    <tr>
+      <td>99.95</td>
+      <td>4h 22m 58.8s</td>
+      <td>21m 55s</td>
+      <td>5m 29s</td>
+      <td>43s</td>
+    </tr>
+    <tr>
+      <td>99.99</td>
+      <td>52m 35.8s</td>
+      <td>4m 23s</td>
+      <td>1m 6s</td>
+      <td>8.6s</td>
+    </tr>
+    <tr>
+      <td>99.999</td>
+      <td>5m</td>
+      <td>26s</td>
+      <td>6.6s</td>
+      <td>0.86s</td>
+    </tr>
+  </tbody>
+</table>
+    
+      <h2 id="composite-slas">
+        
+        
+          <a href="#composite-slas">#</a> Composite SLAs
+        
+        
+      </h2>
+
+<p>Knowing the downtime for a particular service offering is all well and good but with many cloud offerings
+that SLA is not the entire story. Many have 3rd party dependencies with their own SLAs. This practically means
+that there is a composite SLA that needs to be calculated to know the reality of what your downtime may be.</p>
+
+<p>Let’s take as a contrived example a simplistic website consisting of an application server and a database server hosted
+on your favorite cloud provider:</p>
+
+<figure>
+
+  <p><img src="https://mermaid.ink/img/pako:eNpdjl1LwzAUhv9KODBQyEqTdjMJY-CYd3rjLgSbXmTLcSuapsRUnKX_3ViZF96dj-d9eAc4eIug4BhMdyL3jzrolpDbqnrCPdlh-MCw2oe1lJmc1TWZz9dkU11tN_9-cnZdAwWHwZnGJt_wo9EQT-hQg0qjNeFVg27HxPWdNRHvbBN9APVi3t6Rgumj353bA6gYerxA28akbu6Pwin08Nt6Kk-hM-2z9-4STCuoAT5B8UXGZZHnbMlyIXjJCgrndGYy4zwvF0tRFuymEGKk8DUZ2PgNoYlUGg?type=png" alt="Simple Website Architecture"></p>
+
+  <figcaption>Simple Website Architecture</figcaption>
+</figure>
+
+<p>The SLA for each component is defined clearly as 99.9% for the Web Server and 99.99% for the Database Server respectively. What is the SLA for the entirety? Given that both are required for the website to function, the
+SLA is the composition of both component SLAs:</p>
+
+<p><code class="language-plaintext highlighter-rouge">99.9% x 99.99% = 99.89%</code></p>
+
+<p>That’s right, the composition of the SLAs is lower than each individual rating. In this case if you assumed 9 hours of
+downtime in a year (99.9%) then you would be wrong as the actual time would be more than half an hour longer. This may
+seem a trivial difference but for more complicated architectures you can see how this adds up.</p>
+
+<p>For a more realistic example let’s say I have a self-hosted CMS solution with a couple load balanced delivery servers:</p>
+
+<figure>
+
+  <p><img src="https://mermaid.ink/img/pako:eNqNkM1ugzAQhF8FrRSplUgUftLEVpUDcW9waW_FOWzATVDBRo6pShHvXocI0qqX-rSz_nZ2NR1kKhdA4aixPjnxM9dcOk4cpbHC3ImwRJkJ_XjQW0IWhMz2V2DHvDTdKWmENA4TZfEhdDtSs_1E-f-gWJTeMTR4wLO4LbofPZKbRYISj6Ky5R-TOJrPt_aqX8qfjrWSRdNRP1UyCHChErrCIrdZdJcPDuZkV3GgtsxRv3PgsrdcU-doxFNeGKWBvmF5Fi5gY9RLKzOgRjdihFiBNtdqosQwlFwTH4J3oUb5qlQ1DloJtINPoF6wCFbLTRj4XugFwWYdutDatr-69AMS2rdePpDeha_BwOu_AcPujng?type=png" alt="Simple Website Architecture"></p>
+
+  <figcaption>Simple Website Architecture</figcaption>
+</figure>
+
+<p>So if the load balancer or the database stop working the entire website fails. If only one of the delivery servers
+fails though the site will still be available. If the Content Management Server fails the website will still function,
+but changes would not be possible during the outage. What is the SLA for all functionality being available?</p>
+
+<p>Before the entirety can be computed we have to understand how to evaluate this portion:</p>
+
+<figure>
+
+  <p><img src="https://mermaid.ink/img/pako:eNqNkEFvgzAMhf8KstQbRaUFmkRTD5Td2GW7jfTgEW9FgwRlYRqr-O_LqKi0225-9vcs-12gNopAwJvF_hyUj9JKHQRlXpUGVZBji7ome_diD5xHnK9OV-BYxFV1NNqRdkFBbfNJdlyo1elGbf9Blfl6ffAL_6gthNCR7bBR_rrL70SCO1NHEoQvFdp3CVJPnht6hY7uVeOMBfGK7QeFgIMzT6OuQTg70AIVDfpPuxtFs-nhmsEcRQg96mdjusXoJYgLfIGIecQylrJ0wzK-YzHfhzD6drKPeJKmWbJJdhmbQvie7fH0A7-hbUE?type=png" alt="Load Balancer"></p>
+
+  <figcaption>Load Balancer</figcaption>
+</figure>
+
+<p>As mentioned if one of the two delivery servers fail the website is still available so the SLA is expected to be higher
+with the fallback server being an option. What are the odds of both delivery servers failing simultaneously?</p>
+
+<p>(<code class="language-plaintext highlighter-rouge">1.0 - 0.999) x (1.0 - 0.999) = 0.001 x 0.001 = 0.000001</code></p>
+
+<p>Which is an SLA of 99.9999%</p>
+
+<figure>
+
+  <p><img src="https://mermaid.ink/img/pako:eNqNkcFuwjAMhl8lsoS0SQU1gVJaTRxKdmsv220tB9NkUI0mKKTTGOLdl7V0ZdplN__259-WfYZSCwkxbA0ediR9KkyhCEmTPNUoSIJ7VKU0DxuzjKJJFI3WHXBsNl3HipO8rQw14pI0z1daWaks4XJfvUtz6j1G6xuO_YOTSnQBT_I7jhY3eJTDRvdXbJUNXhkq3MrahX_c0mQ8XroFfyl2teDUSZ70it2qrBXgQS1NjZVwRzt_FwqwOzeqgNiFAs1bAYW6OK45CLTyUVRWG4hfcX-UHmBj9fNJlRBb08ge4hW6c9Y_lGybsu417Yc8OKB60bruG52E-AwfEFM2oWwRhP6CBgFl_jTw4OTSfjAJp0HIwtl8Posou3jw2RrQyxeTMppi?type=png" alt="Total SLA Graph"></p>
+
+  <figcaption>Total SLA</figcaption>
+</figure>
+
+<p>Now we can calculate the composition of our dependencies:</p>
+
+<p><code class="language-plaintext highlighter-rouge">99.99% x 99.9999% x 99.99% x 99.9% = 99.88%</code></p>
+
+<p>Which is more than 17.5 hours in a year; a worse availability than the simplistic website presented earlier.</p>
+    
+      <h2 id="cloud-offerings">
+        
+        
+          <a href="#cloud-offerings">#</a> Cloud Offerings
+        
+        
+      </h2>
+
+<p>To present a real-world scenario, if I was in the market for an enterprise content management system I would find many
+offerings claiming to fulfill my needs while taking on the burden of infrastructure management and
+offering attractive uptime guarantees (99.5%) to do it. With enterprise level needs though a simple WYSIWYG and workflow is not enough. This system would need to support additional functionality such as those found in a <a href="https://en.wikipedia.org/wiki/Product_information_management" target="_blank" rel="noopener noreferrer">PIM</a>,
+a <a href="https://en.wikipedia.org/wiki/Digital_asset_management" target="_blank" rel="noopener noreferrer">DAM</a>, a <a href="https://en.wikipedia.org/wiki/Customer_relationship_management" target="_blank" rel="noopener noreferrer">CRM</a>, an E-Commerce system, Analytics, <a href="https://en.wikipedia.org/wiki/Personalization#Web_pages" target="_blank" rel="noopener noreferrer">Personalization</a>, and others. Some CMSes have a completeness of vision and include these listed features
+and call themselves Digital Experience Platforms; others don’t and offload that responsibility to what they
+refer to as “best-of-breed” 3rd party integrations.</p>
+
+<p>As you’ve seen in above these are not equivalent solutions and when the latter advertises itself
+like the former and claims an SLA of 99.9%, what does that mean in reality? Is that simply the content
+management server and the content delivery? Does that cover all of these 3rd party integrations required
+to get the necessary functionality? As you’d guess the answer is no. We can do the math (assuming
+a 99.9% SLA for all features):</p>
+
+<ul>
+  <li>Base CMS: 99.9%</li>
+  <li>PIM: 99.9%</li>
+  <li>DAM: 99.9%</li>
+  <li>CRM: 99.9%</li>
+  <li>Analytics: 99.9%</li>
+  <li>E-commerce: 99.9%</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">99.9% * 99.9% * 99.9% * 99.9% * 99.9% * 99.9% = 99.4%</code></p>
+
+<p>So while the advertised promise was 9h of downtime the reality is over 52 hours of downtime annually.
+Add more 3rd party dependencies and you’ll see the downtime increase.</p>
+
+<p>Now this isn’t limited to Cloud CMS offerings of course, you can apply the same rules to other cloud offerings.
+If those offerings claim an SLA level but offload core functionality to a 3rd party it’s not an honest agreement.
+So pay attention to what you’re buying and identify those dependencies external to that system.</p>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/software-systems-engineering/" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/software-systems-engineering" class="category-nav_title" rel="archives">Software Systems Engineering</a>
+    <a href="/software-systems-engineering/conways-law-and-consequences" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

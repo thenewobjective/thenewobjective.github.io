@@ -1,0 +1,1 @@
+{"version":3,"file":"index.mjs","mappings":"AAAAA,SAASC,KAAKC,UAAY","sources":["webpack://@mlhaufe/tile-engine/./src/index.mts"],"sourcesContent":["document.body.innerHTML = '<h1>Hello World</h1>';"],"names":["document","body","innerHTML"],"sourceRoot":""}

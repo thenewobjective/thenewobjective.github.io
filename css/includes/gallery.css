@@ -1,0 +1,17 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & figure {
+        margin: 1em 0.8em;
+        max-width: 26%;
+    }
+
+    & figcaption {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-height: 2em;
+    }
+}

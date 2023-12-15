@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="The Great Maze of jQuery">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/web-development/the-great-maze-of-jquery">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | The Great Maze of jQuery</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/web-development/the-great-maze-of-jquery">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        The Great Maze of jQuery
+      </h1>
+      
+      
+        <time>April 18, 2019</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/web-development/ramda-and-eweda-before-the-dawn" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/web-development" class="category-nav_title" rel="archives">Web Development</a>
+    <a href="/web-development/css-grid-with-detail-view" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <p><em>David Mark (<a href="https://twitter.com/Cinsoft" target="_blank" rel="noopener noreferrer">@Cinsoft</a>, <a href="https://github.com/david-mark" target="_blank" rel="noopener noreferrer">Github</a>, <a href="https://groups.google.com/forum/#!profile/comp.lang.javascript/APn2wQdow28xcHDrDggfWTU5hXOy7oRk11vZM0N4N-idI7HJycIOyoXWIDEZoK6_MEPc2ywEyeeK" target="_blank" rel="noopener noreferrer">comp.lang.javascript</a>) is a notorious web developer from a different age. He is abrasive and effective. The following is a reposting of <a href="https://gist.github.com/mlhaufe/a7d7469db14b3b006e6cdf15e5669d80" target="_blank" rel="noopener noreferrer">my response</a> to a request for comments on yet another jQuery architectural problem. It has been slightly edited for blog form.</em></p>
+      <h2 id="faking-ad-hoc-polymorphism">
+        
+        
+          <a href="#faking-ad-hoc-polymorphism">#</a> Faking Ad-Hoc Polymorphism
+        
+        
+      </h2>
+
+<p>JavaScript does not support Ad-Hoc Polymorphism (One method name with multiple implementations based on parameters). Many developers (including jQuery authors) try to fake it by using double-dispatch, or an inlined Great Maze of If-Else-dom or Switch-dom. To clarify what that is in the abstract here is an example of it (in TypeScript for clarity):</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nx">Shape</span> <span class="kd">extends</span> <span class="nb">Object</span> <span class="p">{</span>
+    <span class="kd">abstract</span> <span class="nx">onCollisionWith</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">):</span> <span class="k">void</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Circle</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span>
+        <span class="k">public</span> <span class="nx">cx</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">cy</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">r</span><span class="p">:</span> <span class="kr">number</span>
+    <span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">()</span> <span class="p">}</span>
+
+    <span class="c1">// Great Maze of If-Else-dom</span>
+    <span class="nx">onCollisionWith</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">shape</span> <span class="k">instanceof</span> <span class="nx">Circle</span><span class="p">)</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle-Circle collision</span><span class="dl">"</span><span class="p">)</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">shape</span> <span class="k">instanceof</span> <span class="nx">Square</span><span class="p">)</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Square-Square collision</span><span class="dl">"</span><span class="p">)</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">shape</span> <span class="k">instanceof</span> <span class="nx">Rect</span><span class="p">)</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle-Rect collision</span><span class="dl">"</span><span class="p">)</span>
+        <span class="k">else</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle-Shape collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Square</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span>
+        <span class="k">public</span> <span class="nx">cx</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">cy</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">size</span><span class="p">:</span> <span class="kr">number</span>
+    <span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">()</span> <span class="p">}</span>
+
+    <span class="c1">// Great Maze of Switch-dom</span>
+    <span class="nx">onCollisionWith</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="nx">shape</span><span class="p">.</span><span class="kd">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="dl">"</span><span class="s2">Circle</span><span class="dl">"</span><span class="p">:</span>
+                <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Square-Circle collision</span><span class="dl">"</span><span class="p">)</span>
+            <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="dl">"</span><span class="s2">Square</span><span class="dl">"</span><span class="p">:</span>
+                <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Square-Square collision</span><span class="dl">"</span><span class="p">)</span>
+            <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="dl">"</span><span class="s2">Rect</span><span class="dl">"</span><span class="p">:</span>
+                <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Square-Rect collision</span><span class="dl">"</span><span class="p">)</span>
+            <span class="k">break</span><span class="p">;</span>
+            <span class="nl">default</span><span class="p">:</span>
+                <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Square-Shape collision</span><span class="dl">"</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Rect</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span>
+        <span class="k">public</span> <span class="nx">cx</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">cy</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">width</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">height</span><span class="p">:</span> <span class="kr">number</span>
+    <span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">()</span> <span class="p">}</span>
+
+    <span class="c1">// Great Maze of If-Else-dom + double-dispatch</span>
+    <span class="nx">onCollisionWith</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">shape</span> <span class="k">instanceof</span> <span class="nx">Circle</span><span class="p">)</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">_onCircleCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">)</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">shape</span> <span class="k">instanceof</span> <span class="nx">Square</span><span class="p">)</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">_onSquareCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">)</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">shape</span> <span class="k">instanceof</span> <span class="nx">Rect</span><span class="p">)</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">_onRectCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">)</span>
+        <span class="k">else</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">_onShapeCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="nx">_onCircleCollision</span><span class="p">(</span><span class="nx">circle</span><span class="p">:</span> <span class="nx">Circle</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Rect-Circle collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="nx">_onSquareCollision</span><span class="p">(</span><span class="nx">square</span><span class="p">:</span> <span class="nx">Square</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Rect-Square collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="nx">_onRectCollision</span><span class="p">(</span><span class="nx">rect</span><span class="p">:</span> <span class="nx">Rect</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Rect-Rect collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="nx">_onShapeCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Rect-Shape collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The key thing you’ll notice in these “workaround” approaches is the amount of code spent just trying to find the part (The Great Maze) that actually does useful work (the alert). Not to mention that in a more real-world example, much of the “useful work” is probably duplicated along with the “maze”. Imagine the maintenance and evolutionary problems with this code as well.</p>
+
+<p>One way to avoid this issue is to push the condition logic to the caller and to expose the implementation more directly:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nx">Shape</span> <span class="kd">extends</span> <span class="nb">Object</span> <span class="p">{</span>
+    <span class="kd">abstract</span> <span class="nx">onShapeCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">):</span> <span class="k">void</span>
+    <span class="kd">abstract</span> <span class="nx">onCircleCollision</span><span class="p">(</span><span class="nx">circle</span><span class="p">:</span> <span class="nx">Circle</span><span class="p">):</span> <span class="k">void</span>
+    <span class="kd">abstract</span> <span class="nx">onSquareCollision</span><span class="p">(</span><span class="nx">square</span><span class="p">:</span> <span class="nx">Square</span><span class="p">):</span> <span class="k">void</span>
+    <span class="kd">abstract</span> <span class="nx">onRectCollision</span><span class="p">(</span><span class="nx">rect</span><span class="p">:</span> <span class="nx">Rect</span><span class="p">):</span> <span class="k">void</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Circle</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span>
+        <span class="k">public</span> <span class="nx">cx</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">cy</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">r</span><span class="p">:</span> <span class="kr">number</span>
+    <span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">()</span> <span class="p">}</span>
+
+    <span class="nx">onCircleCollision</span><span class="p">(</span><span class="nx">circle</span><span class="p">:</span> <span class="nx">Circle</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle-Circle collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="nx">onSquareCollision</span><span class="p">(</span><span class="nx">square</span><span class="p">:</span> <span class="nx">Square</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle-Square collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="nx">onRectCollision</span><span class="p">(</span><span class="nx">rect</span><span class="p">:</span> <span class="nx">Rect</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle-Rect collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="nx">onShapeCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Circle-Shape collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Square</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span>
+        <span class="k">public</span> <span class="nx">cx</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">cy</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">size</span><span class="p">:</span> <span class="kr">number</span>
+    <span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">()</span> <span class="p">}</span>
+
+    <span class="nx">onCircleCollision</span><span class="p">(</span><span class="nx">circle</span><span class="p">:</span> <span class="nx">Circle</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Square-Circle collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="nx">onSquareCollision</span><span class="p">(</span><span class="nx">square</span><span class="p">:</span> <span class="nx">Square</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Square-Square collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="nx">onRectCollision</span><span class="p">(</span><span class="nx">rect</span><span class="p">:</span> <span class="nx">Rect</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Square-Rect collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="nx">onShapeCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Square-Shape collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Rect</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span>
+        <span class="k">public</span> <span class="nx">cx</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">cy</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">width</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">height</span><span class="p">:</span> <span class="kr">number</span>
+    <span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">()</span> <span class="p">}</span>
+
+    <span class="nx">onCircleCollision</span><span class="p">(</span><span class="nx">circle</span><span class="p">:</span> <span class="nx">Circle</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Rect-Circle collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="nx">onSquareCollision</span><span class="p">(</span><span class="nx">square</span><span class="p">:</span> <span class="nx">Square</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Rect-Square collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="nx">onRectCollision</span><span class="p">(</span><span class="nx">rect</span><span class="p">:</span> <span class="nx">Rect</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Rect-Rect collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="nx">onShapeCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Rect-other collision</span><span class="dl">"</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The issue now is that while the code is far simpler for you as a library author, it is now more complicated for the user:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//before</span>
+<span class="nx">myShape</span><span class="p">.</span><span class="nx">onCollisionWith</span><span class="p">(</span><span class="nx">anotherShape</span><span class="p">)</span>
+
+<span class="c1">//after</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">anotherShape</span> <span class="k">instanceof</span> <span class="nx">Circle</span><span class="p">)</span>
+    <span class="nx">myShape</span><span class="p">.</span><span class="nx">onCircleCollision</span><span class="p">(</span><span class="nx">anotherShape</span><span class="p">)</span>
+<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">anotherShape</span> <span class="k">instanceof</span> <span class="nx">Square</span><span class="p">)</span>
+    <span class="nx">myShape</span><span class="p">.</span><span class="nx">onSquareCollision</span><span class="p">(</span><span class="nx">anotherShape</span><span class="p">)</span>
+<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">anotherShape</span> <span class="k">instanceof</span> <span class="nx">Rect</span><span class="p">)</span>
+    <span class="nx">myShape</span><span class="p">.</span><span class="nx">onRectCollision</span><span class="p">(</span><span class="nx">anotherShape</span><span class="p">)</span>
+<span class="k">else</span>
+    <span class="nx">myShape</span><span class="p">.</span><span class="nx">onShapeCollision</span><span class="p">(</span><span class="nx">anotherShape</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Another issue with the first example and in the one above: Let’s say I want to add a Triangle class, I now have to update every object in the my library or else every single switch/if statement depending on the approach I used. In other words: Every shape has to be aware of every other related shape…</p>
+
+<p>So now the challenge is, how to provide the author with the usability of a single method while avoiding The Great Maze and maintainability problems when we’re restricted to Single-Dispatch in JavaScript…</p>
+    
+      <h2 id="multiple-paradigm-pain">
+        
+        
+          <a href="#multiple-paradigm-pain">#</a> Multiple Paradigm Pain
+        
+        
+      </h2>
+
+<p>JavaScript is a multi-paradigm language. It supports: <a href="https://en.wikipedia.org/wiki/Functional_programming" target="_blank" rel="noopener noreferrer">Functional</a>, <a href="https://en.wikipedia.org/wiki/Procedural_programming" target="_blank" rel="noopener noreferrer">Procedural</a>, <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank" rel="noopener noreferrer">Object Oriented</a> (<a href="https://en.wikipedia.org/wiki/Prototype-based_programming" taret="_blank" target="_blank" rel="noopener noreferrer">Prototypical</a>), <a href="https://en.wikipedia.org/wiki/Imperative_programming" target="_blank" rel="noopener noreferrer">Imperative</a>, and others. Not all of these paradigms are compatible with each other and choosing to use the wrong combination leads to cognitive dissonance and impedance mismatch.</p>
+
+<p>jQuery in particular utilizes all of these in places which require extra code to make up for the dissonance, or causes one to overlook other problems as it can distract from higher level issues. The issue you pointed to is one example of this with all of the code duplication made invisible due to helper methods (the function is duplicated with the only difference being the name of the type)</p>
+    
+      <h2 id="sound-architecture-is-key">
+        
+        
+          <a href="#sound-architecture-is-key">#</a> Sound Architecture is key
+        
+        
+      </h2>
+
+<blockquote>
+  <p>Safe upon the solid rock the ugly houses stand:<br>
+Come and see my shining palace built upon the sand!</p>
+
+  <p><cite>Edna St. Vincent-Millay, Second Fig</cite></p>
+</blockquote>
+
+<p>Since jQuery is closest to an Object Oriented architecture, I would suggest they actually commit to it properly and eliminate/reduce the contradictory paradigms. By doing so, many problems become clearer and a methodology for refactoring and extension become clear.</p>
+
+<p>Now the climax: A solution to the problems above. By choosing OOP, the answer to our dilemma of duplicate code, extraneous conditionals, and maintainability is straightforward: Subtype Polymorphism. With this approach, the implementation is different based on the current type (this) instead of different based on the parameters. With implementation inheritance as well, the duplication is also eliminated:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nx">Shape</span> <span class="kd">extends</span> <span class="nb">Object</span> <span class="p">{</span>
+    <span class="nx">onCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//common implementation</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="kd">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">-</span><span class="p">${</span><span class="nx">shape</span><span class="p">.</span><span class="kd">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Circle</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span>
+        <span class="k">public</span> <span class="nx">cx</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">cy</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">r</span><span class="p">:</span> <span class="kr">number</span>
+    <span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">()</span> <span class="p">}</span>
+
+    <span class="nx">onCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//...Circle specific code...</span>
+        <span class="k">super</span><span class="p">.</span><span class="nx">onCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Square</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span>
+        <span class="k">public</span> <span class="nx">cx</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">cy</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">size</span><span class="p">:</span> <span class="kr">number</span>
+    <span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">()</span> <span class="p">}</span>
+
+    <span class="nx">onCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//...Square specific code...</span>
+        <span class="k">super</span><span class="p">.</span><span class="nx">onCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Rect</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span>
+        <span class="k">public</span> <span class="nx">cx</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">cy</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">width</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+        <span class="k">public</span> <span class="nx">height</span><span class="p">:</span> <span class="kr">number</span>
+    <span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">()</span> <span class="p">}</span>
+
+    <span class="nx">onCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//...Rect specific code...</span>
+        <span class="k">super</span><span class="p">.</span><span class="nx">onCollision</span><span class="p">(</span><span class="nx">shape</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">c</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Circle</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+    <span class="nx">r</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Rect</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="nx">c</span><span class="p">.</span><span class="nx">onCollision</span><span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="c1">//Circle-Rect</span>
+</code></pre></div></div>
+
+<p>Adding a Triangle is now so obvious that an example is not even needed. Every Shape is aware of its immediate parent and the parent is unaware of its children. Loose coupling has also been achieved.</p>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/web-development/ramda-and-eweda-before-the-dawn" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/web-development" class="category-nav_title" rel="archives">Web Development</a>
+    <a href="/web-development/css-grid-with-detail-view" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

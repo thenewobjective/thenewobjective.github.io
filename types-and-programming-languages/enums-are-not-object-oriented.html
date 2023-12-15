@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="Enums Are Not Object Oriented">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/types-and-programming-languages/enums-are-not-object-oriented">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | Enums Are Not Object Oriented</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/types-and-programming-languages/enums-are-not-object-oriented">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        Enums Are Not Object Oriented
+      </h1>
+      
+      
+        <time>June 24, 2023</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/types-and-programming-languages/instanceof-is-not-object-oriented" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/types-and-programming-languages" class="category-nav_title" rel="archives">Types and Programming Languages</a>
+    <a href="" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#what-is-an-enum" id="markdown-toc-what-is-an-enum">What is an enum?</a></li>
+  <li><a href="#why-are-enums-not-object-oriented" id="markdown-toc-why-are-enums-not-object-oriented">Why are enums not object oriented?</a></li>
+  <li><a href="#the-object-oriented-alternative" id="markdown-toc-the-object-oriented-alternative">The object oriented alternative</a></li>
+  <li><a href="#what-about-case-exhaustive-pattern-matching" id="markdown-toc-what-about-case-exhaustive-pattern-matching">What about case exhaustive pattern matching?</a></li>
+  <li><a href="#what-about-bitwise-operations" id="markdown-toc-what-about-bitwise-operations">What about bitwise operations?</a></li>
+  <li><a href="#sugar-via-abstraction" id="markdown-toc-sugar-via-abstraction">Sugar via abstraction</a></li>
+</ul>
+      <h2 id="introduction">
+        
+        
+          <a href="#introduction">#</a> Introduction
+        
+        
+      </h2>
+
+<p>If you are aiming to program in a pure Object Oriented style, then you should
+avoid using enums as they are not object oriented but rather a procedural
+construct. Here I will explain why and demonstrate an object oriented alternative.</p>
+    
+      <h2 id="what-is-an-enum">
+        
+        
+          <a href="#what-is-an-enum">#</a> What is an enum?
+        
+        
+      </h2>
+
+<p>Enums in popular languages vary slightly, but practically speaking they are
+a fixed set of named constants. For example:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">enum</span> <span class="nx">Color</span> <span class="p">{</span>
+  <span class="nx">RED</span>  <span class="o">=</span> <span class="mh">0xFF0000</span><span class="p">,</span>
+  <span class="nx">GREEN</span> <span class="o">=</span> <span class="mh">0x00FF00</span><span class="p">,</span>
+  <span class="nx">BLUE</span> <span class="o">=</span> <span class="mh">0x0000FF</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Each language may vary slighty in extensions and implementation details, but
+practically they fulfill the same role.</p>
+
+<p>The attraction of enums is that they are a fixed set of constants that can be
+used in place of magic numbers. For example:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">getFavoriteColor</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="mh">0x0000FF</span><span class="p">;</span>
+
+<span class="c1">// vs</span>
+
+<span class="kd">const</span> <span class="nx">getFavoriteColor</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">BLUE</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Additionally, enums can be used in switch statements to provide case exhaustive
+pattern matching that can be checked at compile time:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span> <span class="p">(</span><span class="nx">getFavoriteColor</span><span class="p">())</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">RED</span><span class="p">:</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Red</span><span class="dl">"</span><span class="p">);</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">GREEN</span><span class="p">:</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Green</span><span class="dl">"</span><span class="p">);</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">BLUE</span><span class="p">:</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Blue</span><span class="dl">"</span><span class="p">);</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="c1">// Compiler error if not exhaustive</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>They can often be used as a type:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">printColor</span><span class="p">(</span><span class="nx">color</span><span class="p">:</span> <span class="nx">Color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">color</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Bitwise operations can be performed on them when they are backed by a number:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">enum</span> <span class="nx">Color</span> <span class="p">{</span>
+  <span class="nx">RED</span> <span class="o">=</span> <span class="mh">0xFF0000</span><span class="p">,</span>
+  <span class="nx">GREEN</span> <span class="o">=</span> <span class="mh">0x00FF00</span><span class="p">,</span>
+  <span class="nx">BLUE</span> <span class="o">=</span> <span class="mh">0x0000FF</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">MAGENTA</span> <span class="o">=</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">RED</span> <span class="o">|</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">BLUE</span><span class="p">,</span> <span class="c1">// Adds the two colors together</span>
+  <span class="nx">CYAN</span> <span class="o">=</span> <span class="nx">MAGENTA</span> <span class="o">^</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">RED</span><span class="p">,</span> <span class="c1">// Removes the red component</span>
+  <span class="nx">BLACK</span> <span class="o">=</span> <span class="nx">MAGENTA</span> <span class="o">&amp;</span> <span class="nx">CYAN</span><span class="p">;</span> <span class="c1">// Removes the green and blue components</span>
+</code></pre></div></div>
+    
+      <h2 id="why-are-enums-not-object-oriented">
+        
+        
+          <a href="#why-are-enums-not-object-oriented">#</a> Why are enums not object oriented?
+        
+        
+      </h2>
+
+<p>Assuming that enums in your language are not simply syntactic sugar for another construct
+(like a lightweight class), they are not object oriented but procedural. The
+existence of enums implies the use of a conditional elsewhere in your code:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">printColor</span><span class="p">(</span><span class="nx">color</span><span class="p">:</span> <span class="nx">Color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">switch</span> <span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">RED</span><span class="p">:</span>   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Red</span><span class="dl">"</span><span class="p">);</span>   <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">GREEN</span><span class="p">:</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Green</span><span class="dl">"</span><span class="p">);</span> <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">BLUE</span><span class="p">:</span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Blue</span><span class="dl">"</span><span class="p">);</span>  <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// or</span>
+
+<span class="kd">function</span> <span class="nx">printColor</span><span class="p">(</span><span class="nx">color</span><span class="p">:</span> <span class="nx">Color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">color</span> <span class="o">===</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">RED</span><span class="p">)</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Red</span><span class="dl">"</span><span class="p">);</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">color</span> <span class="o">===</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">GREEN</span><span class="p">)</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Green</span><span class="dl">"</span><span class="p">);</span>
+  <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">color</span> <span class="o">===</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">BLUE</span><span class="p">)</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Blue</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Such forms of conditional logic are procedural and not object oriented.
+<a href="/types-and-programming-languages/instanceof-is-not-object-oriented">Elsewhere</a> I have described
+this as the great maze of if-elsedom and switchdom where you have to navigate through the maze of
+conditionals to find the code you wish to execute. This has the additional problem of being
+brittle to change. If you add a new color, you have to find all the places where you have
+a conditional/switch and add a new branch.</p>
+    
+      <h2 id="the-object-oriented-alternative">
+        
+        
+          <a href="#the-object-oriented-alternative">#</a> The object oriented alternative
+        
+        
+      </h2>
+
+<p>The general approach to eliminating conditionals and switch statements is to use subtype polymorphism.</p>
+
+<p>So instead of:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">printColor</span><span class="p">(</span><span class="nx">color</span><span class="p">:</span> <span class="nx">Color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">switch</span> <span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">RED</span><span class="p">:</span>   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Red</span><span class="dl">"</span><span class="p">);</span>   <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">GREEN</span><span class="p">:</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Green</span><span class="dl">"</span><span class="p">);</span> <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">BLUE</span><span class="p">:</span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Blue</span><span class="dl">"</span><span class="p">);</span>  <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>We do:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">color</span><span class="p">.</span><span class="nx">print</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>Where <code class="language-plaintext highlighter-rouge">color</code> is an instance of a subtype of <code class="language-plaintext highlighter-rouge">Color</code> that implements the <code class="language-plaintext highlighter-rouge">print</code> method.</p>
+
+<p>But how should colors be represented? One approach is to use an explicit class hierarchy:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nx">Color</span> <span class="p">{</span>
+  <span class="kd">abstract</span> <span class="nx">print</span><span class="p">():</span> <span class="k">void</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Red</span> <span class="kd">extends</span> <span class="nx">Color</span> <span class="p">{</span>
+  <span class="nx">print</span><span class="p">()</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Red</span><span class="dl">"</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Green</span> <span class="kd">extends</span> <span class="nx">Color</span> <span class="p">{</span>
+  <span class="nx">print</span><span class="p">()</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Green</span><span class="dl">"</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Blue</span> <span class="kd">extends</span> <span class="nx">Color</span> <span class="p">{</span>
+  <span class="nx">print</span><span class="p">()</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Blue</span><span class="dl">"</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is a perfectly valid approach, but it has the downside of being verbose. If you have a large
+number of colors, you will have to write a lot of boilerplate code. Additionally, you will have to
+create a new class for each color.</p>
+
+<p>A more concise approach is to utilize what is called an enumeration class:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nx">Enumeration</span><span class="o">&lt;</span><span class="nx">KeyType</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="k">readonly</span> <span class="na">key</span><span class="p">:</span> <span class="nx">KeyType</span><span class="p">,</span> <span class="k">readonly</span> <span class="na">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Which can be utilized as follows:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Color</span> <span class="kd">extends</span> <span class="nx">Enumeration</span><span class="o">&lt;</span><span class="kr">number</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">static</span> <span class="k">readonly</span> <span class="nx">RED</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">(</span><span class="mh">0x0000FF</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Red</span><span class="dl">"</span><span class="p">);</span>
+  <span class="k">static</span> <span class="k">readonly</span> <span class="nx">GREEN</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">(</span><span class="mh">0x00FF00</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Green</span><span class="dl">"</span><span class="p">);</span>
+  <span class="k">static</span> <span class="k">readonly</span> <span class="nx">BLUE</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">(</span><span class="mh">0xFF0000</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Blue</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>which looks much closer to the original enum. The difference is that we have
+eliminated the procedural conditional logic and replaced it with subtype
+polymorphism. The added benefit of this approach is that we can now add new colors without
+having to modify any existing usages as they will still call the <code class="language-plaintext highlighter-rouge">print</code> method.</p>
+
+<p>This also has the added benefit of being able to add methods to the enumeration class:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nx">Enumeration</span><span class="o">&lt;</span><span class="nx">KeyType</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="k">readonly</span> <span class="na">key</span><span class="p">:</span> <span class="nx">KeyType</span><span class="p">,</span> <span class="k">readonly</span> <span class="na">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">)</span> <span class="p">{}</span>
+
+  <span class="c1">// Returns all the values of the enumeration</span>
+  <span class="k">static</span> <span class="nx">values</span><span class="o">&lt;</span><span class="nx">T</span> <span class="kd">extends</span> <span class="nx">Enumeration</span><span class="o">&lt;</span><span class="nx">KeyType</span><span class="o">&gt;</span><span class="p">,</span> <span class="nx">KeyType</span><span class="o">&gt;</span><span class="p">(</span><span class="na">this</span><span class="p">:</span> <span class="k">new</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">T</span><span class="p">):</span> <span class="nx">T</span><span class="p">[]</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">toString</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span> <span class="p">}</span>
+
+  <span class="nx">equals</span><span class="p">(</span><span class="na">other</span><span class="p">:</span> <span class="nx">Enumeration</span><span class="o">&lt;</span><span class="nx">KeyType</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">key</span> <span class="o">===</span> <span class="nx">other</span><span class="p">.</span><span class="nx">key</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+    
+      <h2 id="what-about-case-exhaustive-pattern-matching">
+        
+        
+          <a href="#what-about-case-exhaustive-pattern-matching">#</a> What about case exhaustive pattern matching?
+        
+        
+      </h2>
+
+<p>By using subtype polymorphism, we have eliminated the need for case exhaustive pattern matching.
+This is because the compiler will ensure that we have implemented the <code class="language-plaintext highlighter-rouge">print</code> method for all
+subtypes of <code class="language-plaintext highlighter-rouge">Color</code>.</p>
+    
+      <h2 id="what-about-bitwise-operations">
+        
+        
+          <a href="#what-about-bitwise-operations">#</a> What about bitwise operations?
+        
+        
+      </h2>
+
+<p>If the enumeration class is backed by a number, we can still perform bitwise operations on it:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Color</span> <span class="kd">extends</span> <span class="nx">Enumeration</span><span class="o">&lt;</span><span class="kr">number</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">static</span> <span class="k">readonly</span> <span class="nx">RED</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">(</span><span class="mh">0x0000FF</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Red</span><span class="dl">"</span><span class="p">);</span>
+  <span class="k">static</span> <span class="k">readonly</span> <span class="nx">GREEN</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">(</span><span class="mh">0x00FF00</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Green</span><span class="dl">"</span><span class="p">);</span>
+  <span class="k">static</span> <span class="k">readonly</span> <span class="nx">BLUE</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">(</span><span class="mh">0xFF0000</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Blue</span><span class="dl">"</span><span class="p">);</span>
+
+  <span class="k">static</span> <span class="k">readonly</span> <span class="nx">MAGENTA</span> <span class="o">=</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">RED</span> <span class="o">|</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">BLUE</span><span class="p">;</span>
+  <span class="k">static</span> <span class="k">readonly</span> <span class="nx">CYAN</span> <span class="o">=</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">MAGENTA</span> <span class="o">^</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">RED</span><span class="p">;</span>
+  <span class="k">static</span> <span class="k">readonly</span> <span class="nx">BLACK</span> <span class="o">=</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">MAGENTA</span> <span class="o">&amp;</span> <span class="nx">Color</span><span class="p">.</span><span class="nx">CYAN</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+    
+      <h2 id="sugar-via-abstraction">
+        
+        
+          <a href="#sugar-via-abstraction">#</a> Sugar via abstraction
+        
+        
+      </h2>
+
+<p>With first class classes, we can create a function that provides a more convenient syntax for
+creating enumeration classes:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Enum</span><span class="o">&lt;</span><span class="nx">ValueType</span><span class="o">&gt;</span><span class="p">(...</span><span class="nx">entries</span><span class="p">:</span> <span class="p">[</span><span class="nx">name</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span> <span class="nx">value</span><span class="p">:</span> <span class="nx">ValueType</span><span class="p">][])</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="kd">class</span> <span class="kd">extends</span> <span class="nx">Enumeration</span><span class="o">&lt;</span><span class="nx">ValueType</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="k">static</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">const</span> <span class="p">[</span><span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">]</span> <span class="k">of</span> <span class="nx">entries</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">[</span><span class="nx">name</span><span class="p">]</span> <span class="o">=</span> <span class="k">new</span> <span class="k">this</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">name</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">};</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Example usage:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">Color</span> <span class="o">=</span> <span class="nx">Enum</span><span class="p">(</span>
+  <span class="p">[</span><span class="dl">"</span><span class="s2">RED</span><span class="dl">"</span><span class="p">,</span> <span class="mh">0xFF0000</span><span class="p">],</span>
+  <span class="p">[</span><span class="dl">"</span><span class="s2">GREEN</span><span class="dl">"</span><span class="p">,</span> <span class="mh">0x00FF00</span><span class="p">],</span>
+  <span class="p">[</span><span class="dl">"</span><span class="s2">BLUE</span><span class="dl">"</span><span class="p">,</span> <span class="mh">0x0000FF</span><span class="p">]</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>This may be a bit too cute though and to quote Alan Perlis:</p>
+
+<blockquote>
+  <p>Syntactic sugar causes cancer of the semicolon.
+<cite><a href="https://www.cs.yale.edu/homes/perlis-alan/quotes.html" target="_blank" rel="noopener noreferrer">Alan Perlis</a></cite></p>
+</blockquote>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/types-and-programming-languages/instanceof-is-not-object-oriented" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/types-and-programming-languages" class="category-nav_title" rel="archives">Types and Programming Languages</a>
+    <a href="" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

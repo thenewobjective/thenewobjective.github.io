@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="Warming up IIS Site from VSTS Server">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/system-administration/warming-up-iis-site-from-vsts-server">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | Warming up IIS Site from VSTS Server</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/system-administration/warming-up-iis-site-from-vsts-server">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        Warming up IIS Site from VSTS Server
+      </h1>
+      
+      
+        <time>September 1, 2020</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/system-administration/" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/system-administration" class="category-nav_title" rel="archives">System Administration</a>
+    <a href="" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <ul id="markdown-toc">
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#the-happy-path" id="markdown-toc-the-happy-path">The Happy Path</a></li>
+  <li><a href="#alternative-1" id="markdown-toc-alternative-1">Alternative 1</a></li>
+  <li><a href="#alternative-2" id="markdown-toc-alternative-2">Alternative 2</a></li>
+  <li><a href="#a-solution-that-worked" id="markdown-toc-a-solution-that-worked">A Solution That Worked</a></li>
+</ul>
+      <h2 id="background">
+        
+        
+          <a href="#background">#</a> Background
+        
+        
+      </h2>
+
+<p>I once had a challenge in a legacy enterprise environment where an ASP.NET solution was being deployed to a set of Content Delivery
+servers. As you might be aware, when this is done the IIS site must be restarted and visited once to trigger
+<a href="https://docs.microsoft.com/en-us/previous-versions/aspnet/ms366723(v=vs.100)" target="_blank" rel="noopener noreferrer">Dynamic Compilation</a>. In this particular case though
+each server required upwards of 10 minutes to complete the compilation and display. This long delay caused the load-balancer to
+assume all nodes were down and resulted in a 404 error incorrectly. Fixing the underlying issue for the slow compilation
+was not an option due to time constraints so a hack was needed. An additional challenge was that the VSTS server being leveraged for
+CI/CD was greatly out of date. To “resolve” this issue for the short-term an additional task was added to the release pipeline to
+poke each server after its code had been deployed. This task was synchronous to prevent subsequent releases until the current one
+was completed. This effectively kept one of the CD servers active while the other was warming-up. While this is trivial in concept,
+the implementation was not due to the limitations of the out-of-date VSTS server and the outdated
+Content Delivery servers. If you end up in a similar situation where your hands are tied then this may help.</p>
+    
+      <h2 id="the-happy-path">
+        
+        
+          <a href="#the-happy-path">#</a> The Happy Path
+        
+        
+      </h2>
+
+<p>The primary challenge I encountered in implementing this solution was due to invalid certificates being used on each server.
+The content delivery servers were only addressable by IP address but required SSL to connect. Additionally the VSTS server was greatly outdated.</p>
+
+<p>Normally this task could be accomplished with a single line of powershell:</p>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Invoke-WebRequest</span><span class="w"> </span><span class="nt">-Uri</span><span class="w"> </span><span class="nx">https://127.0.0.1</span><span class="w"> </span><span class="nt">-SkipCertificateCheck</span><span class="w"> </span><span class="nt">-ErrorAction</span><span class="w"> </span><span class="nx">Stop</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Where <code class="language-plaintext highlighter-rouge">127.0.0.1</code> is replaced with the IP address of the target server.</p>
+
+<p>But the <code class="language-plaintext highlighter-rouge">-SkipCertificateCheck</code> flag requires <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-6" target="_blank" rel="noopener noreferrer">Powershell 6+</a>.
+Therefore <code class="language-plaintext highlighter-rouge">GET</code> requests couldn’t be performed against the target servers with this approach. If you have a self-hosted VSTS server that is more up-to-date, this is the suggested solution.</p>
+
+<p>My problem though:</p>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">The</span><span class="w"> </span><span class="nx">underlying</span><span class="w"> </span><span class="nx">connection</span><span class="w"> </span><span class="nx">was</span><span class="w"> </span><span class="nx">closed:</span><span class="w"> </span><span class="nx">Could</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">establish</span><span class="w"> </span><span class="nx">trust</span><span class="w"> </span><span class="nx">relationship</span><span class="w"> </span><span class="nx">for</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">SSL/TLS</span><span class="w"> </span><span class="nx">secure</span><span class="w"> </span><span class="nx">channel.</span><span class="w">
+</span></code></pre></div></div>
+    
+      <h2 id="alternative-1">
+        
+        
+          <a href="#alternative-1">#</a> Alternative 1
+        
+        
+      </h2>
+
+<p>One alternative is to embed another language in powershell to emulate this functionality such as C# in order to gain access to its ability to toggle SSL trust.</p>
+
+<ol>
+  <li><a href="https://stackoverflow.com/questions/46855241/ignoring-self-signed-certificates-from-powershell-invoke-restmethod-doesnt-work" target="_blank" rel="noopener noreferrer">Solution 1</a></li>
+  <li><a href="http://web.archive.org/web/20200224131842/http://huddledmasses.org:80/blog/validating-self-signed-certificates-properly-from-powershell/" target="_blank" rel="noopener noreferrer">Solution 2</a></li>
+</ol>
+
+<p>These solutions are quite a bit more complicated in comparison to the happy path above but may work for you. For me these solutions also failed to connect to the CD servers…</p>
+    
+      <h2 id="alternative-2">
+        
+        
+          <a href="#alternative-2">#</a> Alternative 2
+        
+        
+      </h2>
+
+<p>Another approach is to use the <code class="language-plaintext highlighter-rouge">XmlHttpRequest</code> object found in JScript to perform the <code class="language-plaintext highlighter-rouge">GET</code> request. There was no JScript task runner available in the version
+of VSTS being used, so I tried to embed the code in powershell as described in the following <a href="https://devcentral.f5.com/s/articles/powershell-abcs-j-is-for-javascript" target="_blank" rel="noopener noreferrer">article</a>.
+In this approach one is restricted to JScript 5.8 which means ECMAScript version 3 practically but that is sufficient. The <code class="language-plaintext highlighter-rouge">XmlHttpRequest</code> object is a COM object in this version and
+there are <a href="https://blog.srpcs.com/picking-the-correct-xmlhttp-object/" target="_blank" rel="noopener noreferrer">many variants</a> to choose from. The appropriate one is the version that allows disabling SSL verification: <code class="language-plaintext highlighter-rouge">Msxml2.ServerXMLHTTP.6.0</code>.</p>
+
+<p>Sadly, when executing this approach an error occurs. Turns out the COM object can only be used in an <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/9f483589-28cf-4ff0-b7bf-18529dc08d10/retrieving-com-class-error-when-using-microsoft-script-control-in-c" target="_blank" rel="noopener noreferrer">x86 environment</a>. The powershell that is executing this script in VSTS runs in x64 and could not be configured on the server.</p>
+    
+      <h2 id="a-solution-that-worked">
+        
+        
+          <a href="#a-solution-that-worked">#</a> A Solution That Worked
+        
+        
+      </h2>
+
+<p>While Powershell doesn’t run as x86, a Batch file does. If the JScript is <a href="https://stackoverflow.com/questions/2325420/embed-javascript-in-bat-files" target="_blank" rel="noopener noreferrer">embedded in Batch</a> then a functional solution is available:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">@</span><span class="nd">set</span> <span class="p">@</span><span class="nd">junk</span><span class="o">=</span><span class="mi">1</span> <span class="cm">/*
+@echo off
+:: Execute the current file as a JScript file with arguments
+cscript //nologo //E:jscript %0 %*
+goto :eof
+*/</span>
+<span class="c1">// JScript below</span>
+
+<span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">WScript</span><span class="p">.</span><span class="nx">arguments</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// access commandline arguments</span>
+    <span class="nx">TIMEOUT</span> <span class="o">=</span> <span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span> <span class="c1">// 10 mins</span>
+    <span class="c1">// Connection timeouts</span>
+    <span class="c1">// &lt;https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms760403(v=vs.85)?redirectedfrom=MSDN&gt;</span>
+    <span class="nx">lResolve</span> <span class="o">=</span> <span class="nx">TIMEOUT</span><span class="p">,</span>
+    <span class="nx">lConnect</span> <span class="o">=</span> <span class="nx">TIMEOUT</span><span class="p">;</span>
+    <span class="nx">lSend</span> <span class="o">=</span> <span class="nx">TIMEOUT</span><span class="p">;</span>
+    <span class="nx">lReceive</span> <span class="o">=</span> <span class="nx">TIMEOUT</span><span class="p">;</span>
+
+<span class="c1">// This version is required to support the setOption method</span>
+<span class="c1">// &lt;https://blog.srpcs.com/picking-the-correct-xmlhttp-object/&gt;</span>
+<span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="dl">"</span><span class="s2">Msxml2.ServerXMLHTTP.6.0</span><span class="dl">"</span><span class="p">);</span>
+<span class="c1">// ignore certificate error: &lt;https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms763811(v=vs.85)&gt;</span>
+<span class="nx">xhr</span><span class="p">.</span><span class="nx">setOption</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">13056</span><span class="p">);</span>
+<span class="nx">WScript</span><span class="p">.</span><span class="nx">echo</span><span class="p">(</span><span class="dl">"</span><span class="s2">Warming up: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">url</span><span class="p">)</span>
+<span class="nx">xhr</span><span class="p">.</span><span class="nx">setTimeouts</span><span class="p">(</span><span class="nx">lResolve</span><span class="p">,</span> <span class="nx">lConnect</span><span class="p">,</span> <span class="nx">lSend</span><span class="p">,</span> <span class="nx">lReceive</span><span class="p">);</span>
+<span class="c1">// synchronous call (false) to force later tasks to wait</span>
+<span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="nx">url</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+<span class="nx">xhr</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="dl">'</span><span class="s1">User-Agent</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">XMLHTTP/1.0</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">xhr</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+<span class="nx">WScript</span><span class="p">.</span><span class="nx">echo</span><span class="p">(</span><span class="nx">xhr</span><span class="p">.</span><span class="nx">status</span><span class="p">)</span>
+<span class="nx">WSH</span><span class="p">.</span><span class="nx">echo</span><span class="p">(</span><span class="nx">xhr</span><span class="p">.</span><span class="nx">statusText</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>To use this bat file in the release pipeline it had to be stored somewhere as there is no ‘inline’ option for batch tasks. VSTS provides a library feature which seemed appropriate:</p>
+
+<figure>
+    <img src="/media-library/system-administration/warmup-1.png" alt="VSTS Library">
+    <figcaption>VSTS Library</figcaption>
+</figure>
+
+<p>With the bat file uploaded it can be accessed from the release pipelines with the “Download Secure File” task:</p>
+
+<figure>
+    <img src="/media-library/system-administration/warmup-2.png" alt="VSTS Library">
+    <figcaption>VSTS Deployment</figcaption>
+</figure>
+
+<p>This file is downloaded into a temp directory and can now be executed:</p>
+
+<figure>
+    <img src="/media-library/system-administration/warmup-3.png" alt="VSTS Library">
+    <figcaption>VSTS Deployment</figcaption>
+</figure>
+
+<p>The only argument to this task is the url to warmup.</p>
+
+<p>Note: The file in the VSTS library can not be edited, it has to be deleted and a new one uploaded.
+When you replace this file every “Download Secure File” task has to be updated to point to the new file that was uploaded, even if the name is the same.</p>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/system-administration/" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/system-administration" class="category-nav_title" rel="archives">System Administration</a>
+    <a href="" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

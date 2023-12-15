@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="3 - Loading Images">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/graphics-programming/loading-images">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | 3 - Loading Images</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/graphics-programming/loading-images">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        3 - Loading Images
+      </h1>
+      
+      
+        <time>July 22, 2021</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/graphics-programming/plotting-points" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/graphics-programming" class="category-nav_title" rel="archives">Graphics Programming</a>
+    <a href="/graphics-programming/simple-filters" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <p>From <a href="/graphics-programming/plotting-points">lesson 2</a> we gained the ability to plot points and render image data to a canvas.
+While it’s useful to generate that image data from scratch, it’s also useful to leverage existing images.</p>
+
+<p>Since we’re running in a web browser a few approaches are available for loading images. While a number of them provide access to the raw binary data,
+in this lesson we’ll avoid parsing the variety of image formats to obtain the pixel information. What we’ll
+do instead is leverage the <code class="language-plaintext highlighter-rouge">Image</code> constructor and a helper method of the <code class="language-plaintext highlighter-rouge">HTMLCanvas</code> to obtain the ImageData we’ll need. In a future lesson
+we’ll revisit this to dive into the dirty details.</p>
+
+<p>The sample image we’ll load is the following <a href="/scripts/graphics-programming/lesson3/assets/cat-cropped.jpg">cat picture</a>,
+(Credit <a href="https://commons.wikimedia.org/wiki/File:June_odd-eyed-cat_cropped.jpg" target="_blank" rel="noopener noreferrer">WikiMedia Commons</a>)</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/ImageLoader.js</span>
+<span class="kd">class</span> <span class="nx">ImageLoader</span> <span class="p">{</span>
+    <span class="k">async</span> <span class="nx">load</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">image</span> <span class="o">=</span> <span class="k">await</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                <span class="kd">const</span> <span class="nx">img</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="k">new</span> <span class="nx">Image</span><span class="p">(),</span> <span class="p">{</span>
+                    <span class="nx">onload</span><span class="p">(){</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">img</span><span class="p">)</span> <span class="p">},</span>
+                    <span class="nx">onerror</span><span class="p">(</span><span class="nx">err</span><span class="p">){</span> <span class="nx">reject</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">},</span>
+                    <span class="na">src</span><span class="p">:</span> <span class="nx">url</span>
+                <span class="p">})</span>
+            <span class="p">}),</span>
+            <span class="p">{</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">}</span> <span class="o">=</span> <span class="nx">image</span><span class="p">,</span>
+            <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">canvas</span><span class="dl">'</span><span class="p">),</span> <span class="p">{</span><span class="nx">height</span><span class="p">,</span> <span class="nx">width</span><span class="p">}),</span>
+            <span class="nx">ctx</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="dl">'</span><span class="s1">2d</span><span class="dl">'</span><span class="p">)</span>
+        <span class="nx">ctx</span><span class="p">.</span><span class="nx">drawImage</span><span class="p">(</span><span class="nx">image</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">getImageData</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">ImageLoader</span>
+</code></pre></div></div>
+
+<p>With the above, loading our image looks like this:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">imageLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageLoader</span><span class="p">(),</span>
+      <span class="nx">catImageData</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">imageLoader</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="dl">'</span><span class="s1">/scripts/graphics-programming/lesson3/assets/cat-cropped.jpg</span><span class="dl">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>With a standalone <code class="language-plaintext highlighter-rouge">ImageLoader</code> class we have opportunities for more ambitious loading approaches when the need arises.
+Now that we have a means of obtaining ImageData from an image url we’ll want a corresponding <code class="language-plaintext highlighter-rouge">Graphic</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/ImageGraphic.js</span>
+<span class="k">import</span> <span class="nx">Graphic</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./Graphic</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nx">ImageGraphic</span> <span class="kd">extends</span> <span class="nx">Graphic</span> <span class="p">{</span>
+    <span class="err">#</span><span class="nx">imageData</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="nx">imageData</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">super</span><span class="p">({</span><span class="na">width</span><span class="p">:</span> <span class="nx">imageData</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="na">height</span><span class="p">:</span> <span class="nx">imageData</span><span class="p">.</span><span class="nx">height</span><span class="p">})</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">imageData</span> <span class="o">=</span> <span class="nx">imageData</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">ImageGraphic</span>
+</code></pre></div></div>
+
+<p>Here you can see we’ve run into an awkward situation. The <code class="language-plaintext highlighter-rouge">ImageLoader</code> returns image data but the base class of <code class="language-plaintext highlighter-rouge">Graphic</code>
+already creates one. To avoid such redundancy we’ll refactor the Graphic class to accept an optional <code class="language-plaintext highlighter-rouge">imageData</code> argument:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Graphic.js</span>
+<span class="kd">class</span> <span class="nx">Graphic</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">,</span> <span class="nx">imageData</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">imageData</span> <span class="o">=</span> <span class="nx">imageData</span> <span class="p">??</span> <span class="k">new</span> <span class="nx">ImageData</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">)</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">height</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">imageData</span><span class="p">.</span><span class="nx">height</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">width</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">imageData</span><span class="p">.</span><span class="nx">width</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>With this change our existing classes don’t need to be updated and in the case of the <code class="language-plaintext highlighter-rouge">ImageGraphic</code> it’s simplified to just:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/ImageGraphic.js</span>
+<span class="kd">class</span> <span class="nx">ImageGraphic</span> <span class="kd">extends</span> <span class="nx">Graphic</span> <span class="p">{}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">ImageGraphic</span>
+</code></pre></div></div>
+
+<p>So the <code class="language-plaintext highlighter-rouge">ImageLoader</code> can now be updated to return this graphic directly:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/ImageLoader.js</span>
+<span class="kd">class</span> <span class="nx">ImageLoader</span> <span class="p">{</span>
+    <span class="k">async</span> <span class="nx">load</span><span class="p">(</span><span class="nx">url</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// ...</span>
+
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">ImageGraphic</span><span class="p">({</span>
+            <span class="na">imageData</span><span class="p">:</span> <span class="nx">ctx</span><span class="p">.</span><span class="nx">getImageData</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="nx">width</span><span class="p">,</span><span class="nx">height</span><span class="p">)</span>
+        <span class="p">})</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Time to show the results of our efforts:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/image-example.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">ImageLoader</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/ImageLoader.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">imageLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageLoader</span><span class="p">(),</span>
+      <span class="nx">catImage</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">imageLoader</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="dl">'</span><span class="s1">/scripts/graphics-programming/lesson3/assets/cat-cropped.jpg</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">image-example</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="nx">catImage</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="nx">catImage</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="nx">catImage</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<figure id="image-example">
+    <figcaption>Image Example</figcaption>
+</figure>
+<script type="module" src="/scripts/graphics-programming/lesson3/examples/image-example.js"></script>
+
+<p><a href="https://github.com/thenewobjective/thenewobjective.github.io/tree/master/scripts/graphics-programming/lesson3" target="_blank" rel="noopener noreferrer">Source code for this lesson</a>.</p>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/graphics-programming/plotting-points" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/graphics-programming" class="category-nav_title" rel="archives">Graphics Programming</a>
+    <a href="/graphics-programming/simple-filters" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="SQL Server and UUIDs">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/software-systems-engineering/sql-server-and-uuids">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | SQL Server and UUIDs</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/software-systems-engineering/sql-server-and-uuids">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        SQL Server and UUIDs
+      </h1>
+      
+      
+        <time>August 14, 2022</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/software-systems-engineering/conways-law-and-consequences" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/software-systems-engineering" class="category-nav_title" rel="archives">Software Systems Engineering</a>
+    <a href="/software-systems-engineering/entity-framework-and-database-projects" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#choosing-a-key-format" id="markdown-toc-choosing-a-key-format">Choosing a key format</a></li>
+  <li><a href="#comparing-uuids" id="markdown-toc-comparing-uuids">Comparing UUIDs</a></li>
+  <li><a href="#practical-implications" id="markdown-toc-practical-implications">Practical Implications</a></li>
+  <li><a href="#references-and-further-reading" id="markdown-toc-references-and-further-reading">References and Further Reading</a></li>
+</ul>
+      <h2 id="introduction">
+        
+        
+          <a href="#introduction">#</a> Introduction
+        
+        
+      </h2>
+
+<p>When designing database tables to maintain the state of your objects you often have entities that do not have a
+<a href="https://en.wikipedia.org/wiki/Natural_key" target="_blank" rel="noopener noreferrer">Natural Key</a>, attributes that exist on the entity itself, to uniquely
+identify them over time. One example can be a Customer:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jane Doe</td>
+      <td><a href="mailto:jane.doe@example.com">jane.doe@example.com</a></td>
+      <td>Merrick, NY 11566</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Any of the attributes can change. That doesn’t mean that the customer becomes a different person.
+If Jane Doe is married and moves to a new state, she is still the same person:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Jane Smith</td>
+      <td><a href="mailto:jane.smith@example.com">jane.smith@example.com</a></td>
+      <td>Philadelphia, PA 19111</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To identify that entity over time we define a <a href="https://en.wikipedia.org/wiki/Surrogate_key" target="_blank" rel="noopener noreferrer">Surrogate Key</a>.
+A proxy representing the entity.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><em>ID</em></th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>12</strong></td>
+      <td>Jane Smith</td>
+      <td><a href="mailto:jane.smith@example.com">jane.smith@example.com</a></td>
+      <td>Philadelphia, PA 19111</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There are some practical concerns though when choosing an appropriate key. What format should it take?
+Are there implementation concerns?</p>
+    
+      <h2 id="choosing-a-key-format">
+        
+        
+          <a href="#choosing-a-key-format">#</a> Choosing a key format
+        
+        
+      </h2>
+
+<p>A simple integer seems reasonable at first but depending on the volume of data you can have problems if it’s not big enough. Database systems give you many choices in this area, and it can be easy to make the wrong one. Choosing an integer as a surrogate key (<strong>int<sup>32</sup></strong>) means you’re limited to <strong>2<sup>32</sup> = ~4 billion</strong> records max.
+Also, if you move your record to another table or another database, you can have collisions if the second database uses the same scheme.</p>
+
+<p>You might recall when the social media platform Parler crashed:</p>
+
+<figure>
+  <img src="/media-library/software-systems-engineering/parler-crash.png" alt="Parler Crash">
+  <figcaption>
+    <p>Credit: <a href="https://twitter.com/sarahmei/status/1348474968527360001" target="_blank" rel="noopener noreferrer">@saramehmei</a></p>
+  </figcaption>
+</figure>
+
+<p>In their case they chose a signed integer (<strong>int<sup>31</sup></strong>) as a key which meant they were limited to
+<strong>2<sup>31</sup> = ~2.1 billion</strong> records max.</p>
+
+<p>A seemingly reasonable alternative solution would be to use a UUID/GUID as the Surrogate key.</p>
+
+<p>This poses two challenges though:</p>
+
+<ol>
+  <li>A UUID is a big key: 128 bits (16 bytes)</li>
+  <li>It’s pseudo-random and therefore unsorted</li>
+</ol>
+
+<p>The first point is not so bad as a problem, but the second point can be a significant one.</p>
+
+<p>With an unordered key the database can’t store records on disk in a useful way. Which means if there
+is a need to search for records, and they aren’t in memory, a terrible amount of work (I/O operations)
+need to be done to find the appropriate records. A weak analogy: it’s easy for me to store and find the
+records of everyone when I can group them by the first letter of their last name. It’s not that easy if
+a random number identifies them instead.</p>
+
+<p>So can we get the benefits of clustering along with the benefits of a UUIDs uniqueness? In other words:
+is it possible to have a random, unique, but also ordered key?</p>
+
+<p>The answer is yes, but you must choose the correct type of UUID</p>
+    
+      <h2 id="comparing-uuids">
+        
+        
+          <a href="#comparing-uuids">#</a> Comparing UUIDs
+        
+        
+      </h2>
+
+<p>UUIDs have the following format and you can determine the type you’re dealing with easily:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   A      B     C    D       E
+xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
+</code></pre></div></div>
+
+<ul>
+  <li>M - version</li>
+  <li>N – variant</li>
+</ul>
+
+<p>Versions:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>nil UUID 00000000-0000-0000-0000-000000000000</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>date-time + MAC address (utilizes a Gregorian epoch timestamp)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>date-time + MAC Address + DCE Security (utilizes a Gregorian epoch timestamp)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>namespace name based (MD5)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Random</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>namespace name based (SHA-1)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Given the choices above which are the standard types it looks like we can’t use any
+of them as the best candidates (1 and 2) rely on the MAC of the underlying machine.
+If I’m on a virtual machine what does that mean? There are other implications as well…</p>
+
+<p>Luckily, there is a <a href="https://datatracker.ietf.org/doc/html/draft-peabody-dispatch-new-uuid-format" target="_blank" rel="noopener noreferrer">draft RFC</a>
+for new versions of UUIDs:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6</td>
+      <td>field-compatible version of UUID1, reordered for improved DB locality (utilizes a Gregorian epoch timestamp)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Time ordered based on Unix Time epoch. Should be used instead of UUID1 and UUID6 when possible</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Experimental and vendor-specific use cases. Uniqueness is not assumed</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>Max UUID FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>So, versions 6 and 7 provide us a key with all the attributes we desire.</p>
+    
+      <h2 id="practical-implications">
+        
+        
+          <a href="#practical-implications">#</a> Practical Implications
+        
+        
+      </h2>
+
+<p>What does that mean practically? Can the database systems we use generate those for us or do
+we have to write an implementation ourselves in the application layer?</p>
+
+<p>The answer is (mostly) yes. SQL Server provides a function called <code class="language-plaintext highlighter-rouge">NEWSEQUENTIALID()</code> which guarantees
+uniqueness, does not rely on a MAC address, and provides ordering (unless the database server fails and
+is restored on another machine within a short enough time period). This function does not generate
+one of the (draft) standard formats, but has similar properties.</p>
+
+<p>Other major database systems have similar functionality, or will shortly. I’ll focus on SQL Server
+only in this post as it’s been in the <a href="https://db-engines.com/en/ranking" target="_blank" rel="noopener noreferrer">top 3 of rankings</a> for years
+and is well-known and commonly in use; and I only spent time looking into that implementation specifically.</p>
+
+<p>A final note here of possible interest is Entity Framework. If you’re using Entity Framework the
+sequential UUIDs will be generated for you automatically if the following is true:</p>
+
+<ol>
+  <li>You are using SQL Server and don’t specify a default value</li>
+  <li>You leverage the Guid type</li>
+  <li>You specify the <code class="language-plaintext highlighter-rouge">.ValueGeneratedOnAdd()</code> method in the fluent API</li>
+</ol>
+
+<p><a href="https://docs.microsoft.com/en-us/ef/core/modeling/generated-properties?tabs=data-annotations#primary-keys" target="_blank" rel="noopener noreferrer">https://docs.microsoft.com/en-us/ef/core/modeling/generated-properties?tabs=data-annotations#primary-keys</a></p>
+    
+      <h2 id="references-and-further-reading">
+        
+        
+          <a href="#references-and-further-reading">#</a> References and Further Reading
+        
+        
+      </h2>
+
+<ul>
+  <li><a href="https://blog.codinghorror.com/primary-keys-ids-versus-guids/" target="_blank" rel="noopener noreferrer">https://blog.codinghorror.com/primary-keys-ids-versus-guids/</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15" target="_blank" rel="noopener noreferrer">https://docs.microsoft.com/en-us/sql/relational-databases/indexes/clustered-and-nonclustered-indexes-described?view=sql-server-ver15</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/UUID" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/UUID</a></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/draft-peabody-dispatch-new-uuid-format" target="_blank" rel="noopener noreferrer">https://datatracker.ietf.org/doc/html/draft-peabody-dispatch-new-uuid-format</a></li>
+  <li><a href="https://docs.microsoft.com/en-us/sql/t-sql/functions/newsequentialid-transact-sql?view=sql-server-ver15" target="_blank" rel="noopener noreferrer">https://docs.microsoft.com/en-us/sql/t-sql/functions/newsequentialid-transact-sql?view=sql-server-ver15</a></li>
+  <li><a href="http://web.archive.org/web/20191231152909/http://www.jorriss.net:80/2008/04/24/unraveling-the-mysteries-of-newsequentialid/" target="_blank" rel="noopener noreferrer">http://web.archive.org/web/20191231152909/http://www.jorriss.net:80/2008/04/24/unraveling-the-mysteries-of-newsequentialid/</a></li>
+</ul>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/software-systems-engineering/conways-law-and-consequences" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/software-systems-engineering" class="category-nav_title" rel="archives">Software Systems Engineering</a>
+    <a href="/software-systems-engineering/entity-framework-and-database-projects" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

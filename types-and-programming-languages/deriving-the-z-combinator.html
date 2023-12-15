@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="Deriving the Z-Combinator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/types-and-programming-languages/deriving-the-z-combinator">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | Deriving the Z-Combinator</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/types-and-programming-languages/deriving-the-z-combinator">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        Deriving the Z-Combinator
+      </h1>
+      
+      
+        <time>August 9, 2020</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/types-and-programming-languages/" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/types-and-programming-languages" class="category-nav_title" rel="archives">Types and Programming Languages</a>
+    <a href="/types-and-programming-languages/instanceof-is-not-object-oriented" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <ul id="markdown-toc">
+  <li><a href="#fixed-points-and-combinators" id="markdown-toc-fixed-points-and-combinators">Fixed-points and Combinators</a></li>
+  <li><a href="#recursion" id="markdown-toc-recursion">Recursion</a></li>
+  <li><a href="#recursion-as-a-fixed-point" id="markdown-toc-recursion-as-a-fixed-point">Recursion as a Fixed-point</a></li>
+  <li><a href="#a-more-practical-implementation" id="markdown-toc-a-more-practical-implementation">A More Practical Implementation</a></li>
+  <li><a href="#more-than-divine" id="markdown-toc-more-than-divine">More Than Divine</a></li>
+  <li><a href="#further-reading" id="markdown-toc-further-reading">Further Reading</a></li>
+  <li><a href="#notes-and-references" id="markdown-toc-notes-and-references">Notes and References</a></li>
+</ul>
+
+<p>By now you’ve probably heard of the Y-Combinator and its cousin the Z-Combinator but you
+may not have seen a derivation of it that made sense. There are tutorials and examples
+aplenty but they seem to skip steps or leave out some accompanying explanation leaving
+the reader with a sense of something missing. Let’s see if I can do better.</p>
+      <h2 id="fixed-points-and-combinators">
+        
+        
+          <a href="#fixed-points-and-combinators">#</a> Fixed-points and Combinators
+        
+        
+      </h2>
+
+<p>The fixed-point of a function is the argument that you give to it so that it will return that
+same argument. A simple example:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>λx. x * x
+</code></pre></div></div>
+
+<p>What value would be the fixed-point of this function? <code class="language-plaintext highlighter-rouge">0</code> would work:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(λx. x * x) 0
+→ (0) * (0)
+→ 0
+</code></pre></div></div>
+
+<p>A function doesn’t have to have a single fixed-point either. Let’s take the following:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>λx. |x|
+</code></pre></div></div>
+
+<p>The absolute value (<code class="language-plaintext highlighter-rouge">|x|</code>) will return the input when it’s non-negative. Therefore every non-negative number
+is its fixed-point.</p>
+
+<p>The fixed-points of functions aren’t restricted to numbers and strings of course. They can be other functions.
+A trivial example is the identity function:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>λx. x
+</code></pre></div></div>
+
+<p>Every argument is a fixed-point. If we restrict ourselves to only using functions as arguments,
+and only using the arguments specified we have “combinators”; simple enough. Now you
+know what a fixed-point combinator is. In fact <em>every combinator has a fixed-point</em>!<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+    
+      <h2 id="recursion">
+        
+        
+          <a href="#recursion">#</a> Recursion
+        
+        
+      </h2>
+
+<blockquote>
+  <p>To iterate is human, to recurse divine
+<cite><a href="https://en.wikipedia.org/wiki/L._Peter_Deutsch" target="_blank" rel="noopener noreferrer">L. Peter Deutsch</a></cite></p>
+</blockquote>
+
+<p>Here’s a function for calculating the factorial <code class="language-plaintext highlighter-rouge">n!</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span><span class="p">(</span><span class="nx">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">result</span> <span class="o">*=</span> <span class="nx">n</span>
+        <span class="nx">n</span><span class="o">--</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">result</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>While the code is clear it’s <a href="https://en.wikipedia.org/wiki/Imperative_programming" target="_blank" rel="noopener noreferrer">imperative</a> and <a href="https://en.wikipedia.org/wiki/Procedural_programming" target="_blank" rel="noopener noreferrer">procedural</a>.
+It’s preferable to be <a href="https://en.wikipedia.org/wiki/Declarative_programming" target="_blank" rel="noopener noreferrer">declarative</a>. We want to describe <em>what</em> we want to compute instead of the low-level<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>
+details of <em>how</em> we compute it. Such code can be translated into recursive form:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nx">n</span> <span class="o">=&gt;</span>
+    <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">fact</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>A significant improvement of clarity over the prior form. You can now more easily identify what the fixed-point would be:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fact(1)
+→ (1) &lt; 2 ? 1 : (1) * fact((1) - 1)
+→ true ? 1 : (1) * fact((1) - 1)
+→ 1
+</code></pre></div></div>
+
+<p>Now, can we convert this into a combinator?</p>
+    
+      <h2 id="recursion-as-a-fixed-point">
+        
+        
+          <a href="#recursion-as-a-fixed-point">#</a> Recursion as a Fixed-point
+        
+        
+      </h2>
+
+<p>Recall that a combinator is restricted to using its arguments and nothing outside of it. In other words, it has to be a <em>closed expression</em>.
+The body of our <code class="language-plaintext highlighter-rouge">fact</code> function references <code class="language-plaintext highlighter-rouge">fact</code> but that’s not an argument. We can solve this problem through abstraction<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="p">(</span><span class="nb">self</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span> <span class="o">=&gt;</span>
+    <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nb">self</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>We obtained our closed-expression but now we’ve gotten ourselves into trouble. How do I call this function?</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">fact</span><span class="p">(?,</span> <span class="mi">7</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>A reasonable thought might be to just pass in <code class="language-plaintext highlighter-rouge">fact</code> again:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">fact</span><span class="p">(</span><span class="nx">fact</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Which means that the recursive call would have to change to thread this extra parameter:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="p">(</span><span class="nb">self</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span> <span class="o">=&gt;</span>
+    <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nb">self</span><span class="p">(</span><span class="nb">self</span><span class="p">,</span> <span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>A quick test shows that this works:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fact(fact,7)
+→ 5040
+</code></pre></div></div>
+
+<p>A bit inconvenient though and low-level<sup id="fnref:2:1" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. Let’s see if we can extract the essence
+of what’s going on and abstract this threading. We’ll begin with <a href="https://en.wikipedia.org/wiki/Currying" target="_blank" rel="noopener noreferrer">currying</a> the function:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nb">self</span> <span class="o">=&gt;</span>
+    <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nb">self</span><span class="p">(</span><span class="nb">self</span><span class="p">)(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>If we call our curried function without the number parameter:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fact(fact)
+→ n =&gt; n &lt; 2 ? 1 : n * self(self)(n - 1)
+</code></pre></div></div>
+
+<p>Notice the pattern? <code class="language-plaintext highlighter-rouge">self(self)</code> in the body and <code class="language-plaintext highlighter-rouge">fact(fact)</code> in the call.</p>
+
+<p>Let’s give that form a name so we can obtain power over it<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nb">self</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nb">self</span><span class="p">(</span><span class="nb">self</span><span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>A quick test and you see it still works:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fact(fact)(7)
+→ 5040
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">let</code> declaration feels a little dirty so let’s refactor that into a lambda as well:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nb">self</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">f</span> <span class="o">=&gt;</span>
+        <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">)(</span>
+        <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nb">self</span><span class="p">(</span><span class="nb">self</span><span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Then simplify:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nb">self</span> <span class="o">=&gt;</span>
+    <span class="p">(</span><span class="nx">f</span> <span class="o">=&gt;</span>
+        <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">)(</span>
+        <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nb">self</span><span class="p">(</span><span class="nb">self</span><span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div></div>
+
+<p>If you’ve never seen a <code class="language-plaintext highlighter-rouge">let</code> refactored into a lambda expression feel free to take a moment to compare the last two steps.
+Basically the let variable <code class="language-plaintext highlighter-rouge">f</code> becomes the parameter of an immediately invoked lambda expression and the body of the original
+let becomes the argument.</p>
+
+<p>Another quick test to show that it still works:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fact(fact)(7)
+→ 5040
+</code></pre></div></div>
+
+<p>With all of this refactoring what did it get us? Notice that the innermost body of our new <code class="language-plaintext highlighter-rouge">fact</code> has the same form
+as the original before we turned it into a combinator. Let’s separate that innermost body into it’s own declaration:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">_fact</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span>
+    <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nb">self</span> <span class="o">=&gt;</span>
+    <span class="p">(</span>
+        <span class="nx">_fact</span>
+    <span class="p">)(</span>
+        <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nb">self</span><span class="p">(</span><span class="nb">self</span><span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div></div>
+
+<p>Now let’s do something about that irritating <code class="language-plaintext highlighter-rouge">fact(fact)(7)</code> call.
+We’ll start by simply pushing the definition of <code class="language-plaintext highlighter-rouge">fact</code> into an inner lambda and return the self application:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">_fact</span> <span class="o">=</span>
+    <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">innerFact</span> <span class="o">=</span> <span class="nb">self</span> <span class="o">=&gt;</span>
+        <span class="p">(</span>
+            <span class="nx">_fact</span>
+        <span class="p">)(</span>
+            <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nb">self</span><span class="p">(</span><span class="nb">self</span><span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="nx">innerFact</span><span class="p">(</span><span class="nx">innerFact</span><span class="p">)</span>
+<span class="p">})()</span>
+</code></pre></div></div>
+
+<p>Done!</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fact(7)
+→ 5040
+</code></pre></div></div>
+
+<p>Once again, let’s do some cleanup by refactoring that local let declaration into a lambda:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">_fact</span> <span class="o">=</span>
+    <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="nx">innerFact</span> <span class="o">=&gt;</span> <span class="nx">innerFact</span><span class="p">(</span><span class="nx">innerFact</span><span class="p">)</span>
+    <span class="p">)(</span>
+        <span class="nb">self</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="nx">_fact</span><span class="p">)(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nb">self</span><span class="p">(</span><span class="nb">self</span><span class="p">)(</span><span class="nx">n</span><span class="p">))</span>
+    <span class="p">)</span>
+<span class="p">})()</span>
+</code></pre></div></div>
+
+<p>Then simplify:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">_fact</span> <span class="o">=</span>
+    <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span>
+    <span class="p">(</span><span class="nx">innerFact</span> <span class="o">=&gt;</span> <span class="nx">innerFact</span><span class="p">(</span><span class="nx">innerFact</span><span class="p">))</span>
+    <span class="p">(</span><span class="nb">self</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="nx">_fact</span><span class="p">)(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nb">self</span><span class="p">(</span><span class="nb">self</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+</code></pre></div></div>
+
+<p>The usage of <code class="language-plaintext highlighter-rouge">innerFact</code> and <code class="language-plaintext highlighter-rouge">self</code> look suspiciously similar. Let’s rename those variables to the same thing <code class="language-plaintext highlighter-rouge">u</code>
+and see what that looks like. They’re in separate lexical scopes so we don’t have to worry about conflicts:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">_fact</span> <span class="o">=</span>
+    <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">))</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="nx">_fact</span><span class="p">)(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">fact</code> doesn’t exactly look like the factorial combinator anymore, more-so a setup for the actual factorial we care about: <code class="language-plaintext highlighter-rouge">_fact</code>.
+Let’s abstract and rename <code class="language-plaintext highlighter-rouge">fact</code> to reflect this usage:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">_fact</span> <span class="o">=</span>
+    <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="kd">let</span> <span class="nx">setup</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">))</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+
+<span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nx">setup</span><span class="p">(</span><span class="nx">_fact</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>No need to be redundant with <code class="language-plaintext highlighter-rouge">_fact</code> anymore so let’s inline it:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">setup</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">))</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+
+<span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nx">setup</span><span class="p">(</span>
+    <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>Now give <code class="language-plaintext highlighter-rouge">f</code> a more meaningful name:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">setup</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">))</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+
+<span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nx">setup</span><span class="p">(</span>
+    <span class="nx">fact</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">fact</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>Looking at the body of <code class="language-plaintext highlighter-rouge">setup</code> you see we have a second lambda being passed to the first lambda.
+Let’s see if we can simplify this more by doing the application:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">setup</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+
+<span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nx">setup</span><span class="p">(</span>
+    <span class="nx">fact</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">fact</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>Well, how about that? We’ve just discovered the <a href="https://en.wikipedia.org/wiki/Fixed-point_combinator#Strict_fixed-point_combinator" target="_blank" rel="noopener noreferrer">Z-Combinator</a>
+which is the Y-Combinator in a call-by-value language (like JavaScript). Let’s rename <code class="language-plaintext highlighter-rouge">setup</code> to reflect our discovery:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+
+<span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nx">fix</span><span class="p">(</span><span class="nx">fact</span> <span class="o">=&gt;</span>
+    <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">fact</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>Final check:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fact(7)
+→ 5040
+</code></pre></div></div>
+
+<p>Let’s try our <code class="language-plaintext highlighter-rouge">fix</code> combinator on another definition to see if it works more generally:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+
+<span class="kd">let</span> <span class="nx">fib</span> <span class="o">=</span> <span class="nx">fix</span><span class="p">(</span><span class="nx">fib</span> <span class="o">=&gt;</span>
+    <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="nx">n</span> <span class="p">:</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fib(12)
+→ 144
+</code></pre></div></div>
+
+<p>Success!</p>
+    
+      <h2 id="a-more-practical-implementation">
+        
+        
+          <a href="#a-more-practical-implementation">#</a> A More Practical Implementation
+        
+        
+      </h2>
+
+<p>That definition of <code class="language-plaintext highlighter-rouge">fix</code> though is a bit enigmatic to read at first glance though
+even after going through the steps to derive it. You’d also be right to question
+its efficiency. Can we improve our definition even more? The answer is yes but at
+the expense of it no longer being a combinator and instead being a recursive
+definition.</p>
+
+<p>Here’s what we have:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+</code></pre></div></div>
+
+<p>Let’s begin with a <a href="https://wiki.haskell.org/Beta_reduction" target="_blank" rel="noopener noreferrer">beta-reduction</a>
+of the self application to see if another pattern emerges:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+        <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+        <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+        <span class="p">(</span><span class="nx">n</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div></div>
+
+<p>Repeat:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+        <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+            <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+            <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+            <span class="p">(</span><span class="nx">n</span><span class="p">)</span>
+        <span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div></div>
+
+<p>Once more:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+        <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+            <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+                <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+                <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+                <span class="p">(</span><span class="nx">n</span><span class="p">)</span>
+            <span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+        <span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div></div>
+
+<p>Notice the pattern emerging? It looks suspiciously similar to the
+very outer function, except that the outer <code class="language-plaintext highlighter-rouge">fix</code> is missing the <code class="language-plaintext highlighter-rouge">n</code>
+parameter. Let’s add that parameter and apply it to the top level <code class="language-plaintext highlighter-rouge">f</code>
+call to match the nested ones:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span>
+    <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+        <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+            <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+                <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+                <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+                <span class="p">(</span><span class="nx">n</span><span class="p">)</span>
+            <span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+        <span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+    <span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>With this change let’s do a sanity check:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fact</span> <span class="o">=</span> <span class="nx">fix</span><span class="p">(</span><span class="nx">fact</span> <span class="o">=&gt;</span>
+    <span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">fact</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fact(7)
+→ 5040
+</code></pre></div></div>
+
+<p>So far so good. Now with our pattern clear, we’ll replace the
+innermost self-application with <code class="language-plaintext highlighter-rouge">fix(f)</code></p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span>
+    <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+        <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+            <span class="nx">f</span><span class="p">(</span><span class="nx">fix</span><span class="p">(</span><span class="nx">f</span><span class="p">))(</span><span class="nx">n</span><span class="p">)</span>
+        <span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+    <span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Repeat:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span>
+    <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span>
+        <span class="nx">f</span><span class="p">(</span><span class="nx">fix</span><span class="p">(</span><span class="nx">f</span><span class="p">))(</span><span class="nx">n</span><span class="p">)</span>
+    <span class="p">)(</span><span class="nx">n</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Once more:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">=&gt;</span>
+    <span class="nx">f</span><span class="p">(</span><span class="nx">fix</span><span class="p">(</span><span class="nx">f</span><span class="p">))(</span><span class="nx">n</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Final sanity check:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fact(7)
+→ 5040
+</code></pre></div></div>
+
+<p>Compare our new definition with the original:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fix</span> <span class="o">=</span> <span class="nx">f</span> <span class="o">=&gt;</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+    <span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">(</span><span class="nx">u</span><span class="p">)(</span><span class="nx">n</span><span class="p">)))</span>
+</code></pre></div></div>
+
+<p>While the new one is no longer a combinator, from a practical
+point of view as a implementor the recursive form is
+probably preferable.</p>
+    
+      <h2 id="more-than-divine">
+        
+        
+          <a href="#more-than-divine">#</a> More Than Divine
+        
+        
+      </h2>
+
+<p>To recap, what we’ve accomplished so far is:</p>
+
+<ol>
+  <li>Defined what a fixed-point is</li>
+  <li>Defined what a combinator is</li>
+  <li>Introduced recursion</li>
+  <li>Converted a recursive function into a fixed-pont combinator and derived a generic way to define others.</li>
+</ol>
+
+<p>So what? Is this just a party trick to just do recursion in disguise?</p>
+
+<p>What we’ve discovered here is a third way to perform repetitive work. You know of looping, recursion, and now with <code class="language-plaintext highlighter-rouge">fix</code> there is
+rewriting. So to add to L. Peter Deutsch’s quote:</p>
+
+<blockquote>
+  <p>If recursion is divine then ‘fix’ is <a href="https://en.wikipedia.org/wiki/Potentiality_and_actuality#entelechy" target="_blank" rel="noopener noreferrer">entelechy</a></p>
+</blockquote>
+
+<p>Now go forth with your newfound knowledge and impress your fellow mortals.</p>
+    
+      <h2 id="further-reading">
+        
+        
+          <a href="#further-reading">#</a> Further Reading
+        
+        
+      </h2>
+
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Lambda_calculus" target="_blank" rel="noopener noreferrer">Lambda Calculus</a></li>
+  <li>
+<a href="https://www.amazon.com/Mock-Mockingbird-Raymond-Smullyan/dp/0192801422" target="_blank" rel="noopener noreferrer">To Mock a Mockingbird</a> by <a href="https://en.wikipedia.org/wiki/Raymond_Smullyan" target="_blank" rel="noopener noreferrer">Raymond Smullyan</a>
+</li>
+  <li><a href="http://dkeenan.com/Lambda/" target="_blank" rel="noopener noreferrer">To Dissect a Mockingbird</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Fixed-point_combinator#Fixed-point_combinators_in_lambda_calculus" target="_blank" rel="noopener noreferrer">Fixed-point combinators in lambda calculus</a></li>
+  <li><a href="https://web.archive.org/web/20040105195718/http://www.scms.rgu.ac.uk/staff/bjm/doc/fics2001.pdf" target="_blank" rel="noopener noreferrer">Y in Practical Programs</a></li>
+  <li><a href="http://lambda-the-ultimate.org/classic/message5463.html#5466" target="_blank" rel="noopener noreferrer">Oleg’s generic fix wrapper</a></li>
+</ul>
+    
+      <h2 id="notes-and-references">
+        
+        
+          <a href="#notes-and-references">#</a> Notes and References
+        
+        
+      </h2>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Belinfante J. G. F. (1987) <a href="http://soton.mpeforth.com/flag/jfar/vol4/no4/article6.pdf" target="_blank" rel="noopener noreferrer">S/K/ID: Combinators in Forth.</a> § The Fixed Point Theorem. p. 565 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>“A programming language is low level when its programs require attention to the irrelevant.” - Alan Perlis <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a> <a href="#fnref:2:1" class="reversefootnote" role="doc-backlink">↩<sup>2</sup></a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>If <em>e</em> is an expression and <em>x</em> is a variable, then <code class="language-plaintext highlighter-rouge">λx. e</code> is an abstraction. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>A double entendre. See <a href="https://en.wikipedia.org/wiki/True_name" target="_blank" rel="noopener noreferrer">True Name</a> as well as <a href="https://en.wikipedia.org/wiki/Gerald_Jay_Sussman" target="_blank" rel="noopener noreferrer">Gerald Sussman’s</a> use of the term in <a href="https://youtu.be/V_7mmwpgJHU?t=775" target="_blank" rel="noopener noreferrer">SICP</a>. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/types-and-programming-languages/" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/types-and-programming-languages" class="category-nav_title" rel="archives">Types and Programming Languages</a>
+    <a href="/types-and-programming-languages/instanceof-is-not-object-oriented" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

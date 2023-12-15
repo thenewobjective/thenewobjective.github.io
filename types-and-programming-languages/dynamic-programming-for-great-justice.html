@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="Dynamic Programming for Great Justice">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/types-and-programming-languages/dynamic-programming-for-great-justice">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | Dynamic Programming for Great Justice</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/types-and-programming-languages/dynamic-programming-for-great-justice">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        Dynamic Programming for Great Justice
+      </h1>
+      
+      
+        <time>January 13, 2013</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/types-and-programming-languages/overview-of-prefix-vs-postfix-notations-evaluation-schemes" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/types-and-programming-languages" class="category-nav_title" rel="archives">Types and Programming Languages</a>
+    <a href="/types-and-programming-languages/" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <p>Proper Tail Calls are <a href="http://wiki.ecmascript.org/doku.php?id=harmony:proper_tail_calls" target="_blank" rel="noopener noreferrer">slated</a> for ES6 and are long overdue. Some of the most elegant solutions to the problems we face in designing algorithms are recursive ones. As a result of this addition, we can expect to see far more code bases utilizing this feature of the language. I suspect though that a significant number of these new designs are going to fall into the trap of creating code that is not only significantly slower than their imperative counterparts, but will potentially cripple the memory of the hardware it is running on. So before you start using recursion <a href="https://en.wikipedia.org/wiki/For_Great_Justice" target="_blank" rel="noopener noreferrer">For Great Justice</a>, there is a methodology that should be understood.</p>
+
+<p>The name of this methodology is called “Dynamic Programming”. Don’t let the word “Dynamic” fool you into thinking it has any direct relationship to do with dynamic languages though, it does not. Instead of giving a textbook (and potentially esoteric) definition upfront, I’ll demonstrate an evolution of an algorithm from how you might see it today (in imperative style) to an optimum recursive form utilizing this methodology. The example we’ll be using is the algorithm to calculate the nth Fibonacci number:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nx">n</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">f0</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">f1</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">f</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">n</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">f</span> <span class="o">=</span> <span class="nx">f0</span> <span class="o">+</span> <span class="nx">f1</span><span class="p">;</span>
+        <span class="nx">f0</span> <span class="o">=</span> <span class="nx">f1</span><span class="p">;</span>
+        <span class="nx">f1</span> <span class="o">=</span> <span class="nx">f</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">f</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>As you may probably agree,  the above is a relatively straightforward, idiomatic example of a JavaScript algorithm. It is also quite efficient in its execution: <em>O(n)</em> time, <em>O(1)</em> space. For a simple definition like Fibonacci though, it would be nice if we could rewrite this code so that in a quick glance we could understand it as well as be confident that their are “obviously no errors”, vs there being “no obvious errors”:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="nx">n</span> <span class="p">:</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Short, clean, and seems obviously correct from a glance… but happens to be naively inefficient as well; a good example of a pitfall for the inexperienced.  The beauty of this fragment of code is only skin deep as you can see from its call tree ( <code class="language-plaintext highlighter-rouge">f = fib</code> for brevity ):</p>
+
+<figure>
+
+  <p><img src="https://mermaid.ink/img/pako:eNptlE9Pg0AQxb8KmZMmtAELFDnrbb08e7J4IIVqo0CDNFGbfneR7c7ustyY37ydP4_NnmnXlhVl9NYVx3dv85B3eeN5m21O-5vkNqdXCcQIYgNIEplEopWFJLuzmYThBIptaIQYNYGtgdgGOsRMGZhV4DbHTG9YrTHTGWZjOGvC3RIzS8LaETMrwtoQ7oIw9sP0D8D5AXD9x4z9sNzHjPmwvIdrPUzn4RgP13eYtsN1HabpG2-xWHji6oIMVKRCjhloopHBDDinhHHvNHS7aB3LMJ2NNUqiFWCNnoJV-pxGtgtKcc1zVpXVVSE0clXQV5CRmNRmDQNh_p5rWiZV6tqBx1BT6CEgDOSqoG8go2lt1igJK2Ss8ioUfAUVEBMFn2AgyKe66uriUA7v5fk_m1P_XtVVTtnwWRbdR055cxl0p2NZ9NVjeejbjrJ98flV-VSc-vb5p9lR1nenSokeDsXw9tasqsZDT_JVHh9nn45F89K2tTo4hJSd6ZuyeJnG4Spap8E6SldJlMY-_VAWxsnyPkqTIEmiKLoP1vHFp9-xQnj5A_TGrA4?type=png" alt="Fibonacci call tree"></p>
+
+  <figcaption>Fibonacci call tree</figcaption>
+</figure>
+
+<p>This algorithm requires an exponential amount of time and space to produce a result (specifically, <a href="https://en.wikipedia.org/wiki/Golden_ratio" target="_blank" rel="noopener noreferrer"><em>O(φ)</em></a> which is in <em>O(n<sup>2</sup>)</em> ). The reason, as can be seen from the above tree, is that a significant amount of duplicate work is being done. fib(4) is being calculated twice, fib(3) calculated three times, and so on. Choose a large enough input and you can be quite confident that your machine will fall over. For a more discrete example, here is a graph of the execution time on my current machine (Windows 7, 4 GB RAM, Dual core 2.40 GHz, Firefox 18). Note that I ran out of memory beyond fib(37):</p>
+
+<figure>
+    <img src="/media-library/dynamic-programming/recFibvsTime.png" alt="Recursive Fib vs time">
+</figure>
+
+<p>The machine/environment used to execute the code is not particularly important. A more powerful machine will simply shift the curve to the right, and a weaker machine will shift it to the left. The shape of the curve remains the same. To quote <a href="https://en.wikipedia.org/wiki/Carl_Sagan" target="_blank" rel="noopener noreferrer">Carl Sagan</a>: <q cite="https://en.wikipedia.org/wiki/Carl_Sagan">“Never underestimate the power of an exponential“.</q></p>
+      <h2 id="memoization">
+        
+        
+          <a href="#memoization">#</a> Memoization
+        
+        
+      </h2>
+
+<p>Now how do we take advantage of the clarity of recursion while not crippling ourselves? Here is where Dynamic Programming comes into play. Dynamic Programming has two approaches: “Top Down” and “Bottom Up”. “Top Down” is also referred to as memoization, and as the name implies it involves keeping track of the work already completed. To understand why it is referred to as “Top Down”/memoization, another example is in order:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="p">?</span> <span class="nx">n</span> <span class="p">:</span> <span class="nx">fib</span><span class="p">.</span><span class="nx">memo</span><span class="p">[</span><span class="nx">n</span><span class="p">]</span> <span class="o">||</span> <span class="p">(</span><span class="nx">fib</span><span class="p">.</span><span class="nx">memo</span><span class="p">[</span><span class="nx">n</span><span class="p">]</span> <span class="o">=</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">))</span>
+<span class="p">}</span>
+<span class="nx">fib</span><span class="p">.</span><span class="nx">memo</span> <span class="o">=</span> <span class="p">[];</span>
+</code></pre></div></div>
+
+<p>Admittedly not quite as clear as the previous version, but arguable still cleaner than the first version.  When looking for fib(n): check to see if it is in the memo,  if it is return it, otherwise calculate the value and store it in the memo before returning it. Here is our new call tree ( <code class="language-plaintext highlighter-rouge">m[n] = fib.memo[n]</code> ):</p>
+
+<figure>
+
+  <p><img src="https://mermaid.ink/img/pako:eNpt0rtugzAUBuBXQWdqJYi4ucGW2NKNLi5TMYMVnAa1XOSC1BTx7iW4GJNm4__4j7GFBzg2hQAC75K3Zys9MMlqy0ozBqeHp0cGuYJkBmSAktAURcGGlPlbU-jdYJJ5RqRzx912aJK5a6R3lqHmKtdClfl57K0VZUEe-9oUhXkcaEotx3Gs5G9GhSUtUWcNq6xkmIH3mtQ454r_v7L2dI3e7o1udk7NQ1GwoRKy4mUx_ffh-oJBdxaVYECmx4LLDwasHqde3xa8E89F2TUSyIl_fgkbeN81r5f6CKSTvVhKh5JPd6jSLTEPvajbNV8yG1pevzVNtQxOEcgA30A8jHY4dDGKUIT3ezey4QIE7zCaZB9EKMAR9vFow888742_aHXIAw?type=png" alt="Fibonacci call tree memoization"></p>
+
+  <figcaption>Fibonacci call tree memoization</figcaption>
+</figure>
+
+<p>So our exponential recursive algorithm is now a linear recursive algorithm: <em>O(n)</em> time (still have to calculate each value of fib(n) once), and <em>O(n)</em> space (we’re storing each value of fib(n) ). I would present a graph of the new algorithm, but it would be quite boring as I was able to calculate fib(1476) in as little as 3 ms, larger values are beyond the range of JavaScript’s number system. On subsequent calls, since the memo is already built, our running time will be <em>O(1)</em> (the time to simply look up the value).</p>
+    
+      <h2 id="tabulation">
+        
+        
+          <a href="#tabulation">#</a> Tabulation
+        
+        
+      </h2>
+
+<p>Quick summary:  The original code took <em>O(n)/O(1)</em> time/space. Our new code takes <em>O(n)/O(n)</em> time/space on the first run, and <em>O(1)/O(n)</em> time/space on subsequent runs while remaining cleaner.  It would be nice though if we could avoid having to keep that memo around, as well as achieving a space/time complexity similar to the original. Thus, it is time to present the second approach of Dynamic Programming: “Bottom Up” aka. tabulation (sometimes also referred to as iteration but not often enough to claim it as an official synonym). Now straight to the example:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">function</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n0</span><span class="p">,</span><span class="nx">n1</span><span class="p">,</span><span class="nx">step</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">step</span> <span class="o">==</span> <span class="nx">n</span> <span class="p">?</span> <span class="nx">n1</span> <span class="p">:</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n1</span><span class="p">,</span> <span class="nx">n0</span> <span class="o">+</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">f</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The main difference here is that instead of starting at the end of the sequence and working backwards to the beginning (top down) as in the last algorithm , instead we start at  the beginning of the sequence and work our way to the end (bottom up), while carrying forward our previous calculations (tabulating) instead of memoizing them. A sample run of the the above algorithm on fib(6) would work something like this (slightly altered for clarity):</p>
+
+<figure>
+    <img src="/media-library/dynamic-programming/fib-tabulation.gif" alt="Fibonacci Tabulation">
+</figure>
+
+<p>Admittedly, the clarity of the algorithm is not much better than the original. This is no doubt due to the necessity of having to name the intermediate values in the calculation in both versions. Sometimes finding a proper name is one of the hardest things to do.  But anyway, how does this version stack up now that we’ve eliminated the memo?  Like the original we are now at <em>O(n)/O(1)</em> time/space. So have we gained anything through all of this beyond parity in complexity? Lets take a look at the original and the current implementation side by side:</p>
+
+<table>
+<tr>
+<td>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nx">n</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">f0</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">f1</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">f</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">n</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">f</span> <span class="o">=</span> <span class="nx">f0</span> <span class="o">+</span> <span class="nx">f1</span><span class="p">;</span>
+        <span class="nx">f0</span> <span class="o">=</span> <span class="nx">f1</span><span class="p">;</span>
+        <span class="nx">f1</span> <span class="o">=</span> <span class="nx">f</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">f</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+</td>
+<td>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span>
+    <span class="kd">function</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n0</span><span class="p">,</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">step</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">step</span> <span class="o">==</span> <span class="nx">n</span> <span class="p">?</span> <span class="nx">n1</span> <span class="p">:</span> <span class="nx">f</span><span class="p">(</span><span class="nx">n1</span><span class="p">,</span> <span class="nx">n0</span> <span class="o">+</span> <span class="nx">n1</span><span class="p">,</span> <span class="nx">step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">f</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+</td>
+</tr>
+</table>
+
+<p>You can judge for yourself. Personally I enjoy that fact that the low level constructs of  assignment and looping are no longer explicit.</p>
+
+<p>To summarize: Dynamic Programming is basically a recognition that an optimal solution to a problem is composed of optimal solutions to sub-problems. With recursive algorithms this relationship is usually more explicit than in imperative equivalents. Dynamic Programming solutions generally take two forms:  “Divide &amp; Conquer” (split a big problem into smaller problems then combine the results as in our memoization example), or by recognizing a dependent relationship between the sub-problems and discovering a way to combine the solutions to those sub-problems  (as in our tabulated example). Good luck with your spelunking into the recursive cave of wonders.</p>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/types-and-programming-languages/overview-of-prefix-vs-postfix-notations-evaluation-schemes" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/types-and-programming-languages" class="category-nav_title" rel="archives">Types and Programming Languages</a>
+    <a href="/types-and-programming-languages/" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

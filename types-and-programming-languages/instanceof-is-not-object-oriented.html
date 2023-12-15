@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="instanceof Is Not Object Oriented">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/types-and-programming-languages/instanceof-is-not-object-oriented">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | instanceof Is Not Object Oriented</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/types-and-programming-languages/instanceof-is-not-object-oriented">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        instanceof Is Not Object Oriented
+      </h1>
+      
+      
+        <time>June 21, 2023</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/types-and-programming-languages/deriving-the-z-combinator" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/types-and-programming-languages" class="category-nav_title" rel="archives">Types and Programming Languages</a>
+    <a href="/types-and-programming-languages/enums-are-not-object-oriented" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#unreliability" id="markdown-toc-unreliability">Unreliability</a></li>
+  <li><a href="#procedural-programming-and-excessive-imports" id="markdown-toc-procedural-programming-and-excessive-imports">Procedural Programming and Excessive Imports</a></li>
+  <li><a href="#type-predicate-pattern" id="markdown-toc-type-predicate-pattern">Type Predicate Pattern</a></li>
+  <li><a href="#subtype-polymorphism" id="markdown-toc-subtype-polymorphism">SubType Polymorphism</a></li>
+  <li><a href="#challenge-multiple-dispatch" id="markdown-toc-challenge-multiple-dispatch">Challenge: Multiple Dispatch</a></li>
+</ul>
+      <h2 id="introduction">
+        
+        
+          <a href="#introduction">#</a> Introduction
+        
+        
+      </h2>
+
+<p>One of the most common operators encountered in JavaScript, Java, and other languages
+is an <code class="language-plaintext highlighter-rouge">instanceof</code> like operator. Such an operator should not be used
+in object-oriented programming. It’s unreliable in many contexts, promotes
+procedural programming, and can cause namespace pollution. In this article
+I’ll focus on JavaScript, but the same arguments apply to other languages
+with minor environmental differences.</p>
+    
+      <h2 id="unreliability">
+        
+        
+          <a href="#unreliability">#</a> Unreliability
+        
+        
+      </h2>
+
+<p>JavaScript is not a pure object-oriented language. It has a number of primitive
+types that are not objects. The <code class="language-plaintext highlighter-rouge">instanceof</code> operator is unreliable when used
+with these types. For example, most primitives are not considered instances of their
+corresponding object type:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">"</span><span class="s2">foo</span><span class="dl">"</span> <span class="k">instanceof</span> <span class="nb">String</span><span class="p">;</span> <span class="c1">// false</span>
+<span class="kc">true</span> <span class="k">instanceof</span> <span class="nb">Boolean</span><span class="p">;</span> <span class="c1">// false</span>
+<span class="mi">42</span> <span class="k">instanceof</span> <span class="nb">Number</span><span class="p">;</span> <span class="c1">// false</span>
+</code></pre></div></div>
+
+<p>This is one of the original sins of JavaScript.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">instanceof</code> operator is also unreliable when used across
+<a href="https://groups.google.com/g/comp.lang.javascript/c/XTWYCOwC96I/m/70rNoQ3L-xoJ" target="_blank" rel="noopener noreferrer">iframe boundaries</a>,
+<a href="https://github.com/tc39/proposal-shadowrealm" target="_blank" rel="noopener noreferrer">Realms</a> and
+module boundaries in some applications (ex: <a href="https://github.com/nodejs/node/issues/13408" target="_blank" rel="noopener noreferrer">node</a>).
+In most cases, the operator fails because each context gets a copy of the code
+and <code class="language-plaintext highlighter-rouge">instanceof</code> does not have a reference to the original object type to compare against.</p>
+    
+      <h2 id="procedural-programming-and-excessive-imports">
+        
+        
+          <a href="#procedural-programming-and-excessive-imports">#</a> Procedural Programming and Excessive Imports
+        
+        
+      </h2>
+
+<p>JavaScript is a multi-paradigm language, but it’s generally wise to focus on
+a specific paradigm when writing code. If you don’t, you’ll end up with impedance
+mismatches and cognitive dissonance at the boundaries between paradigms.</p>
+
+<p>By relying on <code class="language-plaintext highlighter-rouge">instanceof</code> you’re writing procedural code. You’re checking the
+type of an object and then performing some action based on that type. This implies
+the existence of if-else and/or switch statements across your code base to discriminate
+between types.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">doSomething</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span> <span class="k">instanceof</span> <span class="nx">Foo</span><span class="p">)</span>
+        <span class="c1">// do something</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span> <span class="k">instanceof</span> <span class="nx">Bar</span><span class="p">)</span>
+        <span class="c1">// do something else</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span> <span class="k">instanceof</span> <span class="nx">Baz</span><span class="p">)</span>
+        <span class="c1">// do something else</span>
+    <span class="k">else</span>
+        <span class="c1">// do something else</span>
+<span class="p">}</span>
+
+<span class="c1">// or</span>
+
+<span class="kd">function</span> <span class="nx">doSomething</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="nx">obj</span> <span class="k">instanceof</span> <span class="nx">Foo</span><span class="p">:</span>
+            <span class="c1">// do something</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="nx">obj</span> <span class="k">instanceof</span> <span class="nx">Bar</span><span class="p">:</span>
+            <span class="c1">// do something else</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="nx">obj</span> <span class="k">instanceof</span> <span class="nx">Baz</span><span class="p">:</span>
+            <span class="c1">// do something else</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="nl">default</span><span class="p">:</span>
+            <span class="c1">// do something else</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>I call this the great maze of if-elsedom and switchdom. You’ll notice that there
+is a significant amount of code used to navigate the maze of conditionals to
+execute the useful code. This is not Object-Oriented Programming.</p>
+
+<p>An additional problem here is that you need to import the types you’re checking
+against. This is a form of namespace pollution; you’re importing types that you
+shouldn’t need to care about.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">Base</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./base</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Foo</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./foo</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Bar</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./bar</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Baz</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./baz</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">doSomething</span><span class="p">(</span><span class="nx">obj</span><span class="p">:</span> <span class="nx">Base</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span> <span class="k">instanceof</span> <span class="nx">Foo</span><span class="p">)</span>
+        <span class="c1">// do something</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span> <span class="k">instanceof</span> <span class="nx">Bar</span><span class="p">)</span>
+        <span class="c1">// do something else</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span> <span class="k">instanceof</span> <span class="nx">Baz</span><span class="p">)</span>
+        <span class="c1">// do something else</span>
+    <span class="k">else</span>
+        <span class="c1">// do something else</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is a violation of the
+<a href="https://en.wikipedia.org/wiki/Law_of_Demeter" target="_blank" rel="noopener noreferrer">Law of Demeter</a>.</p>
+    
+      <h2 id="type-predicate-pattern">
+        
+        
+          <a href="#type-predicate-pattern">#</a> Type Predicate Pattern
+        
+        
+      </h2>
+
+<p>A quick and lazy way to improve the above code is to use a type predicate method
+instead of <code class="language-plaintext highlighter-rouge">instanceof</code>. This is a function that returns a boolean indicating
+whether the object is of a specific type.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Base</span> <span class="p">{</span>
+    <span class="nx">isFoo</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span> <span class="p">}</span>
+    <span class="nx">isBar</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span> <span class="p">}</span>
+    <span class="nx">isBaz</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Foo</span> <span class="kd">extends</span> <span class="nx">Base</span> <span class="p">{</span>
+    <span class="nx">override</span> <span class="nx">isFoo</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Bar</span> <span class="kd">extends</span> <span class="nx">Base</span> <span class="p">{</span>
+    <span class="nx">override</span> <span class="nx">isBar</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Baz</span> <span class="kd">extends</span> <span class="nx">Base</span> <span class="p">{</span>
+    <span class="nx">override</span> <span class="nx">isBaz</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Which changes the <code class="language-plaintext highlighter-rouge">doSomething</code> function to:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">doSomething</span><span class="p">(</span><span class="nx">obj</span><span class="p">:</span> <span class="nx">Base</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">isFoo</span><span class="p">())</span>
+        <span class="c1">// do something</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">isBar</span><span class="p">())</span>
+        <span class="c1">// do something else</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span><span class="p">.</span><span class="nx">isBaz</span><span class="p">())</span>
+        <span class="c1">// do something else</span>
+    <span class="k">else</span>
+        <span class="c1">// do something else</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>While this is an improvement, it’s still not sufficient. The namespace pollution and
+explicit <code class="language-plaintext highlighter-rouge">instanceof</code> usages have been removed but the maze of conditionals remain.
+There is another problem here as well. If you add a new type (<code class="language-plaintext highlighter-rouge">Quux</code>), you’ll
+still need to update every conditional in your code base to handle it. The Base
+class would need to be updated as well. This is a violation of the
+<a href="https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle" target="_blank" rel="noopener noreferrer">Open-Closed Principle</a>.
+So we need a better solution.</p>
+    
+      <h2 id="subtype-polymorphism">
+        
+        
+          <a href="#subtype-polymorphism">#</a> SubType Polymorphism
+        
+        
+      </h2>
+
+<p>In Functional and Procedural programming like the above, you have an operation in hand
+(<code class="language-plaintext highlighter-rouge">doSomething</code>) and you utilize pattern matching or a conditional
+to discriminate between types and locate the appropriate code to execute. In contrast,
+Object-Oriented Programming leverages SubType Polymorphism. In this paradigm, you
+have an object in hand and you ask the object to perform an operation on itself.</p>
+
+<p>So the above function <code class="language-plaintext highlighter-rouge">doSomething(obj)</code> becomes <code class="language-plaintext highlighter-rouge">obj.doSomething()</code>. The object
+itself knows how to handle the operation and you as the caller don’t need to
+know which variant it is. Instead of the caller discriminating between types,
+the object itself discriminates between types.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Base</span> <span class="p">{</span>
+    <span class="nx">doSomething</span><span class="p">()</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Foo</span> <span class="kd">extends</span> <span class="nx">Base</span> <span class="p">{</span>
+    <span class="nx">override</span> <span class="nx">doSomething</span><span class="p">()</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Bar</span> <span class="kd">extends</span> <span class="nx">Base</span> <span class="p">{</span>
+    <span class="nx">override</span> <span class="nx">doSomething</span><span class="p">()</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Baz</span> <span class="kd">extends</span> <span class="nx">Base</span> <span class="p">{</span>
+    <span class="nx">override</span> <span class="nx">doSomething</span><span class="p">()</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This also enables you to add new variants without modifying existing code. You simply
+add a new class and implement the operation. The callers don’t need to be updated:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Quux</span> <span class="kd">extends</span> <span class="nx">Base</span> <span class="p">{</span>
+    <span class="nx">override</span> <span class="nx">doSomething</span><span class="p">()</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+    
+      <h2 id="challenge-multiple-dispatch">
+        
+        
+          <a href="#challenge-multiple-dispatch">#</a> Challenge: Multiple Dispatch
+        
+        
+      </h2>
+
+<p>There are use cases where the behavior is dependent on multiple types which can be challenging
+to handle. Here’s an example:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">abstract</span> <span class="kd">class</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">abstract</span> <span class="nx">intersects</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">):</span> <span class="nx">boolean</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nx">Circle</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="k">readonly</span> <span class="nx">radius</span><span class="p">:</span> <span class="kr">number</span><span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">();</span> <span class="p">}</span>
+
+    <span class="nx">override</span> <span class="nx">intersects</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">other</span> <span class="k">instanceof</span> <span class="nx">Circle</span><span class="p">)</span>
+            <span class="c1">// ...</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">other</span> <span class="k">instanceof</span> <span class="nx">Rectangle</span><span class="p">)</span>
+            <span class="c1">// ...</span>
+        <span class="k">else</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s2">`Unknown shape: </span><span class="p">${</span><span class="nx">other</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nx">Rectangle</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="k">readonly</span> <span class="nx">width</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span> <span class="k">readonly</span> <span class="nx">height</span><span class="p">:</span> <span class="kr">number</span><span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">();</span> <span class="p">}</span>
+
+    <span class="nx">override</span> <span class="nx">intersects</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">other</span> <span class="k">instanceof</span> <span class="nx">Circle</span><span class="p">)</span>
+            <span class="c1">// ...</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">other</span> <span class="k">instanceof</span> <span class="nx">Rectangle</span><span class="p">)</span>
+            <span class="c1">// ...</span>
+        <span class="k">else</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s2">`Unknown shape: </span><span class="p">${</span><span class="nx">other</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>If your language (C#, Groovy, Raku, etc.) supports <a href="https://en.wikipedia.org/wiki/Multiple_dispatch" target="_blank" rel="noopener noreferrer">Multiple-Dispatch</a>,
+you can use that instead. Here’s an example in <a href="https://julialang.org/" target="_blank" rel="noopener noreferrer">Julia</a>:</p>
+
+<div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">abstract type</span><span class="nc"> Shape</span> <span class="k">end</span>
+
+<span class="k">struct</span><span class="nc"> Circle</span> <span class="o">&lt;:</span> <span class="n">Shape</span>
+    <span class="n">radius</span><span class="o">::</span><span class="kt">Float64</span>
+<span class="k">end</span>
+
+<span class="k">struct</span><span class="nc"> Rectangle</span> <span class="o">&lt;:</span> <span class="n">Shape</span>
+    <span class="n">width</span><span class="o">::</span><span class="kt">Float64</span>
+    <span class="n">height</span><span class="o">::</span><span class="kt">Float64</span>
+<span class="k">end</span>
+
+<span class="n">intersects</span><span class="x">(</span><span class="n">a</span><span class="o">::</span><span class="n">Circle</span><span class="x">,</span> <span class="n">b</span><span class="o">::</span><span class="n">Circle</span><span class="x">)</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">intersects</span><span class="x">(</span><span class="n">a</span><span class="o">::</span><span class="n">Circle</span><span class="x">,</span> <span class="n">b</span><span class="o">::</span><span class="n">Rectangle</span><span class="x">)</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">intersects</span><span class="x">(</span><span class="n">a</span><span class="o">::</span><span class="n">Rectangle</span><span class="x">,</span> <span class="n">b</span><span class="o">::</span><span class="n">Circle</span><span class="x">)</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">intersects</span><span class="x">(</span><span class="n">a</span><span class="o">::</span><span class="n">Rectangle</span><span class="x">,</span> <span class="n">b</span><span class="o">::</span><span class="n">Rectangle</span><span class="x">)</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">intersects</span><span class="x">(</span><span class="n">a</span><span class="o">::</span><span class="n">Shape</span><span class="x">,</span> <span class="n">b</span><span class="o">::</span><span class="n">Shape</span><span class="x">)</span> <span class="o">=</span> <span class="n">error</span><span class="x">(</span><span class="s">"Unknown shape: </span><span class="si">$</span><span class="s">a"</span><span class="x">)</span>
+
+<span class="o">...</span>
+
+<span class="n">intersects</span><span class="x">(</span><span class="n">Circle</span><span class="x">(</span><span class="mf">1.0</span><span class="x">),</span> <span class="n">Rectangle</span><span class="x">(</span><span class="mf">2.0</span><span class="x">,</span> <span class="mf">3.0</span><span class="x">))</span> <span class="c"># OK</span>
+<span class="n">intersects</span><span class="x">(</span><span class="n">Circle</span><span class="x">(</span><span class="mf">1.0</span><span class="x">),</span> <span class="mi">1</span><span class="x">)</span> <span class="c"># ERROR</span>
+</code></pre></div></div>
+
+<p>That’s nice and declarative but it’s not available in all Object-Oriented languages.
+So what can you do if your language doesn’t support Multiple-Dispatch? One option
+is to use multiple levels of single dispatch:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// TypeScript</span>
+<span class="kd">abstract</span> <span class="kd">class</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">abstract</span> <span class="nx">intersects</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">):</span> <span class="nx">boolean</span><span class="p">;</span>
+    <span class="kd">abstract</span> <span class="nx">intersectsCircle</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Circle</span><span class="p">):</span> <span class="nx">boolean</span><span class="p">;</span>
+    <span class="kd">abstract</span> <span class="nx">intersectsRectangle</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Rectangle</span><span class="p">):</span> <span class="nx">boolean</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Circle</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="k">readonly</span> <span class="nx">radius</span><span class="p">:</span> <span class="kr">number</span><span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">();</span> <span class="p">}</span>
+
+    <span class="nx">override</span> <span class="nx">intersects</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">other</span><span class="p">.</span><span class="nx">intersectsCircle</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nx">override</span> <span class="nx">intersectsCircle</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Circle</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+    <span class="nx">override</span> <span class="nx">intersectsRectangle</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Rectangle</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Rectangle</span> <span class="kd">extends</span> <span class="nx">Shape</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="k">readonly</span> <span class="nx">width</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span> <span class="k">readonly</span> <span class="nx">height</span><span class="p">:</span> <span class="kr">number</span><span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">();</span> <span class="p">}</span>
+
+    <span class="nx">override</span> <span class="nx">intersects</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Shape</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">other</span><span class="p">.</span><span class="nx">intersectsRectangle</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nx">override</span> <span class="nx">intersectsCircle</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Circle</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+    <span class="nx">override</span> <span class="nx">intersectsRectangle</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">Rectangle</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span> <span class="p">...</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">...</span>
+<span class="nx">myShape</span><span class="p">.</span><span class="nx">intersects</span><span class="p">(</span><span class="nx">otherShape</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>This is a bit verbose compared to Multiple-Dispatch but it works.
+The caller doesn’t need to know the type of either shape nor needs to call
+the specialized methods.</p>
+
+<p>The problem though is that our solution is not extensible. If we add a new shape
+(<code class="language-plaintext highlighter-rouge">Triangle</code>), we need to update every existing shape to handle it. This brings back the
+violation of the <a href="https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle" target="_blank" rel="noopener noreferrer">Open-Closed Principle</a>.</p>
+
+<p>So what can we do? Another alternative is to use <a href="https://oleksandrmanzyuk.wordpress.com/2014/06/18/from-object-algebras-to-finally-tagless-interpreters-2/" target="_blank" rel="noopener noreferrer">Object Algebras</a>. Here’s an example</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">Merge</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@mlhaufe/object-algebra</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kr">interface</span> <span class="nx">ShapeAlgebra</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="nx">Circle</span><span class="p">(</span><span class="na">radius</span><span class="p">:</span> <span class="kr">number</span><span class="p">):</span> <span class="nx">T</span><span class="p">;</span>
+    <span class="nx">Rectangle</span><span class="p">(</span><span class="na">width</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span> <span class="na">height</span><span class="p">:</span> <span class="kr">number</span><span class="p">):</span> <span class="nx">T</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">abstract</span> <span class="kd">class</span> <span class="nx">ShapeData</span> <span class="p">{}</span>
+<span class="kd">class</span> <span class="nx">CircleData</span> <span class="kd">extends</span> <span class="nx">ShapeData</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="k">readonly</span> <span class="nx">radius</span><span class="p">:</span> <span class="kr">number</span><span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">();</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nx">RectangleData</span> <span class="kd">extends</span> <span class="nx">ShapeData</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="k">readonly</span> <span class="nx">width</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span> <span class="k">readonly</span> <span class="nx">height</span><span class="p">:</span> <span class="kr">number</span><span class="p">)</span> <span class="p">{</span> <span class="k">super</span><span class="p">();</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">ShapeDataFactory</span> <span class="k">implements</span> <span class="nx">ShapeAlgebra</span><span class="o">&lt;</span><span class="nx">ShapeData</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="nx">Circle</span><span class="p">(</span><span class="na">radius</span><span class="p">:</span> <span class="kr">number</span><span class="p">):</span> <span class="nx">ShapeData</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">CircleData</span><span class="p">(</span><span class="nx">radius</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nx">Rectangle</span><span class="p">(</span><span class="na">width</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span> <span class="na">height</span><span class="p">:</span> <span class="kr">number</span><span class="p">):</span> <span class="nx">ShapeData</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">RectangleData</span><span class="p">(</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">interface</span> <span class="nx">Intersectable</span> <span class="p">{</span>
+    <span class="nx">intersects</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">ShapeData</span><span class="p">):</span> <span class="nx">boolean</span><span class="p">;</span>
+    <span class="nx">intersectsCircle</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">CircleData</span><span class="p">):</span> <span class="nx">boolean</span><span class="p">;</span>
+    <span class="nx">intersectsRectangle</span><span class="p">(</span><span class="nx">other</span><span class="p">:</span> <span class="nx">RectangleData</span><span class="p">):</span> <span class="nx">boolean</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nx">IntersectTrait</span> <span class="k">implements</span> <span class="nx">ShapeAlgebra</span><span class="o">&lt;</span><span class="nx">Intersectable</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="nx">Circle</span><span class="p">(</span><span class="na">radius</span><span class="p">:</span> <span class="kr">number</span><span class="p">):</span> <span class="nx">Intersectable</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="nx">intersects</span><span class="p">(</span><span class="na">other</span><span class="p">:</span> <span class="nx">ShapeData</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nx">other</span><span class="p">.</span><span class="nx">intersectsCircle</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+            <span class="p">},</span>
+            <span class="nx">intersectsCircle</span><span class="p">(</span><span class="na">other</span><span class="p">:</span> <span class="nx">CircleData</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
+            <span class="nx">intersectsRectangle</span><span class="p">(</span><span class="na">other</span><span class="p">:</span> <span class="nx">RectangleData</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span> <span class="p">...}</span>
+        <span class="p">};</span>
+    <span class="p">}</span>
+    <span class="nx">Rectangle</span><span class="p">(</span><span class="na">width</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span> <span class="na">height</span><span class="p">:</span> <span class="kr">number</span><span class="p">):</span> <span class="nx">Intersectable</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="nx">intersects</span><span class="p">(</span><span class="na">other</span><span class="p">:</span> <span class="nx">ShapeData</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nx">other</span><span class="p">.</span><span class="nx">intersectsRectangle</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+            <span class="p">},</span>
+            <span class="nx">intersectsCircle</span><span class="p">(</span><span class="na">other</span><span class="p">:</span> <span class="nx">CircleData</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span> <span class="p">...</span> <span class="p">},</span>
+            <span class="nx">intersectsRectangle</span><span class="p">(</span><span class="na">other</span><span class="p">:</span> <span class="nx">RectangleData</span><span class="p">):</span> <span class="nx">boolean</span> <span class="p">{</span> <span class="p">...}</span>
+        <span class="p">};</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">ShapeFactory</span> <span class="kd">extends</span> <span class="nx">Merge</span><span class="p">(</span><span class="nx">ShapeDataFactory</span><span class="p">,</span> <span class="nx">IntersectTrait</span><span class="p">)</span> <span class="p">{}</span>
+<span class="kd">const</span> <span class="nx">s</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ShapeFactory</span><span class="p">(),</span>
+    <span class="nx">c1</span> <span class="o">=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">Circle</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+    <span class="nx">r1</span> <span class="o">=</span> <span class="nx">s</span><span class="p">.</span><span class="nx">Rectangle</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nx">c1</span><span class="p">.</span><span class="nx">intersects</span><span class="p">(</span><span class="nx">r1</span><span class="p">);</span> <span class="c1">// OK</span>
+</code></pre></div></div>
+
+<p>This approach is pretty heay-handed but it’s extensible in both dimensions: new shapes
+and new operations. It’s also declarative and the caller doesn’t need to know the type
+of either shape nor needs to call the specialized methods. It utilizes a helper library
+(<a href="https://www.npmjs.com/package/@mlhaufe/object-algebra" target="_blank" rel="noopener noreferrer">@mlhaufe/object-algebra</a>) I wrote
+to make it easier to work with Object Algebras in TypeScript by providing a <code class="language-plaintext highlighter-rouge">Merge</code> function.</p>
+
+<p>As time goes on I hope JavaScript and other OO languages will support Multiple-Dispatch
+or other features that make the above solutions unnecessary or easier to express.
+Until then, I hope the above examples are helpful.</p>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/types-and-programming-languages/deriving-the-z-combinator" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/types-and-programming-languages" class="category-nav_title" rel="archives">Types and Programming Languages</a>
+    <a href="/types-and-programming-languages/enums-are-not-object-oriented" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

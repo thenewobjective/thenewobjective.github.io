@@ -1,0 +1,34 @@
+.resume-item {
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    margin: 2em 0;
+
+    & img {
+        margin-right: 1em;
+        max-width: 15vmin;
+    }
+}
+
+.resume-item_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume_rank {
+    display: block;
+    margin: 1em auto;
+    max-width: 25%;
+}
+
+.resume_rack {
+    display: block;
+    margin: 1em auto;
+    max-width: 50%;
+}
+
+.resume_rifle {
+    display: block;
+    margin: 1em auto;
+    max-width: 20%;
+}

@@ -1,0 +1,10 @@
+.demo-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    >figure {
+        margin: 1em;
+        width: 25%;
+    }
+}

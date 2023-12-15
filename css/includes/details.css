@@ -1,0 +1,22 @@
+details {
+	>summary {
+		background: var(--site-dark-bg);
+		box-shadow: 4px 5px 5px 0px var(--shadow-color);
+		cursor: pointer;
+		padding-left: 1em;
+
+		>h3 {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+
+	>ul,
+	>ol {
+		margin: 1em 0;
+	}
+
+	+details {
+		margin-top: 2em;
+	}
+}

@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="Leaky Abstractions Are Just Bad Abstractions">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/requirements-engineering/leaky-abstractions-are-just-bad-abstractions">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | Leaky Abstractions Are Just Bad Abstractions</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/requirements-engineering/leaky-abstractions-are-just-bad-abstractions">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        Leaky Abstractions Are Just Bad Abstractions
+      </h1>
+      
+      
+        <time>January 15, 2019</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/requirements-engineering" class="category-nav_title" rel="archives">Requirements Engineering</a>
+    <a href="/requirements-engineering/" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <h2 id="introduction">
+        
+        
+          <a href="#introduction">#</a> Introduction
+        
+        
+      </h2>
+
+<p>In 2002 Joel Spolsky <a href="https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/" target="_blank" rel="noopener noreferrer">argued</a> that <strong>“All non-trivial abstractions, to some degree, are leaky”</strong>.  As a result, there have been numerous programmers who have used this as an excuse to throw away numerous abstractions in favor of lower-level alternatives. The original argument though is a <a href="https://en.wikipedia.org/wiki/Straw_man" target="_blank" rel="noopener noreferrer">straw man</a> and the perpetuation of it is actively harmful to the industry.</p>
+    
+      <h2 id="the-straw-men-cometh">
+        
+        
+          <a href="#the-straw-men-cometh">#</a> The Straw Men Cometh
+        
+        
+      </h2>
+
+<p>Joel’s examples and the numerous other examples I’ve seen subsequently by proponents all fall into the same categorical error, namely: ascribing an expectation or requirement on an abstraction or model that was never there to begin with. To counter some of the specific claims:</p>
+
+<ol>
+  <li>TCP never specified that it would guarantee successful delivery of all data in all situations, nor did it guarantee a speed for delivery. It is very clear in what it means with the terms “reliable” as well as the rules about when and how a 0. connection will timeout and be closed: <a href="https://tools.ietf.org/html/std7#section-2.6" target="_blank" rel="noopener noreferrer">https://tools.ietf.org/html/std7#section-2.6</a> . Oversimplifying this by assuming guaranteed transmission and speed is simply incorrect. Recall <a href="https://en.wikipedia.org/wiki/L._Peter_Deutsch" target="_blank" rel="noopener noreferrer">L Peter Deutsch’s</a> <a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing" target="_blank" rel="noopener noreferrer">Fallacies of distributed computing</a>:
+    <ul>
+      <li>The network is reliable;</li>
+      <li>Latency is zero;</li>
+      <li>Bandwidth is infinite;</li>
+      <li>The network is secure;</li>
+      <li>Topology doesn’t change;</li>
+      <li>There is one administrator;</li>
+      <li>Transport cost is zero;</li>
+      <li>The network is homogeneous.</li>
+    </ul>
+  </li>
+  <li>Iteration strategy over a two-dimensional array + Page Faults: There is no programming language in common use today that makes a guarantee about such iteration performance. Assuming one is not the fault of the language that didn’t specify one. The abstractions did not fail nor leak in these cases either.</li>
+  <li>Complaints about SQL performance: Again, the same problem as #2. Running two semantically equivalent queries will give you the same result, but there was no performance guarantee. Assuming one is again not the fault of the abstraction but with the expectation</li>
+  <li>And so on and so on…</li>
+</ol>
+    
+      <h2 id="expectations-meet-reality">
+        
+        
+          <a href="#expectations-meet-reality">#</a> Expectations Meet Reality
+        
+        
+      </h2>
+
+<p>Expectations of reality and reality itself are two different things. If an abstraction does not explicitly make claims about some aspect of interest it does not mean that it has leaked or failed, it’s simply the wrong one for what you’re concerned with. Build a better abstraction or use one which claims to fulfill your requirements (and can demonstrate it).</p>
+    
+      <h2 id="the-appropriate-abstraction">
+        
+        
+          <a href="#the-appropriate-abstraction">#</a> The Appropriate Abstraction
+        
+        
+      </h2>
+
+<blockquote>
+  <p>The purpose of abstraction is not to be vague,
+but to create a new semantic level in which one can be absolutely precise
+<cite><a href="https://en.wikipedia.org/wiki/Edsger_W._Dijkstra" target="_blank" rel="noopener noreferrer">Edsger Dijkstra</a></cite></p>
+</blockquote>
+
+<p>The goal is to hide unnecessary details allowing one to focus on those relevant to your <a href="https://en.wikipedia.org/wiki/Domain_of_discourse" target="_blank" rel="noopener noreferrer">domain</a>. If you create an abstraction that excludes a necessary detail then you’ve created a “leaky abstraction” in the spirit of what Spolsky claims (even though his examples are debatable).</p>
+
+<p>An example of the right level of abstraction can be thought of by analogy with a geographic map.
+A map is an abstraction of the territory it represents. If the physical map of the United States was the same
+size as the country it would be practically useless. We scale these maps down to human size and as a result we
+necessarily leave out details. Scaling alone can still leave an excessive amount of information though.
+If one wished to navigate roads they don’t care about all of the details between those roads. Keeping that information
+would be distracting and make it more time consuming to identify more relevant information, so this is discarded as well.
+If something interacts with the roads (like railroad crossings), then these may also be included in whole or in part where
+they intersect. What you’re looking for in a geographic map is an optimal level of utility and simplicity.</p>
+
+<!--
+
+Rename post to: On Abstraction and Architecture
+
+---
+
+Zero Cost Abstractions
+
+---
+
+Don't confuse Declarative with Abstract
+procedural code can be abstracted
+
+-----
+If we turn our attention to programming and programming languages, how do we obtain the right level of abstraction?
+From [SICP](https://web.mit.edu/alexmv/6.037/sicp.pdf) we learn that a language consists of primitives, a means of combination, and a means of abstraction....
+---
+
+## Tennant's Correspondence Principle
+
+Abstraction is done properly if it follows Tennant's Correspondence Principle.
+
+The enables a higher level language to treat it as a new primitive
+    From SICP: A language consists of Primitives, a Means of Combination, and a Means of Abstraction
+
+Example in Lambda Calculus
+
+Example in a Datastructure. Perhaps a Stack with an array implementation?
+
+-
+    <http://techscursion.com/2012/02/tennent-correspondence-principle.html>
+-<https://softwareengineering.stackexchange.com/questions/116395/what-is-the-good-explanation-of-tennents-correspondence-principle>
+-<https://gafter.blogspot.com/2006/08/tennents-correspondence-principle-and.html>
+-<https://fanf.livejournal.com/118421.html>
+-<https://esdiscuss.org/topic/tcp>
+-<https://esdiscuss.org/topic/regarding-tennent-s-language-design-based-on-semantic-principles#content-0>
+
+## Orthogonality
+
+- Is there a way to measure and visibly represent the orthogonality of features in a language?
+- Good primitives are defined by being orthogonal
+  - But if bad primitives are given can you fix them for the next layer of abstraction?
+    - Does this fixing violate TCP?
+- Differing semantics demand different syntax
+- Orthogonal semantics <>=> orthogonal syntax.
+-<https://en.wikipedia.org/wiki/Orthogonality#Computer_science>
+
+## Duality
+
+## Concatenative Languages
+
+Are concatenative languages an over-abstraction?
+
+----
+
+Alan Kay
+
+Emergent Property can be another name for "Architecture"
+an organization of matter or energy into a structure that ...
+Emergent Behavior is architecture
+  - What is non-emergent behavior then?
+
+While your thoughts and beliefs are globally inconsistent,
+you'll have consistent subsystems
+---
+Syntax should be suggestive, enable abstraction
+Migration from Binary to Hex for readability
+roman numerals & tally marks vs multiplication
+
+Systems
+- Emergent Properties
+- Intentional Properties
+
+----
+A language is defined by primitives, means of combination, and a means of abstraction.
+
+idioms in the language are expressions that occur repeatedly in multiple contexts.
+	- these idioms are candidates for being abstracted to form a new idiom at a
+	higher level language of discourse where they are a new primitive
+- Tennant's Correspondance Principle applies here.
+
+----
+"Architecture is a vertical abstraction on implementation" --Roy Fielding et al.
+
+-->
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/requirements-engineering" class="category-nav_title" rel="archives">Requirements Engineering</a>
+    <a href="/requirements-engineering/" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

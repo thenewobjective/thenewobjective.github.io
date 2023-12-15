@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="4 - Simple Filters">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/graphics-programming/simple-filters">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | 4 - Simple Filters</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/graphics-programming/simple-filters">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        4 - Simple Filters
+      </h1>
+      
+      
+        <time>November 20, 2021</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/graphics-programming/loading-images" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/graphics-programming" class="category-nav_title" rel="archives">Graphics Programming</a>
+    <a href="" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#noise" id="markdown-toc-noise">Noise</a></li>
+  <li><a href="#grayscale" id="markdown-toc-grayscale">Grayscale</a></li>
+  <li><a href="#brightness" id="markdown-toc-brightness">Brightness</a></li>
+  <li><a href="#inversion" id="markdown-toc-inversion">Inversion</a></li>
+  <li><a href="#sepia" id="markdown-toc-sepia">Sepia</a></li>
+  <li><a href="#composing-filters" id="markdown-toc-composing-filters">Composing Filters</a></li>
+  <li><a href="#additional-reading" id="markdown-toc-additional-reading">Additional Reading</a></li>
+</ul>
+      <h2 id="introduction">
+        
+        
+          <a href="#introduction">#</a> Introduction
+        
+        
+      </h2>
+
+<p>Being able to plot pixels and load images into a graphic is all well and good but sometimes there is a desire to apply changes
+to a graphic after it has been created. Effects like blurring, sharpening, shifting colors, and more are what we’ll tackle
+in this lesson. To start we introduce the concept of a <code class="language-plaintext highlighter-rouge">Filter</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/filters/Filter.js</span>
+<span class="kd">class</span> <span class="nx">Filter</span> <span class="p">{</span>
+    <span class="err">#</span><span class="nx">graphic</span>
+
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">graphic</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span> <span class="o">=</span> <span class="nx">graphic</span>
+    <span class="p">}</span>
+
+    <span class="kd">get</span> <span class="nx">channels</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span><span class="p">.</span><span class="nx">channels</span> <span class="p">}</span>
+    <span class="kd">get</span> <span class="nx">height</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span><span class="p">.</span><span class="nx">height</span> <span class="p">}</span>
+    <span class="kd">get</span> <span class="nx">width</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span><span class="p">.</span><span class="nx">width</span> <span class="p">}</span>
+    <span class="kd">get</span> <span class="nx">imageData</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span><span class="p">.</span><span class="nx">imageData</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+
+        <span class="kd">const</span> <span class="p">{</span><span class="nx">height</span><span class="p">,</span> <span class="nx">width</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="nx">width</span><span class="p">;</span> <span class="nx">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">y</span> <span class="o">&lt;</span> <span class="nx">height</span><span class="p">;</span> <span class="nx">y</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">const</span> <span class="nx">point</span> <span class="o">=</span> <span class="p">{</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">},</span>
+                      <span class="nx">color</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">getPixel</span><span class="p">(</span><span class="nx">point</span><span class="p">)</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">setPixel</span><span class="p">({</span><span class="nx">point</span><span class="p">,</span><span class="nx">color</span><span class="p">})</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="nx">filterColor</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">color</span> <span class="p">}</span>
+
+    <span class="nx">getPixel</span><span class="p">(</span><span class="nx">point</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span><span class="p">.</span><span class="nx">getPixel</span><span class="p">(</span><span class="nx">point</span><span class="p">)</span> <span class="p">}</span>
+
+    <span class="nx">setPixel</span><span class="p">({</span> <span class="nx">point</span><span class="p">,</span> <span class="nx">color</span> <span class="p">})</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span><span class="p">.</span><span class="nx">setPixel</span><span class="p">({</span><span class="nx">point</span><span class="p">,</span> <span class="na">color</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">filterColor</span><span class="p">(</span><span class="nx">color</span><span class="p">)})</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Filter</span>
+</code></pre></div></div>
+
+<p>A <code class="language-plaintext highlighter-rouge">Filter</code> acts like a <code class="language-plaintext highlighter-rouge">Graphic</code> by sharing its interface but you’ll notice it doesn’t extend it.
+Instead, it accepts a <code class="language-plaintext highlighter-rouge">graphic</code> in the constructor and forwards the method calls to the
+wrapped object <code class="language-plaintext highlighter-rouge">#graphic</code>. The reason for this is that our goal is to not only apply a single filter to a
+graphic but to be able to apply any number of them we want in any order. To support this use-case
+we’re leveraging the <a href="https://en.wikipedia.org/wiki/Decorator_pattern" target="_blank" rel="noopener noreferrer">Decorator Pattern</a>. The
+filter algorithm itself is the <code class="language-plaintext highlighter-rouge">filterColor</code> method. This algorithm is then applied in the
+<code class="language-plaintext highlighter-rouge">setPixel</code> method by intercepting the color.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">render</code> method applies the algorithm to every pixel in the wrapped graphic.
+A wrinkle here though is that the wrapped graphic could be either a graphic or another filter.
+To support free composition the <code class="language-plaintext highlighter-rouge">Graphic</code> class itself also needs a <code class="language-plaintext highlighter-rouge">render</code> method:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Graphic.js</span>
+
+<span class="c1">// ...</span>
+<span class="kd">class</span> <span class="nx">Graphic</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+    <span class="nx">render</span><span class="p">(){}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Graphic</span>
+</code></pre></div></div>
+
+<p>This method may be useful for use-cases beyond filters as well but at this point it’s just a stub.</p>
+    
+      <h2 id="noise">
+        
+        
+          <a href="#noise">#</a> Noise
+        
+        
+      </h2>
+
+<p>For our first filter we’ll revisit our Noise example from <a href="/graphics-programming/plotting-points">lesson 2</a>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/Noise.js</span>
+<span class="k">import</span> <span class="nx">Graphic</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Graphic.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Color</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Color.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Point2D</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Point2D.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">randomInt</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/util/randomInt.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">Noise</span> <span class="kd">extends</span> <span class="nx">Graphic</span> <span class="p">{</span>
+    <span class="nx">randomColor</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">({</span>
+            <span class="na">r</span><span class="p">:</span> <span class="nx">randomInt</span><span class="p">({</span><span class="na">max</span><span class="p">:</span> <span class="mi">255</span><span class="p">}),</span>
+            <span class="na">g</span><span class="p">:</span> <span class="nx">randomInt</span><span class="p">({</span><span class="na">max</span><span class="p">:</span> <span class="mi">255</span><span class="p">}),</span>
+            <span class="na">b</span><span class="p">:</span> <span class="nx">randomInt</span><span class="p">({</span><span class="na">max</span><span class="p">:</span> <span class="mi">255</span><span class="p">}),</span>
+            <span class="na">a</span><span class="p">:</span> <span class="mi">255</span>
+        <span class="p">})</span>
+    <span class="p">}</span>
+
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">super</span><span class="p">({</span><span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">})</span>
+
+        <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="nx">width</span><span class="p">;</span> <span class="nx">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">y</span> <span class="o">&lt;</span> <span class="nx">height</span><span class="p">;</span> <span class="nx">y</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">const</span> <span class="nx">point</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Point2D</span><span class="p">({</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">}),</span>
+                      <span class="nx">color</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">randomColor</span><span class="p">()</span>
+                <span class="k">this</span><span class="p">.</span><span class="nx">setPixel</span><span class="p">({</span><span class="nx">point</span><span class="p">,</span> <span class="nx">color</span><span class="p">})</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Noise</span>
+</code></pre></div></div>
+
+<p>Converting this into a Noise Filter simplifies this significantly:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/filters/Noise.js</span>
+<span class="k">import</span> <span class="nx">Filter</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Filter.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Color</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../Color.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">randomInt</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../util/randomInt.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">Noise</span> <span class="kd">extends</span> <span class="nx">Filter</span> <span class="p">{</span>
+    <span class="nx">filterColor</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">({</span>
+            <span class="na">r</span><span class="p">:</span> <span class="nx">randomInt</span><span class="p">({</span><span class="na">max</span><span class="p">:</span> <span class="mi">255</span><span class="p">}),</span>
+            <span class="na">g</span><span class="p">:</span> <span class="nx">randomInt</span><span class="p">({</span><span class="na">max</span><span class="p">:</span> <span class="mi">255</span><span class="p">}),</span>
+            <span class="na">b</span><span class="p">:</span> <span class="nx">randomInt</span><span class="p">({</span><span class="na">max</span><span class="p">:</span> <span class="mi">255</span><span class="p">}),</span>
+            <span class="na">a</span><span class="p">:</span> <span class="mi">255</span>
+        <span class="p">})</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Noise</span>
+</code></pre></div></div>
+
+<p>Our updated example:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/noise-example.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Noise</span>  <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/filters/Noise.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Graphic</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Graphic.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">noise-example</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="mi">480</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="mi">640</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Noise</span><span class="p">({</span>
+        <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Graphic</span><span class="p">({</span><span class="na">height</span><span class="p">:</span> <span class="mi">480</span><span class="p">,</span> <span class="na">width</span><span class="p">:</span> <span class="mi">640</span><span class="p">})</span>
+    <span class="p">}).</span><span class="nx">render</span><span class="p">()</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>With every <code class="language-plaintext highlighter-rouge">Graphic</code> now supporting a <code class="language-plaintext highlighter-rouge">render</code> method it looks a little awkward to have it called
+directly before assigning it to the canvas. The canvas itself should control when and how rendering is
+performed so we’ll refactor and update <code class="language-plaintext highlighter-rouge">Canvas</code>:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Canvas.js</span>
+<span class="kd">class</span> <span class="nx">Canvas</span> <span class="p">{</span>
+  <span class="err">#</span><span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">'</span><span class="s1">canvas</span><span class="dl">'</span><span class="p">)</span>
+  <span class="err">#</span><span class="nx">ctx</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="dl">'</span><span class="s1">2d</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span> <span class="na">alpha</span><span class="p">:</span> <span class="kc">false</span> <span class="p">})</span>
+  <span class="err">#</span><span class="nx">graphic</span>
+
+  <span class="kd">constructor</span><span class="p">({</span> <span class="nx">container</span><span class="p">,</span> <span class="nx">height</span><span class="p">,</span> <span class="nx">width</span><span class="p">,</span> <span class="nx">graphic</span> <span class="p">})</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">black</span><span class="dl">'</span>
+    <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">,</span> <span class="p">{</span> <span class="nx">height</span><span class="p">,</span> <span class="nx">width</span> <span class="p">})</span>
+    <span class="nx">container</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">canvas</span><span class="p">)</span>
+    <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span> <span class="o">=</span> <span class="nx">graphic</span>
+  <span class="p">}</span>
+
+  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+    <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">ctx</span><span class="p">.</span><span class="nx">putImageData</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">graphic</span><span class="p">.</span><span class="nx">imageData</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Canvas</span>
+</code></pre></div></div>
+
+<p>The example is now:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/noise-example.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Noise</span>  <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/filters/Noise.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Graphic</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Graphic.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">noise-example</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="mi">480</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="mi">640</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Noise</span><span class="p">({</span>
+        <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Graphic</span><span class="p">({</span><span class="na">height</span><span class="p">:</span> <span class="mi">480</span><span class="p">,</span> <span class="na">width</span><span class="p">:</span> <span class="mi">640</span><span class="p">})</span>
+    <span class="p">})</span>
+<span class="p">})</span>
+<span class="nx">canvas</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<figure id="noise-example">
+    <figcaption>Noise Filter</figcaption>
+</figure>
+<script type="module" src="/scripts/graphics-programming/lesson4/examples/noise-example.js"></script>
+    
+      <h2 id="grayscale">
+        
+        
+          <a href="#grayscale">#</a> Grayscale
+        
+        
+      </h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Grayscale" target="_blank" rel="noopener noreferrer">Grayscale</a> is another common filter and seems simple enough to implement.
+We’ll take the average of the three channels and return a new color:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/filters/AvgGrayscale.js</span>
+<span class="k">import</span> <span class="nx">Filter</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Filter.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Color</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../Color.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">AvgGrayscale</span> <span class="kd">extends</span> <span class="nx">Filter</span> <span class="p">{</span>
+    <span class="nx">filterColor</span><span class="p">({</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">})</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">avgColor</span> <span class="o">=</span> <span class="p">(</span><span class="nx">r</span> <span class="o">+</span> <span class="nx">g</span> <span class="o">+</span> <span class="nx">b</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span>
+
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">({</span><span class="na">r</span><span class="p">:</span> <span class="nx">avgColor</span><span class="p">,</span> <span class="na">g</span><span class="p">:</span> <span class="nx">avgColor</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="nx">avgColor</span><span class="p">,</span> <span class="nx">a</span><span class="p">})</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">AvgGrayscale</span>
+</code></pre></div></div>
+
+<p>To see the results we’ll use a colorful <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Open_wing_position_of_Herona_marathus_marathus_Doubleday%2C_1848_%E2%80%93_Assam_Pasha_DSC_0076.jpg/640px-Open_wing_position_of_Herona_marathus_marathus_Doubleday%2C_1848_%E2%80%93_Assam_Pasha_DSC_0076.jpg" target="_blank" rel="noopener noreferrer">example</a> from WikiMedia:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/grayscale-example-1.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">ImageLoader</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/ImageLoader.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">AvgGrayscale</span>  <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/filters/AvgGrayscale.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">imageLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageLoader</span><span class="p">(),</span>
+      <span class="nx">graphic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">imageLoader</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="dl">'</span><span class="s1">/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">grayscale-example-1</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">AvgGrayscale</span><span class="p">({</span><span class="nx">graphic</span><span class="p">})</span>
+<span class="p">})</span>
+<span class="nx">canvas</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<figure>
+    <figcaption>Original Image</figcaption>
+    <img src="/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg" alt="Butterfly on leaves">
+</figure>
+<figure id="grayscale-example-1">
+    <figcaption>Avg Grayscale Filter</figcaption>
+</figure>
+<script type="module" src="/scripts/graphics-programming/lesson4/examples/grayscale-example-1.js"></script>
+
+<p>You may notice that the image seems a bit darker than expected. This is because the human eye does not see all colors equally and has evolved to
+be able to discern some colors better than others. Through experiments a set of commonly accepted <a href="https://en.wikipedia.org/wiki/Grayscale#Colourimetric_(perceptual_luminance-preserving)_conversion_to_greyscale" target="_blank" rel="noopener noreferrer">adjustments</a> have been identified to maintain the appropriate level.</p>
+
+<p>A better grayscale filter would be:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/filters/Grayscale.js</span>
+<span class="k">import</span> <span class="nx">Filter</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Filter.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Color</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../Color.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">Grayscale</span> <span class="kd">extends</span> <span class="nx">Filter</span> <span class="p">{</span>
+    <span class="nx">filterColor</span><span class="p">({</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">})</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">luminance</span> <span class="o">=</span> <span class="mf">0.2126</span><span class="o">*</span><span class="nx">r</span> <span class="o">+</span> <span class="mf">0.7152</span><span class="o">*</span><span class="nx">g</span> <span class="o">+</span> <span class="mf">0.0722</span><span class="o">*</span><span class="nx">b</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">({</span><span class="na">r</span><span class="p">:</span> <span class="nx">luminance</span><span class="p">,</span> <span class="na">g</span><span class="p">:</span> <span class="nx">luminance</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="nx">luminance</span><span class="p">,</span> <span class="nx">a</span><span class="p">})</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Grayscale</span>
+</code></pre></div></div>
+
+<p>The updated example:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/grayscale-example-2.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">ImageLoader</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/ImageLoader.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Grayscale</span>  <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/filters/Grayscale.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">imageLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageLoader</span><span class="p">(),</span>
+      <span class="nx">graphic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">imageLoader</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="dl">'</span><span class="s1">/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">grayscale-example-2</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Grayscale</span><span class="p">({</span><span class="nx">graphic</span><span class="p">})</span>
+<span class="p">})</span>
+<span class="nx">canvas</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<figure>
+    <figcaption>Original Image</figcaption>
+    <img src="/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg" alt="Butterfly on leaves">
+</figure>
+<figure id="grayscale-example-2">
+    <figcaption>Adjusted Grayscale Filter</figcaption>
+</figure>
+<script type="module" src="/scripts/graphics-programming/lesson4/examples/grayscale-example-2.js"></script>
+    
+      <h2 id="brightness">
+        
+        
+          <a href="#brightness">#</a> Brightness
+        
+        
+      </h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">Brightness</code> filter brightens or darkens a graphic by a specified <code class="language-plaintext highlighter-rouge">amount</code>. An <code class="language-plaintext highlighter-rouge">amount</code> of <code class="language-plaintext highlighter-rouge">1</code> would have
+no change. An amount of <code class="language-plaintext highlighter-rouge">0.5</code> would darken the graphic by <code class="language-plaintext highlighter-rouge">50%</code>. An <code class="language-plaintext highlighter-rouge">amount</code> of <code class="language-plaintext highlighter-rouge">2</code> would be <code class="language-plaintext highlighter-rouge">200%</code> brightness.
+A brightness of less than <code class="language-plaintext highlighter-rouge">0</code> is undefined so the value is clamped.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/filters/Brightness.js</span>
+<span class="k">import</span> <span class="nx">Filter</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Filter.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Color</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../Color.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">Brightness</span> <span class="kd">extends</span> <span class="nx">Filter</span> <span class="p">{</span>
+    <span class="err">#</span><span class="nx">amount</span>
+
+    <span class="kd">constructor</span><span class="p">({</span><span class="nx">graphic</span><span class="p">,</span> <span class="nx">amount</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">super</span><span class="p">({</span><span class="nx">graphic</span><span class="p">})</span>
+        <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">amount</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">amount</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">get</span> <span class="nx">amount</span><span class="p">(){</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="err">#</span><span class="nx">amount</span> <span class="p">}</span>
+
+    <span class="nx">filterColor</span><span class="p">({</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">})</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="p">{</span><span class="nx">amount</span><span class="p">}</span> <span class="o">=</span> <span class="k">this</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">({</span><span class="na">r</span><span class="p">:</span> <span class="nx">r</span><span class="o">*</span><span class="nx">amount</span><span class="p">,</span> <span class="na">g</span><span class="p">:</span> <span class="nx">g</span><span class="o">*</span><span class="nx">amount</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="nx">b</span><span class="o">*</span><span class="nx">amount</span><span class="p">,</span> <span class="nx">a</span><span class="p">})</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Brightness</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/brightness-example.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Brightness</span>  <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/filters/Brightness.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">ImageLoader</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/ImageLoader.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">imageLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageLoader</span><span class="p">(),</span>
+      <span class="nx">graphic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">imageLoader</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="dl">'</span><span class="s1">/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">brightness-example</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Brightness</span><span class="p">({</span><span class="nx">graphic</span><span class="p">,</span> <span class="na">amount</span><span class="p">:</span> <span class="mf">1.75</span><span class="p">})</span>
+<span class="p">})</span>
+<span class="nx">canvas</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<figure>
+    <figcaption>Original Image</figcaption>
+    <img src="/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg" alt="Butterfly on leaves">
+</figure>
+<figure id="brightness-example">
+    <figcaption>Brightness Filter</figcaption>
+</figure>
+<script type="module" src="/scripts/graphics-programming/lesson4/examples/brightness-example.js"></script>
+    
+      <h2 id="inversion">
+        
+        
+          <a href="#inversion">#</a> Inversion
+        
+        
+      </h2>
+
+<p>Inverting colors is another straightforward filter. For each color channel we simply subtract the value from 255:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/filters/Invert.js</span>
+<span class="k">import</span> <span class="nx">Filter</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Filter.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Color</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../Color.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">Invert</span> <span class="kd">extends</span> <span class="nx">Filter</span> <span class="p">{</span>
+    <span class="nx">filterColor</span><span class="p">({</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">({</span><span class="na">r</span><span class="p">:</span> <span class="mi">255</span><span class="o">-</span><span class="nx">r</span><span class="p">,</span> <span class="na">g</span><span class="p">:</span> <span class="mi">255</span><span class="o">-</span><span class="nx">g</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">255</span><span class="o">-</span><span class="nx">b</span><span class="p">,</span> <span class="nx">a</span><span class="p">})</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Invert</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/invert-example.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Invert</span>  <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/filters/Invert.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">ImageLoader</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/ImageLoader.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">imageLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageLoader</span><span class="p">(),</span>
+      <span class="nx">graphic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">imageLoader</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="dl">'</span><span class="s1">/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">invert-example</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Invert</span><span class="p">({</span><span class="nx">graphic</span><span class="p">})</span>
+<span class="p">})</span>
+<span class="nx">canvas</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<figure>
+    <figcaption>Original Image</figcaption>
+    <img src="/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg" alt="Butterfly on leaves">
+</figure>
+<figure id="invert-example">
+    <figcaption>Invert Filter</figcaption>
+</figure>
+<script type="module" src="/scripts/graphics-programming/lesson4/examples/invert-example.js"></script>
+    
+      <h2 id="sepia">
+        
+        
+          <a href="#sepia">#</a> Sepia
+        
+        
+      </h2>
+
+<p>Another popular filter is <a href="https://en.wikipedia.org/wiki/Sepia_(color)" target="_blank" rel="noopener noreferrer">Sepia</a> which could be considered
+“brownscale” instead of grayscale. This effect is reminiscent of <a href="https://en.wikipedia.org/wiki/Photographic_print_toning" target="_blank" rel="noopener noreferrer">photographs</a> of the 1800s and renaissance era books.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/filters/Sepia.js</span>
+<span class="k">import</span> <span class="nx">Filter</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Filter.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Color</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../Color.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">Sepia</span> <span class="kd">extends</span> <span class="nx">Filter</span> <span class="p">{</span>
+    <span class="nx">filterColor</span><span class="p">({</span><span class="nx">r</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">b</span><span class="p">,</span><span class="nx">a</span><span class="p">})</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Color</span><span class="p">({</span>
+            <span class="na">r</span><span class="p">:</span> <span class="mf">0.393</span><span class="o">*</span><span class="nx">r</span> <span class="o">+</span> <span class="mf">0.769</span><span class="o">*</span><span class="nx">g</span> <span class="o">+</span> <span class="mf">0.189</span><span class="o">*</span><span class="nx">b</span><span class="p">,</span>
+            <span class="na">g</span><span class="p">:</span> <span class="mf">0.349</span><span class="o">*</span><span class="nx">r</span> <span class="o">+</span> <span class="mf">0.686</span><span class="o">*</span><span class="nx">g</span> <span class="o">+</span> <span class="mf">0.168</span><span class="o">*</span><span class="nx">b</span><span class="p">,</span>
+            <span class="na">b</span><span class="p">:</span> <span class="mf">0.272</span><span class="o">*</span><span class="nx">r</span> <span class="o">+</span> <span class="mf">0.534</span><span class="o">*</span><span class="nx">g</span> <span class="o">+</span> <span class="mf">0.131</span><span class="o">*</span><span class="nx">b</span><span class="p">,</span>
+            <span class="nx">a</span>
+        <span class="p">})</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Sepia</span>
+</code></pre></div></div>
+
+<p>The numeric adjustments are debatable, but the above seem to be the most popular and based on
+a Microsoft <a href="https://docs.microsoft.com/en-us/archive/msdn-magazine/2005/january/net-matters-sepia-tone-stringlogicalcomparer-and-more" target="_blank" rel="noopener noreferrer">recommendation</a>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/sepia-example.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Sepia</span>  <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/filters/Sepia.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">ImageLoader</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/ImageLoader.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">imageLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageLoader</span><span class="p">(),</span>
+      <span class="nx">graphic</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">imageLoader</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="dl">'</span><span class="s1">/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">sepia-example</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Sepia</span><span class="p">({</span><span class="nx">graphic</span><span class="p">})</span>
+<span class="p">})</span>
+<span class="nx">canvas</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<figure>
+    <figcaption>Original Image</figcaption>
+    <img src="/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg" alt="Butterfly on leaves">
+</figure>
+<figure id="sepia-example">
+    <figcaption>Sepia Filter</figcaption>
+</figure>
+<script type="module" src="/scripts/graphics-programming/lesson4/examples/sepia-example.js"></script>
+    
+      <h2 id="composing-filters">
+        
+        
+          <a href="#composing-filters">#</a> Composing Filters
+        
+        
+      </h2>
+
+<p>Applying multiple filters is simple composition. An example would be to invert an image before applying sepia:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/invert-sepia-example.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Invert</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/filters/Invert.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Sepia</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/filters/Sepia.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">ImageLoader</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/ImageLoader.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">imageLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageLoader</span><span class="p">(),</span>
+      <span class="nx">image</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">imageLoader</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="dl">'</span><span class="s1">/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">invert-sepia-example</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="nx">graphic</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Sepia</span><span class="p">({</span>
+        <span class="na">graphic</span><span class="p">:</span> <span class="k">new</span> <span class="nx">Invert</span><span class="p">({</span><span class="na">graphic</span><span class="p">:</span> <span class="nx">image</span><span class="p">})</span>
+    <span class="p">})</span>
+<span class="p">})</span>
+<span class="nx">canvas</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>While the composition is straightforward it’s a bit more verbose than necessary
+with the multiple imports and constructor calls. Why bother with them at all?
+In the context of a <code class="language-plaintext highlighter-rouge">Filter</code> each name is unique so we can update our code to
+leverage method chaining for composition.</p>
+
+<p>First, to avoid <a href="https://twitter.com/mlhaufe/status/1321168932296921089" target="_blank" rel="noopener noreferrer">issues</a> with
+cyclical imports, we’ll create an index for the filters defined thus far. Note that the
+base class <code class="language-plaintext highlighter-rouge">Filter</code> comes first:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/filters/index.js</span>
+<span class="k">import</span> <span class="nx">Filter</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Filter.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">AvgGrayscale</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./AvgGrayscale.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Brightness</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Brightness.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Grayscale</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Grayscale.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Invert</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Invert.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Noise</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Noise.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">Sepia</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Sepia.js</span><span class="dl">'</span>
+
+<span class="k">export</span> <span class="p">{</span><span class="nx">AvgGrayscale</span><span class="p">,</span> <span class="nx">Brightness</span><span class="p">,</span> <span class="nx">Filter</span><span class="p">,</span> <span class="nx">Grayscale</span><span class="p">,</span> <span class="nx">Invert</span><span class="p">,</span> <span class="nx">Noise</span><span class="p">,</span> <span class="nx">Sepia</span><span class="p">}</span>
+</code></pre></div></div>
+
+<p>Each of our individual filters then import the <code class="language-plaintext highlighter-rouge">Feature</code> class from this index
+instead of directly:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/filters/AvgGrayscale.js</span>
+<span class="c1">// lib/filters/Brightness.js</span>
+<span class="c1">// lib/filters/Grayscale.js</span>
+<span class="c1">// lib/filters/Invert.js</span>
+<span class="c1">// lib/filters/Noise.js</span>
+<span class="c1">// lib/filters/Sepia.js</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">Filter</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./index.js</span><span class="dl">'</span>
+
+<span class="c1">// ...</span>
+</code></pre></div></div>
+
+<p>With that in hand the <code class="language-plaintext highlighter-rouge">Filter</code> class can now implement the composition api:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/filters/Filter.js</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">AvgGrayscale</span><span class="p">,</span> <span class="nx">Brightness</span><span class="p">,</span> <span class="nx">Grayscale</span><span class="p">,</span> <span class="nx">Invert</span><span class="p">,</span> <span class="nx">Noise</span><span class="p">,</span> <span class="nx">Sepia</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./index.js</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">Filter</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+    <span class="nx">avgGrayscale</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nx">AvgGrayscale</span><span class="p">({</span><span class="na">graphic</span><span class="p">:</span> <span class="k">this</span><span class="p">})</span> <span class="p">}</span>
+    <span class="nx">brightness</span><span class="p">({</span><span class="nx">amount</span><span class="p">})</span> <span class="p">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nx">Brightness</span><span class="p">({</span><span class="na">graphic</span><span class="p">:</span> <span class="k">this</span><span class="p">,</span> <span class="nx">amount</span><span class="p">})</span> <span class="p">}</span>
+    <span class="nx">grayscale</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nx">Grayscale</span><span class="p">({</span><span class="na">graphic</span><span class="p">:</span> <span class="k">this</span><span class="p">})</span> <span class="p">}</span>
+    <span class="nx">invert</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nx">Invert</span><span class="p">({</span><span class="na">graphic</span><span class="p">:</span> <span class="k">this</span><span class="p">})</span> <span class="p">}</span>
+    <span class="nx">noise</span><span class="p">(){</span> <span class="k">return</span> <span class="k">new</span> <span class="nx">Noise</span><span class="p">({</span><span class="na">graphic</span><span class="p">:</span> <span class="k">this</span><span class="p">})</span> <span class="p">}</span>
+    <span class="nx">sepia</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nx">Sepia</span><span class="p">({</span><span class="na">graphic</span><span class="p">:</span> <span class="k">this</span><span class="p">})</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The final piece is to update the base <code class="language-plaintext highlighter-rouge">Graphic</code> to apply a filter:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// lib/Graphic.js</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">Filter</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./filters/index.js</span><span class="dl">'</span>
+
+<span class="c1">// ...</span>
+
+<span class="kd">class</span> <span class="nx">Graphic</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+    <span class="nx">filter</span><span class="p">(){</span> <span class="k">return</span> <span class="k">new</span> <span class="nx">Filter</span><span class="p">({</span><span class="na">graphic</span><span class="p">:</span> <span class="k">this</span><span class="p">})</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Graphic</span>
+</code></pre></div></div>
+
+<p>Our composed example is now:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// examples/invert-sepia-example.js</span>
+<span class="k">import</span> <span class="nx">Canvas</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/Canvas.js</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">ImageLoader</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../lib/ImageLoader.js</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">imageLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ImageLoader</span><span class="p">(),</span>
+      <span class="nx">image</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">imageLoader</span><span class="p">.</span><span class="nx">load</span><span class="p">(</span><span class="dl">'</span><span class="s1">/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg</span><span class="dl">'</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Canvas</span><span class="p">({</span>
+    <span class="na">container</span><span class="p">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">invert-sepia-example</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">height</span><span class="p">:</span> <span class="nx">image</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+    <span class="na">width</span><span class="p">:</span> <span class="nx">image</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+    <span class="na">graphic</span><span class="p">:</span> <span class="nx">image</span><span class="p">.</span><span class="nx">filter</span><span class="p">().</span><span class="nx">invert</span><span class="p">().</span><span class="nx">sepia</span><span class="p">()</span>
+<span class="p">})</span>
+<span class="nx">canvas</span><span class="p">.</span><span class="nx">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Notice how we’ve eliminated the need for client code to import filters and our nested constructor calls
+have become simple method chaining.</p>
+
+<figure>
+    <figcaption>Original Image</figcaption>
+    <img src="/scripts/graphics-programming/lesson4/assets/butterfly-leaves.jpg" alt="Butterfly on leaves">
+</figure>
+<figure id="invert-sepia-example">
+    <figcaption>Invert + Sepia Filter</figcaption>
+</figure>
+<script type="module" src="/scripts/graphics-programming/lesson4/examples/invert-sepia-example.js"></script>
+
+<p>This is far from all of the simple filters that could be applied, but the general approach should be clear.
+Also, as a reminder, we’re not aiming for the most efficient implementation at this stage. The priority
+is understanding; efficiency comes later. To quote:</p>
+
+<blockquote>
+  <p>For every polynomial-time algorithm you have, there is an exponential algorithm that I would rather run.
+<cite><a href="https://en.wikipedia.org/wiki/Alan_Perlis" target="_blank" rel="noopener noreferrer">Alan Perlis</a></cite></p>
+</blockquote>
+
+<p>In the next lesson we’ll tackle more ambitious filters which adjust pixels based on their neighbors.</p>
+    
+      <h2 id="additional-reading">
+        
+        
+          <a href="#additional-reading">#</a> Additional Reading
+        
+        
+      </h2>
+
+<ul>
+  <li>
+<a href="https://github.com/thenewobjective/thenewobjective.github.io/tree/master/scripts/graphics-programming/lesson4" target="_blank" rel="noopener noreferrer">Source code for this lesson</a>.</li>
+  <li><a href="https://e2eml.school/convert_rgb_to_grayscale.html" target="_blank" rel="noopener noreferrer">How to Convert an RGB Image to Grayscale</a></li>
+</ul>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/graphics-programming/loading-images" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/graphics-programming" class="category-nav_title" rel="archives">Graphics Programming</a>
+    <a href="" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>

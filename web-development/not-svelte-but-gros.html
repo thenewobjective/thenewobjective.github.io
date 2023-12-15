@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' ; script-src-elem 'self' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' https://avatars.githubusercontent.com https://mermaid.ink">
+  <!-- <meta http-equiv="X-Frame-Options" content="deny"> -->
+  
+  <meta name="description" content="The personal website of Michael L Haufe">
+  <meta name="og:description" content="The personal website of Michael L Haufe">
+  
+  <meta property="og:title" content="Not Svelte but Gros">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thenewobjective.com/web-development/not-svelte-but-gros">
+  
+  <meta property="og:image" content="https://thenewobjective.com/images/icons/android-chrome-512x512.png">
+  
+  <meta name="robots" content="noai, noimageai">
+  <title>The New Objective | Not Svelte but Gros</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+  <link rel="manifest" href="/images/icons/site.webmanifest">
+  <link rel="alternate" type="application/rss+xml" title="The New Objective &raquo; Feed" href="/feed.xml" />
+  <link rel="canonical" href="https://thenewobjective.com/web-development/not-svelte-but-gros">
+  <link rel="search" href="https://thenewobjective.com/search.xml" type="application/opensearchdescription+xml"
+    title="The New Objective" />
+  <link type="text/plain" rel="author" href="/humans.txt" />
+  <script type="module" src="/scripts/main.js"></script>
+</head>
+
+<body><header id="site-header" class="site-header">
+    <img class="site-header_profile" src="/images/icons/android-chrome-192x192.png" alt="Profile image">
+    <a href="#" class="site-header_close">
+        <svg class="feather-icon">
+            <use xlink:href="/images/icons/feather-sprite.svg#x"></use>
+        </svg>
+    </a><nav class="site-nav">
+    <ul class="site-nav_links">
+        
+        
+        <li class="site-nav_item" title="Home">
+            <a class="site-nav_link" href="/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#home"></use>
+                </svg>
+                <span>Home</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Resume">
+            <a class="site-nav_link" href="/resume/">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Publications">
+            <a class="site-nav_link" href="/publications">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#book"></use>
+                </svg>
+                <span>Publications</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Demos">
+            <a class="site-nav_link" href="/demos">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#aperture"></use>
+                </svg>
+                <span>Demos</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Projects">
+            <a class="site-nav_link" href="/projects">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#briefcase"></use>
+                </svg>
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Connect">
+            <a class="site-nav_link" href="/connect">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#share-2"></use>
+                </svg>
+                <span>Connect</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="About">
+            <a class="site-nav_link" href="/about">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#help-circle"></use>
+                </svg>
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item" title="Search">
+            <a class="site-nav_link" href="/search">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#search"></use>
+                </svg>
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="site-nav_item">
+            <a class="site-nav_link rss" href="/feed.xml" target="_blank">
+                <svg class="feather-icon">
+                    <use xlink:href="/images/icons/feather-sprite.svg#rss"></use>
+                </svg>
+                <span>RSS</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<a class="site-header_brave" href="https://brave.com/the327" target="_blank" rel="noopener noreferrer">
+        <picture>
+            <source srcset="/media-library/brave/brave-banner.png" media="(max-width: 420px)"></source>
+            <source srcset="/media-library/brave/brave-lion.png" media="(max-width: 1279px)"></source>
+            <img src="/media-library/brave/brave-banner.png" title="Be brave" alt="Be brave">
+        </picture>
+    </a>
+</header>
+<main class="site-content">
+    <header class="site-content_header">
+      <a href="#site-header" class="site-content_header-menubutton">
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#menu"></use>
+        </svg>
+      </a>
+      <h1>
+        <svg class="feather-icon">
+          <use xlink:href="/images/icons/feather-sprite.svg#file-text"></use>
+        </svg>
+        Not Svelte but Gros
+      </h1>
+      
+      
+        <time>June 24, 2020</time>
+      
+      
+    </header>
+    <section class="site-content_body">
+      <article class="post">
+
+<nav class="category-nav">
+    <a href="/web-development/" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/web-development" class="category-nav_title" rel="archives">Web Development</a>
+    <a href="/web-development/a-vue-obstructed" class="category-nav_next" rel="next">Next</a>
+</nav>
+<hr>
+    <ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#reactivity" id="markdown-toc-reactivity">Reactivity</a></li>
+  <li><a href="#dsls" id="markdown-toc-dsls">DSLs</a></li>
+  <li><a href="#event-model" id="markdown-toc-event-model">Event Model</a></li>
+  <li><a href="#forms" id="markdown-toc-forms">Forms</a></li>
+  <li><a href="#context-api" id="markdown-toc-context-api">Context API</a></li>
+  <li><a href="#transitions-and-animations" id="markdown-toc-transitions-and-animations">Transitions and Animations</a></li>
+  <li><a href="#components" id="markdown-toc-components">Components</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+</ul>
+      <h2 id="introduction">
+        
+        
+          <a href="#introduction">#</a> Introduction
+        
+        
+      </h2>
+
+<p>Recently I was asked to review <a href="https://svelte.dev/" target="_blank" rel="noopener noreferrer">Svelte</a>.
+My usual response to these requests is that “it’s better than nothing” but that’s
+just <a href="https://en.wikipedia.org/wiki/Damning_with_faint_praise" target="_blank" rel="noopener noreferrer">damning with faint praise</a>.
+I’m not a fan of most web frameworks and I’ve seen my share since 1997. Sadly Svelte I also find
+disappointing.</p>
+
+<p>Svelte seems to
+<a href="https://svelte.dev/blog/svelte-3-rethinking-reactivity" target="_blank" rel="noopener noreferrer">sell itself</a> as not being
+<a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a> which is not a high bar but that’s another story.
+The efficiency of it’s output leaved much to be desired. The “Hello World” example is 41 lines of code excluding the 7 imports:</p>
+
+<figure>
+    <img src="/media-library/web-development/svelte/hello-world.png" alt="Hello World">
+</figure>
+
+<p>The implementation also leaks:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">args</span> <span class="o">=</span> <span class="nx">arguments</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">handleClick</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">args</span><span class="p">))</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">create_fragment</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">on:click=</span><span class="s">{handleClick}</span><span class="nt">&gt;</span>Click<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<p>Which produces:</p>
+
+<figure>
+    <img src="/media-library/web-development/svelte/leaks.png" alt="Environment Leaks">
+</figure>
+
+<p><a href="/requirements-engineering/leaky-abstractions-are-just-bad-abstractions">Leaky abstractions are just bad abstractions</a></p>
+    
+      <h2 id="reactivity">
+        
+        
+          <a href="#reactivity">#</a> Reactivity
+        
+        
+      </h2>
+
+<p>Svelte has a feature referred to as Reactive declarations:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="nl">$</span><span class="p">:</span> <span class="nx">doubled</span> <span class="o">=</span> <span class="nx">count</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">:</span> <span class="k">if</span> <span class="p">(</span><span class="nx">count</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s2">`count is dangerously high!`</span><span class="p">);</span>
+    <span class="nx">count</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This abused JavaScript is meant to execute the labeled statement when the referenced value changes. While valid syntax
+the semantics are definitely not JavaScript and the authors should not <a href="https://svelte.dev/tutorial/reactive-declarations" target="_blank" rel="noopener noreferrer">gloss over this</a>
+as valid.</p>
+
+<p>In addition to abusing syntax to support “reactivity” the framework relies on syntactic assignment to trigger it. The <a href="https://svelte.dev/tutorial/updating-arrays-and-objects" target="_blank" rel="noopener noreferrer">official examples</a>
+show how terribly broken this feature is:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">addNumber</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">numbers</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">numbers</span><span class="p">.</span><span class="nx">length</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="nx">numbers</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">;</span> <span class="c1">// redundant assignment to trigger the event</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>If that’s not bad enough aliasing makes it worse:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">foo</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">foo</span><span class="p">;</span>
+<span class="nx">foo</span><span class="p">.</span><span class="nx">bar</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">baz</span><span class="dl">'</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<p>To quote the documentation:</p>
+
+<blockquote>
+  <p>…the name of the updated variable must appear on the left hand side of the assignment.
+[Otherwise it] won’t update references to <code class="language-plaintext highlighter-rouge">obj.foo.bar</code>, unless you follow it up with <code class="language-plaintext highlighter-rouge">obj = obj</code>.</p>
+</blockquote>
+    
+      <h2 id="dsls">
+        
+        
+          <a href="#dsls">#</a> DSLs
+        
+        
+      </h2>
+
+<p>So in addition to reinterpeting labels and the above terribly designed feature for “reacitivity”
+the framework also provides conditional statements and await block:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{#if someCondition}
+    <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+{/if}
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+    {#each items as item, i}
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">target=</span><span class="s">"_blank"</span> <span class="na">href=</span><span class="s">"https://example.com/{item.id}"</span> <span class="na">data-index=</span><span class="s">"{i}"</span><span class="nt">&gt;</span>{item.id}<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    {/each}
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{#await myPromise}
+  <span class="nt">&lt;p&gt;</span>...waiting<span class="nt">&lt;/p&gt;</span>
+{:then response}
+  <span class="nt">&lt;p&gt;</span>The response is {response}<span class="nt">&lt;/p&gt;</span>
+{:catch error}
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"warn"</span><span class="nt">&gt;</span>{error.message}<span class="nt">&lt;/p&gt;</span>
+{/await}
+</code></pre></div></div>
+
+<p>Given that “JavaScript” and a compiler are already involved with this framework why does a new DSL for conditionals, loops,
+and promises need to be reinvented? The language already has these features.</p>
+    
+      <h2 id="event-model">
+        
+        
+          <a href="#event-model">#</a> Event Model
+        
+        
+      </h2>
+
+<p>Due to how the compilation works a strange event system was created:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">on:click=</span><span class="s">{handleClick}</span><span class="nt">&gt;&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<p>Which tries to make up for the loss of the vanilla functionality:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"handleClick()"</span><span class="nt">&gt;&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<p>The event modifiers could be done in the handler itself, so I don’t understand the need to add another syntax such as:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">on:click</span><span class="err">|</span><span class="na">once=</span><span class="s">{handleClick}</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<p>This just promotes duplicating logic and mixing it with the “markup”. If I had a list of elements with the same handler then adding a modifier on each element is not an improvement.</p>
+
+<p>Speaking of an over-complicated <a href="https://svelte.dev/tutorial/event-forwarding" target="_blank" rel="noopener noreferrer">event model</a>:</p>
+
+<blockquote>
+  <p>“Unlike DOM events, component events don’t bubble. If you want to listen to
+an event on some deeply nested component, the intermediate components must forward the event.”</p>
+</blockquote>
+
+<p>Svelte is using what is called the <a href="https://refactoring.guru/design-patterns/chain-of-responsibility" target="_blank" rel="noopener noreferrer">Chain of Responsibility pattern</a> to process events.
+ This has been known to be a bad idea since the late 90s When Java abandoned it. This approach requires either:</p>
+
+<ol>
+  <li>Every intermediate component has to explicitly forward the event (as mentioned in the quote)</li>
+  <li>A particular container component has to define a switch-statement or if-else to filter and
+handle the child events when there are many types. (as shown in the <a href="https://svelte.dev/tutorial/event-forwarding" target="_blank" rel="noopener noreferrer">example</a> with <code class="language-plaintext highlighter-rouge">dispatch()</code> if more events were defined)</li>
+</ol>
+
+<p>The <a href="https://www.developer.com/java/data/understanding-and-using-the-java-delegation-event-model.html" target="_blank" rel="noopener noreferrer">Delegation Event Model</a> as used
+in the DOM is superior and should have been kept instead. A true <a href="https://en.wikipedia.org/wiki/Reactive_programming" target="_blank" rel="noopener noreferrer">reactive</a> approach would also have been better.</p>
+    
+      <h2 id="forms">
+        
+        
+          <a href="#forms">#</a> Forms
+        
+        
+      </h2>
+
+<blockquote>
+  <p>In the DOM, everything is a string. That’s unhelpful when you’re dealing with numeric inputs — type=“number”
+and type=“range” — as it means you have to remember to coerce input.value before using it.</p>
+
+  <p>With bind:value, Svelte takes care of it for you</p>
+</blockquote>
+
+<p>That is just wrong. <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> elements <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement" target="_blank" rel="noopener noreferrer">support</a>:</p>
+
+<p><code class="language-plaintext highlighter-rouge">value</code>, <code class="language-plaintext highlighter-rouge">valueAsDate</code>, <code class="language-plaintext highlighter-rouge">valueAsNumber</code></p>
+
+<p>Initially I thought this was just outdated information but Svelte was <a href="https://svelte.dev/blog/frameworks-without-the-framework" target="_blank" rel="noopener noreferrer">released</a> in November of 2016
+and these input properties have been in browsers for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=769370" target="_blank" rel="noopener noreferrer">at least 8 years</a>.</p>
+
+<p>Svelte also provides a grouping syntax for checkboxes and radio buttons:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{#each items as item}
+    <span class="nt">&lt;label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">checkbox</span> <span class="na">bind:group=</span><span class="s">{items}</span> <span class="na">value=</span><span class="s">{item}</span><span class="nt">&gt;</span>
+        {item.name}
+    <span class="nt">&lt;/label&gt;</span>
+{/each}
+</code></pre></div></div>
+
+<p>The “name” attribute <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/checkbox#Handling_multiple_checkboxes" target="_blank" rel="noopener noreferrer">already does this</a>
+but due to how binding and events work it’s no surprise that this feature was reinvented.</p>
+    
+      <h2 id="context-api">
+        
+        
+          <a href="#context-api">#</a> Context API
+        
+        
+      </h2>
+
+<p>Due to the terrible event model described above an additional feature was added in Svelte to work around it called the <a href="https://svelte.dev/tutorial/context-api" target="_blank" rel="noopener noreferrer">Context API</a>.
+Strangely the authors don’t recognize the problem and treat this as a <a href="https://svelte.dev/tutorial/context-api" target="_blank" rel="noopener noreferrer">feature</a>:</p>
+
+<blockquote>
+  <p>The context API provides a mechanism for components to ‘talk’ to each other
+without passing around data and functions as props, or dispatching lots of events.
+It’s an advanced feature, but a useful one.</p>
+</blockquote>
+
+<p>This may be a failure of imagination on my part, but it looks to me by the examples that “Stores” are just being used to bypass the event model
+and GUI hierarchy in order to cross-communicate to other components. Perhaps if the event model was better this thing wouldn’t exist.</p>
+    
+      <h2 id="transitions-and-animations">
+        
+        
+          <a href="#transitions-and-animations">#</a> Transitions and Animations
+        
+        
+      </h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+    <span class="k">import</span> <span class="p">{</span> <span class="nx">fade</span><span class="p">,</span> <span class="nx">fly</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">svelte/transition</span><span class="dl">'</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">visible</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="nt">&lt;/script&gt;</span>
+
+<span class="nt">&lt;label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">bind:checked=</span><span class="s">{visible}</span><span class="nt">&gt;</span>
+    visible
+<span class="nt">&lt;/label&gt;</span>
+
+{#if visible}
+    <span class="nt">&lt;p</span> <span class="na">in:fly=</span><span class="s">"{{ y: 200, duration: 2000 }}"</span> <span class="na">out:fade</span><span class="nt">&gt;</span>
+        Flies in, fades out
+    <span class="nt">&lt;/p&gt;</span>
+{/if}
+
+</code></pre></div></div>
+
+<p>On one hand I do like the fact that CSS can be avoided in favor of JavaScript directly,
+on the other hand the approach leaves much to be desired. The style property of the
+element is manipulated directly instead of using the <a href="https://css-tricks.com/an-introduction-and-guide-to-the-css-object-model-cssom/#the-cssstylesheet-interface" target="_blank" rel="noopener noreferrer">CSSOM</a>.
+You can imagine how this would scale poorly with more ambitious styling.</p>
+    
+      <h2 id="components">
+        
+        
+          <a href="#components">#</a> Components
+        
+        
+      </h2>
+
+<p>Regarding components, I’ll just reference the criticism I’ve already given:</p>
+
+<p><a href="https://thenewobjective.com/web-development/a-criticism-of-web-components">A Criticism of Web Components</a></p>
+    
+      <h2 id="conclusion">
+        
+        
+          <a href="#conclusion">#</a> Conclusion
+        
+        
+      </h2>
+
+<p>Don’t choose a framework for the sake of it. Beware of hype and contrived examples. Learn the fundamentals before seeking abstractions.
+There is a difference between <a href="https://youtu.be/rI8tNMsozo0?t=48" target="_blank" rel="noopener noreferrer">simple and easy</a>, and don’t be afraid to roll-your-own
+based on a sound foundation:</p>
+
+<ul>
+  <li><a href="http://vanilla-js.com/" target="_blank" rel="noopener noreferrer">http://vanilla-js.com/</a></li>
+  <li><a href="https://gist.github.com/mlhaufe/c841b2269b0099c3c52648717f9551cc" target="_blank" rel="noopener noreferrer">MVC in ~100 lines</a></li>
+</ul>
+
+    <hr>
+
+<nav class="category-nav">
+    <a href="/web-development/" class="category-nav_prev" rel="prev">Prev</a>
+    <a href="/web-development" class="category-nav_title" rel="archives">Web Development</a>
+    <a href="/web-development/a-vue-obstructed" class="category-nav_next" rel="next">Next</a>
+</nav>
+</article>
+
+<hr>
+<script src="https://giscus.app/client.js" data-repo="thenewobjective/thenewobjective.github.io" data-repo-id="MDEwOlJlcG9zaXRvcnkyNTY4OTk0MjY=" data-category="Announcements" data-category-id="DIC_kwDOD0_5Ys4CW9Wa" data-mapping="og:title" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark" data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+
+    </section><footer class="site-footer">
+    <span>Copyright © 2001 - 2023 Michael Haufe. All Rights Reserved.</span> · <span><a href="/privacy-policy">Privacy Policy</a></span>
+</footer>
+</main>
+</body>
+
+</html>
