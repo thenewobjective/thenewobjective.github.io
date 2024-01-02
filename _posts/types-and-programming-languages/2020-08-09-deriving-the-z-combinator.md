@@ -10,9 +10,9 @@ permalink: /types-and-programming-languages/deriving-the-z-combinator
 * TOC
 {:toc}
 
-By now you've probably heard of the Y-Combinator and its cousin the Z-Combinator but you
+By now you've probably heard of the Y-Combinator and its cousin the Z-Combinator, but you
 may not have seen a derivation of it that made sense. There are tutorials and examples
-aplenty but they seem to skip steps or leave out some accompanying explanation leaving
+aplenty, but they seem to skip steps or leave out some accompanying explanation leaving
 the reader with a sense of something missing. Let's see if I can do better.
 
 ## Fixed-points and Combinators

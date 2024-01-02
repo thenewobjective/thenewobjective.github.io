@@ -9,3 +9,8 @@ CVCSs
 EiffelStudio
 hotfixed
 unrepresentable
+Combinators
+Y-Combinator
+Z-Combinator
+combinator
+fixpoint
