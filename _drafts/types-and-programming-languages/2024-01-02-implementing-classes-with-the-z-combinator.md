@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Implementing Classes with the Z-Combinator"
-date:   2023-12-28 15:00:00 -0600
+date:   2024-01-02 15:00:00 -0600
 category: Types and Programming Languages
 permalink: /types-and-programming-languages/implementing-classes-with-the-z-combinator
 ---
@@ -16,7 +16,7 @@ In a [previous post](/types-and-programming-languages/deriving-the-z-combinator)
 showed how to derive the Z-Combinator from a recursive function:
 
 ```js
-let fix = f => n =>
+const fix = f => n =>
     f(fix(f))(n)
 ```
 
@@ -190,9 +190,7 @@ const CounterConstructor = () => CounterClass({ count: 0, min: 0, max: 10 }),
 
 The `CounterClass` and `ResetCounterClass` create
 objects based on a given state which is defined by the `*Constructor` functions.
-This effectively separates the operations from the specific state.
-
-............
+This effectively provides a separation of concerns between the state and the operations.
 
 Implementing an override is as simple as defining a new operation with the same
 name as an existing operation. For example, if we wanted to override the `inc`
@@ -253,7 +251,7 @@ not defined until runtime. To support this, our above implementation of `SetCoun
 can't define `self` directly. Instead, it must be provided as an argument:
 
 ```js
-const SetCounterClass = state => self = ({
+const SetCounterClass = self => state => ({
     get: () => state.count,
     set: value => { state.count = value },
     inc: () => {
@@ -269,14 +267,130 @@ const SetCounterClass = state => self = ({
 
 Turning to the constructor, we now have a problem. We need to pass `self` to `SetCounterClass`,
 but we don't have a reference to `self` until after we've created the object. This is a
-chicken-and-egg problem and where we need the fixpoint combinator as mentioned in the
+chicken-and-egg problem and where we can finally use the fixpoint combinator as mentioned in the
 beginning of this post to tie the recursive knot:
 
 ```js
 const SetCounterConstructor = () => {
-    return fix(
-        SetCounterClass({ count: 0, min: 0, max: 10 })
-    )
+    return fix(SetCounterClass)({ count: 0, min: 0, max: 10 })
+}
+```
+
+This is starting to look familiar. First, the `SetCounterConstructor` is a useless abstraction and
+second, we'll rename `fix` to `New`:
+
+```js
+const New = f => n => f(New(f))(n)
+
+// ...
+
+const counter = New(SetCounterClass)({ count: 0, min: 0, max: 10 })
+```
+
+That's better, but we've introduced a wrinkle. `self` in the `SetCounterClass` is now a function
+that needs to be invoked with a state:
+
+```js
+const SetCounterClass = self => state => ({
+    get: () => state.count,
+    set: value => { state.count = value },
+    inc: () => {
+        if (state.count < state.max)
+            self(state).set(state.count + 1) // <-- self(state)
+    },
+    dec: () => {
+        if (state.count > state.min)
+            self(state).set(state.count - 1) // <-- self(state)
+    }
+})
+```
+
+Besides that, if we run a sanity check, we'll see that it works:
+
+```js
+const counter = New(SetCounterClass)({ count: 0, min: 0, max: 10 })
+
+counter.set(5)
+counter.inc()
+counter.dec()
+counter.dec()
+
+console.log(counter.get()) // 4
+```
+
+Before tackling the `self(state)` issue, let's bring back inheritance by using a slightly more interesting class hierarchy:
+
+```js
+const AnimalClass = self => state => ({
+    speak: (repeats) => '',
+    move: (repeats) => '',
+    act: (repeats) => self(state).move(repeats) + ' ' + self(state).speak(repeats)
+})
+
+const BirdClass = self => state => {
+    const parent = AnimalClass(self)(state)
+    return {
+        ...parent,
+        speak: (repeats) => Array(repeats).fill('chirp').join(' '),
+        move: (repeats) => Array(repeats).fill('fly').join(' ')
+    }
+}
+
+const DogClass = self => state => {
+    const parent = AnimalClass(self)(state)
+    return {
+        ...parent,
+        speak: (repeats) => Array(repeats).fill('bark').join(' '),
+        move: (repeats) => Array(repeats).fill('run').join(' ')
+    }
+}
+
+const bird = New(BirdClass)({}),
+    dog = New(DogClass)({})
+
+console.log(bird.speak(2)) // "chirp chirp"
+console.log(dog.speak(3)) // "bark bark bark"
+console.log(dog.act(2)) // "run run bark bark"
+```
+
+In the above example, `AnimalClass` is the base class and `BirdClass` and `DogClass` are subclasses.
+The `speak` and `move` operations are overridden in the subclasses. The `act` operation is defined
+in the base class and utilizes the overridden operations via open recursion through `self(state)`.
+We now have all the basic features for implementing classes.
+
+## Clean Up
+
+The need to write `self(state)` and `AnimalClass(self)` is a bit of a nuisance. We can clean this up
+by introducing a `Class` function which takes a class definition and returns a constructor. Example usage:
+
+```js
+const Animal = Class(null, self => parent => ({
+    speak: (repeats) => '',
+    move: (repeats) => '',
+    act: (repeats) => self.move(repeats) + ' ' + self.speak(repeats)
+}))
+
+const Bird = Class(Animal, self => parent => ({
+    speak: (repeats) => Array(repeats).fill('chirp').join(' '),
+    move: (repeats) => Array(repeats).fill('fly').join(' ')
+}))
+
+const Dog = Class(Animal, self => parent =>({
+    speak: (repeats) => Array(repeats).fill('bark').join(' '),
+    move: (repeats) => Array(repeats).fill('run').join(' '),
+    act: (repeats) => parent.act(repeats)
+}))
+```
+
+```js
+const New = f => n => f(New(f))(n)
+
+const Class = body => {
+    const Parent = body[extend] || ((_state) => ({}))
+
+    return (state) => {
+        return New(body)(self, parent, state)
+    }
 }
 ```
 
@@ -284,3 +398,9 @@ const SetCounterConstructor = () => {
 
 * [Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/). Benjamin C. Pierce. Chapter 18
 * [A Proposal for Simplified, Modern Definitions of "Object" and "Object Oriented"](https://wcook.blogspot.com/2012/07/proposal-for-simplified-modern.html). William Cook
+* [Lambda The Ultimate: Open Recursion in Haskell](http://lambda-the-ultimate.org/node/4569#comment-71821). William Cook
+
+
+## Misc
+
+- https://www.typescriptlang.org/play?filetype=js#code/MYewdgzgLgBAcgUwO4wLwwGZoHwzDzACkSUIwEpzCxyBYAKAdElgGEAbAQwgjRkIAKnAE4IwUADSYwAIRAATAJ7kC0TlAQEA3gxh6YAegPxkZWQuWE1GuvQC+DBgYBUTcNBgBBMAEsAtpzsHNy86BAI7FiouNaa0fw69PowEAAOCJwA1gBc-KLp6hAq8QDkJRK6+n4gAG4IuYT5GVBFBGUVSfqcwFANTYXFMREYVlDqCOQAdNV1jQgFLSoA1DAlqzAr4ZGj41NpGZlzC0UMdrZuLDAyPsLywTx8W1ExYxralXrMHqkiYrDo3n8gXuECswyosVsyVEUAArsJ8IlkslJqifqJxB1kfp9lk+vNmq14p5hMJOIojoSphgfOx2IQSsAABY3VIlKYAKxAPjADNW5Cx2JgM3qeQJAwIJLJFP6i0mNLpDIw7EU7MmXJ5fPZHxgDnsjnoX1gABEQABzEGPYaqV5xXBI-RGmDov58QEBIJcHhgyIQ21Q-Qw+GInUotG-TGhnEFHJi46DLyk8mUgby2n0koAIxEmTVGt5a3ZguxIvx8clSZl4rlCozwlhYDz3IL-J1er1Fw8mZu8j4JEI11uIKoWjOxZg8nNfdMpotXqKhFH50N7hA7AQk3Y5sI3duk1xhwATJRDMYAETM1kwS-CVJnztrjdbs2ESdm-cxwgAZhPRhgZ+zYRMhgQDgNA+8V0gR9N23N9Jm6KBCGPFQ-zPet8HQkCcywoCIOcAwDU7WB3UCPgQWoWE6SkQgXUxFJhikSECEXHUDzLKk2nKHVSzjDjSi4zo9AQ9iJXiJ5plqBAU0WDZ1jWTZhg-A5pJOexKANJ1B17dByJI9hqNoyR6MiRj-XeQSYCDBEYAdbFUUmQzx2SNjeNE3ApWTWUijTRVGRZW8m01QsBSjPQeJUhMPKreMfIzZVVU5ZstQDPR22XJ1ZzI+dCD0gyIyMp5TN2czoQQOFrNs5F7Mc0KUhjESZOJSsItihlQMClsi1q8KvMi5retakp0I65K21OdL3FgXdtKuHtFzHHU3z4Wd5omqD1xgl9pqUrIkN-c8b1Sa9-LvB8NufV9zR2w4fxQ89QJwsCcwgr5oIuuCEL2u7-0wzCHvAoA
