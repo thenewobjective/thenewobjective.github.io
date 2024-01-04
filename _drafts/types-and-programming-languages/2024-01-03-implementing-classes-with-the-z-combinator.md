@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Implementing Classes with the Z-Combinator"
-date:   2024-01-02 15:00:00 -0600
+date:   2024-01-03 15:00:00 -0600
 category: Types and Programming Languages
 permalink: /types-and-programming-languages/implementing-classes-with-the-z-combinator
 ---
@@ -16,8 +16,8 @@ In a [previous post](/types-and-programming-languages/deriving-the-z-combinator)
 showed how to derive the Z-Combinator from a recursive function:
 
 ```js
-const fix = f => n =>
-    f(fix(f))(n)
+const fix = f => x =>
+    f(fix(f))(x)
 ```
 
 What was not shown was a practical use for this combinator. In this post I will show
@@ -251,18 +251,7 @@ not defined until runtime. To support this, our above implementation of `SetCoun
 can't define `self` directly. Instead, it must be provided as an argument:
 
 ```js
-const SetCounterClass = self => state => ({
-    get: () => state.count,
-    set: value => { state.count = value },
-    inc: () => {
-        if (state.count < state.max)
-            self.set(state.count + 1)
-    },
-    dec: () => {
-        if (state.count > state.min)
-            self.set(state.count - 1)
-    }
-})
+const SetCounterClass = self => state => ({ ... })
 ```
 
 Turning to the constructor, we now have a problem. We need to pass `self` to `SetCounterClass`,
@@ -280,15 +269,14 @@ This is starting to look familiar. First, the `SetCounterConstructor` is a usele
 second, we'll rename `fix` to `New`:
 
 ```js
-const New = f => n => f(New(f))(n)
+const New = f => x => f(New(f))(x)
 
 // ...
 
 const counter = New(SetCounterClass)({ count: 0, min: 0, max: 10 })
 ```
 
-That's better, but we've introduced a wrinkle. `self` in the `SetCounterClass` is now a function
-that needs to be invoked with a state:
+That's better, here is the result with a minor inconvenience `self(state)`:
 
 ```js
 const SetCounterClass = self => state => ({
@@ -305,6 +293,26 @@ const SetCounterClass = self => state => ({
 })
 ```
 
+Let's lift the `self(state)` out of the and rename the `self` parameter to `fnSelf` for clarity:
+
+```js
+const SetCounterClass = fnSelf => state => {
+    const self = fnSelf(state)
+    return {
+        get: () => state.count,
+        set: value => { state.count = value },
+        inc: () => {
+            if (state.count < state.max)
+                self.set(state.count + 1)
+        },
+        dec: () => {
+            if (state.count > state.min)
+                self.set(state.count - 1)
+        }
+    }
+}
+```
+
 Besides that, if we run a sanity check, we'll see that it works:
 
 ```js
@@ -318,14 +326,18 @@ counter.dec()
 console.log(counter.get()) // 4
 ```
 
-Before tackling the `self(state)` issue, let's bring back inheritance by using a slightly more interesting class hierarchy:
+Let's bring back inheritance with a slightly more interesting class hierarchy:
 
 ```js
-const AnimalClass = self => state => ({
-    speak: (repeats) => '',
-    move: (repeats) => '',
-    act: (repeats) => self(state).move(repeats) + ' ' + self(state).speak(repeats)
-})
+const AnimalClass = fnSelf => state => {
+    {
+        const self = fnSelf(state)
+        return {
+            speak: (repeats) => '',
+            move: (repeats) => '',
+            act: (repeats) => self.move(repeats) + ' ' + self.speak(repeats)
+        }
+    }
 
 const BirdClass = self => state => {
     const parent = AnimalClass(self)(state)
@@ -383,7 +395,7 @@ const Dog = Class(Animal, self => parent =>({
 ```
 
 ```js
-const New = f => n => f(New(f))(n)
+const New = f => x => f(New(f))(x)
 
 const Class = body => {
     const Parent = body[extend] || ((_state) => ({}))
@@ -400,7 +412,6 @@ const Class = body => {
 * [A Proposal for Simplified, Modern Definitions of "Object" and "Object Oriented"](https://wcook.blogspot.com/2012/07/proposal-for-simplified-modern.html). William Cook
 * [Lambda The Ultimate: Open Recursion in Haskell](http://lambda-the-ultimate.org/node/4569#comment-71821). William Cook
 
-
 ## Misc
 
-- https://www.typescriptlang.org/play?filetype=js#code/MYewdgzgLgBAcgUwO4wLwwGZoHwzDzACkSUIwEpzCxyBYAKAdElgGEAbAQwgjRkIAKnAE4IwUADSYwAIRAATAJ7kC0TlAQEA3gxh6YAegPxkZWQuWE1GuvQC+DBgYBUTcNBgBBMAEsAtpzsHNy86BAI7FiouNaa0fw69PowEAAOCJwA1gBc-KLp6hAq8QDkJRK6+n4gAG4IuYT5GVBFBGUVSfqcwFANTYXFMREYVlDqCOQAdNV1jQgFLSoA1DAlqzAr4ZGj41NpGZlzC0UMdrZuLDAyPsLywTx8W1ExYxralXrMHqkiYrDo3n8gXuECswyosVsyVEUAArsJ8IlkslJqifqJxB1kfp9lk+vNmq14p5hMJOIojoSphgfOx2IQSsAABY3VIlKYAKxAPjADNW5Cx2JgM3qeQJAwIJLJFP6i0mNLpDIw7EU7MmXJ5fPZHxgDnsjnoX1gABEQABzEGPYaqV5xXBI-RGmDov58QEBIJcHhgyIQ21Q-Qw+GInUotG-TGhnEFHJi46DLyk8mUgby2n0koAIxEmTVGt5a3ZguxIvx8clSZl4rlCozwlhYDz3IL-J1er1Fw8mZu8j4JEI11uIKoWjOxZg8nNfdMpotXqKhFH50N7hA7AQk3Y5sI3duk1xhwATJRDMYAETM1kwS-CVJnztrjdbs2ESdm-cxwgAZhPRhgZ+zYRMhgQDgNA+8V0gR9N23N9Jm6KBCGPFQ-zPet8HQkCcywoCIOcAwDU7WB3UCPgQWoWE6SkQgXUxFJhikSECEXHUDzLKk2nKHVSzjDjSi4zo9AQ9iJXiJ5plqBAU0WDZ1jWTZhg-A5pJOexKANJ1B17dByJI9hqNoyR6MiRj-XeQSYCDBEYAdbFUUmQzx2SNjeNE3ApWTWUijTRVGRZW8m01QsBSjPQeJUhMPKreMfIzZVVU5ZstQDPR22XJ1ZzI+dCD0gyIyMp5TN2czoQQOFrNs5F7Mc0KUhjESZOJSsItihlQMClsi1q8KvMi5retakp0I65K21OdL3FgXdtKuHtFzHHU3z4Wd5omqD1xgl9pqUrIkN-c8b1Sa9-LvB8NufV9zR2w4fxQ89QJwsCcwgr5oIuuCEL2u7-0wzCHvAoA
+* <https://www.typescriptlang.org/play?jsx=0&filetype=js#code/MYewdgzgLgBAcgUwO4wLwwGZoHwwB46YAUiSRGAlBUXhQLABQA9AFSOiSwDCANgIYQIaGABMEwHoVJExE+g3bhoMAIJgAlgFs+PXgKHoAygh5ZUuaHygJCRAN6MYTmBAAOCPgGsAXDCIAnBHcrCApCAHJwgBpHZ00QADcEXwCgjyhQiOjYpz5gKBTA4Iyw8xhjUyJLawoAOnik1OLMgGoYcPaYNoqMKqgrBDq3D08m9NDGAF95RU4YACF1fxE9QWEewmqbMocGZxgOZVc+QLBYdDUtHVWIIh7qLfl9wKgAV38wGF39-dq-49OUBiex+TmGXkKaRCpVwKn8-j4AE8xtDahh1DweERwsAABZLVzhOoAKxA6jA2PaFGBoKcDWSfiK4xhqnhSJRJTRGKx4QwPERRNqpPJlKJORgkymjFmygAIiAAOY3dYmMwWfrWQjfZyHWAAhBnYSXbS6fiCO6qh4awbil7vT7a0F-Wr6s402ngnyMqElQhwhHIpmo9GY7EAIxOnkFwopHSJ7tB9MhzRZ-vZQc5IZ5-leYGjZNjVPFkoYJZlsDDSxEwmki2WN2odmmCdEipryCI8qVZtC9mm0oYhxAPAQtR4iqIleWtU9RAATFQYEwmDAAER4gkHfH+VyrmXD0fjhUyRUz4KjADMi+Xa4j-k8MDvD6fe8HSgPY4nIlPeSg8+vK6rjmnzAY+kZgfer4sEwA66jAyroJoCBQLiIAiAYuCOgcSiwBAqrtmQeGmLYWH7LqOb5CA-gpM6JwKpkOzirS2GQB+R5VKqUQwHREwgsxTh2h8MBIShaEQLU5GvJR-gcaYXG0f49FPLSJbMTezogChCD+MJyGoehxZUAA3LayH2i4qoSThFFQFRJmlvZ5bwSAubWDp6A3PY4qSdJKRERg8l-IE0AsqROrviOn7HuEXDWVJUBinxEpTDMb5zMAwixa52lEFeQA>
