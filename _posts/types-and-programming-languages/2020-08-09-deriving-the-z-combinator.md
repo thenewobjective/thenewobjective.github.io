@@ -513,6 +513,10 @@ rewriting. So to add to L. Peter Deutsch's quote:
 
 Now go forth with your newfound knowledge and impress your fellow mortals.
 
+### Update 2024-01-04 - Implementing Classes
+
+Here is a follow-up post that uses `fix` to implement classes: [Implementing Classes with the Z-Combinator](/types-and-programming-languages/implementing-classes-with-the-z-combinator).
+
 ## Further Reading
 
 * [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus)

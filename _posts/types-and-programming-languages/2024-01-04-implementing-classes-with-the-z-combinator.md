@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Implementing Classes with the Z-Combinator"
-date:   2024-01-03 15:00:00 -0600
+date:   2024-01-04 15:00:00 -0600
 category: Types and Programming Languages
 permalink: /types-and-programming-languages/implementing-classes-with-the-z-combinator
 ---
@@ -23,7 +23,7 @@ const fix = f => x =>
 What was not shown was a practical use for this combinator. In this post I will show
 how to use it to implement classes. Like the previous post, this
 post will be written in JavaScript due to its popularity and trivial barrier to entry.
-Modern JavaScript as of ES6 has a class keyword, but this will be ignored for the
+Modern JavaScript as of ES6 has a `class` keyword, but this will be ignored for the
 sake of demonstration.
 
 ## Objects
@@ -144,7 +144,7 @@ incTwice(resetCounter)
 ```
 
 The `incTwice` function takes a counter and increments it twice. It will work
-regardless of whether the `counter` argument is a `Counter`, `ResetCounter`,
+regardless of whether the `counter` argument is an object created via `Counter`, `ResetCounter`,
 or any other object which supports the `inc` operation.
 
 ## Classes
@@ -276,7 +276,7 @@ const New = f => x => f(New(f))(x)
 const counter = New(SetCounterClass)({ count: 0, min: 0, max: 10 })
 ```
 
-That's better, here is the result with a minor inconvenience `self(state)`:
+That's better, here is the result with the minor inconvenience of `self(state)`:
 
 ```js
 const SetCounterClass = self => state => ({
@@ -293,27 +293,7 @@ const SetCounterClass = self => state => ({
 })
 ```
 
-Let's lift the `self(state)` out of the and rename the `self` parameter to `fnSelf` for clarity:
-
-```js
-const SetCounterClass = fnSelf => state => {
-    const self = fnSelf(state)
-    return {
-        get: () => state.count,
-        set: value => { state.count = value },
-        inc: () => {
-            if (state.count < state.max)
-                self.set(state.count + 1)
-        },
-        dec: () => {
-            if (state.count > state.min)
-                self.set(state.count - 1)
-        }
-    }
-}
-```
-
-Besides that, if we run a sanity check, we'll see that it works:
+Besides that, if we run a sanity check, we can see that it works:
 
 ```js
 const counter = New(SetCounterClass)({ count: 0, min: 0, max: 10 })
@@ -329,15 +309,11 @@ console.log(counter.get()) // 4
 Let's bring back inheritance with a slightly more interesting class hierarchy:
 
 ```js
-const AnimalClass = fnSelf => state => {
-    {
-        const self = fnSelf(state)
-        return {
-            speak: (repeats) => '',
-            move: (repeats) => '',
-            act: (repeats) => self.move(repeats) + ' ' + self.speak(repeats)
-        }
-    }
+const AnimalClass = self => state => ({
+    speak: (repeats) => '',
+    move: (repeats) => '',
+    act: (repeats) => self(state).move(repeats) + ' ' + self(state).speak(repeats)
+})
 
 const BirdClass = self => state => {
     const parent = AnimalClass(self)(state)
@@ -368,50 +344,14 @@ console.log(dog.act(2)) // "run run bark bark"
 In the above example, `AnimalClass` is the base class and `BirdClass` and `DogClass` are subclasses.
 The `speak` and `move` operations are overridden in the subclasses. The `act` operation is defined
 in the base class and utilizes the overridden operations via open recursion through `self(state)`.
-We now have all the basic features for implementing classes.
+We now have all the basic features of a class.
 
-## Clean Up
-
-The need to write `self(state)` and `AnimalClass(self)` is a bit of a nuisance. We can clean this up
-by introducing a `Class` function which takes a class definition and returns a constructor. Example usage:
-
-```js
-const Animal = Class(null, self => parent => ({
-    speak: (repeats) => '',
-    move: (repeats) => '',
-    act: (repeats) => self.move(repeats) + ' ' + self.speak(repeats)
-}))
-
-const Bird = Class(Animal, self => parent => ({
-    speak: (repeats) => Array(repeats).fill('chirp').join(' '),
-    move: (repeats) => Array(repeats).fill('fly').join(' ')
-}))
-
-const Dog = Class(Animal, self => parent =>({
-    speak: (repeats) => Array(repeats).fill('bark').join(' '),
-    move: (repeats) => Array(repeats).fill('run').join(' '),
-    act: (repeats) => parent.act(repeats)
-}))
-```
-
-```js
-const New = f => x => f(New(f))(x)
-
-const Class = body => {
-    const Parent = body[extend] || ((_state) => ({}))
-
-    return (state) => {
-        return New(body)(self, parent, state)
-    }
-}
-```
+From here we can add more features such as _multiple inheritance_, _mixins_, static methods, and so on.
+We can also abstract the `New` combinator inside a `Class` function if we want, but that's left as an
+exercise for the reader. If you create something interesting based on this, share it in the comments below.
 
 ## References and Further Reading
 
 * [Types and Programming Languages](https://www.cis.upenn.edu/~bcpierce/tapl/). Benjamin C. Pierce. Chapter 18
 * [A Proposal for Simplified, Modern Definitions of "Object" and "Object Oriented"](https://wcook.blogspot.com/2012/07/proposal-for-simplified-modern.html). William Cook
 * [Lambda The Ultimate: Open Recursion in Haskell](http://lambda-the-ultimate.org/node/4569#comment-71821). William Cook
-
-## Misc
-
-* <https://www.typescriptlang.org/play?jsx=0&filetype=js#code/MYewdgzgLgBAcgUwO4wLwwGZoHwwB46YAUiSRGAlBUXhQLABQA9AFSOiSwDCANgIYQIaGABMEwHoVJExE+g3bhoMAIJgAlgFs+PXgKHoAygh5ZUuaHygJCRAN6MYTmBAAOCPgGsAXDCIAnBHcrCApCAHJwgBpHZ00QADcEXwCgjyhQiOjYpz5gKBTA4Iyw8xhjUyJLawoAOnik1OLMgGoYcPaYNoqMKqgrBDq3D08m9NDGAF95RU4YACF1fxE9QWEewmqbMocGZxgOZVc+QLBYdDUtHVWIIh7qLfl9wKgAV38wGF39-dq-49OUBiex+TmGXkKaRCpVwKn8-j4AE8xtDahh1DweERwsAABZLVzhOoAKxA6jA2PaFGBoKcDWSfiK4xhqnhSJRJTRGKx4QwPERRNqpPJlKJORgkymjFmygAIiAAOY3dYmMwWfrWQjfZyHWAAhBnYSXbS6fiCO6qh4awbil7vT7a0F-Wr6s402ngnyMqElQhwhHIpmo9GY7EAIxOnkFwopHSJ7tB9MhzRZ-vZQc5IZ5-leYGjZNjVPFkoYJZlsDDSxEwmki2WN2odmmCdEipryCI8qVZtC9mm0oYhxAPAQtR4iqIleWtU9RAATFQYEwmDAAER4gkHfH+VyrmXD0fjhUyRUz4KjADMi+Xa4j-k8MDvD6fe8HSgPY4nIlPeSg8+vK6rjmnzAY+kZgfer4sEwA66jAyroJoCBQLiIAiAYuCOgcSiwBAqrtmQeGmLYWH7LqOb5CA-gpM6JwKpkOzirS2GQB+R5VKqUQwHREwgsxTh2h8MBIShaEQLU5GvJR-gcaYXG0f49FPLSJbMTezogChCD+MJyGoehxZUAA3LayH2i4qoSThFFQFRJmlvZ5bwSAubWDp6A3PY4qSdJKRERg8l-IE0AsqROrviOn7HuEXDWVJUBinxEpTDMb5zMAwixa52lEFeQA>
