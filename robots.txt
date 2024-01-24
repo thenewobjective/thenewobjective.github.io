@@ -7,4 +7,6 @@ User-agent: GPTBot
 User-agent: Google-Extended
 User-agent: Omgilibot
 User-agent: FacebookBot
+User-agent: anthropic-ai
+User-agent: cohere-ai
 Disallow: /
