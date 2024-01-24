@@ -560,3 +560,11 @@ https://www.johndcook.com/blog/2022/01/21/modal-logic-and-sf/
 https://twitter.com/BartoszMilewski/status/1582041833940865024
 https://bigthink.com/starts-with-a-bang/reality-objective-exist/
  -->
+
+<!--
+  godel's incompleteness
+
+there are true statements that can not be proven in a particular system
+
+What does "true" mean then?
+-->
