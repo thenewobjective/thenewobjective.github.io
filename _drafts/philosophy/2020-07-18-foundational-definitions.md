@@ -568,3 +568,12 @@ there are true statements that can not be proven in a particular system
 
 What does "true" mean then?
 -->
+
+<!--
+<https://twitter.com/JohnDCook/status/1752353520819265943>
+  """
+  Objectivity often requires truncating reality to some quantifiable parody.
+  This leads to defensible decisions, but poor decisions.
+  For example, promoting based on years of tenure rather than achievement.
+  """
+-->
