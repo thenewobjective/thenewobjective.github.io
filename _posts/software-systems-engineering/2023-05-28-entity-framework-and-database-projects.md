@@ -1,10 +1,12 @@
 ---
 layout: post
 icon: file-text
-title:  "Entity Framework and Database Projects"
+title:  "The Center of an Application: EF and Databases"
 date:   2023-05-28 13:00:00 -0600
 category: Software Systems Engineering
-permalink: /software-systems-engineering/entity-framework-and-database-projects
+permalink: /software-systems-engineering/the-center-of-an-application-ef-and-databases
+redirect_from:
+    - /software-systems-engineering/entity-framework-and-database-projects
 ---
 
 * TOC
