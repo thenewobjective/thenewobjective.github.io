@@ -111,6 +111,8 @@ You can't spell Fragile without Agile
 
 if agile is so great why is our software so bad?
 
+https://www.linkedin.com/pulse/70-software-development-projects-fail-yours-doesnt-/
+
 Scrum
 	estimated effort vs actual effort and point value
 

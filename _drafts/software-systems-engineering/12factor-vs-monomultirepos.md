@@ -20,8 +20,7 @@ Challenges
 o	Where will shared dependencies be stored and managed?
 o	Where will requirements and work be managed?
 •	In the long term for multiple-teams
-o	Where will shared dependencies be stored and managed?
-o	Where will requirements and work be managed?
+
 
 Multi-Repo
 

@@ -3,6 +3,14 @@
 
 https://www.huffingtonpost.ca/entry/math-problem-twitter-bedmas-pemdas_ca_5d420367e4b0acb57fc6b0fd
 
+8/2(2+2) = ?
+BODMAS: 16
+PEMDAS:   1
+FOIL: 1
+
+http://lambda-the-ultimate.org/node/2943
+https://wiki.c2.com/?OperatorPrecedenceConsideredHarmful
+
     (2/3) / (3/7) =
         {reciprocal of 2nd fraction}
     (2/3) * (7/3) =
