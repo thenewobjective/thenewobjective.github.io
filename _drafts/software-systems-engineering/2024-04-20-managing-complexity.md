@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Managing Complexity"
-date:   2022-09-04 13:00:00 -0600
+date:   2024-04-20 13:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/managing-complexity
 ---
@@ -12,7 +12,11 @@ permalink: /software-systems-engineering/managing-complexity
 
 ## Introduction
 
-{TODO}
+Most software projects [fail](https://www.standishgroup.com/sample_research_files/DemoPRBR.pdf) (~75%).
+This is a fact that has been known for decades. The reasons for this are many and varied but generally fall into
+two categories: human organization and technical. The human organization aspect I have covered in a
+[previous article](/software-systems-engineering/conways-law-and-consequences). Here I will focus on the
+technical aspect and how we can manage our problems as they scale.
 
 ## What is Software Architecture
 
@@ -275,6 +279,28 @@ Server-Side language (C#, PHP, etc.), SQL for database access, YAML for build an
 <!--
 https://martinfowler.com/dsl.html
 https://en.wikipedia.org/wiki/Domain-specific_language
+-->
+
+<!--
+
+https://www.giorgiosironi.com/2013/01/pyramids-and-cathedrals.html?m=1
+
+-->
+
+<!-- Alan Kay:
+We often have to be reminded about the largest and most important difference between maths and science:
+ that our ideas and beliefs and reasoning about them (maths) happen strictly between our ears, and thus
+ can be consistent but not at all in accord with our external situation or what we should be doing — whereas
+ science is done with the knowledge that it is being thought about by our limited brains and so we need to put
+ in a lot more work to draw any kind of conclusions that might have something to do with “What’s out there?”.
+
+Einstein, in a talk in 1921, felt he had to remind his audience of physicists about this: he felt they were taking
+ their mathematical conclusions far too literally about “What’s out there?”. He said to them:
+
+“As far as the laws of mathematics refer to reality, they are not certain;
+and as far as they are certain, they do not refer to reality.”
+
+If we are able to see that what he means by the “laws of mathematics” refers to all human reasoning, then we can see why getting fluent in maths and science is critical for general daily like (as with reading and writing). He is talking about the need for a special new kind of sanity for humanity: one that both allows internal reasoning and then requires it to be “negotiated” with the actual universe we live in (whether within our families, towns, countries, etc).
 -->
 
 <!--
