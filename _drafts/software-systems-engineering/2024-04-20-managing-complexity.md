@@ -505,6 +505,16 @@ Simple vs Easy. The goal of architecture is simplicity, not familiarity
 https://youtu.be/LKtk3HCgTa8?t=1149
 -->
 
+<!--
+'So much complexity in software comes from trying to make one thing do two things.' -- Ryan Singer
+-->
+
+<!--
+"I claim that compositionality is extremely delicate, and that it is so powerful that
+ it is worth going to extreme lengths to achieve it."
+ <https://julesh.com/2017/04/22/on-compositionality/>
+-->
+
 ## References and Additional Resources
 
 * _[Clean architecture : a craftsman's guide to software structure and design](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)_, Robert C. Martin, 2017
