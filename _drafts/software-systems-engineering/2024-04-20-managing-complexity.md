@@ -14,9 +14,9 @@ permalink: /software-systems-engineering/managing-complexity
 
 Most software projects [fail](https://www.standishgroup.com/sample_research_files/DemoPRBR.pdf) (~75%).
 This is a fact that has been known for decades. The reasons for this are many and varied but generally fall into
-two categories: human organization and technical. The human organization aspect I have covered in a
+two categories: human organization and technical. The human organization aspect I have covered somewhat in a
 [previous article](/software-systems-engineering/conways-law-and-consequences). Here I will focus on the
-technical aspect and how we can manage our problems as they scale.
+technical aspect.
 
 ## What is Software Architecture
 
@@ -81,6 +81,10 @@ Credit: [Wikipedia](https://en.wikipedia.org/wiki/Arch#/media/File:Arch_Balance_
 
 The arch enabled grander constructions with orders of magnitude less effort.
 No more brute-forcing large structures. We obtain scale through organization.
+
+> As with most media from which things are built, whether the thing is a cathedral, a bacterium, a sonnet,
+> a fugue or a word processor, architecture dominates material. To understand clay is not to understand the pot.
+> <cite>- Alan Kay</cite>
 
 <table>
     <tr>
