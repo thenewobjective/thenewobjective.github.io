@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Managing Complexity"
-date:   2024-04-20 13:00:00 -0600
+date:   2024-05-09 13:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/managing-complexity
 ---
