@@ -248,6 +248,25 @@ I like to call **"Anergetic Systems Failure"**, or as others have called it:
 ["Project Heat Death"](https://ieeexplore.ieee.org/document/4302682) as an
 [analogy from cosmology](https://en.wikipedia.org/wiki/Heat_death_of_the_universe).
 
+## A Semiotic Perspective
+
+Semiotics is the study of signs and symbols and their use or interpretation. In software, we have
+many signs and symbols that we use to communicate with the computer, our colleagues, and ourselves.
+The relationship between a symbol and its meaning is represented by a
+"[Semiotic Triangle](https://en.wikipedia.org/wiki/Triangle_of_reference)":
+
+<figure>
+    <img src="/media-library/software-systems-engineering/semiotic-triangle.png" alt="Semiotic Triangle">
+    <figcaption>The Semiotic Triangle</figcaption>
+</figure>
+
+In this diagram you see a relationship between Thought, Symbol, and Referent. The Thought is the
+concept/idea you are trying to express. The Symbol (Syntax) is the representation of that concept.
+The Referent (meaning) is the [Thing-in-itself](https://en.wikipedia.org/wiki/Thing-in-itself)
+that the concept refers to.
+
+
+
 ## Measuring Complexity
 
 In order to have any hope of understanding and therefore managing complexity, we must first measure it
