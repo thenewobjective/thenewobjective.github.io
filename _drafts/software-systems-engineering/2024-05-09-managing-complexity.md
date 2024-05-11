@@ -265,7 +265,11 @@ concept/idea you are trying to express. The Symbol (Syntax) is the representatio
 The Referent (meaning) is the [Thing-in-itself](https://en.wikipedia.org/wiki/Thing-in-itself)
 that the concept refers to.
 
+Complexity can be found in all three aspects of the Semiotic Triangle:
 
+* **Referent Complexity**: The phenomenon we are dealing with can be difficult to understand (eg. Black Holes).
+* **Thought Complexity**: Our mental model can be a poor representation (eg. Flat Earth Theory)
+* **Symbol Complexity**: The language we use to express our thoughts can be verbose and unclear (eg. Arithmetic in Roman Numerals)
 
 ## Measuring Complexity
 
