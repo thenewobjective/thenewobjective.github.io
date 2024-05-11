@@ -29,12 +29,13 @@ I’m primarily interested in the study and application of Programming Language 
   desc="UW-Milwaukee"
 %}
 
-<details>
-    <summary>Courses</summary>
-    <ul>
-        <li>Type Systems and Programming Languages</li>
-        <li>Advanced Compilers</li>
-    </ul>
+<details markdown="1">
+  <summary>Courses</summary>
+
+* Type Systems and Programming Languages
+* Advanced Compilers
+
+---
 </details>
 
 {% include resume-item.html
@@ -42,44 +43,45 @@ I’m primarily interested in the study and application of Programming Language 
   alt="UWM Logo"
   title="B.Sc Computer Science"
   time="2010 – 2014"
-  desc="UW-Milwaukee. Thesis: <a href='/media-library/publications/Versioned-Lexical-Search.pdf'>Versioned Lexical Search</a>"
+  desc="UW-Milwaukee. Thesis: [Versioned Lexical Search](/media-library/publications/Versioned-Lexical-Search.pdf)"
 %}
 
-<details>
-    <summary>Courses</summary>
-    <ul>
-        <li>Algorithm Design and Analysis</li>
-        <li>American Popular Music</li>
-        <li>Business & Professional Communication</li>
-        <li>Calculus & Analytic Geometry I, II, III</li>
-        <li>Compilers</li>
-        <li>Computer Architecture</li>
-        <li>Computer Networks</li>
-        <li>Data Structures & Algorithms</li>
-        <li>Digital Logic</li>
-        <li>Discrete Information Structures</li>
-        <li>General Physics I, II, + Laboratory</li>
-        <li>German I & II</li>
-        <li>Honors College – War and Peace</li>
-        <li>Honors College – End of Nature</li>
-        <li>Computer Organization + Assembly Language</li>
-        <li>Systems Programming</li>
-        <li>Linguistics – Diversity of Human Languages</li>
-        <li>Database Systems</li>
-        <li>Software Engineering</li>
-        <li>Theory of Computation</li>
-        <li>Linear Algebra & Differential Equations</li>
-        <li>Linguistics</li>
-        <li>Macroeconomics</li>
-        <li>Object Oriented Programming</li>
-        <li>Operating Systems</li>
-        <li>Planetary Geology</li>
-        <li>Principles of Macroeconomics</li>
-        <li>Programming Language Concepts</li>
-        <li>Statistical Analysis</li>
-        <li>Type Theory</li>
-        <li>Western Civilization (1500 – Present)</li>
-    </ul>
+<details markdown="1">
+  <summary>Courses</summary>
+
+* Algorithm Design and Analysis
+* American Popular Music
+* Business & Professional Communication
+* Calculus & Analytic Geometry I, II, III
+* Compilers
+* Computer Architecture
+* Computer Networks
+* Data Structures & Algorithms
+* Digital Logic
+* Discrete Information Structures
+* General Physics I, II, + Laboratory
+* German I & II
+* Honors College – War and Peace
+* Honors College – End of Nature
+* Computer Organization + Assembly Language
+* Systems Programming
+* Linguistics – Diversity of Human Languages
+* Database Systems
+* Software Engineering
+* Theory of Computation
+* Linear Algebra & Differential Equations
+* Linguistics
+* Macroeconomics
+* Object Oriented Programming
+* Operating Systems
+* Planetary Geology
+* Principles of Macroeconomics
+* Programming Language Concepts
+* Statistical Analysis
+* Type Theory
+* Western Civilization (1500 – Present)
+
+---
 </details>
 
 {% include resume-item.html
@@ -90,40 +92,39 @@ I’m primarily interested in the study and application of Programming Language 
   desc="Active Duty (+ 4 years Inactive Reserve)"
 %}
 
-<details>
-    <summary>Training and Courses</summary>
-    <ul>
-        <li>Basic Warehousing</li>
-        <li>Combat First Aid & CPR</li>
-        <li><a target="_blank" href="https://www.trngcmd.marines.mil/Units/South-Atlantic/MCCSSS/MCCSSS-Schools/Ground-Supply-School/">Enlisted Supply Basic Course</a></li>
-        <li>Fundamentals of Marine Corp Leadership</li>
-        <li>Jungle Warfare Training</li>
-        <li>Land Navigation</li>
-        <li>Operations Against Guerrilla Units</li>
-        <li><a href="https://www.trngcmd.marines.mil/Units/West/SOI-W/" target="_blank">School of Infantry</a></li>
-        <li>Solid State Devices</li>
-        <li>Marine Corp Martial Arts Program</li>
-        <li><a href="https://www.mcasfutenma.marines.mil/News/News-Article-Display/Article/610166/corporals-course-enhances-mission-readiness-aboard-mcas-futenma/" target="_blank">Corporal’s Leadership Course</a></li>
-        <li>Desert Operations</li>
-        <li>Fundamentals of Digital Logic</li>
-        <li>Introduction to Computation</li>
-        <li><a href="https://www.mcrdsd.marines.mil/" target="_blank">Recruit Training</a></li>
-        <li>Marine Rifleman Combat Skills</li>
-        <li>Math for Marines</li>
-        <li>Personal Financial Management</li>
-        <li>Terrorism Awareness</li>
-    </ul>
+<details markdown="1">
+  <summary>Training and Courses</summary>
+
+* Basic Warehousing
+* Combat First Aid & CPR
+* [Enlisted Supply Basic Course](https://www.trngcmd.marines.mil/Units/South-Atlantic/MCCSSS/MCCSSS-Schools/Ground-Supply-School/)
+* Fundamentals of Marine Corp Leadership
+* Jungle Warfare Training
+* Land Navigation
+* Operations Against Guerrilla Units
+* [School of Infantry](https://www.trngcmd.marines.mil/Units/West/SOI-W/)
+* Solid State Devices
+* Marine Corp Martial Arts Program
+* [Corporal’s Leadership Course](https://www.mcasfutenma.marines.mil/News/News-Article-Display/Article/610166/corporals-course-enhances-mission-readiness-aboard-mcas-futenma/)
+* Desert Operations
+* Fundamentals of Digital Logic
+* Introduction to Computation
+* [Recruit Training](https://www.mcrdsd.marines.mil/)
+* Marine Rifleman Combat Skills
+* Math for Marines
+* Personal Financial Management
+* Terrorism Awareness
+
+---
 </details>
 
 {% include resume-item.html
   image="/media-library/resume/Preble-High-School.jpg"
   alt="Preble High School Logo"
-  title="<a href='https://preble.gbaps.org/' target='_blank'>High School Diploma</a>"
+  title="[High School Diploma](https://preble.gbaps.org/)"
   time="2003"
   desc="Preble High School, Green Bay, WI"
 %}
-
----
 
 ## Certifications
 
@@ -162,7 +163,7 @@ I’m primarily interested in the study and application of Programming Language 
 {% include resume-item.html
   image="/media-library/resume/psmi.png"
   alt="PSMI icon"
-  title="<a href='https://www.scrum.org/user/593633' target='_blank'>Professional Scrum Master</a>"
+  title="[Professional Scrum Master](https://www.scrum.org/user/593633)"
   time="January 2020"
   desc=""
 %}
@@ -170,7 +171,7 @@ I’m primarily interested in the study and application of Programming Language 
 {% include resume-item.html
   image="/media-library/resume/pspoi.png"
   alt="PSPOI icon"
-  title="<a href='https://www.scrum.org/user/593633' target='_blank'>Professional Scrum Product Owner</a>"
+  title="[Professional Scrum Product Owner](https://www.scrum.org/user/593633)"
   time="January 2020"
   desc=""
 %}
@@ -178,7 +179,7 @@ I’m primarily interested in the study and application of Programming Language 
 {% include resume-item.html
   image="/media-library/resume/psdi.png"
   alt="PSDI icon"
-  title="<a href='https://www.scrum.org/user/593633' target='_blank'>Professional Scrum Developer</a>"
+  title="[Professional Scrum Developer](https://www.scrum.org/user/593633)"
   time="January 2020"
   desc=""
 %}
@@ -186,12 +187,10 @@ I’m primarily interested in the study and application of Programming Language 
 {% include resume-item.html
   image="/media-library/resume/particular-software-logo.png"
   alt="Distributed Systems Design Fundamentals"
-  title="<a href='https://www.credential.net/7ef5550e-b559-48a1-9c5f-187a0c377f38' target='_blank'>Distributed Systems Design Fundamentals</a>"
+  title="[Distributed Systems Design Fundamentals](https://www.credential.net/7ef5550e-b559-48a1-9c5f-187a0c377f38)"
   time="July 2021"
   desc=""
 %}
-
----
 
 ## Employment
 
@@ -200,43 +199,46 @@ I’m primarily interested in the study and application of Programming Language 
     alt="Final Hill"
     title="Founder"
     time="November 2020 - Present"
-    desc="<a href='https://final-hill.com/' target='_blank'>Final Hill</a>"
+    desc="[Final Hill](https://final-hill.com/)"
 %}
 
-<details>
-    <summary>Details</summary>
-    <ul>
-        <li>Requirements Engineering Tools</li>
-    </ul>
+<details markdown="1">
+  <summary>Details</summary>
+
+* Requirements Engineering Tools
+
+---
 </details>
 
 {% include resume-item.html
   image="/media-library/resume/rsi-icon.jpg"
   alt="Rural Sourcing"
   title="Principal Consultant, Manager"
-  time="November 2020 - Present"
-  desc="<a href='https://www.ruralsourcing.com/' target='_blank'>Rural Sourcing</a>"
+  time="November 2020 - January 2023"
+  desc="[Rural Sourcing](https://www.ruralsourcing.com/)"
 %}
 
-<details>
-    <summary>Details</summary>
-    <ul>
-        <li>(Formerly Centare)</li>
-        <li>Cloud Solution Architecture (Azure, AWS)</li>
-        <li>Data Engineering (ETL, Azure Data Factory)</li>
-        <li>Enterprise Architecture</li>
-        <li>Digital Experience Platforms (DXPs)</li>
-        <li>Magnolia CMS</li>
-        <li>Docker</li>
-        <li>Requirements Engineering</li>
-        <li>React JS, Angular</li>
-        <li>Digital Transformation</li>
-        <li>App Modernization</li>
-        <li>Micro-services</li>
-        <li>Micro-frontends</li>
-        <li>DevOps</li>
-        <li>Security + HIPAA Compliance</li>
-    </ul>
+<details markdown="1">
+  <summary>Details</summary>
+
+* (Formerly Centare)
+* Cloud Solution Architecture (Azure, AWS)
+* Data Engineering (ETL, Azure Data Factory)
+* Enterprise Architecture
+* Digital Experience Platforms (DXPs)
+* Magnolia CMS
+* Docker
+* Business Analysis
+* Requirements Engineering
+* React JS, Angular
+* Digital Transformation
+* App Modernization
+* Micro-services
+* Micro-frontends
+* DevOps
+* Security + HIPAA Compliance
+
+---
 </details>
 
 <details>
@@ -246,10 +248,10 @@ I’m primarily interested in the study and application of Programming Language 
       alt="Marquette Energy Analytics Icon"
       title="Marquette Energy Analytics"
       time=""
-      desc="<ul>
-        <li>Azure Data Factory training</li>
-        <li>Azure Machine Learning training</li>
-      </ul>"
+      desc="
+* Azure Data Factory training
+* Azure Machine Learning training
+"
     %}
 
     {% include resume-item.html
@@ -257,10 +259,10 @@ I’m primarily interested in the study and application of Programming Language 
       alt="Direct Supply Icon"
       title="Direct Supply"
       time=""
-      desc="<ul>
-        <li>Performed an evaluation of ~26 CMSes and DXPs to identify the appropriate platform for the company's Digital Transformation</li>
-        <li>Architected aided the client team in implementation of the chosen Digital Experience Platform (Magnolia)</li>
-      </ul>"
+      desc="
+* Performed an evaluation of ~26 CMSes and DXPs to identify the appropriate platform for the company's Digital Transformation
+* Architected aided the client team in implementation of the chosen Digital Experience Platform (Magnolia)
+"
     %}
 
     {% include resume-item.html
@@ -272,6 +274,8 @@ I’m primarily interested in the study and application of Programming Language 
         support Drug Manufacturers, Drug Rebate analysts, and Medical providers. This platform integrates
         with state medicaid agencies and financial systems."
     %}
+
+---
 </details>
 
 {% include resume-item.html
@@ -279,76 +283,57 @@ I’m primarily interested in the study and application of Programming Language 
   alt="Chalo icon"
   title="Principal Software Engineer"
   time="November 2018 – October 2020"
-  desc="<a href='https://www.chalo.tech/' target='_blank'>Chalo, LLC</a>"
+  desc="[Chalo, LLC](https://www.chalo.tech/)"
 %}
 
-<details>
-    <summary>Details</summary>
-    <ul>
-        <li>Full Stack Development
-            <ul>
-                <li>Sitecore</li>
-                <li>Umbraco</li>
-                <li>TypeScript</li>
-            </ul>
-        </li>
-        <li>Operations consulting
-            <ul>
-                <li>Application Life-cycle management</li>
-                <li>Version Control Systems</li>
-                <li>DevOps Configuration</li>
-                <li>Infrastructure configuration and support</li>
-            </ul>
-        </li>
-    </ul>
+<details markdown="1">
+  <summary>Details</summary>
+
+* Full Stack Development
+  * Sitecore
+  * Umbraco
+  * TypeScript
+* Operations consulting
+  * Application Life-cycle management
+  * Version Control Systems
+  * DevOps Configuration
+  * Infrastructure configuration and support
+
+---
 </details>
 
 <details>
     <summary>Clients</summary>
+
     {% include resume-item.html
       image="/media-library/resume/laughlin-constable.png"
       alt="Laughlin Constable icon"
       title="Laughlin Constable"
       time=""
-      desc="<ul>
-        <li>Sitecore 8.*  Development, architecture, and training
-            <ul>
-                <li>Project Architecture roadmap</li>
-                <li>Dependency Management (Nuget configuration)</li>
-                <li>Multi-Server Lucene configuration</li>
-                <li>Introduction and training of Database Projects</li>
-                <li>Lucene to Solr migration</li>
-            </ul>
-        </li>
-        <li>DevOps training and configuration
-            <ul>
-                <li>Build Configuration (Continuous Integration)</li>
-                <li>Release Management (Continuous Delivery)</li>
-                <li>Introduction of Config Transformation</li>
-            </ul>
-        </li>
-        <li>Automated, Custom, Drupal -&gt; Sitecore migration</li>
-        <li>Infrastructure consulting and configuration
-            <ul>
-                <li>Server Configuration</li>
-                <li>Network Topology identification and roadmap</li>
-            </ul>
-        </li>
-        <li>Version Control System training and configuration
-            <ul>
-                <li>TFS to Git migration</li>
-                <li>Branching strategy architecture and training</li>
-            </ul>
-        </li>
-        <li>Front End Development and training. Bootstrap JS</li>
-        <li>Limited Project Management consulting and training with Azure DevOps
-            <ul>
-                <li>Wiki implementation</li>
-                <li>Defining Work Item transition states</li>
-                <li>Traceability guidance and enforcement</li>
-            </ul>
-        </li>
-      </ul>"
+      desc="
+* Sitecore 8.*  Development, architecture, and training
+  * Project Architecture roadmap
+  * Dependency Management (Nuget configuration)
+  * Multi-Server Lucene configuration
+  * Introduction and training of Database Projects
+  * Lucene to Solr migration
+* DevOps training and configuration
+  * Build Configuration (Continuous Integration)
+  * Release Management (Continuous Delivery)
+  * Introduction of Config Transformation
+* Automated custom Drupal -&gt; Sitecore migration
+* Infrastructure consulting and configuration
+  * Server Configuration
+  * Network Topology identification and roadmap
+* Version Control System training and configuration
+  * TFS to Git migration
+  * Branching strategy architecture and training
+* Front End Development and training. Bootstrap JS
+* Limited Project Management consulting and training with Azure DevOps
+  * Wiki implementation
+  * Defining Work Item transition states
+  * Traceability guidance and enforcement
+"
     %}
 
     {% include resume-item.html
@@ -356,12 +341,14 @@ I’m primarily interested in the study and application of Programming Language 
       alt="Dohmen Logo"
       title="Dohmen"
       time=""
-      desc="<ul>
-        <li>Node.JS consulting and training</li>
-        <li>Azure DevOps configuration and training. (CI/CD)</li>
-        <li>Umbraco configuration</li>
-      </ul>"
+      desc="
+* Node.JS consulting and training
+* Azure DevOps configuration and training. (CI/CD)
+* Umbraco configuration
+"
     %}
+
+<hr>
 </details>
 
 {% include resume-item.html
@@ -369,18 +356,19 @@ I’m primarily interested in the study and application of Programming Language 
   alt="ShoU Health icon"
   title="Co-Founder, CISO, Head of DevSecOps"
   time="January 2018 – July 2020"
-  desc="<a href='https://www.shouhealth.com/' target='_blank'>ShoU Health</a>"
+  desc="[ShoU Health](https://www.shouhealth.com/)"
 %}
 
-<details>
-    <summary>Details</summary>
-    <ul>
-        <li>Systems Architecture</li>
-        <li>HIPAA Compliance</li>
-        <li>Progressive Web Apps (PWA) + Mobile</li>
-        <li>Full Stack (Node.js, TypeScript, C#, Babel, Azure)</li>
-        <li>Machine Learning </li>
-    </ul>
+<details markdown="1">
+  <summary>Details</summary>
+
+* Systems Architecture
+* HIPAA Compliance
+* Progressive Web Apps (PWA) + Mobile
+* Full Stack (Node.js, TypeScript, C#, Babel, Azure)
+* Machine Learning
+
+---
 </details>
 
 {% include resume-item.html
@@ -391,63 +379,45 @@ I’m primarily interested in the study and application of Programming Language 
   desc="Layer One Media"
 %}
 
-<details>
-    <summary>Details</summary>
-    <ul>
-        <li>System Administration (WinOps)
-            <ul>
-                <li>Desktop Support</li>
-                <li>Local infrastructure management</li>
-                <li>Group Policy</li>
-                <li>Azure Migration, configuration, and management</li>
-            </ul>
-        </li>
-        <li>Software Systems Engineering
-            <ul>
-                <li>Creation/Enforcement of Software Engineering Standards</li>
-                <li>Evolved a Document Management system for consolidation and tracability of business assets</li>
-            </ul>
-            <ul>
-                <li>User Requirements Specification (URS)</li>
-                <li>Work Breakdown Structure (WBS)</li>
-                <li>Software Requirements Specification (SRS)</li>
-                <li>Verification</li>
-                <li>Iteration/Sprint planning</li>
-            </ul>
-        </li>
-        <li>DevOps
-            <ul>
-                <li>Build Automation / Continuous Integration (CI)</li>
-                <li>Test Automation</li>
-                <li>Infrastructure Management (Containerization, Virtualization)</li>
-                <li>Deployment Automation / Continuous Deployment (CD) / Release Management</li>
-                <li>Monitoring</li>
-            </ul>
-        </li>
-        <li>Operations
-            <ul>
-                <li>Identification of legacy on-premises infrastructure and migration to Azure cloud infrastructure and Office365</li>
-            </ul>
-            <ul>
-                <li>Migration of legacy Subversion and on-premise TFS systems to Visual Studio Team Services TFS and later Git systems</li>
-                <li>Career Counseling and training of junior developers, engineers, and platform architects</li>
-                <li>Candidate Interviews</li>
-                <li>Technical and Tactical proficiency</li>
-            </ul>
-        </li>
-        <li>Web Application Development
-            <ul>
-                <li>TypeScript, Gulp, JavaScript</li>
-                <li>HTML, CSS (OOCSS, SMACSS)</li>
-            </ul>
-        </li>
-        <li>Sitecore Solution Architecture (version 6 &ndash; 8), implementation, deployment, and support</li>
-        <li>PHP development on the WordPress platform</li>
-        <li>InsiteCommerce PIM development</li>
-        <li>Legacy support for Delphi + Hayes Command set</li>
-        <li>Umbraco development and support</li>
-        <li>Legacy application .NET Support (2.0)</li>
-    </ul>
+<details markdown="1">
+  <summary>Details</summary>
+
+* System Administration (WinOps)
+  * Desktop Support
+  * Local infrastructure management
+  * Group Policy
+  * Azure Migration, configuration, and management
+* Software Systems Engineering
+  * Creation/Enforcement of Software Engineering Standards
+  * Evolved a Document Management system for consolidation and tracability of business assets
+  * User Requirements Specification (URS)
+  * Work Breakdown Structure (WBS)
+  * Software Requirements Specification (SRS)
+  * Verification
+  * Iteration/Sprint planning
+* DevOps
+  * Build Automation / Continuous Integration (CI)
+  * Test Automation
+  * Infrastructure Management (Containerization, Virtualization)
+  * Deployment Automation / Continuous Deployment (CD) / Release Management
+  * Monitoring
+* Operations
+  * Identification of legacy on-premises infrastructure and migration to Azure cloud infrastructure and Office365
+  * Migration of legacy Subversion and on-premise TFS systems to Visual Studio Team Services TFS and later Git systems
+  * Career Counseling and training of junior developers, engineers, and platform architects
+  * Candidate Interviews
+  * Technical and Tactical proficiency
+* Web Application Development
+  * TypeScript, Gulp, JavaScript
+  * HTML, CSS (OOCSS, SMACSS)
+* Sitecore Solution Architecture (version 6 &ndash; 8), implementation, deployment, and support
+* PHP development on the WordPress platform
+* InsiteCommerce PIM development
+* Legacy support for Delphi + Hayes Command set
+* Umbraco development and support
+* Legacy application .NET Support (2.0)
+
+---
 </details>
 
 <details>
@@ -545,6 +515,7 @@ I’m primarily interested in the study and application of Programming Language 
             </figcaption>
         </figure>
     </article>
+    <hr>
 </details>
 
 {% include resume-item.html
@@ -555,28 +526,29 @@ I’m primarily interested in the study and application of Programming Language 
   desc="Perficient"
 %}
 
-<details>
-    <summary>Details</summary>
-    <ul>
-        <li>Acqui-hire from Zeon Solutions</li>
-        <li>.NET development utilizing C#</li>
-        <li>Development/Implementation of an Insite data adapter</li>
-        <li>Foxpro data migration and manipulation </li>
-        <li>Design, implementation, and deployment of Content Managed Web Applications using .NET (C#) and the Sitecore CMS platform (including Active Directory Integration)</li>
-        <li>Designing Information Architecture for Web Applications</li>
-        <li>Collaboration with Developers to define and implement Best Practices, Coding Standards/Conventions and Design Methodologies</li>
-        <li>Creating training presentations for Developers, Project Managers and Software Architects on the design and implementation of client-centric web applications as and their interaction with server-centric technologies</li>
-        <li>Providing ongoing training and support for junior and fellow developers .NET, Web, and SQL<br>development &amp; best practices</li>
-        <li>Performing customer service and engaging with clients in 1-on-1 as well as group client meetings</li>
-        <li>Evangelizing REST+HATEOAS, SMACSS stylesheet architecture</li>
-        <li>PCI compliance</li>
-        <li>Performing Code Reviews</li>
-        <li>Solution Architect and Tech-Lead roles as required</li>
-        <li>Informatica PIM Configuration</li>
-        <li>Technical representative at University Job Fairs</li>
-        <li>Migration of a Legacy IBM Domino application to Google App Maker (Alpha)</li>
-        <li>Dashboard creation with pre-release version of Chromecast</li>
-    </ul>
+<details markdown="1">
+  <summary>Details</summary>
+
+* Acqui-hire from Zeon Solutions
+* .NET development utilizing C#
+* Development/Implementation of an Insite data adapter
+* Foxpro data migration and manipulation
+* Design, implementation, and deployment of Content Managed Web Applications using .NET (C#) and the Sitecore CMS platform (including Active Directory Integration)
+* Designing Information Architecture for Web Applications
+* Collaboration with Developers to define and implement Best Practices, Coding Standards/Conventions and Design Methodologies
+* Creating training presentations for Developers, Project Managers and Software Architects on the design and implementation of client-centric web applications as and their interaction with server-centric technologies
+* Providing ongoing training and support for junior and fellow developers .NET, Web, and SQL<br>development &amp; best practices
+* Performing customer service and engaging with clients in 1-on-1 as well as group client meetings
+* Evangelizing REST+HATEOAS, SMACSS stylesheet architecture
+* PCI compliance
+* Performing Code Reviews
+* Solution Architect and Tech-Lead roles as required
+* Informatica PIM Configuration
+* Technical representative at University Job Fairs
+* Migration of a Legacy IBM Domino application to Google App Maker (Alpha)
+* Dashboard creation with pre-release version of Chromecast
+
+---
 </details>
 
 <details>
@@ -647,6 +619,7 @@ I’m primarily interested in the study and application of Programming Language 
             </figcaption>
         </figure>
     </article>
+    <hr>
 </details>
 
 {% include resume-item.html
@@ -659,7 +632,9 @@ I’m primarily interested in the study and application of Programming Language 
 
 <details>
     <summary>Details</summary>
-    As an Undergraduate of Computing Science, I also worked as an Undergraduate Research assistant for Professor Ethan Munson and a number of doctoral students.
+    As an Undergraduate of Computing Science, I also worked as an Undergraduate Research assistant for Professor Ethan Munson
+    and a number of doctoral students.
+    <hr>
 </details>
 
 <details>
@@ -708,6 +683,7 @@ I’m primarily interested in the study and application of Programming Language 
             Details: <a href="/media-library/publications/Versioned-Lexical-Search.pdf" target="_blank">Versioned-Lexical-Search.pdf</a>
         </li>
     </ul>
+    <hr>
 </details>
 
 {% include resume-item.html
@@ -718,14 +694,15 @@ I’m primarily interested in the study and application of Programming Language 
   desc="Red Prairie"
 %}
 
-<details>
-    <summary>Details</summary>
-    <ul>
-        <li>Development of CRUD applications written in ExtJS + Other browser technologies including SVG</li>
-        <li>Reverse engineering and migration of legacy software written in a combination of C#, Java, Groovy and C</li>
-        <li>Interfacing with a back-end service by writing and using a stack-oriented query language (MOCA) + ANSI SQL</li>
-        <li>Performed corrections and extensions to a JavaScript parser to properly recognize syntactic constructs in the product build system in order to enforce coding standards</li>
-    </ul>
+<details markdown="1">
+  <summary>Details</summary>
+
+* Development of CRUD applications written in ExtJS + Other browser technologies including SVG
+* Reverse engineering and migration of legacy software written in a combination of C#, Java, Groovy and C
+* Interfacing with a back-end service by writing and using a stack-oriented query language (MOCA) + ANSI SQL
+* Performed corrections and extensions to a JavaScript parser to properly recognize syntactic constructs in the product build system in order to enforce coding standards
+
+---
 </details>
 
 {% include resume-item.html
@@ -741,6 +718,7 @@ I’m primarily interested in the study and application of Programming Language 
     <p>
         From time to time I engage in independent contracting on a variety of projects.
     </p>
+    <hr>
 </details>
 <details>
     <summary>Projects/Clients</summary>
@@ -760,6 +738,7 @@ I’m primarily interested in the study and application of Programming Language 
             </figcaption>
         </figure>
     </article>
+    <hr>
 </details>
 
 {% include resume-item.html
@@ -779,6 +758,7 @@ I’m primarily interested in the study and application of Programming Language 
         Languages and Technologies used during this period:<br>
         C#, VB.NET, VBScript, JScript (SSJS), JavaScript, XML, XSLT, MSSQL, ActionScript, PHP, ColdFusion
     </p>
+    <hr>
 </details>
 
 <details>
@@ -827,6 +807,7 @@ I’m primarily interested in the study and application of Programming Language 
             </figcaption>
         </figure>
     </article>
+    <hr>
 </details>
 
 {% include resume-item.html
@@ -844,6 +825,7 @@ I’m primarily interested in the study and application of Programming Language 
         and disposal, customer service, timely price changes, quality control and food sanitation. In the short time
         I was employed here I received 4 awards for outstanding customer service.
     </p>
+    <hr>
 </details>
 
 <details>
@@ -851,6 +833,7 @@ I’m primarily interested in the study and application of Programming Language 
     <ul>
         <li>Customer Service Award x4</li>
     </ul>
+    <hr>
 </details>
 
 {% include resume-item.html
@@ -866,6 +849,7 @@ I’m primarily interested in the study and application of Programming Language 
     <p>
     After my separation from the military I lived for a short period at the Park East Hotel. The owner was looking to relaunch his club and was in need of some extra hands to manage the crowd. After hearing of my experience from a number of earlier conversations, he offered a temporary position checking legal age and managing intoxicated/aggressive patrons. This lounge is now called Club Aura.
     </p>
+    <hr>
 </details>
 
 {% include resume-item.html
@@ -890,35 +874,28 @@ I’m primarily interested in the study and application of Programming Language 
     <p>
         The applications developed were data management programs designed to interface with legacy 3270 terminal and DOS systems as well as automate Microsoft Office Applications. These were developed primarily in JScript, VBScript, VBA and JSP.
     </p>
+    <hr>
 </details>
 
-<details>
-    <summary>Honors and Awards</summary>
-    <ul>
-        <li>Global War on Terrorism Medal</li>
-        <li>Good Conduct Medal</li>
-        <li>Honorable Discharge</li>
-        <li>Humanitarian Service Medal</li>
-        <li>Iraqi Campaign Medal</li>
-        <li>Letter of Appreciation
-            <ul>
-                <li>Humanitarian efforts in Thailand</li>
-            </ul>
-        </li>
-        <li>National Defense Medal</li>
-        <li>Navy Meritorious Unit Commendation</li>
-        <li>Rifle Expert Award x 2
-            <ul>
-                <li>M16A2 Rifle</li>
-            </ul>
-        </li>
-        <li>Rifle Sharpshooter Award
-            <ul>
-                <li>M16A4 Rifle</li>
-            </ul>
-        </li>
-        <li>Sea Service Deployment Ribbon x3</li>
-    </ul>
+<details markdown="1">
+  <summary>Honors and Awards</summary>
+
+* Global War on Terrorism Medal
+* Good Conduct Medal
+* Honorable Discharge
+* Humanitarian Service Medal
+* Iraqi Campaign Medal
+* Letter of Appreciation
+  * Humanitarian efforts in Thailand
+* National Defense Medal
+* Navy Meritorious Unit Commendation
+* Rifle Expert Award x 2
+  * M16A2 Rifle
+* Rifle Sharpshooter Award
+  * M16A4 Rifle
+* Sea Service Deployment Ribbon x3
+
+---
 </details>
 
 ## Organizations

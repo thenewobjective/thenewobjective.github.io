@@ -1,8 +1,8 @@
 <article class="resume-item">
     <img src="{{ include.image }}" alt="{{ include.alt }}" >
     <section class="resume-item_content">
-        <strong class="resume-item_title">{{ include.title }}</strong>
+        <strong class="resume-item_title">{{ include.title | markdownify }}</strong>
         <time class="resume-item_time">{{ include.time }}</time>
-        <span class="resume-item_desc">{{ include.desc }}</span>
+        <span class="resume-item_desc">{{ include.desc | markdownify }}</span>
     </section>
 </article>
