@@ -26,14 +26,11 @@ Traditional architecture is discussed in terms of buildings and other physical s
 Let's look at one of the most popular human-built structures
 [The Great Pyramid of Giza](https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza):
 
-<figure>
-    <img src="/media-library/software-systems-engineering/pyramid-of-giza.jpg" alt="The Great Pyramid of Giza">
-<figcaption markdown="1">
-
-Credit: [Nina Aldin Thune](https://commons.wikimedia.org/w/index.php?curid=282496)
-
-</figcaption>
-</figure>
+{% include figure.html
+  src="/media-library/software-systems-engineering/pyramid-of-giza.jpg"
+  alt="The Great Pyramid of Giza"
+  desc="Credit: [Nina Aldin Thune](https://commons.wikimedia.org/w/index.php?curid=282496)"
+%}
 
 This structure is quite imposing. Standing at 481 feet tall and having a weight of at
 least 5.75 million tons, it remained the largest man-made structure for more than 3,800 years.
@@ -43,26 +40,20 @@ Despite it being a grand monolith, can it be considered a grand architecture?
 No, this is an example of what can be accomplished with perhaps the greatest of brute force methods.
 It amounts to little better than a pile of rocks:
 
-<figure>
-    <img src="/media-library/software-systems-engineering/rock-pile.png" alt="A pile of rocks">
-<figcaption markdown="1">
-
-Credit: [Wikipedia](https://en.wikipedia.org/wiki/Cairn)
-
-</figcaption>
-</figure>
+{% include figure.html
+  src="/media-library/software-systems-engineering/rock-pile.png"
+  alt="A pile of rocks"
+  desc="Credit: [Wikipedia](https://en.wikipedia.org/wiki/Cairn)"
+%}
 
 Even so it still took more than 3,800 years until another structure could overtake it in height in the year 1092;
 [The Lincoln Cathedral](https://en.wikipedia.org/wiki/Lincoln_Cathedral):
 
-<figure>
-    <img src="/media-library/software-systems-engineering/lincoln-cathedral.jpg" alt="The Lincoln Cathedral">
-<figcaption markdown="1">
-
-Credit: [Wikipedia](https://en.wikipedia.org/wiki/Lincoln_Cathedral)
-
-</figcaption>
-</figure>
+{% include figure.html
+  src="/media-library/software-systems-engineering/lincoln-cathedral.jpg"
+  alt="The Lincoln Cathedral"
+  desc="Credit: [Wikipedia](https://en.wikipedia.org/wiki/Lincoln_Cathedral)"
+%}
 
 This cathedral stood at 525 feet and was the tallest man-made structure itself for another 238 years.
 You'll notice that the form of this structure is vastly different from the that of the pyramid.
@@ -70,14 +61,11 @@ What is the fundamental difference between the two? What enabled this new scale?
 The answer was not some new material but a new organization of existing ones, specifically the
 [Arch](https://en.wikipedia.org/wiki/Arch):
 
-<figure>
-    <img src="/media-library/software-systems-engineering/rock-arch.jpg" alt="Rock Arch">
-<figcaption markdown="1">
-
-Credit: [Wikipedia](https://en.wikipedia.org/wiki/Arch#/media/File:Arch_Balance_(cropped).jpg)
-
-</figcaption>
-</figure>
+{% include figure.html
+  src="/media-library/software-systems-engineering/rock-arch.jpg"
+  alt="Rock Arch"
+  desc="Credit: [Wikipedia](https://en.wikipedia.org/wiki/Arch#/media/File:Arch_Balance_(cropped).jpg)"
+%}
 
 The arch enabled grander constructions with orders of magnitude less effort.
 No more brute-forcing large structures. We obtained scale through organization.
@@ -87,34 +75,22 @@ No more brute-forcing large structures. We obtained scale through organization.
 > <cite markdown="1">[Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay)</cite>
 
 <table>
-    <tr>
-        <td>
-<figure>
-    <img src="/media-library/software-systems-engineering/pyramid-of-giza.jpg" alt="The Great Pyramid of Giza">
-<figcaption markdown="1">
-
-The Great Pyramid of Giza<br>
-**481 ft**<br>
-**5,750,000 tons**<sup>[[ref](https://weightofstuff.com/how-much-does-the-pyramid-of-giza-weigh/)]</sup><br>
-Credit: [Nina Aldin Thune](https://commons.wikimedia.org/w/index.php?curid=282496)
-
-</figcaption>
-</figure>
-        </td>
-        <td>
-<figure>
-    <img src="/media-library/software-systems-engineering/eiffel-tower.jpg" alt="Eiffel Tower">
-<figcaption markdown="1">
-
-The Eiffel Tower<br>
-**1,063 ft**<br>
-**8,047 tons**<sup>[[ref](https://en.wikipedia.org/wiki/Eiffel_Tower)]</sup><br>
-Credit: [Benh LIEU SONG](https://commons.wikimedia.org/w/index.php?curid=6926930)
-
-</figcaption>
-</figure>
-        </td>
-    </tr>
+  <tr>
+    <td>
+      {% include figure.html
+        src="/media-library/software-systems-engineering/pyramid-of-giza.jpg"
+        alt="The Great Pyramid of Giza"
+        desc="The Great Pyramid of Giza<br>**481 ft**<br>**5,750,000 tons**<sup>[[ref](https://weightofstuff.com/how-much-does-the-pyramid-of-giza-weigh/)]</sup><br>Credit: [Nina Aldin Thune](https://commons.wikimedia.org/w/index.php?curid=282496)"
+      %}
+    </td>
+    <td>
+      {% include figure.html
+        src="/media-library/software-systems-engineering/eiffel-tower.jpg"
+        alt="Eiffel Tower"
+        desc="The Eiffel Tower<br>**1,063 ft**<br>**8,047 tons**<sup>[[ref](https://en.wikipedia.org/wiki/Eiffel_Tower)]</sup><br>Credit: [Benh LIEU SONG](https://commons.wikimedia.org/w/index.php?curid=6926930)"
+      %}
+    </td>
+  </tr>
 </table>
 
 Thus, the following quote becomes clear:
@@ -147,8 +123,24 @@ There was a point where the computer was the most expensive part of a project. N
 the programmer. Computing has become practically free, but the price of the programmer has skyrocketed.
 You, I, and most people now have a supercomputer in their pocket:
 
-* **1997** - Intel ASCI Red/9152 supercomputer: **1.338 TFLOPS**
-* **2021** - IPhone 13 Pro: **1.5 TFLOPS**
+<table>
+  <tr>
+    <td>
+      {% include figure.html
+        src="/media-library/software-systems-engineering/Asci_red.jpg"
+        alt="Intel ASCI Red/9152 supercomputer"
+        desc="**1997** - Intel ASCI Red/9152 supercomputer: **1.338 TFLOPS**<br>By [Sandia National Laboratories](https://web.archive.org/web/19990202210213/http://www.sandia.gov/ASCI/images/RedPictures.htm)"
+      %}
+    </td>
+    <td>
+      {% include figure.html
+        src="/media-library/software-systems-engineering/iPhone_13_Pro.jpg"
+        alt="IPhone 13 Pro"
+        desc="**2021** - IPhone 13 Pro: **1.5 TFLOPS**<br>Image Credit: [Wikipedia](https://en.wikipedia.org/wiki/IPhone_13_Pro)"
+      %}
+    </td>
+  </tr>
+</table>
 
 Additionally, we have [Wirth’s Law](https://en.wikipedia.org/wiki/Wirth's_law) which is an adage on
 computer performance that states that software is getting slower more rapidly than hardware is
@@ -199,10 +191,10 @@ are not because the problems are complex but that we
 So the complexity of our code, whether it be extrinsic or intrinsic is the "weight" that bears upon us thus complexity
 is our "gravity" and what we fighting against. Our goal is then how can we get the two lines of this chart to align?
 
-<figure>
-    <img src="/media-library/software-systems-engineering/complexity-time-loc.png" alt="Complexity over time chart">
-    <figcaption>Intrinsic vs Extrinsic complexity over time</figcaption>
-</figure>
+{% include figure.html
+  src="/media-library/software-systems-engineering/complexity-time-loc.png"
+  alt="Complexity over time chart"
+  desc="Intrinsic vs Extrinsic complexity over time" %}
 
 We can't alter the intrinsic complexity of the problem, but we can reduce the extrinsic complexity of our solution.
 
@@ -255,21 +247,24 @@ many signs and symbols that we use to communicate with the computer, our colleag
 The relationship between a symbol and its meaning is represented by a
 "[Semiotic Triangle](https://en.wikipedia.org/wiki/Triangle_of_reference)":
 
-<figure>
-    <img src="/media-library/software-systems-engineering/semiotic-triangle.png" alt="Semiotic Triangle">
-    <figcaption>The Semiotic Triangle</figcaption>
-</figure>
+{% include figure.html
+  src="/media-library/software-systems-engineering/semiotic-triangle.png"
+  alt="Semiotic Triangle"
+  desc="The Semiotic Triangle" %}
 
 In this diagram you see a relationship between Thought, Symbol, and Referent. The Thought is the
 concept/idea you are trying to express. The Symbol (Syntax) is the representation of that concept.
 The Referent (meaning) is the [Thing-in-itself](https://en.wikipedia.org/wiki/Thing-in-itself)
 that the concept refers to.
 
-Complexity can be found in all three aspects of the Semiotic Triangle:
+Complexity can be found in all three aspects of the triangle:
 
-* **Referent Complexity**: The phenomenon we are dealing with can be difficult to understand (eg. Black Holes).
+* **Referent Complexity**: The phenomenon we are dealing with can be inscrutable (eg. Black Holes).
 * **Thought Complexity**: Our mental model can be a poor representation (eg. Flat Earth Theory)
-* **Symbol Complexity**: The language we use to express our thoughts can be verbose and unclear (eg. Arithmetic in Roman Numerals)
+* **Symbol Complexity**: The language we choose can be verbose and awkward (eg. Arithmetic in Roman Numerals)
+
+For each of these aspects, much can be written about how to manage complexity. Here I will focus on
+the Symbol Complexity as it is the most directly under our shared control.
 
 ## Measuring Complexity
 
