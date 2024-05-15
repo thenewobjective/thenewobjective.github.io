@@ -126,6 +126,8 @@ There are people without an inner voice:
 There are also people with Aphantasia who can't visualize things in their mind's eye.
 <https://en.wikipedia.org/wiki/Aphantasia>
 
+People on Ambien cook, sleepwalk, and do more.
+
 So the method of thinking is different among people and it's not just a matter of intelligence.
 the Natural Language we use to exchange ideas must therefore be
 translatable to the other's method of thinking. A shared, single, mental model is not possible.
