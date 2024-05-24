@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Managing Complexity"
-date:   2024-05-09 13:00:00 -0600
+date:   2024-05-23 13:00:00 -0600
 category: Software Systems Engineering
 permalink: /software-systems-engineering/managing-complexity
 ---
@@ -23,7 +23,7 @@ technical aspect.
 ### Fighting Gravity
 
 Traditional architecture is discussed in terms of buildings and other physical structures.
-Let's look at one of the most popular human-built structures
+Let us look at one of the most popular human-built structures
 [The Great Pyramid of Giza](https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza):
 
 {% include figure.html
@@ -120,7 +120,7 @@ summarized by a couple quotes:
 > <cite markdown="1">[Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay)</cite>
 
 There was a point where the computer was the most expensive part of a project. Now it is by far
-the programmer. Computing has become practically free, but the price of the programmer has skyrocketed.
+the programmer. Computing has become practically free, but the price of programming has skyrocketed.
 You, I, and most people now have a supercomputer in their pocket:
 
 <table>
@@ -135,8 +135,8 @@ You, I, and most people now have a supercomputer in their pocket:
     <td>
       {% include figure.html
         src="/media-library/software-systems-engineering/iPhone_13_Pro.jpg"
-        alt="IPhone 13 Pro"
-        desc="**2021** - IPhone 13 Pro: **1.5 TFLOPS**<br>Image Credit: [Wikipedia](https://en.wikipedia.org/wiki/IPhone_13_Pro)"
+        alt="iPhone 13 Pro"
+        desc="**2021** - iPhone 13 Pro: **1.5 TFLOPS**<br>Image Credit: [Wikipedia](https://en.wikipedia.org/wiki/IPhone_13_Pro)"
       %}
     </td>
   </tr>
@@ -156,15 +156,15 @@ range from 50% to 80% or more. There is also a cute aphorism called the [Ninety�
 > <cite>Tom Cargill, Bell Labs</cite>
 
 In my earlier article, ["Conway's Law and Consequences"](/software-systems-engineering/conways-law-and-consequences),
-I tackle the human organization aspect of software and how they relate. I invite you to read that before continuing here. In this article I'm focusing on the non-organization aspect.
+I tackle the human organization aspect of software and how they relate. I invite you to read that before continuing here. In this article I am focusing on the non-organization aspect.
 
-So back to the original question: What is the analogy to gravity in software and what is our "arch"?
+So back to the original question: What is the analogy to gravity in software and what are our "arches"?
 
 As we develop solutions, some problems are naturally (intrinsically) harder than others; for example: adding a
 list of numbers vs computing the running average of the same list. The code we write often has
 extraneous details and overhead that has nothing directly to do with the problem we are trying to solve (extrinsic).
 
-Let's compare a program that writes "Hello World" to the console in Java and JavaScript:
+Let us compare a program that writes "Hello World" to the console in Java and JavaScript:
 
 ```java
 // Java
@@ -188,7 +188,7 @@ are not because the problems are complex but that we
 > Elaborations to express an idea complicate the expression
 > <cite markdown="1">[Gerald Sussman](https://en.wikipedia.org/wiki/Gerald_Jay_Sussman)</cite>
 
-So the complexity of our code, whether it be extrinsic or intrinsic is the "weight" that bears upon us thus complexity
+So, the complexity of our code, whether it be extrinsic or intrinsic is the "weight" that bears upon us thus complexity
 is our "gravity" and what we fighting against. Our goal is then how can we get the two lines of this chart to align?
 
 {% include figure.html
@@ -196,7 +196,7 @@ is our "gravity" and what we fighting against. Our goal is then how can we get t
   alt="Complexity over time chart"
   desc="Intrinsic vs Extrinsic complexity over time" %}
 
-We can't alter the intrinsic complexity of the problem, but we can reduce the extrinsic complexity of our solution.
+We cannot alter the intrinsic complexity of the problem, but we can reduce the extrinsic complexity of our solution.
 
 > For any system, there is a certain amount of complexity that cannot be reduced
 > <cite markdown="1">[Tesler's Law](https://lawsofux.com/teslers-law/)</cite>
@@ -213,8 +213,8 @@ There is an analogous observation by [Michael Arntzenius](http://www.rntz.net/in
 
 > Software grows until it exceeds our capacity to understand it.
 
-These quotes may feel like observations of some greater general truth, but we don't need to take them as such.
-How does such a situation arise? It takes effort to implement features in our software and not all of those
+These quotes may feel like observations of some greater general truth, but we do not need to take them as such.
+How does such a situation arise? It takes effort to implement features in our software and not all those
 efforts are useful.
 
 In physics energy is defined as the ability to do work and can be expressed by the following relation:
@@ -227,23 +227,26 @@ to the desired outcome. Anergy is sometimes referred to as
 In software, we deal with this as well by the analogous relation:
 `Algorithm = Algorithmic Exergy + Algorithmic Anergy`. You may have seen this under another name:
 [Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity). Plainly speaking,
-when we express an algorithm we do so in some language we find convenient.
+when we express an algorithm, we do so in some language we find convenient.
 These could be flow charts, Python, a natural language like English, or even
 [artistic paintings](https://www.dangermouse.net/esoteric/piet/samples.html). Whatever we adopt as
 our language of expression, we also adopt certain trade-offs. In the above "Hello World" comparison
 you can identify the useful work (exergy) clearly: the logging of the "Hello World" message. You
 can also identify the wasted effort (anergy) in the Java code: the ceremony around defining the
 class and method. As we create ever larger systems, this incidental complexity (anergy)
-grows as well until the "weight" of it makes further changes practically impossible. This "weight"
+grows as well until the "weight" of it makes further changes impossible. This "weight"
 being the cognitive overhead and execution cost on the underlying machine. This ultimate failure
 I like to call **"Anergetic Systems Failure"**, or as others have called it:
 ["Project Heat Death"](https://ieeexplore.ieee.org/document/4302682) as an
 [analogy from cosmology](https://en.wikipedia.org/wiki/Heat_death_of_the_universe).
 
+> Interconnectedness makes big programs eventually crumble under their own weight.
+> <cite markdown="1">[Simon Peyton Jones](https://en.wikipedia.org/wiki/Simon_Peyton_Jones)</cite>
+
 ## A Semiotic Perspective
 
-Semiotics is the study of signs and symbols and their use or interpretation. In software, we have
-many signs and symbols that we use to communicate with the computer, our colleagues, and ourselves.
+[Semiotics](https://en.wikipedia.org/wiki/Semiotics) is the study of signs and symbols and their use or interpretation.
+In software, we have many signs and symbols that we use to communicate with the computer, our colleagues, and ourselves.
 The relationship between a symbol and its meaning is represented by a
 "[Semiotic Triangle](https://en.wikipedia.org/wiki/Triangle_of_reference)":
 
@@ -259,18 +262,18 @@ that the concept refers to.
 
 Complexity can be found in all three aspects of the triangle:
 
-* **Referent Complexity**: The phenomenon we are dealing with can be inscrutable (eg. Black Holes).
-* **Thought Complexity**: Our mental model can be a poor representation (eg. Flat Earth Theory)
-* **Symbol Complexity**: The language we choose can be verbose and awkward (eg. Arithmetic in Roman Numerals)
+* **Referent Complexity**: The phenomenon we are dealing with can be inscrutable (e.g., Black Holes).
+* **Thought Complexity**: Our mental model can be a poor representation (e.g., Flat Earth Theory)
+* **Symbol Complexity**: The language we choose can be verbose and awkward (e.g., Arithmetic in Roman Numerals)
 
 For each of these aspects, much can be written about how to manage complexity. Here I will focus on
-the Symbol Complexity as it is the most directly under our shared control.
+Symbol Complexity as it is the most directly under our shared control.
 
 ## Measuring Complexity
 
-In order to have any hope of understanding and therefore managing complexity, we must first measure it
-otherwise we have no way to know if we are making progress against it. There are many ways to measure
-complexity due to its multifaceted nature and which aspects of it you are interested in the most. Some
+To have any hope of managing complexity, we must be able to measure it otherwise we have no way to know
+if we are making progress against it. There are many ways to measure complexity due to its multifaceted nature
+ and which aspects of it you are interested in the most. Some
 measures of complexity include:
 
 | Complexity Measure | Perspective |
@@ -282,57 +285,72 @@ measures of complexity include:
 | [Kolmogorov complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity) | Algorithmic Entropy |
 | [Asymptotic Complexity](https://en.wikipedia.org/wiki/Analysis_of_algorithms) | Algorithmic Efficiency |
 
-<!--
-https://en.wikipedia.org/wiki/Goodhart's_law
-Goodhart's law is an adage often stated as, "When a measure becomes a target, it ceases to be a good measure".
--->
+With these measures in hand, we can manage complexity in part by reducing it. Keep in mind that
+these are representations of complexity and not the complexity itself; The map is not the territory.
+
+> "When a measure becomes a target, it ceases to be a good measure"
+> <cite markdown="1">[Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart's_law)</cite>
+
+By blindly optimizing for one measure of complexity you may inadvertently increase another. For example,
+seeking the shortest code (Kolmogorov complexity) can lead to opaqueness. You can see this in the following
+regex for [validating an email address](https://stackoverflow.com/a/201378/153209):
+
+```js
+(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
+```
+
+Another example is that by Reducing Asymptotic Complexity you can increase Cyclomatic Complexity.
+Compare the following two implementations for computing the [inverse square root](https://en.wikipedia.org/wiki/Fast_inverse_square_root):
+
+<table>
+  <tr>
+<td markdown="1">
+
+```js
+let invSqrt = (x) => 1 / Math.sqrt(x)
+```
+
+</td>
+<td markdown="1">
+
+```js
+let buffer = new ArrayBuffer(4),
+    ui32 = new Uint32Array(buffer),
+    f32 = new Float32Array(buffer);
+
+let invSqrt = (n) => {
+    ui32[0] = 0x5F3759DF - (ui32[0] >> 1);
+    let x = f32[0] = n;
+    return x * (1.5 - 0.5 * x * x * n);
+}
+```
+
+</td>
+  </tr>
+</table>
+
+The first implementation is clear and concise but the second may be more efficient depending on the runtime.
+So, which is "better" in terms of complexity?
 
 > "For every polynomial-time algorithm you have, there is an exponential algorithm that I would rather run"
 > <cite markdown="1">[Alan Perlis](https://en.wikipedia.org/wiki/Alan_Perlis)</cite>
 
-<!-- ## Semiotics
+Since complexity is multifaceted and cannot be minimized in all aspects simultaneously, we must instead treat
+its management like a [fitness landscape](https://en.wikipedia.org/wiki/Fitness_landscape)
+where we are optimizing for a balance of measures. As the project, environment, goals, and systems change,
+so too will the balance of complexity measures.
 
-> "The limits of my language mean the limits of my world."
-> <cite markdown="1">[Ludwig Wittgenstein](https://en.wikipedia.org/wiki/Ludwig_Wittgenstein)</cite>
+> Complexity cannot be removed, only shifted
+> <cite markdown="1">[Waterbed Theory](https://wiki.c2.com/?WaterbedTheory)</cite>
 
-The Sign, Signifier, and Signified are the three components of a sign. The Sign is the thing that is being
-represented, the Signifier is the representation of the thing, and the Signified is the concept that is
-being represented. This is the basis of [Semiotics](https://en.wikipedia.org/wiki/Semiotics).
+## Language: The Material of Thought
 
-Complexity can be found in all three components of a sign. -->
+Some believe that language is a tool, even a [tool of thought](https://www.jsoftware.com/papers/tot1.htm) and we
+should use the best tool for the job. The problem with this analogy is that tools go away when a job is done,
+but languages persist. A language is [not a tool but a material](https://schneide.blog/2009/12/21/the-fallacy-of-the-right-tool/)
+with which we build our software and as a consequence, it has a direct impact on the complexity of our work.
 
-<!-- Reference the refactoring website -->
-
-<!--
-### Technical Debt
-
-Object Points
-Function Points
-Story Points
-"Effort" vs "complexity" vs Familiarity
-
-https://en.wikipedia.org/wiki/Technical_debt
-
-* Help ticketing systems: Help ticketing systems are a common indicator and resource to identify potential issues. They can help you track and measure the number of open tickets, their priority, and the time it takes to resolve them.
-* Time-to-fix metrics: This measures the amount of time it takes to make changes to existing code and to solve problems without using quick fixes. This metric can help you identify areas where technical debt is accumulating.
-* Technical debt ratio (TDR): TDR is the ratio of the cost to fix the software system vs. the cost to build it. Tools like SonarQube and Coverity can help you measure TDR.
-* Number and severity of bugs left unfixed: Tracking the number and severity of bugs left unfixed per agile iteration can help you plan bug fixing activities for the next iteration.
-* Ownership, cohesion, and churn metrics: These metrics can help you measure technical debt by analyzing the ownership of code, its cohesion, and the rate of changes made to it.
-* Person-hours cost: This metric measures the cost of technical debt in person-hours. While it may not be the most accurate method, it can give you an idea of the scale of the problem.
-
-https://twitter.com/php_ceo/status/765298072691806209?lang=en
-https://web.archive.org/web/20220905232237/https://medium.com/@joaomilho/festina-lente-e29070811b84
--->
-
-## The Language Of The Domain
-
-> The complexity of software is an essential property, not an accidental one. Hence
-> descriptions of a software entity that abstract away its complexity often abstract away its
-> essence.
-> <cite markdown="1">Fred Brooks, [“No silver bullet”, 1987](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)</cite>
-
-Seeing that our choice of expression has a direct impact on the complexity of our work, we know
-the first problem to be solved: **choosing or creating the right language**.
+### The Language of The Domain
 
 What is the right language? It is the one that allows us to express ideas directly in
 terms of the [domain](https://en.wikipedia.org/wiki/Domain_(software_engineering)) in the most concise
@@ -340,10 +358,10 @@ and clear way. A "domain" is a sphere of knowledge, subject area, or activity. I
 the ["Universe of Discourse"](https://en.wikipedia.org/wiki/Domain_of_discourse#Universe_of_discourse).
 This we refer to as a [Domain Specific Language (DSL)](https://en.wikipedia.org/wiki/Domain-specific_language).
 It serves not only as the "material" with which we build our software but also as the
-[ubiqutous language](https://martinfowler.com/bliki/UbiquitousLanguage.html) that we use to communicate.
+[ubiquitous language](https://martinfowler.com/bliki/UbiquitousLanguage.html) that we use to communicate.
 Being a negotiated language between the computer, the programmer, and the domain, it can never be
 [informationally perfect](https://en.wikipedia.org/wiki/Kolmogorov_complexity)
-but still serves as a [tool of thought](https://www.jsoftware.com/papers/tot1.htm).
+but still serves as an optimal compromise.
 
 Some examples of DSLs would be a language of shapes for a graphics program (SVG), a language of
 queries for a database (SQL), or a language of styles for a document (CSS). These languages are
@@ -357,8 +375,8 @@ example DSL called [HQ9+](https://cliffle.com/esoterica/hq9plus/) for generating
 
 `9`
 
-Yes, that's it, a single character which will generate the lyrics to the song. This DSL is an extreme example of
-specialization but it can not be extended. When you have a closed domain like 99 Bottles of Beer, it is fine to
+Yes, that is it, a single character which will generate the lyrics to the song. This DSL is an extreme example of
+specialization but it cannot be extended. When you have a closed domain like 99 Bottles of Beer, it is fine to
 use a DSL like this. However, when you have an open domain where new entities may be introduced, you need a DSL
 that can also be extended. This is where the choice of language becomes critical.
 
@@ -367,19 +385,135 @@ Regular Expressions are a powerful tool for matching patterns in text but they a
 [many bugs](https://blog.codinghorror.com/regex-use-vs-regex-abuse/) due to the write-only nature of the language
 as many have called it. A better alternative would be a language like Raku's [Grammars](https://docs.raku.org/language/grammars)
 
-## The Language of the System
+<table>
+<summary>Regex vs Raku Grammar for matching an email address:</summary>
+<tr>
+<td markdown="1">
+
+```perl
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+```
+
+</td>
+<td markdown="1">
+
+```perl
+grammar EmailGrammar {
+    token TOP {
+        ^ <local-part> '@' <domain> $
+    }
+
+    token local-part {
+        <[a..z A..Z 0..9 ._%+-]>+
+    }
+
+    token domain {
+        <subdomain>+ % '.'
+    }
+
+    token subdomain {
+        <[a..z A..Z 0..9 -]>+
+    }
+}
+```
+
+</td>
+</tr>
+</table>
+
+The Raku Grammar is more verbose but it is also more readable and maintainable. It is also extensible
+whereas the Regex is not.
+
+A good language in general is one that consists of primitives that are
+[orthogonal](https://en.wikipedia.org/wiki/Orthogonality#Computer_science),
+a means of combination, and a means of abstraction. The primitives are the building blocks of the language
+and should be as simple as possible. The means of combination allows you to build more complex structures
+from the primitives, and the means of abstraction allows you to create new primitives from existing ones.
+
+> The purpose of abstraction is not to be vague, but to create a new semantic level
+> in which one can be absolutely precise.
+> <cite markdown="1">[Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_Dijkstra)</cite>
+
+With the concepts and language of the domain in hand, a paradigm emerges. With a language of shapes, you
+develop a shape-oriented paradigm. With a language of queries, you develop a query-oriented one, and so on.
+
+> "A well-designed program uses the right concepts, and the paradigm follows from the
+> concepts that are used. [Paradigms are epiphenomena]"
+> <cite markdown="1">[Peter Van Roy](http://lambda-the-ultimate.org/node/4698)</cite>
+
+Depending on the domain you are trying to model, you may find that it is still difficult to express in the
+language you are using. This may be due to the language not being expressive enough or the concepts
+not being well understood. You'll see this manifest as a proliferation of
+[design patterns](https://en.wikipedia.org/wiki/Software_design_pattern). These patterns emerge when
+the paradigm does not match the domain. They may not be obvious patterns but you'll
+["smell"](https://wiki.c2.com/?CodeSmell) them and feel that something is off;
+Leaky abstractions, emergent behaviors, boilerplate code, redundancy, invisible/implicit dependencies,
+and other aspects of the code that that cannot be eliminated by
+[refactoring](https://en.wikipedia.org/wiki/Code_refactoring).
+
+> Design patterns are bug reports against your programming language.
+> <cite markdown="1">[Peter Norvig](https://www.norvig.com/)</cite>
+
+> "The limits of my language mean the limits of my world."
+> <cite markdown="1">[Ludwig Wittgenstein](https://en.wikipedia.org/wiki/Ludwig_Wittgenstein)</cite>
+
+As Alan Kay has said: `Perspective is worth 80 IQ points`. By changing the perspective of the problem
+you can often find a better language to express it in and potentially eliminate the design patterns
+that have emerged. Instead of thinking in terms of shapes and groups, thinking in terms of
+objects and messages may be more appropriate. Instead of thinking in terms of queries and results,
+thinking in terms of transformations and rules may be more appropriate, and so on.
+
+An example is the Fibonacci sequence:
+
+```js
+let fib = (n) => n < 2 ? n : fib(n - 1) + fib(n - 2);
+```
+
+The above is a straightforward, but naive implementation that requires an exponential amount of time
+and space to produce a result (specifically, [O(φ)](https://en.wikipedia.org/wiki/Golden_ratio) which is in `O(n2)`).
+This can be improved significantly by utilizing [iteration](https://en.wikipedia.org/wiki/Iteration#Mathematics):
+
+```js
+const fib = n => {
+    const f = (n0, n1, step) => step === n ? n1 : f(n1, n0 + n1, step + 1);
+    return f(0, 1, 1);
+};
+```
+
+This implementation is linear in time (`O(n)`) and constant in space (`O(1)`). But a new design pattern has emerged
+of using a recursive function with an inner function for the purpose of iteration. We could abstract this pattern
+into an `iterate` function, or we could change our perspective and think of it in terms of a
+[Closed-Form Expression](https://en.wikipedia.org/wiki/Fibonacci_sequence#Closed-form_expression)
+which not only eliminates the pattern, but runs in constant time and space (`O(1)`):
+
+```js
+// Binet's Formula
+function fib(n) {
+    const sqrt5 = 5 ** 0.5,
+       phi = (1 + sqrt5) / 2,
+       psi = (1 - sqrt5) / 2;
+
+    return Math.round((phi**n - psi**n) / sqrt5);
+}
+```
+
+Changing perspective can be particularly challenging as it requires a shift in thinking, but it can also be very rewarding
+if you can find the right perspective for the problem you are trying to solve.
+
+### The Language of the System
 
 In most software projects, you will find that you are dealing with multiple domains. For example, in a web
 application you may have a separate domain for the database, the front-end, the back-end,
 deployment, and of course the business domain of the problem itself. Each of these may have their own DSLs:
 SQL for the database, HTML/CSS/JavaScript for the front-end, Java/C#/Python for the back-end, Terraform for the deployment,
 and potentially a DSL for the business domain itself
-(ie. [Decision Model and Notation](https://en.wikipedia.org/wiki/Decision_Model_and_Notation)).
+(i.e. [Decision Model and Notation](https://en.wikipedia.org/wiki/Decision_Model_and_Notation)).
 
-This leads to a cognitive overhead as you switch between these domains (Context Switching Cost).
+This leads to a cognitive overhead as you switch between these domains
+([Context Switching Cost](https://en.wikipedia.org/wiki/Task_switching_(psychology))).
 There is also the issue of [impedance mismatch](https://en.wikipedia.org/wiki/Object%E2%80%93relational_impedance_mismatch)
 between these domains when they interact with each other. You often find yourself writing code to translate between
-these domains (ORMs, APIs, etc.)
+them (ORMs, APIs, etc.)
 
 Many people try to avoid this problem by using a
 ["General Purpose Language"](https://en.wikipedia.org/wiki/General-purpose_programming_language) (GPL) for
@@ -391,11 +525,13 @@ in any particular domain which leads to incidental complexity due to the additio
 > A language is considered Low-Level if it forces you to pay attention to the irrelevant.
 > <cite markdown="1">[Alan Perlis](https://en.wikipedia.org/wiki/Alan_Perlis)</cite>
 
-> Design patterns are bug reports against your programming language.
-> <cite markdown="1">[Peter Norvig](https://www.norvig.com/)</cite>
-
 So by choosing a GPL for all domains you are trading off the cognitive overhead of coordinating multiple specialized
-languages for the incidental complexity of a coarser one. The General Purpose Language, especially the most popular ones,
+languages for the incidental complexity of a coarser one. Ex: Everything is an object in
+[Self](https://bibliography.selflanguage.org/self-power.html),
+everything is a function in [Joy](https://hypercubed.github.io/joy/html/j00rat.html),
+everything is a file in [Unix](https://en.wikipedia.org/wiki/Everything_is_a_file), etc.
+
+The General Purpose Language, especially the most popular ones,
 have a tendency to grow ever [larger and more complex](https://erights.medium.com/the-tragedy-of-the-common-lisp-why-large-languages-explode-4e83096239b9)
 as they try to cover more and more domains for their users. Eventually the language becomes so large that
 users start to use only small subsets of the language and the rest becomes a burden (C++, LaTex, Common Lisp, etc.).
@@ -413,11 +549,11 @@ In other words we want to have the facilities to create our own DSLs within the 
 [Language Oriented Programming](https://en.wikipedia.org/wiki/Language-oriented_programming) (LOP) but applied
 by the individual developer rather than the language designer. We create what are called
 [Internal DSLs](https://martinfowler.com/dsl.html). These are DSLs that are defined within the GPL itself.
-This is in contrast to *External DSLs* which are defined in a separate language and then translated into the GPL via a parser.
+This contrasts with *External DSLs* which are defined in a separate language and then translated into the GPL via a parser.
 Major benefits of Internal DSLs are that they are much quicker to develop and can leverage the existing tooling and features
-of the host language. The downside is that they are potentially limited by the host language and can not be extended as easily
+of the host language. The downside is that they are potentially limited by the host language and cannot be extended as easily
 if that host language is not extensible. Another challenge is the potential for
-"[mixing metaphors](https://www.masterclass.com/articles/mixed-metaphor)" in a confusing way: Is
+"[mixing metaphors](https://www.masterclass.com/articles/mixed-metaphor)" in a confusing way: is
 `table` a database table or a furniture table? This introduces an interesting analogy to
 [Language Games](https://en.wikipedia.org/wiki/Language_game_(philosophy)) in philosophy.
 
@@ -444,155 +580,108 @@ Other ways for defining Internal DSLs include but are not limited to
 
 ## Architecture
 
-Wether you are able to utilize an optimal language or not, there are still complexities that arise as the system grows.
-Don't fret, recall that the complexity of software is an essential property, not an accidental one and that
-architecture dominates material.
+Regardless of the quality of your building material (language), as the scale of your system grows,
+architecture dominates, so we turn to the question: What is "Architecture"?
+Software architecture is the organization of code into a structure that exhibits
+[emergent properties](https://en.wikipedia.org/wiki/Emergence). These properties can be both
+expected and unexpected. When expected, they are aimed towards the goals of the system. When unexpected,
+they are the bugs and performance issues that plague them. In other words, when the system is more
+than the sum of its parts it is the product of its interactions. The goal of architecture is to control
+these emergent properties to while keeping the system functional and maintainable. When the properties are
+not explicit in the code, then the system cannot be understood in terms of its parts. This is why many
+systems fail ([Systemantics](https://laetusinpraesens.org/docs/systfail.php)).
 
-{...TODO...}
+If you view architecture through the lens of language itself:
+primitives, means of combinations, and means of abstraction, then you can see that many familiar
+architectural patterns and practices can be categorized:
 
-<!-- ## Modularization -->
+* Primitives
+  * Entities
+  * Use Cases/Interactors
+  * Controllers/Presenters
+  * Gateways/Repositories
+  * etc.
+* Means of Combinations
+  * Layering
+  * Dependency Inversion
+  * Adapters
+  * etc.
+* Means of Abstraction
+  * Modules
+  * Interfaces and Abstract Classes
+  * Domain Events
+  * Factories
+  * Specifications
+  * etc.
 
-<!--
-Separation of concerns
-vs
-Local reasoning (Locality of reference)
--->
+The list is far from exhaustive and the placement of some items may be debatable
+but it gives an idea of how architecture can be viewed as a form of Domain Specific
+Language organizing sub-languages in each subdomain. Like any language, it can be expressive or awkward, clear or opaque, concise or verbose.
+Architectural design patterns, like design patterns discussed earlier, are bug reports against the language of the system.
+There are architectural smells just as there are code smells.
 
-<!-- Alan Kay:
-We often have to be reminded about the largest and most important difference between maths and science:
- that our ideas and beliefs and reasoning about them (maths) happen strictly between our ears, and thus
- can be consistent but not at all in accord with our external situation or what we should be doing — whereas
- science is done with the knowledge that it is being thought about by our limited brains and so we need to put
- in a lot more work to draw any kind of conclusions that might have something to do with “What’s out there?”.
+When done well, and with the right perspective, you can identify many terrible smells in systems and the consequences
+that are suffered as a result (a [Big Ball of Mud](https://wiki.c2.com/?BigBallOfMud)). A ubiquitous example:
 
-Einstein, in a talk in 1921, felt he had to remind his audience of physicists about this: he felt they were taking
- their mathematical conclusions far too literally about “What’s out there?”. He said to them:
+> An operating system is a collection of things that do not fit into a
+> language; there shouldn't be one.
+> <cite markdown="1">[Dan Ingalls](https://en.wikipedia.org/wiki/Dan_Ingalls)</cite>
 
-“As far as the laws of mathematics refer to reality, they are not certain;
-and as far as they are certain, they do not refer to reality.”
+When considering the architecture of a system, two perspectives must be taken into account: the *Domain* and the *Use Cases*.
+The domain and its language are the foundation of the system that both limits what is possible and guides what is necessary.
+The use cases are the interactions with the system and the reason for its existence. The architecture must balance these
+two perspectives to be effective. This is why [Domain Driven Design](https://martinfowler.com/bliki/DomainDrivenDesign.html)
+and [Clean Architecture](https://crosp.net/blog/software-architecture/clean-architecture-part-2-the-clean-architecture/)
+were evolved respectively.
 
-If we are able to see that what he means by the “laws of mathematics” refers to all human reasoning,
-then we can see why getting fluent in maths and science is critical for general daily like (as with reading and
- writing). He is talking about the need for a special new kind of sanity for humanity: one that both allows internal
-  reasoning and then requires it to be “negotiated” with the actual universe we live in (whether within our families, towns, countries, etc).
+<figure>
+  <img src="/media-library/software-systems-engineering/clean-architecture.png" alt="Clean Architecture">
+  <figcaption markdown="1">
+Clean Architecture by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin)
+  </figcaption>
+</figure>
 
-<aside>
-WHat of Semiotics and the Monas Hieroglyphica where Sign, Signifier, and Signified are one?
-</aside>
--->
+<figure>
+  <img src="/media-library/software-systems-engineering/bounded-context.png" alt="Bounded Context">
+  <figcaption markdown="1">
+DDD - Bounded Context by [Martin Fowler](https://martinfowler.com/bliki/BoundedContext.html)
+  </figcaption>
+</figure>
 
-<!--
-“Good general theory does not search for the maximum generality, but for the right generality.” — Saunders Mac Lane
+Recall above in [The Language Of The System](#the-language-of-the-system), that each subdomain
+can have its own DSL. From the Clean Architecture diagram above, you can how these subdomains
+could be organized with the outermost layer being the most specialized and infrastructure
+specific, and the innermost layer being the most general and idealized.
 
-'Interconnectedness makes big programs eventually crumble under their own weight.' -- Simon Peyton Jones
--->
+These two perspectives of Use-Case driven and Domain-Driven are not in opposition but in a dialectical
+relationship. They can be synthesized in a [Feature Driven Development](https://en.wikipedia.org/wiki/Feature-driven_development)
+approach where each "feature" satisfies one or more use cases in the domain and is organized in a layered architecture that
+realizes it.
 
-<!-- > The purpose of abstraction is not to be vague, but to create a new semantic level
-> in which one can be absolutely precise.
-> <cite markdown="1">[Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_Dijkstra)</cite> -->
+The above is not attempting to be a comprehensive guide to architecture nor prescriptive. There are many
+architectural styles and patterns just as there are many languages. The goal is to provide a perspective
+on how to view architecture as a language and how to manage complexity in software by choosing or designing
+the right language for the job.
 
-<!--
-A good language provides primitives, a means of combination, and a means of abstraction
-that become the primitives of the next layer closer to the target domain.
-Syntactic sugar gets in the way due to a lack of orthogonality.
+## Summary
 
-Emergent behaviors and leaky abstractions are due to essential complexity being abstracted
+In summary, the analogy to gravity in software is complexity and the analogy to material is language.
+The architecture we build is the organization of that "material" into a structure that exhibits
+the emergent properties we desire. By choosing or designing the right language we can reduce the incidental
+complexity of our solutions. By choosing and utilizing the right architecture we can control
+and guide the emergent properties of our systems at scales that are more than the sum of their parts and
+ultimately avoid the "Anergetic Systems Failure" that plagues so many projects.
 
-Side-effects are an essential property that can't be abstracted away.
-
-Compare with "Effects"
-
-Tennant's Correspondence Principle: The laws of a new theory must include the laws of the old theory in
- the appropriate domain.
-    https://softwareengineering.stackexchange.com/questions/116395/what-is-the-good-explanation-of-tennents-correspondence-principle
-
-Note that in the latter case embedded DSLs (strings) are black boxes
-
-some languages are better here like C# and it's LINQ syntax. It's extensibility
-is constrained to query languages though
-
-THus Language Oriented Programming
-
--->
-
-<!--
-A truly powerful language to manage complexity must have the following features:
-
-1. A finite set of orthogonal primitives
-2. A means of composition to combine primitives
-3. a means of abstraction to introduce new primitives of closer to the target domain.
-  3.1.
--->
-
-<!--
-Edsger Dijkstra call APL "a mistake, carried through to perfection"
-    No control structures?
-Per Alan Kay: perhaps because of required learning curve to be effective?
-    Does the same apply to regex syntax?
--->
-
-<!--
-What is refactoring reducing?
-Refactoring won't eliminate language overhead
-
-> Strive to add function by deleting code.
-> <cite markdown="1">[Jon Bentley](https://en.wikipedia.org/wiki/Jon_Bentley_(computer_scientist))</cite>
-
-Relationship to cyclomatic complexity?
-
-there is a difference between an algorithm and the expression of the algorithm in a particular language
-The expression of that algorithm generally has overhead due to readability preferences ()
-
-https://en.m.wikipedia.org/wiki/Code_refactoring
-https://en.m.wikipedia.org/wiki/Decomposition_(computer_science)
-https://softwareengineering.stackexchange.com/a/97695
--->
-
-<!--
-
-Software rot due to a lack of robustness
-3rd party dependencies
-https://www.johndcook.com/blog/2010/05/10/taking-your-code-for-a-walk/
-https://en.m.wikipedia.org/wiki/Software_rot
-https://en.m.wikipedia.org/wiki/Technical_debt
-https://en.m.wikipedia.org/wiki/Software_entropy
--->
-
-<!--
-https://hackmd.io/@pierodibello/S1JvdXoKP
-https://stackoverflow.com/questions/14420276/well-designed-query-commands-and-or-specifications
-https://wiki.c2.com/?CodeSmell
-https://hackmd.io/@pierodibello/S1JvdXoKP
--->
-
-<!--
-Orthogonality: The ability to combine any feature with any other feature in any way.
-
-'So much complexity in software comes from trying to make one thing do two things.' -- Ryan Singer
--->
-
-<!--
-"I claim that compositionality is extremely delicate, and that it is so powerful that
- it is worth going to extreme lengths to achieve it."
- <https://julesh.com/2017/04/22/on-compositionality/>
--->
-
-<!--
-https://en.wikipedia.org/wiki/Feature-driven_development
-https://en.wikipedia.org/wiki/Algorithm#Expressing_algorithms
-https://twitter.com/wallingf/status/1144718612353015808
-https://www.johndcook.com/blog/2012/04/23/100x-better-approach-to-software/
-https://dl.acm.org/doi/10.1145/505145.505147
-http://www.gkc.org.uk/martin/papers/middle-out-t.pdf
-http://lambda-the-ultimate.org/node/4560
-https://twitter.com/rauschma/status/1567871859122737163
-https://twitter.com/FunctorFact/status/1655606046478462978
--->
-
-## References and Additional Resources
+## References and Additional Reading
 
 * *[Clean architecture : a craftsman's guide to software structure and design](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)*, Robert C. Martin, 2017
+* *[Domain-Driven Design: Tackling Complexity in the Heart of Software](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1)*, Eric Evans, 2003
 * *[Is it really "Complex"? Or did we just make it "Complicated"?](https://www.youtube.com/watch?v=ubaX1Smg6pY)*, Alan Kay, June 2014
 * *[No Silver Bullet—Essence and Accident in Software Engineering](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)*, Frederick P. Brooks, Jr. 1986
 * *[The Language of the System](https://www.youtube.com/watch?v=ROor6_NGIWU)*, Rich Hickey, 2012
 * *[Why Systems Fail and Problems Sprout Anew; Commentary on the principles of 'Systemantics'](https://laetusinpraesens.org/docs/systfail.php)*, Anthony Judge. 1980
+* *[Essential Programming Paradigm](https://web.archive.org/web/20190216082110/https://static.aminer.org/pdf/20170130/pdfs/oopsla/cnshkwto187qwld3fsuibjzvuapkrlpt.pdf)*, Claude Y. Knaus, 2008
+* *[Programming Paradigms for Dummies: What Every Programmer Should Know](https://webperso.info.ucl.ac.be/~pvr/VanRoyChapter.pdf)*, Peter Van Roy, 2009
+* *[Erik Meijer started a discussion on Domain Specific Languages](http://lambda-the-ultimate.org/node/4560)*, Lambda The Ultimate, 2012
+* *[On compositionality](https://julesh.com/2017/04/22/on-compositionality/)*, Jules Hedges, 2017
+* *[The operating system: should there be one?](https://www.humprog.org/~stephen/research/papers/kell13operating.pdf)*, Stephen Kell, 2013
