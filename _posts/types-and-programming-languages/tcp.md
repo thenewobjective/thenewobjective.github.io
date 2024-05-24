@@ -1,0 +1,6 @@
+- <http://techscursion.com/2012/02/tennent-correspondence-principle.html>
+- <https://softwareengineering.stackexchange.com/questions/116395/what-is-the-good-explanation-of-tennents-correspondence-principle>
+- <https://gafter.blogspot.com/2006/08/tennents-correspondence-principle-and.html>
+- <https://fanf.livejournal.com/118421.html>
+- <https://esdiscuss.org/topic/tcp>
+- <https://esdiscuss.org/topic/regarding-tennent-s-language-design-based-on-semantic-principles#content-0>

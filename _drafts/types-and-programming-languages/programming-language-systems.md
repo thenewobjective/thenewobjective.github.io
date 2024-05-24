@@ -15,7 +15,7 @@ In summary, while a programming language provides the syntax and semantics for d
 
 ==========
 
-<https://www.humprog.org/~stephen/research/papers/kell13operating.pdf>
+[The operating system: should there be one?](https://www.humprog.org/~stephen/research/papers/kell13operating.pdf)
 
 ==========
 "an operating system is a collection of things that don’t fit inside a language; there
