@@ -18,9 +18,7 @@ two categories: human organization and technical. The human organization aspect 
 [previous article](/software-systems-engineering/conways-law-and-consequences). Here I will focus on the
 technical aspect.
 
-## What is Software Architecture
-
-### Fighting Gravity
+## Fighting Gravity
 
 Traditional architecture is discussed in terms of buildings and other physical structures.
 Let us look at one of the most popular human-built structures
@@ -99,7 +97,7 @@ Thus, the following quote becomes clear:
 > engineer to build a bridge that barely stands."
 > <cite>- Unknown</cite>
 
-### Fighting Complexity
+## Fighting Complexity
 
 In traditional architecture the primary enemy is gravity. The Arch is an effective tool that
 fights against it. The question we have now is: what is the analogy to gravity in Software,
