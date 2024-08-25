@@ -118,3 +118,7 @@ clean alternative is the best hope for increasing the desire for its pursuit.
 [^9]: [Thomas. Justin. “New Record: World’s Largest Wind Turbine (7+ Megawatts)”.](https://web.archive.org/web/20220518225801/https://metaefficient.com/uncategorized/new-record-worlds-largest-wind-turbine-7-megawatts.html)
 [^10]: [U.S. Energy Information Administration (EIA). “Mississippi Nuclear Profile”](https://web.archive.org/web/20110716062816/http://www.eia.gov/cneaf/nuclear/state_profiles/mississippi/ms.html)
 [^11]: [Windustry. “How much do wind turbines cost?”](https://web.archive.org/web/20101225182428/http://www.windustry.org/how-much-do-wind-turbines-cost)
+
+## Update 2024-08-25
+
+Fourteen years later, China is set to build the [first Thorium reactor](https://www.ogv.energy/news-item/china-to-launch-world-s-first-thorium-molten-salt-nuclear-power-station-in-2025).
