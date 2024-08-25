@@ -15,7 +15,7 @@ nav_order: 1
 ## Overview
 
 USMC War veteran, entrepreneur, and Systems Engineer with a formal education in Computer Science and
-more than 25 years of experience in the software industry.
+nearly 30 years of experience in the software industry.
 
 I’m primarily interested in the study and application of Programming Language Theory to systems in a variety of industries and fields.
 
@@ -208,6 +208,61 @@ I’m primarily interested in the study and application of Programming Language 
 * Requirements Engineering Tools
 
 ---
+</details>
+
+{% include resume-item.html
+  image="/images/profile/top-hat-justice.jpg"
+  alt="Independent Consultant"
+  title="Independent Consultant"
+  time="January 2023 – Present"
+%}
+
+<details>
+  <summary>Clients</summary>
+
+{% include resume-item.html
+  alt="Green Box Group LLC"
+  time="July 2023 - August 2023"
+  desc="[Green Box Group LLC](https://www.greenbox.group/)"
+%}
+
+{% include resume-item.html
+  image="/media-library/resume/MedServe.png"
+  alt="MedServe"
+  time="August 2024-Present"
+  desc="
+<https://medserverx.com/>
+
+* Azure Infrastructure configuration
+"
+%}
+
+{% include resume-item.html
+  image="/media-library/resume/dci-marketing.svg"
+  alt="DCI Marketing"
+  time="March 2024"
+  desc="
+<https://www.dcimarketing.com/>
+
+* DevOps maturity evaluation (CMMI Maturity Model)
+"
+%}
+
+{% include resume-item.html
+  image="/media-library/resume/care-direct.png"
+  alt="CareDirect Solutions, Inc."
+  time="July 2023 - October 2023"
+  desc="
+<https://www.caredirectllc.com/>
+
+* DevOps transformation (CI/CD, Test automation)
+* Azure Infrastructure configuration
+* Raspberry PI emulation
+"
+%}
+
+<hr />
+
 </details>
 
 {% include resume-item.html
