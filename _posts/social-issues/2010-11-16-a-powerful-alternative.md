@@ -7,6 +7,11 @@ category: Social Issues
 permalink: /social-issues/a-powerful-alternative
 ---
 
+* TOC
+{:toc}
+
+## Introduction
+
 The generation of electrical power has a long history and can be accomplished through a variety of methods.
 The most common approach involves moving a loop of wire, copper usually, through the poles of a magnet.
 This method can be thought of as being analogous to a pump pushing water through a pipe, yet in this case
@@ -20,8 +25,10 @@ issues raised. But to determine the effectiveness of these different approaches,
 a metric by which to compare them. This ad hoc metric will be based on the feasibility of the method to fulfill
 the current and potential power needs of the country, its environmental impact, the initial cost of development,
 the maintenance cost, and any special side-effects specific to each, such as collateral land damage or noise
-pollution. The power generation techniques to be reviewed are coal plants, wind, hydroelectric, solar, geothermal,
+pollution. The power generation techniques to be reviewed are coal plants, wind, hydroelectric, solar,
 Uranium based nuclear, and finally Thorium based nuclear.
+
+## Coal Plants
 
 Coal plants generate electricity through the burning of coal whose heat is used to move a turbine. This method of
 power generation is currently the most widely used in the country and is due to several factors. First, coal plants
@@ -36,10 +43,12 @@ pneumonia and asthma. The use of coal not only harms people while polluting the 
 will become increasingly difficult to mine due to its growing scarcity. In response, the methods of coal extraction
 grow more and more dramatic, so much so in fact that the current approach involves the decapitation of entire
 mountains which result in significant levels of heavy metal deposits in water sources as well as displacement of
-numerous varieties of animal life[^8].So, while coal power can meet most of our power needs today, its sustainability
+numerous varieties of animal life[^8]. So, while coal power can meet most of our power needs today, its sustainability
 at current prices is not reliable[^1]. As the cost of extraction continues to increase along with the demand, and
 as resources diminish, an alternative will eventually be needed anyway, not to mention the necessity to find an
 alternative which can avoid the negative impact it has on the environment and health.
+
+## Wind Power
 
 Wind power has been praised as a great alternative to fossil fuels due to its reduced pollution output because of not
 needing to rely on combustion to generate electricity as well as the mining operations that go along with obtaining
@@ -54,6 +63,8 @@ approximately $18.2 million per turbine not to mention the cost of the acreage r
 it’s easy to do the math to see that the clean benefits of a wind power alternative fall flat in the face of
 practical considerations[^11].
 
+## Solar Power
+
 Like wind power, solar power also suffers from being a slave to weather conditions, even worse it suffers from being
 a slave to the latitudes of the planet. Solar power, as the name implies, relies upon the sun to generate electricity.
 Generating this eco-friendly electricity is not cheap though since building a facility can cost anywhere from $2.50 to
@@ -62,6 +73,8 @@ a staggering amount of money. Also, like wind power, a solar plant requires a si
 For example, Ontario has an 80mW solar farm that requires 950 acres to operate at 3% of sample coal plant's output[^5].
 While the advances in this technology are interesting, it is premature to rely on it as a viable replacement for
 the current system.
+
+## Hydroelectricity
 
 Hydroelectricity as a power alternative has a better track record than the green methods discussed thus far.
 Hydroelectricity functions by using waterfalls or a dam to power electric turbines. Unlike coal plants, hydroelectric
@@ -76,14 +89,16 @@ also alters the flow of water downstream which has a similar displacement effect
 hydroelectric power is nearly a viable alternative to coal if not for its reliance upon moving water sources to
 function, which are limited to geographic region.
 
+## Thorium Reactors
+
 Can nothing steal the crown of productive capacity from coal plants? The power of the atom may hold the key.
 Nuclear power plants use the concept of nuclear fission (splitting atoms) to heat water to power an electric
 turbine like other methods.  Traditional nuclear power plants based on Uranium can generate an amazing amount of
 electricity. The Grand Gulf nuclear reactor located in Mississippi generates approximately 9.4TW of electricity
 annually[^10]. This is equivalent to three average coal plants. Unfortunately, the cost of this reactor is a bit
 more than the cost of three coal plants with a price tag of $6.3 billion vs the coal plant's cost of $2.3 billion[^10].
-lso, with the scarcity of Uranium and the ever-present concern over the creation of weapons, most people are weary
-of this technology.  So, what is the alternative? What is an affordable power solution that is not a slave to
+With the scarcity of Uranium and the ever-present concern over the creation of weapons, most people are weary
+of this technology. What is the alternative? What is an affordable power solution that is not a slave to
 the geographic location or resources, produces little or no pollution, does not have a devastating environmental
 impact, and can provide for the power needs of today and tomorrow? Surprisingly, it is not some prototype
 technology, nor something completely different than what one may be used to. The answer is to switch from a Uranium
@@ -96,7 +111,7 @@ This may be explained partially by the migration cost of having to replace curre
 Most nuclear plants are decades old and are the traditional Uranium types. While not as safe as their Thorium
 counterparts, the fissile material producible by these plants for weapons was in very high demand during the cold
 war by both NATO and the Soviet Union[^3]. Even though the cold war is over and a desire to reduce nuclear
-stockpiles is in place, it remains cheaper to maintain current aging plants vice spending an initial investment
+stockpiles are in place, it remains cheaper to maintain current aging plants vice spending an initial investment
 in building better ones. The government has promised $8 billion in loans for new reactors but budget woes and the
 partial meltdown at Three-Mile-Island in 1979 is still lingers in the back of consumer's mind, stereotyping a
 perceived danger of nuclear power in general and politicizing the advancement of the technology. Perhaps as the
