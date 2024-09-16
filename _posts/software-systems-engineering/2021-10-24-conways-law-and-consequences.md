@@ -205,6 +205,7 @@ even at larger scales that may not be clear. Recall the guideline we followed ea
 What was not mentioned though is that this was extended later on with the phrase:
 
 > …except for the problem of too many levels of indirection.
+> <cite>David Wheeler</cite>
 
 So, what does that mean? If you were looking at the previous graphs as an analogy of, say, scrum teams, then you might overlook the scenarios of needing to communicate between them:
 
