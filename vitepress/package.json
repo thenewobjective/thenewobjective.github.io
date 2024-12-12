@@ -1,0 +1,30 @@
+{
+  "name": "thenewobjective.com",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenewobjective/thenewobjective.github.io.git"
+  },
+  "author": "Michael L Haufe <tno@thenewobjective.com> (https://thenewobjective.com)",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/thenewobjective/thenewobjective.github.io/issues"
+  },
+  "homepage": "https:///thenewobjective.com",
+  "devDependencies": {
+    "vitepress": "^1.3.4"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.0.7",
+    "primevue": "^4.0.7"
+  }
+}

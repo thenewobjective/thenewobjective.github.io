@@ -1,4 +1,8 @@
 ---
+lastUpdated: 2020-04-27 19:00:00 -0600
+footer: true
+---
+<!--
 layout: post
 icon: file-text
 category: Astrobiology
@@ -8,8 +12,9 @@ permalink: /astrobiology/
 redirect_from:
     - /category/astrobiology/
 exclude_from_search: true
----
+-->
 
+<!--
 {% assign category = page.categories[0] %}
 
 ## {{ category }}
@@ -21,3 +26,4 @@ exclude_from_search: true
         {% endif %}
     {% endfor %}
 </ul>
+-->

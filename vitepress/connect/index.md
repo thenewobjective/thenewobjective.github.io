@@ -1,11 +1,4 @@
----
-layout: default
-title: Connect
-nav_title: Connect
-permalink: /connect
-icon: share-2
-nav_order: 5
----
+# Connect
 
 On this page you can see a curated list of some of my activities around the web over the years
 

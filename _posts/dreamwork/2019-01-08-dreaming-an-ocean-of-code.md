@@ -3,7 +3,7 @@ layout: post
 icon: file-text
 title:  "Dreaming an Ocean of Code"
 date:   2019-01-08 12:00:00 -0600
-category: Dreamworks
+category: Dreamwork
 permalink: /dreamwork/dreaming-an-ocean-of-code
 redirect_from:
     - /dreaming-an-ocean-of-code/

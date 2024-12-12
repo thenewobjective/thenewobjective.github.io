@@ -2,7 +2,7 @@
 layout: post
 icon: file-text
 title:  "Playing with the Drake Equation"
-date:   2020-04-15 12:00:00 -0600
+date:   2019-04-15 12:00:00 -0600
 category: Astrobiology
 permalink: /astrobiology/playing-with-the-drake-equation/
 redirect_from:
