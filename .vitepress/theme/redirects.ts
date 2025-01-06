@@ -42,7 +42,7 @@ export const redirects = {
     '/brkics-stillness/': '/war-and-peace/brkics-stillness',
     '/category/web-development/': '/web-development',
     '/a-criticism-of-web-components/': '/web-development/a-criticism-of-web-components',
-    '/the-great-maze-of-jquery/': '/web-development/the-great-maze-of-jquery',
+    '/the-great-maze-of-jquery': '/web-development/the-great-maze-of-jquery',
     '/css-grid-with-detail-view/': '/web-development/css-grid-with-detail-view',
     '/use-strict-convo/': '/web-development/use-strict-convo',
     '/ramda-and-eweda-before-the-dawn/': '/web-development/ramda-and-eweda-before-the-dawn',
