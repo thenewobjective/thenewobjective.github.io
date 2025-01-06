@@ -14,6 +14,7 @@ const siteTitle = "The New Objective",
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: siteTitle,
+  base: '/',
   description: siteDescription,
   lastUpdated: true,
   markdown: {
