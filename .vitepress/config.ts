@@ -7,7 +7,7 @@ import { Feed } from 'feed'
 
 const siteTitle = "The New Objective",
   siteDescription = "Ars longa, vita brevis",
-  metaDescription = "The New Objective is a personal blog by Michael L Haufe.",
+  metaDescription = "The New Objective is the personal website of Michael L Haufe.",
   copyright = `Copyright © 2001 - ${new Date().getFullYear()} Michael L Haufe. All Rights Reserved.`,
   hostname = process.env.NODE_ENV === 'production' ? 'https://thenewobjective.com' : 'http://localhost:5173'
 
