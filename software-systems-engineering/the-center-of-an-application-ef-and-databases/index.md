@@ -1,5 +1,5 @@
 ---
-title:  "The Center of an Application: EF and Databases"
+title: The Center of an Application - EF and Databases
 date:   2023-05-28 13:00:00 -0600
 category: Software Systems Engineering
 ---
