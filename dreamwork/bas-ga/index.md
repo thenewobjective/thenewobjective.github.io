@@ -59,10 +59,10 @@ and in a future post try to formalize this. In the mean time, here is a note dum
 * [The Piet++ language](https://esolangs.org/wiki/Piet%2B%2B)
 * What is the significance of the starting/identity block? Entry point?
 * Can the blocks self organize like some type of [3d cellular automata](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)? Should they?
-* Does Liquid Intelligence apply where each block acts as a fixed [Perceptron](https://en.wikipedia.org/wiki/Perceptron)? [Statistical physics of liquid brains](https://royalsocietypublishing.org/doi/10.1098/rstb.2018.0376){:target="_blank}
+* Does Liquid Intelligence apply where each block acts as a fixed [Perceptron](https://en.wikipedia.org/wiki/Perceptron)? [Statistical physics of liquid brains](https://royalsocietypublishing.org/doi/10.1098/rstb.2018.0376)
 * Why the constraint on the board? Does the constraint apply above the base? Can overhangs exist?
 * How does the user get feedback from the system? Symbolic?
-* If a power source is contained within each block, what would that look like? Perhaps a [diamond battery](https://phys.org/news/2018-06-prototype-nuclear-battery-power.html){:target="_blank}"?
+* If a power source is contained within each block, what would that look like? Perhaps a [diamond battery](https://phys.org/news/2018-06-prototype-nuclear-battery-power.html)"?
   * The power source could then drive the unseen force holding the blocks together.
 
 ## Footnotes

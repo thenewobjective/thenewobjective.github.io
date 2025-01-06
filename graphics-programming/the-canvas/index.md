@@ -7,7 +7,7 @@ date:   2020-08-25 18:45:00 -0600
 There are multiple ways to render things to a webpage. We're going to choose the `<canvas>`
 element as it provides the most control. Given the declarative nature of our approach though
 the drawing routines provided by the canvas API are not going to be used. Therefore we'll
-create a [proxy](https://en.wikipedia.org/wiki/Proxy_pattern){:target="_blank} class to wrap
+create a [proxy](https://en.wikipedia.org/wiki/Proxy_pattern) class to wrap
 the element and hide the dirty details:
 
 ```js

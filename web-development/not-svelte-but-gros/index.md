@@ -13,7 +13,7 @@ I'm not a fan of most web frameworks and I've seen my share since 1997. Sadly Sv
 disappointing.
 
 Svelte seems to
-[sell itself](https://svelte.dev/blog/svelte-3-rethinking-reactivity){:target="_blank} as not being
+[sell itself](https://svelte.dev/blog/svelte-3-rethinking-reactivity) as not being
 [React](https://reactjs.org/) which is not a high bar but that's another story.
 The efficiency of it's output leaved much to be desired. The "Hello World" example is 41 lines of code excluding the 7 imports:
 
@@ -57,7 +57,7 @@ $: if (count >= 10) {
 ```
 
 This abused JavaScript is meant to execute the labeled statement when the referenced value changes. While valid syntax
-the semantics are definitely not JavaScript and the authors should not [gloss over this](https://svelte.dev/tutorial/reactive-declarations){:target="_blank}
+the semantics are definitely not JavaScript and the authors should not [gloss over this](https://svelte.dev/tutorial/reactive-declarations)
 as valid.
 
 In addition to abusing syntax to support "reactivity" the framework relies on syntactic assignment to trigger it. The [official examples](https://svelte.dev/tutorial/updating-arrays-and-objects)
@@ -206,13 +206,12 @@ and GUI hierarchy in order to cross-communicate to other components. Perhaps if 
     <input type="checkbox" bind:checked={visible}>
     visible
 </label>
-{% raw %}
+
 {#if visible}
     <p in:fly="{{ y: 200, duration: 2000 }}" out:fade>
         Flies in, fades out
     </p>
 {/if}
-{% endraw %}
 ```
 
 On one hand I do like the fact that CSS can be avoided in favor of JavaScript directly,
