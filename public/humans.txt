@@ -1,0 +1,6 @@
+/* See: <http://humanstxt.org/> */
+
+/* SITE */
+	Webmaster: Michael Haufe
+	Contact: tno@thenewobjective.com
+	Twitter/X: @mlhaufe
