@@ -30,6 +30,7 @@ export default defineConfig({
     ['meta', { 'http-equiv': 'Content-Security-Policy', content: "default-src 'self' ; script-src-elem 'self' 'unsafe-inline' https://giscus.app/client.js ; connect-src 'self' https://api.github.com ; style-src 'self' 'unsafe-inline' https://giscus.app/default.css; frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src 'self' data: https://avatars.githubusercontent.com https://mermaid.ink https://api.iconify.design" }],
     // ['meta', { 'http-equiv': 'X-Frame-Options', content: 'SAMEORIGIN' }],
     ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site', content: hostname }],
     ['meta', { property: 'og:description', content: metaDescription }],
     ['meta', { name: 'description', content: metaDescription }],
     ['meta', { name: 'referrer', content: 'strict-origin-when-cross-origin' }],
@@ -43,6 +44,14 @@ export default defineConfig({
     ['link', { type: 'text/plain', rel: 'author', href: '/humans.txt' }],
   ],
   sitemap: { hostname },
+  transformHead({ pageData }) {
+    const canonicalUrl = `${hostname}/${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html')
+
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push(['link', { rel: 'canonical', href: canonicalUrl }])
+  },
   async buildEnd(siteConfig) {
     const limit = 10
 
