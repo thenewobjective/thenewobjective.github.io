@@ -1,5 +1,5 @@
 ---
-title: A Mother's View of PTSD"
+title: A Mother's View of PTSD
 date: 2013-11-02 12:00:00 -0600
 category: USMC
 ---

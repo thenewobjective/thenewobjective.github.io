@@ -2,7 +2,7 @@ import { glob } from 'glob'
 import fs from 'fs'
 import markdownItFootNote from 'markdown-it-footnote'
 import markdownItImageFigures from 'markdown-it-image-figures'
-import { createContentLoader, defineConfig } from 'vitepress'
+import { createContentLoader, defineConfig, HeadConfig } from 'vitepress'
 import { Feed } from 'feed'
 
 const siteTitle = "The New Objective",
@@ -31,8 +31,6 @@ export default defineConfig({
     // ['meta', { 'http-equiv': 'X-Frame-Options', content: 'SAMEORIGIN' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site', content: hostname }],
-    ['meta', { property: 'og:description', content: metaDescription }],
-    ['meta', { name: 'description', content: metaDescription }],
     ['meta', { name: 'referrer', content: 'strict-origin-when-cross-origin' }],
     ['meta', { name: 'robots', content: 'noai, noimageai' }],
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/images/icons/favicon.ico' }],
@@ -44,13 +42,16 @@ export default defineConfig({
     ['link', { type: 'text/plain', rel: 'author', href: '/humans.txt' }],
   ],
   sitemap: { hostname },
-  transformHead({ pageData }) {
+  transformPageData(pageData ) {
+    const head: HeadConfig[] = pageData.frontmatter.head ??= []
     const canonicalUrl = `${hostname}/${pageData.relativePath}`
       .replace(/index\.md$/, '')
       .replace(/\.md$/, '.html')
 
-    pageData.frontmatter.head ??= []
-    pageData.frontmatter.head.push(['link', { rel: 'canonical', href: canonicalUrl }])
+    head.push(['meta', { property: 'og:title', content: pageData.frontmatter.title }])
+    head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description ?? metaDescription }])
+    head.push(['meta', { name: 'description', content: metaDescription }])
+    head.push(['link', { rel: 'canonical', href: canonicalUrl }])
   },
   async buildEnd(siteConfig) {
     const limit = 10
