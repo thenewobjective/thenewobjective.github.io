@@ -2,6 +2,7 @@
 title:  Dreaming an Ocean of Code
 date:   2019-01-08 12:00:00 -0600
 category: Dreamwork
+featuredImage: /media-library/dreamwork/ocean-of-code.webp
 ---
 
 ![Ocean of Code](/media-library/dreamwork/ocean-of-code.webp)

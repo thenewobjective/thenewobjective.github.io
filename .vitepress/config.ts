@@ -42,7 +42,7 @@ export default defineConfig({
     ['link', { type: 'text/plain', rel: 'author', href: '/humans.txt' }],
   ],
   sitemap: { hostname },
-  transformPageData(pageData ) {
+  transformPageData(pageData) {
     const head: HeadConfig[] = pageData.frontmatter.head ??= []
     const canonicalUrl = `${hostname}/${pageData.relativePath}`
       .replace(/index\.md$/, '')
@@ -52,6 +52,8 @@ export default defineConfig({
     head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description ?? metaDescription }])
     head.push(['meta', { name: 'description', content: metaDescription }])
     head.push(['link', { rel: 'canonical', href: canonicalUrl }])
+    head.push(['meta', { property: 'og:url', content: canonicalUrl }])
+    head.push(['meta', { property: 'og:image', content: `${hostname}${pageData.frontmatter.featuredImage ?? '/images/icons/android-chrome-512x512.png'}` }])
   },
   async buildEnd(siteConfig) {
     const limit = 10
