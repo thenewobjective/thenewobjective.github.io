@@ -6,30 +6,49 @@ category: Uncategorized
 
 ![The Convergence of Truth](/media-library/uncategorized/convergence-truth.png)
 
-<!-- BRAVE
-All Truths Converge Eventually
-The phrase "all truths that arise must eventually converge" seems to be a variation of the title
-"Everything That Rises Must Converge," which is a collection of short stories by Flannery O'Connor.
-The original title is derived from the work of Pierre Teilhard de Chardin, who wrote, "Remain true
-to yourself, but move ever upward toward greater consciousness and greater love! At the summit you
-will find yourselves united with all those who, from every direction, have made the same ascent.
-For everything that rises must converge."
+## Introduction
 
-In the context of Flannery O'Connor's work, the phrase suggests that all aspects of life, including
-different social classes, races, and religions, will eventually intersect or converge. This convergence
-can either result in a disastrous collision or a peaceful merging, depending on the attitudes and
-actions of the individuals involved.
+During an episode of [The Dark Horse Podcast](https://www.youtube.com/@DarkHorsePod), Bret Weinstein made an off-hand comment
+along the lines of *"All truths that rise must eventually converge"*. This phrase reminded me of a similar line of thought
+I was exploring in the context of Gödel's incompleteness theorems. The idea that there is one ultimate truth that all other
+truths converge towards. This article is an exploration of that idea and its implications.
 
-The concept of convergence in O'Connor's stories often relates to the idea that all characters,
-regardless of their backgrounds or beliefs, will face a moment of truth or a confrontation with their
-own flaws and prejudices. This moment can lead to a realization or a change in perspective, reflecting
-a broader theme of sin and repentance in her work.
--->
+The phrase *"All truths that rise must eventually converge"* seems to be a variation of a quote by
+[Pierre Teilhard De Chardin](https://en.wikipedia.org/wiki/Pierre_Teilhard_de_Chardin):
 
-<!-- What is truth? -->
+> Remain true to yourself, but move ever upward toward greater consciousness and greater love!
+> At the summit you will find yourselves united with all those who, from every direction, have
+> made the same ascent. For everything that rises must converge.
 
-<!-- Language Games -->
+&mdash; Pierre Teilhard De Chardin
 
-<!-- The Tower of Babel -->
+## What is truth?
 
-<!-- Religious truths -->
+> Philosophy only exists due to the confusion of meaning caused when the same word is used to mean
+> different things in more than one [language-game](https://en.wikipedia.org/wiki/Language_game_(philosophy))
+
+&mdash; [Keean Schupken](http://lambda-the-ultimate.org/node/4955#comment-80215)
+
+"Truth" is a word that is pregnant with meaning. Before we can explore theveracity of the convergence of "truth", we must first
+agree on its definition.
+
+<!-- https://en.wikipedia.org/wiki/Epistemology#Belief_and_truth -->
+<!-- Doxastic logic -->
+
+## Monism
+
+## Logical truths
+
+## Pre-Logical truths
+
+## Religious truths
+
+## Scientific truths
+
+## Scientism
+
+## Utilitarian truths
+
+## Language Games
+
+## The Tower of Babel
