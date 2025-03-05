@@ -4,6 +4,8 @@ date:   2023-07-05 22:00:00 -0600
 category: Software Systems Engineering
 ---
 
+![Branching Stragegies](/media-library/software-systems-engineering/branching-strategies-hero.png)
+
 ## 1. Introduction
 
 Some programs are ephemeral; they are run once and then discarded. Examples include CLI scripts and one-off report
