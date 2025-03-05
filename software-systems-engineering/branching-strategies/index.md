@@ -453,7 +453,7 @@ This is where Release Branching comes in.
 Each branch represents a different version of the software. You will notice the release branches are prefixed
 with `release/` for consistency with the earlier mentioned conventions `feature/` and `user/`.
 
-The "master" branch is the current version of the software that may or may not be deployed yet.
+The "main" branch is the current version of the software that may or may not be deployed yet.
 
 If independent releases start to diverge significantly and add new features completely unique to each release, then
 you may want to consider splitting the codebase into separate repositories and projects as they are becoming
