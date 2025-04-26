@@ -13,3 +13,9 @@ category: Requirements Engineering
  Shortly thereafter, William decided to study the effects of wind that struck the wind at a 45 degree angle. Since the city building codes did not account for non-perpendicular winds, he was convinced that the did not consider them either when they decided to switch from welds to bolts. After performing the calculations, he discovered that indeed the supports were insufficient in a strong storm. He demonstrated care by calling a colleague to verify his calculations, and then working together to come up with a technical solution to the problem (wrapping steel “band-aids” at the failure points).
 
  Furthermore, William demonstrated care by informing the architecture firm, Citicorp, Insurance agencies, and the City without knowledge of the personal consequences as a result of the miscalculation and what had subsequently been determined to be under engineering.
+
+<!--
+ There is a Veritasium video on this topic now:
+
+ https://www.youtube.com/watch?v=Q56PMJbCFXQ
+-->
