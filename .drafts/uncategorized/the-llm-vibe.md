@@ -42,6 +42,7 @@ Primitive people afraid of having their pictures taken as they thought it would 
 * <https://twitter.com/Kevin_McKernan/status/1722268558477140258>
 * <https://twitter.com/Grady_Booch/status/1596958685409861632>
 * <https://blog.bracha.org/WitherProgramming.html>
+* Gulliver's Travels: The Engine; <https://en.wikipedia.org/wiki/The_Engine>
 
 ### Generative AI and Critical Thinking
 
@@ -112,6 +113,12 @@ Human languages: they change.
 
 <https://x.com/mlhaufe/status/1923412516379513225>
 
+### Knowledge is too vast for a single person to know
+
+{Will Durant Quote}
+
+Additional Book reference: Science since Babylon
+
 ### mlhaufe and gilad
 
 @headinthebox
@@ -154,6 +161,13 @@ How does the Smalltalk tradition think about this?
 
 @DataSciFact
 Depending on which part of the logistic curve you look at, it can be growing exponentially, growing linearly, or exponentially approaching an plateau.
+
+
+"Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it." - Kernighan
+
+For non-commodity software the LLMs aren't good enough to even write it
+
+https://x.com/mlhaufe/status/1928494327501590954
 
 ### News
 
