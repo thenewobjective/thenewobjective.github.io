@@ -12,3 +12,6 @@ No semantics
 
 
 https://noyaml.com/
+
+
+syntax divorced from semantics. Compare/contrast with S-Expressions vs Lisp.

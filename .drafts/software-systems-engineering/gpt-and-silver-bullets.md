@@ -103,7 +103,7 @@ Command-Query Separation limitation
 
 ## Misc
 
-// Write a program that sorts an array of integers
+// "Write a program that sorts an array of integers"
 // vs
 // myArray.sort()
 // Chat GPT and copilot are moreso replacing the need for search engines than for

@@ -20,6 +20,8 @@ https://mobile.twitter.com/igrigorik/status/1090631220029882369
 https://pindancing.blogspot.com/2009/09/sudoku-in-coders-at-work.html
 https://twitter.com/mlhaufe/status/16792043923675
 https://twitter.com/headinthebox/status/76773002244240998421793
+https://web.archive.org/web/20220209031932/https://news.ycombinator.com/item?id=3033446
+
 
 https://news.ycombinator.com/item?id=12924173
 
@@ -57,6 +59,8 @@ In support of TDD:
 https://www.quora.com/What-is-so-wrong-with-TDD
 
 
+https://tidyfirst.substack.com/p/why-tdd-doesnt-lead-to-dumb-code
+
 OOP and TDD
 http://www.cs.uni.edu/~wallingf/blog/archives/monthly/2019-12.html#e2019-12-06T14_42_05.htm
 
@@ -84,3 +88,11 @@ When a measure becomes a target…
 Is the existence of Unit Testing a design pattern and therefore a language smell?
 
 How much to Code Contracts and Type Systems Subsume?
+
+
+
+https://www.youtube.com/results?search_query=primeagen+TDD
+
+## References and Further Reading
+
+- [Types vs. Tests: An Epic Battle?](https://www.infoq.com/presentations/Types-Tests/)

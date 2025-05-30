@@ -66,33 +66,3 @@ and in his book [Synchronicity: An Acausal Connecting Principle](https://en.wiki
 
 How can such a thing be possible? Given the untold number of anecdotes it's a real phenomenon,
 and the plural of anecdote is evidence but evidence of what?
-
-## Notes
-
-- <https://en.wikipedia.org/wiki/Synchronicity>
-- I showed my mother a potoo bird camouflaging itself. Moments later she saw one on an arbitrary Netflix movie.
-- I used to see the number 3 and 33 often (multiple times a week)
-- Is Numerology an attempt to identify and utilize Synchronicity?
-- Tragedies Come in Threes
-  - <http://appalachianmagazine.com/2017/12/16/old-timey-superstition-death-comes-in-threes/>
-  - <http://lambda-the-ultimate.org/node/334>
-- Joe Rogan talks about John Witherspoon on his podcast the same day he died without knowing it. (Joe Rogan Experience #1372)
-- Early one morning I decided to read about an old UFO story later that day my mother decided to watch a ufo movie which she very rarely does. Tucker Carlson that evening had a story about UFOs
-- Are things like Tarot and astrology a fumbling attempt at understanding Synchronicity?
-  - relation to nominative determinism
-  - Déjà vu
-- October 22nd, 2020. I was thinking about a letter that a High School teacher wrote to me about Gitchi Manitous. I knew it was buried somewhere in my library but it would be a search that would take hours for me to find it.
-- October 23rd, I was talking with my brother about a video game and I arbitrarily grabbed the related game manual from the bookshelf. Inside the front cover of that manual was the letter I was thinking of the day before.
-- I was watching a presentation by Bertrand Meyer on the Beauty of Software on 2021-03-11. I was late to watching it and had to view the recording. In that presentation he was speaking briefly on Euler. I switched to my twitter feed and a person I follow posted a topic on Euler.
-- Is every moment Synchronistic?
-- <https://www.quantamagazine.org/new-proof-shows-that-expander-graphs-synchronize-20230724/>
-- [The Surprising Secret of Synchronization](https://www.youtube.com/watch?v=t-_VPRCtiUg)
-- <https://en.wikipedia.org/wiki/Pauli_effect>
-- <https://www.cafeausoul.com/blog/jung-bohm-and-axis-mundi>
-- Synchronistic event: Jan 2 2024
-  - Had a conversation in slack @ 9:21pm
-  - R.B. said:
-    "I like that one story where the CIA or Mossad (really, same thing, TBH), hacked some dudes car on Rodeo drive and made it accelerate into a pal tree. Wicked sick. Blame the AI doh ..."
-  - I replied:
-   "Oh, Michael Hastings ..."
-  - Listened to JRE #2081 @ 10 pm the same day where he mentions Michael Hastings death
