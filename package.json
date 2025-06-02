@@ -21,16 +21,16 @@
   },
   "homepage": "https:///thenewobjective.com",
   "devDependencies": {
-    "@types/node": "^22.14.1",
-    "feed": "^4.2.2",
+    "@types/node": "^22.15.29",
+    "feed": "^5.1.0",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.3"
   },
   "dependencies": {
-    "@primevue/themes": "^4.3.3",
-    "glob": "^11.0.1",
+    "@primevue/themes": "^4.3.5",
+    "glob": "^11.0.2",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-image-figures": "^2.1.1",
-    "primevue": "^4.3.3"
+    "primevue": "^4.3.5"
   }
 }
