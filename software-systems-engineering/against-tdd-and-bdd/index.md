@@ -15,7 +15,7 @@ that promises better design, fewer bugs, and more maintainable code. Yet, beneat
 set of deep conceptual flaws. This article challenges the validity of TDD as a general-purpose development
 methodology and explores its [epistemological](https://en.wiktionary.org/wiki/epistemology) and practical limits.
 
-## 1. The Illusion of Specification
+## The Illusion of Specification
 
 At its core, a unit test asserts that the system behaves correctly for a specific instance:
 
@@ -40,7 +40,7 @@ Just because a system behaves a certain way in one test (an *is*) does not imply
 Implementation is a fact (more specifically an artifact), not a truth. A test passes — but that doesn’t mean the design is valid, necessary, or even desirable.
 For every passing test, there may be an infinity of broken intentions.
 
-## 2. TDD Prioritizes Local Over Global Thinking
+## TDD Prioritizes Local Over Global Thinking
 
 TDD encourages developers to build programs bottom-up: write a test, write just enough code to pass it, refactor, repeat.
 This can lead to design that is **emergent**, but often *reactionary*. There's little room for stepping back and asking,
@@ -49,7 +49,7 @@ This can lead to design that is **emergent**, but often *reactionary*. There's l
 Alan Kay's metaphor is apt: you can't sculpt a masterpiece by poking clay randomly — you need a *vision*. TDD often
 disincentivizes that vision.
 
-## 3. Goodhart's Law and the Green Bar Fetish
+## Goodhart's Law and the Green Bar Fetish
 
 > "Tests become artifacts whose presence is mistaken for assurance."
 
@@ -68,7 +68,7 @@ In information-theoretic terms, a passing test that has never failed conveys no 
 what the code already does — often tautologically. Many unit tests exist merely to confirm that a variable holds
 the value it was just assigned. Automation does not equal understanding; green bars do not guarantee clarity.
 
-## 4. TDD Cannot Replace Thinking
+## TDD Cannot Replace Thinking
 
 > If you're breaking apart coherent functions just to make them testable, you're sacrificing clarity for ceremony.
 
@@ -91,7 +91,7 @@ the resulting code reflects test mechanics, not conceptual structure.
 
 &mdash; [C.A.R. Hoare](https://en.wikipedia.org/wiki/Tony_Hoare)
 
-## 5. Tests as a Language Smell
+## Tests as a Language Smell
 
 > If your unit tests outnumber or outweigh your production code, you may be spending
 > more time maintaining tests than building software.
@@ -115,7 +115,7 @@ churn than clarity — and serve as a tax on evolution.
 
 &mdash; [Rich Hickey](https://en.wikipedia.org/wiki/Rich_Hickey): ["Simple Made Easy"](https://www.youtube.com/watch?v=SxdOUGdseq4)
 
-## 6. Integration Testing: The Architectural Illusion
+## Integration Testing: The Architectural Illusion
 
 Integration tests aim to validate that multiple components work together as expected. At their best, they serve as
 sanity checks across modules or subsystems.
@@ -129,7 +129,7 @@ A passing integration test might imply that parts of the system are communicatin
 
 We cannot test our way into good architecture. We must **design** for it.
 
-## 7. BDD: Behavior-Driven or Buzzword-Driven?
+## BDD: Behavior-Driven or Buzzword-Driven?
 
 [Behavior-Driven Development](https://en.wikipedia.org/wiki/Behavior-driven_development) (BDD) is often presented as a more user-focused evolution of TDD. In practice,
 it inherits most of TDD's flaws:
@@ -141,7 +141,7 @@ it inherits most of TDD's flaws:
 BDD improves communication &mdash; when used thoughtfully. But it does not fix the underlying issue:
 **confusing strong examples with complete specifications.**
 
-## 8. The Norvig vs. Jeffries Anecdote
+## The Norvig vs. Jeffries Anecdote
 
 A telling illustration of TDD’s limitations comes from [Peter Norvig](https://en.wikipedia.org/wiki/Peter_Norvig)'s succinct, correct
 [implementation](https://norvig.com/sudoku.html) of Sudoku
@@ -154,7 +154,7 @@ knowledge and formal modeling — not iterative test scaffolding.
 
 Sometimes, tests follow understanding. They do not produce it.
 
-## 9. The Myth of "Living Documentation"
+## The Myth of "Living Documentation"
 
 TDD and BDD advocates often claim that tests serve as "living documentation" — always up-to-date and executable.
 But this is more wishful thinking than reality.
@@ -169,7 +169,7 @@ fails does not evolve with the system — it stagnates beside it, growing increa
 Assertions, embedded within code, may provide more durable, semantically rich contracts than suites of external
 test files optimized for mechanical repetition rather than human meaning.
 
-## 10. Uncle Bob and the Double-Entry Fallacy
+## Uncle Bob and the Double-Entry Fallacy
 
 [Robert Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) (Uncle Bob), [likens TDD](https://www.quora.com/What-is-so-wrong-with-TDD/answer/Robert-Martin-9?ch=10&oid=66884040&share=f76dd637&srid=KFoiv&target_type=answer)
 to double-entry bookkeeping, implying that both are essential practices that professionals ignore at their peril.
@@ -202,7 +202,7 @@ code. It’s a local technique, not a systemic safeguard.
 Martin’s analogy works as rhetoric. But as justification for elevating TDD to the level of a professional standard,
 it falls apart.
 
-## 11. Conclusion: Tests Are Tools, Not Truths
+## Conclusion: Tests Are Tools, Not Truths
 
 None of this is to say that tests are unimportant. They serve a pragmatic role: catching regressions, guarding
 against unexpected behavior, and providing feedback during development. But when tests are elevated from a
