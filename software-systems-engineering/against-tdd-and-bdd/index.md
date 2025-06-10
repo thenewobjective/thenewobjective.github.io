@@ -10,7 +10,7 @@ category: Software Systems Engineering
 
 &mdash; [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay)
 
-Test-Driven Development (TDD) is often promoted not merely as a practice, but as a full-fledged methodology — one
+Test-Driven Development (TDD) is often promoted not merely as a practice, but as a full-fledged methodology: one
 that promises better design, fewer bugs, and more maintainable code. Yet, beneath its ritualistic appeal lies a
 set of deep conceptual flaws. This article challenges the validity of TDD as a general-purpose development
 methodology and explores its [epistemological](https://en.wiktionary.org/wiki/epistemology) and practical limits.
@@ -37,7 +37,7 @@ Relying on tests as specifications is like verifying that a bridge won't collaps
 
 This also illustrates a broader philosophical fallacy: the **is–ought problem**, articulated by [David Hume](https://en.wikipedia.org/wiki/David_Hume).
 Just because a system behaves a certain way in one test (an *is*) does not imply that it should behave that way (an *ought*).
-Implementation is a fact (more specifically an artifact), not a truth. A test passes — but that doesn’t mean the design is valid, necessary, or even desirable.
+Implementation is a fact (more specifically an artifact), not a truth. A test passes but that doesn’t mean the design is valid, necessary, or even desirable.
 For every passing test, there may be an infinity of broken intentions.
 
 ## TDD Prioritizes Local Over Global Thinking
@@ -46,7 +46,7 @@ TDD encourages developers to build programs bottom-up: write a test, write just 
 This can lead to design that is **emergent**, but often *reactionary*. There's little room for stepping back and asking,
 "What is the architecture of this system?" or "What are the core domain concepts?"
 
-Alan Kay's metaphor is apt: you can't sculpt a masterpiece by poking clay randomly — you need a *vision*. TDD often
+Alan Kay's metaphor is apt: you can't sculpt a masterpiece by poking clay randomly, you need a *vision*. TDD often
 disincentivizes that vision.
 
 ## Goodhart's Law and the Green Bar Fetish
@@ -59,13 +59,13 @@ disincentivizes that vision.
 
 &mdash; [Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law)
 
-Test coverage, green bars, [red-green-refactor cycles](https://martinfowler.com/bliki/TestDrivenDevelopment.html)
- — these metrics quickly become the *goal* rather than tools of insight.
+Test coverage, green bars, [red-green-refactor cycles](https://martinfowler.com/bliki/TestDrivenDevelopment.html),
+ these metrics quickly become the *goal* rather than tools of insight.
 Developers chase 100% coverage, write trivial tests, or test irrelevant minutiae just to satisfy the methodology.
 
 The result: brittle, high-maintenance test suites that offer little confidence in overall system correctness.
 In information-theoretic terms, a passing test that has never failed conveys no new knowledge. It simply affirms
-what the code already does — often tautologically. Many unit tests exist merely to confirm that a variable holds
+what the code already does, often tautologically. Many unit tests exist merely to confirm that a variable holds
 the value it was just assigned. Automation does not equal understanding; green bars do not guarantee clarity.
 
 ## TDD Cannot Replace Thinking
@@ -109,7 +109,7 @@ expression and verification?
 If exhaustive unit testing is necessary, it may indicate a **deficiency in the language**, not a virtue in the practice.
 The more a system relies on voluminous tests to prove its value, the more likely its underlying design or language
 lacks the means for abstraction, constraint, or introspection. Tests that proliferate unchecked often produce more
-churn than clarity — and serve as a tax on evolution.
+churn than clarity, and serve as a tax on evolution.
 
 > We say, “I can make a change because I have tests.” Who does that? Who drives their car around banging into the guard rails!?
 
@@ -125,7 +125,7 @@ and invoking side effects, integration tests are costly to write, brittle in exe
 Worse, they often devolve into ["big bang" tests](https://www.tutorialspoint.com/software_testing_dictionary/big_bang_testing.htm) that obscure failure sources.
 
 A passing integration test might imply that parts of the system are communicating, but not *how* or *why* they succeed
-&mdash; or whether that success is reproducible under real-world constraints.
+ or whether that success is reproducible under real-world constraints.
 
 We cannot test our way into good architecture. We must **design** for it.
 
@@ -138,7 +138,7 @@ it inherits most of TDD's flaws:
 - Encourages verbose, brittle, [Given-When-Then scenarios](https://martinfowler.com/bliki/GivenWhenThen.html)
 - Adds another layer of ceremony without increasing semantic rigor
 
-BDD improves communication &mdash; when used thoughtfully. But it does not fix the underlying issue:
+BDD improves communication when used thoughtfully. But it does not fix the underlying issue:
 **confusing strong examples with complete specifications.**
 
 ## The Norvig vs. Jeffries Anecdote
@@ -150,13 +150,13 @@ solving in contrast to Extreme Programming (XP) founder [Ron Jeffries](https://e
 attempt using TDD.
 
 TDD could not rescue Jeffries from the absence of a clear algorithmic strategy. Norvig succeeded through domain
-knowledge and formal modeling — not iterative test scaffolding.
+knowledge and formal modeling, not iterative test scaffolding.
 
 Sometimes, tests follow understanding. They do not produce it.
 
 ## The Myth of "Living Documentation"
 
-TDD and BDD advocates often claim that tests serve as "living documentation" — always up-to-date and executable.
+TDD and BDD advocates often claim that tests serve as "living documentation", always up-to-date and executable.
 But this is more wishful thinking than reality.
 
 - Tests document *how*, not *why*.
@@ -165,7 +165,7 @@ But this is more wishful thinking than reality.
 
 Unlike real documentation, tests are not curated, summarized, or structured for comprehension. They are optimized
 for mechanical verification, not human understanding. Assuming otherwise is a category error. A test that never
-fails does not evolve with the system — it stagnates beside it, growing increasingly detached from intent.
+fails does not evolve with the system, it stagnates beside it, growing increasingly detached from intent.
 Assertions, embedded within code, may provide more durable, semantically rich contracts than suites of external
 test files optimized for mechanical repetition rather than human meaning.
 
@@ -194,7 +194,7 @@ rather than conceptual. TDD may validate implementation details, but it does not
 
 Martin ends with a dramatic suggestion: someday, a software disaster will make TDD legally or professionally mandatory.
 But some of the greatest software disasters in history ([Ariane 5](https://web.archive.org/web/20160903040218/https://hownot2code.com/2016/09/02/a-space-error-370-million-for-an-integer-overflow/), [Therac-25](https://en.wikipedia.org/wiki/Therac-25), [Boeing 737 MAX](https://spectrum.ieee.org/how-the-boeing-737-max-disaster-looks-to-a-software-developer)) weren’t caused by a lack of unit
-tests — they were caused by miscommunication, system-level failures, and misunderstood requirements.
+tests they were caused by miscommunication, system-level failures, and misunderstood requirements.
 
 TDD, as it exists today, doesn’t address these high-level issues. It targets low-level correctness in small units of
 code. It’s a local technique, not a systemic safeguard.
@@ -206,14 +206,14 @@ it falls apart.
 
 None of this is to say that tests are unimportant. They serve a pragmatic role: catching regressions, guarding
 against unexpected behavior, and providing feedback during development. But when tests are elevated from a
-supporting practice to a governing principle — as in TDD or BDD — they become an epistemological overreach.
+supporting practice to a governing principle, as in TDD or BDD, they become an epistemological overreach.
 
-TDD rests on a seductive but flawed idea: that correctness can emerge from accumulation — that truth is a matter
+TDD rests on a seductive but flawed idea: that correctness can emerge from accumulation, that truth is a matter
 of coverage. But engineering is not statistics. Software design is not the sum of its edge cases. We are not
 inductive agents hoping to infer correctness from examples. We are designers, seeking structure, clarity, and invariants.
 
 A test can show that a program *works here*. It cannot tell us *what it means to work*. That comes from types,
-contracts, semantics — and above all, from thought.
+contracts, semantics, and above all, from thought.
 
 Use tests:
 
