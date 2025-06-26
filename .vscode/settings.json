@@ -7,8 +7,9 @@
         "TFLOPS"
     ],
     "[markdown]": {
-        "editor.wordWrap": "off"
+        "editor.rulers": [120],
     },
     "editor.renderWhitespace": "all",
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "rewrap.autoWrap.enabled": false
 }

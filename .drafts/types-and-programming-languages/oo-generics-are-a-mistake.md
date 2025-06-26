@@ -59,9 +59,6 @@ References
 * <http://wiki.c2.com/?GenericVsObjectOrientedProgramming>
 * <https://gbracha.blogspot.com/2018/10/reified-generics-search-for-cure.html>
 * <https://channel9.msdn.com/events/Lang-NEXT/Lang-NEXT-2014/Panel-Type-Systems-and-Much-More?term=erik%20meijer&lang-en=true&pageSize=15&skip=60>
-* Java Naming Conventions
-  * <https://stackoverflow.com/a/2900933/153209>
-<https://stackoverflow.com/a/30146204/153209>
 
 * <https://youtu.be/Yb_Z9BxVquw?t=294>
   * Beta has virtual types (associated types)
