@@ -206,7 +206,7 @@ clarifies the system's structure. It can lead to a proliferation of prefixes tha
 read.
 
 One example of this is the use of Hungarian Notation as a form of namespacing in large codebases. When too many
-variables are visible at once—across long functions or shared state modules—prefixes like `str`, `g_`, or `m_` serve not
+variables are visible at once, across long functions or shared state modules, prefixes like `str`, `g_`, or `m_` serve not
 just to encode type or scope, but to manage cognitive overhead. This is treating the symptom, not the disease.
 In both Object-Oriented and Functional Programming, a key goal is to **reduce the number of simultaneously visible
 variables** by limiting scope, pushing behavior into well-defined units, and making data flows explicit.
@@ -322,7 +322,7 @@ Some languages, like BASIC, once used sigils (e.g., `$foo` for strings) to signa
 `%` for hashes, which is a form of Systems Hungarian.
 
 These conventions weren't arbitrary: they evolved as compensations for limitations in type systems or module boundaries.
-Developers naturally reach for visible cues when deeper structure is missing. Hungarian Notation emerged similarly—in
+Developers naturally reach for visible cues when deeper structure is missing. Hungarian Notation emerged similarly, in
 response to a need for visible semantics in environments with limited abstraction tools. But in languages with
 expressive type systems, reflection, and modular composition, these visual hacks become noise. Here's the TypeScript
 answer to the above:
