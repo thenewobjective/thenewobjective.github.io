@@ -10,7 +10,7 @@ Ancient wisdom teaches us that knowing the [true name](https://en.wikipedia.org/
 power over it. In programming, this principle manifests in the art of naming, an often underappreciated yet profoundly
 impactful aspect of software design. Names are not just labels; when ideally distilled they are the foundation of
 a [language of discourse](https://en.wikipedia.org/wiki/Domain_of_discourse#Universe_of_discourse), which is the
-[material of thought](software-systems-engineering/managing-complexity/#language-the-material-of-thought) that shapes
+[material of thought](https://thenewobjective.com/software-systems-engineering/managing-complexity#language-the-material-of-thought) that shapes
 our understanding of a system.
 
 However, naming conventions have often been muddied by practices like Hungarian Notation and its relatives, which
