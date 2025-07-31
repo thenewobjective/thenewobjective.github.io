@@ -291,11 +291,17 @@ it is a work-in-progress.
 
 Assuming QA is satisfied, the `dev` branch can then be merged into `main` from that tag.
 A question is raised again: how should the merge be done? When you look at the history of `main`
-what do you want to see? My suggestion is a single event for every `dev` merge therefore a
-["squash merge"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits)
-like what is done with Task Branches. As a reminder, this will create a single commit on the `main` branch
-that contains all the changes from `dev` since the last merge. This also provides an opportunity
-to define release notes for the sum of work done on `dev` branch for this iteration.
+what do you want to see? My suggestion is a single event for every `dev` merge. Therefore a
+["squash merge"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits) might seem like a good idea like what is done with Task Branches,
+but that would not be appropriate here as it would introduce a "Ghost Commit" where it appears that the `main` branch
+is always 1 commit ahead of `dev`. Why? You're effectively squashing an already squashed history, creating a new unique
+commit with each merge. As a result, Git sees the squashed commit on `main` as new, and since it doesn't exist on `dev`,
+it appears that `main` is "1 commit ahead" of `dev`. This creates an artificial divergence even though the code is
+functionally in sync.
+
+Instead, "Rebase and fast-forward" should be used. This way the `main` branch will just point to the same commit as
+`dev`, no new commit is created, and there's no divergence. `main` and `dev` share the same commit history which is
+what we want.
 
 With `dev` merged into `main`, the `dev` branch is NOT deleted. It is kept around for the next iteration
 of development. This new point in time on `main` can now be considered a release candidate. You could
