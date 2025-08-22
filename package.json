@@ -21,7 +21,7 @@
   },
   "homepage": "https:///thenewobjective.com",
   "devDependencies": {
-    "@types/node": "^22.15.29",
+    "@types/node": "^24.3.0",
     "feed": "^5.1.0",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.3"
