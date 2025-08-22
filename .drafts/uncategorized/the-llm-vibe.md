@@ -43,6 +43,8 @@ Primitive people afraid of having their pictures taken as they thought it would 
 * <https://twitter.com/Grady_Booch/status/1596958685409861632>
 * <https://blog.bracha.org/WitherProgramming.html>
 * Gulliver's Travels: The Engine; <https://en.wikipedia.org/wiki/The_Engine>
+* <https://x.com/headinthebox/status/1959000456799428867>
+* <https://x.com/headinthebox/status/1918030539958972507>
 
 ### Generative AI and Critical Thinking
 
@@ -162,12 +164,11 @@ How does the Smalltalk tradition think about this?
 @DataSciFact
 Depending on which part of the logistic curve you look at, it can be growing exponentially, growing linearly, or exponentially approaching an plateau.
 
-
 "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it." - Kernighan
 
 For non-commodity software the LLMs aren't good enough to even write it
 
-https://x.com/mlhaufe/status/1928494327501590954
+<https://x.com/mlhaufe/status/1928494327501590954>
 
 ### News
 
