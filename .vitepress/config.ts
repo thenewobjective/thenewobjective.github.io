@@ -39,6 +39,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/images/icons/favicon-16x16.png' }],
     ['link', { rel: 'manifest', href: '/images/icons/site.webmanifest' }],
     ['link', { rel: 'search', href: '/search.xml', type: 'application/opensearchdescription+xml', title: siteTitle }],
+    ['link', { rel: 'alternate', type: 'application/rss+xml', title: siteTitle, href: '/feed.xml' }],
     ['link', { type: 'text/plain', rel: 'author', href: '/humans.txt' }],
   ],
   sitemap: { hostname },
