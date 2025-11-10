@@ -1,15 +1,7 @@
 {
   "name": "thenewobjective.com",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
-  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thenewobjective/thenewobjective.github.io.git"
@@ -20,17 +12,34 @@
     "url": "https://github.com/thenewobjective/thenewobjective.github.io/issues"
   },
   "homepage": "https:///thenewobjective.com",
-  "devDependencies": {
-    "@types/node": "^24.3.0",
-    "feed": "^5.1.0",
-    "markdown-it-mathjax3": "^4.3.2",
-    "vitepress": "^1.6.3"
+  "scripts": {
+    "build": "nuxt build",
+    "clean": "rm -rf .nuxt .output",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "serve": "npx serve .output/public"
   },
   "dependencies": {
-    "@primevue/themes": "^4.3.5",
-    "glob": "^11.0.2",
-    "markdown-it-footnote": "^4.0.0",
-    "markdown-it-image-figures": "^2.1.1",
-    "primevue": "^4.3.5"
+    "@nuxt/content": "^3.8.0",
+    "@nuxt/eslint": "^1.10.0",
+    "@nuxt/ui": "^4.1.0",
+    "@nuxtjs/robots": "^5.5.6",
+    "@nuxtjs/sitemap": "^7.4.7",
+    "better-sqlite3": "^12.4.1",
+    "eslint": "^9.38.0",
+    "nuxt": "^4.2.0",
+    "nuxt-feedme": "^2.0.0",
+    "rehype-mathjax": "^7.1.0",
+    "remark-math": "^6.0.0",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.71",
+    "@types/node": "^24.9.2",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.1.2"
   }
 }

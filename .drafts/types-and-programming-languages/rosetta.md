@@ -1,6 +1,6 @@
 https://www.johndcook.com/blog/2018/11/20/curry-howard-lambek/
 http://math.ucr.edu/home/baez/rosetta.pdf
-    “Computational trinitarianism” is a three-way correspondence between logic, type theory, and category theory.
+    "Computational trinitarianism" is a three-way correspondence between logic, type theory, and category theory.
 
 https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence
 <https://www.haskellforall.com/2017/02/the-curry-howard-correspondence-between.html>

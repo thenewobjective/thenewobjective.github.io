@@ -37,16 +37,16 @@ with some anecdotes. A more famous account is described by [Carl Jung](https://e
 > a colleague of mine in Zürich. He was a man somewhat older than myself whom I saw from
 > time to time, and who always teased me on these occasions about my interest in
 > dream-interpretation. I met him one day in the street, and he called out to me:
-> “How are things going? Are you still interpreting dreams? By the way, I’ve had another
-> idiotic dream. Does it mean something too?” He had dreamed as follows: “I am climbing a
+> "How are things going? Are you still interpreting dreams? By the way, I've had another
+> idiotic dream. Does it mean something too?" He had dreamed as follows: "I am climbing a
 > high mountain over steep, snow-covered slopes. I mount higher and higher — it is marvellous
 > weather. The higher I climb, the better I feel. I think: ‘If only I could go on climbing
-> like this for ever!’ When I reach the summit, my happiness and elation are so strong that
+> like this for ever!' When I reach the summit, my happiness and elation are so strong that
 > I feel I could mount right up into space. And I discover that I actually can do this. I go
-> on climbing on empty air. I awake in a real ecstasy.” When he had told me his dream, I said:
-> “My dear man, I know you can’t give up mountaineering, but let me implore you not to go
+> on climbing on empty air. I awake in a real ecstasy." When he had told me his dream, I said:
+> "My dear man, I know you can't give up mountaineering, but let me implore you not to go
 > alone from now on. When you go, take two guides, and you must promise on your word of
-> honour to follow their directions’.” “Incorrigible!” he replied laughing, and said good-bye.
+> honour to follow their directions'." "Incorrigible!" he replied laughing, and said good-bye.
 > I never saw him again. Two months later came the first blow. When out alone, he was buried
 > by an avalanche, but was dug out in the nick of time by a military patrol which happened to
 > came along. Three months after this the end came. He went on a climb accompanied by a younger

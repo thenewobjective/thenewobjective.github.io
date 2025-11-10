@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "generate",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: generate",
+			"detail": "nuxt generate"
+		},
+		{
+			"type": "npm",
+			"script": "serve",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: serve",
+			"detail": "npx serve .output/public"
+		},
+		{
+			"type": "npm",
+			"script": "dev",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: dev",
+			"detail": "nuxt dev"
+		}
+	]
+}

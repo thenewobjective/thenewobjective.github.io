@@ -1,15 +1,34 @@
 {
-    "cSpell.ignoreWords": [
-        "conways"
-    ],
-    "cSpell.words": [
-        "Parler",
-        "TFLOPS"
-    ],
     "[markdown]": {
-        "editor.rulers": [120],
+        "editor.rulers": [
+            120
+        ],
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.quickSuggestions": {
+        // used for tailwindcss
+        "strings": "on"
     },
     "editor.renderWhitespace": "all",
+    "explorer.fileNesting.enabled": true,
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
     "files.eol": "\n",
-    "rewrap.autoWrap.enabled": false
+    "git.pruneOnFetch": true,
+    "[vue]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "Vue.volar",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }
