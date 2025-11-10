@@ -28,7 +28,7 @@ const route = useRoute(),
         <UNavigationMenu :items="items" />
 
         <template #right>
-            <UContentSearchButton />
+            <UContentSearchButton :collapsed="false" />
 
             <UColorModeSwitch />
 
