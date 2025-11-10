@@ -22,6 +22,7 @@ export default defineNuxtConfig({
           'http-equiv': 'Content-Security-Policy',
           'content': 'default-src \'self\' ; script-src \'self\' \'unsafe-eval\' ; script-src-elem \'self\' \'unsafe-inline\' https://giscus.app/client.js ; connect-src \'self\' https://api.github.com https://api.iconify.design ; style-src \'self\' \'unsafe-inline\' https://giscus.app/default.css; frame-src \'self\' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src \'self\' data: https://avatars.githubusercontent.com https://mermaid.ink https://api.iconify.design'
         },
+        { 'http-equiv': 'X-Frame-Options', 'content': 'SAMEORIGIN' },
         { property: 'og:type', content: 'website' },
         { property: 'og:site', content: 'https://thenewobjective.com' },
         { name: 'referrer', content: 'strict-origin-when-cross-origin' },
