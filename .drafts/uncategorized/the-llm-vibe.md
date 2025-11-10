@@ -1,4 +1,65 @@
-# LLMs are not the answer
+---
+title: ???
+---
+
+## Introduction
+
+## References and Further Information
+
+- [Gerald Jay Sussman: The Role of Programming (Dan Friedman's 60th Birthday)](https://www.youtube.com/watch?v=arMH5GjBwUQ)
+  - PLs as the representation of knowledge
+  - How can I express my ideas in a way that not only the computer can understand, but also other people?
+  - Mathematical knowlege is declarative "What is true": `sqrt(x) = y where y^2 = x and y >= 0`
+  - Imperative knowledge is "How to": `Approximate sqrt(x) { guess g; improve g by avg(g, x/g); repeat until good enough }`
+  - PLs enable a formal means of expressing declarative and imperative knowledge
+    - Aside: Why do we need formal means of expressing knowledge?
+      - Because natural language is ambiguous
+      - Because natural language is imprecise
+      - Because natural language is context dependent
+      - Because natural language is not executable (until now with LLMs?)
+  - Aside: Lincoln in his youth grappled with what it meant to "demonstrate" something. He then [studied Euclid's Elements](https://drloihjournal.blogspot.com/2020/11/lincolns-logic-how-abe-learned-to-tell-when-a-thing-is-proved.html) and learned the power of formal reasoning.
+  - Mathematical notation sucks.
+    - `cos^2 x  = (cos x)^2 = cos(x) * cos(x)`
+      but `cos^-1(x) != 1/cos(x)` but `cos^-1(x) = arccos(x)`
+      - This is an idiom
+    - Why? To mathematicians it's a Natural language. Like English, when we communicate to one another we assume there
+      is a shared context and shared understanding of the terms we use so impressionistic notation to express ideas.
+      I think this impressionism is used due to the limitations of the notation/medium.
+    - But this impressionism makes it hard for learners to understand the concepts as the shared context is missing and
+      the notation may be unable to express the ideas precisely.
+    - Calculus can lead to "symbol pushing" where one manipulates symbols without understanding the underlying concepts.
+      - Aside: In LLM usage for programming this is akin to "vibe coding" where one prompts the LLM to generate code without
+        understanding the underlying concepts.
+    - By rewriting mathematical notation in a more precise way (such as a functional programming languages) we can
+      better express our ideas and reason about them.
+    - "Programming forces one to be precise and formal, without being excessively rigorous. The computer does not
+      tolerate vague descriptions or incomplete constructions. Thus the act of programming makes one keenly aware of
+      one's errors of reasoning or unsupported conclusions." - Gerald Jay Sussman
+      - "Formal" means that the terms and operations are well defined.
+      - "Rigorous" means you know it converges.
+  - "A computer is like a violin. You can imagine a novice trying ﬁrst a phonograph and then a violin. The latter, he
+    says, sounds terrible. That is the argument we have heard from our humanists and most of our computer scientists.
+    Computer programs are good, they say, for particular purposes, but they aren’t ﬂexible. Neither is a violin, or a
+    typewriter, until you learn how to use it." - Marvin Minsky
+- [Gerald Jay Sussman - Programming for the Expression of Ideas](https://www.infoq.com/presentations/Expression-of-Ideas/)
+  - Most of the time we think of computers as doing work for us, but what is overlooked is that computers changed
+    the way we think. The computer revolution is a revolution in the way we think and the way we express what we think.
+  - Mathematicians and Physicists have shared culture within their disciplines as well as significant shared culture
+    with one another. This shared culture enables them to communicate complex ideas with one another impressionistically
+    using mathematical notation. What's difficult for students is that they lack this shared culture and thus have to
+    simultaneously learn the notation, the concepts, and the shared culture.
+  - a well-crafted program is an expression of an idea, and it may be a work of art.
+- [How Terence Tao uses AI with Lean programming language | Terence Tao and Lex Fridman](https://www.youtube.com/watch?v=hh4cjZOddQA)
+- [Alan Kay - Doing with Images Makes Symbols: Communicating with Computers](https://www.youtube.com/watch?v=p2LZLYcu_JY)
+  - Learning happens when attention is focused.
+  - The parts of the body you want to have learn don't understand english.
+  - The problem with being a beginner is that you get alot of practice staying a beginner.
+
+--------------------------------------------
+--------------------------------------------
+--------------------------------------------
+
+
 
 ## LLMS plus Symbolic Reasoning
 
@@ -17,7 +78,6 @@ Primitive people afraid of having their pictures taken as they thought it would 
 
 ## Notes
 
-* <https://twitter.com/Grady_Booch/status/1750492290744025239>
 * <https://twitter.com/headinthebox/status/1752022195835171118>
 * <https://cacm.acm.org/blogs/blog-cacm/273577-ai-does-not-help-programmers/fulltext>
 * <https://twitter.com/headinthebox/status/1752490267439988970>
@@ -174,8 +234,47 @@ For non-commodity software the LLMs aren't good enough to even write it
 
 "Northeastern college student demanded her tuition fees back after catching her professor using OpenAI's ChatGPT," per FORTUNE"
 
-```
-They "looked at 25,000 workers across 7,000 workspaces, focusing on occupations believed to be susceptible to disruption by AI."
+> They "looked at 25,000 workers across 7,000 workspaces, focusing on occupations believed to be susceptible to disruption by AI."
+>
+> "On average, employees saved 3% of their time, while just 3%-7% of their productivity gains came back to them in the form of higher pay."
+> -- Fortune
 
-"On average, employees saved 3% of their time, while just 3%-7% of their productivity gains came back to them in the form of higher pay."
-``` - Fortune
+## Word Problems vs Symbolic Problems
+
+{ Compare word problems vs symbolic problems. Compare how verbose the problem is stated to how concise the symbolic representation is. }
+
+{ Also note that good symbolic representation are suggestive of additional properties that can be exploited for reasoning.
+for example the the suggested use of a triangle and an upside down triangle to represent logarithms and their inverse exponentiation. }
+
+Notation as a tool/material for thought and how Vibe Coding lacks this.
+
+## Natural Language Programming and Vibe Coding
+
+- [On the foolishness of "natural language programming"](https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html)
+- [SudoLang: A Powerful Pseudocode Programming Language for LLMs](https://medium.com/javascript-scene/sudolang-a-powerful-pseudocode-programming-language-for-llms-d64d42aa719b)
+- [Erik Meijer: Universalis](https://x.com/headinthebox/status/1952175559989170453)
+  - "That is what I am currently working on, it is called Universalis, and basically a Prolog/Datalog/SQL variant."
+- [Unleashing the Power of End-User Programmable AI: Creating an AI-first program Synthesis framework](https://queue.acm.org/detail.cfm?id=3746223)
+- X: Conversation between Michael Haufe and Gilad Bracha
+  - <https://x.com/mlhaufe/status/1924864356681990182>
+  - <https://x.com/mlhaufe/status/1923413629451321493>
+- [Universalis](https://www.youtube.com/watch?v=0A10LcXs570)
+- [Complacency with AI-generated code](https://www.thoughtworks.com/en-us/radar/techniques/summary/complacency-with-ai-generated-code)
+
+Vibing is not abstraction, it is indirection. Indirection in itself is not architecture.
+A paragraph of Natural Language is no substitute for a well understood set of symbols.
+
+"""
+The Natural Language interface has lowered the bar so much that we've effectively automated Type-1 thinking, so much so that we've effectively democratized "programming", and hopefully made commodity code and such effectively zero cost for users. But I think we're going to pay a heavy penalty as well. To quote Djikstra:"It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration".Dijkstra's point is not just that BASIC was a "bad" language, but that languages shape mental habits, and bad ones entrench poor habits. In this sense, programming languages are like cognitive prosthetics:
+A good prosthetic extends your reach and strengthens your agency, A bad one deforms your movement and locks you into maladaptive patterns.So with Vibe Coding: what is it's proper place? I'd say for prototyping, for domain experts, or for exploration.But if we treat it as a dominant mode of programming, it leads to: fragile, poorly understood black boxes with no formal model of understanding.I want programming to be treated as an [Extended Mind](https://en.wikipedia.org/wiki/Extended_mind_thesis),  where we become more than we are
+I don't want it to become a [Contracted Intellect](https://www.youtube.com/watch?v=LCPhbN1l024) where dependency replaces mastery.
+"""
+
+- Ralph the Vibe Coder on one-hand and [Temple Grandin](https://www.youtube.com/watch?v=4Wt19VZpYkM) on the other who says "Computers weren't made for people like me"
+
+
+This is probably better as a separate post: Automation and Responsibility
+- https://x.com/mlhaufe/status/1604907759509667848
+  "A computer can never be held accountable therefore a computer must never make a management decision."
+
+- ["Stop Writing Dead Programs" by Jack Rusher (Strange Loop 2022)](https://www.youtube.com/watch?v=8Ab3ArE8W3s)
