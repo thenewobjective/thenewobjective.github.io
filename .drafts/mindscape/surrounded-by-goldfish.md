@@ -44,7 +44,7 @@ Don't Be Smart, Sherlock
 Living in a world of GOldFish
 <https://www.youtube.com/watch?v=p8u7K9UYPWk>
 
-"The intellect may be the devil, but the devil is the “strange son of chaos” who can most readily be trusted to deal effectively with his mother. " -- Jung
+"The intellect may be the devil, but the devil is the "strange son of chaos" who can most readily be trusted to deal effectively with his mother. " -- Jung
 
 A Cynic attacks motivations
 A skeptic attacks the information

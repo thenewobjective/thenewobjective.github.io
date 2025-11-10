@@ -18,8 +18,8 @@ In summary, while a programming language provides the syntax and semantics for d
 [The operating system: should there be one?](https://www.humprog.org/~stephen/research/papers/kell13operating.pdf)
 
 ==========
-"an operating system is a collection of things that don’t fit inside a language; there
-shouldn’t be one" -Dan Ingalls
+"an operating system is a collection of things that don't fit inside a language; there
+shouldn't be one" -Dan Ingalls
 
 <https://worrydream.com/EarlyHistoryOfSmalltalk/>
 <https://gbracha.blogspot.com/2012/11/debug-mode-is-only-mode.html>

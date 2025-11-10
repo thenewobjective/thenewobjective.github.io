@@ -7,7 +7,7 @@ category: Philosophy
 permalink: /philosophy/foundational-definitions
 ---
 
-> “Philosophy is just a byproduct of misunderstanding language!  Why can’t you see that?”
+> "Philosophy is just a byproduct of misunderstanding language!  Why can't you see that?"
 
 &mdash; Wittgenstein
 
@@ -95,7 +95,7 @@ Vacuous proof
 <!--
 ## Further Reading
 
-* [Kant’s Transcendental Idealism. Phenomena and noumena](https://plato.stanford.edu/entries/kant-transcendental-idealism/#PhenNoum)
+* [Kant's Transcendental Idealism. Phenomena and noumena](https://plato.stanford.edu/entries/kant-transcendental-idealism/#PhenNoum)
 * [Wittgenstein on Language](https://web.archive.org/web/20180822072114/http://guywilliamsjr.com/index.php/category/philosophy-of-language/){:target='_blank'}
 * [Language game (philosophy)](https://en.wikipedia.org/wiki/Language_game_(philosophy)){:target='_blank'}
 * Correspondence Theory of Truth  (!!!)
@@ -173,20 +173,20 @@ Vacuous proof
 * <https://en.wikipedia.org/wiki/I_Am_that_I_Am>
   * Not an evasion IMO. Moreso like Ashildr:
 
-> Me: You mean… you haven’t come for me?
-> The Doctor: No, it was just a coincidence. Oh Ashildr, I’m sorry.
-> Me: Who’s Ashildr?
-> The Doctor: You are. That’s your name. Ashildr, daughter of Ionhar. Chuckles, I used to call him Chuckles. You don’t remember?
+> Me: You mean… you haven't come for me?
+> The Doctor: No, it was just a coincidence. Oh Ashildr, I'm sorry.
+> Me: Who's Ashildr?
+> The Doctor: You are. That's your name. Ashildr, daughter of Ionhar. Chuckles, I used to call him Chuckles. You don't remember?
 > Me: Yes. I think I remember the village.
 > The Doctor: You loved that village.
 > Me: If you say so.
 > The Doctor: Anyone in that village would have died for you.
-> Me: Well. They’re all dead now and here I am. So I guess it all worked out.
+> Me: Well. They're all dead now and here I am. So I guess it all worked out.
 >
 > The Doctor: Well what do you call yourself?
 > Me: Me.
-> The Doctor: Yes, you. There’s nobody else here.
-> Me: No. I call myself, “Me.” All my other names I chose died with who knew me. Me is who I am now. No one’s mother, daughter, wife. My own companion. Singular. Unattached. Alone.
+> The Doctor: Yes, you. There's nobody else here.
+> Me: No. I call myself, "Me." All my other names I chose died with who knew me. Me is who I am now. No one's mother, daughter, wife. My own companion. Singular. Unattached. Alone.
 
 &mdash; Doctor Who - <a href="https://www.planetclaire.tv/quotes/doctorwho/series-nine/the-woman-who-lived/" target="_blank">The Girl Who Lived</a>
 
@@ -442,7 +442,7 @@ Alfredo Liu-Perez
   Can we say that existence is a matter of degree and changes through time? Like my existence is 100% now, but was much
   less before I was born and will be less after I die. Albert Einstein doesn't exist now but he did exist at one point.
 ```
-One of the more unsettling discoveries in the past half century is that the universe is not locally real. “Real,” meaning that objects have definite properties independent of observation—an apple can be red even when no one is looking; “local” means objects can only be influenced by their surroundings, and that any influence cannot travel faster than light. Investigations at the frontiers of quantum physics have found that these things cannot both be true. Instead, the evidence shows objects are not influenced solely by their surroundings and they may also lack definite properties prior to measurement. As Albert Einstein famously bemoaned to a friend, “Do you really believe the moon is not there when you are not looking at it?”
+One of the more unsettling discoveries in the past half century is that the universe is not locally real. "Real," meaning that objects have definite properties independent of observation—an apple can be red even when no one is looking; "local" means objects can only be influenced by their surroundings, and that any influence cannot travel faster than light. Investigations at the frontiers of quantum physics have found that these things cannot both be true. Instead, the evidence shows objects are not influenced solely by their surroundings and they may also lack definite properties prior to measurement. As Albert Einstein famously bemoaned to a friend, "Do you really believe the moon is not there when you are not looking at it?"
 ```
 <https://www.scientificamerican.com/article/the-universe-is-not-locally-real-and-the-physics-nobel-prize-winners-proved-it/>
 

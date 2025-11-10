@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@source "../../../content/**/*";
+
+@theme {
+    --default-font-family: Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --default-font-size: 13pt;
+}
+
+h2 {
+    @apply mt-8 mb-4 text-2xl font-semibold border-t border-default pt-4;
+
+    :first-of-type {
+        @apply border-t-0 pt-0;
+    }
+}
+
+h3 {
+    @apply mt-6 mb-3 text-xl font-semibold;
+}
+
+h4 {
+    @apply mt-4 mb-2 text-lg font-semibold;
+}
+
+p {
+    @apply mb-4 mt-4 leading-7;
+
+    .MathJax svg {
+        @apply m-auto;
+    }
+}
+
+main a:not([href^="#"]), .page-body a:not([href^="#"]){
+    @apply text-primary hover:underline focus:underline;
+}
+
+main, .page-body {
+    ul {
+        @apply list-disc list-inside;
+    }
+
+    ol {
+        @apply list-decimal list-inside;
+    }
+}
+
+blockquote {
+    @apply border-l-4 border-default pl-4 italic my-4;
+}
+
+details {
+    @apply pb-4;
+
+    summary {
+        @apply cursor-pointer font-semibold mb-2;
+    }
+}
+
+table {
+    @apply table-auto border-collapse my-6;
+
+    th, td {
+        @apply border border-default px-4 py-2;
+    }
+
+    th {
+        @apply bg-elevated font-semibold;
+    }
+}

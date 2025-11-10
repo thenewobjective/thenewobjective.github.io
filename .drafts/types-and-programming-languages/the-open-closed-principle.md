@@ -9,7 +9,7 @@ The 'O' in the SOLID stands for the Open-Closed Principal. "software entities (c
 So, if there is a bug in your code, what do you do? Not just for some HTTP interface to a client, but what about
  a class definition that some client code relies upon?
 
-John ‘Johnny Rockstacks’ Cairns
+John ‘Johnny Rockstacks' Cairns
   20 days ago
 You could extend and overwrite if possible
 

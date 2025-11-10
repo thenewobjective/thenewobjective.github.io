@@ -1,5 +1,5 @@
-“Having functional programming as an ideal doesn’t imply that programs should never have side-
-effects. It just means that they should have no more than necessary.” —
+"Having functional programming as an ideal doesn't imply that programs should never have side-
+effects. It just means that they should have no more than necessary." —
 @paulg, On Lisp
 
 

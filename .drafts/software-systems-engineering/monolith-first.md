@@ -9,7 +9,7 @@ In 2020 Figma started hitting growing pains with their single managed Postgres d
 
 That means they managed to grow to a $2B company on a single mged instance.
 
-I bet at they hired engineers around this time who grumbled about not picking a more ‘scalable’ tech.
+I bet at they hired engineers around this time who grumbled about not picking a more ‘scalable' tech.
 ```
 
 ## Stack Overflow

@@ -15,7 +15,7 @@ AGPL only
 		"""
 		skills and knowledge almost impossible, because
 		learnings are quickly obsoleted by the next
-		“improvement” on continuous deployment.
+		"improvement" on continuous deployment.
 
 		The 1990s web centered URLs and view source,
 		treated users as contributors. This web treats

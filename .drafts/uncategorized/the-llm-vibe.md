@@ -55,7 +55,7 @@ A study conducted by Microsoft Research surveyed 319 knowledge workers who use g
 When using GenAI tools, the effort invested in critical thinking shifts from information gathering to information verification, from problem-solving to AI response integration, and from task execution to task stewardship.
 This shift indicates that while GenAI tools can improve worker efficiency, they can also inhibit critical engagement with work and potentially lead to long-term overreliance on the tool and diminished skill for independent problem-solving.
 
-The study also revealed that higher confidence in GenAI’s ability to perform a task is related to less critical thinking effort. For instance, confidence in GenAI was negatively correlated with perceived enaction of critical thinking, suggesting that as workers become more confident in GenAI, they perceive less need for critical thinking.
+The study also revealed that higher confidence in GenAI's ability to perform a task is related to less critical thinking effort. For instance, confidence in GenAI was negatively correlated with perceived enaction of critical thinking, suggesting that as workers become more confident in GenAI, they perceive less need for critical thinking.
 
 Participants in the survey reported that they engage in critical thinking primarily to ensure the quality of their work, such as by verifying outputs against external sources.
 The study identified several barriers to critical thinking when using GenAI tools, including awareness barriers, motivation barriers, and ability barriers.
@@ -93,7 +93,7 @@ Human languages: they change.
 
 ### Quote
 
-“We become what we behold. We shape our tools and then our tools shape us.” — Marshall McLuhan
+"We become what we behold. We shape our tools and then our tools shape us." — Marshall McLuhan
 
 ### Thamus and Theuth
 
@@ -127,7 +127,7 @@ Additional Book reference: Science since Babylon
 I have said it many times before, and you all told me that I was crazy, but I'll say it again: ***The golden age of SWE is over***.
 
 @headinthebox
-Here is a more down-to-earth way to think about the effect of AI on coding. I’m sure all the farmhands in the early 1900s argued that a combine harvester couldn’t possibly do the job as well as they could by hand. And yet, here we are.
+Here is a more down-to-earth way to think about the effect of AI on coding. I'm sure all the farmhands in the early 1900s argued that a combine harvester couldn't possibly do the job as well as they could by hand. And yet, here we are.
 
 @Gilad_Bracha
 I tend to agree. We might ask if Jevon's paradox will create so much software that requires humans to oversee/verify that SE employment remains intact. I doubt it, but it is possible.
@@ -172,7 +172,7 @@ For non-commodity software the LLMs aren't good enough to even write it
 
 ### News
 
-"Northeastern college student demanded her tuition fees back after catching her professor using OpenAI’s ChatGPT," per FORTUNE"
+"Northeastern college student demanded her tuition fees back after catching her professor using OpenAI's ChatGPT," per FORTUNE"
 
 ```
 They "looked at 25,000 workers across 7,000 workspaces, focusing on occupations believed to be susceptible to disruption by AI."

@@ -242,7 +242,7 @@ let expSeven: ExpType = Add(Lit(4), Add(Lit(2), Lit(1)))
 * "objects are a poor man's closures" --Norman Adams
 * Objects and closures are equivalent
 * "Objects are state data with attached behavior; Closures are behaviors with attached state data" -- Peter Norvig
-* "A closure is an object that supports exactly one method: ‘apply’" --Guy Steele
+* "A closure is an object that supports exactly one method: ‘apply'" --Guy Steele
 * "A closure is an object with a single method, an object is a closure with multiple methods. -- Erik Meijer "
 * Closure:
   * A lexical environment

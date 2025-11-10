@@ -11,7 +11,7 @@ According to Centare:
 jasonmalmstadt  9:53 AM
 Agreed could = not necessarily
 Velocity went up. Does that mean the team is more productive? Maybe.
-Could also be the team is estimating bigger because they’re nervous about
+Could also be the team is estimating bigger because they're nervous about
 the risk and are over-estimating but still completing. Could also mean
 that they pulled in many smaller stories that they knocked out quickly
 versus fewer larger stories. Could also mean they hit a bunch of work

@@ -88,7 +88,7 @@ Stack vs Queue interface
 Strengthening/weakening in contract subtypes:
 
 """
-The notions of “stronger” and “weaker” are formally defined from logic: P1 is said to be
+The notions of "stronger" and "weaker" are formally defined from logic: P1 is said to be
 stronger than P2, and P2 weaker than P1, if P1 implies P2 and they are not equal. As every
 proposition implies True, and False implies every proposition, it is indeed legitimate to
 speak of True as the weakest and False as the strongest of all possible assertions.
