@@ -63,7 +63,7 @@ useHead(() => ({
             <img v-if="featuredImage" :src="featuredImage" :alt="`Featured image for ${title}`"
                 class="mb-6 rounded-lg shadow-lg">
 
-            <ContentRenderer :value="page!" />
+            <ContentRenderer v-if="page" :value="page" />
 
             <USeparator v-if="surround?.filter(Boolean).length" />
 
@@ -74,7 +74,7 @@ useHead(() => ({
 
         <template #right>
             <UPageAside>
-                <UContentToc :links="page?.body?.toc?.links" />
+                <UContentToc v-if="page?.body?.toc" :links="page.body.toc.links" />
             </UPageAside>
         </template>
     </UPage>
