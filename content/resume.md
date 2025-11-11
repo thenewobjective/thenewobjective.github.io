@@ -318,9 +318,21 @@ items:
 <details>
   <summary>Clients</summary>
 
-**MedServe** (August 2024 - September 2024)
+**Beverage Federation** (June 2025 - Present)
+[Beverage Federation](https://www.beveragefederation.com/)
+* Azure Infrastructure configuration
+* DevOps transformation (CI/CD, Test automation)
+* System Architecture (.NET, React, nopCommerce)
+* Scrum Training
+* Stripe Connect Payment Gateway integration
+* FedEx Shipping integration
+
+**MedServe** (August 2024 - October 2025)
 [MedServe](https://medserverx.com/)
 * Azure Infrastructure configuration
+* SOC-2 compliance
+* Single-Sign-On (SSO) configuration
+* System Architecture (.NET, React, Raspberry PI)
 
 **DCI Marketing** (March 2024)
 [DCI Marketing](https://www.dcimarketing.com/)
