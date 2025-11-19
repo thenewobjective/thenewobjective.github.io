@@ -32,6 +32,10 @@ p {
     }
 }
 
+.page-body {
+    @apply max-w-3xl
+}
+
 main a:not([href^="#"]), .page-body a:not([href^="#"]){
     @apply text-primary hover:underline focus:underline;
 }
