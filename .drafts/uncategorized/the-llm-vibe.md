@@ -337,6 +337,7 @@ title: The Material of Thought: Programming Beyond Machines
   - Abstraction is a semantic compression: it hides irrelevant details but preserves structure.
   - Obfuscation is a syntactic occlusion: it hides structure itself, preventing reconstruction of meaning.
 - [Comprehension of computer code relies primarily on domain-general executive brain regions](https://elifesciences.org/articles/58906)
+- https://jso.eecs.yorku.ca/2025/09/07/llms-the-illusion-of-thinking/
 
 --------------------------------------------
 --------------------------------------------
