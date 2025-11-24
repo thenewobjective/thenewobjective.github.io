@@ -1,5 +1,5 @@
 ---
-title: The Material of Thought: Programming Beyond Machines
+title: The Roel of Programming
 ---
 
 ## Introduction
@@ -338,6 +338,10 @@ title: The Material of Thought: Programming Beyond Machines
   - Obfuscation is a syntactic occlusion: it hides structure itself, preventing reconstruction of meaning.
 - [Comprehension of computer code relies primarily on domain-general executive brain regions](https://elifesciences.org/articles/58906)
 - https://jso.eecs.yorku.ca/2025/09/07/llms-the-illusion-of-thinking/
+- Edsger W. Dijkstra famously argued that the question of whether machines can think is not a meaningful inquiry, comparing it to asking whether a submarine can swim.
+  He contended that such questions are irrelevant because they stem from an anthropomorphic misunderstanding of technology; just as a submarine is designed for underwater travel rather than swimming, a computer is built for specific computational tasks, not for human-like cognition.
+  Dijkstra's point was that evaluating machines based on human characteristics like "thinking" adds no practical value and distracts from understanding their actual functions.
+  He emphasized that the focus should be on problem-solving and functionality rather than philosophical debates about machine consciousness.
 
 --------------------------------------------
 --------------------------------------------
