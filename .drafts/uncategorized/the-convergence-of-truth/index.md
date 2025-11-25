@@ -56,6 +56,10 @@ that deals with the nature of knowledge, belief, and truth. [...]
 <!-- https://en.wikipedia.org/wiki/Epistemology#Belief_and_truth -->
 <!-- Doxastic logic -->
 
+---
+
+<https://en.wikipedia.org/wiki/Everything_That_Rises_Must_Converge>
+
 ## Logic
 
 ## Gödel's incompleteness theorems

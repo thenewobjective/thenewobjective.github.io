@@ -51,6 +51,8 @@
   - publishing multiple changes in a day
   - "The best testing is on production"
 
+<https://techtrenches.substack.com/p/the-great-software-quality-collapse>
+
 <https://karl-voit.at/cloud/>
 
 - Features interact
