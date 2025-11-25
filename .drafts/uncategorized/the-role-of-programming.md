@@ -412,6 +412,8 @@ Notation as a tool/material for thought and how Vibe Coding lacks this.
 
 Vibing is not abstraction, it is indirection. Indirection in itself is not architecture.
 A paragraph of Natural Language is no substitute for a well understood set of symbols.
+  - Signs vs Symbols
+  - Doing with Images Makes Symbols: Communicating with Computers - Alan Kay
 
 - Ralph the Vibe Coder on one-hand and [Temple Grandin](https://www.youtube.com/watch?v=4Wt19VZpYkM) on the other who says "Computers weren't made for people like me"
 
@@ -425,3 +427,5 @@ This is probably better as a separate post: Automation and Responsibility
 “We’re smart enough to invent AI, dumb enough to need it, and still so stupid we can’t figure out if we did the right thing.” - Jerry Seinfeld
 
 A big difference though is that through different language generations (1GL -> 4GL+) we added abstractions and architecture. With LLMs (Vibe Coding specifically) we are adding obfuscation and indirection.
+
+We want the [Extended Mind](https://en.wikipedia.org/wiki/Extended_mind_thesis), not the [Contracted Intellect](https://www.youtube.com/watch?v=LCPhbN1l024).
