@@ -8,8 +8,6 @@ title: The Roel of Programming
 
 &mdash; [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra)
 
-
-
 ## The Invention of Formal Thought
 
 ## The Cognitive Role of Programming
@@ -138,7 +136,7 @@ title: The Roel of Programming
 - "Be wary of unearned wisdom" - Carl Jung
 - "We have become the tool of our tools." - Henry David Thoreau
 - "We become what we behold. We shape our tools and then our tools shape us." — Marshall McLuhan
-- https://en.m.wikipedia.org/wiki/Thinking,_Fast_and_Slow#Two_systems
+- <https://en.m.wikipedia.org/wiki/Thinking,_Fast_and_Slow#Two_systems>
   - System 1: fast, automatic, frequent, emotional, stereotypic, subconscious
   - System 2: slow, effortful, infrequent, logical, calculating, conscious
   - "Most of the time, we operate using System 1, which requires little effort. System 2 is often in a comfortable low-effort mode,
@@ -181,7 +179,7 @@ title: The Roel of Programming
     > by mechanising routine tasks and leaving exception-handling to the human user, you deprive the user of the routine opportunities to practice
     > their judgement and strengthen their cognitive musculature, leaving them atrophied and unprepared when the exceptions do arise.
   - > users with access to GenAI tools produce a less diverse set of outcomes for the same task, compared to those without.
-  - >  Surprisingly, while AI can improve efficiency, it may also reduce critical engagement, particularly in routine or lower-stakes
+  - > Surprisingly, while AI can improve efficiency, it may also reduce critical engagement, particularly in routine or lower-stakes
     > tasks in which users simply rely on AI, raising concerns about long-term reliance and diminished independent problem-solving.
   - > For tasks like knowledge retrieval, AI reduces effort by automating information gathering, but workers must now invest more in verifying the accuracy of AI outputs.
     > Analysing 936 real-world GenAI tool use examples our participants shared, we
@@ -329,7 +327,7 @@ title: The Roel of Programming
   [Extended Mind](https://en.wikipedia.org/wiki/Extended_mind_thesis),  where we become more
   than we are. I don't want it to become a [Contracted Intellect](https://www.youtube.com/watch?v=LCPhbN1l024)
   where dependency replaces mastery."
-- I was reviewing The Automation Paradox (ref: https://uxpsychology.substack.com/p/the-automation-paradox-how-more-tech),
+- I was reviewing The Automation Paradox (ref: <https://uxpsychology.substack.com/p/the-automation-paradox-how-more-tech>),
   and am wondering about the following: In Software Engineering, Abstraction can be seen as information hiding. Software Architecture
   can be seen as a form of indirection accomplished via the application of Abstractions.
   How does Abstraction differ from Obfuscation / Obscuration and can automation (such as vibe coding)
@@ -337,7 +335,7 @@ title: The Roel of Programming
   - Abstraction is a semantic compression: it hides irrelevant details but preserves structure.
   - Obfuscation is a syntactic occlusion: it hides structure itself, preventing reconstruction of meaning.
 - [Comprehension of computer code relies primarily on domain-general executive brain regions](https://elifesciences.org/articles/58906)
-- https://jso.eecs.yorku.ca/2025/09/07/llms-the-illusion-of-thinking/
+- <https://jso.eecs.yorku.ca/2025/09/07/llms-the-illusion-of-thinking/>
 - Edsger W. Dijkstra famously argued that the question of whether machines can think is not a meaningful inquiry, comparing it to asking whether a submarine can swim.
   He contended that such questions are irrelevant because they stem from an anthropomorphic misunderstanding of technology; just as a submarine is designed for underwater travel rather than swimming, a computer is built for specific computational tasks, not for human-like cognition.
   Dijkstra's point was that evaluating machines based on human characteristics like "thinking" adds no practical value and distracts from understanding their actual functions.
@@ -349,7 +347,9 @@ title: The Roel of Programming
 
 ## Notes
 
-* https://rosettacode.org/wiki/Conway%27s_Game_of_Life#JAMES_II/Rule-based_Cellular_Automata
+<https://x.com/c_valenzuelab/status/1856809765055467583>
+
+- <https://rosettacode.org/wiki/Conway%27s_Game_of_Life#JAMES_II/Rule-based_Cellular_Automata>
   - Compare the English description of the Game of Life rules to the one-line code of APL.
   - Reference the fitness landscape of complexity trade-offs described in <https://thenewobjective.com/software-systems-engineering/managing-complexity/>
 
@@ -415,12 +415,10 @@ A paragraph of Natural Language is no substitute for a well understood set of sy
 
 - Ralph the Vibe Coder on one-hand and [Temple Grandin](https://www.youtube.com/watch?v=4Wt19VZpYkM) on the other who says "Computers weren't made for people like me"
 
-
 This is probably better as a separate post: Automation and Responsibility
-- https://x.com/mlhaufe/status/1604907759509667848
+
+- <https://x.com/mlhaufe/status/1604907759509667848>
   "A computer can never be held accountable therefore a computer must never make a management decision."
-
-
 
 “We’re smart enough to invent AI, dumb enough to need it, and still so stupid we can’t figure out if we did the right thing.” - Jerry Seinfeld
 
