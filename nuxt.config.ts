@@ -1,12 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/robots', // https://nuxt.com/modules/robots
-    '@nuxt/content', // https://content.nuxt.com/docs/getting-started
-    '@nuxt/eslint', // https://nuxt.com/modules/eslint
-    '@nuxt/ui', // https://ui.nuxt.com/
-    '@nuxtjs/sitemap', // https://nuxt.com/modules/sitemap
-    'nuxt-feedme' // https://nuxt.com/modules/nuxt-feedme
+    // https://nuxt.com/modules/robots
+    '@nuxtjs/robots',
+    // https://www.npmjs.com/package/@barzhsieh/nuxt-content-mermaid
+    '@barzhsieh/nuxt-content-mermaid',
+    // https://content.nuxt.com/docs/getting-started
+    '@nuxt/content',
+    // https://nuxt.com/modules/eslint
+    '@nuxt/eslint',
+    // https://ui.nuxt.com/
+    '@nuxt/ui',
+    // https://nuxt.com/modules/sitemap
+    '@nuxtjs/sitemap',
+    // https://nuxt.com/modules/nuxt-feedme
+    'nuxt-feedme'
   ],
   ssr: true,
   devtools: {

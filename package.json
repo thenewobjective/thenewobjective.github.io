@@ -22,6 +22,7 @@
     "serve": "npx serve .output/public"
   },
   "dependencies": {
+    "@barzhsieh/nuxt-content-mermaid": "^2.1.3",
     "@nuxt/content": "^3.8.2",
     "@nuxt/eslint": "^1.10.0",
     "@nuxt/ui": "^4.2.0",

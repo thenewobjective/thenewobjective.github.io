@@ -24,7 +24,7 @@ the request to the next object in a chain until one of the objects can handle it
 
 Here is how a chain of responsibility is structured:
 
-:::mermaid
+```mermaid
 classDiagram
 
 Handler <-- Handler : nextHandler
@@ -41,12 +41,12 @@ class Sender {
     void send(Request request)
 }
 Sender --> Handler : handler
-:::
+```
 
 Sequentially, when a `Sender` sends a `Request`, it invokes the `handle` method on its associated `Handler`.
 If the `Handler` can process the `Request`, it does so and returns a `Response`. If not, it forwards the `Request` to its `nextHandler`.
 
-:::mermaid
+```mermaid
 sequenceDiagram
     participant S as Sender
     participant H1 as Handler1
@@ -65,7 +65,7 @@ sequenceDiagram
             H3->>S: Response
         end
     end
-:::
+```
 
 ## Logger Example
 
@@ -299,6 +299,7 @@ This example showcases both "teeth" of the comb:
   - Provides `leftMargin`, `rightMargin`, `bottomMargin` (default 1.0), `paperSize` (default 'letter'), and `getMargins()` method
 - **Parent chain** (vertical): `page42` &rarr; `chapter3` &rarr; `techManual`
   - Provides `headerText` and `footerText` from specific document instances
+
 ## Event Propagation
 
 A UI framework where events naturally bubble up the component hierarchy without explicit listener registration:
