@@ -1,6 +1,7 @@
 ---
 title: Comb Inheritance
 date: 2025-12-23 21:00:00 -0600
+featuredImage: /media-library/tapl/comb-inheritance-hero.png
 ---
 
 ## Introduction
