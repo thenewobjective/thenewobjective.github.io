@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/thenewobjective/thenewobjective.github.io/issues"
   },
-  "homepage": "https:///thenewobjective.com",
+  "homepage": "https://thenewobjective.com",
   "scripts": {
     "build": "nuxt build",
     "clean": "rm -rf .nuxt .output",
@@ -19,7 +19,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "serve": "npx serve .output/public"
+    "serve": "npx serve .output/public",
+    "typecheck": "nuxt typecheck",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@barzhsieh/nuxt-content-mermaid": "^2.1.3",
