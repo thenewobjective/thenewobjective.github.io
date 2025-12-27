@@ -5,3 +5,28 @@
 - <https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection>
 - <https://ailef.tech/2022/11/12/creating-a-2d-physics-engine-from-scratch-in-javascript/>
 - <https://mozdevs.github.io/html5-games-workshop/en/guides/platformer/start-here/>
+- <https://web.archive.org/web/20160315202744/http://xnaresources.com/default.asp?page=Tutorial:TileEngineSeries:2>
+- <https://web.archive.org/web/20111015012235/http://www.gamedev.net/page/resources/_/technical/game-programming/coordinates-in-hexagon-based-tile-maps-r1800>
+- <https://news.ycombinator.com/item?id=4282348>
+- <https://web.archive.org/web/20120107210245/http://blogs.msdn.com/b/ericlippert/archive/2011/12/12/shadowcasting-in-c-part-one.aspx>
+- <http://www.redblobgames.com/>
+- <https://github.com/mxgmn/WaveFunctionCollapse>
+- [Tile Studio](https://news.ycombinator.com/item?id=12739797)
+- <https://www.mapeditor.org/>
+- <https://github.com/mapeditor/tiled/wiki>
+- <https://code.tutsplus.com/introduction-to-tiled-map-editor-a-platform-agnostic-tool-for-level-maps--gamedev-2838t>
+- <http://www-cs-students.stanford.edu/~amitp/gameprog.html#tiles>
+- <https://github.com/mlhaufe/tile-engine>
+- <https://web.archive.org/web/20111007060818/http://www.reinerstilesets.de/>
+- <https://en.wikipedia.org/wiki/Mode_7>
+- [Kongregate: the science behind the massive profits of F2P games](https://news.ycombinator.com/item?id=9716430)
+- <https://phaser.io/>
+- <https://developer.mozilla.org/en/docs/Games>
+- <https://web.archive.org/web/20071006102640/http://www.tonypa.pri.ee/tbw/start.html>
+- <https://web.archive.org/web/20041207002146/https://www.gamedev.net/reference/list.asp?categoryid=45>
+- https://love2d.org/?teej
+- https://gameprogrammingpatterns.com/contents.html
+- http://www.effectgames.com/
+- [How to create 2D visibility/shadow effects for your game](https://news.ycombinator.com/item?id=7381511)
+- https://photonstorm.com/code
+- https://craftyjs.com/
