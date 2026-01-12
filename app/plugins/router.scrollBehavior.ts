@@ -17,7 +17,7 @@ export default defineNuxtPlugin((nuxtApp) => {
                     const element = document.querySelector(to.hash)
                     if (element) {
                         resolve({
-                            el: to.hash,
+                            el: element,
                             behavior: 'smooth'
                         })
                     }
