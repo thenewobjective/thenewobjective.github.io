@@ -21,9 +21,24 @@ const route = useRoute(),
     { data: files } = useLazyAsyncData('search', () => queryCollectionSearchSections('content'), {
         server: false
     }),
-    searchTerm = ref('')
+    searchTerm = ref(''),
+    appConfig = useAppConfig(),
 
-// Check for query parameter and open search
+    // Scroll to anchor after hydration delay
+    scrollToHash = (hash: string) => {
+        if (!hash)
+            return
+
+        setTimeout(() => {
+            const element = document.querySelector(hash)
+            if (element)
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+            // Fail silently if element not found
+        }, appConfig.scrollBehavior.anchorDelay)
+    }
+
+// Check for query parameter and open search, and handle hash anchors on mount
 onMounted(() => {
     const urlParams = new URLSearchParams(window.location.search)
     if (urlParams.has('q')) {
@@ -44,6 +59,10 @@ onMounted(() => {
             }, 100)
         }
     }
+
+    // Handle hash anchor on initial page load
+    if (window.location.hash)
+        scrollToHash(window.location.hash)
 })
 
 // Watch for query parameter changes
@@ -63,6 +82,12 @@ watch(() => route.query.q, (queryTerm) => {
             }, 100)
         }
     }
+})
+
+// Watch for hash changes in the route
+watch(() => route.hash, (newHash) => {
+    if (newHash)
+        scrollToHash(newHash)
 })
 </script>
 
