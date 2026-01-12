@@ -12,5 +12,9 @@ export default defineAppConfig({
             secondary: 'purple',
             neutral: 'zinc'
         }
+    },
+    scrollBehavior: {
+        // Delay for anchor scrolling to allow content hydration (fixes Chrome timing issue)
+        anchorDelay: 300
     }
 })
