@@ -35,7 +35,7 @@ const route = useRoute(),
                 element.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
             // Fail silently if element not found
-        }, appConfig.scrollBehavior.anchorDelay)
+        }, appConfig.scrollBehavior?.anchorDelay || 300)
     }
 
 // Check for query parameter and open search, and handle hash anchors on mount
