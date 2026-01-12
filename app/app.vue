@@ -84,11 +84,6 @@ watch(() => route.query.q, (queryTerm) => {
     }
 })
 
-// Watch for hash changes in the route
-watch(() => route.hash, (newHash) => {
-    if (newHash)
-        scrollToHash(newHash)
-})
 </script>
 
 <template>
