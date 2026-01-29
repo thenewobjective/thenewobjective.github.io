@@ -310,9 +310,11 @@ commit with each merge. As a result, Git sees the squashed commit on `main` as n
 it appears that `main` is "1 commit ahead" of `dev`. This creates an artificial divergence even though the code is
 functionally in sync.
 
-Instead, "Rebase and fast-forward" should be used. This way the `main` branch will just point to the same commit as
-`dev`, no new commit is created, and there's no divergence. `main` and `dev` share the same commit history which is
-what we want.
+Instead, either "Basic merge (no fast-forward)" or "Rebase and fast-forward" should be used. Basic merge is generally
+recommended as it creates an explicit merge commit showing when the integration happened and handles cases where `main`
+has diverged (e.g., from hotfixes). "Rebase and fast-forward" creates a linear history where the `main` branch will
+just point to the same commit as `dev`, with no new commit created and no divergence. Both strategies preserve Git's
+ability to track which commits exist in both branches, preventing artificial divergence.
 
 With `dev` merged into `main`, the `dev` branch is NOT deleted. It is kept around for the next iteration
 of development. This new point in time on `main` can now be considered a release candidate. You could
@@ -362,6 +364,12 @@ the option of tagging the commit with a `-beta` suffix is available if we want t
 before promoting to a higher environment. Note that normal development continues on `dev` for the next release
 while the hotfix is being worked on.  Once the fix is ready, the task branch is merged into `main` and
 then tagged as appropriate for release (e.g., `v1.0.1` or `v1.0.0-rc` if additional testing is required).
+
+> **Important:** Do not use squash merge for hotfix branches. The hotfix must be merged using basic merge (merge commit)
+> or rebase and fast-forward into both `main` and `dev`. Using squash merge will create different commit SHAs in each
+> branch, causing Git to lose track of the relationship between the commits. This leads to artificial divergence where
+> the branches appear to have different commits even though the code is identical, resulting in an ever-increasing
+> "behind" count.
 
 You now have a new release that contains the fix, but what about `dev`? They were working on the next release
 but still contained the bug. The fix needs to be merged into `dev` as well. As was mentioned earlier, the hotfix
