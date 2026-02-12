@@ -361,6 +361,34 @@ title: The Roel of Programming
   - Compare the English description of the Game of Life rules to the one-line code of APL.
   - Reference the fitness landscape of complexity trade-offs described in <https://thenewobjective.com/software-systems-engineering/managing-complexity/>
 
+### Guitar vs Guitar Hero
+
+Vibe coding analogy
+
+Guitar vs guitar hero
+
+Southpark visualization
+
+### A head in the clouds
+
+Having your head in the clouds is easier than trying to fit the heavens in your head.
+
+Hence the utility of the extended mind hypothesis.
+
+### LLMs and the illusion of thinking
+
+On LLMs generating code:
+
+“Debugging is harder than programming, so don’t use up all your cleverness in writing the program!” Tony Hoare
+
+### The outsourcing of labor
+
+With the mechanical revolution we've outsourced our physical labor
+
+With the AI revolution we're outsourcing our mental labor.
+
+What remains?
+
 ### Spell Checkers
 
     The influence of spell checkers on student's ability to generate repairs of spelling errors
