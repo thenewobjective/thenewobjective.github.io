@@ -340,7 +340,15 @@ title: The Roel of Programming
   He contended that such questions are irrelevant because they stem from an anthropomorphic misunderstanding of technology; just as a submarine is designed for underwater travel rather than swimming, a computer is built for specific computational tasks, not for human-like cognition.
   Dijkstra's point was that evaluating machines based on human characteristics like "thinking" adds no practical value and distracts from understanding their actual functions.
   He emphasized that the focus should be on problem-solving and functionality rather than philosophical debates about machine consciousness.
-
+- <https://search.brave.com/search?q=doug+englebart+the+augmentation+of+human+intellect&summary=1&conversation=08b5e7aec2e4ac748c28c3972e74b4ebb116>
+- <https://en.wikipedia.org/wiki/Bloom's_taxonomy>
+- <https://x.com/jamesacowling/status/2011924122922852599>
+- <https://x.com/mlhaufe/status/1889366152733700466>
+- <https://search.brave.com/search?q=gerald+sussman%3A+programming+as+epistemology&summary=1&conversation=22d25f559815b1a278bb86>
+- <https://news.ycombinator.com/item?id=42158711>
+- <https://x.com/mlhaufe/status/1928494327501590954>
+- <https://x.com/TimSweeneyEpic/status/1984737735945404845>
+- <https://x.com/debasishg/status/2015434786547142936>
 --------------------------------------------
 --------------------------------------------
 --------------------------------------------
