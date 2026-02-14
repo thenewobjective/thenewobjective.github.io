@@ -1,7 +1,7 @@
 ---
 title:  Transcendant Hall
 date:   2026-02-13 6:00:00 -0600
-featuredImage: /media-library/dreamwork/transcendant-hall.png
+featuredImage: /media-library/dreamwork/transcendent-hall.jpg
 ---
 
 ## Overview
