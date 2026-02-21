@@ -3,7 +3,7 @@ definePageMeta({
     layout: 'default',
 })
 
-const { data: categoryIndexes } = await useAsyncData('category-indexes', () =>
+const { data: categoryIndexes } = await useAsyncData('category-indexes-home', () =>
     queryCollection('categoryIndexes').select('title', 'path', 'description', 'meta').all()
 )
 </script>

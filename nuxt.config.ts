@@ -1,4 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+// Tagged template that collapses indented lines into a single CSP string
+const csp = ([template = '']: TemplateStringsArray): string =>
+    template.split('\n').map(s => s.trim()).filter(Boolean).join(' ')
+
 export default defineNuxtConfig({
   modules: [
     // https://nuxt.com/modules/robots
@@ -28,7 +33,15 @@ export default defineNuxtConfig({
       meta: [
         {
           'http-equiv': 'Content-Security-Policy',
-          'content': 'default-src \'self\' ; script-src \'self\' \'unsafe-eval\' ; script-src-elem \'self\' \'unsafe-inline\' https://giscus.app/client.js ; connect-src \'self\' https://api.github.com https://api.iconify.design ; style-src \'self\' \'unsafe-inline\' https://giscus.app/default.css; frame-src \'self\' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/; img-src \'self\' data: https://avatars.githubusercontent.com https://mermaid.ink https://api.iconify.design'
+          'content': csp`
+            default-src 'self' ;
+            script-src 'self' 'unsafe-eval' ;
+            script-src-elem 'self' 'unsafe-inline' https://giscus.app/client.js ;
+            connect-src 'self' https://api.github.com https://api.iconify.design ;
+            style-src 'self' 'unsafe-inline' https://giscus.app/default.css ;
+            frame-src 'self' https://www.youtube.com https://codepen.io https://archive.org/ https://giscus.app/ ;
+            img-src 'self' data: https://avatars.githubusercontent.com https://mermaid.ink https://api.iconify.design https://storage.ko-fi.com
+          `
         },
         { 'http-equiv': 'X-Frame-Options', 'content': 'SAMEORIGIN' },
         { property: 'og:type', content: 'website' },
