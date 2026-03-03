@@ -29,7 +29,13 @@ export default defineNuxtPlugin((nuxtApp) => {
             })
         }
 
-        // Default: scroll to top
-        return { top: 0 }
+        // Default: scroll to top after the next paint so layout shifts from
+        // async data loading (useAsyncData watchers, sidebar rendering, etc.)
+        // don't push the viewport down after the scroll is applied.
+        return new Promise((resolve) => {
+            nuxtApp.hooks.hookOnce('page:finish', () => {
+                nextTick(() => resolve({ top: 0, behavior: 'instant' as ScrollBehavior }))
+            })
+        })
     }
 })
