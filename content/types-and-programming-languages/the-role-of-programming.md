@@ -397,8 +397,10 @@ predetermined pattern) have no transfer to guitar.
 
 <details>
     <summary>Obligatory Cultural Reference</summary>
+
 ::YouTube{ id="UZlSeuU6np4" }
 ::
+
 </details>
 
 The intuition that structure helps is not wrong. [SudoLang](https://medium.com/javascript-scene/sudolang-a-powerful-pseudocode-programming-language-for-llms-d64d42aa719b)
@@ -530,8 +532,10 @@ But it is also precisely backwards.
 
 <details>
     <summary>Obligatory Cultural Reference</summary>
+
 ::YouTube{ id="LCPhbN1l024" }
 ::
+
 </details>
 
 The objection most naturally raised here is that this is [Luddism](https://en.wikipedia.org/wiki/Luddite) in a lab coat: the error made by
