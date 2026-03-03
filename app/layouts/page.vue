@@ -51,7 +51,7 @@ useHead(() => ({
             </UPageAside>
         </template>
 
-        <UPageHeader :title="page?.title" />
+        <UPageHeader class="page-header" :title="page?.title" />
 
         <UPageBody class="page-body">
             <ContentRenderer v-if="page" :value="page" />

@@ -32,8 +32,19 @@ p {
     }
 }
 
+/* MathJax renders math as SVG. Tailwind's preflight sets svg { display: block },
+   which forces inline math onto its own line. Override for inline math containers only. */
+/* .MathJax svg {
+    display: inline;
+    vertical-align: middle;
+} */
+
+.page-header {
+    @apply p-4;
+}
+
 .page-body {
-    @apply max-w-3xl
+    @apply max-w-3xl p-4;
 }
 
 main a:not([href^="#"]), .page-body a:not([href^="#"]){

@@ -62,7 +62,7 @@ useHead(() => ({
             </UPageAside>
         </template>
 
-        <UPageHeader :title="title" :description="postDate" />
+        <UPageHeader class="page-header" :title="title" :description="postDate" />
 
         <UPageBody class="page-body">
             <img v-if="featuredImage" :src="featuredImage" :alt="`Featured image for ${title}`"
