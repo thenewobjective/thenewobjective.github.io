@@ -621,12 +621,12 @@ We want the extended mind. The contracted intellect is the wrong wager.
 * *[The Role of Programming (Dan Friedman's 60th Birthday)](https://www.youtube.com/watch?v=arMH5GjBwUQ)*, Gerald Jay Sussman, 2004
 * *[Programming for the Expression of Ideas](https://www.infoq.com/presentations/Expression-of-Ideas/)*, Gerald Jay Sussman, InfoQ
 * *[Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/)*, Harold Abelson and Gerald Jay Sussman, 1996
-* *[Literate Programming](https://www.literateprogramming.com/)*, Donald Knuth, 1984
+* *[Literate Programming](http://www.literateprogramming.com/)*, Donald Knuth, 1984
 * *[Notation as a Tool of Thought](https://www.jsoftware.com/papers/tot1.htm)*, Kenneth E. Iverson, Communications of the ACM 23(8), 1980
 * *[The Extended Mind](https://www.jstor.org/stable/3328150)*, Andy Clark and David J. Chalmers, Analysis 58(1), 1998
 * *[Doing with Images Makes Symbols: Communicating with Computers](https://www.youtube.com/watch?v=p2LZLYcu_JY)*, Alan Kay, 1987
 * *[Plato: Phaedrus (Thamus and Theuth)](https://en.wikipedia.org/wiki/Phaedrus_(dialogue))*, Plato (trans. Jowett)
-* *[In Praise of Scribes (De Laude Scriptorum)](https://www.purplemotes.net/2009/01/25/trithemius-in-praise-of-scribes/)*, Johannes Trithemius, 1492
+* *[In Praise of Scribes (De Laude Scriptorum)](https://www.purplemotes.net/2012/12/23/trithemius-printing-scribes-reason/)*, Johannes Trithemius, 1492
 * *[Engagement with mobile internet is associated with a spatial representation bias in the real world](https://www.nature.com/articles/s41467-020-18220-0)*, Louisa Dahmani and Veronique Bohbot, Nature Communications 11, 2020
 * *[AI Does Not Help Programmers](https://cacm.acm.org/opinion/ai-does-not-help-programmers/)*, Bertrand Meyer, Communications of the ACM, 2023
 * *[Do Users Write More Insecure Code with AI Assistants?](https://arxiv.org/abs/2211.03622)*, Neil Perry et al., arXiv, 2022
@@ -638,7 +638,7 @@ We want the extended mind. The contracted intellect is the wrong wager.
 * *[Simple Made Easy](https://www.youtube.com/watch?v=SxdOUGdseq4)*, Rich Hickey, Strange Loop, 2011
 * *[SudoLang: A Powerful Pseudocode Programming Language for LLMs](https://medium.com/javascript-scene/sudolang-a-powerful-pseudocode-programming-language-for-llms-d64d42aa719b)*, Eric Elliott, 2023
 * *[Unleashing the Power of End-User Programmable AI: Universalis](https://queue.acm.org/detail.cfm?id=3746223)*, Erik Meijer, ACM Queue, 2025
-* *[Augmenting Human Intellect: A Conceptual Framework](https://www.dougengelbart.org/pubs/augment-3906.html)*, Douglas Engelbart, Stanford Research Institute, 1962
+* *[Augmenting Human Intellect: A Conceptual Framework](https://web.archive.org/web/20260301031050/https://www.dougengelbart.org/pubs/augment-3906.html)*, Douglas Engelbart, Stanford Research Institute, 1962
 * *[How Terence Tao uses AI with the Lean proof assistant](https://www.youtube.com/watch?v=hh4cjZOddQA)*, Terence Tao and Lex Fridman, 2024
 * *[We're solving graphics backwards (on control in AI)](https://x.com/c_valenzuelab/status/1856809765055467583)*, Crist\u00f3bal Valenzuela, 2024
 * *[Why AI is pushing developers toward typed languages](https://github.blog/ai-and-ml/llms/why-ai-is-pushing-developers-toward-typed-languages/)*, Cassidy Williams, GitHub Blog, 2026
