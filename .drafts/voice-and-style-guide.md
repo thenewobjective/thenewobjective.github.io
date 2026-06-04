@@ -147,6 +147,95 @@ from different tools.
   - Preferred: *"The Inadequacy of Natural Language"*, *"BDD: Behavior-Driven or Buzzword-Driven?"*
   - Weaker: *"Background"*, *"Discussion"*, *"Related Work"*
 
+---
+
+## General Document Structure and Outline
+
+Across the reviewed essays, the most consistent pattern is not a rigid formula but a
+repeatable argument architecture. The structure is claim-led, progresses through deliberate
+deepening, and closes with both synthesis and practical orientation.
+
+### Canonical long-form spine
+
+Use this as the default outline unless a topic strongly demands otherwise:
+
+1. **Framing and setup**
+  - Conceptual title that signals direction, not just topic.
+  - Front matter (date, optional featured image).
+  - Optional epigraph when it carries argumentative load.
+
+2. **Introduction (thesis and stakes early)**
+  - State the central claim in the first one to three paragraphs.
+  - Identify what confusion, orthodoxy, or gap is being addressed.
+  - Make stakes explicit (technical, organizational, epistemic, or ethical).
+  - Bound scope clearly.
+
+3. **Conceptual groundwork**
+  - Define key terms and distinctions before major critique.
+  - Pair formal terms with plain-language explanation immediately.
+  - Use compact lists or contrasts where structure matters.
+
+4. **Core development (stacked claim sections)**
+  - Build through multiple sections, each opening with a local claim.
+  - Typical section sequence:
+    - claim
+    - explanation
+    - example/counterexample or historical citation
+    - local implication that advances the global thesis
+  - Introduce subsections when one claim has multiple independent objections or facets.
+
+5. **Counterposition and boundary conditions**
+  - Engage strongest alternatives directly.
+  - Concede where competing practices are useful.
+  - Specify where the thesis does and does not apply.
+
+6. **Operational consequences**
+  - Convert argument into heuristics, checks, or design principles.
+  - Use bullet lists when recommendations are genuinely enumerable.
+  - Keep prescriptions tightly coupled to the thesis.
+
+7. **Conclusion (restate at higher resolution)**
+  - Re-articulate the thesis after development, with sharper precision.
+  - Name what should change in judgment or practice if accepted.
+  - End with a strong terminal sentence, not a soft recap.
+
+8. **References and optional apparatus**
+  - Standard close: references/further reading.
+  - Optional close-out elements: footnotes, updates, or brief postscripts.
+
+### Common variants seen in existing essays
+
+1. **Polemical-analytic variant**
+  - Strong opening thesis.
+  - Sequential critique sections isolating failure modes.
+  - Limited concession section.
+  - Prescriptive close on what to do instead.
+
+2. **Model-building variant**
+  - Opens with framing analogy or historical arc.
+  - Introduces a conceptual model.
+  - Expands model through examples across domains.
+  - Ends in synthesized framework plus practical orientation.
+
+### Section-level micro-template
+
+Within most sections, this local form is repeatable and effective:
+
+1. Lead sentence with section claim.
+2. Development through definition and logic.
+3. Evidence via example, quote, code, figure, or case.
+4. Payoff line that reconnects to the larger thesis.
+
+### Revision checklist for structure
+
+Before publishing, verify:
+
+1. Thesis appears in the introduction, not only in the conclusion.
+2. Each major section opens with a claim, not throat-clearing background.
+3. At least one serious counterposition is engaged fairly.
+4. Conclusion raises resolution rather than repeating opening language.
+5. Section order preserves momentum: framing -> distinctions -> development -> boundaries -> synthesis.
+
 ### Tone
 
 - **Intellectually confident, not dismissive**: disagreement with received wisdom is argued,
@@ -172,6 +261,107 @@ When reviewing a drafted section, ask:
 7. How many distinct metaphor clusters are active in this section? Count them. If more than two,
    audit each against the load-bearing test: which one could the argument not survive without?
    Cut or consolidate the rest.
+
+---
+
+## LLM Collaboration Addendum
+
+This guide is not only descriptive. It is operational. If an LLM is assisting with drafting or revision,
+it should treat the following as default working protocol.
+
+### What to ask for before drafting
+
+If not already provided in the prompt, request these inputs first:
+
+1. Working title or thesis sentence.
+2. Target audience level (for example: experienced engineers, mixed technical audience, or general educated readers).
+3. Desired stance type:
+  - Polemical-analytic
+  - Model-building
+  - Expository with light argument
+4. Scope boundaries (what to exclude explicitly).
+5. Required sources or references to include.
+6. Desired draft length range.
+
+If these are missing and cannot be requested, proceed with conservative defaults and state assumptions
+at the top of the draft.
+
+### Default drafting workflow for the assistant
+
+1. Produce a thesis-first outline.
+2. Verify section order against the canonical spine in this guide.
+3. Draft section openings as explicit claims.
+4. For each technical term, add immediate plain-language payoff.
+5. Insert evidence only where it advances the argument.
+6. Add one serious counterposition before conclusion.
+7. End with a high-resolution conclusion, not repetition.
+8. Run the style and structure quality gates below before presenting output.
+
+### Hard constraints for generated prose
+
+1. ASCII punctuation only, except semantically required symbols or proper names.
+2. No em dashes and no double-hyphen em dash substitutes.
+3. No smart quotes.
+4. No decorative metaphor clusters beyond the density ceiling defined earlier.
+5. No section that begins with throat-clearing background when a claim can be stated directly.
+6. No unresolved citation drops. Quotes must be engaged in the next sentence.
+
+### Soft preferences for generated prose
+
+1. Prefer clear declarative openings over dramatic framing.
+2. Prefer argumentative progression over exhaustive survey.
+3. Prefer one strong analogy to several weak ones.
+4. Prefer edits that tighten logic over edits that increase ornament.
+
+### Output format contract (for assistant responses)
+
+When drafting article content, return in this order:
+
+1. Thesis sentence.
+2. Outline with section claims.
+3. Full draft.
+4. Short self-audit against this guide (5-10 bullets).
+5. Optional revision targets (what to improve next pass).
+
+When revising existing prose, return in this order:
+
+1. Change summary by section.
+2. Revised text.
+3. Brief rationale tied to specific rules in this guide.
+
+### Assistant self-audit checklist
+
+Before returning output, the assistant should verify:
+
+1. Introduction states thesis and stakes by paragraph two.
+2. Every section opens with a claim.
+3. Technical terms receive immediate plain-language follow-through.
+4. At least one counterposition is presented and answered fairly.
+5. Section endings either land a point or create productive tension.
+6. Conclusion resolves at a higher level than the introduction.
+7. Metaphor density is within ceiling.
+8. Bullets are used only when content is truly enumerable.
+9. Citations function as conversation partners, not authority shields.
+10. Final sentence lands cleanly.
+
+### Failure modes to avoid (common LLM drift)
+
+1. Generic consultant prose that sounds correct but says little.
+2. Endless hedging that hides the thesis.
+3. Rhetorical aggression substituting for argument.
+4. Historical name-dropping without argumentative integration.
+5. Summary conclusion that introduces no sharpened claim.
+6. Repetition of the same point across adjacent sections with new wording only.
+
+### Quick prompt template for future sessions
+
+Use or adapt this instruction block:
+
+"Draft an analytical essay in my established site voice. Follow my Voice and Style Guide strictly. State the thesis early. Use claim-led section openings. Pair technical precision with immediate plain-English payoff. Keep metaphor density load-bearing and limited. Engage one strong counterposition fairly. End with a sharpened conclusion that changes judgment, not a recap. Keep punctuation ASCII-safe and avoid em dashes."
+
+### Escalation policy for uncertain cases
+
+If uncertain about voice or scope, the assistant should ask 1 to 3 focused questions. If response latency matters, proceed with explicit assumptions and mark them clearly so they can be corrected in the next pass.
 
 ---
 
