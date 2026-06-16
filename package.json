@@ -35,7 +35,7 @@
     "@nuxtjs/sitemap": "^8.0.11",
     "better-sqlite3": "^12.6.2",
     "eslint": "^10.0.2",
-    "nuxt": "^4.3.1",
+    "nuxt": "^4.4.8",
     "nuxt-feedme": "^2.1.0",
     "rehype-mathjax": "^7.1.0",
     "remark-math": "^6.0.0",
