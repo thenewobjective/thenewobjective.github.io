@@ -15,3 +15,10 @@ Carbeurator: a computer that runs on gasoline
 
 Optical computing with Plasma:
 <https://twitter.com/algoritmic/status/1729475917817237565>
+
+
+Knot theory and computing:
+
+https://en.wikipedia.org/wiki/Knot_theory
+https://www.quantamagazine.org/a-powerful-new-qr-code-untangles-maths-knottiest-knots-20260422/?mc_cid=ca5833c0df
+https://www.quantamagazine.org/teen-mathematicians-tie-knots-through-a-mind-blowing-fractal-20241126/
