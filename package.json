@@ -28,24 +28,24 @@
   },
   "dependencies": {
     "@barzhsieh/nuxt-content-mermaid": "^2.2.3",
-    "@nuxt/content": "^3.12.0",
-    "@nuxt/eslint": "^1.15.2",
-    "@nuxt/ui": "^4.5.1",
-    "@nuxtjs/robots": "^6.0.6",
-    "@nuxtjs/sitemap": "^8.0.11",
-    "better-sqlite3": "^12.6.2",
-    "eslint": "^10.0.2",
-    "nuxt": "^4.3.1",
+    "@nuxt/content": "^3.14.0",
+    "@nuxt/eslint": "^1.16.0",
+    "@nuxt/ui": "^4.9.0",
+    "@nuxtjs/robots": "^6.1.1",
+    "@nuxtjs/sitemap": "^8.2.1",
+    "better-sqlite3": "^12.11.1",
+    "eslint": "^10.5.0",
+    "nuxt": "^4.4.8",
     "nuxt-feedme": "^2.1.0",
     "rehype-mathjax": "^7.1.0",
     "remark-math": "^6.0.0",
-    "vue": "^3.5.29",
-    "vue-router": "^5.0.4"
+    "vue": "^3.5.38",
+    "vue-router": "^5.1.0"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.95",
-    "@types/node": "^25.3.3",
-    "typescript": "^5.9.3",
-    "vue-tsc": "^3.2.4"
+    "@iconify-json/lucide": "^1.2.114",
+    "@types/node": "^26.0.0",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.5"
   }
 }
