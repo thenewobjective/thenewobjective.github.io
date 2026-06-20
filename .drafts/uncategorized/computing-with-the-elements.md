@@ -22,3 +22,4 @@ Knot theory and computing:
 https://en.wikipedia.org/wiki/Knot_theory
 https://www.quantamagazine.org/a-powerful-new-qr-code-untangles-maths-knottiest-knots-20260422/?mc_cid=ca5833c0df
 https://www.quantamagazine.org/teen-mathematicians-tie-knots-through-a-mind-blowing-fractal-20241126/
+https://x.com/mlhaufe/status/2054760139920441615
