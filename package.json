@@ -23,29 +23,27 @@
     "typecheck": "nuxt typecheck",
     "lint": "eslint ."
   },
-  "overrides": {
-    "@xmldom/xmldom": "0.9.9"
-  },
+
   "dependencies": {
     "@barzhsieh/nuxt-content-mermaid": "^2.2.3",
-    "@nuxt/content": "^3.14.0",
+    "@nuxt/content": "^3.15.0",
     "@nuxt/eslint": "^1.16.0",
     "@nuxt/ui": "^4.9.0",
-    "@nuxtjs/robots": "^6.1.1",
-    "@nuxtjs/sitemap": "^8.2.1",
+    "@nuxtjs/robots": "^6.1.2",
+    "@nuxtjs/sitemap": "^8.2.2",
     "better-sqlite3": "^12.11.1",
-    "eslint": "^10.5.0",
+    "eslint": "^10.6.0",
     "nuxt": "^4.4.8",
     "nuxt-feedme": "^2.1.0",
     "rehype-mathjax": "^7.1.0",
     "remark-math": "^6.0.0",
-    "vue": "^3.5.38",
+    "vue": "^3.5.39",
     "vue-router": "^5.1.0"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.114",
-    "@types/node": "^26.0.0",
+    "@iconify-json/lucide": "^1.2.116",
+    "@types/node": "^26.1.1",
     "typescript": "^6.0.3",
-    "vue-tsc": "^3.3.5"
+    "vue-tsc": "^3.3.7"
   }
 }
