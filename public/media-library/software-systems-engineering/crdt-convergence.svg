@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" width="100%" height="auto" role="img" aria-labelledby="crdt-title crdt-desc">
+  <title id="crdt-title">CRDT replicas converging to the same state with no coordinator</title>
+  <desc id="crdt-desc">Three replicas each apply a different local update, in any order, with no communication between them. Each independently computes a join over its own updates and arrives at the identical merged state.</desc>
+
+  <defs>
+    <marker id="crdt-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke="currentColor" font-family="sans-serif" color="#333">
+
+    <!-- Replica 1 -->
+    <rect x="30" y="30" width="150" height="60" rx="8" stroke-width="2"/>
+    <text x="105" y="55" text-anchor="middle" fill="currentColor" stroke="none" font-size="13" font-weight="bold">Replica 1</text>
+    <text x="105" y="73" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-style="italic">local update: +x</text>
+
+    <!-- Replica 2 -->
+    <rect x="380" y="30" width="150" height="60" rx="8" stroke-width="2"/>
+    <text x="455" y="55" text-anchor="middle" fill="currentColor" stroke="none" font-size="13" font-weight="bold">Replica 2</text>
+    <text x="455" y="73" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-style="italic">local update: +y</text>
+
+    <!-- Replica 3 -->
+    <rect x="205" y="250" width="150" height="60" rx="8" stroke-width="2"/>
+    <text x="280" y="275" text-anchor="middle" fill="currentColor" stroke="none" font-size="13" font-weight="bold">Replica 3</text>
+    <text x="280" y="293" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-style="italic">local update: +z</text>
+
+    <!-- Join node -->
+    <polygon points="280,140 320,175 280,210 240,175" stroke-width="2"/>
+    <text x="280" y="180" text-anchor="middle" fill="currentColor" stroke="none" font-size="14">&#8852;</text>
+
+    <!-- Arrows in: each replica's update flows into the join -->
+    <line x1="140" y1="90" x2="255" y2="155" stroke-width="1.6" marker-end="url(#crdt-arrow)"/>
+    <line x1="440" y1="90" x2="305" y2="155" stroke-width="1.6" marker-end="url(#crdt-arrow)"/>
+    <line x1="280" y1="250" x2="280" y2="212" stroke-width="1.6" marker-end="url(#crdt-arrow)"/>
+
+    <text x="280" y="235" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-style="italic">merge (commutative, associative, idempotent)</text>
+
+    <!-- Result label -->
+    <text x="280" y="120" text-anchor="middle" fill="currentColor" stroke="none" font-size="12" font-weight="bold">no coordinator needed:</text>
+    <text x="280" y="97" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">every replica computes this independently and gets the same answer</text>
+
+  </g>
+</svg>
