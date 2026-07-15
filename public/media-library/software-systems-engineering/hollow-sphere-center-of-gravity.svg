@@ -2,6 +2,7 @@
   <title id="hs-title">Hollow sphere: the center of gravity governs motion without being occupied by any mass</title>
   <desc id="hs-desc">A hollow sphere with its mass distributed in the shell. Its center of gravity sits at the exact middle, where there is no mass at all, yet that point is what you must account for to control the sphere's motion.</desc>
 
+  <rect width="100%" height="100%" fill="white"/>
   <g font-family="sans-serif" color="#333">
 
     <text x="390" y="55" text-anchor="middle" fill="currentColor" stroke="none" font-size="26" letter-spacing="2">HOLLOW SPHERE</text>
