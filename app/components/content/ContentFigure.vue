@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { useSlots } from 'vue'
+import { useSlots, computed } from 'vue'
 
-defineProps<{
+const props = defineProps<{
     src: string
     alt: string
     caption?: string
     href?: string
-}>()
-
-const slots = useSlots()
+}>(),
+    slots = useSlots(),
+    isSvg = computed(() => props.src.endsWith('.svg'))
 </script>
 
 <template>
@@ -16,7 +16,8 @@ const slots = useSlots()
         <UPopover mode="click">
             <img :src="src" :alt="alt" class="mx-auto max-w-lg cursor-zoom-in">
             <template #content>
-                <img :src="src" :alt="alt" class="max-w-[90vw] max-h-[90vh] p-4">
+                <img :src="src" :alt="alt"
+                    :class="isSvg ? 'w-[80vw] max-w-[900px] p-4' : 'max-w-[90vw] max-h-[90vh] p-4'">
             </template>
         </UPopover>
         <figcaption class="text-center">

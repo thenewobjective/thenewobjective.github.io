@@ -23,7 +23,6 @@
     "typecheck": "nuxt typecheck",
     "lint": "eslint ."
   },
-
   "dependencies": {
     "@barzhsieh/nuxt-content-mermaid": "^2.2.3",
     "@nuxt/content": "^3.15.0",
