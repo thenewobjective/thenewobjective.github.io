@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="100%" height="auto" role="img" aria-labelledby="fork-title fork-desc">
+  <title id="fork-title">A permanent chain split: two independent governors from one shared history</title>
+  <desc id="fork-desc">A shared chain of blocks splits permanently when a faction of miners and node operators reject a rule change. Both resulting chains continue indefinitely as independently maintained, valid histories, rather than one being abandoned as in an ordinary fork.</desc>
+
+  <defs>
+    <marker id="fork-arrow-btc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c8790a"/>
+    </marker>
+    <marker id="fork-arrow-bch" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2e7d32"/>
+    </marker>
+    <marker id="fork-arrow-shared" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <g font-family="sans-serif" color="#333">
+
+    <!-- Shared history -->
+    <g fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="20" y="120" width="60" height="50" rx="6"/>
+      <rect x="105" y="120" width="60" height="50" rx="6"/>
+      <rect x="190" y="120" width="60" height="50" rx="6"/>
+    </g>
+    <text x="50" y="150" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">B1</text>
+    <text x="135" y="150" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">B2</text>
+    <text x="220" y="150" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">B3</text>
+    <line x1="80" y1="145" x2="103" y2="145" stroke="currentColor" stroke-width="1.8" marker-end="url(#fork-arrow-shared)" fill="none"/>
+    <line x1="165" y1="145" x2="188" y2="145" stroke="currentColor" stroke-width="1.8" marker-end="url(#fork-arrow-shared)" fill="none"/>
+    <text x="130" y="105" text-anchor="middle" fill="currentColor" stroke="none" font-size="12" font-style="italic">shared history</text>
+
+    <!-- BTC branch (orange), continues -->
+    <g fill="none" stroke="#c8790a" stroke-width="2">
+      <rect x="290" y="55" width="60" height="50" rx="6"/>
+      <rect x="375" y="55" width="60" height="50" rx="6"/>
+      <rect x="460" y="55" width="60" height="50" rx="6"/>
+    </g>
+    <text x="320" y="85" text-anchor="middle" fill="#c8790a" stroke="none" font-size="12">B4</text>
+    <text x="405" y="85" text-anchor="middle" fill="#c8790a" stroke="none" font-size="12">B5</text>
+    <text x="490" y="85" text-anchor="middle" fill="#c8790a" stroke="none" font-size="12">B6</text>
+    <line x1="250" y1="145" x2="288" y2="85" stroke="#c8790a" stroke-width="1.8" marker-end="url(#fork-arrow-btc)" fill="none"/>
+    <line x1="350" y1="80" x2="373" y2="80" stroke="#c8790a" stroke-width="1.8" marker-end="url(#fork-arrow-btc)" fill="none"/>
+    <line x1="435" y1="80" x2="458" y2="80" stroke="#c8790a" stroke-width="1.8" marker-end="url(#fork-arrow-btc)" fill="none"/>
+    <line x1="520" y1="80" x2="560" y2="80" stroke="#c8790a" stroke-width="1.8" stroke-dasharray="4,4" marker-end="url(#fork-arrow-btc)" fill="none"/>
+    <text x="405" y="35" text-anchor="middle" fill="#c8790a" stroke="none" font-size="13" font-weight="bold">Bitcoin (BTC): continues</text>
+
+    <!-- BCH branch (green), continues independently -->
+    <g fill="none" stroke="#2e7d32" stroke-width="2">
+      <rect x="290" y="200" width="60" height="50" rx="6"/>
+      <rect x="375" y="200" width="60" height="50" rx="6"/>
+      <rect x="460" y="200" width="60" height="50" rx="6"/>
+    </g>
+    <text x="320" y="230" text-anchor="middle" fill="#2e7d32" stroke="none" font-size="12">B4'</text>
+    <text x="405" y="230" text-anchor="middle" fill="#2e7d32" stroke="none" font-size="12">B5'</text>
+    <text x="490" y="230" text-anchor="middle" fill="#2e7d32" stroke="none" font-size="12">B6'</text>
+    <line x1="250" y1="150" x2="288" y2="222" stroke="#2e7d32" stroke-width="1.8" marker-end="url(#fork-arrow-bch)" fill="none"/>
+    <line x1="350" y1="225" x2="373" y2="225" stroke="#2e7d32" stroke-width="1.8" marker-end="url(#fork-arrow-bch)" fill="none"/>
+    <line x1="435" y1="225" x2="458" y2="225" stroke="#2e7d32" stroke-width="1.8" marker-end="url(#fork-arrow-bch)" fill="none"/>
+    <line x1="520" y1="225" x2="560" y2="225" stroke="#2e7d32" stroke-width="1.8" stroke-dasharray="4,4" marker-end="url(#fork-arrow-bch)" fill="none"/>
+    <text x="405" y="270" text-anchor="middle" fill="#2e7d32" stroke="none" font-size="13" font-weight="bold">Bitcoin Cash (BCH): continues independently</text>
+
+    <text x="130" y="290" text-anchor="middle" fill="currentColor" stroke="none" font-size="12" font-style="italic">neither branch is abandoned: two governors, each with its own aligned agents</text>
+
+  </g>
+</svg>

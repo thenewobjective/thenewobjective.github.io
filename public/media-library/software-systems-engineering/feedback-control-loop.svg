@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" height="auto" role="img" aria-labelledby="fcl-title fcl-desc">
+  <title id="fcl-title">A classical feedback control loop</title>
+  <desc id="fcl-desc">Reference signal and measured feedback combine into an error signal, which a controller converts into a control input applied to the system; the system's actual state is measured and fed back, closing the loop.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke="currentColor" stroke-width="2" font-family="sans-serif" color="#333">
+
+    <!-- Reference signal box -->
+    <rect x="20" y="95" width="150" height="60" rx="8"/>
+    <text x="95" y="120" text-anchor="middle" fill="currentColor" stroke="none" font-size="13" font-weight="bold">Reference</text>
+    <text x="95" y="138" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">signal</text>
+
+    <!-- Arrow: reference -> summing junction -->
+    <line x1="170" y1="125" x2="216" y2="125" marker-end="url(#arrow)"/>
+
+    <!-- Summing junction -->
+    <circle cx="235" cy="125" r="19"/>
+    <text x="235" y="131" text-anchor="middle" fill="currentColor" stroke="none" font-size="18">&#931;</text>
+
+    <!-- Arrow: junction -> controller, labeled error signal -->
+    <line x1="254" y1="125" x2="330" y2="125" marker-end="url(#arrow)"/>
+    <text x="292" y="112" text-anchor="middle" fill="currentColor" stroke="none" font-size="12" font-style="italic">error signal</text>
+
+    <!-- Controller box -->
+    <rect x="330" y="95" width="140" height="60" rx="8"/>
+    <text x="400" y="130" text-anchor="middle" fill="currentColor" stroke="none" font-size="13" font-weight="bold">Controller</text>
+
+    <!-- Arrow: controller -> system, labeled control input -->
+    <line x1="470" y1="125" x2="546" y2="125" marker-end="url(#arrow)"/>
+    <text x="508" y="112" text-anchor="middle" fill="currentColor" stroke="none" font-size="12" font-style="italic">control input</text>
+
+    <!-- System / governor box -->
+    <rect x="546" y="90" width="180" height="70" rx="8"/>
+    <text x="636" y="120" text-anchor="middle" fill="currentColor" stroke="none" font-size="13" font-weight="bold">System</text>
+    <text x="636" y="138" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">(the governor)</text>
+
+    <!-- Arrow: system -> actual state output -->
+    <line x1="726" y1="125" x2="800" y2="125" marker-end="url(#arrow)"/>
+    <text x="800" y="112" text-anchor="start" fill="currentColor" stroke="none" font-size="12" font-style="italic">actual state</text>
+
+    <!-- Feedback path: down, left, up into junction -->
+    <line x1="770" y1="125" x2="770" y2="230"/>
+    <line x1="770" y1="230" x2="235" y2="230" marker-end="url(#arrow)"/>
+    <line x1="235" y1="230" x2="235" y2="145"/>
+
+    <text x="500" y="252" text-anchor="middle" fill="currentColor" stroke="none" font-size="12" font-style="italic">measured feedback</text>
+    <text x="500" y="275" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">stability guarantee: the loop converges to the reference and holds despite perturbation</text>
+
+  </g>
+</svg>

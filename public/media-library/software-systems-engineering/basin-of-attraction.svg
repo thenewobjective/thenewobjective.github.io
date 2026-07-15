@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="100%" height="auto" role="img" aria-labelledby="boa-title boa-desc">
+  <title id="boa-title">A basin of attraction: every starting state converges to the same fixed point</title>
+  <desc id="boa-desc">Several trajectories beginning from different initial states all curve inward toward a single central fixed point. A small perturbation away from that point is pulled back in, illustrating that the system remains at the fixed point regardless of where it started or how it is disturbed.</desc>
+
+  <defs>
+    <marker id="boa-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke="currentColor" font-family="sans-serif" color="#333">
+
+    <!-- Converging trajectories from scattered starting states -->
+    <path d="M 40,50  C 140,70  200,140  256,196" stroke-width="1.6" marker-end="url(#boa-arrow)"/>
+    <path d="M 470,40  C 380,90  310,150  266,196" stroke-width="1.6" marker-end="url(#boa-arrow)"/>
+    <path d="M 480,370 C 400,320 320,270 268,216" stroke-width="1.6" marker-end="url(#boa-arrow)"/>
+    <path d="M 45,380  C 130,340 200,290 246,222" stroke-width="1.6" marker-end="url(#boa-arrow)"/>
+    <path d="M 260,30  C 258,90  256,140 258,190" stroke-width="1.6" marker-end="url(#boa-arrow)"/>
+
+    <!-- Starting state dots -->
+    <circle cx="40" cy="50" r="5" fill="currentColor" stroke="none"/>
+    <circle cx="470" cy="40" r="5" fill="currentColor" stroke="none"/>
+    <circle cx="480" cy="370" r="5" fill="currentColor" stroke="none"/>
+    <circle cx="45" cy="380" r="5" fill="currentColor" stroke="none"/>
+    <circle cx="260" cy="30" r="5" fill="currentColor" stroke="none"/>
+
+    <text x="40" y="38" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-style="italic">start</text>
+    <text x="470" y="28" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-style="italic">start</text>
+    <text x="480" y="392" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-style="italic">start</text>
+    <text x="45" y="402" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-style="italic">start</text>
+
+    <!-- The fixed point -->
+    <circle cx="260" cy="210" r="8" fill="currentColor" stroke="none"/>
+    <circle cx="260" cy="210" r="18" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="260" y="245" text-anchor="middle" fill="currentColor" stroke="none" font-size="13" font-weight="bold">fixed point</text>
+    <text x="260" y="261" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">(the desired property)</text>
+
+    <!-- Perturbation: pushed away and pulled back -->
+    <path d="M 260,210 C 300,180 330,175 340,150" stroke-width="1.4" stroke-dasharray="4,3"/>
+    <circle cx="340" cy="150" r="4" fill="currentColor" stroke="none"/>
+    <text x="368" y="140" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-style="italic">perturbation</text>
+    <path d="M 340,150 C 320,175 290,190 270,202" stroke-width="1.4" stroke-dasharray="4,3" marker-end="url(#boa-arrow)"/>
+    <text x="330" y="200" text-anchor="middle" fill="currentColor" stroke="none" font-size="11" font-style="italic">pulled back in</text>
+
+  </g>
+</svg>
