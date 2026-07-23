@@ -6,7 +6,7 @@ featuredImage: /media-library/dreamwork/?.jpg
 
 ## Bloody Harvest
 
-I think I am dreamt of the end of civilization
+I think I dreamt of the end of civilization
 
 I see visions of passing through time in moments.
 
