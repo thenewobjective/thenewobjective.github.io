@@ -47,7 +47,7 @@ that there is a composite SLA that needs to be calculated to know the reality of
 Let's take as a contrived example a simplistic website consisting of an application server and a database server hosted
 on your favorite cloud provider:
 
-::content-figure{src="https://mermaid.ink/img/pako:eNpdjl1LwzAUhv9KODBQyEqTdjMJY-CYd3rjLgSbXmTLcSuapsRUnKX_3ViZF96dj-d9eAc4eIug4BhMdyL3jzrolpDbqnrCPdlh-MCw2oe1lJmc1TWZz9dkU11tN_9-cnZdAwWHwZnGJt_wo9EQT-hQg0qjNeFVg27HxPWdNRHvbBN9APVi3t6Rgumj353bA6gYerxA28akbu6Pwin08Nt6Kk-hM-2z9-4STCuoAT5B8UXGZZHnbMlyIXjJCgrndGYy4zwvF0tRFuymEGKk8DUZ2PgNoYlUGg?type=png" alt="Simple Website Architecture" caption="Simple Website Architecture"}
+::prose-figure{src="https://mermaid.ink/img/pako:eNpdjl1LwzAUhv9KODBQyEqTdjMJY-CYd3rjLgSbXmTLcSuapsRUnKX_3ViZF96dj-d9eAc4eIug4BhMdyL3jzrolpDbqnrCPdlh-MCw2oe1lJmc1TWZz9dkU11tN_9-cnZdAwWHwZnGJt_wo9EQT-hQg0qjNeFVg27HxPWdNRHvbBN9APVi3t6Rgumj353bA6gYerxA28akbu6Pwin08Nt6Kk-hM-2z9-4STCuoAT5B8UXGZZHnbMlyIXjJCgrndGYy4zwvF0tRFuymEGKk8DUZ2PgNoYlUGg?type=png" alt="Simple Website Architecture" caption="Simple Website Architecture"}
 ::
 
 The SLA for each component is defined clearly as 99.9% for the Web Server and 99.99% for the Database Server respectively. What is the SLA for the entirety? Given that both are required for the website to function, the
@@ -61,7 +61,7 @@ seem a trivial difference but for more complicated architectures you can see how
 
 For a more realistic example let's say I have a self-hosted CMS solution with a couple load balanced delivery servers:
 
-::content-figure{src="https://mermaid.ink/img/pako:eNqNkM1ugzAQhF8FrRSplUgUftLEVpUDcW9waW_FOWzATVDBRo6pShHvXocI0qqX-rSz_nZ2NR1kKhdA4aixPjnxM9dcOk4cpbHC3ImwRJkJ_XjQW0IWhMz2V2DHvDTdKWmENA4TZfEhdDtSs_1E-f-gWJTeMTR4wLO4LbofPZKbRYISj6Ky5R-TOJrPt_aqX8qfjrWSRdNRP1UyCHChErrCIrdZdJcPDuZkV3GgtsxRv3PgsrdcU-doxFNeGKWBvmF5Fi5gY9RLKzOgRjdihFiBNtdqosQwlFwTH4J3oUb5qlQ1DloJtINPoF6wCFbLTRj4XugFwWYdutDatr-69AMS2rdePpDeha_BwOu_AcPujng?type=png" alt="Simple Website Architecture" caption="Simple Website Architecture"}
+::prose-figure{src="https://mermaid.ink/img/pako:eNqNkM1ugzAQhF8FrRSplUgUftLEVpUDcW9waW_FOWzATVDBRo6pShHvXocI0qqX-rSz_nZ2NR1kKhdA4aixPjnxM9dcOk4cpbHC3ImwRJkJ_XjQW0IWhMz2V2DHvDTdKWmENA4TZfEhdDtSs_1E-f-gWJTeMTR4wLO4LbofPZKbRYISj6Ky5R-TOJrPt_aqX8qfjrWSRdNRP1UyCHChErrCIrdZdJcPDuZkV3GgtsxRv3PgsrdcU-doxFNeGKWBvmF5Fi5gY9RLKzOgRjdihFiBNtdqosQwlFwTH4J3oUb5qlQ1DloJtINPoF6wCFbLTRj4XugFwWYdutDatr-69AMS2rdePpDeha_BwOu_AcPujng?type=png" alt="Simple Website Architecture" caption="Simple Website Architecture"}
 ::
 
 So if the load balancer or the database stop working the entire website fails. If only one of the delivery servers
@@ -70,7 +70,7 @@ but changes would not be possible during the outage. What is the SLA for all fun
 
 Before the entirety can be computed we have to understand how to evaluate this portion:
 
-::content-figure{src="https://mermaid.ink/img/pako:eNqNkEFvgzAMhf8KstQbRaUFmkRTD5Td2GW7jfTgEW9FgwRlYRqr-O_LqKi0225-9vcs-12gNopAwJvF_hyUj9JKHQRlXpUGVZBji7ome_diD5xHnK9OV-BYxFV1NNqRdkFBbfNJdlyo1elGbf9Blfl6ffAL_6gthNCR7bBR_rrL70SCO1NHEoQvFdp3CVJPnht6hY7uVeOMBfGK7QeFgIMzT6OuQTg70AIVDfpPuxtFs-nhmsEcRQg96mdjusXoJYgLfIGIecQylrJ0wzK-YzHfhzD6drKPeJKmWbJJdhmbQvie7fH0A7-hbUE?type=png" alt="Load Balancer" caption="Load Balancer"}
+::prose-figure{src="https://mermaid.ink/img/pako:eNqNkEFvgzAMhf8KstQbRaUFmkRTD5Td2GW7jfTgEW9FgwRlYRqr-O_LqKi0225-9vcs-12gNopAwJvF_hyUj9JKHQRlXpUGVZBji7ome_diD5xHnK9OV-BYxFV1NNqRdkFBbfNJdlyo1elGbf9Blfl6ffAL_6gthNCR7bBR_rrL70SCO1NHEoQvFdp3CVJPnht6hY7uVeOMBfGK7QeFgIMzT6OuQTg70AIVDfpPuxtFs-nhmsEcRQg96mdjusXoJYgLfIGIecQylrJ0wzK-YzHfhzD6drKPeJKmWbJJdhmbQvie7fH0A7-hbUE?type=png" alt="Load Balancer" caption="Load Balancer"}
 ::
 
 As mentioned if one of the two delivery servers fail the website is still available so the SLA is expected to be higher
@@ -80,7 +80,7 @@ with the fallback server being an option. What are the odds of both delivery ser
 
 Which is an SLA of 99.9999%
 
-::content-figure{src="https://mermaid.ink/img/pako:eNqNkcFuwjAMhl8lsoS0SQU1gVJaTRxKdmsv220tB9NkUI0mKKTTGOLdl7V0ZdplN__259-WfYZSCwkxbA0ediR9KkyhCEmTPNUoSIJ7VKU0DxuzjKJJFI3WHXBsNl3HipO8rQw14pI0z1daWaks4XJfvUtz6j1G6xuO_YOTSnQBT_I7jhY3eJTDRvdXbJUNXhkq3MrahX_c0mQ8XroFfyl2teDUSZ70it2qrBXgQS1NjZVwRzt_FwqwOzeqgNiFAs1bAYW6OK45CLTyUVRWG4hfcX-UHmBj9fNJlRBb08ge4hW6c9Y_lGybsu417Yc8OKB60bruG52E-AwfEFM2oWwRhP6CBgFl_jTw4OTSfjAJp0HIwtl8Posou3jw2RrQyxeTMppi?type=png" alt="Total SLA Graph" caption="Total SLA"}
+::prose-figure{src="https://mermaid.ink/img/pako:eNqNkcFuwjAMhl8lsoS0SQU1gVJaTRxKdmsv220tB9NkUI0mKKTTGOLdl7V0ZdplN__259-WfYZSCwkxbA0ediR9KkyhCEmTPNUoSIJ7VKU0DxuzjKJJFI3WHXBsNl3HipO8rQw14pI0z1daWaks4XJfvUtz6j1G6xuO_YOTSnQBT_I7jhY3eJTDRvdXbJUNXhkq3MrahX_c0mQ8XroFfyl2teDUSZ70it2qrBXgQS1NjZVwRzt_FwqwOzeqgNiFAs1bAYW6OK45CLTyUVRWG4hfcX-UHmBj9fNJlRBb08ge4hW6c9Y_lGybsu417Yc8OKB60bruG52E-AwfEFM2oWwRhP6CBgFl_jTw4OTSfjAJp0HIwtl8Posou3jw2RrQyxeTMppi?type=png" alt="Total SLA Graph" caption="Total SLA"}
 ::
 
 Now we can calculate the composition of our dependencies:

@@ -16,15 +16,11 @@ The unknown danger was represented by an overlarge harvesting machine that was m
 
 But the field and people running through it were segregated by social class. There were three rows of wheat that were colored from top to bottom: red, orange, gold. The fewest and richest were in the top row and the poorest in the bottom row, all fleeing rightward ahead of the harvester. As the harvester swept from left to right, it consumed the rich first, then the middle, then the poor, eliminating all the wheat and what seemed to be most of the people.
 
-<figure>
-  <img src="/media-library/dreamwork/dream-harvest.png" alt="Dream Harvester from above" />
-  <figcaption>A rough AI interpretation from above</figcaption>
-</figure>
+::prose-figure{src="/media-library/dreamwork/dream-harvest.png" alt="Dream Harvester from above" caption="A rough AI interpretation from above"}
+::
 
-<figure>
-  <img src="/media-library/dreamwork/dream-harvest-2.jpg" alt="Dream Harvester from the front" />
-  <figcaption>Another rough AI interpretation from the front</figcaption>
-</figure>
+::prose-figure{src="/media-library/dreamwork/dream-harvest-2.jpg" alt="Dream Harvester from the front" caption="Another rough AI interpretation from the front"}
+::
 
 Survivors made it to what seemed to be safety. A compound or ranch of some kind. There were still too many people. Mostly children. Then disease came. Faces purple with sickness.
 
@@ -36,10 +32,8 @@ They feel like my family but without a blood relation. Or perhaps I am inhabitin
 
 Winters are harsh and the plants and animals are strange—e.g., sparrows with snake heads, as if the serpents evolved to take the avian role. It's a temperate climate, but seemingly very fragile.
 
-<figure>
-  <img src="/media-library/dreamwork/post-apocalyptic-farm.png" alt="Post-Apocalyptic Farm" />
-  <figcaption>A fragile rebuilding</figcaption>
-</figure>
+::prose-figure{src="/media-library/dreamwork/post-apocalyptic-farm.png" alt="Post-Apocalyptic Farm" caption="A fragile rebuilding"}
+::
 
 As I stand watching, I can see time begin to accelerate through the years again. I rush to the family while they still exist, hoping to slow the clock as I move closer.
 
@@ -81,10 +75,8 @@ While the family I encountered happened to be some form of Christian, I do not t
 The snake-headed sparrows fascinated me. They are a fusion of two symbolic opposites. It's like
 the [winged Ouroboros](https://www.gnosisjung.org/2025/03/carl-jung-and-ouroboros.html).
 
-<figure>
-  <img src="/media-library/dreamwork/winged-ouroboros.jpg" alt="Winged Ouroboros" />
-  <figcaption>A symbolic fusion of opposites</figcaption>
-</figure>
+::prose-figure{src="/media-library/dreamwork/winged-ouroboros.jpg" alt="Winged Ouroboros" caption="A symbolic fusion of opposites"}
+::
 
 After the apocalypse, nature has reorganized itself.
 

@@ -148,17 +148,17 @@ I already mentioned earlier that you have to re-add Aria roles for the custom ve
 
 Assuming you were able to get Aria figured out in a reasonable manner does not automatically mean it will be "accessible" to search engines (go figure). [@check_ca](https://twitter.com/check_ca) discovered [recently](https://twitter.com/check_ca/status/1121561114276433920) that Google does not do well with indexing heavy WebComponent sites. His search around April 25, 2019 yielded the following:
 
-::content-figure{src="/media-library/web-development/webcomponent-search-1.png" alt="WebComponent Search results" caption=""}
+::prose-figure{src="/media-library/web-development/webcomponent-search-1.png" alt="WebComponent Search results" caption=""}
 ::
 
 Slightly later when I attempted the same search (April 29, 2019):
 
-::content-figure{src="/media-library/web-development/webcomponent-search-2.png" alt="WebComponent Search results" caption=""}
+::prose-figure{src="/media-library/web-development/webcomponent-search-2.png" alt="WebComponent Search results" caption=""}
 ::
 
 Reviewing the source code of one of these pages (holy shitballs):
 
-::content-figure{src="/media-library/web-development/webcomponent-search-3.png" alt="WebComponent Search results" caption=""}
+::prose-figure{src="/media-library/web-development/webcomponent-search-3.png" alt="WebComponent Search results" caption=""}
 ::
 
 `<dom-if/>` ? Really? Well, I'm not going to go into why that's a terrible idea in this post. Gilad Bracha has already criticized this in the following [article](https://gbracha.blogspot.com/2014/09/a-domain-of-shadows.html) sufficiently. Back to SEO:

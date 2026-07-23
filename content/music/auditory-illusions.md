@@ -48,7 +48,7 @@ a cycled tone scale at different volume ranges, and as the notes change, the lou
 low note is gradually faded out (depending on the direction chosen) while the inverse is gradually faded in. When performed
 properly you'll get a sound which seems to either rise or fall [indefinitely](https://en.wikipedia.org/wiki/File:DescenteInfinie.ogg).
 
-::content-figure{src="/media-library/music/shepards-tone-piano.png" alt="Shepard's Tone"}
+::prose-figure{src="/media-library/music/shepards-tone-piano.png" alt="Shepard's Tone"}
 A Shepard's tone scale from, Douglas Hofstadter. [Gödel Escher, Bach: An Eternal Golden Braid](https://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567), p. 718
 ::
 
@@ -61,7 +61,7 @@ concept to produce the illusion is to create two different scales with alternati
 individually into each ear simultaneously. The result is that the brain interprets the two differing scales as a single,
 completely new sound:
 
-::content-figure{src="/media-library/music/deutsche-scale.png" alt="Shepard's Tone"}
+::prose-figure{src="/media-library/music/deutsche-scale.png" alt="Deutsche Scale"}
 Deutsche Scale, [by Diana Deutsche derived from this figure](http://deutsch.ucsd.edu/psychology/figures/fig4.jpg)
 ::
 

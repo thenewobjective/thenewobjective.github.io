@@ -56,16 +56,16 @@ presentation that [Graham Hancock](https://web.archive.org/web/20200307205035/ht
 gave on the topic of such experiences and I was very much surprised. I found a number of parallels which I am still trying to
 contend with. Some select quotes and snippets from his presentation:
 
-::content-figure{src="/media-library/shamanism/shamanic-1.png" alt="Shamanic Ordeal 1" caption="Was the cat in my dream WANDA in disguise?"}
+::prose-figure{src="/media-library/shamanism/shamanic-1.png" alt="Shamanic Ordeal 1" caption="Was the cat in my dream WANDA in disguise?"}
 ::
 
-::content-figure{src="/media-library/shamanism/shamanic-2.png" alt="Shamanic Ordeal 2" caption="I definitely underwent a bizarre procedure"}
+::prose-figure{src="/media-library/shamanism/shamanic-2.png" alt="Shamanic Ordeal 2" caption="I definitely underwent a bizarre procedure"}
 ::
 
-::content-figure{src="/media-library/shamanism/shamanic-3.png" alt="Shamanic Ordeal 3" caption="&quot;Simply business&quot;"}
+::prose-figure{src="/media-library/shamanism/shamanic-3.png" alt="Shamanic Ordeal 3" caption="\"Simply business\""}
 ::
 
-::content-figure{src="/media-library/shamanism/shamanic-4.png" alt="Shamanic Ordeal 4" caption="The parallel experiences are amazing"}
+::prose-figure{src="/media-library/shamanism/shamanic-4.png" alt="Shamanic Ordeal 4" caption="The parallel experiences are amazing"}
 ::
 
 I haven't been consuming drugs of any form to help me achieve such a dream or vision. I am a drink man though,

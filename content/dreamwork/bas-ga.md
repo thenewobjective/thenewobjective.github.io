@@ -24,8 +24,8 @@ from a [snake-cube puzzle](https://en.wikipedia.org/wiki/Snake_cube) but far mor
 These constructed shapes ([polycubes](https://en.wikipedia.org/wiki/Polycube)) were placed upon an old parchment with the outlines of what appeared to be
 [polyominos](https://en.wikipedia.org/wiki/Polyomino) which acted as constraints.
 
-::content-figure{src="/media-library/dreamwork/pentacube-puzzle.jpg" alt="Pentacube Puzzle"}
-[Pentacube puzzle - Credit: Wikipedia](https://en.wikipedia.org/wiki/Polycube)
+::prose-figure{src="/media-library/dreamwork/pentacube-puzzle.jpg" alt="Pentacube Puzzle"}
+Pentacube puzzle. Credit: [Wikipedia](https://en.wikipedia.org/wiki/Polycube)
 ::
 
 The ebony color he called "Bas" and the ivory color "Ga".

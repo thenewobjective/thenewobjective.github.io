@@ -3,7 +3,7 @@ title:  Land Nav With Mortars
 date:   2020-05-17 12:00:00 -0600
 ---
 
-::content-figure{src="/media-library/usmc/land-nav.jpg" alt="Camp Pendleton" caption="Camp Pendleton"}
+::prose-figure{src="/media-library/usmc/land-nav.jpg" alt="Camp Pendleton" caption="Camp Pendleton"}
 ::
 
 After [Recruit Training](https://en.wikipedia.org/wiki/United_States_Marine_Corps_Recruit_Training) (bootcamp) I attended

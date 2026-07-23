@@ -44,7 +44,7 @@ Short, clean, and seems obviously correct from a glance… but happens to be nai
 of a pitfall for the inexperienced.  The beauty of this fragment of code is only skin deep as you can see from its call
 tree ( `f = fib` for brevity ):
 
-::content-figure{src="https://mermaid.ink/img/pako:eNptlE9Pg0AQxb8KmZMmtAELFDnrbb08e7J4IIVqo0CDNFGbfneR7c7ustyY37ydP4_NnmnXlhVl9NYVx3dv85B3eeN5m21O-5vkNqdXCcQIYgNIEplEopWFJLuzmYThBIptaIQYNYGtgdgGOsRMGZhV4DbHTG9YrTHTGWZjOGvC3RIzS8LaETMrwtoQ7oIw9sP0D8D5AXD9x4z9sNzHjPmwvIdrPUzn4RgP13eYtsN1HabpG2-xWHji6oIMVKRCjhloopHBDDinhHHvNHS7aB3LMJ2NNUqiFWCNnoJV-pxGtgtKcc1zVpXVVSE0clXQV5CRmNRmDQNh_p5rWiZV6tqBx1BT6CEgDOSqoG8go2lt1igJK2Ss8ioUfAUVEBMFn2AgyKe66uriUA7v5fk_m1P_XtVVTtnwWRbdR055cxl0p2NZ9NVjeejbjrJ98flV-VSc-vb5p9lR1nenSokeDsXw9tasqsZDT_JVHh9nn45F89K2tTo4hJSd6ZuyeJnG4Spap8E6SldJlMY-_VAWxsnyPkqTIEmiKLoP1vHFp9-xQnj5A_TGrA4?type=png" alt="Fibonacci call tree" caption="Fibonacci call tree"}
+::prose-figure{src="https://mermaid.ink/img/pako:eNptlE9Pg0AQxb8KmZMmtAELFDnrbb08e7J4IIVqo0CDNFGbfneR7c7ustyY37ydP4_NnmnXlhVl9NYVx3dv85B3eeN5m21O-5vkNqdXCcQIYgNIEplEopWFJLuzmYThBIptaIQYNYGtgdgGOsRMGZhV4DbHTG9YrTHTGWZjOGvC3RIzS8LaETMrwtoQ7oIw9sP0D8D5AXD9x4z9sNzHjPmwvIdrPUzn4RgP13eYtsN1HabpG2-xWHji6oIMVKRCjhloopHBDDinhHHvNHS7aB3LMJ2NNUqiFWCNnoJV-pxGtgtKcc1zVpXVVSE0clXQV5CRmNRmDQNh_p5rWiZV6tqBx1BT6CEgDOSqoG8go2lt1igJK2Ss8ioUfAUVEBMFn2AgyKe66uriUA7v5fk_m1P_XtVVTtnwWRbdR055cxl0p2NZ9NVjeejbjrJ98flV-VSc-vb5p9lR1nenSokeDsXw9tasqsZDT_JVHh9nn45F89K2tTo4hJSd6ZuyeJnG4Spap8E6SldJlMY-_VAWxsnyPkqTIEmiKLoP1vHFp9-xQnj5A_TGrA4?type=png" alt="Fibonacci call tree" caption="Fibonacci call tree"}
 ::
 
 This algorithm requires an exponential amount of time and space to produce a result (specifically,
@@ -79,7 +79,7 @@ Admittedly not quite as clear as the previous version, but arguable still cleane
 fib(n): check to see if it is in the memo,  if it is return it, otherwise calculate the value and store it in the memo before
 returning it. Here is our new call tree ( `m[n] = fib.memo[n]` ):
 
-::content-figure{src="https://mermaid.ink/img/pako:eNpt0rtugzAUBuBXQWdqJYi4ucGW2NKNLi5TMYMVnAa1XOSC1BTx7iW4GJNm4__4j7GFBzg2hQAC75K3Zys9MMlqy0ozBqeHp0cGuYJkBmSAktAURcGGlPlbU-jdYJJ5RqRzx912aJK5a6R3lqHmKtdClfl57K0VZUEe-9oUhXkcaEotx3Gs5G9GhSUtUWcNq6xkmIH3mtQ454r_v7L2dI3e7o1udk7NQ1GwoRKy4mUx_ffh-oJBdxaVYECmx4LLDwasHqde3xa8E89F2TUSyIl_fgkbeN81r5f6CKSTvVhKh5JPd6jSLTEPvajbNV8yG1pevzVNtQxOEcgA30A8jHY4dDGKUIT3ezey4QIE7zCaZB9EKMAR9vFow888742_aHXIAw?type=png" alt="Fibonacci call tree memoization" caption="Fibonacci call tree memoization"}
+::prose-figure{src="https://mermaid.ink/img/pako:eNpt0rtugzAUBuBXQWdqJYi4ucGW2NKNLi5TMYMVnAa1XOSC1BTx7iW4GJNm4__4j7GFBzg2hQAC75K3Zys9MMlqy0ozBqeHp0cGuYJkBmSAktAURcGGlPlbU-jdYJJ5RqRzx912aJK5a6R3lqHmKtdClfl57K0VZUEe-9oUhXkcaEotx3Gs5G9GhSUtUWcNq6xkmIH3mtQ454r_v7L2dI3e7o1udk7NQ1GwoRKy4mUx_ffh-oJBdxaVYECmx4LLDwasHqde3xa8E89F2TUSyIl_fgkbeN81r5f6CKSTvVhKh5JPd6jSLTEPvajbNV8yG1pevzVNtQxOEcgA30A8jHY4dDGKUIT3ezey4QIE7zCaZB9EKMAR9vFow888742_aHXIAw?type=png" alt="Fibonacci call tree memoization" caption="Fibonacci call tree memoization"}
 ::
 
 So our exponential recursive algorithm is now a linear recursive algorithm: *O(n)* time (still have to calculate each value

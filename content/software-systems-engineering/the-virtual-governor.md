@@ -35,7 +35,7 @@ unifying abstraction that treats these as members of the same category, and that
 this article is actually about. This article argues that naming the category, and treating it as
 an explicit first-class artifact, could change how distributed systems are designed.
 
-::content-figure{src="/media-library/software-systems-engineering/hollow-sphere-center-of-gravity.svg" alt="A hollow sphere with its mass distributed in the shell, and its center of gravity marked at the exact middle where there is no mass at all" caption="A hollow sphere's center of gravity: a point that governs motion without being occupied by any mass."}
+::prose-figure{src="/media-library/software-systems-engineering/hollow-sphere-center-of-gravity.svg" alt="A hollow sphere with its mass distributed in the shell, and its center of gravity marked at the exact middle where there is no mass at all" caption="A hollow sphere's center of gravity: a point that governs motion without being occupied by any mass."}
 ::
 
 ---
@@ -48,7 +48,7 @@ no individual node holds the concept "maintain a globally consistent history," y
 as though it does. The virtual governor is not the leader, not the log, not the protocol; it is the
 invariant that the protocol instantiates.
 
-::content-figure{src="/media-library/software-systems-engineering/raft-log-replication.svg" alt="A Raft leader replicates a log of entries to three followers; no single node, leader, log, or protocol, holds the concept of one consistent history" caption="The leader, the log, and the protocol each hold a piece of it; none of them holds the invariant itself."}
+::prose-figure{src="/media-library/software-systems-engineering/raft-log-replication.svg" alt="A Raft leader replicates a log of entries to three followers; no single node, leader, log, or protocol, holds the concept of one consistent history" caption="The leader, the log, and the protocol each hold a piece of it; none of them holds the invariant itself."}
 ::
 
 Move to [CRDTs](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type):
@@ -57,14 +57,14 @@ there is no leader and no coordinator, yet every replica independently converges
 The <abbr title="The mathematical structure that guarantees this combining rule always produces one consistent result, no matter how many replicas or updates are involved"><a href="https://en.wikipedia.org/wiki/Semilattice">semilattice</a></abbr>
 defines an attractor; no replica contains it.
 
-::content-figure{src="/media-library/software-systems-engineering/crdt-convergence.svg" alt="Three CRDT replicas each apply a different local update with no coordinator, converge on a lattice join, and independently arrive at the same merged state" caption="No leader, no coordinator: every replica computes the same join independently."}
+::prose-figure{src="/media-library/software-systems-engineering/crdt-convergence.svg" alt="Three CRDT replicas each apply a different local update with no coordinator, converge on a lattice join, and independently arrive at the same merged state" caption="No leader, no coordinator: every replica computes the same join independently."}
 ::
 
 Event sourcing makes the event stream itself into
 something like a governor, since every service reconstructs state differently, but all align to the
 append-only history as authoritative.
 
-::content-figure{src="/media-library/software-systems-engineering/event-sourcing-log.svg" alt="One authoritative append-only event log feeding three services, each of which replays it into a different local projection: a balance view, an audit view, and an analytics view" caption="One authoritative history, reconstructed differently by every service that reads it."}
+::prose-figure{src="/media-library/software-systems-engineering/event-sourcing-log.svg" alt="One authoritative append-only event log feeding three services, each of which replays it into a different local projection: a balance view, an audit view, and an analytics view" caption="One authoritative history, reconstructed differently by every service that reads it."}
 ::
 
 In [Kubernetes](https://kubernetes.io/), the desired state
@@ -72,7 +72,7 @@ stored in [etcd](https://etcd.io/) is not a simple configuration file; it is the
 every controller independently minimizes reconciliation error. The goal is never issued as an
 imperative instruction. It is inferred from the gap between actual and desired.
 
-::content-figure{src="/media-library/software-systems-engineering/kubernetes-reconciliation-loop.svg" alt="A circular reconciliation loop: observe the actual cluster state, compare it to the desired state stored in etcd, act to close the gap, and repeat indefinitely" caption="The goal is never issued as a command; it is inferred, over and over, from the gap between actual and desired."}
+::prose-figure{src="/media-library/software-systems-engineering/kubernetes-reconciliation-loop.svg" alt="A circular reconciliation loop: observe the actual cluster state, compare it to the desired state stored in etcd, act to close the gap, and repeat indefinitely" caption="The goal is never issued as a command; it is inferred, over and over, from the gap between actual and desired."}
 ::
 
 Consensus, conflict resolution, event logs, and reconciliation loops share no code, no protocol
@@ -104,7 +104,7 @@ canonical." The canonicity emerges from the protocol and the economic incentives
 and no single name for it matters as much as the fact that nobody, under any name, is the one
 holding it.
 
-::content-figure{src="/media-library/software-systems-engineering/bitcoin-longest-chain.svg" alt="A chain of blocks forks when two miners each extend it independently; one branch is extended further and becomes canonical, while the shorter branch is abandoned, with no administrator deciding which" caption="No administrator resolves the fork; every node independently follows whichever valid chain is longest."}
+::prose-figure{src="/media-library/software-systems-engineering/bitcoin-longest-chain.svg" alt="A chain of blocks forks when two miners each extend it independently; one branch is extended further and becomes canonical, while the shorter branch is abandoned, with no administrator deciding which" caption="No administrator resolves the fork; every node independently follows whichever valid chain is longest."}
 ::
 
 Two mechanisms deserve specific attention. The difficulty adjustment maintains the invariant of
@@ -128,7 +128,7 @@ Ethereum Classic are not bugs in the coordination mechanism; they are evidence t
 exactly as Levin's framework predicts: agents that stop finding the current attractor rational
 build a different one rather than being coerced back into the old one.
 
-::content-figure{src="/media-library/software-systems-engineering/bitcoin-permanent-fork.svg" alt="A shared chain permanently splits into two independently continuing chains, Bitcoin and Bitcoin Cash, shown in different colors, with neither branch abandoned" caption="A contentious hard fork is not a temporary disagreement resolved by the longest-chain rule. It is a permanent split into two governors, each with its own aligned agents."}
+::prose-figure{src="/media-library/software-systems-engineering/bitcoin-permanent-fork.svg" alt="A shared chain permanently splits into two independently continuing chains, Bitcoin and Bitcoin Cash, shown in different colors, with neither branch abandoned" caption="A contentious hard fork is not a temporary disagreement resolved by the longest-chain rule. It is a permanent split into two governors, each with its own aligned agents."}
 ::
 
 ---
@@ -161,7 +161,7 @@ name. The strong cases, CRDTs, active reconciliation loops, emergent consensus, 
 which is exactly what makes them the right models for what to build rather than curiosities to
 admire.
 
-::content-figure{src="/media-library/software-systems-engineering/governor-boundary-quadrant.svg" alt="A quadrant diagram: DNS satisfies convergence but fails decentralization, BGP satisfies decentralization but never converges cleanly, and Raft, CRDTs, Kubernetes, and Bitcoin satisfy both conditions" caption="The boundary of the concept: a genuine virtual governor requires both that no component holds it and that it actually converges. DNS and BGP each fail one condition; the strong cases satisfy both."}
+::prose-figure{src="/media-library/software-systems-engineering/governor-boundary-quadrant.svg" alt="A quadrant diagram: DNS satisfies convergence but fails decentralization, BGP satisfies decentralization but never converges cleanly, and Raft, CRDTs, Kubernetes, and Bitcoin satisfy both conditions" caption="The boundary of the concept: a genuine virtual governor requires both that no component holds it and that it actually converges. DNS and BGP each fail one condition; the strong cases satisfy both."}
 ::
 
 ---
@@ -282,7 +282,7 @@ Control theory provides the vocabulary. A classical [feedback control loop](http
 - **Stability guarantee**: does the system converge to the desired attractor, and is that
   convergence robust to perturbation?
 
-::content-figure{src="/media-library/software-systems-engineering/feedback-control-loop.svg" alt="A block diagram of a classical feedback control loop: reference signal and measured feedback combine into an error signal, a controller turns that into a control input, and the system's actual state feeds back to close the loop" caption="The four elements as a closed loop: reference signal, error signal, control input, and the feedback path whose convergence is the stability guarantee."}
+::prose-figure{src="/media-library/software-systems-engineering/feedback-control-loop.svg" alt="A block diagram of a classical feedback control loop: reference signal and measured feedback combine into an error signal, a controller turns that into a control input, and the system's actual state feeds back to close the loop" caption="The four elements as a closed loop: reference signal, error signal, control input, and the feedback path whose convergence is the stability guarantee."}
 ::
 
 [Self-stabilizing systems](https://dl.acm.org/doi/10.1145/361179.361202),
@@ -292,7 +292,7 @@ satisfying that property and remains there. That state is a
 [fixed point](https://en.wikipedia.org/wiki/Fixed_point_(mathematics)) of the system's own dynamics,
 the exact target a reconciliation loop is chasing.
 
-::content-figure{src="/media-library/software-systems-engineering/basin-of-attraction.svg" alt="A basin of attraction diagram: trajectories from several different starting states all converge on one central fixed point, and a perturbation away from that point is pulled back in" caption="Self-stabilization as a basin of attraction: it does not matter where the system starts, or how it is disturbed, it converges to and remains at the same fixed point."}
+::prose-figure{src="/media-library/software-systems-engineering/basin-of-attraction.svg" alt="A basin of attraction diagram: trajectories from several different starting states all converge on one central fixed point, and a perturbation away from that point is pulled back in" caption="Self-stabilization as a basin of attraction: it does not matter where the system starts, or how it is disturbed, it converges to and remains at the same fixed point."}
 ::
 
 The Internet illustrates what happens when this is skipped. BGP's messy, never-quite-converging
@@ -339,7 +339,7 @@ should become and let controllers converge to it) and incentive engineering (des
 reward structure so that convergence to the desired attractor is individually rational for every
 agent). Both make the governor explicit. They differ in how they exercise control.
 
-::content-figure{src="/media-library/software-systems-engineering/mechanism-design-incentives.svg" alt="Three self-interested agents each pursuing their own reward feed into a designed incentive structure, which produces a collective global outcome without any agent being commanded directly" caption="Mechanism design installs a governor by shaping the rules of interaction, not by commanding agents: each pursues its own reward, and the desired outcome follows."}
+::prose-figure{src="/media-library/software-systems-engineering/mechanism-design-incentives.svg" alt="Three self-interested agents each pursuing their own reward feed into a designed incentive structure, which produces a collective global outcome without any agent being commanded directly" caption="Mechanism design installs a governor by shaping the rules of interaction, not by commanding agents: each pursues its own reward, and the desired outcome follows."}
 ::
 
 ---

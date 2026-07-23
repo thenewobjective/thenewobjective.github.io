@@ -17,8 +17,8 @@ Traditional architecture is discussed in terms of buildings and other physical s
 Let us look at one of the most popular human-built structures
 [The Great Pyramid of Giza](https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza):
 
-::content-figure{src="/media-library/software-systems-engineering/pyramid-of-giza.jpg" alt="The Great Pyramid of Giza"}
-The Great Pyramid of Giza - Credit: [Nina Aldin Thune](https://commons.wikimedia.org/w/index.php?curid=282496)
+::prose-figure{src="/media-library/software-systems-engineering/pyramid-of-giza.jpg" alt="The Great Pyramid of Giza"}
+Credit: [Nina Aldin Thune](https://commons.wikimedia.org/w/index.php?curid=282496)
 ::
 
 This structure is quite imposing. Standing at 481 feet tall and having a weight of at
@@ -29,14 +29,14 @@ Despite it being a grand monolith, can it be considered a grand architecture?
 No, this is an example of what can be accomplished with perhaps the greatest of brute force methods.
 It amounts to little better than a pile of rocks:
 
-::content-figure{src="/media-library/software-systems-engineering/rock-pile.png" alt="A pile of rocks"}
+::prose-figure{src="/media-library/software-systems-engineering/rock-pile.png" alt="A pile of rocks"}
 Credit: [Wikipedia](https://en.wikipedia.org/wiki/Cairn)
 ::
 
 Even so it still took more than 3,800 years until another structure could overtake it in height in the year 1092;
 [The Lincoln Cathedral](https://en.wikipedia.org/wiki/Lincoln_Cathedral):
 
-::content-figure{src="/media-library/software-systems-engineering/lincoln-cathedral.jpg" alt="The Lincoln Cathedral"}
+::prose-figure{src="/media-library/software-systems-engineering/lincoln-cathedral.jpg" alt="The Lincoln Cathedral"}
 Credit: [Wikipedia](https://en.wikipedia.org/wiki/Lincoln_Cathedral)
 ::
 
@@ -46,7 +46,7 @@ What is the fundamental difference between the two? What enabled this new scale?
 The answer was not some new material but a new organization of existing ones, specifically the
 [Arch](https://en.wikipedia.org/wiki/Arch):
 
-::content-figure{src="/media-library/software-systems-engineering/rock-arch.jpg" alt="Rock Arch"}
+::prose-figure{src="/media-library/software-systems-engineering/rock-arch.jpg" alt="Rock Arch"}
 Credit: [Wikipedia](https://en.wikipedia.org/wiki/Arch#/media/File:Arch_Balance_(cropped).jpg)
 ::
 
@@ -63,14 +63,14 @@ No more brute-forcing large structures. We obtained scale through organization.
   <tr>
    <td>
 
-::content-figure{src="/media-library/software-systems-engineering/pyramid-of-giza.jpg" alt="The Great Pyramid of Giza"}
+::prose-figure{src="/media-library/software-systems-engineering/pyramid-of-giza.jpg" alt="The Great Pyramid of Giza"}
 Credit: [Nina Aldin Thune](https://commons.wikimedia.org/w/index.php?curid=282496)<br>The Great Pyramid of Giza - 481 ft - 5,750,000 tons <sup>[ref](https://weightofstuff.com/how-much-does-the-pyramid-of-giza-weigh/)</sup>
 ::
 
    </td>
    <td>
 
-::content-figure{src="/media-library/software-systems-engineering/eiffel-tower.jpg" alt="Eiffel Tower"}
+::prose-figure{src="/media-library/software-systems-engineering/eiffel-tower.jpg" alt="Eiffel Tower"}
 Credit: [Benh LIEU SONG](https://commons.wikimedia.org/w/index.php?curid=6926930)<br>The Eiffel Tower - 1,063 ft - 8,047 tons <sup>[ref](https://en.wikipedia.org/wiki/Eiffel_Tower)</sup>
 ::
 
@@ -117,15 +117,15 @@ You, I, and most people now have a supercomputer in their pocket:
   <tr>
    <td>
 
-::content-figure{src="/media-library/software-systems-engineering/Asci_red.jpg" alt="Intel ASCI Red/9152 supercomputer"}
-Intel ASCI Red/9152 supercomputer<br>**1997** - **1.338 TFLOPS**<sup>[[ref](https://web.archive.org/web/19990202210213/http://www.sandia.gov/ASCI/images/RedPictures.htm)]</sup><br>By [Sandia National Laboratories](https://web.archive.org/web/19990202210213/http://www.sandia.gov/ASCI/images/RedPictures.htm)
+::prose-figure{src="/media-library/software-systems-engineering/Asci_red.jpg" alt="Intel ASCI Red/9152 supercomputer"}
+Intel ASCI Red/9152 supercomputer<br>**1997** - **1.338 TFLOPS**<sup>[[ref](https://web.archive.org/web/19990202210213/http://www.sandia.gov/ASCI/images/RedPictures.htm)]</sup><br>Credit: [Sandia National Laboratories](https://web.archive.org/web/19990202210213/http://www.sandia.gov/ASCI/images/RedPictures.htm)
 ::
 
    </td>
    <td>
 
-::content-figure{src="/media-library/software-systems-engineering/iPhone_13_Pro.jpg" alt="iPhone 13 Pro"}
-iPhone 13 Pro<br>**2021** - **1.5 TFLOPS**<sup>[[ref](https://en.wikipedia.org/wiki/IPhone_13_Pro)]</sup><br>Image Credit: [Wikipedia](https://en.wikipedia.org/wiki/IPhone_13_Pro)
+::prose-figure{src="/media-library/software-systems-engineering/iPhone_13_Pro.jpg" alt="iPhone 13 Pro"}
+iPhone 13 Pro<br>**2021** - **1.5 TFLOPS**<sup>[[ref](https://en.wikipedia.org/wiki/IPhone_13_Pro)]</sup><br>Credit: [Wikipedia](https://en.wikipedia.org/wiki/IPhone_13_Pro)
 ::
 
    </td>
@@ -184,7 +184,7 @@ are not because the problems are complex but that we
 So, the complexity of our code, whether it be extrinsic or intrinsic is the "weight" that bears upon us thus complexity
 is our "gravity" and what we fighting against. Our goal is then how can we get the two lines of this chart to align?
 
-::content-figure{src="/media-library/software-systems-engineering/complexity-time-loc.png" alt="Complexity over time chart"}
+::prose-figure{src="/media-library/software-systems-engineering/complexity-time-loc.png" alt="Complexity over time chart"}
 Intrinsic vs Extrinsic complexity over time
 ::
 
@@ -244,7 +244,7 @@ In software, we have many signs and symbols that we use to communicate with the 
 The relationship between a symbol and its meaning is represented by a
 "[Semiotic Triangle](https://en.wikipedia.org/wiki/Triangle_of_reference)":
 
-::content-figure{src="/media-library/software-systems-engineering/semiotic-triangle.png" alt="Semiotic Triangle"}
+::prose-figure{src="/media-library/software-systems-engineering/semiotic-triangle.png" alt="Semiotic Triangle"}
 The Semiotic Triangle
 ::
 
@@ -625,11 +625,11 @@ two perspectives to be effective. This is why [Domain Driven Design](https://mar
 and [Clean Architecture](https://crosp.net/blog/software-architecture/clean-architecture-part-2-the-clean-architecture/)
 were evolved respectively.
 
-::content-figure{src="/media-library/software-systems-engineering/clean-architecture.png" alt="Clean Architecture"}
+::prose-figure{src="/media-library/software-systems-engineering/clean-architecture.png" alt="Clean Architecture"}
 Clean Architecture by [Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin)
 ::
 
-::content-figure{src="/media-library/software-systems-engineering/bounded-context.png" alt="Bounded Context"}
+::prose-figure{src="/media-library/software-systems-engineering/bounded-context.png" alt="Bounded Context"}
 DDD - Bounded Context by [Martin Fowler](https://martinfowler.com/bliki/BoundedContext.html)
 ::
 

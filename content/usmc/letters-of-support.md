@@ -9,7 +9,7 @@ conclusion that these letters, while addressed to me, were not for me specifical
 I am sharing these in the hope that it provides some perspective, history, and inspiration if you decide to send a letter of support of your own to another service member currently deployed around the world.
 It would be appreciated, especially around the holidays.
 
-::content-figure{src="/media-library/usmc/stockings-1.jpg" alt="Christmas Stockings" caption="Christmas in Iraq"}
+::prose-figure{src="/media-library/usmc/stockings-1.jpg" alt="Christmas Stockings" caption="Christmas in Iraq"}
 ::
 
 ::image-carousel

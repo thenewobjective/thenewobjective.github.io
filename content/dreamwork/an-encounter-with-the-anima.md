@@ -31,7 +31,7 @@ The feminine aspect of men being [Anima](https://en.wikipedia.org/wiki/Anima_and
 and the masculine aspect of women being [Animus](https://en.wikipedia.org/wiki/Anima_and_animus). Symbolically this may be best represented by
 the yin-yang symbol:
 
-::content-figure{src="/media-library/dreamwork/yin-yang.png" alt="Yin-Yang symbol" caption="Yin-Yang - Credit: Wikipedia" href="https://en.wikipedia.org/wiki/Taijitu"}
+::prose-figure{src="/media-library/dreamwork/yin-yang.png" alt="Yin-Yang symbol" caption="Yin-Yang. Credit: Wikipedia" href="https://en.wikipedia.org/wiki/Taijitu"}
 ::
 
 Proper recognition and integration of these aspects is necessary and the failure to do so leads do

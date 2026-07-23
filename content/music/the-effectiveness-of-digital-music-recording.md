@@ -44,7 +44,7 @@ at a high rate, translating these variables into a set of numbers which are then
 such as a disc or an electronic device. The higher the rate of sampling and the greater the range of amplitudes recorded, the more
 accurate the representation becomes.
 
-::content-figure{src="/media-library/music/sine-wave-sampling.png" alt="Sine Wave w/ Sampling" caption="Sine Wave w/ Sampling"}
+::prose-figure{src="/media-library/music/sine-wave-sampling.png" alt="Sine Wave w/ Sampling" caption="Sine Wave w/ Sampling"}
 ::
 
 The figure above represents a sound wave (a sine wave in this case). The vertical lines represent a sampling rate of the

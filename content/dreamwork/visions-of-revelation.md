@@ -35,7 +35,7 @@ sacrificed much for it including one of his eyes. In another story he discovered
 letters and symbolic representations of larger esoteric ideas. Through nine days of self-inflicted torture they were
 revealed:
 
-::content-figure{src="/media-library/dreamwork/odins-sacrifice.jpg" alt="Odin's Sacrifice"}
+::prose-figure{src="/media-library/dreamwork/odins-sacrifice.jpg" alt="Odin's Sacrifice"}
 Odin's Sacrifice by Lorenz Frølich, 1895. From [Wikipedia](https://en.wikipedia.org/wiki/Odin)
 ::
 
@@ -128,7 +128,7 @@ He's most famous for his discovery of the structure of [Benzene](https://en.wiki
 
 &mdash; [August Kekulé, Benzolfest, 1890](https://web.archive.org/web/20200719084832/http://www.chem.uzh.ch/dam/jcr:ffffffff-e65b-5674-0000-000031849f54/10_Structure_Theory_slides.pdf)
 
-::content-figure{src="/media-library/dreamwork/ouroboros-benzene.png" alt="Benzene and Uroburos"}
+::prose-figure{src="/media-library/dreamwork/ouroboros-benzene.png" alt="Benzene and Uroburos"}
 Credit: [Haltopub](https://commons.wikimedia.org/w/index.php?curid=29661966). CC BY-SA 3.0
 ::
 

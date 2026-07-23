@@ -96,17 +96,17 @@ WSH.echo(xhr.statusText);
 
 To use this bat file in the release pipeline it had to be stored somewhere as there is no 'inline' option for batch tasks. VSTS provides a library feature which seemed appropriate:
 
-::content-figure{src="/media-library/system-administration/warmup-1.png" alt="VSTS Library" caption="VSTS Library"}
+::prose-figure{src="/media-library/system-administration/warmup-1.png" alt="VSTS Library" caption="VSTS Library"}
 ::
 
 With the bat file uploaded it can be accessed from the release pipelines with the "Download Secure File" task:
 
-::content-figure{src="/media-library/system-administration/warmup-2.png" alt="VSTS Library" caption="VSTS Deployment"}
+::prose-figure{src="/media-library/system-administration/warmup-2.png" alt="VSTS Library" caption="VSTS Deployment"}
 ::
 
 This file is downloaded into a temp directory and can now be executed:
 
-::content-figure{src="/media-library/system-administration/warmup-3.png" alt="VSTS Library" caption="VSTS Deployment"}
+::prose-figure{src="/media-library/system-administration/warmup-3.png" alt="VSTS Library" caption="VSTS Deployment"}
 ::
 
 The only argument to this task is the url to warmup.

@@ -32,7 +32,7 @@ Contrast this with types and [contracts](https://en.wikipedia.org/wiki/Design_by
 
 Relying on tests as specifications is like verifying that a bridge won't collapse by only driving one kind of car across it.
 
-::content-figure{src="/media-library/software-systems-engineering/calvin-and-hobbes-bridge.jpg" alt="Calvin and Hobbes - Bridge Collapse" caption="Calvin and Hobbes"}
+::prose-figure{src="/media-library/software-systems-engineering/calvin-and-hobbes-bridge.jpg" alt="Calvin and Hobbes - Bridge Collapse" caption="Calvin and Hobbes"}
 ::
 
 This also illustrates a broader philosophical fallacy: the **is–ought problem**, articulated by [David Hume](https://en.wikipedia.org/wiki/David_Hume).

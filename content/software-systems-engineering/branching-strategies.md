@@ -68,7 +68,7 @@ The challenge is when we want to share something between branches. This sharing 
 analogy: while our universes were parallel, they are now converging and problems can arise since any
 inconsistencies between them will be revealed.
 
-::content-figure{src="/media-library/software-systems-engineering/mirror-dimension-dr-strange.webp" alt="Mirror Dimension from Dr Strange"}
+::prose-figure{src="/media-library/software-systems-engineering/mirror-dimension-dr-strange.webp" alt="Mirror Dimension from Dr Strange"}
 [The Mirror Dimension](https://marvel.fandom.com/wiki/Mirror_Dimension) from [Doctor Strange (film)](https://en.wikipedia.org/wiki/Doctor_Strange_(2016_film))
 ::
 
@@ -94,8 +94,7 @@ changes are made and how they are integrated.
 
 ### 4.1 Single Branch
 
-::content-figure{src="https://mermaid.ink/img/pako:eNq9j0EKwjAURK8isw7F2hqTrBVXrtxJNp8mtkHTlJiCWnp3a0WP4G7m8x78GVAFY6FQu7SP1DU66naxqIL3Lv0zg8Hb6MmZ6ZnhfddIjfVWQ03RULxo6HacuL4zlOzOuBQi1JmuN8tAfQrHR1tBpdjbL7R1VEfyP8rO0uEzeV7O0FF7CsF_xalCDbhDyXUmZVGuZF5wwVeC4QFVFHm2lHKTCy6E5OWSjwzP2c_HF2Zdbsc?type=png" alt="Single Branch"}
-Single Branch Strategy
+::prose-figure{src="https://mermaid.ink/img/pako:eNq9j0EKwjAURK8isw7F2hqTrBVXrtxJNp8mtkHTlJiCWnp3a0WP4G7m8x78GVAFY6FQu7SP1DU66naxqIL3Lv0zg8Hb6MmZ6ZnhfddIjfVWQ03RULxo6HacuL4zlOzOuBQi1JmuN8tAfQrHR1tBpdjbL7R1VEfyP8rO0uEzeV7O0FF7CsF_xalCDbhDyXUmZVGuZF5wwVeC4QFVFHm2lHKTCy6E5OWSjwzP2c_HF2Zdbsc?type=png" alt="Single Branch" caption="Single Branch Strategy"}
 ::
 
 The simplest strategy is to have a single branch. The idea is that all changes are made directly, and no other branches
@@ -128,7 +127,7 @@ production that you know is not ready. This is a dangerous practice that can lea
 Additionally, the code will be [littered with branching logic](https://web.archive.org/web/20030716230644/http://www.chris-lott.org/resources/cstyle/ifdefs.pdf)
 to support the feature flags which can lead to a combinatorial explosion of testing permutations.
 
-::content-figure{src="/media-library/software-systems-engineering/complete-graph.png" alt="Complete Graph"}
+::prose-figure{src="/media-library/software-systems-engineering/complete-graph.png" alt="Complete Graph"}
 Complete Graph. Credit: [Wikipedia](https://en.wikipedia.org/wiki/Complete_graph)
 ::
 
@@ -152,8 +151,7 @@ work well with this strategy.
 When interpreted as a methodology, DevOps is also a good fit for this strategy due to its emphasis on automation and
 short feedback loops.
 
-::content-figure{src="https://mermaid.ink/img/pako:eNqdkLFOwzAURX8lurOJ4rqpa89FTEzdkJdHbBKrdRwZB7VE-XfSoLKxdHtXOufq6U5oonXQaH1-STR0Jpm-KJoYgs__3UWmVhcGX7ysyuqJzkNHBg-Y7y4_JBqAIbgUyNvl9-nGGeTOBWdwwyyl01Lczws3Dpaye7Y-xwT9QedPx0Bjjsdr30DnNLo7dPDUJgp_lFul19-F1qEYBurfYgx3cYnQEy7Qqi6VEvWWc6VqwaViuEILocrdlsv9Xu4qKeqNnBm-1wI-_wBqwnrU?type=png" alt="Single Branch with release version tags"}
-Single Branch with release version tags
+::prose-figure{src="https://mermaid.ink/img/pako:eNqdkLFOwzAURX8lurOJ4rqpa89FTEzdkJdHbBKrdRwZB7VE-XfSoLKxdHtXOufq6U5oonXQaH1-STR0Jpm-KJoYgs__3UWmVhcGX7ysyuqJzkNHBg-Y7y4_JBqAIbgUyNvl9-nGGeTOBWdwwyyl01Lczws3Dpaye7Y-xwT9QedPx0Bjjsdr30DnNLo7dPDUJgp_lFul19-F1qEYBurfYgx3cYnQEy7Qqi6VEvWWc6VqwaViuEILocrdlsv9Xu4qKeqNnBm-1wI-_wBqwnrU?type=png" alt="Single Branch with release version tags" caption="Single Branch with release version tags"}
 ::
 
 Release management is straightforward with this strategy. You could simply deploy the latest commit to production,
@@ -177,8 +175,7 @@ deployed and history is not important, then you may not need any tags at all.
 
 ### 4.2 Task Branching
 
-::content-figure{src="https://mermaid.ink/img/pako:eNqVUr1uwjAQfpXo5hBiEwx4btWpU7fKy5GYJE1sR45dlSLevQ6UilBA7Xb2fX93uh3kppDAoazdk8WuElbo3ChVu6FaW9R5FQnwvbRT1VboN3LqsG8mhM4EjNFnVSXzxngXKaz18KGkLeVtnchhyUP7PU1Ikk6w7So8qo8T9KUxhUI9Xftywr79L73GFPem6rYdisGNzRd3Uv_Of8_3bwpXN3Al1NkKaFjBWjq8mO-_We4muFQZ2RMBEEPAB2oRjmMndBR6rpJKChhgBdomWOt9wPmuQCcfi9oZC3yDbS9jQO_My1bnwJ318gR6qLG0qH5Q8kB6Pp7g4RJj6FC_GqNOxPAEvoMP4JSyZMlWS7pKCWVLRmYxbIFnWZaQFUlTkpHZglE638fweVAg-y8gtADG?type=png" alt="Task Branching"}
-Task Branching Strategy
+::prose-figure{src="https://mermaid.ink/img/pako:eNqVUr1uwjAQfpXo5hBiEwx4btWpU7fKy5GYJE1sR45dlSLevQ6UilBA7Xb2fX93uh3kppDAoazdk8WuElbo3ChVu6FaW9R5FQnwvbRT1VboN3LqsG8mhM4EjNFnVSXzxngXKaz18KGkLeVtnchhyUP7PU1Ikk6w7So8qo8T9KUxhUI9Xftywr79L73GFPem6rYdisGNzRd3Uv_Of8_3bwpXN3Al1NkKaFjBWjq8mO-_We4muFQZ2RMBEEPAB2oRjmMndBR6rpJKChhgBdomWOt9wPmuQCcfi9oZC3yDbS9jQO_My1bnwJ318gR6qLG0qH5Q8kB6Pp7g4RJj6FC_GqNOxPAEvoMP4JSyZMlWS7pKCWVLRmYxbIFnWZaQFUlTkpHZglE638fweVAg-y8gtADG?type=png" alt="Task Branching" caption="Task Branching Strategy"}
 ::
 
 This strategy is sometimes referred to as "feature branching", but I prefer the term "task branching" because it is
@@ -275,8 +272,7 @@ The integration branch can also have a reduced set of gates compared to `main` w
 (i.e., sanity checks instead of a full testing suite). The most common integration branch used in practice is called
 "dev" or "develop".
 
-::content-figure{src="https://mermaid.ink/img/pako:eNqVU01zgjAQ_SvOnhEJFtSc2-mpp946uawkApUkTkicWsf_3kDVKhVLT9nM-9iXzeweMs0FUMhL-2xwUzDDVKalLG1TLQ2qrBgx4GLLoAdztTATWRXoVmJisV6PSTw9sguRrbWzf7DOnhfVj_LcWwqTi36rkcWcenhLwiiMxkthsZNCYqkujVrna1lH0TB-vbXOteYS1WTp8nE6RGHfZVlVTdGkTZPZnYffGkF_22EOx1BXA7yR6WIUZMgEvW1HYrLbHz84-73EXZOr3uT_cQkDCMBjnsb9DuyZGnnMFkIKBg2No1l7S3XwPLfhaMUTL602QFdY1SIAdFa_7lQG1BonTqTHEnOD8swSrejle9PahQtgg-pNa3kS-ivQPXwAJWkSPiwSQpIkmc79EcAOaEziMJ5Fi3QRkXQ-S8khgM9WTw5fuZVQ5A?type=png" alt="Integration Branching Strategy"}
-Integration Branching Strategy
+::prose-figure{src="https://mermaid.ink/img/pako:eNqVU01zgjAQ_SvOnhEJFtSc2-mpp946uawkApUkTkicWsf_3kDVKhVLT9nM-9iXzeweMs0FUMhL-2xwUzDDVKalLG1TLQ2qrBgx4GLLoAdztTATWRXoVmJisV6PSTw9sguRrbWzf7DOnhfVj_LcWwqTi36rkcWcenhLwiiMxkthsZNCYqkujVrna1lH0TB-vbXOteYS1WTp8nE6RGHfZVlVTdGkTZPZnYffGkF_22EOx1BXA7yR6WIUZMgEvW1HYrLbHz84-73EXZOr3uT_cQkDCMBjnsb9DuyZGnnMFkIKBg2No1l7S3XwPLfhaMUTL602QFdY1SIAdFa_7lQG1BonTqTHEnOD8swSrejle9PahQtgg-pNa3kS-ivQPXwAJWkSPiwSQpIkmc79EcAOaEziMJ5Fi3QRkXQ-S8khgM9WTw5fuZVQ5A?type=png" alt="Integration Branching Strategy" caption="Integration Branching Strategy"}
 ::
 
 The integration branch (`dev`) is created from `main` branch at the beginning of the project and then
@@ -354,8 +350,7 @@ bite you hard later. Raymond Chen of Microsoft has an excellent article describi
 
 So that leaves us with option two.
 
-::content-figure{src="https://mermaid.ink/img/pako:eNqlk81ygjAUhV_FuWtEAhYk63a66qq7DpsriZBKEicER-v47g20UsWf2unuMvecL-dkyA5yzThQKIR9NrgqM5OpXEspbDvNDaq8HGXA-DqDK7um5mYiqxKbBZ9YrJdjEkbf6pLnS93YX1Q982j6cfZnS24Kfh01slhQt14TP_CD8ZxbHKSQKNQxqCMPbCY_i94HOK1cF1ozieoQYfqPNhdYR7nI7Tqnsey7FFXlhlLbhdg42MPlYCfFyT33dZ0_YJ1dYtv6ryByTygHHljas8EDt3ZK5n7tXaZGbm1LLnkGrZKhWTqq2jtds2Jo-RMTVhugC6xq7gE2Vr9uVQ7UmoYfRI8CC4OyV_HO9PL1gLp35MEK1ZvW8mB0n0B3sAEaBqkfTsPUtQzSMIlnkQdboGQW-mk8CxISRHEcJFGy9-CjI5D9J_QtPLg?type=png" alt="Hotfix branch"}
-Hotfix branch
+::prose-figure{src="https://mermaid.ink/img/pako:eNqlk81ygjAUhV_FuWtEAhYk63a66qq7DpsriZBKEicER-v47g20UsWf2unuMvecL-dkyA5yzThQKIR9NrgqM5OpXEspbDvNDaq8HGXA-DqDK7um5mYiqxKbBZ9YrJdjEkbf6pLnS93YX1Q982j6cfZnS24Kfh01slhQt14TP_CD8ZxbHKSQKNQxqCMPbCY_i94HOK1cF1ozieoQYfqPNhdYR7nI7Tqnsey7FFXlhlLbhdg42MPlYCfFyT33dZ0_YJ1dYtv6ryByTygHHljas8EDt3ZK5n7tXaZGbm1LLnkGrZKhWTqq2jtds2Jo-RMTVhugC6xq7gE2Vr9uVQ7UmoYfRI8CC4OyV_HO9PL1gLp35MEK1ZvW8mB0n0B3sAEaBqkfTsPUtQzSMIlnkQdboGQW-mk8CxISRHEcJFGy9-CjI5D9J_QtPLg?type=png" alt="Hotfix branch" caption="Hotfix branch"}
 ::
 
 We choose the tag that represents the release with the bug and create a task branch from it.
@@ -398,8 +393,7 @@ This is sometimes referred to as "task branching" or "topic branching", and some
 "component branching". The term "feature" is more appropriate and general in my opinion and should be used
 to describe such a larger body of work.
 
-::content-figure{src="https://mermaid.ink/img/pako:eNqdU01zgjAQ_SvOnhFJwIKc2-mpp946XFZYgZEkTAhOreN_b7TQWgSn9ZRk9n1sXrIHSFVGEENemmeNdZHoRKZKiNKcdmuNMi1mCWS0S2CitiE0raZFt86ZPwltG9ILURXYbmhhsNnOGb9CX-wKSreqNTdMBOmcppVnBvPYlneey1xvjlVdoMu-qL-7wkrtqMK0ZwfLG33d3eGYy2iPvHPv9U8PcCE2ZjbQWZPBgYjAUv6oWMkBRafjrtNPHVyFdCOQYCz3JlcqEyi7QJbBfd8hGAl7RPriwnz4H_6c9bXOP7PmXdbggC1bZGYn8JDImS2bggQlcEJmqLdWVR4trq0zNPSUlUZpiDdYNeQAtka97mUKsdEt9aDHEnON4htFZ9LL15yfx92BGuWbUqIn2iPEB3iHmEXcjaKVH0VhyL0HHjiwhzhauWwZen7AQ-az6OjAx5nNjp_1ynhQ?type=png" alt="Feature Branching"}
-Feature Branching
+::prose-figure{src="https://mermaid.ink/img/pako:eNqdU01zgjAQ_SvOnhFJwIKc2-mpp946XFZYgZEkTAhOreN_b7TQWgSn9ZRk9n1sXrIHSFVGEENemmeNdZHoRKZKiNKcdmuNMi1mCWS0S2CitiE0raZFt86ZPwltG9ILURXYbmhhsNnOGb9CX-wKSreqNTdMBOmcppVnBvPYlneey1xvjlVdoMu-qL-7wkrtqMK0ZwfLG33d3eGYy2iPvHPv9U8PcCE2ZjbQWZPBgYjAUv6oWMkBRafjrtNPHVyFdCOQYCz3JlcqEyi7QJbBfd8hGAl7RPriwnz4H_6c9bXOP7PmXdbggC1bZGYn8JDImS2bggQlcEJmqLdWVR4trq0zNPSUlUZpiDdYNeQAtka97mUKsdEt9aDHEnON4htFZ9LL15yfx92BGuWbUqIn2iPEB3iHmEXcjaKVH0VhyL0HHjiwhzhauWwZen7AQ-az6OjAx5nNjp_1ynhQ?type=png" alt="Feature Branching" caption="Feature Branching"}
 ::
 
 Feature Branching is an extension of Integration Branching as it is still desirable to integrate multiple
@@ -441,8 +435,7 @@ disabling features. They have many legitimate use cases and are a great way to d
 from release. An example of this is the Azure DevOps "Preview Features" option which allows you to
 enable or disable features in the UI:
 
-::content-figure{src="/media-library/software-systems-engineering/ado-feature-flags.png" alt="Azure DevOps Preview Features"}
-Azure DevOps Preview Features
+::prose-figure{src="/media-library/software-systems-engineering/ado-feature-flags.png" alt="Azure DevOps Preview Features" caption="Azure DevOps Preview Features"}
 ::
 
 However, they are often abused as a mechanism hiding incomplete work and emulating feature branches.
@@ -479,8 +472,7 @@ your customers. In this case, you may have a "current" version of your software 
 to new customers, and a "legacy" version of your software that is deployed to existing customers.
 This is where Release Branching comes in.
 
-::content-figure{src="https://mermaid.ink/img/pako:eNq1k11LwzAUhv9KOFB2U-uSbmuXSz_wRvHCO-lN1h7bsDUZWarO0v9umq2TiQMVRgj5eN_z8CYkLeS6QOAQBC2RSlpOWjIqpb0zYl2N_GpT6bdrXdfS3osFrtzmi1htMCSjWkh1ZYTKq0dToHFKTLq-BUFmMtX3AdXPcw_pZwtfRDIwuEKxwcv9eEEz-HISK0ruTK80Gru2k7xcYb7UjSV9gGPyQTrJrtGU6CuP-PRX-JPB2Y_BWR98r_wrMzuZmUV0QJ_nSs6Op98u5q-nd_UQghOdUrgn3GaKOM1WWGMGva0QZukQqnO-Zl0Ii7eFtNoA371gEI3VT1uVA7emwcF0I0VpRH1woS962H0U_19CWAv1rHU9FLol8BbegdM0jpI4ZYyOpzMas0kcwha4G6N0Mp9NknmaThNGWRfChyfQ7hMvOzX0?type=png" alt="Release Branching"}
-Release Branching
+::prose-figure{src="https://mermaid.ink/img/pako:eNq1k11LwzAUhv9KOFB2U-uSbmuXSz_wRvHCO-lN1h7bsDUZWarO0v9umq2TiQMVRgj5eN_z8CYkLeS6QOAQBC2RSlpOWjIqpb0zYl2N_GpT6bdrXdfS3osFrtzmi1htMCSjWkh1ZYTKq0dToHFKTLq-BUFmMtX3AdXPcw_pZwtfRDIwuEKxwcv9eEEz-HISK0ruTK80Gru2k7xcYb7UjSV9gGPyQTrJrtGU6CuP-PRX-JPB2Y_BWR98r_wrMzuZmUV0QJ_nSs6Op98u5q-nd_UQghOdUrgn3GaKOM1WWGMGva0QZukQqnO-Zl0Ii7eFtNoA371gEI3VT1uVA7emwcF0I0VpRH1woS962H0U_19CWAv1rHU9FLol8BbegdM0jpI4ZYyOpzMas0kcwha4G6N0Mp9NknmaThNGWRfChyfQ7hMvOzX0?type=png" alt="Release Branching" caption="Release Branching"}
 ::
 
 Each branch represents a different version of the software. You will notice the release branches are prefixed

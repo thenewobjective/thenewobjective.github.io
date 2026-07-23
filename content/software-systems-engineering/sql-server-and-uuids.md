@@ -37,7 +37,8 @@ Also, if you move your record to another table or another database, you can have
 
 You might recall when the social media platform Parler crashed:
 
-::content-figure{src="/media-library/software-systems-engineering/parler-crash.png" alt="Parler Crash" caption="Credit: [@saramehmei](https://twitter.com/sarahmei/status/1348474968527360001)"}
+::prose-figure{src="/media-library/software-systems-engineering/parler-crash.png" alt="Parler Crash"}
+Credit: [@saramehmei](https://twitter.com/sarahmei/status/1348474968527360001)
 ::
 
 In their case they chose a signed integer (__int<sup>31</sup>__) as a key which meant they were limited to

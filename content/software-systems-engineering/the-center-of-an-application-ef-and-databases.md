@@ -44,7 +44,7 @@ Requirements Engineering is a bit pointless if you do not know the subjects you 
 
 With some or all of the contexts identified, the first move from theory to reality can occur. Each bounded-context corresponds (almost) 1-to-1 with the Microservice architecture in the Business Layer, the Micro frontend architecture in the Presentation Layer, and a Micro ETL architecture in the Data Layer. We can refer to these as "Features" of our application, or "Verticals".
 
-::content-figure{src="/media-library/software-systems-engineering/iterations.drawio.svg" alt="Monolithic vs iterative development" caption="Monolithic vs iterative development"}
+::prose-figure{src="/media-library/software-systems-engineering/iterations.drawio.svg" alt="Monolithic vs iterative development" caption="Monolithic vs iterative development"}
 ::
 
 This better enabled iterative development. We can start with a single context and build out the fully-functioning vertical. We can then add more contexts as time goes on. Contrast with the waterfall approach of building out all the features of the system at once
@@ -58,7 +58,7 @@ Domain Engineering and Design is a top-down approach that enables us to understa
 We identify and capture these relationships as [Use Cases](https://en.wikipedia.org/wiki/Use_case).
 So, with the Domain and Use Cases in hand, the next question is how we realize these as an implementation. This is where the [Clean Architecture](https://crosp.net/blog/software-architecture/clean-architecture-part-2-the-clean-architecture/) and its [variants](https://medium.com/@edamtoft/onion-vs-clean-vs-hexagonal-architecture-9ad94a27da91) apply.
 
-::content-figure{src="/media-library/software-systems-engineering/clean-architecture.png" alt="Clean Architecture" caption="Clean Architecture"}
+::prose-figure{src="/media-library/software-systems-engineering/clean-architecture.png" alt="Clean Architecture" caption="Clean Architecture"}
 ::
 
 ## The Center of an Application
@@ -71,22 +71,22 @@ Focusing on the Entities/Values first, where do we put them? We must note that E
 
 To add to the challenge, assume a Software Product Line being built must be a distributed architecture. A handful of web portals coordinated by dozens of microservices and populated by an ETL. This has the following impressionistic structure which is reminiscent of a three-tier architecture:
 
-::content-figure{src="/media-library/software-systems-engineering/spl-three-tier.png" alt="three-tier topology" caption="An impressionistic distributed application"}
+::prose-figure{src="/media-library/software-systems-engineering/spl-three-tier.png" alt="three-tier topology" caption="An impressionistic distributed application"}
 ::
 
 Each of these facets has their own representation of the same Entities which makes sense as the Entities are the [ubiquitous language](https://martinfowler.com/bliki/UbiquitousLanguage.html) being shared. We often can't share the exact same ones though as they may not have a common implementation language and are segregated over a network. Additionally, not all fields of an Entity may be relevant in each aspect or may have security implications (Such as the password field of a user entity on the front-end).
 
-::content-figure{src="/media-library/software-systems-engineering/spl-three-tier-entities.png" alt="Common Entities" caption="Common Entities"}
+::prose-figure{src="/media-library/software-systems-engineering/spl-three-tier-entities.png" alt="Common Entities" caption="Common Entities"}
 ::
 
 The organization of each tier (more-or-less) should follows a Clean Architecture, so we can have regularity:
 
-::content-figure{src="/media-library/software-systems-engineering/spl-three-tier-clean.png" alt="Common Architecture" caption="Common sub-architecture"}
+::prose-figure{src="/media-library/software-systems-engineering/spl-three-tier-clean.png" alt="Common Architecture" caption="Common sub-architecture"}
 ::
 
 If you squint you can see that even the organization of the tiers themselves follow a similar Clean Architecture shape where the Services act as the Business Logic Tier and coordinates:
 
-::content-figure{src="/media-library/software-systems-engineering/spl-clean-clean.png" alt="Clean Architecture Tiers" caption="&apos;Clean&apos; Architecture Tiers"}
+::prose-figure{src="/media-library/software-systems-engineering/spl-clean-clean.png" alt="Clean Architecture Tiers" caption="&apos;Clean&apos; Architecture Tiers"}
 ::
 
 Hence the Services (Business Logic Tier) is the "Center" of the distributed application.
@@ -99,7 +99,7 @@ as <abbr title="Plain Old Class Objects">POCOs</abbr> or should we manage them i
 
 Clean Architecture is not necessarily incompatible with either approach but here would be what that looks like with each:
 
-::content-figure{src="/media-library/software-systems-engineering/clean-domain-compared.png" alt="Comparison of domain entities" caption="Comparison of domain entities"}
+::prose-figure{src="/media-library/software-systems-engineering/clean-domain-compared.png" alt="Comparison of domain entities" caption="Comparison of domain entities"}
 ::
 
 The middle is the most common approach (via Entity Framework), and the left is what has been sometimes suggested as an alternative.
@@ -107,12 +107,12 @@ Before we investigate how we could potentially accomplish approach on the left, 
 
 We should also not forget that a Database is a Relational Model and not an Object-Oriented model. The optimal representation of data is vastly different between the two. Here is an example utilizing a family of contacts:
 
-::content-figure{src="/media-library/software-systems-engineering/oop-contacts.png" alt="OOP Contacts" caption="Object-Oriented Contacts"}
+::prose-figure{src="/media-library/software-systems-engineering/oop-contacts.png" alt="OOP Contacts" caption="Object-Oriented Contacts"}
 ::
 
 We can represent these in C#, or any other OO language directly. To represent these in the database though we must translate our model into a relational form first. One way this is accomplished is by flattening the model into a single relationship with a discriminator column __ContactType__:
 
-::content-figure{src="/media-library/software-systems-engineering/relational-contacts.png" alt="Relational Contacts" caption="Relational Contacts"}
+::prose-figure{src="/media-library/software-systems-engineering/relational-contacts.png" alt="Relational Contacts" caption="Relational Contacts"}
 ::
 
 But this is still not enough, we also need to introduce the trigger to enforce the default values for the Invoice Contacts depending on which variant was chosen. In more complicated models the database form can look vastly different than how you would like to represent them in your application code due to the normalization of data (i.e., [BCNF](https://en.wikipedia.org/wiki/Boyce%E2%80%93Codd_normal_form)). So, effectively by using the database as the "Truth" of entities and enterprise business rules you must introduce an additional mapping to have not only the models in the right shape for the application to use, but you also must manually recreate the validation mechanisms as well. If you avoid the latter, then you're mixing the Data Layer and Domain layer by enforcing validation only when the entities are saved. So, the ultimate point here is that Entities are Objects (values + behavior) and not just Data (values) and are created and maintained consistent with [OOAD](https://en.wikipedia.org/wiki/Object-oriented_analysis_and_design). Database Entities should not be confused with Domain Entities, and I don't know how you could keep them conceptually segregated (perhaps [Views](https://en.wikipedia.org/wiki/View_(SQL)) as Entities?). If you had an [OODB](https://en.wikipedia.org/wiki/Object_database) it might be a different story.
@@ -131,7 +131,7 @@ With Entity Framework we are provided with three choices:
 
 This was a great idea but executed horribly. The idea was to graphically design your Entities and based on that you could manage and generate both the C# code as well as the database tables:
 
-::content-figure{src="/media-library/software-systems-engineering/ef-model-first.png" alt="EF Model-First" caption="EF Model-First"}
+::prose-figure{src="/media-library/software-systems-engineering/ef-model-first.png" alt="EF Model-First" caption="EF Model-First"}
 ::
 
 Sadly, it was slow, buggy, and you couldn't represent behavior and invariants. Being based on a single giant XML file you often had merge conflicts and database migrations were not possible. It's basically been [abandoned](https://learn.microsoft.com/en-us/archive/msdn-magazine/2015/january/data-points-looking-ahead-to-entity-framework-7#dropping-edmx-but-database-first-will-continue). That leaves us with Code-First or DB-First as a strategy.
@@ -143,7 +143,8 @@ How do you solve the problem of creating a new project when there is already a d
 Practically, this maintenance overhead isn't a problem in a Microservice architecture as you would own the database completely and don't have to worry about unexpected changes which raises the question: Why not a DB-First approach in an EF + Database project?
 The existing criticisms still apply from [above](#domain-entities-vs-database-entities) but now you will have broken an abstraction layer and exposed significant details about the database itself to the application developer. Given that a microservice database is purposedly kept as dumb and flat as possible, I wonder what benefit making the database more explicit to the developer provides? I suspect this will add more opportunities for confusion and more challenging pull requests in the intermediate time frame as developers become accustomed to this; it can get quite complicated:
 
-::content-figure{src="/media-library/software-systems-engineering/db-proj-schema-compare.png" alt="DB project Schema Comparison" caption="[DB project Schema Comparison. Credit: Melissa Coates](https://www.sqlchick.com/entries/2016/1/10/why-you-should-use-a-ssdt-database-project-for-your-data-warehouse)"}
+::prose-figure{src="/media-library/software-systems-engineering/db-proj-schema-compare.png" alt="DB project Schema Comparison"}
+[DB project Schema Comparison. Credit: Melissa Coates](https://www.sqlchick.com/entries/2016/1/10/why-you-should-use-a-ssdt-database-project-for-your-data-warehouse)
 ::
 
 I believe much of this is better kept hidden and segregated into the infrastructure layer where a DevOps Engineer, SRE, DBA, ETL Engineer, or someone else can manage them instead of burdening the application developer with the overhead. In my experience
@@ -160,7 +161,7 @@ Domain objects (Entities) are defined with POCOs. These are then used to generat
 
 There may still be some value in having an explicit database project in exceptional cases. It could help avoid embedding raw SQL in migrations for defining stored procedures, views, and other uncommon tasks. There are no use-cases that come to mind for this, but the possibility remains.
 
-::content-figure{src="/media-library/software-systems-engineering/ef-ugly-migration.png" alt="Ugly EF Migration" caption="Ugly EF Migration"}
+::prose-figure{src="/media-library/software-systems-engineering/ef-ugly-migration.png" alt="Ugly EF Migration" caption="Ugly EF Migration"}
 ::
 
 ## Conclusion

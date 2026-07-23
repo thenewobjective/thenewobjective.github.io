@@ -105,7 +105,8 @@ then it should seem clear that improvements in that structure would also reflect
 So, what would such an improvement look like? You might think that more open and free communication would be the way to go.
 Anyone on a project to talk to anyone else and vice-versa. The reality though is that this does not scale and can lead to quagmires. This can be demonstrated with simple Graph Theory:
 
-::content-figure{src="/media-library/software-systems-engineering/complete-graph.png" alt="Complete Graph" caption="Complete Graph. Credit: [Wikipedia](https://en.wikipedia.org/wiki/Complete_graph)"}
+::prose-figure{src="/media-library/software-systems-engineering/complete-graph.png" alt="Complete Graph"}
+Complete Graph. Credit: [Wikipedia](https://en.wikipedia.org/wiki/Complete_graph)
 ::
 
 As the number of people are added to your project or organization the number of lines of communication grow combinatorially. Four people on a team have `six` lines of communication but by adding only two more people more than doubles the lines of communication to `fifteen`!
@@ -147,7 +148,7 @@ So let's try that as a guideline for the use-case of [requirements management](h
 
 The resulting graph now looks like the following where the green node is the centralized documentation:
 
-::content-figure{src="/media-library/software-systems-engineering/star-graph.png" alt="Star Graph" caption="Star Graph"}
+::prose-figure{src="/media-library/software-systems-engineering/star-graph.png" alt="Star Graph" caption="Star Graph"}
 ::
 
 You can see that the complexity of communication is now linear in growth. The trade-off being that the centralized node can be more complex to manage and coordinate.
@@ -169,14 +170,15 @@ of human management: how many meetings can we practically hold in a day with the
 When do you become the bottleneck of communication and coordination? It doesn't matter what that number is exactly to understand the concept. What's more important is to see how the topology of our communication
 structure can change as it scales given the new constraints:
 
-::content-figure{src="/media-library/software-systems-engineering/banana-tree.png" alt="Banana Tree (Graph)" caption="[Banana Tree (Graph)](https://mathworld.wolfram.com/BananaTree.html)"}
+::prose-figure{src="/media-library/software-systems-engineering/banana-tree.png" alt="Banana Tree (Graph)"}
+[Banana Tree (Graph)](https://mathworld.wolfram.com/BananaTree.html)
 ::
 
 If you squint you might see the CEO in the middle as the red node, some managers as the purple nodes, the employees as the blue nodes, and maybe the green nodes as project documentation for each group.
 Again, it doesn't matter what they represent so much as the topology that is forming. Here is a slight variation where the edge nodes (teams?) are free to communicate
 with one another (and perhaps re-introducing the Bus Factor as mentioned earlier):
 
-::content-figure{src="/media-library/software-systems-engineering/banana-tree-and-complete.png" alt="Banana Tree + Complete Graph Edges" caption="Banana Graph + Complete Graph Edges"}
+::prose-figure{src="/media-library/software-systems-engineering/banana-tree-and-complete.png" alt="Banana Tree + Complete Graph Edges" caption="Banana Graph + Complete Graph Edges"}
 ::
 
 Can you think of other variations in these communication graphs? Perhaps you have other examples you've seen in practice. One example can be found in [Nexus](https://www.scrum.org/resources/scaling-scrum), also referred to as the Scaled Scrum framework. Notice the key components mentioned in their documentation:
@@ -204,7 +206,7 @@ What was not mentioned though is that this was extended later on with the phrase
 
 So, what does that mean? If you were looking at the previous graphs as an analogy of, say, scrum teams, then you might overlook the scenarios of needing to communicate between them:
 
-::content-figure{src="/media-library/software-systems-engineering/banana-tree-and-complete-cross-talk.png" alt="Distance Communication across graph" caption="Distant Communication"}
+::prose-figure{src="/media-library/software-systems-engineering/banana-tree-and-complete-cross-talk.png" alt="Distance Communication across graph" caption="Distant Communication"}
 ::
 
 By avoiding the size/volume of the communication we've increased the distance of it. This is another instance of Duality; paired concepts that mirror one another like Yin and Yang.
@@ -240,7 +242,8 @@ nor a strategic deficiency in a vacuum. An organization is a duality of the tool
 
 A parting cartoon by [Manu Cornet](https://en.wikipedia.org/wiki/Manu_Cornet):
 
-::content-figure{src="/media-library/software-systems-engineering/org-charts-manu-cornet.png" alt="Org charts by Manu Cornet" caption="Org charts - [Manu Cornet](https://en.wikipedia.org/wiki/Manu_Cornet)"}
+::prose-figure{src="/media-library/software-systems-engineering/org-charts-manu-cornet.png" alt="Org charts by Manu Cornet"}
+Org charts - [Manu Cornet](https://en.wikipedia.org/wiki/Manu_Cornet)
 ::
 
 ## Further Reading
