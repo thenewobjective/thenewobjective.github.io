@@ -47,5 +47,11 @@
   },
   "overrides": {
     "esbuild": "^0.28.1"
+  },
+  "allowScripts": {
+    "vue-demi@0.14.10": true,
+    "better-sqlite3@12.11.1": true,
+    "esbuild@0.28.1": true,
+    "unrs-resolver@1.12.2": true
   }
 }
