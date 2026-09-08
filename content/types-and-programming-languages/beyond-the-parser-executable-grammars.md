@@ -2,6 +2,7 @@
 title: "Beyond the Parser: Executable Grammars and Semantics"
 date: 2026-08-02 12:00:00 -0600
 description: "How zipper derivatives, monadic context threading, grammar-native contracts, L-system program generation, and native metatheory verification unify syntax, type checking, evaluation, proof search, and type-safety proofs into a single object-oriented language framework."
+featuredImage: /media-library/tapl/beyond-the-parser.jpg
 ---
 
 ## The High Cost of the Multi-Pass Illusion

@@ -1,6 +1,7 @@
 ---
 title:  The Virtual Governor
 date:   2026-07-15 12:00:00 -0600
+featuredImage: /media-library/software-systems-engineering/the-virtual-governor.jpg
 ---
 
 ## Introduction: The Thing No Agent Possesses
