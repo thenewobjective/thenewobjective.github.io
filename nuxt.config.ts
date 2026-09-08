@@ -57,7 +57,7 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/images/icons/site.webmanifest' },
         { rel: 'search', href: '/search.xml', type: 'application/opensearchdescription+xml', title: 'The New Objective' },
         { rel: 'alternate', type: 'application/rss+xml', title: 'The New Objective', href: '/feed.xml' },
-        { type: 'text/plain', rel: 'author', href: '/humans.txt' }
+        { rel: 'author', href: '/humans.txt' }
       ]
     }
   },
