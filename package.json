@@ -24,12 +24,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@barzhsieh/nuxt-content-mermaid": "^2.2.3",
+    "@barzhsieh/nuxt-content-mermaid": "^3.0.4",
     "@nuxt/content": "^3.16.0",
     "@nuxt/eslint": "^1.17.0",
     "@nuxt/ui": "^4.11.1",
-    "@nuxtjs/robots": "^6.2.0",
-    "@nuxtjs/sitemap": "^8.5.0",
+    "@nuxtjs/robots": "^6.2.2",
+    "@nuxtjs/sitemap": "^8.5.1",
     "better-sqlite3": "^13.0.3",
     "eslint": "^10.10.0",
     "nuxt": "^4.5.2",
@@ -40,8 +40,8 @@
     "vue-router": "^5.3.1"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.130",
-    "@types/node": "^26.5.0",
+    "@iconify-json/lucide": "^1.2.131",
+    "@types/node": "^22.20.2",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.11"
   },
