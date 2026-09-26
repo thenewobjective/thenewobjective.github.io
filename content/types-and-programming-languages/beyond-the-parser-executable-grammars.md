@@ -13,17 +13,8 @@ feeds a parser; the parser builds an abstract syntax tree (AST); a suite of visi
 name resolution, type checking, optimization, and evaluation; and a code generator finally traverses the tree once
 more to emit target instructions.
 
-```mermaid
-graph LR
-    Source["Source Code"] --> Lexer["Lexer"]
-    Lexer --> Parser["Parser"]
-    Parser --> AST["Abstract Syntax Tree (AST)"]
-    AST --> Visitor1["Visitor Pass 1: Name Resolution"]
-    Visitor1 --> Visitor2["Visitor Pass 2: Type Checking"]
-    Visitor2 --> Visitor3["Visitor Pass 3: Optimization"]
-    Visitor3 --> CodeGen["Code Generator / Evaluator"]
-    CodeGen --> Output["Target Output / Result"]
-```
+::prose-figure{src="https://mermaid.ink/img/pako:eJxt0U9rgzAYBvCv8vKeNlgp1ZuHgZTRS1lLDbsYD5m-1TCNkj-jXel3H4lOiuyU58Xnl2Byw7KvCBOstRga2J-4AgDIeqdLyjmOAbZ9RRwLWK1eYU8X0jnHsHIsRhGm8P0otAmFMcyNcQyVNGM5x_TTWC1KC9lVWXEBpongKc3Y82zSjAXwIY20vd7kHKcIR2EMbBJ4Fx3BiUzfOit7NdM_8uijpY8SYNeBYNtQ-SVVvdTRo46XOk7gMFjZyR_x39FxwP7qdqRyjj7BjhRp4bdYw9u3aJ3Ps5zKAR6cHZzNOTKha7LTDGv_s661HAt8wY50J2SFyQ1tQ51_yYrOwrUW7_dfe6ma4Q?type=png" alt="Traditional multi-pass language pipeline" caption="The traditional multi-pass language pipeline"}
+::
 
 This traditional separation looks tidy on a whiteboard, but in practice it imposes heavy tax. Every minor change to
 language syntax requires updating AST node definitions, adjusting parser actions, and modifying every visitor pass

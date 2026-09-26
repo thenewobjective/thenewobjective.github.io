@@ -8,8 +8,6 @@ export default defineNuxtConfig({
   modules: [
     // https://nuxt.com/modules/robots
     '@nuxtjs/robots',
-    // https://www.npmjs.com/package/@barzhsieh/nuxt-content-mermaid
-    '@barzhsieh/nuxt-content-mermaid',
     // https://content.nuxt.com/docs/getting-started
     '@nuxt/content',
     // https://nuxt.com/modules/eslint

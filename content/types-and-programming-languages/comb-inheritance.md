@@ -25,48 +25,14 @@ the request to the next object in a chain until one of the objects can handle it
 
 Here is how a chain of responsibility is structured:
 
-```mermaid
-classDiagram
-
-Handler <-- Handler : nextHandler
-class Handler {
-    <<Abstract>>
-    Response handle(Request request)
-}
-
-Handler <|-- Receiver1
-Handler <|-- Receiver2
-Handler <|-- Receiver3
-
-class Sender {
-    void send(Request request)
-}
-Sender --> Handler : handler
-```
+::prose-figure{src="https://mermaid.ink/img/pako:eJx1UE0LwjAM_SshJwV7UG9jDAQPnue1l9pGV9gybbshzP132Tq_wJ2SvLzkvaRDXRvCBHWpvN9bdXGqkiz5oNiU5CAVAl55Akz3MFWSx5F3s5MMAJCmu5MPTumQZRHJyV9r9gTFyFzkdGvIB3AxLiX3P4IPISAnTbYlt57BNzP4dtgUfR2JzcdWW1sDntj8l5_IQmRfx0a_DldYkauUNZh0GAqqhn8ZOqumDNj3T2FocK8?type=png" alt="Chain of responsibility class diagram" caption="Chain of responsibility class diagram"}
+::
 
 Sequentially, when a `Sender` sends a `Request`, it invokes the `handle` method on its associated `Handler`.
 If the `Handler` can process the `Request`, it does so and returns a `Response`. If not, it forwards the `Request` to its `nextHandler`.
 
-```mermaid
-sequenceDiagram
-    participant S as Sender
-    participant H1 as Handler1
-    participant H2 as Handler2
-    participant H3 as Handler3
-
-    S->>H1: send(Request)
-    alt H1 can handle Request
-        H1->>S: Response
-    else H1 cannot handle Request
-        H1->>H2: handle(Request)
-        alt H2 can handle Request
-            H2->>S: Response
-        else H2 cannot handle Request
-            H2->>H3: handle(Request)
-            H3->>S: Response
-        end
-    end
-```
+::prose-figure{src="https://mermaid.ink/img/pako:eJyFkbsOgzAMRX_FytRKZSBsGZg6ZC4ri5W4BQkMTcKE-PeKhyhqKc16fH2PlV6YxpJQwtOzIzZ0LfHhsM4ZAKBFF0pTtsgBMkAPGbEl9w11PFKNbCty8Q6XGy53eLLhSc7zRBalqY4VeGJ7uo2CPpxnhNVUapChmFKw8BmPT8dRmmYKbuTbhj3NhCpPS5KbcBzWUi0DH-2rgTw0mBbJPYu3ifxnsi7RyYHNNJX8rGK7XM9WXERNrsbSCtWLUFA9fr-lO3ZVEMPwArAhoPc?type=png" alt="Chain of responsibility sequence diagram" caption="Chain of responsibility sequence diagram"}
+::
 
 ## Logger Example
 

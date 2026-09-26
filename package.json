@@ -24,29 +24,29 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@barzhsieh/nuxt-content-mermaid": "^3.0.4",
-    "@nuxt/content": "^3.16.0",
+    "@nuxt/content": "^3.16.1",
     "@nuxt/eslint": "^1.17.0",
-    "@nuxt/ui": "^4.11.1",
-    "@nuxtjs/robots": "^6.2.2",
+    "@nuxt/ui": "^4.11.2",
+    "@nuxtjs/robots": "^6.2.3",
     "@nuxtjs/sitemap": "^8.5.1",
     "better-sqlite3": "^13.0.3",
-    "eslint": "^10.10.0",
+    "eslint": "^10.11.0",
     "nuxt": "^4.5.2",
     "nuxt-feedme": "^2.1.0",
     "rehype-mathjax": "^7.1.0",
     "remark-math": "^6.0.0",
-    "vue": "^3.5.42",
+    "vue": "^3.5.43",
     "vue-router": "^5.3.1"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.131",
-    "@types/node": "^22.20.2",
+    "@iconify-json/lucide": "^1.2.137",
+    "@types/node": "^26.6.3",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.11"
   },
   "overrides": {
-    "esbuild": "^0.28.1"
+    "esbuild": "^0.28.1",
+    "deepmerge-ts": "^8.0.2"
   },
   "allowScripts": {
     "vue-demi@0.14.10": true,
