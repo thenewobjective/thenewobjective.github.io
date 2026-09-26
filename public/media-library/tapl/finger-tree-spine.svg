@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="360" viewBox="0 0 780 360" role="img" aria-label="A finger tree holding the letters a through z: digits of elements at the left and right ends of every level, small two-three trees hanging between the digits and the spine, and the spine descending to an empty tree.">
+  <style>
+    text { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+    .t-title { font-size: 13px; fill: #0f172a; font-weight: 600; }
+    .t-label { font-size: 12px; fill: #64748b; text-anchor: middle; }
+    .t-note { font-size: 11px; fill: #64748b; }
+    .t-val { font-size: 13px; fill: #0f172a; text-anchor: middle; }
+    .leaf { fill: #ffffff; stroke: #475569; stroke-width: 1.2; }
+    .node2 { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 1.4; }
+    .node3 { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 1.4; }
+    .edge { fill: none; stroke: #475569; stroke-width: 1.1; }
+    .spine { fill: none; stroke: #b45309; stroke-width: 2; }
+    .spine-dot { fill: #b45309; }
+    .empty { fill: #ffffff; stroke: #475569; stroke-width: 1.4; }
+    .t-empty { font-size: 12px; fill: #0f172a; text-anchor: middle; }
+  </style>
+
+  <text x="16" y="24" class="t-title">a finger tree: elements at the ends, deeper trees toward the middle</text>
+
+  <!-- ================= level 0 ================= -->
+  <!-- left digit: 4 elements -->
+  <rect x="20" y="44" width="30" height="26" rx="5" class="leaf"/>
+  <text x="35" y="62" class="t-val">a</text>
+  <rect x="54" y="44" width="30" height="26" rx="5" class="leaf"/>
+  <text x="69" y="62" class="t-val">b</text>
+  <rect x="88" y="44" width="30" height="26" rx="5" class="leaf"/>
+  <text x="103" y="62" class="t-val">c</text>
+  <rect x="122" y="44" width="30" height="26" rx="5" class="leaf"/>
+  <text x="137" y="62" class="t-val">d</text>
+
+  <!-- right digit: 3 elements -->
+  <rect x="608" y="44" width="30" height="26" rx="5" class="leaf"/>
+  <text x="623" y="62" class="t-val">x</text>
+  <rect x="642" y="44" width="30" height="26" rx="5" class="leaf"/>
+  <text x="657" y="62" class="t-val">y</text>
+  <rect x="676" y="44" width="30" height="26" rx="5" class="leaf"/>
+  <text x="691" y="62" class="t-val">z</text>
+
+  <!-- level 0 spine -->
+  <circle cx="380" cy="57" r="4" class="spine-dot"/>
+  <path d="M 152 57 L 376 57" class="spine"/>
+  <path d="M 384 57 L 608 57" class="spine"/>
+
+  <!-- ================= level 1 ================= -->
+  <!-- left digit: node2, node3 (small 2-3 trees) -->
+  <rect x="60" y="104" width="120" height="30" rx="6" class="node2"/>
+  <text x="120" y="123" class="t-val">e f</text>
+  <rect x="196" y="104" width="120" height="30" rx="6" class="node3"/>
+  <text x="256" y="123" class="t-val">g h i</text>
+
+  <!-- right digit: node2, node3 -->
+  <rect x="444" y="104" width="120" height="30" rx="6" class="node2"/>
+  <text x="504" y="123" class="t-val">u v</text>
+  <rect x="580" y="104" width="120" height="30" rx="6" class="node3"/>
+  <text x="640" y="123" class="t-val">w x y</text>
+
+  <!-- edges from level-0 spine down into level-1 digits -->
+  <path d="M 380 57 L 380 70 Q 380 89 300 89 L 180 89 Q 120 89 120 104" class="edge"/>
+  <path d="M 380 57 L 380 70 Q 380 89 460 89 L 580 89 Q 640 89 640 104" class="edge"/>
+
+  <!-- level 1 spine -->
+  <circle cx="380" cy="119" r="4" class="spine-dot"/>
+  <path d="M 316 119 L 376 119" class="spine"/>
+  <path d="M 384 119 L 444 119" class="spine"/>
+
+  <!-- ================= level 2 ================= -->
+  <!-- left digit: node of nodes -->
+  <rect x="150" y="168" width="166" height="30" rx="6" class="node3"/>
+  <text x="233" y="187" class="t-val">j k l m n</text>
+
+  <!-- right digit: node of nodes -->
+  <rect x="444" y="168" width="166" height="30" rx="6" class="node3"/>
+  <text x="527" y="187" class="t-val">p q r s t</text>
+
+  <!-- edges from level-1 spine down into level-2 digits -->
+  <path d="M 380 119 L 380 132 Q 380 153 340 153 L 273 153 Q 233 153 233 168" class="edge"/>
+  <path d="M 380 119 L 380 132 Q 380 153 420 153 L 527 153 Q 527 153 527 168" class="edge"/>
+
+  <!-- level 2 spine -->
+  <circle cx="380" cy="183" r="4" class="spine-dot"/>
+  <path d="M 316 183 L 376 183" class="spine"/>
+  <path d="M 384 183 L 444 183" class="spine"/>
+
+  <!-- ================= the spine ends ================= -->
+  <path d="M 380 183 L 380 240" class="spine"/>
+  <rect x="344" y="240" width="72" height="26" rx="13" class="empty"/>
+  <text x="380" y="257" class="t-empty">empty</text>
+
+  <!-- annotations -->
+  <text x="35" y="92" class="t-note">elements: 1 step</text>
+  <text x="120" y="152" class="t-note">nodes of elements: 2 steps</text>
+  <text x="233" y="216" class="t-note">nodes of nodes: 4 steps</text>
+  <text x="380" y="284" class="t-note" text-anchor="middle">the spine ends</text>
+</svg>

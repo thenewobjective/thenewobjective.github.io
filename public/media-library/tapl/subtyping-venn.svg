@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-label="Two Venn diagrams. Left: a disjoint sum, two non-overlapping regions labeled Mammal and Bird inside a rounded rectangle labeled Animal, where subtraction is unambiguous. Right: two overlapping circles labeled Mammal and Pet inside the same rectangle, with the Dog region in the intersection, showing that Animal minus Mammal is ambiguous when regions overlap.">
+  <style>
+    text { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+    .t-title { font-size: 13px; fill: #0f172a; font-weight: 600; }
+    .t-label { font-size: 13px; fill: #0f172a; text-anchor: middle; }
+    .t-note { font-size: 11px; fill: #64748b; text-anchor: middle; }
+    .t-sub { font-size: 12px; fill: #475569; text-anchor: middle; }
+    .universe { fill: #f8fafc; stroke: #475569; stroke-width: 1.4; }
+    .region { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 1.4; }
+    .region2 { fill: #fef3c7; stroke: #b45309; stroke-width: 1.4; }
+    .overlap { fill: #c7d2fe; stroke: #4338ca; stroke-width: 1.4; }
+    .minus { fill: #e2e8f0; stroke: #475569; stroke-width: 1.2; stroke-dasharray: 4 3; }
+  </style>
+
+  <!-- ===== left: disjoint sum ===== -->
+  <text x="16" y="24" class="t-title">without subtyping: a disjoint sum</text>
+
+  <rect x="40" y="40" width="300" height="200" rx="10" class="universe"/>
+  <text x="190" y="62" class="t-label">Animal</text>
+
+  <rect x="60" y="80" width="120" height="140" rx="8" class="region"/>
+  <text x="120" y="145" class="t-label">Mammal</text>
+  <text x="120" y="163" class="t-note">Dog, Cat</text>
+
+  <rect x="220" y="80" width="100" height="140" rx="8" class="region2"/>
+  <text x="270" y="145" class="t-label">Bird</text>
+  <text x="270" y="163" class="t-note">Sparrow</text>
+
+  <text x="190" y="262" class="t-note">Animal - Mammal = Bird: unambiguous</text>
+
+  <!-- ===== right: overlapping subtypes ===== -->
+  <text x="400" y="24" class="t-title">with subtyping: overlapping regions</text>
+
+  <rect x="420" y="40" width="300" height="200" rx="10" class="universe"/>
+  <text x="570" y="62" class="t-label">Animal</text>
+
+  <circle cx="530" cy="150" r="70" class="region"/>
+  <circle cx="620" cy="150" r="70" class="region2"/>
+
+  <!-- overlap lens: clip circle A by circle B -->
+  <clipPath id="clipB"><circle cx="620" cy="150" r="70"/></clipPath>
+  <circle cx="530" cy="150" r="70" class="overlap" clip-path="url(#clipB)"/>
+
+  <text x="505" y="120" class="t-label">Mammal</text>
+  <text x="648" y="120" class="t-label">Pet</text>
+  <text x="575" y="155" class="t-label">Dog</text>
+
+  <text x="570" y="262" class="t-note">Animal - Mammal = ? Dog is in both</text>
+
+  <!-- ===== the question the overlap poses ===== -->
+  <text x="16" y="300" class="t-sub">the dashed region is one candidate answer; the overlap forces a choice the disjoint sum never had to make</text>
+  <rect x="470" y="196" width="52" height="20" rx="4" class="minus"/>
+  <text x="496" y="210" class="t-note" font-size="10">Mammal?</text>
+</svg>
