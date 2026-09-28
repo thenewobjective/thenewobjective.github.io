@@ -152,3 +152,9 @@ Internal vs External versioning
 
 For users the external version is important for expressing a magnitude of change.
 For developers the internal version is important for expressing the state of the codebase.
+
+
+## Coordination vs Cooperation
+
+Coordination involves aligning activities and schedules to ensure that tasks are completed in the correct order and dependencies are managed.
+Cooperation, on the other hand, involves working together towards a common goal, often requiring communication, collaboration, and mutual support among team members.
