@@ -18,7 +18,8 @@
 				"kingwl.vscode-vitest-runner",
 				"bradlc.vscode-tailwindcss",
 				"xadamxk.prune-stale-git-branches",
-				"Nuxt.mdc"
+				"Nuxt.mdc",
+				"ltex-plus.vscode-ltex-plus"
 			]
 		}
 	},

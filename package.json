@@ -21,7 +21,8 @@
     "postinstall": "nuxt prepare",
     "serve": "npx serve .output/public",
     "typecheck": "nuxt typecheck",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "audit:style": "node .github/skills/extended-mind-writing/audit-style.mjs"
   },
   "dependencies": {
     "@nuxt/content": "^3.16.1",

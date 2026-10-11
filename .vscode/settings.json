@@ -3,6 +3,22 @@
         "editor.rulers": [
             120
         ],
+        // LTeX+ (LanguageTool): grammar/spell only within markdown. The rule list
+        // DISABLES LanguageTool's style/formatting rules that this repo audits
+        // its own way (punctuation, whitespace, casing): the custom audit script
+        // owns those, so a doubled signal would only produce false FAILs.
+        "ltex.enabled": [
+            "en-US"
+        ],
+        "ltex.language": "en-US",
+        "ltex.languageToolRuleIds": [
+            "WHITESPACE_RULE",
+            "EN_QUOTES",
+            "EN_DASHES",
+            "ENGLISH_WORD_REPEAT_RULE",
+            "UPPERCASE_SENTENCE_START"
+        ],
+        "ltex.additionalRules.enablePickyRules": true
     },
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
