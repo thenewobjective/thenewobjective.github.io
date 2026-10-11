@@ -28,8 +28,12 @@ class SpinnerBubbles {
     }
 
     init() {
-        this.bubbles = Array.from({ length: this.bubbleCount }).map((_, i) =>
-            new Bubble(i, this.bubbleRadius, this.bubblingCount, this.coilCount, this.bubbleCount)
+        // eslint-disable-next-line max-params -- Array.from/map callbacks take (item, index) by signature; the index is used
+        this.bubbles = Array.from({ length: this.bubbleCount }).map((ignoredItem, i) =>
+            new Bubble({
+                index: i, radius: this.bubbleRadius, bubblingCount: this.bubblingCount,
+                coilCount: this.coilCount, bubbleCount: this.bubbleCount
+            })
         )
         this.el.innerHTML = ''
         this.bubbles.forEach((bubble) => {
@@ -61,13 +65,14 @@ class SpinnerBubbles {
         window.requestAnimationFrame(this.render.bind(this))
 
         this.bubbles.forEach((bubble) => {
-            bubble.update(this.coilCount, this.bubblingCount, this.centerX, this.centerY)
+            bubble.update({ coilCount: this.coilCount, bubblingCount: this.bubblingCount,
+ centerX: this.centerX, centerY: this.centerY })
         })
     }
 }
 
 class Bubble {
-    constructor(index, radius, bubblingCount, coilCount, bubbleCount) {
+    constructor({ index, radius, bubblingCount, coilCount, bubbleCount }) {
         const pic = Math.PI * coilCount,
               pic2 = pic * 2
 
@@ -80,7 +85,7 @@ class Bubble {
         this.el.classList.add('spinner-bubble')
     }
 
-    update(coilCount, bubblingCount, centerX, centerY) {
+    update({ coilCount, bubblingCount, centerX, centerY }) {
         const pic = Math.PI * coilCount,
               pic2 = pic * 2
         this.theta += 0.03

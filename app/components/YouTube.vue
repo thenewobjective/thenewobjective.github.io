@@ -1,5 +1,5 @@
-<script setup>
-const { id } = defineProps(['id'])
+<script setup lang="ts">
+const { id } = defineProps<{ id: string }>()
 </script>
 
 <template>

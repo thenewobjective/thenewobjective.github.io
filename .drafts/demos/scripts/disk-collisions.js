@@ -1,20 +1,21 @@
 class Point2 {
-    constructor(x, y) {
+    constructor({ x, y }) {
         this.x = x
         this.y = y
     }
 
     distance(other) {
-        return new Vector2(this, other).magnitude()
+        return new Vector2({ dx: other.x - this.x, dy: other.y - this.y }).magnitude()
     }
 }
 
 class Vector2 {
+    // eslint-disable-next-line max-params -- a static factory for a coordinate pair takes the two endpoints
     static fromPoints(p1, p2) {
-        return new Vector2(p2.x - p1.x, p2.y - p1.y)
+        return new Vector2({ dx: p2.x - p1.x, dy: p2.y - p1.y })
     }
 
-    constructor(dx, dy) {
+    constructor({ dx, dy }) {
         this.dx = dx
         this.dy = dy
     }
@@ -28,15 +29,15 @@ class Vector2 {
     }
 
     move(p) {
-        return new Point2(this.dx + p.x, this.dy + p.y)
+        return new Point2({ x: this.dx + p.x, y: this.dy + p.y })
     }
 
     add(v) {
-        return new Vector2(v.dx + this.dx, v.dy + this.dy)
+        return new Vector2({ dx: v.dx + this.dx, dy: v.dy + this.dy })
     }
 
     scale(d) {
-        return new Vector2(this.dx * d, this.dy * d)
+        return new Vector2({ dx: this.dx * d, dy: this.dy * d })
     }
 
     dot(v) {
@@ -53,7 +54,7 @@ class Vector2 {
 }
 
 class Disk {
-    constructor(position, velocity, radius, color) {
+    constructor({ position, velocity, radius, color }) {
         this.position = position
         this.velocity = velocity
         this.radius = radius
@@ -64,7 +65,7 @@ class Disk {
         this.position = this.velocity.move(this.position)
     }
 
-    checkBounds(x, y) {
+    checkBounds({ x, y }) {
         var r = this.radius, d = 2 * r,
             dx = this.velocity.dx, dy = this.velocity.dy,
             px = this.position.x, py = this.position.y
@@ -106,7 +107,7 @@ class Disk {
     }
 }
 
-let randInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+let randInt = ({ min, max }) => Math.floor(Math.random() * (max - min + 1)) + min
 
 class DiskCollisions {
     constructor(el) {
@@ -114,18 +115,19 @@ class DiskCollisions {
         this.height = this.el.height = this.el.offsetHeight
         this.width = this.el.width = this.el.offsetWidth
         this.ctx = this.el.getContext('2d', { alpha: false })
-        this.disks = Array.from({ length: 100 }, (_, i) => new Disk(
-            new Point2(randInt(0, 100), randInt(0, 100)),
-            new Vector2(randInt(1, 3), randInt(1, 3)),
-            randInt(5, 20),
-            `rgb(${randInt(10, 255)},${randInt(10, 255)},${randInt(10, 255)})`
-        ))
+        this.disks = Array.from({ length: 100 }, () => new Disk({
+            position: new Point2({ x: randInt({ min: 0, max: 100 }), y: randInt({ min: 0, max: 100 }) }),
+            velocity: new Vector2({ dx: randInt({ min: 1, max: 3 }), dy: randInt({ min: 1, max: 3 }) }),
+            radius: randInt({ min: 5, max: 20 }),
+            color: `rgb(${randInt({ min: 10, max: 255 })},${randInt({ min: 10, max: 255 })},${randInt({ min: 10, max: 255 })})`
+        }))
 
         window.addEventListener('resize', this.onResize.bind(this))
     }
 
     cls() {
-        this.el.width = this.el.width
+        // Clearing the canvas by reassigning the element width resets the buffer.
+        this.el.width = this.width
     }
 
     onResize() {

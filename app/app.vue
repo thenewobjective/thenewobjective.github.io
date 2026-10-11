@@ -83,7 +83,6 @@ watch(() => route.query.q, (queryTerm) => {
         }
     }
 })
-
 </script>
 
 <template>

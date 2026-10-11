@@ -9,11 +9,10 @@ const props = withDefaults(defineProps<{
     zoom?: boolean
 }>(), {
     zoom: true
-})
-
-const slots = useSlots()
-const isSvg = computed(() => props.src.endsWith('.svg'))
-const hasCaption = computed(() => !!(props.caption || slots.default))
+}),
+  slots = useSlots(),
+  isSvg = computed(() => props.src.endsWith('.svg')),
+  hasCaption = computed(() => !!(props.caption || slots.default))
 </script>
 
 <template>

@@ -12,21 +12,19 @@ had rotted away (13+ years ago). The posts that survived were excellent, but non
 them went as far as the subject allows: the standard treatment stops at counting and a
 few laws, and the deeper material (subtraction, recursive equations, the calculus) is
 scattered across fifteen years of blog posts, comment threads, and papers. This essay
-is the consolidation I was looking for, extended where the sources stopped short. It
-is also insurance against the next round of link rot: everything essential is rebuilt
-here from first principles.
+is the consolidation I was looking for, extended where the sources stopped short, and
+rebuilt from first principles so the next round of link rot cannot take it.
 
-Here is the claim: the word "algebraic" in "algebraic data types" is literal. Types form
-an algebra (objects, operations, and laws), and the correspondence is not just a metaphor
-borrowed from mathematics. It is working arithmetic, and it earns its keep three ways:
-it verifies our refactorings, it explains design decisions, and it points at a frontier
-of type system design.
+The word "algebraic" in "algebraic data types" is literal. Types form an algebra (objects,
+operations, and laws), and the correspondence is not just a metaphor borrowed from
+mathematics. It is working arithmetic: it verifies our refactorings, it explains design
+decisions, and it points at a frontier of type system design.
 
-The claim is not asking to be taken on faith. The next section verifies its core with
-eight counting questions that use nothing but grade-school arithmetic. The scope is the
-settled part of the subject, written for working programmers of TypeScript, Java, C#,
-and their neighbors. No functional programming background is assumed. The frontier is
-named where it belongs, at the end.
+The arithmetic itself makes the case; no appeal to faith is needed. The next section
+verifies the core with eight counting questions that use nothing but grade-school
+arithmetic. The scope is the settled part of the subject, written for working programmers
+of TypeScript, Java, C#, and their neighbors. No functional programming background is
+assumed. The frontier is named where it belongs, at the end.
 
 ## Every Type Is Also a Number
 
@@ -475,7 +473,7 @@ the empty tree fills the slots a small tree never reaches. In Blass's constructi
 regrouping follows the tree's leftward path: the root, the left child, the left-left
 child, and so on. For the balanced tree
 
-```
+```text
         r
        / \
       /   \
@@ -489,7 +487,7 @@ the leftward path is three nodes long, and the unpack is
 fills the first six slots. The case analysis only reaches up the spine when the spine is
 long enough; a left-leaning tree gives it more to do. The tree
 
-```
+```text
           r
          / \
         s   a
@@ -527,17 +525,17 @@ The tree series was $T(A) = 1 + A + 2A^2 + 5A^3 + 14A^4 + \cdots$. Before naming
 count what they count. The list series counted lists by length; the tree series counts trees by
 number of nodes, and the coefficient of $A^n$ is the number of distinct shapes a tree with $n$ nodes can take.
 
-```
+```text
 -
 ```
 
-```
+```text
   o
  / \
 -   -
 ```
 
-```
+```text
   o            o
  / \          / \
 -   o        o   -
@@ -545,7 +543,7 @@ number of nodes, and the coefficient of $A^n$ is the number of distinct shapes a
   -   -    -   -
 ```
 
-```
+```text
       o         o          o             o
      / \       / \        / \           / \
     o   -     o   -      -   o         -   o
@@ -644,7 +642,7 @@ Editing a value deep in an immutable tree normally means walking from the root a
 on the way back up. With the zipper, the context is already in hand: moving down pushes one step onto
 the path, moving up pops one off, and editing the focus touches nothing else.
 
-![A binary tree with the cursor on node b, and the same cursor shown as a zipper: one path step holding the direction, the parent value, and the sibling subtree, followed by the focus with its two subtrees](/media-library/tapl/tree-zipper.svg)
+![A binary tree with the cursor on node b, and the same cursor shown as a zipper: a path step carrying the parent's direction and value along with the sibling subtree, then the focus with its two subtrees](/media-library/tapl/tree-zipper.svg)
 
 The shape looks designed: a focus, two subtrees, a list of steps. It is not. The tool that forces it comes
 from a corner of mathematics with a surprising reach:
@@ -689,8 +687,7 @@ states the theorem:
 
 The zipper is a one-hole context, so the theorem makes a prediction: differentiate the tree's equation,
 and the zipper's type should fall out. It does. The derivation uses the product rule from the table above
-on the recursive equation itself. Differentiate both sides of $T(A) = 1 + A \times T(A)^2$. The constant
-vanishes, the product rule splits the product, and the power rule handles the square:
+on the recursive equation itself. Differentiate both sides of $T(A) = 1 + A \times T(A)^2$. The constant vanishes; the product rule splits the product; the power rule handles the square:
 
 $$
 T'(A) = T(A)^2 + 2 \times A \times T(A) \times T'(A)
@@ -699,10 +696,10 @@ $$
 Read the two terms as the two places a hole can sit. The $T(A)^2$ term is the hole at a value: the
 node's value removed, its two subtrees left intact. The $2 \times A \times T(A) \times T'(A)$ term is
 the hole deeper down: choose which subtree holds it (2 ways), keep the parent's value ($A$) and the
-sibling subtree ($T(A)$), and descend ($T'(A)$). Unrolled, the context is a list of steps, each step
-a direction, a parent's value, and a sibling subtree, ending at the pair of subtrees around the hole.
-That is `TreeZipper` above, field for field. Solving for $T'(A)$ and reading the result against the list
-equation solved earlier, $List(X) = \frac{1}{1 - X}$:
+sibling subtree ($T(A)$), and descend ($T'(A)$). Unrolled, the context is a list of steps, and
+each step records a direction, a parent's value, and a sibling subtree, ending at the pair of
+subtrees around the hole. That is `TreeZipper` above, field for field. Solving for $T'(A)$ and
+reading the result against the list equation solved earlier, $List(X) = \frac{1}{1 - X}$:
 
 $$
 T'(A) = \frac{T(A)^2}{1 - 2 \times A \times T(A)} = T(A)^2 \times List(2 \times A \times T(A))
@@ -1006,8 +1003,9 @@ one or the other. With subtyping, types overlap like regions in a Venn diagram.
 
 A `Dog` is both an `Animal` and a `Pet`; asking for `Animal - Mammal` requires deciding what "minus"
 means when the regions overlap. Union and disjoint sum come apart, and the question "is this type prime?"
-splits into three different questions: irreducible under product, irreducible under sum, and atomic in
-the subtype hierarchy. TypeScript's unions and `Exclude` are early fragments of this set-theoretic view
+splits three ways. Under product, the question is primality; under sum, again primality; in the subtype
+hierarchy the type is instead atomic, atomicity being the question of whether it has a nontrivial subtype.
+TypeScript's unions and `Exclude` are early fragments of this set-theoretic view
 of types. The rest is open design space, and one language is building on it:
 [Verse](https://dev.epicgames.com/documentation/en-us/uefn/verse-in-unreal-engine/verse-language-reference),
 Epic Games' language for Fortnite, treats types as sets of values from the ground up, with subtyping,
@@ -1075,11 +1073,13 @@ There is some relationship between knot theory, Catalan numbers, and fractals, t
 I don't understand today how these areas might connect to Type Theory and type algebra yet.
 The Catalan link is tight: the tree equation is the Catalan generating function, and parenthesization
 ambiguity is a real theorem-prover pain point. I'll revisit and expand this section if I gain some insight.
-  - <https://www.quantamagazine.org/a-powerful-new-qr-code-untangles-maths-knottiest-knots-20260422/>
-  - <https://www.quantamagazine.org/teen-mathematicians-tie-knots-through-a-mind-blowing-fractal-20241126/>
+
+- <https://www.quantamagazine.org/a-powerful-new-qr-code-untangles-maths-knottiest-knots-20260422/>
+- <https://www.quantamagazine.org/teen-mathematicians-tie-knots-through-a-mind-blowing-fractal-20241126/>
 
 Another interesting direction might be through "Physics, Topology, Logic, and Computation - a Rosetta Stone" by
 John Baez and Mike Stay:
+
 - [https://math.ucr.edu/home/baez/rosetta/rose3.pdf](https://math.ucr.edu/home/baez/rosetta/rose3.pdf)
 
 This paper explores deep connections between these fields and could potentially shed

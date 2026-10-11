@@ -1,5 +1,5 @@
-<script setup>
-const { user, id } = defineProps(['user', 'id'])
+<script setup lang="ts">
+const { user, id } = defineProps<{ user: string, id: string }>()
 </script>
 
 <template>
