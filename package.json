@@ -24,34 +24,35 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@nuxt/content": "^3.16.1",
+    "@nuxt/content": "^3.16.2",
     "@nuxt/eslint": "^1.17.0",
-    "@nuxt/ui": "^4.11.2",
-    "@nuxtjs/robots": "^6.2.3",
-    "@nuxtjs/sitemap": "^8.5.1",
+    "@nuxt/ui": "^4.12.0",
+    "@nuxtjs/robots": "^7.0.2",
+    "@nuxtjs/sitemap": "^9.1.0",
     "better-sqlite3": "^13.0.3",
-    "eslint": "^10.11.0",
-    "nuxt": "^4.5.2",
+    "eslint": "^10.13.0",
+    "nuxt": "^4.6.2",
     "nuxt-feedme": "^2.1.0",
     "rehype-mathjax": "^7.1.0",
     "remark-math": "^6.0.0",
-    "vue": "^3.5.43",
-    "vue-router": "^5.3.1"
+    "vue": "^3.5.44",
+    "vue-router": "^5.4.0"
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.137",
-    "@types/node": "^26.6.3",
+    "@iconify-json/lucide": "^1.2.145",
+    "@types/node": "^26.6.5",
     "typescript": "^6.0.3",
-    "vue-tsc": "^3.3.11"
+    "vue-tsc": "^3.3.13"
   },
   "overrides": {
-    "esbuild": "^0.28.1",
-    "deepmerge-ts": "^8.0.2"
+    "esbuild": "^0.28.2",
+    "deepmerge-ts": "^8.0.2",
+    "katex": "^0.18.10"
   },
   "allowScripts": {
     "vue-demi@0.14.10": true,
     "better-sqlite3@13.0.3": true,
-    "esbuild@0.28.1": true,
+    "esbuild@0.28.2": true,
     "unrs-resolver@1.12.2": true
   }
 }
