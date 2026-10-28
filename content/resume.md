@@ -6,15 +6,7 @@ title: Resume
 
 ![Profile Image](/images/profile/top-hat-justice.jpg){width="192" class="float-left mr-4 mb-4 rounded-full"}
 
-Michael Haufe is a seasoned Software Systems Architect and Engineer. He has nearly 30 years of
-professional experience in the tactics, operations, and strategic application of software systems
-in a variety of industries and scales. Some of these industries include Healthcare, Education, Consulting,
-E-Commerce, Digital Marketing, Warehousing, and Logistics. From individual contributor to leadership
-roles of dozens of engineers, he has been involved in and overseen the entire lifecycle of software systems.
-Michael received his B.S. degree in Computer Science from the University of Wisconsin-Milwaukee and has
-engaged in graduate studies at the same in the field of Programming Language Theory. He is also a USMC
-war veteran and brings the discipline and leadership skills learned there to inspire and guide his teams
-and efforts with technical and tactical proficiency.
+Michael Haufe is a seasoned Software Systems Architect and Engineer with nearly 30 years of professional experience in the tactics, operations, and strategic application of software systems across industries including Healthcare, Education, Consulting, E-Commerce, Digital Marketing, Warehousing, and Logistics. From individual contributor to leadership roles of dozens of engineers, he has been involved in and overseen the entire software lifecycle. His recent work returns **systems engineering** to the center of the software lifecycle: as founder of Final Hill he designed and solo-built **Cathedral**, a full-lifecycle platform in which requirements are first-class engineering artifacts — elicited, analyzed, versioned, traced, verified, and endorsed — with AI agents accelerating the work under human curation. Mr. Haufe received his B.S. in Computer Science from the University of Wisconsin–Milwaukee and has engaged in graduate studies there in Programming Language Theory. He is a USMC war veteran and brings the discipline and leadership learned in the Corps to his teams and efforts.
 
 ## Education
 
@@ -309,7 +301,15 @@ items:
 <details>
   <summary>Details</summary>
 
-* Requirements Engineering Tools
+Founded Final Hill (Nov 2020) to build **Cathedral** — a **systems engineering platform** serving as the *system of record* for what a software system must do — and who endorsed it — across the entire lifecycle: discovery, analysis, versioning, traceability, and verification. Cathedral runs every requirement through a 13-dimension quality check engine and produces auditable evidence packs. **Agents propose; humans curate.**
+
+- Designed and solo-built the full platform to production standards on a modern stack: Nuxt 4 full-stack TypeScript, PostgreSQL (MikroORM), real-time collaboration (Yjs/Tiptap), WebAuthn authentication, row-level security, PWA — with comprehensive automated test coverage (Vitest, Playwright), CI/CD, and disciplined, PBI-tracked delivery
+- Operationalized formal requirements-quality theory as executable software: **13 automated checks** including justifiability ("the AI said so" is not a justification), bidirectional traceability, consistency, and verifiability blockers
+- Designed Cathedral's requirements model — seeded in Bertrand Meyer's PEGS taxonomy (Project, Environment, Goals, System; *Handbook of Requirements and Business Analysis*, Springer 2022) and developed into an original model of its own: versioned requirements, endorsement and supersession workflows, formal gap records generalizing Meyer's TBD rule, and audit-ready evidence packs — with a 271-page literature review documenting where Cathedral implements, extends, or deliberately diverges from the source
+- Built the agent surface: a **30-tool MCP server** (Model Context Protocol) plus ingestion pipelines that analyze sessions, pull requests, code, and documents; findings enter an adjudicated lifecycle (Proposed → Review → Active) with full provenance
+- Implemented a queue-managed, multi-provider LLM service layer — Ollama, OpenAI, Anthropic, Azure OpenAI — with bring-your-own-key, per-organization configuration, and structured output extraction
+- Authored the product strategy: hub-and-spoke architecture ("Cathedral is the system of record; Jira, Slack, Claude, and CI are spokes"), enforcement-tier pricing for regulated buyers
+- Delivered the Azure infrastructure: Bicep IaC, PostgreSQL, blob storage, email, CI/CD, staged local/production environments with encrypted configuration
 
 </details>
 
