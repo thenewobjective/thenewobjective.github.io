@@ -4,7 +4,7 @@ title: Resume
 
 ## Overview
 
-![Profile Image](/images/profile/top-hat-justice.jpg){style="border-radius: 50%; float: left; margin: 0 1em 1em 0;"}
+![Profile Image](/images/profile/top-hat-justice.jpg){width="192" class="float-left mr-4 mb-4 rounded-full"}
 
 Michael Haufe is a seasoned Software Systems Architect and Engineer. He has nearly 30 years of
 professional experience in the tactics, operations, and strategic application of software systems
