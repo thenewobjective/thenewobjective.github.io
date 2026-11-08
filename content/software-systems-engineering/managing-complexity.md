@@ -424,7 +424,7 @@ develop a shape-oriented paradigm. With a language of queries, you develop a que
 > "A well-designed program uses the right concepts, and the paradigm follows from the
 > concepts that are used. [Paradigms are epiphenomena]"
 
-&mdash; [Peter Van Roy](http://lambda-the-ultimate.org/node/4698)
+&mdash; [Peter Van Roy](http://blogs.newardassociates.com/blog/2013/programming-language-laws.html)
 
 Depending on the domain you are trying to model, you may find that it is still difficult to express in the
 language you are using. This may be due to the language not being expressive enough or the concepts
